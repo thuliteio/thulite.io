@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+  {{ block "head" . }}{{ partial "head/head.html" . }}{{ end }}
+  <body>
+    {{ block "header" . }}{{ partial "header/header.html" . }}{{ end }}
+    {{ block "search" . }}{{ partial "header/search.html" . }}{{ end }}
+    {{ block "sidebar" . }}{{ partial "sidebar/sidebar.html" . }}{{ end }}
+
+          
+          
+          <main id="site-content" role="main">
+            {{ block "main" . }}{{ end }}
+          </main>
+          
+    {{ block "footer" . }}{{ partial "footer/footer.html" . }}{{ end }}
+    {{ block "script-footer" . }}{{ partial "footer/script-footer.html" . }}{{ end }}
+  </body>
+</html>

@@ -1,0 +1,6 @@
+<nav class="social-menu nav flex-lg-column22 mt-lg-auto">
+  <a class="nav-link" href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x68;&#x65;&#x6E;&#x6B;&#x40;&#x68;&#x65;&#x6E;&#x6B;&#x76;&#x65;&#x72;&#x6C;&#x69;&#x6E;&#x64;&#x65;&#x2E;&#x63;&#x6F;&#x6D;">Email</a>
+  {{ range .Site.Menus.social }}
+    <a class="nav-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+  {{ end }}
+</nav>

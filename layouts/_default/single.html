@@ -1,0 +1,39 @@
+{{ define "main" }}
+    <article>
+    <header class="page-header section-inner">
+
+				<a class="home-link icon-link mfs-16 tfs-18 color-gray weight-medium text-decoration-none text-decoration-hover-underline" href="https://www.wpglossary.net">
+<svg viewBox="0 0 18 14" xmlns="http://www.w3.org/2000/svg"><path d="M3.813 6.01L8.452 1.4 7.041 0 0 7l7.044 7 1.408-1.4-4.638-4.61H18V6.01H3.813z" fill="#919BA5" fill-rule="evenodd"/></svg>
+					<span>Show All</span>
+				</a>
+
+    <h1 class="page-title mfs-30 tfs-40 weight-semibold lining-numerals line-height-title">{{ .Title }}</h1>
+<p class="page-subtitle mfs-17 tfs-24 line-height-paragraph">{{ .Description }}</p>
+{{ partial "main/share-links.html" . }}
+
+</header>
+
+			<div class="word-inner-wrapper">
+
+				<div class="word-inner">
+
+{{ partial "main/article-tools.html" . }}
+					<div class="word-content-wrapper">
+
+						<div class="entry-content section-inner thin center">
+      {{ .Content }}
+      </div>
+
+						<div class="word-bottom-meta section-inner thin center">
+
+							<p class="mfs-13 weight-medium color-dark-gray">Published <time title="May 24, 2018 10:32">May 24, 2018</time></p>
+
+															<p class="mfs-13 weight-medium color-dark-gray">Updated <time title="June 6, 2018 05:03">June 6, 2018</time></p>		
+													</div>
+					</div><!-- .word-content-wrapper -->
+
+				</div><!-- .word-inner -->
+
+      </div>
+    </article>
+{{ end }}
