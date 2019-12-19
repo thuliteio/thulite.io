@@ -6,14 +6,14 @@ module.exports = {
   plugins: [
     autoprefixer(),
     purgecss({
-      content: ['./layouts/**/*.html'],
+      content: [
+        './layouts/**/*.html',
+        './content/**/*.md',
+      ],
       whitelist: [
         'lazyloaded',
-        'wide',
-        ...whitelister([
-          './assets/sass/common/_syntax.scss',
-          './assets/sass/components/_code.scss',
-        ]),
+        'copied',
+        ...whitelister(),
       ],
     }),
   ],
