@@ -1,0 +1,15 @@
+/* Code -------------------------------------- */
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  background: $_f0f1f2;
+  border-radius: 0.2rem;
+  font-family: monospace;
+  font-size: 1em;
+  padding: 0.4rem 0.6rem;
+}

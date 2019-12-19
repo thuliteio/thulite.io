@@ -13,7 +13,9 @@ module.exports = {
       whitelist: [
         'lazyloaded',
         'copied',
-        ...whitelister(),
+        ...whitelister([
+          './assets/sass/components/_code.scss',
+        ]),
       ],
     }),
   ],
