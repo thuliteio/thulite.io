@@ -1,15 +1,7 @@
 {{ define "main" }}
-<div class="row justify-content-center">
-  <div class="col-lg-7 pb-5 text-center">
-    <h1>{{ .Title }}</h1>
-    <p class="lead">{{ .Params.Lead | safeHTML }}</p>
-    <a class="btn btn-outline-primary rounded-0 px-3" href="{{ .Site.BaseURL }}quick-start/" role="button">Quick Start</a>
-  </div>
-</div>
-{{ end }}
+<main id="site-content" role="main">
+	<article>
 
-{{ define "section" }}
-<section class="section container-fluid">
-  {{- .Content -}}
-</section>
+	</article>
+</main>
 {{ end }}

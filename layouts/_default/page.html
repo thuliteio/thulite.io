@@ -1,0 +1,23 @@
+{{ define "main" }}
+<main id="site-content" role="main">
+	<article>
+		<header class="page-header section-inner medium center">
+			<h1 class="page-title mfs-30 tfs-40 dfs-48 weight-semibold lining-numerals line-height-title text-align-center">{{ .Title }}</h1>
+			<p class="page-subtitle mfs-17 tfs-24 line-height-paragraph text-align-center">{{ .Params.lead | safeHTML }}</p>			
+		</header>			
+
+		<div class="separator">
+			<div></div>
+		</div>
+
+		<div class="section-inner thin center">
+			<div class="entry-content">
+			<!-- https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/13 -->
+{{ partial "main/headline-hash.html" .Content }}
+
+{{ .TableOfContents }}
+			</div>
+		</div>
+	</article>
+</main>
+{{ end }}

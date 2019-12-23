@@ -36,7 +36,7 @@ notAlternative = true
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
-    codeFences = true
+    codeFences = false
     hl_Lines = ""
     lineNoStart = 1
     lineNos = false

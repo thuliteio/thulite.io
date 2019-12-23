@@ -744,7 +744,7 @@ $( document ).ready( function() {
 
 	WPG.copyLink.init();					// Copy link tool
 
-	WPG.smoothScroll.init();				// Smooth scroll to anchor link
+	// WPG.smoothScroll.init();				// Smooth scroll to anchor link
 
 	WPG.comments.init();					// Handle comment form submissions
 

@@ -1,0 +1,26 @@
+.page #site-content {
+  padding-top: 4rem;
+}
+
+@media (min-width: 600px) {
+  .page #site-content {
+    background: initial;
+    padding-bottom: 6rem;
+    padding-top: 12rem;
+  }
+}
+
+.hanchor {
+  font-size: 100%;
+  visibility: hidden;
+  text-decoration: none;
+  padding-left: 1rem;
+  font-weight: normal;
+}
+
+h1:hover a,
+h2:hover a,
+h3:hover a,
+h4:hover a {
+  visibility: visible;
+}

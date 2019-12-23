@@ -10,7 +10,7 @@
 
     <h1 class="page-title mfs-30 tfs-40 weight-semibold lining-numerals line-height-title">{{ .Title }}</h1>
 <p class="page-subtitle mfs-17 tfs-24 line-height-paragraph">{{ .Description }}</p>
-<!-- {{ partial "main/share-links.html" . }} -->
+{{ partial "main/share-links.html" . }}
 
 </header>
 
@@ -22,8 +22,7 @@
 					<div class="word-content-wrapper">
 
 						<div class="entry-content section-inner thin center">
-{{ partial "main/headline-hash.html" .Content }}
-
+      {{ .Content }}
       </div>
 
 						<div class="word-bottom-meta section-inner thin center">
