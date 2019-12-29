@@ -1,0 +1,8 @@
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 3rem;
+    z-index: 1020;
+  }
+}

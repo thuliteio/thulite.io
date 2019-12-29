@@ -2,10 +2,21 @@
 <html lang="{{ .Site.LanguageCode | default "en" }}">
   {{ block "head" . }}{{ partial "head/head.html" . }}{{ end }}
 
-  <body{{ with .Params.layout }} class="{{ . }}"{{ end }}>
+  {{ if eq .Kind "home" }}
+    <body class="home">
+  {{ else }}
+    <body{{ with .Params.layout }} class="{{ . }}"{{ end }}>
+  {{ end }}
+
+  
     {{ block "header" . }}{{ partial "header/header.html" . }}{{ end }}
     {{ block "search" . }}{{ partial "header/search.html" . }}{{ end }}
-    {{ block "sidebar" . }}{{ partial "sidebar/sidebar.html" . }}{{ end }}
+    {{ if eq .Section "docs" }}
+     {{ partial "sidebar/sidebar-docs.html" . }}
+    {{ else }}
+      {{ partial "sidebar/sidebar.html" . }}
+    {{ end }}
+    
 
 
     {{ block "main" . }}{{ end }}

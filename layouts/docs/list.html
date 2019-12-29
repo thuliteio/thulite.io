@@ -3,35 +3,11 @@
 
 	<ul class="arrow-list reset-list-style">
 
-		<li>
-	<a href="https://www.wpglossary.net/word/404-page/">404 Page</a>
-</li><li>
-	<a href="https://www.wpglossary.net/word/administration-bar/">Administration Bar</a>
-</li><li>
-	<a href="https://www.wpglossary.net/word/administration-panel/">Administration Panel</a>
-</li><li>
-	<a href="https://www.wpglossary.net/word/administrator/">Administrator</a>
-</li><li>
-	<a href="https://www.wpglossary.net/word/akismet/">Akismet</a>
-</li><li>
-	<a href="https://www.wpglossary.net/word/archive/">Archive</a>
-</li><li>
-	<a href="https://www.wpglossary.net/word/attachment/">Attachment</a>
-</li><li>
-	<a href="https://www.wpglossary.net/word/author/">Author</a>
-</li><li>
-	<a href="https://www.wpglossary.net/word/automattic/">Automattic</a>
-</li><li>
-	<a href="https://www.wpglossary.net/word/avatar/">Avatar</a>
-</li><li>
-	<a href="https://www.wpglossary.net/word/back-end/">Back-End</a>
-</li><li>
-	<a href="https://www.wpglossary.net/word/bbpress/">bbPress</a>
-</li><li>
-	<a href="https://www.wpglossary.net/word/block/">Block</a>
-</li><li>
-	<a href="https://www.wpglossary.net/word/block-editor/">Block Editor</a>
-</li>
+		{{ $section := "docs" }}
+		{{ range (where .Site.RegularPages.ByTitle "Section" $section ) }}
+			<li><a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a></li>
+		{{ end }}
+
 	</ul><!-- .arrow-list -->
 
 </main><!-- #site-content -->
