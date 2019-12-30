@@ -70,3 +70,21 @@ h4:hover a {
 .word-bottom-meta a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"]):hover::after {
   background-image: url(./assets/images/icons/arrow-external-blue-dark.svg);
 }
+
+.page-links {
+  display: none;
+}
+
+@media ( min-width: 600px ) {
+  .page-links {
+    display: block;    
+  }
+
+  .page-links ul:first-child {
+    margin: 0 0 2rem 0;
+  }
+
+  .page-links li {
+    list-style: none;
+  }
+}

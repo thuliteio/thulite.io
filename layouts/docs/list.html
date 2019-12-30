@@ -3,7 +3,7 @@
 
 	<ul class="arrow-list reset-list-style">
 
-		{{ $section := "docs" }}
+		{{ $section := .Section }}
 		{{ range (where .Site.RegularPages.ByTitle "Section" $section ) }}
 			<li><a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a></li>
 		{{ end }}

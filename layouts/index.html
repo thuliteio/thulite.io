@@ -4,21 +4,18 @@
 		<header class="page-header section-inner medium center">
 			<h1 class="page-title mfs-30 tfs-40 dfs-48 weight-semibold lining-numerals line-height-title text-align-center">{{ .Title }}</h1>
 			<p class="page-subtitle mfs-17 tfs-24 line-height-paragraph text-align-center">{{ .Params.lead | safeHTML }}</p>			
-		</header>			
 
-		<div class="separator">
-			<div></div>
-		</div>
+
+
+					<ul class="post-content-links arrow-list-circled stack-mobile horizontal centered reset-list-style mfs-16" role="navigation">
+						<li><a href="http://localhost:1313/docs/get-started/">Get Started</a></li>
+					</ul><!-- .post-content-links -->
+		</header>
 
 		<div class="section-inner thin center">
 			<div class="entry-content">
 				{{ .Content }}
 			</div>
-
-					<ul class="post-content-links arrow-list-circled stack-mobile horizontal reset-list-style mfs-16" role="navigation">
-						<li><a href="http://localhost:1313/docs/get-started/">Get Started</a></li>
-					</ul><!-- .post-content-links -->
-
 		</div>
 	</article>
 </main>

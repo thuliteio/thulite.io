@@ -18,6 +18,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit diam nequ
 ## Aliquam ac dictum dui
 Aliquam ac dictum dui, id ultrices sem. Etiam sit amet luctus libero. Duis in pellentesque sapien, eget ornare libero. Curabitur mauris lectus, volutpat id tincidunt elementum, feugiat eu lacus. Proin in maximus mi. Nullam ut nisl lorem. Donec non tortor laoreet, cursus augue id, maximus nunc. Phasellus fringilla augue convallis commodo faucibus. Nam mauris eros, aliquam vitae luctus eu, dapibus sed nisl. Vivamus id commodo tellus.
 
+> Blockquotes are very handy in email to emulate reply text.
+
+> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
+
 ## Suspendisse lobortis libero lectus
 Suspendisse lobortis libero lectus, eu dapibus libero eleifend id. In lobortis nulla orci, ac ultrices felis tincidunt vel. Donec dignissim ullamcorper mi, nec tincidunt tellus porttitor vitae. Donec in dapibus tortor. Integer vitae eros sem. Mauris tristique [libero](/docs/deployment/) eget tortor varius, quis fringilla erat vestibulum. Maecenas neque turpis, aliquam sed lacinia id, semper eget velit. Curabitur id pulvinar nisi. Nullam elementum eu lorem vel volutpat. Nullam id ante sem.
 
