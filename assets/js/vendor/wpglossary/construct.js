@@ -216,7 +216,8 @@ WPG.siteSearch = {
 				$results = $( '#site-search .search-results' ),
 				searchItem = '.search-results li',
 				searchString = $field.val(),
-				isHome = $( 'body' ).hasClass( 'home' );
+				// isHome = $( 'body' ).hasClass( 'home' );
+				isHome = $( 'body' ).hasClass( 'docs list' );
 
 			if ( isHome ) {
 				var $results = $( '#site-content .arrow-list' ),

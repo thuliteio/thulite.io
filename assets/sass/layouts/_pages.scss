@@ -1,14 +1,17 @@
-.page #site-content,
-.home #site-content {
+.page #site-content {
   padding-top: 4rem;
 }
 
 @media (min-width: 600px) {
-  .page #site-content,
-  .home #site-content {
-    background: initial;
+  .page #site-content {
+    background: url(./assets/images/icon-pattern.svg) no-repeat center -5rem;
+    background-size: contain;
     padding-bottom: 6rem;
     padding-top: 12rem;
+
+    /*
+    background: initial;
+    */
   }
 }
 
@@ -49,35 +52,27 @@ h4:hover a {
   width: 1.5rem;
 }
 
-.word-bottom-meta a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"])::after {
-  background: no-repeat center;
-  background-size: 1.3rem auto;
-  content: "";
-  display: inline-block;
-  height: 1.3rem;
-  margin: 0 0.1rem 0 0.5rem;
-  position: relative;
-  bottom: -0.2rem;
-  width: 1.3rem;
-}
-
-.entry-content a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"])::after,
-.word-bottom-meta a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"])::after {
+.entry-content a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"])::after {
   background-image: url(./assets/images/icons/arrow-external-blue.svg);
 }
 
-.entry-content a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"]):hover::after,
-.word-bottom-meta a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"]):hover::after {
+.entry-content a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"]):hover::after {
   background-image: url(./assets/images/icons/arrow-external-blue-dark.svg);
+}
+
+@media print {
+  .entry-content a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"])::after {
+    content: none;
+  }
 }
 
 .page-links {
   display: none;
 }
 
-@media ( min-width: 600px ) {
+@media (min-width: 600px) {
   .page-links {
-    display: block;    
+    display: block;
   }
 
   .page-links ul:first-child {
@@ -86,5 +81,19 @@ h4:hover a {
 
   .page-links li {
     list-style: none;
+  }
+}
+
+.home #site-content .arrow-list-circled {
+  margin-top: 1.8rem;
+}
+
+.home #site-content .section-inner {
+  max-width: 43rem;
+}
+
+@media (min-width: 750px) {
+  .home #site-content .page-subtitle {
+    margin: 2.2rem 0 2.5rem;
   }
 }

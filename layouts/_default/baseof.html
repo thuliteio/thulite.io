@@ -2,25 +2,28 @@
 <html lang="{{ .Site.LanguageCode | default "en" }}">
   {{ block "head" . }}{{ partial "head/head.html" . }}{{ end }}
 
-  {{ if eq .Kind "home" }}
-    <body class="home">
-  {{ else }}
-    <body{{ with .Params.layout }} class="{{ . }}"{{ end }}>
-  {{ end }}
+  {{ if eq .Kind "home" -}}
+    {{ .Scratch.Set "class" "home" }}
+  {{ else if eq .Kind "404" -}}
+    {{ .Scratch.Set "class" "error404" }}
+  {{ else if eq .Kind "page" -}}
+    {{ .Scratch.Set "class" .Type }}
+    {{ .Scratch.Add "class" " single" }}
+  {{ else -}}
+    {{ .Scratch.Set "class" .Type }}
+    {{ .Scratch.Add "class" " list" }}
+  {{ end -}}
+  <body class="{{ .Scratch.Get "class" }}">
 
-  
     {{ block "header" . }}{{ partial "header/header.html" . }}{{ end }}
     {{ block "search" . }}{{ partial "header/search.html" . }}{{ end }}
     {{ if eq .Section "docs" }}
-     {{ partial "sidebar/sidebar-docs.html" . }}
+      {{ partial "sidebar/sidebar-docs.html" . }}
     {{ else }}
-      {{ partial "sidebar/sidebar.html" . }}
+      {{ partial "sidebar/sidebar-page.html" . }}
     {{ end }}
     
-
-
     {{ block "main" . }}{{ end }}
-
           
     {{ block "footer" . }}{{ partial "footer/footer.html" . }}{{ end }}
     {{ block "script-footer" . }}{{ partial "footer/script-footer.html" . }}{{ end }}

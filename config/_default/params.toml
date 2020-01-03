@@ -1,6 +1,6 @@
 title = "Hyas"
 titleSeparator = "-"
-titleAddition = "The Smart, Flexible Hugo Boilerplate"
+titleAddition = "Hugo Boilerplate"
 description = "Hugo boilerplate helping you build fast, robust, and adaptable websites."
 images = ["social-fallback-image.jpg"]
 twitterSite = "@henkverlinde"
@@ -24,3 +24,4 @@ portraitPhotoWidths = [1500, 1000, 750]
 lqipWidth = "20x"
 
 footer = "Copyright © 2019 Henk Verlinde - MIT License"
+hyasVersion = "v1.0.1"
