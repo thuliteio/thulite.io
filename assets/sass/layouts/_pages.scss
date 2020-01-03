@@ -2,6 +2,12 @@
   padding-top: 4rem;
 }
 
+.home #site-content,
+.error404 #site-content {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 @media (min-width: 600px) {
   .page #site-content {
     background: url(./assets/images/icon-pattern.svg) no-repeat center -5rem;
@@ -12,6 +18,12 @@
     /*
     background: initial;
     */
+  }
+
+  .home #site-content,
+  .error404 #site-content {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 }
 
