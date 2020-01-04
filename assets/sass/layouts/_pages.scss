@@ -109,24 +109,3 @@ h4:hover a {
     margin: 2.2rem 0 2.5rem;
   }
 }
-
-.arrow-list-circled a:before {
-	background: url( ./assets/images/icons/arrow-circled-right-blue.svg ) no-repeat center;
-  content: normal;
-	display: block;
-	height: 3.2rem;
-	margin-right: 1rem;
-	width: 3.2rem;
-}
-
-.arrow-list a:before {
-	background: url( ./assets/images/icons/arrow-right-blue.svg ) no-repeat center;
-  content: normal;
-	display: block;
-	height: 1.8rem;
-	position: absolute;
-		right: 0;
-		top: 50%;
-	transform: translateY( -50% );
-	width: 2.2rem;
-}
