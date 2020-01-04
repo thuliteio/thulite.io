@@ -112,9 +112,7 @@ h4:hover a {
 
 .arrow-list-circled a:before {
 	background: url( ./assets/images/icons/arrow-circled-right-blue.svg ) no-repeat center;
-  /* 
-  content: "";
-  */
+  content: normal;
 	display: block;
 	height: 3.2rem;
 	margin-right: 1rem;
@@ -123,9 +121,7 @@ h4:hover a {
 
 .arrow-list a:before {
 	background: url( ./assets/images/icons/arrow-right-blue.svg ) no-repeat center;
-  /* 
-  content: "";
-  */
+  content: normal;
 	display: block;
 	height: 1.8rem;
 	position: absolute;
