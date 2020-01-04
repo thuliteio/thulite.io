@@ -110,11 +110,11 @@ h4:hover a {
   }
 }
 
-.arrow-list-circled a:before {
-	background: url( /assets/images/icons/arrow-circled-right-blue.svg ) no-repeat center;
-	content: "";
-	display: block;
-	height: 3.2rem;
-	margin-right: 1rem;
-	width: 3.2rem;
+.arrow-list-circled a::before {
+  background: url(/assets/images/icons/arrow-circled-right-blue.svg) no-repeat center;
+  content: "";
+  display: block;
+  height: 3.2rem;
+  margin-right: 1rem;
+  width: 3.2rem;
 }
