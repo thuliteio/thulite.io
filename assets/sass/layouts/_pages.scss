@@ -115,10 +115,26 @@ h4:hover a {
   background: url( ./assets/images/icons/arrow-circled-right-blue.svg ) no-repeat center;
   content: "";
   */
-  background: none;
-  content: url("./assets/images/icons/arrow-circled-right-blue.svg");
-	display: block;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233C48D5' fill-rule='evenodd'%3E%3Cpath d='M16 30c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14zm0 2C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16z' fill-rule='nonzero'/%3E%3Cpath d='M21.243 15l-4.657-4.657L18 8.93 25.071 16 18 23.071l-1.414-1.414L21.243 17H7v-2h14.243z'/%3E%3C/g%3E%3C/svg%3E") no-repeat center;
+  content: "";
+ 	display: block;
 	height: 3.2rem;
 	margin-right: 1rem;
 	width: 3.2rem;
+}
+
+.arrow-list a:before {
+  /*
+	background: url( ./assets/images/icons/arrow-right-blue.svg ) no-repeat center;
+  content: "";
+  */
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.07 8.236L11.914 1.08 12.995 0l7.92 7.92.003-.004 1.08 1.08-9.007 9.007-1.08-1.08 7.16-7.16H-.001V8.236h19.07z' fill='%233C48D5' fill-rule='evenodd'/%3E%3C/svg%3E") no-repeat center;
+  content: "";
+	display: block;
+	height: 1.8rem;
+	position: absolute;
+		right: 0;
+		top: 50%;
+	transform: translateY( -50% );
+	width: 2.2rem;
 }
