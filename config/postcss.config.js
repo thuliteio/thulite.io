@@ -16,6 +16,7 @@ module.exports = {
         'first-result',
         'active',
         'no-results',
+        'stack-mobile',
         ...whitelister([
           './assets/sass/components/_code.scss',
         ]),
