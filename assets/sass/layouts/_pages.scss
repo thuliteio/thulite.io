@@ -51,8 +51,8 @@ h4:hover a {
   color: #2c359f;
 }
 
-.entry-content a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"])::after,
-.logged-in .entry-content a[data-broken-word-link]::after {
+.entry-content a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"]):after,
+.logged-in .entry-content a[data-broken-word-link]:after {
   background: no-repeat center;
   background-size: 1.5rem auto;
   content: "";
@@ -64,14 +64,14 @@ h4:hover a {
   width: 1.5rem;
 }
 
-.entry-content a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"])::after {
+.entry-content a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"]):after {
   /*
   background-image: url( ./assets/images/icons/arrow-external-blue.svg );
   */
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 11' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1h4v1H1v8h8V7h1v4H0V1zm9.304 0h-3.3V0h5v5h-1V1.713L4.947 6.771l-.707-.707L9.304 1z' fill='%233C48D5' fill-rule='nonzero'/%3E%3C/svg%3E");
 }
 
-.entry-content a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"]):hover::after {
+.entry-content a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"]):hover:after {
   /*
   background-image: url( ./assets/images/icons/arrow-external-blue-dark.svg );
   */
@@ -79,7 +79,7 @@ h4:hover a {
 }
 
 @media print {
-  .entry-content a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"])::after {
+	.entry-content a[href*="//"]:not([href*="localhost"]):not([href*="gethyas.com"]):after {
     content: none;
   }
 }

@@ -1988,6 +1988,7 @@ ul.post-content-links {
 	color: #2C359F;
 }
 
+/*
 .entry-content a[href*="//"]:not([href*="localhost"]):not([href*="wpglossary.net"]):after,
 .logged-in .entry-content a[data-broken-word-link]:after {
 	background: no-repeat center;
@@ -2008,6 +2009,7 @@ ul.post-content-links {
 .entry-content a[href*="//"]:not([href*="localhost"]):not([href*="wpglossary.net"]):hover:after {
 	background-image: url( ./assets/images/icons/arrow-external-blue-dark.svg );
 }
+*/
 
 .logged-in .entry-content a[data-broken-word-link]:after {
 	background-image: url( ./assets/images/icons/warning-red.svg );
@@ -3360,9 +3362,10 @@ ul.footer-menu,
 	.word-content-wrapper {
 		margin-top: 0;
 	}
-
+	
+	/*
 	.entry-content a[href*="//"]:not([href*="localhost"]):not([href*="wpglossary.net"]):after {
 		content: none;
 	}
-
+	*/
 }
