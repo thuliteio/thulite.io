@@ -12,6 +12,10 @@ module.exports = {
       ],
       whitelist: [
         'lazyloaded',
+        'has-text',
+        'first-result',
+        'active',
+        'no-results',
         ...whitelister([
           './assets/sass/components/_code.scss',
         ]),
