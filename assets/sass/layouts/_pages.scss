@@ -94,12 +94,38 @@ h4:hover a {
   }
 
   .page-links ul:first-child {
-    margin: 0 0 2rem 0;
+    margin: 2rem 0;
   }
 
   .page-links li {
     list-style: none;
+    border-bottom: .1rem dashed #D1D1D6;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
   }
+
+  .page-links li:last-child {
+    border-bottom: none;
+  }
+
+  .page-links li ul li {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .page-links li a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #2D3741;
+  }
+  .page-links li a:hover,
+  .page-links li a:focus {
+    text-decoration: underline;
+    color: #3C48D5;
+  }
+
 }
 
 .home #site-content .arrow-list-circled {

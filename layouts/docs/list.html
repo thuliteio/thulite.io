@@ -1,14 +1,12 @@
 {{ define "main" }}
 <main id="site-content">
-
 	<ul class="arrow-list reset-list-style">
-
-		{{ $section := .Section }}
-		{{ range (where .Site.RegularPages.ByTitle "Section" $section ) }}
-			<li><a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a></li>
+		{{ $currentSection := .CurrentSection }}
+		{{ range where .Site.RegularPages.ByTitle "Section" .Section }}
+			{{ if in (.Permalink | string) $currentSection.RelPermalink }}
+				<li><a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a></li>
+			{{ end }}
 		{{ end }}
-
-	</ul><!-- .arrow-list -->
-
-</main><!-- #site-content -->
+	</ul>
+</main>
 {{ end }}

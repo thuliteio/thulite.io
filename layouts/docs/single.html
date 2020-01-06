@@ -52,13 +52,15 @@
 
 
 				</div><!-- .word-inner -->
-<div class="word-video-links">
 
-					
+{{ if ne .Params.toc false }}
+<div class="word-video-links">
+		
 					
 						<div class="page-links sticky-top">
-							<h3 class="block-title mfs-16 smallcaps color-dark-gray">On this page</h3>
 
+
+							<h3 class="block-title mfs-16 smallcaps color-dark-gray">On this page</h3>
 
 
         {{ .TableOfContents }}
@@ -96,6 +98,7 @@
 					
 				</div><!-- .word-video-links -->
 
+{{ end }}
 
 
 
