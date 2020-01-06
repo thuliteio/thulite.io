@@ -98,7 +98,7 @@ h4:hover a {
 
 .home #site-content .arrow-list-circled {
   margin-top: 1.8rem;
-  background: yellowgreen;
+  background: yellow;
 }
 
 .home #site-content .section-inner {
@@ -109,13 +109,4 @@ h4:hover a {
   .home #site-content .page-subtitle {
     margin: 2.2rem 0 2.5rem;
   }
-}
-
-.arrow-list-circled a:before {
-  content: "";
-	background: url( ./assets/images/icons/arrow-circled-right-blue.svg ) no-repeat center;
-	display: block;
-	height: 3.2rem;
-	margin-right: 1rem;
-	width: 3.2rem;
 }

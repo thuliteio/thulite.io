@@ -731,26 +731,26 @@ WPG.imageLightbox = {
 // ======================================================================= Function calls
 $( document ).ready( function() {
 
-	WPG.intervalScroll.init();				// Check for scroll on an interval
+	// WPG.intervalScroll.init();				// Check for scroll on an interval
 
-	WPG.isScrolling.init();					// Check for scroll direction
+	// WPG.isScrolling.init();					// Check for scroll direction
 
-	WPG.instrinsicRatioVideos.init();		// Retain aspect ratio of videos on resize
+	// WPG.instrinsicRatioVideos.init();		// Retain aspect ratio of videos on resize
 
 	WPG.toggles.init();						// Handle toggles
 
 	WPG.siteSearch.init();					// Handle site search
 
-	WPG.coverModals.init();					// Handle cover modals
+	// WPG.coverModals.init();					// Handle cover modals
 
-	WPG.copyLink.init();					// Copy link tool
+	// WPG.copyLink.init();					// Copy link tool
 
 	// WPG.smoothScroll.init();				// Smooth scroll to anchor link
 
-	WPG.comments.init();					// Handle comment form submissions
+	// WPG.comments.init();					// Handle comment form submissions
 
-	WPG.wordPreviews.init();				// Handle word previews
+	// WPG.wordPreviews.init();				// Handle word previews
 
-	WPG.imageLightbox.init();				// Toggle image lightbox
+	// WPG.imageLightbox.init();				// Toggle image lightbox
 
 } );
