@@ -1,111 +1,33 @@
 {{ define "main" }}
 <main id="site-content">
-    <article>
+  <article>
     <header class="page-header section-inner" style="max-width: 73rem;">
-
-
-				 <!-- <a class="home-link icon-link mfs-16 tfs-18 color-gray weight-medium text-decoration-none text-decoration-hover-underline" href="/docs/">
-<svg viewBox="0 0 18 14" xmlns="http://www.w3.org/2000/svg"><path d="M3.813 6.01L8.452 1.4 7.041 0 0 7l7.044 7 1.408-1.4-4.638-4.61H18V6.01H3.813z" fill="#919BA5" fill-rule="evenodd"/></svg>
-					<span>Docs Home</span>
-				</a> -->
-
-
-<!-- {{ partial "main/breadcrumb.html" . }} -->
-
-
-    <h1 class="page-title mfs-30 tfs-40 weight-semibold lining-numerals line-height-title" style="margin-top: 2rem;">{{ .Title }}</h1>
-<p class="page-subtitle mfs-17 tfs-24 line-height-paragraph">{{ .Description }}</p>
-
-<!-- {{ partial "main/share-links.html" . }} -->
-
-</header>
-
-			<div class="word-inner-wrapper">
-
-				<div class="word-inner">
-
-<!-- {{ partial "main/article-tools.html" . }} -->
-					<div class="word-content-wrapper" style="margin-top: 0;">
-
-						<div class="entry-content section-inner thin center">
-			<!-- https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/13 -->
-{{ partial "main/headline-hash.html" .Content }}
-      </div>
-
-						<div class="word-bottom-meta section-inner thin center">
-
-							<!-- <p class="mfs-13 weight-medium color-dark-gray">Published <time title="May 24, 2018 10:32">May 24, 2018</time></p> -->
-
-												<!--
-												<p class="mfs-13 weight-medium color-dark-gray"><a href="https://github.com/h-enk/hyas">Edit this page on GitHub</a></p>
-												-->
-
-															<!--
-															<p class="mfs-13 weight-medium color-dark-gray">Updated <time title="August 26, 2018 11:42">August 26, 2018</time></p>	
-															<p class="mfs-13 weight-medium color-dark-gray">Last updated: <time title="June 6, 2018 05:03">June 6, 2018</time></p>		
-															-->
-
-													</div>
-					</div><!-- .word-content-wrapper -->
-
-
-
-
-				</div><!-- .word-inner -->
-
-{{ if ne .Params.toc false }}
-<div class="word-video-links">
-		
-					
-						<div class="page-links sticky-top">
-
-
-							<h3 class="block-title mfs-16 smallcaps color-dark-gray">On this page</h3>
-
-
-        {{ .TableOfContents }}
-
-<!--
-							<ul class="reset-list-style">
-																	<li>
-										<a href="https://generatewp.com/taxonomy/" class="text-decoration-none">
-	
-<svg version="1.1" viewBox="0 0 18 14" xmlns="http://www.w3.org/2000/svg">
-<desc></desc>
-<g fill="none" fill-rule="evenodd">
-<g transform="translate(-25 -1448)" fill="#3C48D5">
-<g transform="translate(0 100)">
-<g transform="translate(0 501)">
-<g transform="translate(0 60)">
-<g transform="translate(25 755)">
-<g transform="translate(0 31)">
-<path d="m14.243 7l-4.6569-4.6569 1.4142-1.4142 7.0711 7.0711-7.0711 7.0711-1.4142-1.4142 4.6569-4.6569h-14.243v-2h14.243z"/>
-</g>
-</g>
-</g>
-</g>
-</g>
-</g>
-</g>
-</svg>											<p class="link-title mfs-16 weight-medium color-blue no-margin line-height-title">Generate WP Taxonomy</p>
-									<p class="link-site mfs-14 color-dark-gray no-margin">generatewp.com</p> 
-										</a>
-									</li>
-															</ul>
-															-->
-						</div><!-- .word-links -->
-
-					
-				</div><!-- .word-video-links -->
-
-{{ end }}
-
-
-
-
-
-
-      </div>
-    </article>
-</main><!-- #site-content -->
+    	<h1 class="page-title mfs-30 tfs-40 weight-semibold lining-numerals line-height-title" style="margin-top: 2rem;">{{ .Title }}</h1>
+			<p class="page-subtitle mfs-17 tfs-24 line-height-paragraph">{{ .Params.lead | safeHTML }}</p>
+		</header>
+		<div class="word-inner-wrapper">
+			<div class="word-inner">
+				<div class="word-content-wrapper" style="margin-top: 0;">
+					<div class="entry-content section-inner thin center">
+						<!-- https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/13 -->
+						{{ partial "main/headline-hash.html" .Content }}
+					</div>
+				</div>
+			</div>
+			{{ if ne .Params.toc false }}
+			<div class="word-video-links">
+				{{ if eq .Params.toc "static" }}
+					{{ .Scratch.Set "class" "position-static" }}
+				{{ else }}
+					{{ .Scratch.Set "class" "sticky-top" }}
+				{{ end }}
+				<div class="page-links {{ .Scratch.Get "class" }}">
+					<h3 class="block-title mfs-16 smallcaps color-dark-gray">On this page</h3>
+					{{ .TableOfContents }}
+				</div>						
+			</div>
+			{{ end }}
+    </div>
+  </article>
+</main>
 {{ end }}

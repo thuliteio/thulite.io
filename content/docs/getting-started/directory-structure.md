@@ -1,9 +1,15 @@
 ---
 title: "Directory Structure"
-description: "Hyas extends the default Hugo directory structure, so you can easily locate things."
-date: 2019-12-30T12:10:43+01:00
+description: ""
+lead: ""
+date: 2020-01-07T16:02:42+01:00
 draft: false
 images: [""]
+menu: 
+  docs:
+    parent: "getting-started"
+    weight: 20
+toc: true
 ---
 
 A basic Hyas project would be structured like this:

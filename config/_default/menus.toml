@@ -12,3 +12,15 @@
   name = "Twitter"
   url = "https://twitter.com/henkverlinde"
   weight = 20
+
+[[docs]]
+  name = "About Hyas"
+  weight = 1
+  identifier = "about-hyas"
+  url = "/docs/about-hyas/"
+
+[[docs]]
+  name = "Getting Started"
+  weight = 5
+  identifier = "getting-started"
+  url = "/docs/getting-started/"
