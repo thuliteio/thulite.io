@@ -187,3 +187,53 @@ h4:hover a {
     padding-left: 8.9rem;
   }
 }
+
+.section-navigation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.section-navigation a {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 600;
+  text-decoration: none;
+  border: .1rem solid #E1E1E6;
+  border-radius: .5rem;
+  display: block;
+  padding: 1.2rem 1.7rem;
+  position: relative;
+  width: 100%;
+}
+
+.section-navigation a:first-child {
+  margin-bottom: 1rem;
+}
+
+.section-navigation a:hover {
+  text-decoration: underline;
+  color: #3C48D5;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+@media ( min-width: 480px ) {
+  .section-navigation {
+    flex-direction: row;
+  }
+
+  .section-navigation a {
+    width: auto;
+  }
+
+  .section-navigation a:first-child {
+    margin-bottom: 0;
+  }
+}

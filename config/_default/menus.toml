@@ -14,13 +14,13 @@
   weight = 20
 
 [[docs]]
-  name = "About Hyas"
-  weight = 1
-  identifier = "about-hyas"
-  url = "/docs/about-hyas/"
+  name = "Prologue"
+  weight = 10
+  identifier = "prologue"
+  url = "/docs/prologue/"
 
 [[docs]]
-  name = "Getting Started"
-  weight = 5
-  identifier = "getting-started"
-  url = "/docs/getting-started/"
+  name = "Basic Hyas"
+  weight = 20
+  identifier = "basic-hyas"
+  url = "/docs/basic-hyas/"

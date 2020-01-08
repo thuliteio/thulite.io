@@ -11,16 +11,17 @@
 					<div class="entry-content section-inner thin center">
 						<!-- https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/13 -->
 						{{ partial "main/headline-hash.html" .Content }}
+						{{ partial "main/section-navigation.html" . }}
 					</div>
 				</div>
 			</div>
 			{{ if ne .Params.toc false }}
 			<div class="word-video-links">
-				{{ if eq .Params.toc "static" }}
-					{{ .Scratch.Set "class" "position-static" }}
-				{{ else }}
-					{{ .Scratch.Set "class" "sticky-top" }}
-				{{ end }}
+				{{ if eq .Params.toc "static" -}}
+					{{ .Scratch.Set "class" "position-static" -}}
+				{{ else -}}
+					{{ .Scratch.Set "class" "sticky-top" -}}
+				{{ end -}}
 				<div class="page-links {{ .Scratch.Get "class" }}">
 					<h3 class="block-title mfs-16 smallcaps color-dark-gray">On this page</h3>
 					{{ .TableOfContents }}
