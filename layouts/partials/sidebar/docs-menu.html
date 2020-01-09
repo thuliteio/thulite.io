@@ -1,22 +1,15 @@
-<ul>
-  {{ $currentPage := . -}}
-  {{ range .Site.Menus.docs -}}
-    {{ if .HasChildren -}}
-      <li class="{{ if $currentPage.HasMenuCurrent "docs" . }}active{{ end }}">
-        <!-- <a href="{{ .URL }}">{{ .Pre }}<span>{{ .Name }}</span></a> -->
-        {{ .Pre }}<span>{{ .Name }}</span>
-      </li>
-      <ul class="sub-menu">
-        {{ range .Children -}}
-          <li class="{{ if $currentPage.IsMenuCurrent "docs" . }}active{{ end }}">
-            <a href="{{ .URL }}">{{ .Name }}</a>
-          </li>
-        {{ end -}}
-      </ul>
-    {{ else -}}
-      <li>
-        <a href="{{ .URL }}">{{ .Pre }}<span>{{ .Name }}</span></a>
-      </li>
+<div class="docs-links">
+{{ $currentPage := . -}}
+{{ range .Site.Menus.docs -}}
+  <h3 class="block-title mfs-16 smallcaps color-dark-gray">{{ .Name }}</h3>
+  {{ if .HasChildren -}}
+  <ul>
+    {{ range .Children -}}
+      {{- $active := or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) -}}
+      {{- $active = or $active (eq .Name $currentPage.Title) -}}
+      <li><a class="docs-link{{ if $active }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a></li>
     {{ end -}}
+  </ul>
   {{ end -}}
-</ul>
+{{ end -}}
+</div>

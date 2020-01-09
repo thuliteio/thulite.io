@@ -23,10 +23,10 @@ toc: true
 ## Prerequisites
 Make sure all dependencies have been installed:
 
-- Hugo >= 0.60.1/extended
+- Hugo >= 0.62.2/extended
 - Node.js >= 10.16.0
 - npm >= 6.9.0
-- Yarn >= 1.19.1 (recommended)
+- Yarn >= 1.21.1 (recommended)
 
 ## How to install
 Create a new Hyas project:

@@ -47,3 +47,9 @@
     margin-bottom: 0;
   }
 }
+
+.docs-links .block-title:not(:first-child) {
+  border-top: 0.1rem dashed #d1d1d6;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+}

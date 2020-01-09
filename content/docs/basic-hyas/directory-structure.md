@@ -1,6 +1,6 @@
 ---
 title: "Directory Structure"
-description: ""
+description: "The Hyas directory structure explained."
 lead: ""
 date: 2020-01-07T16:02:42+01:00
 draft: false
