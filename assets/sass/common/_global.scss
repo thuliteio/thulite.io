@@ -34,3 +34,9 @@
 .float-none {
   float: none !important;
 }
+
+/* https://cssgradient.io/ */
+.gradient {
+  background: rgb(44, 53, 159);
+  background: linear-gradient(90deg, rgba(44, 53, 159, 1) 0%, rgba(60, 72, 213, 1) 35%, rgba(85, 172, 238, 1) 100%);
+}

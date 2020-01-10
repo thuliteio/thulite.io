@@ -4,10 +4,10 @@ description: ""
 lead: ""
 date: {{ .Date }}
 draft: true
-images: [""]
+images: ["image-hyas.jpg"]
 menu: 
   docs:
     parent: ""
-    weight: 00
+weight: 00
 toc: false
 ---

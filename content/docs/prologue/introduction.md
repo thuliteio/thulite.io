@@ -4,7 +4,7 @@ description: ""
 lead: "Hyas is a Hugo boilerplate helping you build fast, robust, and adaptable websites."
 date: 2020-01-07T16:23:23+01:00
 draft: false
-images: [""]
+images: ["image-hyas.jpg"]
 menu: 
   docs:
     parent: "prologue"
