@@ -1,18 +1,16 @@
-<script src="{{ .Site.BaseURL }}assets/js/vendor/jquery/jquery.min.js" defer></script>
-<script src="{{ .Site.BaseURL }}assets/js/vendor/jquery/jquery-migrate.min.js" defer></script>
+<script src="{{ .Site.BaseURL }}js/vendor/jquery/jquery.min.js" defer></script>
+<script src="{{ .Site.BaseURL }}js/vendor/jquery-migrate/jquery-migrate.min.js" defer></script>
 
-{{ $scrolllock := resources.Get "js/vendor/scroll-lock/scroll-lock.min.js" }}
-{{ $lazysizes := resources.Get "js/vendor/lazysizes/lazysizes.min.js" }}
+{{ $scrolllock := resources.Get "js/vendor/@h-enk/wpglossary/scroll-lock.min.js" -}}
+{{ $lazysizes := resources.Get "js/vendor/lazysizes/lazysizes.min.js" -}}
 
-{{ if eq (hugo.Environment) "development" }}
-  {{ $construct := resources.Get "js/vendor/wpglossary/construct.js" }}
-  {{ $app := resources.Get "js/app.js" }}
-  {{ $js := slice $scrolllock $construct $lazysizes $app | resources.Concat "main.js" }}
+{{ if eq (hugo.Environment) "development" -}}
+  {{ $app := resources.Get "js/app.js" -}}
+  {{ $js := slice $scrolllock $lazysizes $app | resources.Concat "main.js" -}}
   <script src="{{ $js.Permalink }}" defer></script>
-{{ else }}
-  {{ $construct := resources.Get "js/vendor/wpglossary/construct.js" | minify }}
-  {{ $app := resources.Get "js/app.js" | minify }}
-  {{ $js := slice $scrolllock $construct $lazysizes $app | resources.Concat "main.js" }}
-  {{ $secureJS := $js | resources.Fingerprint "sha512" }}
+{{ else -}}
+  {{ $app := resources.Get "js/app.js" | minify -}}
+  {{ $js := slice $scrolllock $lazysizes $app | resources.Concat "main.js" -}}
+  {{ $secureJS := $js | resources.Fingerprint "sha512" -}}
   <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
-{{ end }}
+{{ end -}}

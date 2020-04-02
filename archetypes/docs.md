@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-description: ""
-lead: ""
+description: "{{ .Site.Params.description }}"
+lead: "{{ .Site.Params.description }}"
 date: {{ .Date }}
 draft: true
 images: ["image-hyas.jpg"]

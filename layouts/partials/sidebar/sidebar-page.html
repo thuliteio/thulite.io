@@ -9,17 +9,15 @@
 		</p>
 		<p class="sidebar-description text-size mfs-19 tfs-20 dfs-20 line-height-paragraph">{{ .Site.Params.description }}</p>
 		<ul class="main-menu arrow-list-circled reset-list-style mfs-16">
-			<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ .Site.BaseURL }}docs/prologue/introduction/">Docs</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ .Site.BaseURL }}docs/prologue/introduction/">Docs {{ .Site.Params.hyasVersion }}</a></li>
 		</ul>
-		<p class="sidebar-credits weight-medium color-dark-gray no-margin"><a class="color-inherit" href="https://github.com/h-enk/hyas">GitHub {{ .Site.Params.hyasVersion }}</a></p>
+		<p class="sidebar-credits weight-medium color-dark-gray no-margin"><a class="color-inherit" href="https://github.com/h-enk/hyas" target="_blank" rel="noreferrer noopener">Star on GitHub</a> ⭐</p>
 	</div>
-<!--
 	<div class="sidebar-bottom">
-		<a class="advert position-relative text-decoration-none color-inherit" href="http://www.andersnoren.se/teman/">
-			<div class="advert-image"><img src="https://www.wpglossary.net/wp-content/themes/wpglossary/assets/images/themes-ad.jpg" /></div>
-			<p class="mfs-14 tfs-16 line-height-paragraph">Free WordPress themes for bloggers, photographers and businesses.</p>
-			<span class="advert-origin mfs-12 weight-bold smallcaps color-dark-gray no-margin">andersnoren.se</span>
+		<a class="advert position-relative text-decoration-none color-inherit" href="https://getvalidate.com/" target="_blank" rel="noreferrer noopener">
+			<div class="advert-image"><img src="{{ .Site.BaseURL }}images/validate-ad.png" width="238px" height="184px" alt="Validate ad"></div>
+			<p class="mfs-14 tfs-16 line-height-paragraph">Manage business ideas the right way — all in one tool. Get early access!</p>
+			<span class="advert-origin mfs-12 weight-bold smallcaps color-dark-gray no-margin">getvalidate.com</span>
 		</a>
 	</div>
--->
 </aside>
