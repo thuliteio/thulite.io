@@ -1,3 +1,31 @@
+#site-content {
+  min-height: calc(100vh - 291px);
+}
+
+@media (min-width: 600px) {
+  #site-content {
+    min-height: calc(100vh - 301px);
+  }
+}
+
+@media (min-width: 750px) {
+  #site-content {
+    min-height: calc(100vh - 178px);
+  }
+}
+
+@media (min-width: 1000px) {
+  #site-content {
+    min-height: calc(100vh - 178px);
+  }
+}
+
+@media (min-width: 1200px) {
+  #site-content {
+    min-height: calc(100vh - 178px);
+  }
+}
+
 .page #site-content {
   padding-top: 4rem;
 }

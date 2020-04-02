@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-description: ""
-lead: "Hyas is a Hugo boilerplate helping you build fast, robust, and adaptable websites."
+description: "Hugo boilerplate helping you build fast, robust, and flexible websites."
+lead: "Hugo boilerplate helping you build fast, robust, and flexible websites."
 date: 2020-01-07T16:23:23+01:00
 draft: false
 images: ["image-hyas.jpg"]
@@ -27,6 +27,10 @@ Make sure all dependencies have been installed:
 - Node.js >= 10.16.0
 - npm >= 6.9.0
 - Yarn >= 1.21.1 (recommended)
+
+## Internal links
+
+[Check out the directory structure]({{<  ref "docs/basic-hyas/directory-structure.md"  >}})
 
 ## How to install
 Create a new Hyas project:

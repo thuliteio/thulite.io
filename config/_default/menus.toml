@@ -13,6 +13,26 @@
   url = "https://twitter.com/henkverlinde"
   weight = 20
 
+[[footer]]
+  name = "Repository"
+  url = "https://github.com/h-enk/hyas"
+  weight = 10
+
+[[footer]]
+  name = "Changelog"
+  url = "https://github.com/h-enk/hyas/blob/master/CHANGELOG.md"
+  weight = 20
+
+[[footer]]
+  name = "Issues"
+  url = "https://github.com/h-enk/hyas/issues"
+  weight = 30
+
+[[footer]]
+  name = "Support"
+  url = "https://discourse.gohugo.io/"
+  weight = 40
+
 [[docs]]
   name = "Prologue"
   weight = 10
@@ -24,3 +44,9 @@
   weight = 20
   identifier = "basic-hyas"
   url = "/docs/basic-hyas/"
+
+[[docs]]
+  name = "Styles and assets"
+  weight = 30
+  identifier = "styles-and-assets"
+  url = "/docs/styles-and-assets/"

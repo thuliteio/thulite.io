@@ -14,7 +14,7 @@
     <ul class="arrow-list reset-list-style">
       {{ $section := "docs" -}}
       {{ range (where .Site.RegularPages.ByTitle "Section" $section ) -}}
-        <li><a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a></li>
+        <li><a href="{{ .Permalink }}">{{ .Params.title | title }}</a></li>
       {{ end -}}
     </ul>
     <p class="no-results-text mfs-15 tfs-18 no-margin color-dark-gray line-height-title">No results found for <span class="search-value weight-medium"></span>. Try something else?</p>

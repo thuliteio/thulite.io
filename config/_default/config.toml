@@ -7,6 +7,7 @@ enableRobotsTXT = true
 languageCode = "en-US"
 paginate = 7
 rssLimit = 10
+enableGitInfo = true
 
 # add redirects/headers
 [outputs]
@@ -36,7 +37,7 @@ notAlternative = true
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
-    codeFences = false
+    codeFences = true
     hl_Lines = ""
     lineNoStart = 1
     lineNos = false
@@ -44,10 +45,6 @@ notAlternative = true
     noClasses = false
     style = "dracula"
     tabWidth = 4
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 3
-    ordered = false
 
 [sitemap]
   changefreq = "monthly"

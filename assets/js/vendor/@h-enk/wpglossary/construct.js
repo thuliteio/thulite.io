@@ -216,8 +216,7 @@ WPG.siteSearch = {
 				$results = $( '#site-search .search-results' ),
 				searchItem = '.search-results li',
 				searchString = $field.val(),
-				// isHome = $( 'body' ).hasClass( 'home' );
-				isHome = $( 'body' ).hasClass( 'docs list' );
+				isHome = $( 'body' ).hasClass( 'home' );
 
 			if ( isHome ) {
 				var $results = $( '#site-content .arrow-list' ),
@@ -728,29 +727,153 @@ WPG.imageLightbox = {
 } // WPG.imageLightbox
 
 
+// ==================================================================== Barba
+WPG.barba = {
+
+	init: function() {
+
+		Barba.Pjax.start();
+
+		// When a Barba eligible link is clicked
+		WPG.barba.linkClicked();
+
+		// When a new Barba page is loaded
+		WPG.barba.newPageReady();
+
+		// Custom Barba transitions
+		WPG.barba.customTransitions();
+
+	},
+
+	// When a Barba eligible link is clicked
+	linkClicked: function() {
+
+		Barba.Dispatcher.on( 'linkClicked', function( $link ) {
+
+			// Untoggle sidebar, if it's active
+			if ( $( '.sidebar.active' ).length ) {
+				$( '.cover-toggle[data-toggle-target=".sidebar"]' ).trigger( 'click' );
+			}
+			
+		} );
+
+	},
+
+	// When a new Barba page is loaded
+	newPageReady: function() {
+
+		Barba.Dispatcher.on( 'newPageReady', function( currentStatus, oldStatus, container, newPageRawHTML ) {
+
+			var $body = $( 'body' ),
+				$html = $( 'html' );
+
+			$html.addClass( 'barba-loaded' );
+			
+			// Store the new classes of the body so we can apply them during the transition
+			var newClasses = newPageRawHTML.match(/body\sclass=['|"]([^'|"]*)['|"]/)[1];
+			$body.attr( 'data-new-classes', newClasses );
+
+			// If we're navigating away from the home page, store the scroll position
+			if ( $body.hasClass( 'home' ) ) {
+				window.resumeScrollPosition = $win.scrollTop();
+			}
+
+		} );
+
+	},
+
+	// Create a custom Barba transition
+	customTransitions: function() {
+
+		var FadeTransition = Barba.BaseTransition.extend({
+			start: function() {
+				// As soon the loading is finished and the old page is faded out, let's fade the new page
+				Promise.all( [this.newContainerLoading, this.animateOut()] ).then( this.animateIn.bind( this ) );
+			},
+
+			animateOut: function() {
+
+				// Animate out
+				$( 'html' ).addClass( 'barba-animate-out' );
+
+				return new Promise( function( resolve, reject ) {
+					window.setTimeout( function() {
+					   resolve();
+					}, 500 );
+				} );
+			},
+
+			animateIn: function() {
+
+				var _this = this,
+					$oldContainer = $( this.oldContainer );
+					$newContainer = $( this.newContainer );
+
+				$oldContainer.hide();
+
+				var newBodyClasses = $( 'body' ).attr( 'data-new-classes' );
+				
+				// Scroll either to the previous home position, or to the top
+				if ( newBodyClasses.indexOf( 'home' ) !== -1 ) {
+					window.scrollTo( 0, window.resumeScrollPosition );
+				} else {
+					window.scrollTo( 0, 0 );
+				}
+			  
+				$newContainer.css( { visibility : 'visible' } );
+
+				// Add the classes of the new page to the body
+				$( 'body' ).attr( 'class', newBodyClasses );
+
+				// Animate in
+				$( 'html' ).addClass( 'barba-animate-in' );
+
+				return new Promise(function(resolve, reject) {
+					window.setTimeout( function() {
+						resolve();
+						_this.done();
+						$( 'html' ).removeClass( 'barba-animate-in barba-animate-out barba-loaded' );
+					}, 500 );
+				} );
+
+			}
+		} );
+
+		// Tell Barba to use our custom transition
+		Barba.Pjax.getTransition = function() {
+			return FadeTransition;
+		}
+
+	}
+
+} // WPG.barba
+
+
 // ======================================================================= Function calls
-$( document ).ready( function() {
+$( document ).ready( function() {
 
-	// WPG.intervalScroll.init();				// Check for scroll on an interval
+	WPG.intervalScroll.init();				// Check for scroll on an interval
 
-	// WPG.isScrolling.init();					// Check for scroll direction
+	WPG.isScrolling.init();					// Check for scroll direction
 
-	// WPG.instrinsicRatioVideos.init();		// Retain aspect ratio of videos on resize
+	WPG.instrinsicRatioVideos.init();		// Retain aspect ratio of videos on resize
 
 	WPG.toggles.init();						// Handle toggles
 
 	WPG.siteSearch.init();					// Handle site search
 
-	// WPG.coverModals.init();					// Handle cover modals
+	WPG.coverModals.init();					// Handle cover modals
 
-	// WPG.copyLink.init();					// Copy link tool
+	WPG.copyLink.init();					// Copy link tool
 
-	// WPG.smoothScroll.init();				// Smooth scroll to anchor link
+	WPG.smoothScroll.init();				// Smooth scroll to anchor link
 
-	// WPG.comments.init();					// Handle comment form submissions
+	WPG.comments.init();					// Handle comment form submissions
 
-	// WPG.wordPreviews.init();				// Handle word previews
+	WPG.wordPreviews.init();				// Handle word previews
 
-	// WPG.imageLightbox.init();				// Toggle image lightbox
+	WPG.imageLightbox.init();				// Toggle image lightbox
+
+	WPG.barba.init();						// Barba
 
 } );
