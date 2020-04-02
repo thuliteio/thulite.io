@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "start": "hugo server",
-    "build": "npm run copy:deps && hugo && npm run build:functions",
+    "build": "npm run copy:deps && hugo --minify && npm run build:functions",
     "build:functions": "netlify-lambda build assets/lambda",
     "build:preview": "npm run build -D -F",
     "server": "hugo server",
