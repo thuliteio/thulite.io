@@ -1,11 +1,10 @@
 {{ define "main" }}
-<main id="site-content" class="center-vertically">
-	<header class="page-header section-inner thin">
-		<h1 class="page-title mfs-30 tfs-40 weight-bold lining-numerals letterspacing-decr-1 hentry text-align-center">Error 404</h1>
-		<p class="page-subtitle mfs-19 tfs-22 line-height-paragraph text-align-center">The page could not be found. It might have been renamed or deleted, or maybe it didn't exist in the first place.</p>
-		<ul class="arrow-list-circled horizontal centered reset-list-style mfs-16 lining-numerals" role="navigation">
-			<li><a href="{{ .Site.BaseURL }}">Start page</a></li>
-		</ul>
-	</header>
-</main>
+<div class="row justify-content-center">
+  <div class="col-md-12 col-lg-10 col-xl-8">
+    <article>
+      <h1 class="text-center">Page not found</h1>
+      <p class="text-center">The page you requested could not be found.</p>
+    </article>
+  </div>
+</div>
 {{ end }}

@@ -14,14 +14,14 @@
   {{ end -}}
   <body class="{{ .Scratch.Get "class" }}">
     {{ block "header" . }}{{ partial "header/header.html" . }}{{ end }}
-    {{ block "search" . }}{{ partial "header/search.html" . }}{{ end }}
-    {{ if eq .Section "docs" }}
-      {{ partial "sidebar/sidebar-docs.html" . }}
-    {{ else }}
-      {{ partial "sidebar/sidebar-page.html" . }}
+    <div class="wrap container" role="document">
+      <div class="content">
+        {{ block "main" . }}{{ end }}
+      </div>
+    </div>
+    {{ if ne .Section "docs" }}
+      {{ block "footer" . }}{{ partial "footer/footer.html" . }}{{ end }}
     {{ end }}
-    {{ block "main" . }}{{ end }}
-    {{ block "footer" . }}{{ partial "footer/footer.html" . }}{{ end }}
     {{ block "script-footer" . }}{{ partial "footer/script-footer.html" . }}{{ end }}
   </body>
 </html>

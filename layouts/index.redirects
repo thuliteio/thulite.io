@@ -4,6 +4,3 @@
 {{ . }} {{ $p.RelPermalink -}}
 {{- end }}
 {{- end -}}
-
-# Redirect default Netlify subdomain to primary domain
-https://gethyas.netlify.com/* https://gethyas.com/:splat 301!

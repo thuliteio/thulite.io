@@ -1,13 +1,15 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-description: "{{ .Site.Params.description }}"
-lead: "{{ .Site.Params.description }}"
+description: ""
+lead: ""
 date: {{ .Date }}
 draft: true
-images: ["image-hyas.jpg"]
+images: {{ .Site.Params.images }}
 menu: 
   docs:
     parent: ""
-weight: 00
-toc: false
+weight: 999
+toc: true
 ---
+
+{{< img src="" alt="" caption="" class="wide" >}}

@@ -1,11 +1,15 @@
-{{ define "main" -}}
-<main id="site-content" class="center-vertically">
-	<header class="page-header section-inner thin">
-		<h1 class="page-title mfs-30 tfs-40 weight-bold lining-numerals letterspacing-decr-1 hentry text-align-center">{{ .Title }}</h1>
-		<p class="page-subtitle mfs-19 tfs-22 line-height-paragraph text-align-center">{{ .Params.lead | safeHTML }}</p>
-		<ul class="arrow-list-circled horizontal centered reset-list-style mfs-16 lining-numerals">
-			<li><a href="{{ .Site.BaseURL }}docs/prologue/introduction/#how-to-install">Quick Start</a></li>
-		</ul>
-	</header>
-</main>
-{{ end -}}
+{{ define "main" }}
+<section class="section container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-lg-11 text-center">
+      <h1 class="mt-0">{{ .Title }}</h1>
+      <p class="lead">{{ .Params.Lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ .Site.BaseURL }}docs/prologue/introduction/" role="button">Get started</a>
+      <p><a class="btn btn-link btn-sm" href="https://github.com/h-enk/doks" target="_blank" rel="noreferrer noopener" role="button">{{ .Site.Params.version }}</a></p>
+    </div>
+  </div>
+</section>
+<section class="section container-fluid border-top">
+  {{- .Content -}}
+</section>
+{{ end }}

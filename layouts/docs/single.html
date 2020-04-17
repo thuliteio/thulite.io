@@ -1,34 +1,18 @@
 {{ define "main" }}
-<main id="site-content">
-  <article>
-    <header class="page-header section-inner" style="max-width: 73rem;">
-    	<h1 class="page-title mfs-30 tfs-40 weight-semibold lining-numerals line-height-title" style="margin-top: 2rem;">{{ .Title }}</h1>
-			<p class="page-subtitle mfs-17 tfs-24 line-height-paragraph">{{ .Params.lead | safeHTML }}</p>
-		</header>
-		<div class="word-inner-wrapper">
-			<div class="word-inner">
-				<div class="word-content-wrapper" style="margin-top: 0;">
-					<div class="entry-content section-inner thin center">
-						<!-- https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/13 -->
-						{{ partial "main/headline-hash.html" .Content }}
-						{{ partial "main/section-navigation.html" . }}
-					</div>
-				</div>
-			</div>
-			{{ if ne .Params.toc false }}
-			<div class="word-video-links">
-				{{ if eq .Params.toc "static" -}}
-					{{ .Scratch.Set "class" "position-static" -}}
-				{{ else -}}
-					{{ .Scratch.Set "class" "sticky-top" -}}
-				{{ end -}}
-				<div class="page-links {{ .Scratch.Get "class" }}">
-					<h3 class="block-title mfs-16 smallcaps color-dark-gray">On this page</h3>
-					{{ .TableOfContents }}
-				</div>						
-			</div>
-			{{ end }}
-    </div>
-  </article>
-</main>
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar">
+			<nav class="docs-links" aria-label="Main navigation">
+				{{ partial "sidebar/docs-menu.html" . }}
+			</nav>        
+		</div>
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			{{ partial "sidebar/docs-toc.html" . }}
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9">
+			<h1>{{ .Title }}</h1>
+			<p class="lead">{{ .Params.lead | safeHTML }}</p>
+			{{ partial "main/headline-hash.html" .Content }}
+			{{ partial "main/docs-navigation.html" . }}
+		</main>
+	</div>
 {{ end }}

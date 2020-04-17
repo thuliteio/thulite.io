@@ -1,4 +1,4 @@
-{{ if eq .Kind "section" "taxonomy" "taxonomyTerm" -}}
+{{ if and (eq .Kind "section" "taxonomy" "taxonomyTerm") (ne .Section "blog" ) -}}
 <meta name="robots" content="noindex, noarchive">
 {{ else -}}
   {{ with .Params.robots -}}
