@@ -1,11 +1,9 @@
-<footer id="site-footer">
-	<div class="first-footer-block">
-		<div class="footer-title-menu-block">
-			<ul class="footer-menu reset-list-style mfs-18 tfs-14">
-      {{ range .Site.Menus.footer -}}
-        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ .URL | absLangURL }}" target="_blank" rel="noreferrer noopener">{{ .Name }}</a></li>
-      {{ end -}}
-			</ul>
-		</div>
-	</div>
+<footer class="footer text-muted">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-16 text-center">
+        <p>{{ .Site.Params.footer | safeHTML }}</p>
+      </div>
+    </div>
+  </div>
 </footer>

@@ -1,18 +1,10 @@
 {{ define "main" }}
-<main id="site-content">
-	<article>
-		<header class="page-header section-inner medium center">
-			<h1 class="page-title mfs-30 tfs-40 dfs-48 weight-semibold lining-numerals line-height-title text-align-center">{{ .Title }}</h1>
-			<p class="page-subtitle mfs-17 tfs-24 line-height-paragraph text-align-center">{{ .Params.lead | safeHTML }}</p>			
-		</header>
-		<div class="separator">
-			<div></div>
-		</div>
-		<div class="section-inner thin center">
-			<div class="entry-content">
-				{{ .Content }}
-			</div>
-		</div>
-	</article>
-</main>
+<div class="row justify-content-center">
+  <div class="col-md-12 col-lg-10 col-xl-8">
+    <article>
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </article>
+  </div>
+</div>
 {{ end }}

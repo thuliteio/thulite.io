@@ -1,14 +1,14 @@
-title = "Hyas"
+title = "Doks"
 titleSeparator = "-"
-titleAddition = "Hugo Boilerplate"
-description = "Hugo boilerplate helping you build fast, robust, and flexible websites."
-images = ["image-hyas.jpg"]
+titleAddition = "Modern Hugo Documentation Starter"
+description = "Hugo starter helping you build modern documentation websites."
+images = ["image-doks.png"]
 twitterSite = "@henkverlinde"
 twitterCreator = "@henkverlinde"
 ogLocale = "en_US"
 schemaType = "Organization"
-schemaLogo = "logo-hyas.png"
-schemaTwitter = "https://twitter.com/henkverlinde"
+schemaLogo = "logo-doks.png"
+schemaTwitter = "https://twitter.com/getdoks"
 schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
 schemaSection = "news"
 siteLinksSearchBox = false
@@ -24,4 +24,4 @@ portraitPhotoWidths = [1500, 1000, 750]
 lqipWidth = "20x"
 
 footer = "© 2020 Henk Verlinde - MIT License"
-hyasVersion = "v1.2.1"
+version = "v0.1.0"

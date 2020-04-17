@@ -1,10 +1,10 @@
 ---
 title: "Introduction"
-description: "Hugo boilerplate helping you build fast, robust, and flexible websites."
-lead: "Hugo boilerplate helping you build fast, robust, and flexible websites."
-date: 2020-01-07T16:23:23+01:00
+description: "Introduction Doks."
+lead: "Doks is a Hugo starter helping you build modern documentation websites."
+date: 2020-04-17T08:48:57+00:00
 draft: false
-images: ["image-hyas.jpg"]
+images: [image-doks.png]
 menu: 
   docs:
     parent: "prologue"
@@ -12,44 +12,45 @@ weight: 010
 toc: true
 ---
 
-## Why Hyas?
-- Bootstrap Sass (no JavaScript) and Autoprefixer
-- Check Sass and JavaScript for errors
-- Environment specific configuration
-- Image shortcode with [lazysizes](https://github.com/aFarkas/lazysizes) and [blur up](https://github.com/aFarkas/lazysizes/tree/master/plugins/blur-up) plugin
-- Fingerprinting and [SRI](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) (production)
-- Remove unused CSS (production)
+## Features
+- Lightweight code base
+- 100 scores Google Lighthouse
+- A+ scores [Mozilla Observatory](https://observatory.mozilla.org/)
+- [Algolia DocSearch](https://docsearch.algolia.com/) support
+- Dark/Light toggle
+- Blog ready
+- Easily make it your own
+- All in [Hyas](https://github.com/h-enk/hyas)
 
-## Prerequisites
+See a working example at [doks.netlify.app](https://doks.netlify.app/)
+
+## Requirements
+
 Make sure all dependencies have been installed:
 
-- Hugo >= 0.62.2/extended
-- Node.js >= 10.16.0
-- npm >= 6.9.0
-- Yarn >= 1.21.1 (recommended)
+- [Hugo](https://gohugo.io/) >= 0.69.0/extended
+- [Node.js](https://nodejs.org/) >= 13.11.0
+- [Yarn](https://yarnpkg.com/) >= 1.22.4 (recommended)
 
-## Internal links
+## Get started
 
-[Check out the directory structure]({{<  ref "docs/basic-hyas/directory-structure.md"  >}})
-
-## How to install
-Create a new Hyas project:
+Create a new Doks project:
 
 ```bash
-$ git clone git@github.com:h-enk/hyas.git my-hyas-site
+$ git clone git@github.com:h-enk/doks.git my-doks-site
 ```
 
 Install dependencies:
 
 ```bash
-# @ my-hyas-site/
+# @ my-doks-site/
 $ yarn install
 ```
 
 Build development theme with live reloading and injection:
 
 ```bash
-# @ my-hyas-site/
+# @ my-doks-site/
 $ yarn start
 ```
 
@@ -59,5 +60,7 @@ $ yarn start
 - `yarn clean` - Delete temporary directories
 - `yarn build` - Build production theme
 
-## Alternatives
-- [Atlas](https://github.com/indigotree/atlas). 
+## Documentation
+- [Hugo](https://gohugo.io/documentation/)
+- [Hyas](https://gethyas.com/)
+- [Doks](https://getdoks.org/)

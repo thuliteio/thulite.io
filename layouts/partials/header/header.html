@@ -1,12 +1,38 @@
-<header id="site-header">
-  <div class="toggle nav-toggle" data-lock-screen="true" data-toggle-target=".sidebar">
-    <svg viewBox="0 0 26 10" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h26v2H0V0zm0 8h26v2H0V8z" fill="#3C48D5" fill-rule="evenodd"/></svg>
-  </div>
-  <a class="header-title" href="{{ .Site.BaseURL }}" rel="home">
-    <span class="screen-reader-text">{{ .Site.Params.title }}</span>
-    <svg xmlns="http://www.w3.org/2000/svg" width="870" height="300" viewBox="0 0 230.187 79.375"><g aria-label="Hyas" style="line-height:100%;text-align:start" fill="#3c48d5"><path d="M103.145 38.34h10.234V28.105h7.507v27.658h-7.507v-10.53h-10.234v10.53h-7.507V28.106h7.507zM132.098 63.666h-7.685l6.599-12.328-8.06-15.152h8.119l3.694 7.704 3.675-7.704h7.704zM168.045 55.764h-6.756v-1.72q-.89.989-2.193 1.62-1.284.613-3.141.613-1.956 0-3.596-.81-1.64-.81-2.825-2.212-1.185-1.423-1.837-3.3-.652-1.876-.652-4.01 0-2.114.652-3.99.652-1.877 1.837-3.28 1.186-1.403 2.825-2.213 1.64-.81 3.616-.81 1.857 0 3.14.652 1.285.633 2.174 1.64v-1.758h6.756zm-10.273-13.572q-.75 0-1.402.276-.632.277-1.107.79-.454.494-.71 1.186-.258.691-.258 1.52 0 .83.257 1.522.257.691.711 1.205.475.494 1.107.77.652.277 1.402.277.751 0 1.383-.276.652-.277 1.107-.77.474-.515.73-1.206.257-.691.257-1.521t-.256-1.521q-.257-.692-.731-1.186-.455-.513-1.107-.79-.632-.276-1.383-.276zM186.782 42.666q-.83-.316-1.72-.573-.888-.257-1.757-.455-.85-.197-1.66-.296-.79-.119-1.462-.119-1.027 0-1.363.198-.336.198-.336.533 0 .277.237.435.237.138.652.257.415.099.988.178.573.059 1.245.177l1.185.198q3.141.514 4.682 2.035 1.56 1.501 1.56 3.97 0 1.7-.631 3.023-.613 1.304-1.778 2.213-1.166.909-2.865 1.363-1.68.474-3.833.474-1.462 0-2.825-.138-1.343-.119-2.548-.356-1.185-.237-2.193-.573-1.008-.355-1.738-.81l2.252-5.492q3.26 1.778 7.092 1.778 1.165 0 1.6-.197.435-.198.435-.632 0-.237-.158-.376-.158-.158-.514-.276-.356-.119-.928-.218-.573-.098-1.383-.217l-.77-.118q-3.636-.554-5.335-2.075-1.68-1.52-1.68-4.247 0-1.62.574-2.865.573-1.244 1.68-2.094 1.105-.85 2.706-1.284 1.6-.435 3.654-.435 1.205 0 2.173.08.988.059 1.956.237.968.158 2.035.454 1.067.296 2.45.75z" style="-inkscape-font-specification:'MarkWeb Black, '"/></g><ellipse cx="39.936" cy="39.561" rx="39.143" ry="39.296" fill="#3c48d5" fill-rule="evenodd"/><g style="line-height:100%;text-align:start"><path d="M40.442 35.3q2.494-2.33 6.2-2.33 1.708 0 2.995.577 1.286.577 2.035 1.665.749 1.087.912 2.618.185 1.531-.325 3.417l-3.87 14.314h-7.9l3.198-11.828q.45-1.665-.054-2.508-.499-.865-1.808-.865-.577 0-1.141.2-.536.177-1.028.599-.491.421-.887 1.065-.374.643-.62 1.553l-3.186 11.784h-7.9l8.653-32h7.9z" style="-inkscape-font-specification:'MarkWeb Black, Bold'" fill="#fff" aria-label="h"/></g></svg>
-  </a>
-  <div class="toggle search-toggle" data-lock-screen="true" data-toggle-target="#site-search">
-    <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M22 20.588L16.413 15c2.911-3.619 2.69-8.942-.667-12.3A9.165 9.165 0 0 0 9.223 0C6.76 0 4.443.96 2.702 2.701A9.162 9.162 0 0 0 0 9.223c0 2.464.96 4.78 2.702 6.522a9.162 9.162 0 0 0 6.521 2.702 9.154 9.154 0 0 0 5.778-2.034L20.588 22 22 20.588zM9.223 16.449a7.178 7.178 0 0 1-5.109-2.116 7.177 7.177 0 0 1-2.117-5.11c0-1.93.752-3.744 2.117-5.11a7.178 7.178 0 0 1 5.11-2.116 7.18 7.18 0 0 1 5.11 2.117c2.816 2.817 2.816 7.402 0 10.219a7.18 7.18 0 0 1-5.11 2.116z" fill="#3C48D5" fill-rule="nonzero"/></svg>
+<!-- <div class="header-bar fixed-top"></div> -->
+<header class="navbar fixed-top navbar-expand-md navbar-light">
+  <div class="container">
+    <input class="menu-btn order-0" type="checkbox" id="menu-btn">
+    <label class="menu-icon d-md-none" for="menu-btn"><span class="navicon"></span></label>
+    <a class="navbar-brand order-1 order-md-0 mr-auto" href="{{ .Site.BaseURL }}">{{ .Site.Params.Title }}</a>
+    <button id="mode" class="btn btn-link order-2 order-md-4" type="button" aria-label="Toggle mode">
+      <span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
+      <span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+    </button>
+    <ul class="navbar-nav social-nav order-3 order-md-5">
+      {{ range .Site.Menus.social -}}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .URL | absLangURL }}" target="_blank" rel="noreferrer noopener">{{ .Pre | safeHTML }}<span class="ml-2 sr-only">{{ .Name | safeHTML }}</span></a>
+        </li>
+      {{ end -}}
+    </ul>
+    <div class="collapse navbar-collapse order-4 order-md-1">
+      <ul class="navbar-nav main-nav mr-auto order-5 order-md-2">
+        {{- $current := . -}}
+        {{ range .Site.Menus.main -}}
+          {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
+          {{- $active = or $active (eq .Name $current.Title) -}}
+          {{- $active = or $active (and (eq .Name "Docs") (eq $current.Section "docs")) -}}
+          {{- $active = or $active (and (eq .Name "Guides") (eq $current.Section "guides")) -}}
+          {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
+          <li class="nav-item{{ if $active }} active{{ end }}">
+            <a class="nav-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+          </li>
+        {{ end -}}
+      </ul>
+      <div class="break order-6 d-md-none"></div>
+      <form class="navbar-form flex-grow-1 order-7 order-md-3">
+        <input class="form-control is-search" type="search" placeholder="Search {{ .Site.Params.Title }} docs..." aria-label="Search {{ .Site.Params.Title }} docs...">
+      </form>
+    </div>
   </div>
 </header>

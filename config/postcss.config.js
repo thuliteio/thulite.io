@@ -1,5 +1,5 @@
-const autoprefixer = require('autoprefixer');
-const purgecss = require('@fullhuman/postcss-purgecss');
+const autoprefixer = require('autoprefixer')
+const purgecss = require('@fullhuman/postcss-purgecss')
 const whitelister = require('purgecss-whitelister');
 
 module.exports = {
@@ -8,17 +8,14 @@ module.exports = {
     purgecss({
       content: [
         './layouts/**/*.html',
-        './content/**/*.md',
+        './content/**/*.md',      
       ],
       whitelist: [
         'lazyloaded',
-        'has-text',
-        'first-result',
-        'active',
-        'no-results',
-        'stack-mobile',
         ...whitelister([
-          './assets/sass/components/_code.scss',
+          './assets/scss/common/_dark.scss',
+          './assets/scss/common/_syntax.scss',
+          './assets/scss/components/_code.scss',
         ]),
       ],
     }),
