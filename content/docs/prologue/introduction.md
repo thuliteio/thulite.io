@@ -1,10 +1,10 @@
 ---
 title: "Introduction"
-description: "Introduction Doks."
-lead: "Doks is a Hugo starter helping you build modern documentation websites."
+description: "Introduction Hyas."
+lead: "Hyas is a Hugo starter helping you build modern websites."
 date: 2020-04-17T08:48:57+00:00
 draft: false
-images: [image-doks.png]
+images: [image-hyas.png]
 menu: 
   docs:
     parent: "prologue"
@@ -16,13 +16,16 @@ toc: true
 - Lightweight code base
 - 100 scores Google Lighthouse
 - A+ scores [Mozilla Observatory](https://observatory.mozilla.org/)
-- [Algolia DocSearch](https://docsearch.algolia.com/) support
-- Dark/Light toggle
-- Blog ready
 - Easily make it your own
-- All in [Hyas](https://github.com/h-enk/hyas)
+- [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/download/#source-files) Sass (no JavaScript) and [Autoprefixer](https://github.com/postcss/autoprefixer)
+- Check SCSS for errors with [stylelint](https://stylelint.io/)
+- Check JavaScript for errors with [ESLint](https://eslint.org/)
+- Environment specific configuration
+- Image shortcode with [lazysizes](https://github.com/aFarkas/lazysizes) and [blur up](https://github.com/aFarkas/lazysizes/tree/master/plugins/blur-up) plugin
+- Fingerprinting and [SRI](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) (production)
+- Remove unused CSS (production) with [PurgeCSS](https://github.com/FullHuman/purgecss)
 
-See a working example at [doks.netlify.app](https://doks.netlify.app/)
+See a working example at [hyas.netlify.app](https://hyas.netlify.app/)
 
 ## Requirements
 
@@ -34,23 +37,23 @@ Make sure all dependencies have been installed:
 
 ## Get started
 
-Create a new Doks project:
+Create a new Hyas project:
 
 ```bash
-$ git clone git@github.com:h-enk/doks.git my-doks-site
+$ git clone git@github.com:h-enk/hyas.git my-hyas-site
 ```
 
 Install dependencies:
 
 ```bash
-# @ my-doks-site/
+# @ my-hyas-site/
 $ yarn install
 ```
 
 Build development theme with live reloading and injection:
 
 ```bash
-# @ my-doks-site/
+# @ my-hyas-site/
 $ yarn start
 ```
 
@@ -60,7 +63,7 @@ $ yarn start
 - `yarn clean` - Delete temporary directories
 - `yarn build` - Build production theme
 
+
 ## Documentation
 - [Hugo](https://gohugo.io/documentation/)
 - [Hyas](https://gethyas.com/)
-- [Doks](https://getdoks.org/)

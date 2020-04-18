@@ -1,9 +1,9 @@
 ---
 title: "Authors"
-description: "The Doks Blog authors."
+description: "The Hyas Blog authors."
 date: 2020-04-17T08:50:29+00:00
 draft: false
-images: [image-doks.png]
+images: [image-hyas.png]
 ---
 
-The Doks Blog authors
+The Hyas Blog authors

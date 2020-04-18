@@ -1,8 +1,8 @@
 ---
 title: "Help"
-description: "Help Doks."
+description: "Help Hyas."
 lead: ""
 date: 2020-04-17T08:49:15+00:00
 draft: false
-images: [image-doks.png]
+images: [image-hyas.png]
 ---
