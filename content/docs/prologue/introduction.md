@@ -63,7 +63,5 @@ $ yarn start
 - `yarn clean` - Delete temporary directories
 - `yarn build` - Build production theme
 
-
-## Documentation
-- [Hugo](https://gohugo.io/documentation/)
-- [Hyas](https://gethyas.com/)
+## Alternatives
+- [Atlas](https://github.com/indigotree/atlas)
