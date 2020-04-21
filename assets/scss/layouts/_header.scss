@@ -55,12 +55,11 @@
 .navbar {
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid $gray-200;
-
-  /* margin-top: 3px; */
+  margin-top: 4px;
 }
 
 .header-bar {
-  border-top: 3px solid;
+  border-top: 4px solid;
   border-image-source: linear-gradient(90deg, $primary, #8ed6fb 50%, #d32e9d);
   border-image-slice: 1;
 }
@@ -90,7 +89,7 @@
 
   .navbar-form {
     margin-top: 0;
-    margin-left: 1.5rem;
+    margin-left: 36rem;
     margin-right: 1.5rem;
   }
 }

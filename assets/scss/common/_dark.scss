@@ -1,10 +1,10 @@
 /** Theme variables */
 
-$body-bg-dark: lighten($black, 10%);
-$body-color-dark: darken($white, 15%);
-$link-color-dark: lighten($primary, 20%);
-$body-overlay-dark: lighten($black, 15%);
-$border-dark: lighten($black, 20%);
+$body-bg-dark: darken($black, 5%);
+$body-overlay-dark: darken($black, 0%);
+$border-dark: lighten($black, 5%);
+$body-color-dark: darken($white, 20%);
+$link-color-dark: lighten($primary, 25%);
 
 /** Theme styles */
 
@@ -124,7 +124,7 @@ body.dark .docs-navigation {
 }
 
 body.dark ::selection {
-  background: lighten($primary, 25%);
+  background: lighten($primary, 30%);
 }
 
 body.dark pre {

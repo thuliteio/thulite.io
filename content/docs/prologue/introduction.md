@@ -40,21 +40,19 @@ Make sure all dependencies have been installed:
 Create a new Hyas project:
 
 ```bash
-$ git clone git@github.com:h-enk/hyas.git my-hyas-site
+git clone git@github.com:h-enk/hyas.git my-hyas-site
 ```
 
 Install dependencies:
 
 ```bash
-# @ my-hyas-site/
-$ yarn install
+yarn install
 ```
 
 Build development theme with live reloading and injection:
 
 ```bash
-# @ my-hyas-site/
-$ yarn start
+yarn start
 ```
 
 ### Other commands
