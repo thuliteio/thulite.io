@@ -31,8 +31,8 @@ pre code {
 
 @include media-breakpoint-down(xs) {
   .highlight {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important;
   }
 
   pre,

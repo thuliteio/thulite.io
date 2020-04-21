@@ -13,9 +13,8 @@ module.exports = {
       whitelist: [
         'lazyloaded',
         ...whitelister([
-          './assets/scss/common/_dark.scss',
-          './assets/scss/common/_syntax.scss',
           './assets/scss/components/_code.scss',
+          './assets/scss/common/_dark.scss',
         ]),
       ],
     }),
