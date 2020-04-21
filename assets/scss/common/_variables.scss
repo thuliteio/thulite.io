@@ -24,8 +24,7 @@ $red: #e55235;
 $purple: #5d2f86;
 $brown: #aa9c84;
 
-$primary: lighten($purple, 5%);
-$secondary: $gray-200;
+$primary: $purple;
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
@@ -42,7 +41,7 @@ $enable-responsive-font-sizes: true;
 // Settings for the `<body>` element.
 
 $body-bg:                   $white;
-$body-color:                lighten($black, 10%);
+$body-color:                $black;
 
 // Grid containers
 //
