@@ -10,12 +10,14 @@
   margin-left: 1rem;
 }
 
-.navbar-light .navbar-brand {
-  color: $body-color;
-}
-
 .navbar-brand {
   font-weight: $headings-font-weight;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:active {
+  color: $body-color;
 }
 
 @include media-breakpoint-up(md) {
@@ -97,8 +99,20 @@
 
   .navbar-form {
     margin-top: 0;
-    margin-left: 36rem;
+    margin-left: 9rem;
     margin-right: 1.5rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-form {
+    margin-left: 18rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .navbar-form {
+    margin-left: 36rem;
   }
 }
 

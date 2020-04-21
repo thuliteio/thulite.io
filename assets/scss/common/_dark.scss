@@ -1,10 +1,16 @@
 /** Theme variables */
 
 $body-bg-dark: darken($black, 5%);
-$body-overlay-dark: darken($black, 2.5%);
-$border-dark: lighten($black, 2.5%);
+$body-overlay-dark: darken($black, 1.5%);
+$border-dark: lighten($black, 1.5%);
 $body-color-dark: darken($white, 20%);
 $link-color-dark: lighten($primary, 30%);
+
+$navbar-dark-brand-color:           $body-color-dark;
+$navbar-dark-brand-hover-color:     $body-color-dark;
+$navbar-dark-color:                 $body-color-dark;
+$navbar-dark-hover-color:           $link-color-dark;
+$navbar-dark-active-color:          $link-color-dark;
 
 /** Theme styles */
 
