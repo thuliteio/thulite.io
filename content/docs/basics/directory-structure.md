@@ -31,9 +31,11 @@ A basic Hyas project would be structured like this:
 ```
 
 ## Root directories
+
 See also the Hugo docs: [Directory Structure](https://gohugo.io/getting-started/directory-structure/).
 
 ### archetypes
+
 ```bash
 ..
 ├── default.md
@@ -85,6 +87,7 @@ See also the Hugo docs: [Directory Structure](https://gohugo.io/getting-started/
 ```
 
 ### layouts
+
 ```bash
 ..
 ├── _default/
@@ -117,25 +120,31 @@ See also the Hugo docs: [Directory Structure](https://gohugo.io/getting-started/
 ```
 
 ### static
-Contains static content to be copied over as is (no modification), like e.g. favicons and `site.webmanifest`. See also the Hugo docs: [Static Files](https://gohugo.io/content-management/static-files/)
 
+Contains static content to be copied over as is (no modification), like e.g. favicons and `site.webmanifest`. See also the Hugo docs: [Static Files](https://gohugo.io/content-management/static-files/)
 
 ## Root files
 
 ### .eslintignore
+
 Indicates which paths should be omitted from linting. See the ESLint docs: [Ignoring Files and Directories](https://eslint.org/docs/user-guide/configuring#ignoring-files-and-directories).
 
 ### .eslintrc.json
+
 ESLint configuration file. See the ESLint docs: [Configuring ESLint](https://eslint.org/docs/user-guide/configuring).
 
 ### .stylelintignore
+
 Indicates which paths should be omitted from linting. See the stylelint docs: [Ignoring code](https://stylelint.io/user-guide/ignore-code).
 
 ### .stylelintrc.json
+
 Stylelint configuration file. See the stylelint docs: [Configuration](https://stylelint.io/user-guide/configure).
 
 ### netlify.toml
+
 Netlify configiration file. See the Netlify docs: [File-based configuration](https://docs.netlify.com/configure-builds/file-based-configuration/).
 
 ### package.json
+
 Node.js dependencies and scripts.

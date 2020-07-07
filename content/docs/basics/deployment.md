@@ -13,9 +13,11 @@ toc: true
 ---
 
 ## Netlify
+
 See the Hugo Doks: [Host on Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/)
 
 ### netlify.toml
+
 ```toml
 [build]
   publish = "public/"
@@ -34,7 +36,9 @@ See the Hugo Doks: [Host on Netlify](https://gohugo.io/hosting-and-deployment/ho
 [context.branch-deploy]
   command = "yarn build"
 ```
+
 [Check Netlify Docs on config vars](https://docs.netlify.com/configure-builds/environment-variables/#deploy-urls-and-metadata)
 
 ## Other hosting options
+
 See the Hugo Doks: [Hosting & Deployment](https://gohugo.io/hosting-and-deployment/)

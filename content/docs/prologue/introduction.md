@@ -13,6 +13,7 @@ toc: true
 ---
 
 ## Features
+
 - Lightweight code base
 - 100 scores Google Lighthouse
 - A+ scores [Mozilla Observatory](https://observatory.mozilla.org/)
@@ -56,6 +57,7 @@ yarn start
 ```
 
 ### Other commands
+
 - `yarn lint:styles` - Check Sass for errors
 - `yarn lint:scripts` - Check JavaScript for errors
 - `yarn clean` - Delete temporary directories
@@ -68,4 +70,5 @@ Click the Deploy to Netlify button:
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas)
 
 ## Alternatives
+
 - [Atlas](https://github.com/indigotree/atlas)
