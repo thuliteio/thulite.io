@@ -3,8 +3,9 @@ title: "FAQ"
 description: "FAQ Hyas."
 lead: ""
 date: 2020-04-17T08:49:31+00:00
+lastmod: 2020-04-17T08:49:31+00:00
 draft: false
-images: [image-hyas.png]
+images: ["hyas.png"]
 menu: 
   docs:
     parent: "help"

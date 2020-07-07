@@ -3,8 +3,9 @@ title: "Introduction"
 description: "Introduction Hyas."
 lead: "Hyas is a Hugo starter helping you build modern websites."
 date: 2020-04-17T08:48:57+00:00
+lastmod: 2020-04-17T08:48:57+00:00
 draft: false
-images: [image-hyas.png]
+images: ["hyas.png"]
 menu: 
   docs:
     parent: "prologue"

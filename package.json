@@ -12,8 +12,6 @@
     "build:preview": "npm run build -D -F",
     "server": "hugo server",
     "clean": "rimraf public resources functions",
-    "clean:deps": "node scripts/clean-deps",
-    "copy:deps": "node scripts/copy-deps",
     "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
     "lint:scripts": "eslint assets/js assets/lambda config",
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",

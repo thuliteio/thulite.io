@@ -3,8 +3,9 @@ title: "Deployment"
 description: "Deployment Hyas."
 lead: "Hyas is optimized for deployment on Netlify."
 date: 2020-04-20T12:46:25+02:00
+lastmod: 2020-04-20T12:46:25+02:00
 draft: false
-images: [image-hyas.png]
+images: ["hyas.png"]
 menu: 
   docs:
     parent: "basics"

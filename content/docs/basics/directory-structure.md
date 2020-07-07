@@ -3,8 +3,9 @@ title: "Directory Structure"
 description: "Directory Structure Hyas."
 lead: ""
 date: 2020-04-20T14:14:16+02:00
+lastmod: 2020-04-20T14:14:16+02:00
 draft: false
-images: [image-hyas.png]
+images: ["hyas.png"]
 menu: 
   docs:
     parent: "basics"
