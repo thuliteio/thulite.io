@@ -31,7 +31,7 @@ See a working example at [hyas.netlify.app](https://hyas.netlify.app/)
 
 Make sure all dependencies have been installed:
 
-- [Hugo](https://gohugo.io/) >= 0.69.0/extended
+- [Hugo](https://gohugo.io/) >= 0.73.0/extended
 - [Node.js](https://nodejs.org/) >= 13.11.0
 - [Yarn](https://yarnpkg.com/) >= 1.22.4 (recommended)
 
@@ -60,6 +60,12 @@ yarn start
 - `yarn lint:scripts` - Check JavaScript for errors
 - `yarn clean` - Delete temporary directories
 - `yarn build` - Build production theme
+
+## Quick start
+
+Click the Deploy to Netlify button:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas)
 
 ## Alternatives
 - [Atlas](https://github.com/indigotree/atlas)

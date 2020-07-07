@@ -24,4 +24,4 @@ portraitPhotoWidths = [1500, 1000, 750]
 lqipWidth = "20x"
 
 footer = "© 2020 Henk Verlinde - MIT License"
-version = "v1.2.2"
+version = "v1.2.3"
