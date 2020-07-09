@@ -68,7 +68,7 @@ yarn start
 
 Click the Deploy to Netlify button:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas "Deploy to Netlify")
 
 ## Alternatives
 
