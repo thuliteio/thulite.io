@@ -55,7 +55,7 @@ notAlternative = true
   contributor = "contributors"
 
 [permalinks]
-  blog = "/blog/:year/:month/:day/:title/"
+  blog = "/blog/:title/"
 
 [module]
   [[module.mounts]]

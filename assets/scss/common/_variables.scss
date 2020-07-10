@@ -1,8 +1,4 @@
-/*
-$theme-colors: (
-  primary: #3c48d5
-);
-*/
+// Color system
 
 $white:    #fff;
 $gray-100: #f8f9fa;
@@ -16,13 +12,12 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
 
-$yellow: #ffe000;
-$black: #1d2d35;
-$white: #fff;
-$beige: #fbf7f0;
-$red: #e55235;
-$purple: #5d2f86;
-$brown: #aa9c84;
+$yellow:   #ffe000;
+$black:    #1d2d35;
+$beige:    #fbf7f0;
+$red:      #e55235;
+$purple:   #5d2f86;
+$brown:    #aa9c84;
 
 $primary: $purple;
 
@@ -113,3 +108,18 @@ $navbar-light-active-color:         $primary;
 // Cards
 
 $card-border-color:                 $gray-200;
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-padding-y:                   1rem;
+$alert-padding-x:                   1.5rem;
+$alert-margin-bottom:               0;
+$alert-border-radius:               0;
+$alert-link-font-weight:            $headings-font-weight;
+$alert-border-width:                0;
+
+$alert-bg-level:                    0;
+$alert-border-level:                0;
+$alert-color-level:                 0;

@@ -5,7 +5,7 @@ lead: "Hugo starter helping you build modern websites."
 date: 2020-04-17T08:47:36+00:00
 lastmod: 2020-04-17T08:47:36+00:00
 draft: false
-images: ["hyas.png"]
+images: []
 ---
 
 <div class="row justify-content-center">

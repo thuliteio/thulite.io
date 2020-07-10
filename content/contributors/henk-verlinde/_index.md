@@ -4,7 +4,7 @@ description: "Creator of Hyas."
 date: 2020-04-17T08:50:45+00:00
 lastmod: 2020-04-17T08:50:45+00:00
 draft: false
-images: ["hyas.png"]
+images: []
 ---
 
 Creator of Hyas.

@@ -5,7 +5,7 @@ lead: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
-images: ["hyas.png"]
+images: []
 menu: 
   docs:
     parent: ""

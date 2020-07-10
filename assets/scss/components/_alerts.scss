@@ -1,0 +1,46 @@
+.alert {
+  font-size: $font-size-sm;
+  text-align: center;
+}
+
+@include media-breakpoint-up(md) {
+  .alert {
+    font-size: $font-size-base;
+  }
+}
+
+.alert .alert-link {
+  text-decoration: underline;
+}
+
+.alert-dark {
+  color: $white;
+  background-color: $black;
+}
+
+.alert-dark .alert-link {
+  color: $white;
+}
+
+.alert-light {
+  color: #215888;
+  background: linear-gradient(-45deg, rgb(212, 245, 255), rgb(234, 250, 255), rgb(234, 250, 255), #d3f6ef);
+}
+
+.alert-light .alert-link {
+  color: #215888;
+}
+
+.alert-primary {
+  color: $white;
+  background-color: $primary;
+}
+
+.alert-primary .alert-link {
+  color: $white;
+}
+
+.alert .alert-link:hover,
+.alert .alert-link:focus {
+  text-decoration: none;
+}

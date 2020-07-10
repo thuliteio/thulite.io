@@ -5,7 +5,7 @@ lead: ""
 date: 2020-04-20T14:14:16+02:00
 lastmod: 2020-04-20T14:14:16+02:00
 draft: false
-images: ["hyas.png"]
+images: []
 menu: 
   docs:
     parent: "basics"
