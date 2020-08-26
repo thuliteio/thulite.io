@@ -10,7 +10,7 @@
   YARN_VERSION = "1.22.4"
 
 [context.deploy-preview]
-  command = "yarn build:preview"
+  command = "yarn build:preview -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "yarn build"
+  command = "yarn build -b $DEPLOY_PRIME_URL"
