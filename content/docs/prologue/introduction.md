@@ -13,7 +13,7 @@ weight: 010
 toc: true
 ---
 
-## Features
+## Why Hyas?
 
 - Lightweight code base
 - 100 scores Google Lighthouse

@@ -9,7 +9,76 @@
     </div>
   </div>
 </section>
-<section class="section container-fluid border-top">
-  {{- .Content -}}
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+<div class="d-flex justify-content-start mt-n5">
+  <div class="bg-dots"></div>
+</div>
+<section class="section section-sm container-fluid">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <h2 class="h4">Security aware</h2>
+        <p>Get A+ scores on <a href="https://observatory.mozilla.org/" target="_blank" rel="noopener">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h4">Fast by default</h2>
+        <p>Get 100 scores on Google Lighthouse by default. Hyas removes unused css, prefetches links, and lazy loads images.</p>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h4">SEO-ready</h2>
+        <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h4">Development tools</h2>
+        <p>Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.</p>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h4">Bootstrap framework</h2>
+        <p>Build robust, flexible, and intuitive websites with Bootstrap. Or use any other front-end framework if you prefer.</p>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h4">Netlify-ready</h2>
+        <p>Deploy to Netlify with sensible defaults. Easily use Netlify Functions, Netlify Redirects, and Netlify Headers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="d-flex justify-content-end mb-n5">
+  <div class="bg-dots"></div>
+</div>
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      <h2 class="mt-0">Quick Start</h2>
+      <p>Get your Hyas site in 1 min.</p>
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
+<div class="d-flex justify-content-start mt-n5">
+  <div class="bg-dots"></div>
+</div>
+<section class="section container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-12 col-lg-10 col-xl-8">
+      <h2 class="h3 mt-0 text-center">Latest from Hyas blog</h2>
+      <div class="card-list">
+      {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "blog")  -}}
+      <div class="card">
+        <div class="card-body">
+          <h2 class="h3"><a class="stretched-link" href="{{ .Permalink }}">{{ .Params.title }}</a></h2>
+          <p>{{ .Params.lead }}</p>
+          {{ partial "main/blog-meta.html" . -}}
+        </div>
+      </div>        
+      {{ end -}}
+      </div>
+    </div>
+  </div>
 </section>
 {{ end }}

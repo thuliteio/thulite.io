@@ -48,6 +48,16 @@ h6,
   padding-bottom: 5rem;
 }
 
+.section-md {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.section-sm {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .section svg {
   display: inline-block;
   width: 2rem;
@@ -129,7 +139,7 @@ body {
 .docs-navigation {
   border-top: 1px solid $gray-200;
   margin-top: 3rem;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
   padding-top: 2rem;
 }
 
@@ -154,4 +164,12 @@ body {
 
 ::selection {
   background: lighten($primary, 55%);
+}
+
+.bg-dots {
+  background-image: radial-gradient($gray-500 10%, transparent 10%);
+  background-position: 0 0;
+  background-size: 1rem 1rem;
+  width: 25%;
+  height: 3rem;
 }
