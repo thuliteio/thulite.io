@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-16 text-center">
-        <p>An open source project by <a href="https://github.com/h-enk" target="_blank" rel="noopener">@h-enk</a>. Respecting your <a href="{{ .Site.BaseURL }}privacy-policy/">Privacy</a>.</p>
+        <p>{{ .Site.Params.footer | safeHTML }}</p>
       </div>
     </div>
   </div>

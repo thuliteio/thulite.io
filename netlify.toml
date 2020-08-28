@@ -4,7 +4,7 @@
   functions = "functions"
 
 [build.environment]
-  HUGO_VERSION = "0.74.2"
+  HUGO_VERSION = "0.74.3"
   NODE_VERSION = "13.11.0"
   NPM_VERSION = "6.13.7"
   YARN_VERSION = "1.22.4"

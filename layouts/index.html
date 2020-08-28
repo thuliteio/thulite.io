@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="section container-fluid">
   <div class="row justify-content-center">
-    <div class="col-lg-11 text-center">
+    <div class="col-lg-9 text-center">
       <h1 class="mt-0">{{ .Title }}</h1>
       <p class="lead">{{ .Params.Lead | safeHTML }}</p>
       <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ .Site.BaseURL }}docs/prologue/introduction/" role="button">Get started</a>
@@ -17,7 +17,7 @@
 </div>
 <section class="section section-sm container-fluid">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center text-center">
       <div class="col-lg-5">
         <h2 class="h4">Security aware</h2>
         <p>Get A+ scores on <a href="https://observatory.mozilla.org/" target="_blank" rel="noopener">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
@@ -60,9 +60,12 @@
     </div>
   </div>
 </section>
+<!--
 <div class="d-flex justify-content-start mt-n5">
   <div class="bg-dots"></div>
 </div>
+-->
+<!--
 <section class="section container-fluid">
   <div class="row justify-content-center">
     <div class="col-md-12 col-lg-10 col-xl-8">
@@ -81,4 +84,5 @@
     </div>
   </div>
 </section>
+-->
 {{ end }}
