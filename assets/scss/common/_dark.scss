@@ -217,3 +217,15 @@ body.dark .navbar .menu-icon .navicon::before,
 body.dark .navbar .menu-icon .navicon::after {
   background: $navbar-dark-color;
 }
+
+body.dark .logo-light {
+  display: none !important;
+}
+
+body.dark .logo-dark {
+  display: inline-block !important;
+}
+
+body.dark .bg-light {
+  background: darken($body-bg-dark, 1.5%) !important;
+}

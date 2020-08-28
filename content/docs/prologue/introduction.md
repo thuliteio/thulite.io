@@ -68,7 +68,11 @@ yarn start
 
 Click the Deploy to Netlify button:
 
+<a class="btn btn-primary btn-sm px-3" href="https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas" role="button" target="_blank" rel="noopener">Deploy to Netlify</a>
+
+<!--
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas "Deploy to Netlify")
+-->
 
 ## Alternatives
 
