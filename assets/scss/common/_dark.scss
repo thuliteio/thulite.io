@@ -229,3 +229,7 @@ body.dark .logo-dark {
 body.dark .bg-light {
   background: darken($body-bg-dark, 1.5%) !important;
 }
+
+body.dark .bg-dots {
+  background-image: radial-gradient($gray-700 15%, transparent 15%);
+}
