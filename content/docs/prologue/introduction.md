@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
 description: "Introduction Hyas."
-lead: "Hyas is a Hugo starter helping you build modern websites."
+lead: "Hyas is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
 date: 2020-04-17T08:48:57+00:00
 lastmod: 2020-04-17T08:48:57+00:00
 draft: false
@@ -23,7 +23,7 @@ toc: true
 - Check SCSS for errors with [stylelint](https://stylelint.io/)
 - Check JavaScript for errors with [ESLint](https://eslint.org/)
 - Environment specific configuration
-- Image shortcode with [lazysizes](https://github.com/aFarkas/lazysizes) and [blur up](https://github.com/aFarkas/lazysizes/tree/master/plugins/blur-up) plugin
+- Image shortcode with [lazysizes](https://github.com/aFarkas/lazysizes) and blur up
 - Fingerprinting and [SRI](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) (production)
 - Remove unused CSS (production) with [PurgeCSS](https://github.com/FullHuman/purgecss)
 
@@ -61,6 +61,7 @@ yarn start
 
 - `yarn lint:styles` - Check Sass for errors
 - `yarn lint:scripts` - Check JavaScript for errors
+- `yarn lint:markdown` - Check Markdown for errors
 - `yarn clean` - Delete temporary directories
 - `yarn build` - Build production theme
 
@@ -76,4 +77,4 @@ Click the Deploy to Netlify button:
 
 ## Alternatives
 
-- [Atlas](https://github.com/indigotree/atlas)
+- [Atlas](https://github.com/indigotree/atlas). Hyas is based on Atlas.

@@ -1,7 +1,7 @@
 ---
 title : "Flexible Hugo Starter"
-description: "Hyas makes it easier for developers to build Hugo websites that are secure, SEO-ready, and fast — by default."
-lead: "Hyas makes it easier for developers to build Hugo websites that are secure, SEO-ready, and fast — by default."
+description: "Hyas makes it easier for developers to build Hugo websites that are secure, fast, and SEO-ready — by default."
+lead: "Hyas makes it easier for developers to build Hugo websites that are secure, fast, and SEO-ready — by default."
 date: 2020-04-17T08:47:36+00:00
 lastmod: 2020-04-17T08:47:36+00:00
 draft: false
