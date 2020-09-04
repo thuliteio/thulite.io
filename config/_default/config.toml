@@ -1,5 +1,4 @@
 baseurl = "/"
-canonifyURLs = true
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true

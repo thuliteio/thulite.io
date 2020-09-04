@@ -1,5 +1,5 @@
 [build]
-  command = "hugo --minify -b $URL && npm run build:functions"
+  command = "hugo -b $URL --minify && npm run build:functions"
   publish = "public"
   functions = "functions"
 
