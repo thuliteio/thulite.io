@@ -1,2 +1,2 @@
-baseurl = "https://staging.gethyas.com/"
-canonifyURLs = false
+baseurl = "/"
+canonifyURLs = true
