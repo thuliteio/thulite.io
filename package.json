@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "start": "hugo server --disableFastRender",
-    "build": "hugo --minify && npm run build:functions",
+    "build": "hugo --gc --minify && npm run build:functions",
     "build:functions": "netlify-lambda build assets/lambda",
     "build:preview": "npm run build -D -F",
     "server": "hugo server",
