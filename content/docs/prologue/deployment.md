@@ -21,12 +21,12 @@ See the Hugo Doks: [Host on Netlify](https://gohugo.io/hosting-and-deployment/ho
 
 ```toml
 [build]
-  publish = "public/"
+  publish = "public"
   command = "yarn build"
-  functions = "functions/"
+  functions = "functions"
 
 [build.environment]
-  HUGO_VERSION = "0.69.0"
+  HUGO_VERSION = "0.73.0"
   NODE_VERSION = "13.11.0"
   NPM_VERSION = "6.13.7"
   YARN_VERSION = "1.22.4"
@@ -38,7 +38,7 @@ See the Hugo Doks: [Host on Netlify](https://gohugo.io/hosting-and-deployment/ho
   command = "yarn build"
 ```
 
-[Check Netlify Docs on config vars](https://docs.netlify.com/configure-builds/environment-variables/#deploy-urls-and-metadata)
+[Check Netlify Docs for config vars](https://docs.netlify.com/configure-builds/environment-variables/#deploy-urls-and-metadata)
 
 ## Other hosting options
 

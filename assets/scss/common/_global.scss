@@ -1,7 +1,8 @@
 .contributors .content,
 .blog .content,
 .page .content,
-.error404 .content {
+.error404 .content,
+.docs.list .content {
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
@@ -141,7 +142,7 @@ body {
 .docs-navigation {
   border-top: 1px solid $gray-200;
   margin-top: 2rem;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
   padding-top: 2rem;
 }
 
@@ -151,7 +152,7 @@ body {
 
 @include media-breakpoint-up(lg) {
   .docs-navigation {
-    margin-bottom: 5rem;
+    margin-bottom: -1rem;
   }
 
   .docs-navigation a {
