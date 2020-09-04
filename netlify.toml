@@ -8,10 +8,6 @@
   NODE_VERSION = "13.11.0"
   NPM_VERSION = "6.13.7"
   YARN_VERSION = "1.22.4"
-  
-[context.production.environment]
-    HUGO_ENV = "production"
-    NODE_ENV = "production"
 
 [context.deploy-preview]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
