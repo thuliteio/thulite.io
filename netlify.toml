@@ -18,10 +18,10 @@
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-  HUGO_ENV = "staging"
+  HUGO_ENV = "development"
 
 [context.branch-deploy]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.branch-preview.environment]
-  HUGO_ENV = "staging"
+  HUGO_ENV = "development"
