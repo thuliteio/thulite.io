@@ -1,15 +1,27 @@
 [build]
-  command = "hugo -b $URL && npm run build:functions"
   publish = "public"
   functions = "functions"
+  command = "hugo --gc --minify && npm run build:functions"
 
-[build.environment]
+[context.production.environment]
+  HUGO_VERSION = "0.74.3"
+  NODE_VERSION = "13.11.0"
+  NPM_VERSION = "6.13.7"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.deploy-preview]
+  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
   HUGO_VERSION = "0.74.3"
   NODE_VERSION = "13.11.0"
   NPM_VERSION = "6.13.7"
 
-[context.deploy-preview]
-  command = "hugo -b $DEPLOY_PRIME_URL"
-
 [context.branch-deploy]
-  command = "hugo -b $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+  HUGO_VERSION = "0.74.3"
+  NODE_VERSION = "13.11.0"
+  NPM_VERSION = "6.13.7"
