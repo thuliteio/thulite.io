@@ -31,3 +31,5 @@ alertText = "Deliver web projects 10x faster. <a class=\"alert-link\" href=\"htt
 
 hyasVersion = "v1.2.5"
 hugoVersion = "0.73.0/extended"
+
+docsRepo = "https://github.com/h-enk/gethyas.com/"
