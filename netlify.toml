@@ -11,7 +11,7 @@
   HUGO_ENABLEGITINFO = "true"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify --buildFuture"
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.74.3"
@@ -20,7 +20,7 @@
   HUGO_ENV = "staging"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify"
 
 [context.branch-deploy.environment]
   HUGO_VERSION = "0.74.3"
