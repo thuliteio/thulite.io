@@ -21,6 +21,7 @@ A basic Hyas project would be structured like this:
 ├── assets/
 ├── config/
 ├── content/
+├── data/
 ├── layouts/
 ├── static/
 ├── .eslintignore
@@ -85,6 +86,13 @@ See also the Hugo docs: [Directory Structure](https://gohugo.io/getting-started/
 ├── news/
 ├── quick-start/
 └── _index.md
+```
+
+### data
+
+```bash
+..
+└── .gitkeep
 ```
 
 ### layouts
