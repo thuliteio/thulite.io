@@ -8,7 +8,7 @@ draft: false
 images: []
 menu: 
   docs:
-    parent: "basics"
+    parent: "basic-hyas"
 weight: 110
 toc: true
 ---

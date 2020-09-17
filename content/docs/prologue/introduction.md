@@ -29,7 +29,7 @@ toc: true
 
 👉 See a working example at [hyas.netlify.app](https://hyas.netlify.app/)
 
-## Requirements
+## Prerequisites
 
 Make sure all dependencies have been installed:
 

@@ -5,10 +5,10 @@
   url = "/docs/prologue/"
 
 [[docs]]
-  name = "Basics"
+  name = "Basic Hyas"
   weight = 20
-  identifier = "basics"
-  url = "/docs/basics/"
+  identifier = "basic-hyas"
+  url = "/docs/basic-hyas/"
 
 [[docs]]
   name = "Assets"
