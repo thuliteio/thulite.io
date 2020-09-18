@@ -30,10 +30,10 @@ Defaults:
   Cache-Control: public, max-age=31536000
 ```
 
-⚠️ Consult the Netlify Docs for customizing your [custom headers](https://docs.netlify.com/routing/headers/).
+⚠️ Check the Netlify Docs for customizing your [custom headers](https://docs.netlify.com/routing/headers/).
 
 ### Content Security Policy
 💡 [Laboratory](https://addons.mozilla.org/nl/firefox/addon/laboratory-by-mozilla/) is an experimental Firefox extension that helps you generate a Content Security Policy (CSP) header for your website.
 
 ## Subresource Integrity
-[Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) is implemented on styles and scripts.
+[Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) is implemented with [Hugo](https://gohugo.io/hugo-pipes/fingerprint/) on styles and scripts.

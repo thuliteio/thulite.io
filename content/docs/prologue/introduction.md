@@ -33,9 +33,9 @@ toc: true
 
 Make sure all dependencies have been installed:
 
-- [Hugo](https://gohugo.io/) >= 0.73.0/extended
+- [Hugo](https://gohugo.io/) >= 0.74.3/extended
 - [Node.js](https://nodejs.org/) >= 13.11.0
-- [Yarn](https://yarnpkg.com/) >= 1.22.4 (recommended)
+- [Yarn](https://yarnpkg.com/) >= 1.22.5 (recommended)
 
 ## Get started
 
@@ -61,7 +61,6 @@ yarn start
 
 - `yarn lint:styles` - Check Sass for errors
 - `yarn lint:scripts` - Check JavaScript for errors
-- `yarn lint:markdown` - Check Markdown for errors
 - `yarn clean` - Delete temporary directories
 - `yarn build` - Build production theme
 

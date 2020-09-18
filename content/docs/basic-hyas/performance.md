@@ -20,8 +20,8 @@ _Note: `./config/postcss.config.js` contains [purgecss](https://github.com/FullH
 Defaults:
 
 ```js
-const autoprefixer = require('autoprefixer')
-const purgecss = require('@fullhuman/postcss-purgecss')
+const autoprefixer = require('autoprefixer');
+const purgecss = require('@fullhuman/postcss-purgecss');
 const whitelister = require('purgecss-whitelister');
 
 module.exports = {
@@ -44,7 +44,7 @@ module.exports = {
 }
 ```
 
-⚠️ Consult the PurgeCSS Docs for customizing [configuration options](https://purgecss.com/configuration.html).
+⚠️ Check the PurgeCSS Docs for customizing [configuration options](https://purgecss.com/configuration.html).
 
 ## Asset minification
 
@@ -54,7 +54,7 @@ Hyas uses [Hugo](https://gohugo.io/hugo-pipes/minification/) to minify CSS, JS a
 
 Hyas uses [instant.page](https://instant.page/) with default settings for link prefetching. By default, instant.page preloads 65 ms after hovering a link and when a mobile user starts touching their display.
 
-⚠️ Consult the instant.page Docs for customizing [options](https://instant.page/intensity).
+⚠️ Check the instant.page Docs for customizing [options](https://instant.page/intensity).
 
 
 ## Lazy loading images
