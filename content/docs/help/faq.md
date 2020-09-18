@@ -18,6 +18,7 @@ toc: true
 Please make sure to check out the documentation:
 
 - [Hugo](https://gohugo.io/documentation/)
+- [Netlify](https://docs.netlify.com/)
 - [Hyas](https://gethyas.com/)
 
 ## Can I get support?

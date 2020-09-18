@@ -66,7 +66,7 @@ yarn start
 
 ## Quick start
 
-Click the Deploy to Netlify button:
+Get your Hyas site in 1 min.
 
 <a class="btn btn-primary btn-sm px-3" href="https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas" role="button" target="_blank" rel="noopener">Deploy to Netlify</a>
 
@@ -74,6 +74,6 @@ Click the Deploy to Netlify button:
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas "Deploy to Netlify")
 -->
 
-## Alternatives
+## Credits
 
-- [Atlas](https://github.com/indigotree/atlas). Hyas is based on Atlas.
+- I was inspired for Hyas by [Roots](https://roots.io/) and used [Atlas](https://github.com/indigotree/atlas) as a starting point.
