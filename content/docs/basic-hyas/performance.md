@@ -12,3 +12,51 @@ menu:
 weight: 130
 toc: true
 ---
+
+## Unused CSS removal
+
+_Note: `./config/postcss.config.js` contains [purgecss](https://github.com/FullHuman/purgecss) and [purgecss-whitelister](https://github.com/qodesmith/purgecss-whitelister) settings_.
+
+Defaults:
+
+```js
+const autoprefixer = require('autoprefixer')
+const purgecss = require('@fullhuman/postcss-purgecss')
+const whitelister = require('purgecss-whitelister');
+
+module.exports = {
+  plugins: [
+    autoprefixer(),
+    purgecss({
+      content: [
+        './layouts/**/*.html',
+        './content/**/*.md',      
+      ],
+      whitelist: [
+        'lazyloaded',
+        ...whitelister([
+          './assets/scss/components/_syntax.scss',
+          './assets/scss/components/_code.scss',
+        ]),
+      ],
+    }),
+  ],
+}
+```
+
+⚠️ Consult the PurgeCSS Docs for customizing [configuration options](https://purgecss.com/configuration.html).
+
+## Asset minification
+
+Hyas uses [Hugo](https://gohugo.io/hugo-pipes/minification/) to minify CSS, JS and HTML.
+
+## Link prefetching
+
+Hyas uses [instant.page](https://instant.page/) with default settings for link prefetching. By default, instant.page preloads 65 ms after hovering a link and when a mobile user starts touching their display.
+
+⚠️ Consult the instant.page Docs for customizing [options](https://instant.page/intensity).
+
+
+## Lazy loading images
+
+Hyas uses [lazysizes](https://github.com/aFarkas/lazysizes) with a Low Quality Image Placeholder (LQIP) to lazyload images added with the [image shortcode]({{< ref "deployment/#indexredirects" >}}). The LQIP is blurred with a CSS filter.

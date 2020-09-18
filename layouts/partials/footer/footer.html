@@ -2,7 +2,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-16 text-center">
-        <p>{{ .Site.Params.footer | safeHTML }}</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">{{ .Site.Params.footer | safeHTML }}</li>
+          <li class="list-inline-item"><a href="{{ "privacy-policy" | absURL }}">Privacy</a></li>
+        </ul>
       </div>
     </div>
   </div>

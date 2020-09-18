@@ -16,8 +16,8 @@ toc: true
 ## Why Hyas?
 
 - Lightweight code base
-- 100 scores Google Lighthouse
-- A+ scores [Mozilla Observatory](https://observatory.mozilla.org/)
+- 100 scores [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=e45b7560a228939b8e7362288844249b)
+- A+ scores [Mozilla Observatory](https://observatory.mozilla.org/analyze/hyas.netlify.app)
 - Easily make it your own
 - [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/download/#source-files) Sass (no JavaScript) and [Autoprefixer](https://github.com/postcss/autoprefixer)
 - Check SCSS for errors with [stylelint](https://stylelint.io/)

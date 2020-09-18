@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- [Feather](https://github.com/feathericons/feather), Copyright (c) 2013-2017 Cole Bemis, [MIT License](https://github.com/feathericons/feather/blob/master/LICENSE)
 - [Hyas](https://github.com/h-enk/hyas), Copyright (c) 2020 Henk Verlinde, [MIT License](https://github.com/h-enk/hyas/blob/master/LICENSE)
 
 [Unreleased]: https://github.com/h-enk/gethyas.com/compare/v0.1.0...HEAD

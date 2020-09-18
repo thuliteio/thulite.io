@@ -14,7 +14,9 @@ toc: true
 ---
 
 ## Security Headers
-`./layouts/index.headers` is converted to a Netlify `_headers file`. Defaults:
+_Note: `./layouts/index.headers` is converted to a Netlify `_headers file`._
+
+Defaults:
 
 ```bash
 /*
@@ -28,12 +30,10 @@ toc: true
   Cache-Control: public, max-age=31536000
 ```
 
-See also the Netlify Docs: [Custom headers](https://docs.netlify.com/routing/headers/)
+⚠️ Consult the Netlify Docs for customizing your [custom headers](https://docs.netlify.com/routing/headers/).
 
 ### Content Security Policy
-👉 [Laboratory](https://addons.mozilla.org/nl/firefox/addon/laboratory-by-mozilla/) is an experimental Firefox extension that helps you generate a Content Security Policy (CSP) header for your website.
+💡 [Laboratory](https://addons.mozilla.org/nl/firefox/addon/laboratory-by-mozilla/) is an experimental Firefox extension that helps you generate a Content Security Policy (CSP) header for your website.
 
 ## Subresource Integrity
-[Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) is implemented and styles and scripts are loaded from the same origin.
-
-See also the Hugo Docs: [Fingerprinting and SRI](https://gohugo.io/hugo-pipes/fingerprint/).
+[Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) is implemented on styles and scripts.
