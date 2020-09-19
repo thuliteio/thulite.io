@@ -44,7 +44,7 @@ module.exports = {
 }
 ```
 
-⚠️ Check the PurgeCSS Docs for customizing [configuration options](https://purgecss.com/configuration.html).
+⚠️ For customizing check the [PurgeCSS Docs](https://purgecss.com/configuration.html).
 
 ## Asset minification
 
@@ -54,7 +54,7 @@ Hyas uses [Hugo](https://gohugo.io/hugo-pipes/minification/) to minify CSS, JS a
 
 Hyas uses [instant.page](https://instant.page/) with default settings for link prefetching. By default, instant.page preloads 65 ms after hovering a link and when a mobile user starts touching their display.
 
-⚠️ Check the instant.page Docs for customizing [options](https://instant.page/intensity).
+⚠️ For customizing check [instant.page](https://instant.page/intensity).
 
 
 ## Lazy loading images

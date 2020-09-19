@@ -30,7 +30,7 @@ Defaults:
   Cache-Control: public, max-age=31536000
 ```
 
-⚠️ Check the Netlify Docs for customizing your [custom headers](https://docs.netlify.com/routing/headers/).
+⚠️ For customizing check the [Netlify Docs](https://docs.netlify.com/routing/headers/).
 
 ### Content Security Policy
 💡 [Laboratory](https://addons.mozilla.org/nl/firefox/addon/laboratory-by-mozilla/) is an experimental Firefox extension that helps you generate a Content Security Policy (CSP) header for your website.
