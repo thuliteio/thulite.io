@@ -10,4 +10,4 @@ images: []
 contributors: ["Henk Verlinde"]
 ---
 
-I was inspired for Hyas by [Roots](https://roots.io/) and used [Atlas](https://github.com/indigotree/atlas) as a starting point.
+Hyas is inspired by [Roots](https://roots.io/) and uses [Atlas](https://github.com/indigotree/atlas) as a starting point.
