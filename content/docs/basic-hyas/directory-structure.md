@@ -1,7 +1,7 @@
 ---
 title: "Directory Structure"
-description: "Directory Structure Hyas."
-lead: ""
+description: "The Hyas project directory structure extends Hugo's."
+lead: "The Hyas project directory structure extends Hugo's."
 date: 2020-04-20T14:14:16+02:00
 lastmod: 2020-04-20T14:14:16+02:00
 draft: false
@@ -12,8 +12,6 @@ menu:
 weight: 110
 toc: true
 ---
-
-A basic Hyas project would be structured like this:
 
 ```bash
 .
@@ -26,23 +24,28 @@ A basic Hyas project would be structured like this:
 ├── static/
 ├── .eslintignore
 ├── .eslintrc.json
+├── .markdownlint.json
+├── .markdownlintignore
 ├── .stylelintignore
 ├── .stylelintrc.json
+├── babel.config.js
 ├── netlify.toml
 └── package.json
 ```
 
-## Root directories
-
 See also the Hugo docs: [Directory Structure](https://gohugo.io/getting-started/directory-structure/).
+
+## Root directories
 
 ### archetypes
 
 ```bash
 ..
-├── default.md
-└── news.md
+├── blog.md
+└── default.md
 ```
+
+See also: [Archetypes]({{< ref "archetypes" >}}).
 
 ### assets
 
@@ -61,6 +64,7 @@ See also the Hugo docs: [Directory Structure](https://gohugo.io/getting-started/
     ├── vendor/
     └── app.scss
 ```
+See also: [Assets]({{< ref "assets" >}})
 
 ### config
 
@@ -71,29 +75,25 @@ See also the Hugo docs: [Directory Structure](https://gohugo.io/getting-started/
 │   ├── menus.toml
 │   └── params.toml
 ├── production/
-│   ├── config.toml
-│   └── params.toml
 ├── staging/
-│   ├── config.toml
-│   └── params.toml
 └── postcss.config.js
 ```
+
+See also: [Project Configuration]({{< ref "project-configuration" >}}).
 
 ### content
 
 ```bash
 ..
-├── news/
+├── blog/
 ├── quick-start/
 └── _index.md
 ```
 
-### data
+See also the Hugo docs: [Content Organization](https://gohugo.io/content-management/organization/).
 
-```bash
-..
-└── .gitkeep
-```
+### data
+See the Hugo docs: [Data Templates](https://gohugo.io/templates/data-templates/).
 
 ### layouts
 
@@ -103,20 +103,30 @@ See also the Hugo docs: [Directory Structure](https://gohugo.io/getting-started/
 │   ├── baseof.html
 │   ├── list.html
 │   └── single.html
+├── blog/
+│   └── single.html
+├── categories/
+│   ├── list.html
+│   └── terms.html
 ├── partials/
-│   ├── footer
+│   ├── content/
+│   ├── footer/
 │   │   ├── footer.html
 │   │   └── script-footer.html
-│   ├── head
+│   ├── head/
 │   │   ├── favicons.html
 │   │   ├── head.html
+│   │   ├── opengraph.html
 │   │   ├── resource-hints.html
 │   │   ├── script-header.html
 │   │   ├── seo.html
 │   │   ├── structured-data.html
-│   │   └── stylesheet.html
-│   └── header
-│       └── header.html
+│   │   ├── stylesheet.html
+│   │   └── twitter_cards.html
+│   ├── header/
+│   │   ├── alert.html
+│   │   └── header.html
+│   └── sidebar/
 ├── shortcodes/
 │   └── img.html
 ├── 404.html
@@ -127,33 +137,46 @@ See also the Hugo docs: [Directory Structure](https://gohugo.io/getting-started/
 ├── rss.xml
 └── sitemap.xml
 ```
+See also: [Layouts]({{< ref "layouts" >}}).
 
 ### static
 
-Contains static content to be copied over as is (no modification), like e.g. favicons and `site.webmanifest`. See also the Hugo docs: [Static Files](https://gohugo.io/content-management/static-files/)
+See the Hugo docs: [Static Files](https://gohugo.io/content-management/static-files/)
 
 ## Root files
 
 ### .eslintignore
 
-Indicates which paths should be omitted from linting. See the ESLint docs: [Ignoring Files and Directories](https://eslint.org/docs/user-guide/configuring#ignoring-files-and-directories).
+See the ESLint docs: [Ignoring Files and Directories](https://eslint.org/docs/user-guide/configuring#ignoring-files-and-directories).
 
 ### .eslintrc.json
 
-ESLint configuration file. See the ESLint docs: [Configuring ESLint](https://eslint.org/docs/user-guide/configuring).
+See the ESLint docs: [Configuring ESLint](https://eslint.org/docs/user-guide/configuring).
+
+### .markdownlint.json
+
+See the markdownlint Readme: [Rules / Aliases](https://github.com/DavidAnson/markdownlint#rules--aliases).
+
+### .markdownlintignore
+
+See the markdownlint-cli Readme: [Ignoring Files](https://github.com/igorshubovych/markdownlint-cli#ignoring-files).
 
 ### .stylelintignore
 
-Indicates which paths should be omitted from linting. See the stylelint docs: [Ignoring code](https://stylelint.io/user-guide/ignore-code).
+See the stylelint docs: [Ignoring code](https://stylelint.io/user-guide/ignore-code).
 
 ### .stylelintrc.json
 
-Stylelint configuration file. See the stylelint docs: [Configuration](https://stylelint.io/user-guide/configure).
+See the stylelint docs: [Configuration](https://stylelint.io/user-guide/configure).
+
+### babel.config.js
+
+See the Babel docs: [Configure Babel](https://babeljs.io/docs/en/configuration).
 
 ### netlify.toml
 
-Netlify configiration file. See the Netlify docs: [File-based configuration](https://docs.netlify.com/configure-builds/file-based-configuration/).
+See the Netlify docs: [File-based configuration](https://docs.netlify.com/configure-builds/file-based-configuration/).
 
 ### package.json
 
-Node.js dependencies and scripts.
+See the Yarn Documentation: [package.json](https://classic.yarnpkg.com/en/docs/package-json/).

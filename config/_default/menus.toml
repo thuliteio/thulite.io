@@ -11,10 +11,10 @@
   url = "/docs/basic-hyas/"
 
 [[docs]]
-  name = "Assets"
+  name = "Core Hyas"
   weight = 30
-  identifier = "assets"
-  url = "/docs/assets/"
+  identifier = "core-hyas"
+  url = "/docs/core-hyas/"
 
 [[docs]]
   name = "Guides"

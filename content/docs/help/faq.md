@@ -9,18 +9,10 @@ images: []
 menu: 
   docs:
     parent: "help"
-weight: 510
+weight: 410
 toc: true
 ---
 
-## Where to start from here?
-
-Please make sure to check out the documentation:
-
-- [Hugo](https://gohugo.io/documentation/)
-- [Netlify](https://docs.netlify.com/)
-- [Hyas](https://gethyas.com/)
-
 ## Can I get support?
 
-Visit [Hugo Discourse](https://discourse.gohugo.io/) and use the search. It that does not help, start a new topic and ask your questions.
+Visit [Hugo Discourse](https://discourse.gohugo.io/) and use the search. If that does not help, start a new topic and ask your question.

@@ -8,29 +8,25 @@ draft: false
 images: []
 menu: 
   docs:
-    parent: "basic-hyas"
-weight: 120
+    parent: "core-hyas"
+weight: 210
 toc: true
 ---
 
 ## Security Headers
-_Note: `./layouts/index.headers` is converted to a Netlify `_headers file`._
 
-Defaults:
+`./layouts/index.headers` excerpt:
 
 ```bash
 /*
-  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
   Content-Security-Policy: default-src 'none'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin
-  Feature-Policy: geolocation 'self'
-  Cache-Control: public, max-age=31536000
 ```
 
-⚠️ For customizing check the [Netlify Docs](https://docs.netlify.com/routing/headers/).
+See also: [Headers]({{< ref "netlify#headers" >}}).
 
 ### Content Security Policy
 💡 [Laboratory](https://addons.mozilla.org/nl/firefox/addon/laboratory-by-mozilla/) is an experimental Firefox extension that helps you generate a Content Security Policy (CSP) header for your website.

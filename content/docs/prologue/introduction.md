@@ -27,7 +27,7 @@ toc: true
 - Fingerprinting and [SRI](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) (production)
 - Remove unused CSS (production) with [PurgeCSS](https://github.com/FullHuman/purgecss)
 
-👉 For a working example check [hyas.netlify.app](https://hyas.netlify.app/)
+👉 For a working example see [hyas.netlify.app](https://hyas.netlify.app/)
 
 ## Prerequisites
 
