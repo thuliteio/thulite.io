@@ -72,3 +72,6 @@ notAlternative = true
   [[module.mounts]]
     source = "node_modules/instant.page"
     target = "assets/js/vendor/instant.page"
+  [[module.mounts]]
+    source = "node_modules/docsearch.js"
+    target = "assets/js/vendor/docsearch.js"

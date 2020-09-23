@@ -23,13 +23,11 @@ toc: true
 └── netlify.toml
 ```
 
-
 See also the Hugo Docs: [Host on Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/).
-
 
 ## Functions
 
-Functions in `./assets/lambda/` are compiled on build to `./functions/`. 
+Functions in `./assets/lambda/` are compiled on build to `./functions/`.
 
 See also the Netlify docs: [Functions overview](https://docs.netlify.com/functions/overview/)
 
@@ -37,15 +35,15 @@ See also the Netlify docs: [Functions overview](https://docs.netlify.com/functio
 
 `./layouts/index.redirects` is converted on build to `./public/_redirects`.
 
-```
+```bash
 {{ range $pages := .Site.Pages -}}
   {{ range .Aliases -}}
     {{ . }} {{ $pages.RelPermalink -}}
   {{ end -}}
 {{ end -}}
 ```
-See also the Netlify docs: [Redirects and rewrites](https://docs.netlify.com/routing/redirects/)
 
+See also the Netlify docs: [Redirects and rewrites](https://docs.netlify.com/routing/redirects/)
 
 ## Headers
 
@@ -62,6 +60,7 @@ See also the Netlify docs: [Redirects and rewrites](https://docs.netlify.com/rou
   Feature-Policy: geolocation 'self'
   Cache-Control: public, max-age=31536000
 ```
+
 See also the Netlify docs: [Custom headers](https://docs.netlify.com/routing/headers/)
 
 ## Build and deploy

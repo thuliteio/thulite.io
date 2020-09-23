@@ -23,11 +23,13 @@ toc: true
 ├── staging/
 └── postcss.config.js
 ```
+
 See also the Hugo docs: [Configure Hugo](https://gohugo.io/getting-started/configuration/).
 
 ## config.toml
 
 ### Netlify specifics
+
 ```toml
 # add redirects/headers
 [outputs]
@@ -54,11 +56,13 @@ notAlternative = true
 ```
 
 ## menus.toml
+
 No specifics.
 
 ## params.toml
 
 ### SEO specifics
+
 ```toml
 title = "Hyas"
 titleSeparator = "-"
@@ -86,6 +90,7 @@ themeColor = "#fff"
 ```
 
 ### Image shortcode
+
 ```toml
 quality = 85
 bgColor = "#fff"
@@ -95,14 +100,16 @@ lqipWidth = "20x"
 ```
 
 ### Footer
+
 ```toml
 footer = "© 2020 Henk Verlinde - MIT License"
 ```
 
 ### Alert
+
 ```toml
 alert = false
-alertText = "Deliver web projects 10x faster. <a class=\"alert-link\" href=\"https://www.netlify.com/whitepaper/\" target=\"_blank\" rel=\"noopener\">Get the free enterprise paper →</a>" 
+alertText = "Deliver web projects 10x faster. <a class=\"alert-link\" href=\"https://www.netlify.com/whitepaper/\" target=\"_blank\" rel=\"noopener\">Get the free enterprise paper →</a>"
 ```
 
 ## postcss.config.js
@@ -118,7 +125,7 @@ module.exports = {
     purgecss({
       content: [
         './layouts/**/*.html',
-        './content/**/*.md',      
+        './content/**/*.md',
       ],
       whitelist: [
         'lazyloaded',
@@ -131,4 +138,5 @@ module.exports = {
   ],
 }
 ```
+
 See also: [Unused CSS removal]({{< ref "performance#unused-css-removal" >}}).

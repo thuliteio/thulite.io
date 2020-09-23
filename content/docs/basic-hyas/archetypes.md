@@ -22,6 +22,7 @@ toc: true
 See also the Hugo docs: [Archetypes](https://gohugo.io/content-management/archetypes/).
 
 ## blog.md
+
 ```md
 ---
 title: "{{ replace .Name "-" " " | title }}"
@@ -39,6 +40,7 @@ categories: [""]
 ```
 
 ## default.md
+
 ```md
 ---
 title: "{{ replace .Name "-" " " | title }}"

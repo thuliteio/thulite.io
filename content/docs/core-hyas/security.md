@@ -29,7 +29,9 @@ toc: true
 See also: [Headers]({{< ref "netlify#headers" >}}).
 
 ### Content Security Policy
+
 💡 [Laboratory](https://addons.mozilla.org/nl/firefox/addon/laboratory-by-mozilla/) is an experimental Firefox extension that helps you generate a Content Security Policy (CSP) header for your website.
 
 ## Subresource Integrity
+
 [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) is implemented with [Hugo](https://gohugo.io/hugo-pipes/fingerprint/) on styles and scripts.

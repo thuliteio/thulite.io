@@ -18,6 +18,7 @@ yarn build
 ```
 
 ## Netlify
+
 See also: [Netlify]({{< ref "netlify" >}}).
 
 ### Netlify Drop

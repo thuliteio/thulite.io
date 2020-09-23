@@ -64,6 +64,7 @@ See also: [Archetypes]({{< ref "archetypes" >}}).
     ├── vendor/
     └── app.scss
 ```
+
 See also: [Assets]({{< ref "assets" >}})
 
 ### config
@@ -93,6 +94,7 @@ See also: [Project Configuration]({{< ref "project-configuration" >}}).
 See also the Hugo docs: [Content Organization](https://gohugo.io/content-management/organization/).
 
 ### data
+
 See the Hugo docs: [Data Templates](https://gohugo.io/templates/data-templates/).
 
 ### layouts
@@ -137,6 +139,7 @@ See the Hugo docs: [Data Templates](https://gohugo.io/templates/data-templates/)
 ├── rss.xml
 └── sitemap.xml
 ```
+
 See also: [Layouts]({{< ref "layouts" >}}).
 
 ### static

@@ -30,4 +30,3 @@ toc: true
 ```
 
 See also the Hugo docs: [Hugo Pipes](https://gohugo.io/hugo-pipes/).
-
