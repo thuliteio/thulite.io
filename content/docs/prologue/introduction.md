@@ -41,17 +41,23 @@ Make sure all dependencies have been installed:
 
 Create a new Hyas project:
 
+{{< btn-copy text="git clone git@github.com:h-enk/hyas.git my-hyas-site" >}}
+
 ```bash
 git clone git@github.com:h-enk/hyas.git my-hyas-site
 ```
 
 Install dependencies:
 
+{{< btn-copy text="yarn install" >}}
+
 ```bash
 yarn install
 ```
 
 Build development theme with live reloading and injection:
+
+{{< btn-copy text="yarn start" >}}
 
 ```bash
 yarn start

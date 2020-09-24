@@ -49,3 +49,26 @@ body.dark .toggle-light {
 body.dark .toggle-dark {
   display: none;
 }
+
+.btn-clipboard {
+  display: none;
+}
+
+@include media-breakpoint-up(md) {
+  .btn-clipboard {
+    display: block;
+    margin: 2.0625rem 0.25rem -4rem auto;
+  }
+}
+
+.copy-status::after,
+.copy-status:hover::after {
+  content: "Copy";
+  display: block;
+}
+
+.copy-status:focus::after,
+.copy-status:active::after {
+  content: "Copied";
+  display: block;
+}
