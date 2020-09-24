@@ -17,13 +17,20 @@ if (document.querySelector('#deploy-to-netlify') !== null) {
 }
 /* eslint-enable */
 
+document.addEventListener('keydown', inputFocus);
+
+function inputFocus(e) {
+  if (e.keyCode == 191 ) {
+    e.preventDefault();
+    document.getElementById('search').focus();
+  }
+}
+
 /* eslint-disable */
-/*
 docsearch({
   apiKey: '25626fae796133dc1e734c6bcaaeac3c',
   indexName: 'docsearch',
-  inputSelector: '.is-search',
+  inputSelector: '#search',
   debug: false,
 });
-*/
 /* eslint-enable */
