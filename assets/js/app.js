@@ -24,6 +24,9 @@ function inputFocus(e) {
     e.preventDefault();
     document.getElementById('search').focus();
   }
+  if (e.keyCode == 27 ) {
+    document.getElementById('search').blur();
+  }
 }
 
 /* eslint-disable */
