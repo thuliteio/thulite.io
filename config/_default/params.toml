@@ -2,18 +2,22 @@ title = "Hyas"
 titleSeparator = "-"
 titleAddition = "Modern Hugo Starter"
 description = "Hyas is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
+
 images = ["hyas.png"]
+
 twitterSite = "henkverlinde"
 twitterCreator = "henkverlinde"
 facebookAuthor = "verlinde.henk"
 facebookPublisher = "verlinde.henk"
 ogLocale = "en_US"
+
 schemaType = "Organization"
 schemaLogo = "logo-hyas.png"
 schemaTwitter = "https://twitter.com/henkverlinde"
 schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
 schemaGitHub = "https://github.com/h-enk"
 schemaSection = "blog"
+
 siteLinksSearchBox = false
 
 themeColor = "#fff"
@@ -29,7 +33,6 @@ footer = "An open source project by <a href=\"https://twitter.com/henkverlinde\"
 alert = false
 alertText = "Deliver web projects 10x faster. <a class=\"alert-link\" href=\"https://www.netlify.com/whitepaper/\" target=\"_blank\" rel=\"noopener\">Get the free enterprise paper →</a>"
 
-hyasVersion = "v1.2.6"
+hyasVersion = "v1.2.7"
 
 docsRepo = "https://github.com/h-enk/gethyas.com/"
-  
