@@ -11,6 +11,7 @@ rssLimit = 10
 # add redirects/headers
 [outputs]
 home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
+section = [ "HTML", "SITEMAP" ]
 
 # remove .{ext} from text/netlify
 [mediaTypes."text/netlify"]
@@ -30,6 +31,15 @@ mediatype = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
+
+# add output format for section sitemap.xml
+[outputFormats.SITEMAP]
+mediatype = "application/xml"
+baseName = "sitemap"
+isHTML = false
+isPlainText = true
+noUgly = true
+rel  = "sitemap"
 
 [markup]
   [markup.goldmark]
