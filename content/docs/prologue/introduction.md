@@ -18,40 +18,38 @@ toc: true
 Six reasons why you should use Hyas.
 
 ### Security aware
-
 Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/hyas.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
 
-👉 [Security]({{< ref "security" >}})
+See also: [Security]({{< ref "security" >}})
 
 ### Fast by default
-
 Get 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=8b7aec005ae7b9e128ad5c4e2f125fea) by default. Hyas removes unused css, prefetches links, and lazy loads images.
 
-👉 [Performance]({{< ref "performance" >}})
+See also: [Performance]({{< ref "performance" >}})
 
 ### SEO-ready
 
 Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.
 
-👉 [SEO]({{< ref "seo" >}})
+See also: [SEO]({{< ref "seo" >}})
 
 ### Development tools
 
 Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
 
-👉 [Development Tools]({{< ref "development-tools" >}})
+See also: [Development Tools]({{< ref "development-tools" >}})
 
 ### Bootstrap framework
 
 Build robust, flexible, and intuitive websites with Bootstrap. Or use any other front-end framework if you prefer.
 
-👉 [Bootstrap]({{< ref "bootstrap" >}})
+See also: [Bootstrap]({{< ref "bootstrap" >}})
 
 ### Netlify-ready
 
 Deploy to Netlify with sensible defaults. Easily use Netlify Functions, Netlify Redirects, and Netlify Headers.
 
-👉 [Netlify]({{< ref "netlify" >}})
+See also: [Netlify]({{< ref "netlify" >}})
 
 ## Prerequisites
 

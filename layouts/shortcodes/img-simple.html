@@ -1,0 +1,2 @@
+{{ $image := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) -}}
+<img class="img-simple img-fluid lazyload blur-up" src="{{ $image.Permalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" {{ with .Get "alt" }}alt="{{.}}"{{ end }}>
