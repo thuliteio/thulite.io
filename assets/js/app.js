@@ -31,8 +31,8 @@ function inputFocus(e) {
 
 /* eslint-disable */
 docsearch({
-  apiKey: '25626fae796133dc1e734c6bcaaeac3c',
-  indexName: 'docsearch',
+  apiKey: 'cdca78e5ea45edfe483b1090b8c4bbb8',
+  indexName: 'gethyas',
   inputSelector: '#search',
   debug: false,
 });
