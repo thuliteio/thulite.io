@@ -109,7 +109,7 @@ footer = "© 2020 Henk Verlinde - MIT License"
 
 ```toml
 alert = false
-alertText = "Deliver web projects 10x faster. <a class=\"alert-link\" href=\"https://www.netlify.com/whitepaper/\" target=\"_blank\" rel=\"noopener\">Get the free enterprise paper →</a>"
+alertText = "Deliver web projects 10x faster. <a class=\"alert-link\" href=\"https://www.netlify.com/whitepaper/\">Get the free enterprise paper →</a>"
 ```
 
 ## postcss.config.js

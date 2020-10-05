@@ -1,7 +1,7 @@
 ---
 title: "Security"
 description: "Get A+ scores on Mozilla Observatory out of the box. Easily change the default Security Headers to suit your needs."
-lead: "Get A+ scores on <a href=\"https://observatory.mozilla.org/analyze/hyas.netlify.app\" target=\"_blank\" rel=\"noopener\">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs."
+lead: "Get A+ scores on <a href=\"https://observatory.mozilla.org/analyze/hyas.netlify.app\">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs."
 date: 2020-09-17T13:48:09+02:00
 lastmod: 2020-09-17T13:48:09+02:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Performance"
 description: "Get 100 scores on Google Lighthouse by default. Hyas removes unused css, prefetches links, and lazy loads images."
-lead: "Get 100 scores on <a href=\"https://googlechrome.github.io/lighthouse/viewer/?gist=8b7aec005ae7b9e128ad5c4e2f125fea\" target=\"_blank\" rel=\"noopener\">Google Lighthouse</a> by default. Hyas removes unused css, prefetches links, and lazy loads images."
+lead: "Get 100 scores on <a href=\"https://googlechrome.github.io/lighthouse/viewer/?gist=8b7aec005ae7b9e128ad5c4e2f125fea\">Google Lighthouse</a> by default. Hyas removes unused css, prefetches links, and lazy loads images."
 date: 2020-09-17T15:37:44+02:00
 lastmod: 2020-09-17T15:37:44+02:00
 draft: false
