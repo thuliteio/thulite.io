@@ -18,11 +18,13 @@ toc: true
 Six reasons why you should use Hyas.
 
 ### Security aware
+
 Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/hyas.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
 
 See also: [Security]({{< ref "security" >}})
 
 ### Fast by default
+
 Get 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=8b7aec005ae7b9e128ad5c4e2f125fea) by default. Hyas removes unused css, prefetches links, and lazy loads images.
 
 See also: [Performance]({{< ref "performance" >}})

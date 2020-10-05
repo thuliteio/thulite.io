@@ -12,7 +12,6 @@ contributors: ["Henk Verlinde"]
 
 Hyas is inspired by [Roots](https://roots.io/) and uses [Atlas](https://github.com/indigotree/atlas) as a starting point.
 
-
 {{< img-simple src="google-lighthouse-scores-hyas.png" alt="Google Lighthouse Scores Hyas" >}}
 
 <!--
