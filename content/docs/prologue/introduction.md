@@ -96,7 +96,7 @@ yarn start
 
 Get your Hyas site in 1 min.
 
-<a class="btn btn-primary btn-sm px-3" href="https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas" role="button" target="_blank" rel="noopener">Deploy to Netlify</a>
+<a class="btn btn-primary btn-sm px-3" href="https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas" role="button">Deploy to Netlify</a>
 
 <!--
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas "Deploy to Netlify")
