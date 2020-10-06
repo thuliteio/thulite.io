@@ -23,6 +23,10 @@ body.dark a {
   color: $link-color-dark;
 }
 
+body.dark a.text-body {
+  color: $body-color-dark !important;
+}
+
 body.dark .btn-primary {
   /*
   @include button-variant($blue-300, $blue-300);
