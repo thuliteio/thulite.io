@@ -4,7 +4,8 @@ $body-bg-dark: darken($black, 5%);
 $body-overlay-dark: $black;
 $border-dark: $black;
 $body-color-dark: darken($white, 5%);
-$link-color-dark: lighten($primary, 25%);
+$link-color-dark: lighten($primary, 15%);
+$accent-color-dark: lighten($primary, 45%);
 
 $navbar-dark-brand-color:           $body-color-dark;
 $navbar-dark-brand-hover-color:     $body-color-dark;
@@ -28,10 +29,7 @@ body.dark a.text-body {
 }
 
 body.dark .btn-primary {
-  /*
-  @include button-variant($blue-300, $blue-300);
-  */
-  color: $body-color-dark;
+  @include button-variant($link-color-dark, $link-color-dark);
 }
 
 body.dark .navbar {
@@ -126,7 +124,7 @@ body.dark .form-control.is-search {
 }
 
 body.dark .form-control:focus {
-  box-shadow: 0 0 0 0.2rem rgba(142, 214, 251, 0.25);
+  box-shadow: 0 0 0 0.2rem $accent-color-dark;
 }
 
 body.dark .border-top {
@@ -145,7 +143,7 @@ body.dark .docs-navigation {
 }
 
 body.dark ::selection {
-  background: rgba(142, 214, 251, 0.25);
+  background: $accent-color-dark;
 }
 
 body.dark pre {

@@ -6,7 +6,7 @@ date: 2020-10-06T08:50:12+00:00
 lastmod: 2020-10-06T08:50:12+00:00
 draft: false
 weight: 50
-images: ["google-lighthouse-scores-hyas.png", "mozilla-observatory-scores-hyas.png"]
+images: ["say-hello-to-hyas.png", "google-lighthouse-scores-hyas.png", "mozilla-observatory-scores-hyas.png"]
 contributors: ["Henk Verlinde"]
 ---
 
@@ -44,7 +44,7 @@ Hyas used [Atlas](https://github.com/indigotree/atlas) 🙏 as a starting point.
 
 ## Do what?
 
-[Check out the docs](http://localhost:1313/docs/prologue/introduction/) or [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas) in less than a minute.
+[Check out the docs]({{< ref "introduction" >}}) or [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas) in less than a minute.
 
 ### Contribute
 
