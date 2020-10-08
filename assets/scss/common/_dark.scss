@@ -1,11 +1,14 @@
 /** Theme variables */
 
-$body-bg-dark: darken($black, 5%);
+$body-bg-dark: darken($black, 2.5%);
 $body-overlay-dark: $black;
 $border-dark: $black;
 $body-color-dark: darken($white, 5%);
-$link-color-dark: lighten($primary, 15%);
-$accent-color-dark: lighten($primary, 45%);
+
+$link-color-dark: lighten($purple, 25%);
+$button-color-dark: lighten($purple, 5%);
+$focus-color-dark: lighten($purple, 25%);
+$selection-color-dark: lighten($purple, 35%);
 
 $navbar-dark-brand-color:           $body-color-dark;
 $navbar-dark-brand-hover-color:     $body-color-dark;
@@ -29,7 +32,7 @@ body.dark a.text-body {
 }
 
 body.dark .btn-primary {
-  @include button-variant($link-color-dark, $link-color-dark);
+  @include button-variant($button-color-dark, $button-color-dark);
 }
 
 body.dark .navbar {
@@ -124,7 +127,7 @@ body.dark .form-control.is-search {
 }
 
 body.dark .form-control:focus {
-  box-shadow: 0 0 0 0.2rem $accent-color-dark;
+  box-shadow: 0 0 0 0.2rem $focus-color-dark;
 }
 
 body.dark .border-top {
@@ -143,7 +146,7 @@ body.dark .docs-navigation {
 }
 
 body.dark ::selection {
-  background: $accent-color-dark;
+  background: $selection-color-dark;
 }
 
 body.dark pre {
