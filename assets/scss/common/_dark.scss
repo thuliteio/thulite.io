@@ -6,9 +6,13 @@ $border-dark: $black;
 $body-color-dark: darken($white, 5%);
 
 $link-color-dark: lighten($purple, 25%);
+$link-color-dark: $blue-300;
 $button-color-dark: lighten($purple, 15%);
+$button-color-dark: $blue-300;
 $focus-color-dark: lighten($purple, 25%);
+$focus-color-dark: $blue-300;
 $selection-color-dark: lighten($purple, 35%);
+$selection-color-dark: $beige;
 
 $navbar-dark-brand-color:           $body-color-dark;
 $navbar-dark-brand-hover-color:     $body-color-dark;
