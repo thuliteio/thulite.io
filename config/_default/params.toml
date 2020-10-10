@@ -33,6 +33,6 @@ footer = "An open source project by <a href=\"https://twitter.com/henkverlinde\"
 alert = false
 alertText = "Deliver web projects 10x faster. <a class=\"alert-link\" href=\"https://www.netlify.com/whitepaper/\">Get the free enterprise paper →</a>"
 
-hyasVersion = "v1.2.7"
+hyasVersion = "v1.2.8"
 
 docsRepo = "https://github.com/h-enk/gethyas.com/"
