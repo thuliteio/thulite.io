@@ -15,43 +15,19 @@ toc: true
 
 ## Why Hyas?
 
-Six reasons why you should use Hyas.
+Six reasons why you should use Hyas:
 
-### Security aware
+1. __Security aware__. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/hyas.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
 
-Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/hyas.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
+2. __Fast by default__. Get 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=8b7aec005ae7b9e128ad5c4e2f125fea) by default. Hyas removes unused css, prefetches links, and lazy loads images.
 
-See also: [Security]({{< ref "security" >}})
+3. __SEO-ready__. Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.
 
-### Fast by default
+4. __Development tools__. Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
 
-Get 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=8b7aec005ae7b9e128ad5c4e2f125fea) by default. Hyas removes unused css, prefetches links, and lazy loads images.
+5. __Bootstrap framework__. Build robust, flexible, and intuitive websites with Bootstrap. Or use any other front-end framework if you prefer.
 
-See also: [Performance]({{< ref "performance" >}})
-
-### SEO-ready
-
-Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.
-
-See also: [SEO]({{< ref "seo" >}})
-
-### Development tools
-
-Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
-
-See also: [Development Tools]({{< ref "development-tools" >}})
-
-### Bootstrap framework
-
-Build robust, flexible, and intuitive websites with Bootstrap. Or use any other front-end framework if you prefer.
-
-See also: [Bootstrap]({{< ref "bootstrap" >}})
-
-### Netlify-ready
-
-Deploy to Netlify with sensible defaults. Easily use Netlify Functions, Netlify Redirects, and Netlify Headers.
-
-See also: [Netlify]({{< ref "netlify" >}})
+6. __Netlify-ready__. Deploy to Netlify with sensible defaults. Easily use Netlify Functions, Netlify Redirects, and Netlify Headers.
 
 ## Prerequisites
 
@@ -63,6 +39,37 @@ Make sure all dependencies have been installed:
 
 ## Get started
 
+Three ways to get started.
+
+### Hyas CLI
+
+Install the Hyas CLI globally:
+
+{{< btn-copy text="yarn add global @hyas/cli" >}}
+
+```bash
+yarn add global @hyas/cli
+```
+
+Create a new Hyas project in [dir]:
+
+```bash
+hyas create [dir]
+```
+
+#### npx
+Or use [npx](https://nodejs.dev/learn/the-npx-nodejs-package-runner):
+
+{{< btn-copy text="npx @hyas/cli create my-hyas-site" >}}
+
+```bash
+npx @hyas/cli create my-hyas-site
+```
+
+See also: [Hyas CLI]({{< ref "hyas-cli" >}}).
+
+### Repository clone
+
 Create a new Hyas project:
 
 {{< btn-copy text="git clone git@github.com:h-enk/hyas.git my-hyas-site" >}}
@@ -73,28 +80,18 @@ git clone git@github.com:h-enk/hyas.git my-hyas-site
 
 Install dependencies:
 
-{{< btn-copy text="yarn install" >}}
-
 ```bash
 yarn install
 ```
 
 Build development theme with live reloading and injection:
 
-{{< btn-copy text="yarn start" >}}
-
 ```bash
 yarn start
 ```
+See also: [commands]({{< ref "commands" >}}).
 
-### Other commands
-
-- `yarn lint:styles` - Check Sass for errors
-- `yarn lint:scripts` - Check JavaScript for errors
-- `yarn clean` - Delete temporary directories
-- `yarn build` - Build production theme
-
-## Quick start
+### Netlify deploy
 
 Get your Hyas site in 1 min.
 
