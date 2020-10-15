@@ -51,13 +51,14 @@ Install the Hyas CLI globally:
 yarn add global @hyas/cli
 ```
 
-Create a new Hyas project in [dir]:
+Create a new Hyas project:
 
 ```bash
 hyas create [dir]
 ```
 
 #### npx
+
 Or use [npx](https://nodejs.dev/learn/the-npx-nodejs-package-runner):
 
 {{< btn-copy text="npx @hyas/cli create my-hyas-site" >}}
@@ -84,11 +85,12 @@ Install dependencies:
 yarn install
 ```
 
-Build development theme with live reloading and injection:
+Start local development server:
 
 ```bash
 yarn start
 ```
+
 See also: [commands]({{< ref "commands" >}}).
 
 ### Netlify deploy

@@ -13,14 +13,14 @@ weight: 020
 toc: true
 ---
 
-```
+```bash
 Usage: hyas <command> [options]
 
 Commands:
-  build         Build production theme
+  build         Build production website
   clean         Delete temporary directories
-  create [dir]  Create a new Hyas project in [dir]
-  start         Start a local development server
+  create [dir]  Create a new Hyas project
+  start         Start local development server
 
 Options:
   -h, --help     Show help                                             [boolean]
@@ -46,6 +46,7 @@ npm install -g @hyas/cli
 ```
 
 ## npx
+
 Or use [npx](https://nodejs.dev/learn/the-npx-nodejs-package-runner):
 
 ```bash
@@ -54,30 +55,32 @@ npx @hyas/cli <command> [options]
 
 ## Commands
 
-
 ### Create
 
-Create a new Hyas project in [dir]:
+Create a new Hyas project:
 
 ```bash
 hyas create [dir]
 ```
 
 ### Start
-Start a local development server:
+
+Start local development server:
 
 ```bash
 hyas start
 ```
 
 ### Build
-Build production theme:
+
+Build production website:
 
 ```bash
 hyas build
 ```
 
 ### Clean
+
 Delete temporary directories:
 
 ```bash
@@ -95,9 +98,10 @@ Show help.
 Show version number.
 
 ## Update
+
 You'll get notified when an update is available:
 
 ```bash
-Update available: 0.3.1
+Update available: 0.3.2
 Run npm install -g @hyas/cli to update
 ```

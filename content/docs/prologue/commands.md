@@ -13,10 +13,80 @@ weight: 030
 toc: true
 ---
 
+## start
 
-#### Other commands
+Start local development server:
 
-- `yarn lint:styles` - Check Sass for errors
-- `yarn lint:scripts` - Check JavaScript for errors
-- `yarn clean` - Delete temporary directories
-- `yarn build` - Build production theme
+```bash
+yarn start
+```
+
+## build
+
+Build production website:
+
+```bash
+yarn build
+```
+
+### :functions
+
+```bash
+yarn build:functions
+```
+
+### :preview
+
+```bash
+yarn build:preview
+```
+
+## server
+
+Start local development server:
+
+```bash
+yarn server
+```
+
+## clean
+
+Delete temporary directories:
+
+```bash
+yarn clean
+```
+
+## lint
+
+Check scripts, styles, and markdown for errors:
+
+```bash
+yarn lint
+```
+
+### :scripts
+
+```bash
+yarn lint:scripts [--fix]
+```
+
+### :styles
+
+```bash
+yarn lint:styles [--fix]
+```
+
+### :markdown
+
+```bash
+yarn lint:markdown [--fix]
+```
+
+## test
+
+Check scripts, styles, and markdown for errors:
+
+```bash
+yarn test
+```
