@@ -22,7 +22,6 @@ Hyas used [Atlas](https://github.com/indigotree/atlas) 🙏 as a starting point.
 
 Visit [Hugo Discourse](https://discourse.gohugo.io/) and use the search. If that does not help, start a new topic and ask your question.
 
-
 ## Keyboard shortcuts for search?
 
 - focus: `/`
