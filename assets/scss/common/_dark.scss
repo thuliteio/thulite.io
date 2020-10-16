@@ -1,21 +1,17 @@
 /** Theme variables */
 
-$body-bg-dark: darken($black, 2.5%);
-$body-overlay-dark: $black;
-$border-dark: $black;
-$body-color-dark: darken($white, 5%);
+// Source: https://material.io/design/color/dark-theme.html
 
-/*
-$link-color-dark: $blue-300;
-$button-color-dark: $blue-300;
-$focus-color-dark: $blue-300;
-$selection-color-dark: $beige;
-*/
+$body-bg-dark: #292929;
+$body-overlay-dark: darken($body-bg-dark, 2.5%);
+$border-dark: darken($body-bg-dark, 2.5%);
+$body-color-dark: #d8d8d8;
+$dots-dark: darken($body-color-dark, 50%);
 
-$link-color-dark: lighten($purple, 25%);
-$button-color-dark: lighten($purple, 5%);
-$focus-color-dark: lighten($purple, 25%);
-$selection-color-dark: lighten($purple, 35%);
+$link-color-dark: #bb86fc;
+$button-color-dark: $link-color-dark;
+$focus-color-dark: lighten($link-color-dark, 2.5%);
+$selection-color-dark: lighten($link-color-dark, 2.5%);
 
 $navbar-dark-brand-color:           $body-color-dark;
 $navbar-dark-brand-hover-color:     $body-color-dark;
@@ -40,6 +36,7 @@ body.dark a.text-body {
 
 body.dark .btn-primary {
   @include button-variant($button-color-dark, $button-color-dark);
+  color: $body-bg-dark !important;
 }
 
 body.dark .navbar {
@@ -167,7 +164,7 @@ body.dark code {
 }
 
 body.dark blockquote {
-  border-left: 3px solid lighten($black, 30%);
+  border-left: 3px solid $border-dark;
 }
 
 body.dark .footer {
@@ -254,5 +251,9 @@ body.dark .bg-light {
 }
 
 body.dark .bg-dots {
-  background-image: radial-gradient($gray-700 15%, transparent 15%);
+  background-image: radial-gradient($dots-dark 15%, transparent 15%);
+}
+
+body.dark .text-muted {
+  color: darken($body-color-dark, 7.5%) !important;
 }
