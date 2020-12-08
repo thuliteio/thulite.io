@@ -6,6 +6,7 @@
     "defaults"
   ],
   "scripts": {
+    "init": "rimraf .git && git init -b main",
     "start": "hugo server --disableFastRender",
     "build": "hugo --gc --minify && npm run build:functions",
     "build:functions": "netlify-lambda build assets/lambda",
@@ -19,15 +20,15 @@
     "test": "npm run -s lint"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11",
-    "@babel/core": "^7.11",
+    "@babel/cli": "^7.12",
+    "@babel/core": "^7.12",
     "@babel/preset-env": "^7.12",
     "@fullhuman/postcss-purgecss": "^3.0",
     "autoprefixer": "^10.0",
     "bootstrap": "^4.5",
     "clipboard": "^2.0",
     "docsearch.js": "^2.6",
-    "eslint": "^7.10",
+    "eslint": "^7.15",
     "instant.page": "^5.1",
     "lazysizes": "^5.2",
     "markdownlint-cli": "^0.25",
@@ -36,6 +37,7 @@
     "postcss-cli": "^8.3",
     "purgecss-whitelister": "^2.4",
     "rimraf": "^3.0",
+    "standard-version": "^9.0",
     "stylelint": "^13.7",
     "stylelint-config-standard": "^20.0"
   }
