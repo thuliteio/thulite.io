@@ -28,10 +28,12 @@ landscapePhotoWidths = [1000, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 
-footer = "An open source project by <a href=\"https://twitter.com/henkverlinde\">@HenkVerlinde</a>"
+# Footer
+footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://gethyas.com/\">Hyas</a>"
 
-alert = false
-alertText = "Deliver web projects 10x faster. <a class=\"alert-link\" href=\"https://www.netlify.com/whitepaper/\">Get the free enterprise paper →</a>"
+# Alert
+alert = true
+alertText = "Like Hyas? <a class=\"alert-link\" href=\"https://github.com/h-enk/hyas/stargazers\">Star on GitHub</a>!</a>"
 
 hyasVersion = "v1.2.8"
 

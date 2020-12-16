@@ -5,26 +5,32 @@
   url = "/docs/prologue/"
 
 [[docs]]
-  name = "Basic Hyas"
+  name = "Recipes"
   weight = 20
-  identifier = "basic-hyas"
-  url = "/docs/basic-hyas/"
+  identifier = "recipes"
+  url = "/docs/recipes/"
 
 [[docs]]
-  name = "Core Hyas"
+  name = "Reference Guides"
   weight = 30
-  identifier = "core-hyas"
-  url = "/docs/core-hyas/"
+  identifier = "reference-guides"
+  url = "/docs/reference-guides/"
 
 [[docs]]
-  name = "Guides"
+  name = "Extensions"
   weight = 40
-  identifier = "guides"
-  url = "/docs/guides/"
+  identifier = "extensions"
+  url = "/docs/extensions/"
+
+[[docs]]
+  name = "Contributing"
+  weight = 50
+  identifier = "contributing"
+  url = "/docs/contributing/"
 
 [[docs]]
   name = "Help"
-  weight = 50
+  weight = 60
   identifier = "help"
   url = "/docs/help/"
 
@@ -34,9 +40,24 @@
   weight = 10
 
 [[main]]
+  name = "Themes"
+  url = "/themes/doks/"
+  weight = 20
+
+[[main]]
+  name = "Showcase"
+  url = "/showcase/validate/"
+  weight = 30
+
+[[main]]
   name = "Blog"
   url = "/blog/"
-  weight = 20
+  weight = 40
+
+# [[main]]
+#   name = "Community"
+#   url = "https://github.com/h-enk/hyas/discussions"
+#   weight = 50
 
 [[social]]
   name = "Twitter"
@@ -50,3 +71,25 @@
   url = "https://github.com/h-enk/hyas"
   post = "v0.1.0"
   weight = 20
+
+[[footer]]
+  name = "Code of Conduct"
+  url = "/docs/contributing/code-of-conduct/"
+  weight = 10
+
+[[footer]]
+  name = "Privacy"
+  url = "/privacy-policy/"
+  weight = 20
+
+[[showcase]]
+  name = "Browse"
+  weight = 10
+  identifier = "browse"
+  url = "/showcase/"
+
+[[themes]]
+  name = "Browse"
+  weight = 10
+  identifier = "browse"
+  url = "/themes/"

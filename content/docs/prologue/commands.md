@@ -1,92 +1,106 @@
 ---
 title: "Commands"
-description: "Repository commands."
-lead: "Repository commands."
+description: "Hyas comes with commands for common tasks."
+lead: "Hyas comes with commands for common tasks."
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "prologue"
 weight: 030
 toc: true
 ---
 
+{{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." >}}
+
 ## start
 
 Start local development server:
 
-```bash
-yarn start
-```
-
-## build
-
-Build production website:
+{{< btn-copy text="npm run start" >}}
 
 ```bash
-yarn build
-```
-
-### :functions
-
-```bash
-yarn build:functions
-```
-
-### :preview
-
-```bash
-yarn build:preview
-```
-
-## server
-
-Start local development server:
-
-```bash
-yarn server
-```
-
-## clean
-
-Delete temporary directories:
-
-```bash
-yarn clean
+npm run start
 ```
 
 ## lint
 
 Check scripts, styles, and markdown for errors:
 
+{{< btn-copy text="npm run lint" >}}
+
 ```bash
-yarn lint
+npm run lint
 ```
 
-### :scripts
+### scripts
+
+Check scripts for errors:
+
+{{< btn-copy text="npm run lint:scripts" >}}
 
 ```bash
-yarn lint:scripts [--fix]
+npm run lint:scripts [-- --fix]
 ```
 
-### :styles
+### styles
+
+Check styles for errors:
+
+{{< btn-copy text="npm run lint:styles" >}}
 
 ```bash
-yarn lint:styles [--fix]
+npm run lint:styles [-- --fix]
 ```
 
-### :markdown
+### markdown
+
+Check markdown for errors:
+
+{{< btn-copy text="npm run lint:markdown" >}}
 
 ```bash
-yarn lint:markdown [--fix]
+npm run lint:markdown [-- --fix]
 ```
 
-## test
+## clean
 
-Check scripts, styles, and markdown for errors:
+Delete temporary directories:
+
+{{< btn-copy text="npm run clean" >}}
 
 ```bash
-yarn test
+npm run clean
+```
+
+## build
+
+Build production website:
+
+{{< btn-copy text="npm run build" >}}
+
+```bash
+npm run build
+```
+
+### functions
+
+Build Lambda functions:
+
+{{< btn-copy text="npm run build:functions" >}}
+
+```bash
+npm run build:functions
+```
+
+### preview
+
+Build production website including draft and future content:
+
+{{< btn-copy text="npm run build:preview" >}}
+
+```bash
+npm run build:preview
 ```

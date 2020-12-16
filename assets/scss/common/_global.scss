@@ -2,7 +2,9 @@
 .blog .content,
 .page .content,
 .error404 .content,
-.docs.list .content {
+.docs.list .content,
+.showcase.list .content,
+.themes.list .content {
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
@@ -42,6 +44,11 @@ h6,
   .h6 {
     margin-bottom: 1.125rem;
   }
+}
+
+.home h1 {
+  /* font-size: calc(1.375rem + 1.5vw); */
+  font-size: calc(1.875rem + 1.5vw);
 }
 
 .section {
@@ -179,6 +186,10 @@ body {
   height: 9rem;
   margin-top: -10rem;
   z-index: -1;
+}
+
+.bg-dots-md {
+  margin-top: -11rem;
 }
 
 .bg-dots-lg {

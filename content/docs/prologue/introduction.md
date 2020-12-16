@@ -6,103 +6,53 @@ date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "prologue"
 weight: 010
 toc: true
 ---
 
-## Why Hyas?
-
-Six reasons why you should use Hyas:
-
-1. __Security aware__. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/hyas.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
-
-2. __Fast by default__. Get 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=8b7aec005ae7b9e128ad5c4e2f125fea) by default. Hyas removes unused css, prefetches links, and lazy loads images.
-
-3. __SEO-ready__. Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.
-
-4. __Development tools__. Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
-
-5. __Bootstrap framework__. Build robust, flexible, and intuitive websites with Bootstrap. Or use any other front-end framework if you prefer.
-
-6. __Netlify-ready__. Deploy to Netlify with sensible defaults. Easily use Netlify Functions, Netlify Redirects, and Netlify Headers.
-
-## Prerequisites
-
-Make sure all dependencies have been installed:
-
-- [Hugo](https://gohugo.io/) >= 0.75.1/extended
-- [Node.js](https://nodejs.org/) >= 14.12.0
-- [Yarn](https://yarnpkg.com/) >= 1.22.5 (recommended)
-
 ## Get started
 
-Three ways to get started.
+There are two main ways to get started with Hyas:
 
-### Hyas CLI
+### Themes
 
-Install the Hyas CLI globally:
+{{< alert icon="👉" text="Themes are intended for novice to intermediate users." >}}
 
-{{< btn-copy text="yarn add global @hyas/cli" >}}
+Get started with a theme build on Hyas. [Themes →]({{< ref "doks" >}})
 
-```bash
-yarn add global @hyas/cli
-```
+### Quick Start
 
-Create a new Hyas project:
+{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." >}}
 
-```bash
-hyas create [dir]
-```
+One page summary of how to start a new Hyas project. [Quick Start →]({{< ref "quick-start" >}})
 
-#### npx
+## Go further
 
-Or use [npx](https://nodejs.dev/learn/the-npx-nodejs-package-runner):
+Recipes, Reference Guides, Extensions, and Showcase.
 
-{{< btn-copy text="npx @hyas/cli create my-hyas-site" >}}
+### Recipes
 
-```bash
-npx @hyas/cli create my-hyas-site
-```
+Get instructions on how to accomplish common tasks with Hyas. [Recipes →]({{< ref "project-configuration" >}})
 
-See also: [Hyas CLI]({{< ref "hyas-cli" >}}).
+### Reference Guides
 
-### Repository clone
+Learn how to customize Hyas to fully make it your own. [Reference Guides →]({{< ref "security" >}})
 
-Create a new Hyas project:
+### Extensions
 
-{{< btn-copy text="git clone git@github.com:h-enk/hyas.git my-hyas-site" >}}
+Get instructions on how to add even more to Hyas. [Extensions →]({{< ref "add-google-fonts" >}})
 
-```bash
-git clone git@github.com:h-enk/hyas.git my-hyas-site
-```
+### Showcase
 
-Install dependencies:
+See what others have build with Hyas. [Showcase →]({{< ref "validate" >}})
 
-```bash
-yarn install
-```
+## Contributing
 
-Start local development server:
+Find out how to contribute to Hyas. [Contributing →]({{< ref "how-to-contribute" >}})
 
-```bash
-yarn start
-```
+## Help
 
-See also: [commands]({{< ref "commands" >}}).
-
-### Netlify deploy
-
-Get your Hyas site in 1 min.
-
-<a class="btn btn-primary btn-sm px-3" href="https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas" role="button">Deploy to Netlify</a>
-
-<!--
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas "Deploy to Netlify")
--->
-
-## Example site
-
-👉 [hyas.netlify.app](https://hyas.netlify.app/)
+Get help on Hyas. [Help →]({{< ref "how-to-update" >}})
