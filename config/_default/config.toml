@@ -88,3 +88,6 @@ rel  = "sitemap"
   [[module.mounts]]
     source = "node_modules/clipboard"
     target = "assets/js/vendor/clipboard"
+  [[module.mounts]]
+    source = "node_modules/bootstrap"
+    target = "assets/js/vendor/bootstrap"

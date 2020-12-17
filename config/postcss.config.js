@@ -8,13 +8,13 @@ module.exports = {
     purgecss({
       content: [
         './layouts/**/*.html',
-        './content/**/*.md',      
+        './content/**/*.md',
       ],
       safelist: [
         'lazyloaded',
         ...whitelister([
           './assets/scss/components/_code.scss',
-          './assets/scss/common/_dark.scss',
+          // './assets/scss/common/_dark.scss',
         ]),
       ],
     }),

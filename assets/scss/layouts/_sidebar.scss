@@ -37,8 +37,12 @@
 
 .docs-links h3,
 .page-links h3 {
+  /*
   text-transform: uppercase;
-  font-size: $font-size-base;
+  */
+  font-size: $font-size-md;
+  font-family: $font-family-monospace;
+  color: $gray-header;
   margin: 1.25rem 0 0.5rem 0;
   padding: 1.5rem 0 0 0;
 }
@@ -78,6 +82,10 @@ a.docs-link {
   border-top: 1px dashed $gray-200;
 }
 
+.page-links ul ul li:not(:first-child) {
+  border-top: 0;
+}
+
 .page-links a {
   color: $body-color;
   display: block;
@@ -95,7 +103,8 @@ a.docs-link {
 .docs-links h3.sidebar-link,
 .page-links h3.sidebar-link {
   text-transform: none;
-  font-size: $font-size-md;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
   font-weight: normal;
 }
 

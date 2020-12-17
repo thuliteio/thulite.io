@@ -10,7 +10,7 @@ menu:
   docs:
     parent: "extensions"
 weight: 440
-toc: false
+toc: true
 ---
 
 ## Resources

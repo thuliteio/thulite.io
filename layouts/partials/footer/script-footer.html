@@ -1,6 +1,7 @@
 {{ $docsearch := resources.Get "js/vendor/docsearch.js/dist/cdn/docsearch.min.js" -}}
 {{ $lazysizes := resources.Get "js/vendor/lazysizes/lazysizes.min.js" -}}
 {{ $clipboard := resources.Get "js/vendor/clipboard/dist/clipboard.min.js" -}}
+{{ $bootstrap := resources.Get "js/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" -}}
 {{ if eq (hugo.Environment) "development" -}}
   <script src="{{ $docsearch.Permalink }} " defer></script>
   {{ $app := resources.Get "js/app.js" -}}
