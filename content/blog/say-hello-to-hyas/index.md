@@ -6,7 +6,7 @@ date: 2020-10-06T08:50:12+00:00
 lastmod: 2020-10-06T08:50:12+00:00
 draft: false
 weight: 50
-images: ["say-hello-to-hyas.png", "google-lighthouse-scores-hyas.png", "mozilla-observatory-scores-hyas.png"]
+images: ["say-hello-to-hyas.png"]
 contributors: ["Henk Verlinde"]
 ---
 
@@ -16,7 +16,7 @@ contributors: ["Henk Verlinde"]
 
 ## Why
 
-Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don't want to start from scratch. That's why I created Hyas.
+Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don't want to start from scratch. That's why I created Hyas 💚
 
 ## How
 
@@ -43,7 +43,7 @@ The Hyas goodness:
 There are two main ways to get started with Hyas:
 
 1. [Themes]({{< ref "doks" >}}) — get started with a theme build on Hyas.
-2. [Quick Start]({{< ref "quick-start" >}}) — one page summary of how to start a new Hyas project.
+2. [Quick Start]({{< ref "quick-start" >}}) — one pager to start a new Hyas project.
 
 ## Go further
 
