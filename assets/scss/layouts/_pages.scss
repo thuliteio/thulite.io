@@ -51,6 +51,12 @@ p.meta {
   color: $gray-dark;
 }
 
+@include media-breakpoint-down(sm) {
+  p.meta {
+    font-size: $font-size-base * 0.9375;
+  }
+}
+
 p.meta a {
   color: $gray-dark;
 }

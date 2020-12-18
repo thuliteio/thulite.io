@@ -28,7 +28,7 @@ Create a new site, change directories, install npm packages, and start developme
 
 ### Create a new site
 
-{{< btn-copy text="git clone https://github.com/h-enk/Hyashya.git my-hyas-site" >}}
+{{< btn-copy text="git clone https://github.com/h-enk/hyas.git my-hyas-site" >}}
 
 ```bash
 git clone https://github.com/h-enk/hyas.git my-hyas-site
