@@ -172,6 +172,15 @@ body {
   }
 }
 
+.navbar a:hover,
+.navbar a:focus,
+a.btn:hover,
+a.btn:focus,
+.footer a:hover,
+.footer a:focus {
+  text-decoration: none;
+}
+
 #TableOfContents ul {
   padding-left: 0;
   list-style: none;

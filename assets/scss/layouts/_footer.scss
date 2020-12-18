@@ -2,6 +2,11 @@
   border-top: 1px solid $gray-200;
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
+  color: $gray-darker;
+}
+
+.home .footer {
+  border-top: 0;
 }
 
 .footer ul {
@@ -20,5 +25,10 @@
 }
 
 .footer a {
-  color: $gray-link;
+  color: $gray-darker;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: $primary;
 }

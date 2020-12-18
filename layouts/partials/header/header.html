@@ -1,58 +1,3 @@
-<!-- <div class="header-bar fixed-top"></div> -->
-
-
-
-<!--
-
-  <header class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-
-  <nav class="container flex-wrap flex-md-nowrap" aria-label="Main navigation">
-    <a class="navbar-brand mr-auto" href="{{ "/" | absURL }}">{{ .Site.Params.Title }}</a>
-    <ul class="navbar-nav social-nav flex-row flex-wrap ms-md-auto">
-      {{ range .Site.Menus.social -}}
-        <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link" href="{{ .URL | absURL }}">{{ .Pre | safeHTML }}<span class="ml-2 visually-hidden">{{ .Name | safeHTML }}</span></a>
-        </li>
-      {{ end -}}
-    </ul>
-
-    <input class="menu-btn" type="checkbox" id="menu-btn">
-    <label class="menu-icon d-md-none" for="menu-btn"><span class="navicon"></span></label>
-
-    <div class="collapse navbar-collapse" id="bdNavbar">
-
-
-      <ul class="navbar-nav main-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
-        {{- $current := . -}}
-        {{ range .Site.Menus.main -}}
-          {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
-          {{- $active = or $active (eq .Name $current.Title) -}}
-          {{- $active = or $active (and (eq .Name "Docs") (eq $current.Section "docs")) -}}
-          {{- $active = or $active (and (eq .Name "Guides") (eq $current.Section "guides")) -}}
-          {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
-          <li class="nav-item{{ if $active }} active{{ end }} col-8 col-md-auto border">
-            <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
-          </li>
-        {{ end -}}
-      </ul>
-
-
-      <form class="d-flex pt-2 py-md-0 px-4">
-        <input type="search" class="form-control" id="search-input" placeholder="Search docs..." aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="5.0">
-      </form>
-
-
-    </div>
-
-
-  </nav>
-</header>
-
--->
-
-
-
-
 <header class="navbar fixed-top navbar-expand-md navbar-light">
   <div class="container">
     <input class="menu-btn order-0" type="checkbox" id="menu-btn">
@@ -63,8 +8,7 @@
       <span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
       <span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
     </button>
-  -->
-
+    -->
     <ul class="navbar-nav social-nav order-3 order-md-5">
       {{ range .Site.Menus.social -}}
         <li class="nav-item">
@@ -72,11 +16,7 @@
         </li>
       {{ end -}}
     </ul>
-
-
     <div class="collapse navbar-collapse order-4 order-md-1">
-
-
       <ul class="navbar-nav main-nav me-auto order-5 order-md-2">
         {{- $current := . -}}
         {{ range .Site.Menus.main -}}
@@ -91,7 +31,6 @@
           </li>
         {{ end -}}
       </ul>
-
       <div class="break order-6 d-md-none"></div>
       <form class="navbar-form flex-grow-1 order-7 order-md-3">
         <input id="search" class="form-control is-search" type="search" placeholder="Search docs..." aria-label="Search {{ .Site.Params.Title }} docs...">
@@ -99,6 +38,3 @@
     </div>
   </div>
 </header>
-
-
-

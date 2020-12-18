@@ -23,14 +23,14 @@ $green:   #198754;
 $teal:    #20c997;
 $cyan:    #0dcaf0;
 
-$blue:       #0366d6;
-$white:      #fff;
-$black:      #333;
-$gray-link:  #586069;
-$gray-header:#6a737d;
-$gray:       #dfe2e5;
-$gray-light: #fafbfc;
-$blue-dark:  #038;
+$blue:        #0366d6;
+$white:       #fff;
+$black:       #333;
+$gray-darker: #586069;
+$gray-dark:   #6a737d;
+$gray:        #dfe2e5;
+$gray-light:  #fafbfc;
+$blue-dark:   #038;
 
 $primary:       $blue;
 $secondary:     $gray-600;
@@ -209,8 +209,8 @@ $dropdown-config: (
   font-size: normal,
   header-color: $black,
   title-color: $black,
-  subtitle-color: $gray-600,
-  text-color: $gray-600,
+  subtitle-color: $gray-darker,
+  text-color: $gray-darker,
   highlight-color: $blue,
   highlight-opacity: 0.1,
   highlight-type: underline

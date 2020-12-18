@@ -14,10 +14,12 @@
 
 .showcase-meta {
   margin-top: 2rem;
+  font-family: $font-family-monospace;
+  color: $gray-darker;
 }
 
 .showcase-meta a {
-  color: $body-color;
+  color: $gray-darker;
 }
 
 h1:hover a,
@@ -26,11 +28,6 @@ h3:hover a,
 h4:hover a {
   visibility: visible;
   text-decoration: none;
-}
-
-.showcase-meta a:hover,
-.showcase-meta a:focus {
-  color: $primary;
 }
 
 .card-list {
@@ -50,4 +47,20 @@ h4:hover a {
 p.meta {
   margin-top: 0.5rem;
   font-size: $font-size-base;
+  font-family: $font-family-monospace;
+  color: $gray-dark;
+}
+
+p.meta a {
+  color: $gray-dark;
+}
+
+.showcase-meta a:hover,
+.showcase-meta a:focus {
+  color: $primary;
+}
+
+p.meta a:hover,
+p.meta a:focus {
+  color: $primary;
 }

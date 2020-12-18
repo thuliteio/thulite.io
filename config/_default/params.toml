@@ -32,7 +32,7 @@ lqipWidth = "20x"
 footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
 
 # Alert
-alert = true
+alert = false
 alertText = "Like Hyas? <a class=\"alert-link\" href=\"https://github.com/h-enk/hyas/stargazers\">Star on GitHub</a>!</a>"
 
 hyasVersion = "v1.2.8"

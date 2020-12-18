@@ -12,6 +12,7 @@
 
 .navbar-brand {
   font-weight: $headings-font-weight;
+  font-family: $font-family-monospace;
 }
 
 .navbar-light .navbar-brand,
@@ -44,13 +45,11 @@
   }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
   .nav-item:first-child {
     margin-left: 0;
   }
-}
 
-@include media-breakpoint-down(md) {
   .navbar .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -169,14 +168,24 @@
     width: auto !important;
   }
 
+  .algolia-autocomplete .algolia-docsearch-suggestion .algolia-docsearch-suggestion--subcategory-column {
+    font-weight: normal;
+  }
+
   .algolia-autocomplete .algolia-docsearch-suggestion .algolia-docsearch-suggestion--subcategory-column::after {
-    content: "|";
+    content: "/";
     margin-right: 0.25rem;
   }
 }
 
+.algolia-autocomplete .algolia-docsearch-suggestion--category-header {
+  font-family: $font-family-monospace;
+  color: $gray-darker;
+}
+
 .algolia-autocomplete .algolia-docsearch-suggestion--title {
   margin-bottom: 0;
+  font-weight: normal;
 }
 
 .algolia-autocomplete .algolia-docsearch-suggestion--highlight {
@@ -265,22 +274,3 @@
 .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::after {
   top: 0;
 }
-
-// https://bootstrap-menu.com/detail-basic-hover.html
-
-/*
-@media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu {
-    display: none;
-  }
-	.navbar .nav-item:hover .nav-link {
-    color: inherit;
-  }
-	.navbar .nav-item:hover .dropdown-menu {
-    display: block;
-  }
-	.navbar .nav-item .dropdown-menu {
-    margin-top: 0;
-  }
-}
-*/
