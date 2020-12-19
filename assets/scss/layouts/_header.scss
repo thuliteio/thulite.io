@@ -64,15 +64,17 @@
 .navbar {
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid $gray-200;
-
-  /*
   margin-top: 4px;
-  */
 }
 
 .header-bar {
   border-top: 4px solid;
+
+  /*
   border-image-source: linear-gradient(90deg, $primary, #8ed6fb 50%, #d32e9d);
+  */
+  border-image-source: linear-gradient(-70deg, #9867f0, #ed4e50);
+  border-image-source: linear-gradient(270.97deg, #ffe580 -21.36%, #ff7571 -2.45%, #ea5dad 26.84%, #c2a0fd 64.15%, #3bf0e4 108.29%, #b2f4b6 159.03%);
   border-image-slice: 1;
 }
 
