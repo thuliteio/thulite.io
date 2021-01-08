@@ -56,6 +56,7 @@ Create a new Hyas project:
 ```bash
 hyas create [dir] [theme]
 ```
+
 | Option | Description |
 | - | - |
 | `[dir]` | directory to create the project in (optional, lowercase) |
