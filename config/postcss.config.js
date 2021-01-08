@@ -12,6 +12,7 @@ module.exports = {
       ],
       safelist: [
         'lazyloaded',
+        'table',
         ...whitelister([
           './assets/scss/components/_code.scss',
           // './assets/scss/common/_dark.scss',
