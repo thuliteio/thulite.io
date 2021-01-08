@@ -242,3 +242,8 @@ h2.monospace,
 p.monospace {
   font-family: $font-family-code;
 }
+
+table {
+  @extend .table;
+  font-size: 1rem;
+}
