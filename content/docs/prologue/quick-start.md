@@ -18,6 +18,7 @@ toc: true
 {{< alert icon="👉" text="Hyas uses Node Package Manager (npm) as a build tool. <a href=\"/blog/\">Read more →</a>" >}}
 
 Make sure [Node.js](https://nodejs.org/) is installed:
+
 - Long Term Support (LTS) release, or
 - Current release
 
