@@ -13,14 +13,13 @@ weight: 020
 toc: true
 ---
 
-## Requirements
+## Requirement
 
-{{< alert icon="👉" text="Node.js is needed to install npm packages and run commands." >}}
+{{< alert icon="👉" text="Hyas uses Node Package Manager (npm) as a build tool. <a href=\"/blog/\">Read more →</a>" >}}
 
-Make sure all dependencies have been installed:
-
-- [Hugo](https://gohugo.io/getting-started/installing/) >= 0.75.0/extended
-- [Node.js](https://nodejs.org/) >= 14.15.0
+Make sure [Node.js](https://nodejs.org/) is installed:
+- Long Term Support (LTS) release, or
+- Current release
 
 ## Start a new Hyas project
 
