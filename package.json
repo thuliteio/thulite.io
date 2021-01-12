@@ -10,7 +10,10 @@
   ],
   "scripts": {
     "init": "rimraf .git && git init -b main",
+    "create": "hugo new",
+    "prestart": "npm run clean",
     "start": "hugo server --disableFastRender",
+    "prebuild": "npm run clean",
     "build": "hugo --gc --minify && npm run build:functions",
     "build:functions": "netlify-lambda build assets/lambda",
     "build:preview": "npm run build -D -F",
@@ -20,7 +23,9 @@
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:markdown": "markdownlint *.md content/**/*.md",
     "release": "standard-version",
-    "test": "npm run -s lint"
+    "server": "hugo server",
+    "test": "npm run -s lint",
+    "env": "env"
   },
   "devDependencies": {
     "@babel/cli": "^7.12",
