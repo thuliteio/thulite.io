@@ -13,14 +13,9 @@ weight: 020
 toc: true
 ---
 
-## Requirement
+## Requirements
 
-{{< alert icon="👉" text="Hyas uses Node Package Manager (npm) as a build tool. <a href=\"/blog/\">Read more →</a>" >}}
-
-Make sure [Node.js](https://nodejs.org/) is installed:
-
-- Long Term Support (LTS) release, or
-- Current release
+Hyas uses npm for dependency management and customized build scripts. Installing npm is pretty simple. Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform. I recommend installing the current release.
 
 ## Start a new Hyas project
 
