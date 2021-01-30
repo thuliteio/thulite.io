@@ -49,6 +49,14 @@ npx @hyas/cli <command> [options]
 
 ## Commands
 
+### Check
+
+Check local environment:
+
+```bash
+hyas check
+```
+
 ### Create
 
 Create a new Hyas project:
