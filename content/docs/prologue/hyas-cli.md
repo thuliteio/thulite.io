@@ -1,7 +1,7 @@
 ---
 title: "Hyas CLI"
-description: "Hyas command line tool."
-lead: "Hyas command line tool."
+description: "Work seamlessly with Hyas from the command line."
+lead: "Work seamlessly with Hyas from the command line."
 date: 2020-09-22T08:38:48+02:00
 lastmod: 2020-09-22T08:38:48+02:00
 draft: false
@@ -14,19 +14,24 @@ toc: true
 ---
 
 ```bash
+Work seamlessly with Hyas from the command line.
+
 Usage: hyas <command> [options]
 
 Commands:
-  build                 Build production website
-  clean                 Delete temporary directories
-  create [dir] [theme]  Create a new Hyas project
-  start                 Start local development server
+  create [dir]  Create a new Hyas project
+  start         Start local development server
+  build         Build production website
+  clean         Delete temporary directories
+  check         Check local environment
 
 Options:
-  -h, --help     Show help                                             [boolean]
-  -v, --version  Show version number                                   [boolean]
+  -h, --help     Show help for command                                 [boolean]
+  -v, --version  Show @hyas/cli version                                [boolean]
 
-Run hyas <command> --help for detailed usage of given command.
+Learn more:
+  Use 'hyas <command> --help' for more information about a command.
+  Read the manual at https://cli.gethyas.com
 ```
 
 ## Installation
@@ -49,34 +54,30 @@ npx @hyas/cli <command> [options]
 
 ## Commands
 
-### Check
-
-Check local environment:
-
-```bash
-hyas check
-```
-
 ### Create
 
 Create a new Hyas project:
 
 ```bash
-hyas create [dir] [theme]
+hyas create [dir]
 ```
 
-| Option | Description |
+| Options | Description |
 | - | - |
-| `[dir]` | directory to create the project in (optional, lowercase) |
-| `[theme]` | theme to use (optional, lowercase) |
+| `[dir]` | Directory to create the project in |
+| `[-t, --theme]` | Use a Hyas theme, e.g. `--theme=doks` |
+| `[-s, --starter]` | Use the starter theme, i.s.o. the child theme |
 
 #### Examples
 
 | Command | Description |
 | - | - |
-| `hyas create` | create Hyas project in `my-hyas-site` (default) |
-| `hyas create new-hyas-site` | create Hyas project in `new-hyas-site` |
-| `hyas create my-doks-site doks` | create Doks project in `my-doks-site`|
+| `hyas create` | Create Hyas project in `my-hyas-site` using the child theme |
+| `hyas create --starter` | Create Hyas project in `my-hyas-site` using the starter theme |
+| `hyas create new-site` | Create Hyas project in `new-site` using the child theme |
+| `hyas create new-site --starter` | Create Hyas project in `new-site` using the starter theme |
+| `hyas create new-site --theme=doks` | Create Doks project in `new-site` using the child theme |
+| `hyas create new-site --theme=doks --starter` | Create Doks project in `new-site` using the starter theme |
 
 ### Start
 
@@ -102,21 +103,33 @@ Delete temporary directories:
 hyas clean
 ```
 
+### Check
+
+Check local environment:
+
+```bash
+hyas check
+```
+
 ## Options
 
 ### -h, --help
 
-Show help.
+Show help for command.
 
 ### -v, --version
 
-Show version number.
+Show @hyas/cli version.
 
 ## Update
 
 You'll get notified when an update is available:
 
 ```bash
-Update available: 0.3.6
-Run npm install -g @hyas/cli to update
+   ╭──────────────────────────────────────╮
+   │                                      │
+   │   Update available 0.3.6 → 0.3.7     │
+   │   Run npm i -g @hyas/cli to update   │
+   │                                      │
+   ╰──────────────────────────────────────╯
 ```
