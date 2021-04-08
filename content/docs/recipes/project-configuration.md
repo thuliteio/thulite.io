@@ -217,9 +217,6 @@ notAlternative = true
     source = "node_modules/instant.page"
     target = "assets/js/vendor/instant.page"
   [[module.mounts]]
-    source = "node_modules/lazysizes"
-    target = "assets/js/vendor/lazysizes"
-  [[module.mounts]]
     source = "node_modules/flexsearch"
     target = "assets/js/vendor/flexsearch"
 ```
