@@ -4,5 +4,3 @@
 {{ . }} {{ $p.Permalink -}}
 {{- end }}
 {{- end -}}
-
-/hyas-cli/   /docs/prologue/hyas-cli/  301!
