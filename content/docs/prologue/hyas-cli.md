@@ -14,7 +14,7 @@ toc: true
 ---
 
 ```bash
-Work seamlessly with Hyas from the command line.
+Hyas command line tool
 
 Usage: hyas <command> [options]
 
@@ -31,7 +31,7 @@ Options:
 
 Learn more:
   Use 'hyas <command> --help' for more information about a command.
-  Read the manual at https://gethyas.com/cli
+  Read the manual at https://gethyas.com/hyas-cli
 ```
 
 ## Installation
@@ -148,9 +148,9 @@ Show @hyas/cli version.
 
 ## Update
 
-You'll get notified when an update is available:
+You’ll get notified when an update is available:
 
 ```bash
-Update available 0.3.6 → 0.3.7
+Update available 0.3.8 → 0.3.9
 Run npm i -g @hyas/cli to update
 ```
