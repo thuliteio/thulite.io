@@ -1,8 +1,8 @@
 # redirects for Netlify - https://www.netlify.com/docs/redirects/
 {{- range $p := .Site.Pages -}}
 {{- range .Aliases }}
-{{ . }} {{ $p.RelPermalink -}}
+{{ . }} {{ $p.Permalink -}}
 {{- end }}
 {{- end -}}
 
-https://gethyas.com/hyas-cli  https://gethyas.com/docs/prologue/hyas-cli/
+/hyas-cli/   /docs/prologue/hyas-cli/  301!
