@@ -11,6 +11,7 @@ menu:
     parent: "prologue"
 weight: 040
 toc: true
+aliases: [/hyas-cli/]
 ---
 
 ```bash
