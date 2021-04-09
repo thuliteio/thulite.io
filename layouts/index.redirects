@@ -4,3 +4,5 @@
 {{ . }} {{ $p.RelPermalink -}}
 {{- end }}
 {{- end -}}
+
+/hyas-cli  /docs/prologue/hyas-cli
