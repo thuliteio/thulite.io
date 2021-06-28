@@ -1,4 +1,5 @@
-baseurl = "/"
+baseURL = "/"
+canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
@@ -45,10 +46,16 @@ rel  = "sitemap"
   [markup.goldmark]
     [markup.goldmark.extensions]
       linkify = false
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
-    codeFences = true
+    codeFences = false
     guessSyntax = false
     hl_Lines = ""
     lineNoStart = 1
