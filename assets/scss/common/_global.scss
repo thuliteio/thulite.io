@@ -2,9 +2,11 @@
 .blog .content,
 .page .content,
 .error404 .content,
+.newsletter .content,
+.confirmation .content,
 .docs.list .content,
-.showcase.list .content,
-.themes.list .content {
+.themes.list .content,
+.showcase.list .content {
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
@@ -54,6 +56,11 @@ h6,
 a:hover,
 a:focus {
   text-decoration: underline;
+}
+
+a.btn:hover,
+a.btn:focus {
+  text-decoration: none;
 }
 
 .section {
@@ -236,6 +243,13 @@ a.btn:focus,
   background: linear-gradient(270.97deg, #ffe580 -21.36%, #ff7571 -2.45%, #ea5dad 26.84%, #c2a0fd 64.15%, #3bf0e4 108.29%, #b2f4b6 159.03%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.card-bar {
+  border-top: 4px solid;
+  border-image-source: linear-gradient(-70deg, #9867f0, #ed4e50);
+  border-image-source: linear-gradient(270.97deg, #ffe580 -21.36%, #ff7571 -2.45%, #ea5dad 26.84%, #c2a0fd 64.15%, #3bf0e4 108.29%, #b2f4b6 159.03%);
+  border-image-slice: 1;
 }
 
 h2.monospace,
