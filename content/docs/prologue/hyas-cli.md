@@ -39,8 +39,6 @@ Learn more:
 
 Install the [Hyas CLI](https://www.npmjs.com/package/@hyas/cli) globally:
 
-{{< btn-copy text="npm install -g @hyas/cli" >}}
-
 ```bash
 npm install -g @hyas/cli
 ```

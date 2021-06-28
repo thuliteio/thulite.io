@@ -27,8 +27,6 @@ npm run check
 
 Start local development server:
 
-{{< btn-copy text="npm run start" >}}
-
 ```bash
 npm run start
 ```
@@ -36,8 +34,6 @@ npm run start
 ## lint
 
 Check scripts, styles, and markdown for errors:
-
-{{< btn-copy text="npm run lint" >}}
 
 ```bash
 npm run lint
@@ -47,8 +43,6 @@ npm run lint
 
 Check scripts for errors:
 
-{{< btn-copy text="npm run lint:scripts" >}}
-
 ```bash
 npm run lint:scripts [-- --fix]
 ```
@@ -56,8 +50,6 @@ npm run lint:scripts [-- --fix]
 ### styles
 
 Check styles for errors:
-
-{{< btn-copy text="npm run lint:styles" >}}
 
 ```bash
 npm run lint:styles [-- --fix]
@@ -67,8 +59,6 @@ npm run lint:styles [-- --fix]
 
 Check markdown for errors:
 
-{{< btn-copy text="npm run lint:markdown" >}}
-
 ```bash
 npm run lint:markdown [-- --fix]
 ```
@@ -76,8 +66,6 @@ npm run lint:markdown [-- --fix]
 ## clean
 
 Delete temporary directories:
-
-{{< btn-copy text="npm run clean" >}}
 
 ```bash
 npm run clean
@@ -87,8 +75,6 @@ npm run clean
 
 Build production website:
 
-{{< btn-copy text="npm run build" >}}
-
 ```bash
 npm run build
 ```
@@ -97,8 +83,6 @@ npm run build
 
 Build Lambda functions:
 
-{{< btn-copy text="npm run build:functions" >}}
-
 ```bash
 npm run build:functions
 ```
@@ -106,8 +90,6 @@ npm run build:functions
 ### preview
 
 Build production website including draft and future content:
-
-{{< btn-copy text="npm run build:preview" >}}
 
 ```bash
 npm run build:preview

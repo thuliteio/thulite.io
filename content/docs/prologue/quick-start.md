@@ -23,15 +23,11 @@ Create a new site, change directories, install dependencies, and start developme
 
 ### Create a new site
 
-{{< btn-copy text="git clone https://github.com/h-enk/hyas.git my-hyas-site" >}}
-
 ```bash
 git clone https://github.com/h-enk/hyas.git my-hyas-site
 ```
 
 ### Change directories
-
-{{< btn-copy text="cd my-hyas-site" >}}
 
 ```bash
 cd my-hyas-site
@@ -39,15 +35,11 @@ cd my-hyas-site
 
 ### Install dependencies
 
-{{< btn-copy text="npm install" >}}
-
 ```bash
 npm install
 ```
 
 ### Start development server
-
-{{< btn-copy text="npm run start" >}}
 
 ```bash
 npm run start
