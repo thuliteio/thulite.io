@@ -1,6 +1,6 @@
 ---
 title: "Unsubscribed"
-description: "You've successfully unsubscribed from Doks newsletter. Have a good day!"
+description: "You've successfully unsubscribed from Hyas newsletter. Have a good day!"
 date: 2021-03-02T18:31:48+01:00
 lastmod: 2021-03-02T18:31:48+01:00
 draft: false
@@ -11,4 +11,4 @@ type: "confirmation"
 images: []
 ---
 
-You've successfully unsubscribed from the Doks newsletter. Have a good day!
+You've successfully unsubscribed from the Hyas newsletter. Have a good day!
