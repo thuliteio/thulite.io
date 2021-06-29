@@ -46,7 +46,7 @@
 
 [[main]]
   name = "Showcase"
-  url = "/showcase/validate/"
+  url = "/showcase/ventizo/"
   weight = 30
 
 [[main]]

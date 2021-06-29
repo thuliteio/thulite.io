@@ -21,7 +21,7 @@ There are two main ways to get started with Hyas:
 
 {{< alert icon="👉" text="Themes are intended for novice to intermediate users." >}}
 
-Get started with a theme build on Hyas. [Themes →]({{< ref "doks" >}})
+Get started with a theme build on Hyas. {{< section-first section="themes" text="Themes →">}}
 
 ### Quick Start
 
@@ -35,24 +35,24 @@ Recipes, Reference Guides, Extensions, and Showcase.
 
 ### Recipes
 
-Get instructions on how to accomplish common tasks with Hyas. [Recipes →]({{< ref "project-configuration" >}})
+Get instructions on how to accomplish common tasks with Hyas. {{< section-last section="recipes" text="Recipes →">}}
 
 ### Reference Guides
 
-Learn how to customize Hyas to fully make it your own. [Reference Guides →]({{< ref "security" >}})
+Learn how to customize Hyas to fully make it your own. {{< section-last section="reference-guides" text="Reference Guides →">}}
 
 ### Extensions
 
-Get instructions on how to add even more to Hyas. [Extensions →]({{< ref "add-google-fonts" >}})
+Get instructions on how to add even more to Hyas. {{< section-last section="extensions" text="Extensions →">}}
 
 ### Showcase
 
-See what others have build with Hyas. [Showcase →]({{< ref "validate" >}})
+See what others have build with Hyas. {{< section-first section="showcase" text="Showcase →">}}
 
 ## Contributing
 
-Find out how to contribute to Hyas. [Contributing →]({{< ref "how-to-contribute" >}})
+Find out how to contribute to Hyas. {{< section-last section="contributing" text="Contributing →">}}
 
 ## Help
 
-Get help on Hyas. [Help →]({{< ref "how-to-update" >}})
+Get help on Hyas. {{< section-last section="help" text="Help →">}}
