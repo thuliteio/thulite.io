@@ -7,7 +7,7 @@
   NPM_VERSION = "7.16.0"
 
 [context.production]
-  command = "bin/hugo/hugo --gc --minify"
+  command = "npm run build"
 
 [context.deploy-preview]
   command = "bin/hugo/hugo --gc --minify -b $DEPLOY_PRIME_URL"
