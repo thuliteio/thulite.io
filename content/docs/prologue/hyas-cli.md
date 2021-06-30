@@ -15,16 +15,19 @@ aliases: [/hyas-cli/]
 ---
 
 ```bash
+$ hyas -h
 Hyas command line tool
 
 Usage: hyas <command> [options]
 
 Commands:
-  create <dir> [theme]  Create a new Hyas project
-  start                 Start local development server
-  build                 Build production website
-  clean                 Delete temporary directories
-  check                 Check local environment
+  create [dir]   Create a new Hyas project
+  start          Start local development server
+  build          Build production website
+  add [file]     Add content file
+  clean          Delete temporary directories
+  lint [source]  Check for errors
+  check          Check local environment
 
 Options:
   -h, --help     Show help for command                                 [boolean]
@@ -64,43 +67,43 @@ hyas <command> [options]
 Create a new Hyas project:
 
 ```bash
-hyas create <dir> [theme]
+hyas create [options]
 ```
 
-| Arguments | Description |
-| - | - |
-| `dir` | Name of the directory to create the project in |
-| `theme` | Name of the Hyas theme to use |
-| `-s, --starter` | Use starter theme (default: use child theme) |
+| Arguments | Description | Default |
+| - | - | - |
+| `dir` | Directory to create the project in | `my-hyas-site`|
+| `-c, --child` | Use child theme | Use starter theme |
+| `-t, --theme` | Hyas theme to use (e.g. `--theme=doks`)| No Hyas theme|
 
 #### Examples
 
-##### Create a Hyas site
+##### Create a Hyas project
 
-Using the child theme:
+Create a Hyas project in `my-hyas-site` using the starter theme:
 
 ```bash
 hyas create my-hyas-site
 ```
 
-Using the starter theme:
+Create a Hyas project in `my-hyas-site` using the child-theme:
 
 ```bash
-hyas create my-hyas-site -s
+hyas create my-hyas-site --child
 ```
 
-##### Create a Doks site
+##### Create a Doks project
 
-Using the child theme:
+Create a Doks project in `my-hyas-site` using the starter theme:
 
 ```bash
-hyas create my-doks-site doks
+hyas create my-hyas-site --theme=doks
 ```
 
-Using the starter theme:
+Create a Doks project in `my-hyas-site` using the child-theme:
 
 ```bash
-hyas create my-doks-site doks -s
+hyas create my-hyas-site --theme=doks --child
 ```
 
 ### Start
@@ -150,6 +153,6 @@ Show @hyas/cli version.
 You’ll get notified when an update is available:
 
 ```bash
-Update available 0.3.8 → 0.3.9
+Update available 0.4.1 → 0.4.2
 Run npm i -g @hyas/cli to update
 ```
