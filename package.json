@@ -39,7 +39,7 @@
     "docsearch.js": "^2.6",
     "dotenv": "^10.0.0",
     "encoding": "^0.1.13",
-    "eslint": "^7.29",
+    "eslint": "^7.30",
     "exec-bin": "^1.0.0",
     "hugo-installer": "^3.0.1",
     "instant.page": "^5.1",
