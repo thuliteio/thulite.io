@@ -15,7 +15,7 @@ toc: true
 
 {{< img-simple src="google-lighthouse-scan-results-hyas.gif" alt="Google Lighthouse Scan Results Hyas">}}
 
-See also Google Lighthouse: [Scan Results for hyas.netlify.app](https://googlechrome.github.io/lighthouse/viewer/?gist=8b7aec005ae7b9e128ad5c4e2f125fea)
+See also Google Lighthouse: [Scan Results for hyas.netlify.app](https://googlechrome.github.io/lighthouse/viewer/?gist=7e7c7c627752ef9cd428643be0a77f3d)
 
 ## Unused CSS removal
 
