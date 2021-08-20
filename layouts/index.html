@@ -4,7 +4,7 @@
     <div class="col-lg-9 text-center">
       <h1 class="mt-0">{{ .Title }}</h1>
       <p class="lead">{{ .Params.Lead | safeHTML }}</p>
-      <a class="btn btn-dark btn-lg px-4 mb-2" href="{{ "docs/prologue/introduction/" | absURL }}" role="button">Get started</a>
+      <a class="btn btn-dark btn-lg px-4 mb-2" href="{{ "docs/prologue/introduction/" | absURL }}" role="button">Get Started</a>
       <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/hyas">GitHub v{{ $data := getJSON "https://raw.githubusercontent.com/h-enk/hyas/master/package.json" }}{{ $data.version }}</a></p>
     </div>
   </div>

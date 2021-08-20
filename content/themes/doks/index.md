@@ -40,5 +40,5 @@ Get all the Hyas goodness:
 
 ### Great scores
 
-- 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=7731347bb8ce999eff7428a8e763b637)
+- 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=92eaa982d7dbf92f94fe8ecc03987c9a)
 - A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/doks.netlify.app)
