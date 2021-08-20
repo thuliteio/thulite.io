@@ -26,3 +26,7 @@
   background: $gray-100;
   border-color: transparent;
 }
+
+.email-form .form-control:focus {
+  border: 1px solid $primary;
+}

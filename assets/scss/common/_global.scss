@@ -26,10 +26,27 @@ h6,
   margin: 2rem 0 1rem;
 }
 
+.offcanvas-header {
+  border-bottom: 1px solid $gray-300;
+  padding-top: 1.0625rem;
+  padding-bottom: 0.8125rem;
+}
+
+h5.offcanvas-title {
+  margin: 0;
+}
+
+body.docs {
+  padding-top: 0 !important;
+}
+
 @include media-breakpoint-up(md) {
   body {
     font-size: $font-size-md;
+
+    /*
     padding-top: 4rem !important;
+    */
   }
 
   h1,
@@ -87,9 +104,11 @@ a.btn:focus {
 }
 */
 
+/*
 body {
   padding-top: 3.5625rem;
 }
+*/
 
 .docs-sidebar {
   order: 2;
@@ -250,6 +269,20 @@ a.btn:focus,
   border-image-source: linear-gradient(-70deg, #9867f0, #ed4e50);
   border-image-source: linear-gradient(270.97deg, #ffe580 -21.36%, #ff7571 -2.45%, #ea5dad 26.84%, #c2a0fd 64.15%, #3bf0e4 108.29%, #b2f4b6 159.03%);
   border-image-slice: 1;
+}
+
+.modal-backdrop {
+  background-color: #fff;
+}
+
+.modal-backdrop.show {
+  opacity: 0.7;
+}
+
+@include media-breakpoint-up(md) {
+  .modal-backdrop.show {
+    opacity: 0;
+  }
 }
 
 h2.monospace,

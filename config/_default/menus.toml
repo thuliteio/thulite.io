@@ -54,10 +54,10 @@
   url = "/blog/"
   weight = 40
 
-# [[main]]
-#   name = "Community"
-#   url = "https://github.com/h-enk/hyas/discussions"
-#   weight = 50
+[[main]]
+  name = "Community"
+  url = "https://github.com/h-enk/hyas/discussions"
+  weight = 50
 
 [[social]]
   name = "Twitter"
@@ -82,10 +82,10 @@
   url = "/docs/contributing/code-of-conduct/"
   weight = 20
 
-[[footer]]
-  name = "Community"
-  url = "https://github.com/h-enk/hyas/discussions"
-  weight = 30
+# [[footer]]
+#   name = "Community"
+#   url = "https://github.com/h-enk/hyas/discussions"
+#   weight = 30
 
 [[showcase]]
   name = "Browse"
@@ -93,8 +93,18 @@
   identifier = "browse"
   url = "/showcase/"
 
+[[secondary]]
+  name = "Submit to Themes"
+  url = "https://github.com/h-enk/hyas/discussions?discussions_q=category%3A%22Show+and+tell%22"
+  weight = 10
+
 [[themes]]
   name = "Browse"
   weight = 10
   identifier = "browse"
   url = "/themes/"
+
+[[tertiary]]
+  name = "Submit to Showcase"
+  url = "https://github.com/h-enk/hyas/discussions?discussions_q=category%3A%22Show+and+tell%22"
+  weight = 10

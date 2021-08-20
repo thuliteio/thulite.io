@@ -19,25 +19,31 @@ if (document.querySelector('#deploy-to-netlify') !== null) {
 }
 /* eslint-enable */
 
-document.addEventListener('keydown', inputFocus);
+var search = document.getElementById('search');
+
+if (search !== null) {
+  document.addEventListener('keydown', inputFocus);
+}
 
 function inputFocus(e) {
-  if (e.keyCode == 191 ) {
+  if (e.ctrlKey && e.key === '/' ) {
     e.preventDefault();
-    document.getElementById('search').focus();
+    search.focus();
   }
-  if (e.keyCode == 27 ) {
-    document.getElementById('search').blur();
+  if (e.key === 'Escape' ) {
+    search.blur();
   }
 }
 
 /* eslint-disable */
-docsearch({
-  apiKey: 'cdca78e5ea45edfe483b1090b8c4bbb8',
-  indexName: 'gethyas',
-  inputSelector: '#search',
-  debug: false,
-});
+if (document.querySelector('#search') !== null) {
+  docsearch({
+    apiKey: 'cdca78e5ea45edfe483b1090b8c4bbb8',
+    indexName: 'gethyas',
+    inputSelector: '#search',
+    debug: false,
+  });
+}
 /* eslint-enable */
 
 /*

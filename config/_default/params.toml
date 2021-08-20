@@ -56,8 +56,8 @@ copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
 # Alert
 alert = false
 alertDismissable = true
-alertText = "Help support the team developing Doks! <a class=\"alert-link stretched-link\" href=\"https://opencollective.com/doks\" target=\"_blank\" rel=\"noopener\">Donate Now</a>"
-# alertText = "Like Hyas? <a class=\"alert-link\" href=\"https://github.com/h-enk/hyas/stargazers\">Star on GitHub</a>!</a>"
+# alertText = "Help support the team developing Doks! <a class=\"alert-link stretched-link\" href=\"https://opencollective.com/doks\" target=\"_blank\" rel=\"noopener\">Donate Now</a>"
+alertText = "Like Hyas? <a class=\"alert-link stretched-link\" href=\"https://github.com/h-enk/hyas/stargazers\" target=\"_blank\" rel=\"noopener\">Star on GitHub</a>!</a>"
 
 # Edit Page
 docsRepo = "https://github.com/h-enk/gethyas.com/"
@@ -67,9 +67,5 @@ editPage = true
   lazySizes = true
   clipBoard = true
   instantPage = true
-  darkMode = false
   bootStrapJs = true
-  highLight = true
   collapsibleSidebar = false
-  multilingualMode = false # Not yet functional
-  docsVersioning = false # Not yet functional
