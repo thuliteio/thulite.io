@@ -2,18 +2,26 @@
 {{ $lazysizes := resources.Get "js/vendor/lazysizes/lazysizes.min.js" -}}
 {{ $clipBoard := resources.Get "js/clipboard.js" -}}
 {{ $clipBoard := $clipBoard | js.Build -}}
-{{ $bootstrap := resources.Get "js/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" -}}
+{{ $bs := resources.Get "js/bootstrap.js" | js.Build -}}
+{{ $alert := resources.Get "js/alert.js" | js.Build -}}
 {{ if eq (hugo.Environment) "development" -}}
   <script src="{{ $docsearch.Permalink }} " defer></script>
+  {{ if .Site.Params.options.bootStrapJs -}}
+    <script src="{{ $bs.RelPermalink }}" defer></script>
+  {{ end -}}
   {{ $app := resources.Get "js/app.js" -}}
-  {{ $js := slice $lazysizes $clipBoard $app | resources.Concat "main.js" -}}
+  {{ $js := slice $lazysizes $clipBoard $alert $app | resources.Concat "main.js" -}}
   <script src="{{ $js.Permalink }}" defer></script>
 {{ else -}}
   {{ $secureDS := $docsearch | resources.Fingerprint "sha512" -}}
   <script src="{{ $secureDS.Permalink }} " integrity="{{ $secureDS.Data.Integrity }}" crossorigin="anonymous" defer></script>
+  {{ $bs := $bs | minify | fingerprint "sha512" -}}
   {{ $instantPage := resources.Get "js/vendor/instant.page/instantpage.js" | minify -}}
   {{ $app := resources.Get "js/app.js" | minify -}}
-  {{ $js := slice $lazysizes $clipBoard $instantPage $app | resources.Concat "main.js" -}}
+  {{ $js := slice $lazysizes $clipBoard $instantPage $alert $app | resources.Concat "main.js" -}}
   {{ $secureJS := $js | resources.Fingerprint "sha512" -}}
+  {{ if .Site.Params.options.bootStrapJs -}}
+  <script src="{{ $bs.RelPermalink }}" integrity="{{ $bs.Data.Integrity }}" crossorigin="anonymous" defer></script>
+  {{ end -}}
   <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end -}}
