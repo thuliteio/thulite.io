@@ -1,11 +1,13 @@
-{{ $docsearch := resources.Get "js/vendor/docsearch.js/dist/cdn/docsearch.min.js" -}}
+{{ $docSearch := resources.Get "js/vendor/docsearch.js/dist/cdn/docsearch.min.js" -}}
 {{ $lazysizes := resources.Get "js/vendor/lazysizes/lazysizes.min.js" -}}
 {{ $clipBoard := resources.Get "js/clipboard.js" -}}
 {{ $clipBoard := $clipBoard | js.Build -}}
 {{ $bs := resources.Get "js/bootstrap.js" | js.Build -}}
 {{ $alert := resources.Get "js/alert.js" | js.Build -}}
 {{ if eq (hugo.Environment) "development" -}}
-  <script src="{{ $docsearch.Permalink }} " defer></script>
+  {{ if eq .Section "docs" -}}
+  <script src="{{ $docSearch.RelPermalink }}" defer></script>
+  {{ end -}}
   {{ if .Site.Params.options.bootStrapJs -}}
     <script src="{{ $bs.RelPermalink }}" defer></script>
   {{ end -}}
@@ -13,8 +15,10 @@
   {{ $js := slice $lazysizes $clipBoard $alert $app | resources.Concat "main.js" -}}
   <script src="{{ $js.Permalink }}" defer></script>
 {{ else -}}
-  {{ $secureDS := $docsearch | resources.Fingerprint "sha512" -}}
-  <script src="{{ $secureDS.Permalink }} " integrity="{{ $secureDS.Data.Integrity }}" crossorigin="anonymous" defer></script>
+  {{ $docSearch := $docSearch | minify | fingerprint "sha512" -}}
+  {{ if eq .Section "docs" -}}
+  <script src="{{ $docSearch.RelPermalink }}" integrity="{{ $docSearch.Data.Integrity }}" crossorigin="anonymous" defer></script>
+  {{ end -}}
   {{ $bs := $bs | minify | fingerprint "sha512" -}}
   {{ $instantPage := resources.Get "js/vendor/instant.page/instantpage.js" | minify -}}
   {{ $app := resources.Get "js/app.js" | minify -}}
