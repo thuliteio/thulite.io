@@ -32,8 +32,10 @@ h6,
   padding-bottom: 0.8125rem;
 }
 
-h5.offcanvas-title {
+h2.offcanvas-title {
   margin: 0;
+  font-weight: $headings-font-weight;
+  font-family: $font-family-monospace;
 }
 
 body.docs {

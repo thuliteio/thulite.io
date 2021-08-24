@@ -56,8 +56,7 @@ copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
 # Alert
 alert = false
 alertDismissable = true
-# alertText = "Help support the team developing Doks! <a class=\"alert-link stretched-link\" href=\"https://opencollective.com/doks\" target=\"_blank\" rel=\"noopener\">Donate Now</a>"
-alertText = "Like Hyas? <a class=\"alert-link stretched-link\" href=\"https://github.com/h-enk/hyas/stargazers\" target=\"_blank\" rel=\"noopener\">Star on GitHub</a>!</a>"
+alertText = "Feature 1, feature 2 + more. <a class=\"alert-link stretched-link\" href=\"https://github.com/h-enk/hyas/stargazers\" target=\"_blank\" rel=\"noopener\">Hyas v1.6 is here</a>!</a>"
 
 # Edit Page
 docsRepo = "https://github.com/h-enk/gethyas.com/"

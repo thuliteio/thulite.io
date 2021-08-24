@@ -64,7 +64,7 @@
         {{ end -}}
       </ul>
       <hr class="d-md-none text-black-50">
-      <ul class="navbar-nav flex-row flex-wrap ms-md-auto me-md-1">
+      <ul class="navbar-nav flex-row flex-wrap ms-md-auto me-n2">
         {{ range .Site.Menus.social -}}
           <li class="nav-item col-8 col-md-auto">
             <a class="nav-link py-2" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="d-md-none ms-2">{{ .Name | safeHTML }}</small></a>
