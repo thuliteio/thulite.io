@@ -6,7 +6,7 @@ date: 2020-09-21T15:58:12+02:00
 lastmod: 2020-09-21T15:58:12+02:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "reference-guides"
 weight: 360
@@ -54,7 +54,7 @@ See also the Netlify docs: [Redirects and rewrites](https://docs.netlify.com/rou
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'none'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'
+  Content-Security-Policy: default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin
   Feature-Policy: geolocation 'self'
@@ -73,19 +73,31 @@ See also the Netlify docs: [Custom headers](https://docs.netlify.com/routing/hea
   functions = "functions"
 
 [build.environment]
-  HUGO_VERSION = "0.74.3"
-  NODE_VERSION = "13.11.0"
-  NPM_VERSION = "6.13.7"
-  YARN_VERSION = "1.22.4"
+  NODE_VERSION = "16.3.0"
+  NPM_VERSION = "7.16.0"
 
 [context.production]
-  command = "hugo -b $URL --gc --minify && npm run build:functions"
+  command = "npm run build"
 
 [context.deploy-preview]
-  command = "hugo -b $DEPLOY_PRIME_URL --gc --minify"
+  command = "npm run build -- -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "hugo -b $DEPLOY_PRIME_URL --gc --minify"
+  command = "npm run build -- -b $DEPLOY_PRIME_URL"
+
+[context.next]
+  command = "npm run build"
+
+[context.next.environment]
+  HUGO_ENV = "next"
+
+[dev]
+  framework = "#custom"
+  command = "npm run start"
+  targetPort = 1313
+  port = 8888
+  publish = "public"
+  autoLaunch = false
 ```
 
 See also the Netlify docs: [File-based configuration](https://docs.netlify.com/configure-builds/file-based-configuration/)

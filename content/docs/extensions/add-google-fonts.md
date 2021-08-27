@@ -15,5 +15,4 @@ toc: true
 
 ## Resources
 
-- [Google Fonts Jost](https://fonts.google.com/specimen/Jost)
 - [Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com/fonts)
