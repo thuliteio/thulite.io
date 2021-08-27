@@ -30,7 +30,7 @@ The Hyas goodness:
 - Fast by default ⚡️
 - SEO-ready
 - Development tools (linting, cleaning)
-- Bootstrap framework — v5.0
+- Bootstrap framework — v5.x
 - Netlify-ready (functions, redirects, headers)
 
 ### And
@@ -50,7 +50,7 @@ There are two main ways to get started with Hyas:
 - [Recipes]({{< ref "project-configuration" >}}). Get instructions on how to accomplish common tasks with Hyas.
 - [Reference Guides]({{< ref "security" >}}). Learn how to customize Hyas to fully make it your own.
 - [Extensions]({{< ref "add-google-fonts" >}}). Get instructions on how to add even more to Hyas.
-- [Showcase]({{< ref "validate" >}}). See what others have build with Hyas.
+- [Showcase]({{< ref "ventizo" >}}). See what others have build with Hyas.
 
 ## Try Hyas
 

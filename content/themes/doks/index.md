@@ -29,10 +29,10 @@ Get all the Hyas goodness:
 - Fast by default ⚡️
 - SEO-ready
 - Development tools (linting, cleaning)
-- Bootstrap framework
+- Bootstrap framework — v5.x
 - Netlify-ready (functions, redirects, headers)
 
-### Fine extras
+### Nice extras
 
 - Full text search — using [FlexSearch](https://github.com/nextapps-de/flexsearch) 🚀
 - Page layouts (landing page, blog, documentation layout)
