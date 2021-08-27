@@ -1,2 +1,1 @@
-baseURL = "https://next.gethyas.com/"
-canonifyURLs = true
+canonifyURLs = false

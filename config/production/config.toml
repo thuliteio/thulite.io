@@ -1,2 +1,1 @@
-baseURL = "https://gethyas.com/"
-canonifyURLs = true
+canonifyURLs = false
