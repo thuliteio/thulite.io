@@ -30,7 +30,7 @@
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "devDependencies": {
-    "@babel/cli": "^7.14",
+    "@babel/cli": "^7.15",
     "@babel/core": "^7.15",
     "@babel/preset-env": "^7.15",
     "@fullhuman/postcss-purgecss": "^4.0",
@@ -47,7 +47,7 @@
     "instant.page": "^5.1",
     "lazysizes": "^5.3",
     "markdownlint-cli": "^0.28",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^3.0",
     "plausible-tracker": "^0.3.1",
     "postcss": "^8.3",
     "postcss-cli": "^8.3",
@@ -57,6 +57,6 @@
     "stylelint-config-standard": "^22.0"
   },
   "otherDependencies": {
-    "hugo": "0.87.0"
+    "hugo": "0.88.1"
   }
 }
