@@ -17,7 +17,7 @@
 
 .navbar {
   z-index: 1000;
-  background-color: rgb(255 255 255 / 95%);
+  background-color: rgba(255, 255, 255, 95%);
   border-bottom: 1px solid $gray-200;
 
   /*
@@ -76,7 +76,7 @@
 }
 
 .doks-subnavbar {
-  background-color: rgb(255 255 255 / 95%);
+  background-color: rgba(255, 255, 255, 95%);
   border-bottom: 1px solid $gray-200;
 }
 
@@ -171,7 +171,7 @@
 }
 
 .algolia-autocomplete .ds-dropdown-menu {
-  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 15%) !important;
 }
 
 @include media-breakpoint-down(sm) {

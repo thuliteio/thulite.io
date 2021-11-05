@@ -10,6 +10,7 @@
     "selector-id-pattern": null,
     "selector-class-pattern": null,
     "declaration-block-no-duplicate-properties": null,
+    "color-function-notation": "legacy",
     "at-rule-no-unknown": [
       true,
       {
