@@ -1,8 +1,15 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": "stylelint-config-standard-scss",
   "rules": {
     "no-empty-source": null,
     "string-quotes": "double",
+    "scss/no-global-function-names": null,
+    "scss/comment-no-empty": null,
+    "max-line-length": null,
+    "scss/at-extend-no-missing-placeholder": null,
+    "selector-id-pattern": null,
+    "selector-class-pattern": null,
+    "declaration-block-no-duplicate-properties": null,
     "at-rule-no-unknown": [
       true,
       {

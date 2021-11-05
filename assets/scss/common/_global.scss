@@ -124,7 +124,7 @@ body {
 
   @supports ((position:-webkit-sticky) or (position:sticky)) {
     .docs-sidebar {
-      position: -webkit-sticky;
+      position: sticky;
       position: sticky;
       top: 4rem;
       z-index: 1000;
@@ -166,7 +166,7 @@ body {
 
 @supports ((position:-webkit-sticky) or (position:sticky)) {
   .docs-toc {
-    position: -webkit-sticky;
+    position: sticky;
     position: sticky;
     top: 4rem;
     height: calc(100vh - 4rem);
@@ -224,7 +224,7 @@ a.btn:focus,
   background-image: radial-gradient($gray-300 15%, transparent 15%);
   background-position: 0 0;
   background-size: 1rem 1rem;
-  -webkit-mask: linear-gradient(to top, #fff, transparent);
+  mask: linear-gradient(to top, #fff, transparent);
   mask: linear-gradient(to top, #fff, transparent);
   width: 100%;
   height: 9rem;
@@ -246,23 +246,23 @@ a.btn:focus,
   background-image: linear-gradient(90deg, $primary, $blue-300 50%, $pink-500);
   background-size: 100%;
   background-repeat: repeat;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
 
 .text-gradient-purple-coral {
-  background: -webkit-linear-gradient(-70deg, #9867f0, #ed4e50);
-  -webkit-background-clip: text;
+  background: linear-gradient(-70deg, #9867f0, #ed4e50);
+  background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .text-gradient {
   background: linear-gradient(270.97deg, #ffe580 -21.36%, #ff7571 -2.45%, #ea5dad 26.84%, #c2a0fd 64.15%, #3bf0e4 108.29%, #b2f4b6 159.03%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -278,12 +278,12 @@ a.btn:focus,
 }
 
 .modal-backdrop.show {
-  opacity: 0.7;
+  opacity: 70%;
 }
 
 @include media-breakpoint-up(md) {
   .modal-backdrop.show {
-    opacity: 0;
+    opacity: 0%;
   }
 }
 
