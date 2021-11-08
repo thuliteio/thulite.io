@@ -34,7 +34,7 @@ module.exports = {
         './layouts/**/*.html',
         './content/**/*.md',
       ],
-      whitelist: [
+      safelist: [
         'lazyloaded',
         ...whitelister([
           './assets/scss/components/_syntax.scss',
@@ -54,9 +54,9 @@ Hyas uses [Hugo](https://gohugo.io/hugo-pipes/minification/) to minify CSS, JS a
 
 ## Link prefetching
 
-Hyas uses [instant.page](https://instant.page/) with default settings for link prefetching. By default, instant.page preloads 65 ms after hovering a link and when a mobile user starts touching their display.
+Hyas uses [Quicklink](https://github.com/GoogleChromeLabs/quicklink) with default settings for link prefetching. By default, Quicklink will automatically prefetch URLs for links that are in-viewport during idle time.
 
-See also the instant.page website: [Intensity](https://instant.page/intensity).
+See also the [Quicklink website](https://getquick.link/).
 
 ## Lazy loading images
 
