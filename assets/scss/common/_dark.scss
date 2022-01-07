@@ -38,7 +38,7 @@ body.dark .btn-primary {
 
 body.dark .navbar {
   background: $body-bg-dark;
-  opacity: 97.5%;
+  opacity: 0.975;
   border-bottom: 1px solid $border-dark;
 }
 
@@ -283,7 +283,7 @@ body.dark .text-muted {
 
 body.dark .alert-global {
   background: $body-bg-dark;
-  opacity: 97.5%;
+  opacity: 0.975;
   color: $body-color-dark;
   border: 1px solid $border-dark !important;
 }

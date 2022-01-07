@@ -278,12 +278,12 @@ a.btn:focus,
 }
 
 .modal-backdrop.show {
-  opacity: 70%;
+  opacity: 0.7;
 }
 
 @include media-breakpoint-up(md) {
   .modal-backdrop.show {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 
