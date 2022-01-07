@@ -1,8 +1,10 @@
+<div class="header-bar"></div>
+
 {{ if .Site.Params.alert -}}
   {{ partial "header/alert.html" . }}
 {{ end -}}
 
-<div class="header-bar"></div>
+
 
 <header class="navbar navbar-expand-md navbar-light doks-navbar">
   <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
@@ -57,6 +59,8 @@
     <form class="doks-search position-relative flex-grow-1 me-auto">
       <input id="search" class="form-control is-search" type="search" placeholder="Search docs..." aria-label="Search docs..." autocomplete="off">
     </form>
+
+    <span class="navbar-text fs-6 d-none d-sm-block">v{{ $data := getJSON "https://raw.githubusercontent.com/h-enk/hyas/master/package.json" }}{{ $data.version }}</span>
 
     <button class="btn doks-sidebar-toggle d-lg-none ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle documentation navigation">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
