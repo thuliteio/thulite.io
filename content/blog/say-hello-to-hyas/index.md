@@ -35,7 +35,7 @@ The Hyas goodness:
 
 ### And
 
-- 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=7e7c7c627752ef9cd428643be0a77f3d)
+- 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=73a46ae67cbe2f70318635b09a548ff0)
 - A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/hyas.netlify.app)
 
 ## Get started
