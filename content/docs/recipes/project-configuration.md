@@ -200,27 +200,6 @@ notAlternative = true
   blog = "/blog/:title/"
 ```
 
-#### Modules
-
-```toml
-[module]
-  [[module.mounts]]
-    source = "assets"
-    target = "assets"
-  [[module.mounts]]
-    source = "static"
-    target = "static"
-  [[module.mounts]]
-    source = "node_modules/lazysizes"
-    target = "assets/js/vendor/lazysizes"
-  [[module.mounts]]
-    source = "node_modules/instant.page"
-    target = "assets/js/vendor/instant.page"
-  [[module.mounts]]
-    source = "node_modules/flexsearch"
-    target = "assets/js/vendor/flexsearch"
-```
-
 ### postcss.config.js
 
 ```js
