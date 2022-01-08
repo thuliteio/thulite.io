@@ -19,6 +19,17 @@ if (document.querySelector('#deploy-to-netlify') !== null) {
 }
 /* eslint-enable */
 
+var docsearch = document.getElementById('docsearch');
+
+if (docsearch !== null) {
+  document.addEventListener('click', buttonBlur);
+}
+
+function buttonBlur() {
+  docsearch.firstElementChild.blur();
+}
+
+/*
 var search = document.getElementById('search');
 
 if (search !== null) {
@@ -34,8 +45,10 @@ function inputFocus(e) {
     search.blur();
   }
 }
+*/
 
 /* eslint-disable */
+/*
 if (document.querySelector('#search') !== null) {
   docsearch({
     apiKey: 'cdca78e5ea45edfe483b1090b8c4bbb8',
@@ -44,6 +57,7 @@ if (document.querySelector('#search') !== null) {
     debug: false,
   });
 }
+*/
 /* eslint-enable */
 
 /*
