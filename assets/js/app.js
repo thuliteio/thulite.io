@@ -20,7 +20,10 @@ if (document.querySelector('#deploy-to-netlify') !== null) {
 /* eslint-enable */
 
 var searchPlaceholder = document.getElementById('search-placeholder');
-searchPlaceholder.className = 'd-none';
+
+if (searchPlaceholder !== null) {
+  searchPlaceholder.className = 'd-none';
+}
 
 var docsearch = document.getElementById('docsearch');
 
