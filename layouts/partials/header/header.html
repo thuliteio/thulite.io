@@ -62,6 +62,10 @@
     </form>
     -->
 
+    <span id="search-placeholder" class="navbar-text placeholder-glow ms-0 me-auto col-4 col-md-2" aria-hidden="true">
+      <span class="placeholder col-16"></span>
+    </span>
+
     <div id="docsearch" class="me-auto"></div>
 
     <span class="navbar-text fs-6 d-none d-sm-block">v{{ $data := getJSON "https://raw.githubusercontent.com/h-enk/hyas/master/package.json" }}{{ $data.version }}</span>
