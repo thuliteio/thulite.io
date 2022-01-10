@@ -6,7 +6,7 @@ date: 2020-09-21T14:13:01+02:00
 lastmod: 2020-09-21T14:13:01+02:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "recipes"
 weight: 140
@@ -16,6 +16,9 @@ toc: true
 ```bash
 ..
 ├── _default/
+│   ├── markup/
+│   │   ├── render-image.html
+│   │   └── render-link.html
 │   ├── baseof.html
 │   ├── list.html
 │   └── single.html
@@ -27,11 +30,14 @@ toc: true
 ├── partials/
 │   ├── content/
 │   ├── footer/
+│   │   ├── esbuild.html
 │   │   ├── footer.html
 │   │   └── script-footer.html
 │   ├── head/
+│   │   ├── body-class.html
 │   │   ├── favicons.html
 │   │   ├── head.html
+│   │   ├── libsass.html
 │   │   ├── opengraph.html
 │   │   ├── resource-hints.html
 │   │   ├── script-header.html
@@ -43,11 +49,8 @@ toc: true
 │   │   ├── alert.html
 │   │   └── header.html
 │   └── sidebar/
+│   └── email.html
 ├── shortcodes/
-│   ├── alert.html
-│   ├── email.html
-│   ├── img-simple.html
-│   └── img.html
 ├── 404.html
 ├── index.headers
 ├── index.html
@@ -75,7 +78,7 @@ See the Hugo docs: [Taxonomy Templates](https://gohugo.io/templates/taxonomy-tem
 
 See the Hugo docs: [Partial Templates](https://gohugo.io/templates/partials/)
 
-## Customize shortcodes
+## Add shortcodes
 
 See the Hugo docs: [Create Your Own Shortcodes](https://gohugo.io/templates/shortcode-templates/)
 

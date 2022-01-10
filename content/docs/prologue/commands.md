@@ -23,6 +23,14 @@ Check local environment:
 npm run check
 ```
 
+## create
+
+Create new page:
+
+```bash
+npm run create [path]
+```
+
 ## start
 
 Start local development server:
@@ -77,14 +85,6 @@ Build production website:
 
 ```bash
 npm run build
-```
-
-### functions
-
-Build Lambda functions:
-
-```bash
-npm run build:functions
 ```
 
 ### preview

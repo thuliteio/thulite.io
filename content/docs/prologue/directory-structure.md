@@ -20,6 +20,7 @@ toc: true
 ├── config/
 ├── content/
 ├── data/
+├── functions/
 ├── layouts/
 ├── static/
 ├── .eslintignore
@@ -28,7 +29,6 @@ toc: true
 ├── .markdownlintignore
 ├── .stylelintignore
 ├── .stylelintrc.json
-├── babel.config.js
 ├── netlify.toml
 └── package.json
 ```
@@ -42,8 +42,7 @@ See also the Hugo docs: [Directory Structure](https://gohugo.io/getting-started/
 ```bash
 ..
 ├── blog.md
-├── default.md
-└── docs.md
+└── default.md
 ```
 
 See also: [Archetypes]({{< ref "archetypes" >}}).
@@ -56,8 +55,10 @@ See also: [Archetypes]({{< ref "archetypes" >}}).
 ├── images/
 ├── js/
 │   ├── vendor/
-│   └── app.js
-├── lambda/
+│   ├── alert-init.js
+│   ├── alert.js
+│   ├── app.js
+│   └── bootstrap.js
 └── scss/
     ├── common/
     ├── components/
@@ -74,10 +75,12 @@ See also: [Assets]({{< ref "assets" >}})
 ..
 ├── _default/
 │   ├── config.toml
+│   ├── markup.toml
 │   ├── menus.toml
 │   └── params.toml
+├── next/
 ├── production/
-├── staging/
+├── babel.config.js
 └── postcss.config.js
 ```
 
@@ -88,8 +91,7 @@ See also: [Project Configuration]({{< ref "project-configuration" >}}).
 ```bash
 ..
 ├── blog/
-├── contributors/
-├── docs/
+├── quick-start/
 └── _index.md
 ```
 
@@ -99,11 +101,18 @@ See also: [Pages]({{< ref "pages" >}}).
 
 See the Hugo docs: [Data Templates](https://gohugo.io/templates/data-templates/).
 
+### functions
+
+See the Netlify docs: [Functions overview](https://docs.netlify.com/functions/overview/).
+
 ### layouts
 
 ```bash
 ..
 ├── _default/
+│   ├── markup/
+│   │   ├── render-image.html
+│   │   └── render-link.html
 │   ├── baseof.html
 │   ├── list.html
 │   └── single.html
@@ -115,11 +124,14 @@ See the Hugo docs: [Data Templates](https://gohugo.io/templates/data-templates/)
 ├── partials/
 │   ├── content/
 │   ├── footer/
+│   │   ├── esbuild.html
 │   │   ├── footer.html
 │   │   └── script-footer.html
 │   ├── head/
+│   │   ├── body-class.html
 │   │   ├── favicons.html
 │   │   ├── head.html
+│   │   ├── libsass.html
 │   │   ├── opengraph.html
 │   │   ├── resource-hints.html
 │   │   ├── script-header.html
@@ -131,11 +143,8 @@ See the Hugo docs: [Data Templates](https://gohugo.io/templates/data-templates/)
 │   │   ├── alert.html
 │   │   └── header.html
 │   └── sidebar/
+│   └── email.html
 ├── shortcodes/
-│   ├── alert.html
-│   ├── email.html
-│   ├── img-simple.html
-│   └── img.html
 ├── 404.html
 ├── index.headers
 ├── index.html
@@ -176,10 +185,6 @@ See the stylelint docs: [Ignoring code](https://stylelint.io/user-guide/ignore-c
 ### .stylelintrc.json
 
 See the stylelint docs: [Configuration](https://stylelint.io/user-guide/configure).
-
-### babel.config.js
-
-See the Babel docs: [Configure Babel](https://babeljs.io/docs/en/configuration).
 
 ### netlify.toml
 
