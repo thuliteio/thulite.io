@@ -9,11 +9,11 @@
   {{ if .Site.Params.options.bootStrapJs -}}
     <script src="{{ $bs.RelPermalink }}" defer></script>
   {{ end -}}
+  {{ $app := resources.Get "js/app.js" -}}
+  {{ $js := slice $lazysizes $clipBoard $alert $plausible $app | resources.Concat "main.js" -}}
   {{ if eq .Section "docs" -}}
     <script src="{{ $docSearch.RelPermalink }}" defer></script>
   {{ end -}}
-  {{ $app := resources.Get "js/app.js" -}}
-  {{ $js := slice $lazysizes $clipBoard $alert $plausible $app | resources.Concat "main.js" -}}
   <script src="{{ $js.Permalink }}" defer></script>
 {{ else -}}
   {{ $docSearch := $docSearch | minify | fingerprint "sha512" -}}
@@ -25,8 +25,8 @@
   {{ if .Site.Params.options.bootStrapJs -}}
   <script src="{{ $bs.RelPermalink }}" integrity="{{ $bs.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ end -}}
+  <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ if eq .Section "docs" -}}
   <script src="{{ $docSearch.RelPermalink }}" integrity="{{ $docSearch.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ end -}}
-  <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end -}}
