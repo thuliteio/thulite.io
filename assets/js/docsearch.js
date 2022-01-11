@@ -8,9 +8,9 @@ if (searchPlaceholder !== null) {
 
 docsearch({
   container: '#docsearch',
-  // appId: 'KMWY81ZWS3',
+  appId: 'AHKXAT87MO',
   indexName: 'gethyas',
-  apiKey: 'cdca78e5ea45edfe483b1090b8c4bbb8',
+  apiKey: 'd65493e261fd5f638b12512bc3dfcd7f',
   debug: false,
 });
 
