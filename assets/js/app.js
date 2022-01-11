@@ -19,22 +19,6 @@ if (document.querySelector('#deploy-to-netlify') !== null) {
 }
 /* eslint-enable */
 
-var searchPlaceholder = document.getElementById('search-placeholder');
-
-if (searchPlaceholder !== null) {
-  searchPlaceholder.className = 'd-none';
-}
-
-var docsearch = document.getElementById('docsearch');
-
-if (docsearch !== null) {
-  document.addEventListener('click', buttonBlur);
-}
-
-function buttonBlur() {
-  docsearch.firstElementChild.blur();
-}
-
 /*
 var search = document.getElementById('search');
 
