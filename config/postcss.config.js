@@ -21,6 +21,7 @@ module.exports = {
         'h5',
         'alert-link',
         'aria-selected',
+        '::selection',
         ...whitelister([
           './assets/scss/components/_alerts.scss',
           './assets/scss/components/_buttons.scss',
