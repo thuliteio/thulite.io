@@ -13,7 +13,7 @@ weight: 310
 toc: true
 ---
 
-{{< img-simple src="mozilla-observatory-scan-summary-hyas.png" alt="Mozilla Observatory Scan Summary Hyas">}}
+![Mozilla Observatory Scan Summary Hyas](mozilla-observatory-scan-summary-hyas.png)
 
 See also Mozilla Observatory: [Scan Results for hyas.netlify.app](https://observatory.mozilla.org/analyze/hyas.netlify.app)
 
@@ -27,18 +27,24 @@ See also the Netlify website: [Security at Netlify](https://www.netlify.com/secu
 
 ```bash
 /*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'none'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'
+  Content-Security-Policy: default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self' 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk='; style-src 'self'
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin
+  Feature-Policy: geolocation 'self'
+  Cache-Control: public, max-age=31536000
+  Access-Control-Allow-Origin: *
 ```
 
 See also: [Headers]({{< ref "netlify#headers" >}}).
 
 #### Content Security Policy
 
-{{< alert icon="💡" text="<a href=\"https://addons.mozilla.org/nl/firefox/addon/laboratory-by-mozilla/\">Laboratory</a> is an experimental Firefox extension that helps you generate a Content Security Policy (CSP) header for your website." >}}
+{{< alert icon="💡" text="<a href=\"https://csper.io/evaluator\">Policy Evaluator</a> is a free tool to evaluate your website's Content Security Policy for security misconfigurations and recommendations." >}}
+
+{{< alert icon="💡" text="<a href=\"https://csper.io/generator\">Policy Generator</a> is a free tool to generate a Content Security Policy." >}}
 
 ## Subresource Integrity
 

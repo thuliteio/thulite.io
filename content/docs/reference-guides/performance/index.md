@@ -13,7 +13,7 @@ weight: 320
 toc: true
 ---
 
-{{< img-simple src="google-lighthouse-scan-results-hyas.gif" alt="Google Lighthouse Scan Results Hyas">}}
+![Google Lighthouse Scan Results Hyas](google-lighthouse-scan-results-hyas.png)
 
 See also Google Lighthouse: [Scan Results for hyas.netlify.app](https://googlechrome.github.io/lighthouse/viewer/?gist=73a46ae67cbe2f70318635b09a548ff0)
 
@@ -36,9 +36,19 @@ module.exports = {
       ],
       safelist: [
         'lazyloaded',
+        'table',
+        'thead',
+        'tbody',
+        'tr',
+        'th',
+        'td',
+        'h3',
+        'alert-link',
         ...whitelister([
-          './assets/scss/components/_syntax.scss',
+          './assets/scss/components/_alerts.scss',
+          // './assets/scss/components/_buttons.scss',
           './assets/scss/components/_code.scss',
+          // './assets/scss/components/_syntax.scss',
         ]),
       ],
     }),
@@ -60,6 +70,6 @@ See also the [Quicklink website](https://getquick.link/).
 
 ## Lazy loading images
 
-Hyas uses [lazysizes](https://github.com/aFarkas/lazysizes) with a Low Quality Image Placeholder (LQIP) to lazyload images added with the [image shortcode]({{< ref "layouts" >}}). The LQIP is blurred with a CSS filter.
+Hyas uses [lazysizes](https://github.com/aFarkas/lazysizes) with a Low Quality Image Placeholder (LQIP) to lazyload [images](/docs/recipes/images/) added with Markdown. The LQIP is blurred with a CSS filter.
 
 See also the lazysizes [Readme](https://github.com/aFarkas/lazysizes#readme)

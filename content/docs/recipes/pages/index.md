@@ -1,7 +1,7 @@
 ---
 title: "Pages"
-description: "Add a default page or blog post. Customize the homepage and 404 page."
-lead: "Add a default page or blog post. Customize the homepage and 404 page."
+description: "Add a default page or blog post."
+lead: "Add a default page or blog post."
 date: 2020-11-23T11:55:16+01:00
 lastmod: 2020-11-23T11:55:16+01:00
 draft: false
@@ -39,11 +39,3 @@ npm run create about/index.md
 ```bash
 npm run create blog/say-hello-to-hyas/index.md
 ```
-
-## Customize homepage
-
-See: [Page Layouts]({{< ref "page-layouts" >}}).
-
-## Customize 404 page
-
-See: [Page Layouts]({{< ref "page-layouts" >}}).

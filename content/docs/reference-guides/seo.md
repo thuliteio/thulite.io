@@ -20,45 +20,54 @@ toc: true
 ```toml
 title = "Hyas"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Hyas is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+titleAddition = "Modern Hugo Starter"
+description = "Hyas is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
 ```
 
 See also: [The Document Title element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
 
-## Open Graph + Twitter Cards
+## Open Graph
 
 ```toml
 images = ["hyas.png"]
-twitterSite = "henkverlinde"
-twitterCreator = "henkverlinde"
-facebookAuthor = "verlinde.henk"
-facebookPublisher = "verlinde.henk"
 ogLocale = "en_US"
+titleHome = "Hyas Hugo Starter"
 ```
 
-See also: [The Open Graph protocol](https://ogp.me/) and [Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)
+See also: [The Open Graph protocol](https://ogp.me/)
+
+## Twitter Cards
+
+```toml
+twitterSite = "@gethyas"
+twitterCreator = "@henkverlinde"
+```
+
+See also: [Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)
 
 ## JSON-LD
 
 ```toml
+# schemaType = "Person"
 schemaType = "Organization"
+schemaName = "Hyas"
+schemaAuthor = "Henk Verlinde"
+schemaAuthorTwitter = "https://twitter.com/henkverlinde"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
+schemaAuthorGitHub = "https://github.com/h-enk"
+schemaLocale = "en-US"
 schemaLogo = "logo-hyas.png"
-schemaTwitter = "https://twitter.com/henkverlinde"
-schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaGitHub = "https://github.com/h-enk"
-schemaSection = "blog"
+schemaLogoWidth = 512
+schemaLogoHeight = 512
+schemaImage = "hyas.png"
+schemaImageWidth = 1280
+schemaImageHeight = 640
+schemaTwitter = "https://twitter.com/gethyas"
+schemaLinkedIn = ""
+schemaGitHub = "https://github.com/h-enk/hyas"
 ```
 
 See also: [schema.org](https://schema.org/)
-
-## Sitelinks Search Box
-
-```toml
-siteLinksSearchBox = false
-```
-
-See also: [Sitelinks search box](https://developers.google.com/search/docs/data-types/sitelinks-searchbox)
 
 ## Chrome Browser
 

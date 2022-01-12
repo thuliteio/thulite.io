@@ -1,7 +1,7 @@
 ---
 title: "How to Contribute"
-description: "Contribute to Hyas, improve documentation, or submit to showcase."
-lead: "Contribute to Hyas, improve documentation, or submit to showcase."
+description: "Improve Hyas code, improve documentation, submit to themes or showcase."
+lead: "Improve Hyas code, improve documentation, submit to themes or showcase."
 date: 2020-11-12T20:12:04+01:00
 lastmod: 2020-11-12T20:12:04+01:00
 draft: false
@@ -15,9 +15,9 @@ toc: true
 
 {{< alert icon="👉" text="Make sure to read the <a href=\"/docs/contributing/code-of-conduct/\">Code of Conduct</a>" >}}
 
-## Contribute to Hyas
+## Improve Hyas code
 
-{{< alert icon="👉" text="The Hyas code lives in the <a href=\"https://github.com/h-enk/hyas\">`hyas` repository</a>." >}}
+{{< alert icon="👉" text="The Hyas code lives in the <a href=\"https://github.com/h-enk/hyas\">hyas repository</a>." >}}
 
 - Follow the [GitHub flow](https://guides.github.com/introduction/flow/).
 - Follow the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/)
@@ -29,7 +29,7 @@ toc: true
 
 ## Improve documentation
 
-{{< alert icon="👉" text="The documentation lives in <a href=\"https://github.com/h-enk/gethyas.com/tree/master/content/docs\">`./content/docs/`</a> of the <a href=\"https://github.com/h-enk/gethyas.com\">`gethyas.com` repository</a>." >}}
+{{< alert icon="👉" text="The documentation lives in <a href=\"https://github.com/h-enk/gethyas.com/tree/master/content/docs\"><code>./content/docs/</code></a> of the <a href=\"https://github.com/h-enk/gethyas.com\">gethyas.com repository</a>." >}}
 
 - Follow the [GitHub flow](https://guides.github.com/introduction/flow/).
 - Follow the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/)

@@ -15,7 +15,11 @@ toc: true
 
 ## Problems updating npm packages
 
-Delete the `./node_modules` folder, and run again:
+```bash
+npm run clean:install
+```
+
+Next, run:
 
 ```bash
 npm install

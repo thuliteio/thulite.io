@@ -15,8 +15,7 @@ toc: true
 
 ```bash
 .
-├── assets/
-│   └── lambda/
+├── functions/
 ├── layouts/
 │   ├── index.headers
 │   └── index.redirects
@@ -27,20 +26,18 @@ See also the Hugo Docs: [Host on Netlify](https://gohugo.io/hosting-and-deployme
 
 ## Functions
 
-Functions in `./assets/lambda/` are compiled on build to `./functions/`.
-
-See also the Netlify docs: [Functions overview](https://docs.netlify.com/functions/overview/)
+See: [Functions](/docs/recipes/functions/)
 
 ## Redirects
 
 `./layouts/index.redirects` is converted on build to `./public/_redirects`.
 
 ```bash
-{{ range $pages := .Site.Pages -}}
-  {{ range .Aliases -}}
-    {{ . }} {{ $pages.RelPermalink -}}
-  {{ end -}}
-{{ end -}}
+{{- range $p := .Site.Pages -}}
+{{- range .Aliases }}
+{{ . }} {{ $p.RelPermalink -}}
+{{- end }}
+{{- end -}}
 ```
 
 See also the Netlify docs: [Redirects and rewrites](https://docs.netlify.com/routing/redirects/)
@@ -54,16 +51,17 @@ See also the Netlify docs: [Redirects and rewrites](https://docs.netlify.com/rou
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'
+  Content-Security-Policy: default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self' 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk='; style-src 'self'
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin
   Feature-Policy: geolocation 'self'
   Cache-Control: public, max-age=31536000
+  Access-Control-Allow-Origin: *
 ```
 
 See also the Netlify docs: [Custom headers](https://docs.netlify.com/routing/headers/)
 
-## Build and deploy
+## Configuration
 
 `./netlify.toml`:
 
@@ -73,8 +71,8 @@ See also the Netlify docs: [Custom headers](https://docs.netlify.com/routing/hea
   functions = "functions"
 
 [build.environment]
-  NODE_VERSION = "16.3.0"
-  NPM_VERSION = "7.16.0"
+  NODE_VERSION = "16.13.1"
+  NPM_VERSION = "8.1.2"
 
 [context.production]
   command = "npm run build"

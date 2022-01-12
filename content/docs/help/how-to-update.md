@@ -23,10 +23,40 @@ npm outdated
 
 ## Update npm packages
 
-Bump the versions in the `devDependencies` section of `./package.json`, and run:
+Bump the versions in the `devDependencies` section of `./package.json`.
+
+Next, run:
 
 ```bash
 npm update
+```
+
+## Update Hugo
+
+In `./package.json`, bump the Hugo version:
+
+```json
+"otherDependencies": {
+  "hugo": "0.91.2"
+}
+```
+
+Next, run:
+
+```bash
+npm install
+```
+
+## Clean install
+
+```bash
+npm run clean:install
+```
+
+Next, run:
+
+```bash
+npm install
 ```
 
 ## Resources
