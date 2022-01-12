@@ -39,7 +39,7 @@
     "autoprefixer": "^10.4",
     "bootstrap": "^5.1",
     "clipboard": "^2.0",
-    "dotenv": "^10.0.0",
+    "dotenv": "^11.0",
     "encoding": "^0.1.13",
     "eslint": "^8.6",
     "exec-bin": "^1.0.0",
