@@ -97,6 +97,10 @@ landscapePhotoWidths = [900, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 smallLimit = "320"
+
+### Image partial
+defaultImage = "default-image.png" # put in `./assets/images/`
+fillImage = "1280x720 Center" # normalize image size
 ```
 
 #### Footer

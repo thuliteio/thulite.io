@@ -1,7 +1,7 @@
 ---
 title: "Images"
-description: "Add a local or a remote image with Markdown. Images are lazyloaded, blurred up, and responsive."
-lead: "Add a local or a remote image with Markdown. Images are lazyloaded, blurred up, and responsive."
+description: "Add a local or a remote image with Markdown, or use the image partial in a template. Images are lazyloaded, blurred up, and responsive."
+lead: "Add a local or a remote image with Markdown, or use the image partial in a template. Images are lazyloaded, blurred up, and responsive."
 date: 2020-11-23T11:53:06+01:00
 lastmod: 2020-11-23T11:53:06+01:00
 draft: false
@@ -17,11 +17,21 @@ See also the Markdown Guide: [Images](https://www.markdownguide.org/basic-syntax
 
 ## Processing
 
-Render hook template: `./layouts/_default/_markup/render-image.html`. An `<img>` element is generated for small images, a `<figure>` element for large images.
+- Render hook: `./layouts/_default/_markup/render-image.html`.
+- Image partial: `./layouts/partials/content/image.html`.
+- An `<img>` element is generated for small images, a `<figure>` element for large images.
 
 ### Settings
 
-Set `smallLimit` in `./config/_default/params.toml`, e.g. `smallLimit = "360"`.
+Set `smallLimit`, `defaultImage`, and `fillImage` in `./config/_default/params.toml`:
+
+```toml
+smallLimit = "320"
+
+### Image partial
+defaultImage = "default-image.png" # put in `./assets/images/`
+fillImage = "1280x720 Center" # normalize image size
+```
 
 See also: [Images](http://localhost:1313/docs/recipes/project-configuration/#images)
 
@@ -62,3 +72,23 @@ Will be processed into:
 Will be processed into:
 
 ![Happy Dance by Neil Sanders](https://i.giphy.com/media/hIip12KtxrNU5GG0Ii/giphy.gif?cid=790b7611e72a6d08626c8c4ff1410056fbc51e0ed1f2daab&rid=giphy.gif&ct=s)
+
+## Use the image partial
+
+### Example
+
+Add `{{ partial "content/image.html" . }}` to `./layouts/blog/single.html`:
+
+```html
+{{ define "main" }}
+<div class="row justify-content-center">
+  <div class="col-lg-7">
+    <article>
+      <h1>{{ .Title }}</h1>
+      {{ partial "content/image.html" . }}
+      {{ .Content }}
+    </article>
+  </div>
+</div>
+{{ end }}
+```
