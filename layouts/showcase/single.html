@@ -25,6 +25,7 @@
 			{{ .Scratch.Set "class" "card-img-top m-0 p-1" -}}
 			<div class="card my-3">
 				{{ partial "main/img.html" . }}
+				<!-- {{- partial "helpers/wrapped-image" (dict "width" "1440px" "height" "900px" "alt" .Title "image" $image "page" .Page "class" "card-img-top m-0 p-1" "imageWrapper" "figure" "noImageWrapper" true) -}} -->
 			</div>
 			<h1>{{ .Title }}</h1>
 			<p class="lead">{{ .Params.lead | safeHTML }}</p>

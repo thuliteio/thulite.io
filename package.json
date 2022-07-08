@@ -1,10 +1,10 @@
 {
   "name": "gethyas.com",
-  "version": "0.3.8-alpha.1",
+  "version": "0.3.8",
   "private": true,
   "engines": {
-		"node": ">=16.15.1"
-	},
+    "node": ">=16.16.0"
+  },
   "browserslist": [
     "defaults"
   ],
@@ -39,6 +39,7 @@
     "@babel/preset-env": "^7.18",
     "@docsearch/js": "^3.1",
     "@fullhuman/postcss-purgecss": "^4.1",
+    "@hyas/images": "^0.2.1",
     "auto-changelog": "^2.4",
     "autoprefixer": "^10.4",
     "bootstrap": "^5.2.0-beta1",

@@ -1,0 +1,35 @@
+[[mounts]]
+  source = "assets"
+  target = "assets"
+
+[[mounts]]
+  source = "static"
+  target = "static"
+
+[[mounts]]
+  source = "node_modules/lazysizes"
+  target = "assets/js/vendor/lazysizes"
+
+[[mounts]]
+  source = "node_modules/instant.page"
+  target = "assets/js/vendor/instant.page"
+
+[[mounts]]
+  source = "node_modules/docsearch.js"
+  target = "assets/js/vendor/docsearch.js"
+
+[[mounts]]
+  source = "node_modules/clipboard"
+  target = "assets/js/vendor/clipboard"
+
+[[mounts]]
+  source = "node_modules/bootstrap"
+  target = "assets/js/vendor/bootstrap"
+
+[[mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "node_modules/@hyas/images/layouts"
+  target = "layouts"
