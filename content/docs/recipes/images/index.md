@@ -63,8 +63,6 @@ Will be processed into:
 
 ![Green Sea Turtle Hatchling by Hannah Le Leu](green-sea-turtle-hatchling.webp "A green sea turtle hatchling cautiously surfaces for air, to a sky full of hungry birds.")
 
-<!--
-
 ## Add a remote image
 
 ### Example
@@ -96,6 +94,8 @@ Add `{{ partial "content/image.html" . }}` to `./layouts/blog/single.html`:
 </div>
 {{ end }}
 ```
+
+<!--
 
 ## Remote gif
 
