@@ -45,7 +45,7 @@ singleSize = false
 imageAddClass = "img-fluid lazyload blur-up"
 
 ## Blog
-defaultImage = "harley-davidson.jpg" # put in `./assets/images/`
+defaultImage = "spencer-davis-ilQmlVIMN4c-unsplash.jpg" # put in `./assets/images/`
 
 # Images - Temporarily left in place for backward compatibility
 # quality = 85
