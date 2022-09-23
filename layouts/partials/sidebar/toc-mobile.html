@@ -1,0 +1,6 @@
+<nav aria-label="On this page" class="on-this-page">
+  <details>
+    <summary>On this page</summary>
+    {{ .TableOfContents | replaceRE "<nav id=\"TableOfContents\">" "<nav id=\"toc-mobile\" class=\"toc\">" | safeHTML }}
+  </details>
+</nav>

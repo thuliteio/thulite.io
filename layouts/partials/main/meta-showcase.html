@@ -1,0 +1,5 @@
+{{ if .Params.types -}}
+<p class="meta-showcase">
+  {{ range $index, $type := .Params.types }}{{ if gt $index 0 }}, {{ end }}<a href="{{ "/showcase/types/" | relURL }}{{ . | urlize }}/">{{ . | title }}</a>{{ end -}}
+</p>
+{{ end -}}

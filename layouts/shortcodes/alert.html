@@ -1,4 +1,12 @@
-<div class="alert alert-warning d-flex" role="alert">
-  <div class="flex-shrink-1 alert-icon">{{ with .Get "icon" }}{{.}}{{ end }}</div>
-  <div class="w-100">{{ with .Get "text" }}{{ . | safeHTML }}{{ end }}</div>
+<div class="alert alert-{{ with .Get "context" }}{{.}}{{ else }}light border{{ end }} d-flex" role="alert">
+  {{ with .Get "icon" }}<span class="alert-icon">{{.}}</span>{{ end }}
+  {{ with .Get "text"}}
+    <span class="alert-text">{{ . | safeHTML }}</span>
+  {{ else }}
+    {{ with .Inner}}
+      <span class="alert-text"> {{ . | markdownify}}</span>
+    {{ else }}
+      {{ errorf "No valid text variable or Inner content given"}}
+    {{ end }}
+  {{ end}}
 </div>

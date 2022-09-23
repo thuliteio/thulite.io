@@ -1,0 +1,12 @@
+{{ if or .Prev .Next -}}
+<div class="d-flex justify-content-between">
+<!-- https://www.feliciano.tech/blog/custom-sort-hugo-single-pages/ -->
+{{ $pages := where site.RegularPages "Section" .Section -}}
+{{ with $pages.Next . -}}
+	<a class="text-link" href="{{ .RelPermalink }}"><svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="5" y1="12" x2="19" y2="12"></line><line x1="5" y1="12" x2="11" y2="18"></line><line x1="5" y1="12" x2="11" y2="6"></line></svg>{{ .Title }}</a>
+{{ end -}}
+{{ with $pages.Prev . -}}
+	<a class="text-link ms-auto" href="{{ .RelPermalink }}">{{ .Title }}<svg xmlns="http://www.w3.org/2000/svg" class="ms-1" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="5" y1="12" x2="19" y2="12"></line><line x1="13" y1="18" x2="19" y2="12"></line><line x1="13" y1="6" x2="19" y2="12"></line></svg></a>
+{{ end -}}
+</div>
+{{ end -}}

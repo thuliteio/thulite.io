@@ -1,0 +1,20 @@
+{{ $related := .Site.RegularPages.Related . | first 3 -}}
+{{ with $related -}}
+<hr>
+<div class="section">
+  <div class="row justify-content-center">
+    <div class="col-lg-12">
+      <div class="section-title text-center">
+        <h2 class="h3 mb-0 title">Related Posts</h2>
+      </div>
+      <div class="row gy-5 gx-4 g-xl-5">
+        {{ range . }}
+          <div class="col-lg-4 col-md-6">
+            {{ partial "main/post-compact.html" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end -}}

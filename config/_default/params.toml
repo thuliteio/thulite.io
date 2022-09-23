@@ -3,14 +3,13 @@
 ## Homepage
 title = "Hyas"
 titleSeparator = "-"
-titleAddition = "Modern Hugo Starter"
-description = "Hyas is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
+titleAddition = "Build websites faster"
+description = "Hyas is a Hugo-powered Jamstack framework for building production-ready websites."
 
 ## Open Graph
-images = ["hyas.png"]
+images = ["images/hyas-schema-image.png"]
 ogLocale = "en_US"
-domainTLD = "gethyas.com"
-titleHome = "Hyas Hugo Starter"
+titleHome = "Hugo-powered Jamstack framework"
 
 ## Twitter Cards
 twitterSite = "@gethyas"
@@ -25,30 +24,18 @@ schemaAuthorTwitter = "https://twitter.com/henkverlinde"
 schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
 schemaAuthorGitHub = "https://github.com/h-enk"
 schemaLocale = "en-US"
-schemaLogo = "logo-hyas.png"
+schemaLogo = "images/hyas-schema-logo.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-schemaImage = "hyas.png"
+schemaImage = "images/hyas-schema-image.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaTwitter = "https://twitter.com/gethyas"
 schemaLinkedIn = ""
 schemaGitHub = "https://github.com/h-enk/hyas"
-schemaSection = "blog"
-
-## Sitelinks Search Box
-siteLinksSearchBox = false
 
 ## Chrome Browser
 themeColor = "#fff"
-
-# Images - Temporarily left in place for backward compatibility
-quality = 85
-bgColor = "#fff"
-landscapePhotoWidths = [900, 800, 700, 600, 500]
-portraitPhotoWidths = [800, 700, 600, 500]
-lqipWidth = "20x"
-smallLimit = "600"
 
 # Images
 imageResponsive = true
@@ -57,22 +44,34 @@ imageImageSizes = ["480","720","1080","1280","1600","2048"]
 singleSize = false
 imageAddClass = "img-fluid lazyload blur-up"
 
+## Blog
+defaultImage = "harley-davidson.jpg" # put in `./assets/images/`
+
+# Images - Temporarily left in place for backward compatibility
+# quality = 85
+# bgColor = "#fff"
+# landscapePhotoWidths = [900, 800, 700, 600, 500]
+# portraitPhotoWidths = [800, 700, 600, 500]
+# lqipWidth = "20x"
+# smallLimit = "320"
+
+### Image template - Temporarily left in place for backward compatibility
+# defaultImage = "default-image.png" # put in `./assets/images/`
+# fillImage = "1280x720 Center" # normalize image size
+
 # Footer
-footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
-copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
+footer = "&copy; 2022 Henk Verlinde. Deploys by <a class=\"text-link\" href=\"https://www.netlify.com/\" target=\"_blank\">Netlify</a>."
+# footer = "Deploys by <a class=\"text-link\" href=\"https://www.netlify.com/\" target=\"_blank\">Netlify</a>"
+
+# Feed
+copyRight = "Copyright (c) 2019-present Henk Verlinde"
 
 # Alert
 alert = false
 alertDismissable = true
-alertText = "Deliver web projects 10x faster. <a class=\"alert-link\" href=\"https://www.netlify.com/whitepaper/\" target=\"_blank\" rel=\"noopener\">Get the free enterprise paper →</a>"
+alertText = "Deliver web projects 10x faster. <a class=\"alert-link stretched-link\" href=\"https://www.netlify.com/whitepaper/\" target=\"_blank\" rel=\"noopener\">Get the free enterprise paper →</a>"
 
-# Edit Page
-docsRepo = "https://github.com/h-enk/gethyas.com/"
-editPage = true
-
-[options]
-  lazySizes = true
-  clipBoard = true
-  instantPage = true
-  bootStrapJs = true
-  collapsibleSidebar = false
+# Sections
+[sections]
+  # mainSections = ["blog", "docs"]
+  sectionNav = ["docs", "plugins", "themes", "showcase"]

@@ -1,0 +1,58 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+
+    <div class="col-lg-3 d-none d-lg-block">
+      <div class="section-sidebar">
+        <h2 class="h5">{{ .Section | humanize }}</h2>
+        {{ partial "sidebar/section-navigation.html" . }}
+
+
+        <h2 class="h5 mt-4">Resources</h2>
+      </div>
+    </div>
+
+    <div class="col-xl-7 col-lg-9">
+      <div class="row g-0 justify-content-center">
+        <div class="col-12">
+          <div class="row gy-2 align-items-center section-title mb-0 section pt-0 pb-2">
+            <div class="col-12">
+              {{ partial "main/meta-plugins.html" . }}
+              <h1 class="mb-3">{{ .Title }}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="pre-content">
+            <p class="lead-text">{{ .Params.lead | safeHTML }}</p>
+            {{ if and (ne .Params.toc false) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") -}}
+              <div class="d-xl-none">
+                {{ partial "sidebar/toc-mobile.html" . }}
+              </div>
+            {{ end -}}
+          </div>
+          <div class="content">
+            {{ partial "main/headline-hash.html" .Content }}
+          </div>
+          <div class="post-content">
+            {{ partial "main/section-navigation.html" . }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ if and (ne .Params.toc false) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") -}}
+    <div class="col-xl-2 d-none d-xl-block">
+      <div class="section-sidebar">
+        <h2 class="h5">On this page</h2>
+        {{ partial "sidebar/toc-desktop.html" . }}
+      </div>
+    </div>
+    {{ end -}}
+    </div>
+  </div>
+</section>
+{{ end }}

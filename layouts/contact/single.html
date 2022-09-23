@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+<!-- start of contact -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-9 col-lg-10">
+        <div class="section-title">
+          <h1 class="h3 mb-0 title">Contact us</h1>
+        </div>
+        <div class="row gy-5 gx-lg-5">
+          <div class="col-lg-6 order-1 order-lg-0">
+            <form class="row gy-4" action="https://airform.io/platoltheme@gmail.com" method="post">
+              <div class="col-md-12">
+                <input type="email" class="form-control" placeholder="Email address" name="email" autocomplete="new-email" required>
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" placeholder="Your name here" name="name" autocomplete="new-name" required>
+              </div>
+              <div class="col-md-12">
+                <textarea class="form-control" placeholder="Ask question or just say Hi" rows="4" name="message" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-light bg-white" aria-label="Send Message">Send <svg xmlns="http://www.w3.org/2000/svg" class="ms-1 mb-1" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"></path></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 order-0 order-lg-1">
+            <div class="ps-0 ps-lg-4">
+              <div class="mb-4 mb-lg-5">
+                <p class="h4 mb-3">We'd love to hear from you.</p>
+                <p>We'll answer every question you might have. Look forward to hearing from you</p>
+              </div>
+              <p class="mb-2">
+                <i class="ti ti-mail-forward d-inline-block me-2 text-dark" style="transform:translateY(2px)"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" class="d-inline-block me-2 text-dark" width="18" height="18" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path><path d="M3 6l9 6l9 -6"></path><path d="M15 18h6"></path><path d="M18 15l3 3l-3 3"></path></svg>
+                <a class="text-link" href="mailto:platoltheme@gmail.com">platoltheme@gmail.com</a>
+              </p>
+              <!--
+              <p class="mb-0">
+                <i class="ti ti-phone d-inline-block me-2 text-dark"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" class="d-inline-block me-2 text-dark" width="18" height="18" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path></svg>
+                <a class="text-link" href="tel:+98022964902">+98 02 296 4902</a>
+              </p>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of contact -->
+
+{{ end }}
+
+{{ define "sidebar-footer" }}
+{{ partial "sidebar/newsletter.html" . }}
+{{ end }}

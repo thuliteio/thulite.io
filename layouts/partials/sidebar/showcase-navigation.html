@@ -1,0 +1,99 @@
+{{ $currentPage := . -}}
+
+<nav class="section-menu">
+  <ul class="list-unstyled">
+    {{ $active := or (eq $currentPage.Title "Showcase") (eq .Type "showcase") -}}
+    <li class="mb-1"><a class="section-link{{ if $active }} active{{ end }}" href="/showcase/">All ({{ len (where .Site.RegularPages "Section" "==" "showcase") }})</a></li>
+  </ul>
+</nav>
+
+<h2 class="h5 mt-4">Types</h2>
+<nav class="section-menu">
+  <ul class="list-unstyled">
+    {{ range .Site.Taxonomies.types }}
+      {{ $active := eq .Page.Title $currentPage.Title -}}
+      <li class="mb-1"><a class="section-link{{ if $active }} active{{ end }}" href="{{ .Page.Permalink }}">{{ .Page.Title | title }} ({{ .Count }})</a></li>
+    {{ end }}
+  </ul>
+</nav>
+
+<h2 class="h5 mt-4">Features</h2>
+<nav class="section-menu">
+  <ul class="list-unstyled">
+    {{ range .Site.Taxonomies.features }}
+      {{ $active := eq .Page.Title $currentPage.Title -}}
+      <li class="mb-1"><a class="section-link{{ if $active }} active{{ end }}" href="{{ .Page.Permalink }}">{{ .Page.Title | title }} ({{ .Count }})</a></li>
+    {{ end }}
+  </ul>
+</nav>
+
+
+<!--
+<nav class="section-menu">
+  <ul class="list-unstyled">
+    {{ $currentPage := . -}}
+    {{ $section := $currentPage.Section -}}
+    {{ range (where .Site.Sections "Section" "in" $section) }}
+      {{ if .Sections -}}
+        {{ range .Sections -}}
+          {{ $active := in $currentPage.RelPermalink .RelPermalink -}}
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ md5 .Title }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}">
+              {{ .Title }}
+            </button>
+            <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ md5 .Title }}">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                {{ range .Pages -}}
+                  {{ if .IsNode -}}
+                    {{ $active := in $currentPage.RelPermalink .RelPermalink -}}
+                    <li class="my-1 ms-3">
+                      <button class="btn btn-toggle align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ md5 .Title }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}">
+                        {{ .Title }}
+                      </button>
+                      <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ md5 .Title }}">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                          {{ range .Pages -}}
+                            {{ if .IsNode -}}
+                              {{ $active := in $currentPage.RelPermalink .RelPermalink -}}
+                              <li class="my-1 ms-3">
+                                <button class="btn btn-toggle align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ md5 .Title }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}">
+                                  {{ .Title }}
+                                </button>
+                                <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ md5 .Title }}">
+                                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                                    {{ range .Pages -}}
+                                      {{ $active := in $currentPage.RelPermalink .RelPermalink -}}
+                                      <li><a class="section-link{{ if $active }} active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+                                    {{ end -}}
+                                  </ul>
+                                </div>
+                              </li>
+                            {{ else -}}
+                              {{ $active := in $currentPage.RelPermalink .RelPermalink -}}
+                              <li><a class="section-link{{ if $active }} active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+                            {{ end -}}
+                          {{ end -}}
+                        </ul>
+                      </div>
+                    </li>
+                  {{ else -}}
+                    {{ $active := in $currentPage.RelPermalink .RelPermalink -}}
+                    <li><a class="section-link{{ if $active }} active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+                  {{ end -}}
+                {{ end -}}
+              </ul>
+            </div>
+          </li>
+        {{ end -}}
+      {{ else -}}
+        {{ range .Pages -}}
+          {{ $active := in $currentPage.RelPermalink .RelPermalink -}}
+          <li class="mb-1">
+            <a class="section-link{{ if $active }} active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+        {{ end -}}
+      {{ end -}}
+    {{ end }}
+  </ul>
+</nav>
+-->

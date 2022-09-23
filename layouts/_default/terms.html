@@ -1,0 +1,85 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <div class="row g-0 justify-content-center">
+      <div class="col-xl-9 col-lg-10">
+        <div class="row gy-2 align-items-center section-title mb-0 section pt-0">
+          <div class="col-12">
+            <h1 class="h3 mb-0 title">{{ .Title }}</h1>
+          </div>
+          <div class="col-12">
+            <ul class="list-inline breadcrumb-menu">
+              {{ partial "main/breadcrumb" . -}}
+              {{ $data := .Data }}
+              {{ if eq $data.Plural "types" "features" }}
+                <li class="list-inline-item" aria-current="page">• &nbsp; <a class="text-link" href="/showcase/">Showcase</a></li>
+              {{ end -}}
+              <li class="list-inline-item active" aria-current="page">• &nbsp; <a class="text-link" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-4 pb-2 lead justify-content-center">
+      <div class="col-xl-9 col-lg-10">
+        <span class="me-3 d-inline-flex align-items-center">Order by <i class="ti ti-arrow-right ms-1"></i>
+        </span>
+        <div class="nav d-flex d-sm-inline-flex" id="filterTaxonomy" role="tablist">
+          <button class="bg-transparent outline-0 border-0 p-0 me-3 text-dark fw-normal nav-link active" id="alphabetical" data-bs-toggle="tab" data-bs-target="#alphabetical-tab-pane" type="button" role="tab" aria-controls="alphabetical-tab-pane" aria-selected="true">Alphabetically</button>
+          <button class="bg-transparent outline-0 border-0 p-0 text-dark fw-normal nav-link" id="popular-tab" data-bs-toggle="tab" data-bs-target="#popular-tab-pane" type="button" role="tab" aria-controls="popular-tab-pane" aria-selected="false">Popularity</button>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-xl-9 col-lg-10">
+        <div class="tab-content" id="taxonomyLists">
+          <div class="tab-pane show active" id="alphabetical-tab-pane" role="tabpanel" aria-labelledby="alphabetical-tab" tabindex="0">
+            <div class="row g-2 taxonomy-lists">
+              {{ range .Data.Pages.ByTitle -}}
+                <div class="col-md-4 col-6">
+                  <a class="text-dark px-3 py-2 d-flex lead bg-white" href="{{ .Permalink }}">
+                    <div class="flex-grow-1">
+                      <span class="sort-alphabetical">{{ .Title }}</span>
+                      <small class="sort-popular">({{ len .Data.Pages }})</small>
+                    </div>
+                    <div class="flex-shrink-0 ms-2 icon">
+                      <i class="ti ti-arrow-right opacity-25 small"></i>
+                    </div>
+                  </a>
+                </div>
+              {{ end -}}
+            </div>
+          </div>
+          <div class="tab-pane" id="popular-tab-pane" role="tabpanel" aria-labelledby="popular-tab" tabindex="0">
+            <div class="row g-2 taxonomy-lists">
+              <!-- https://gohugobrasil.netlify.app/templates/taxonomy-templates/#order-taxonomies -->
+              {{ $data := .Data }}
+              {{ range $key, $value := .Data.Terms.ByCount }}
+              <div class="col-md-4 col-6">
+              {{ if eq $data.Plural "types" "features" }}
+                <a class="text-dark px-3 py-2 d-flex lead bg-white" href="{{ $.Site.LanguagePrefix }}/showcase/{{ $data.Plural }}/{{ $value.Name | urlize }}">
+              {{ else -}}
+                <a class="text-dark px-3 py-2 d-flex lead bg-white" href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}">
+              {{ end -}}
+                  <div class="flex-grow-1">
+                    <span class="sort-alphabetical">{{ replace $value.Name "-" " " | title }} </span>
+                    <small class="sort-popular">({{ $value.Count }})</small>
+                  </div>
+                  <div class="flex-shrink-0 ms-2 icon">
+                    <i class="ti ti-arrow-right opacity-25 small"></i>
+                  </div>
+                </a>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-footer" }}
+{{ partial "sidebar/newsletter.html" . }}
+{{ end }}

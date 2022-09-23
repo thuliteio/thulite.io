@@ -1,40 +1,62 @@
 {{ define "main" }}
-	<div class="row flex-xl-nowrap">
-		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
-			<nav class="docs-links" aria-label="Main navigation">
-				{{ partial "sidebar/themes-menu.html" . }}
-			</nav>
-		</div>
-		{{ if ne .Params.toc false -}}
-		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
-			{{ partial "sidebar/docs-toc.html" . }}
-		</nav>
-		{{ end -}}
-		{{ with .Params.toc -}}
-		<main class="docs-content col-lg-11 col-xl-9">
-		{{ else -}}
-		<main class="docs-content col-lg-11 mx-xl-auto">
-		{{ end -}}
-			<div class="showcase-meta d-flex justify-content-between">
-				<span>{{ .Title }} <small>by {{ if .Params.contributors -}}{{ range $index, $contributor := .Params.contributors }}{{ if gt $index 0 }} and {{ end }}<a class="stretched-link position-relative" href="{{ "/contributors/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}</small></span>
-				<a href="{{ .Params.link }}"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a>
-			</div>
-			{{ $image := index .Params.images 0 -}}
-			{{ .Scratch.Set "src" $image -}}
-			{{ .Scratch.Set "alt" .Title -}}
-			{{ .Scratch.Set "class" "card-img-top m-0 p-1" -}}
-			<div class="card my-3">
-				{{ partial "main/img.html" . }}
-			</div>
-			<h1>{{ .Title }}</h1>
-			<p class="lead">{{ .Params.lead | safeHTML }}</p>
-			{{ partial "main/headline-hash.html" .Content }}
-			<h2>Website</h2>
-			<ul>
-				<li><a href="{{ .Params.link }}">{{ trim .Params.link "https://" }}</a></li>
-			</ul>
-			<!-- {{ partial "main/edit-page.html" . }} -->
-			{{ partial "main/docs-navigation.html" . }}
-		</main>
-	</div>
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 d-none d-lg-block">
+        <div class="section-sidebar">
+          <h2 class="h5">{{ .Section | humanize }}</h2>
+          {{ partial "sidebar/section-navigation.html" . }}
+          <h2 class="h5 mt-4">Resources</h2>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="row g-0 justify-content-center">
+          <div class="col-12">
+            <div class="row gy-2 align-items-center section-title mb-0 section py-0">
+              <div class="col-12">
+                <div class="wrapper-image">
+                  {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) }}
+                  {{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) }}
+                  {{ partial "helpers/wrapped-image" (dict "image" $image "page" .Page "imageClass" "w-100 h-auto lazyload blur-up" "alt" .Title "convertTo" "png" "loading" "lazy") }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="w-main">
+            {{ partial "main/meta-themes.html" . }}
+            <h1 class="mb-3">{{ .Title }}</h1>
+            <div class="pre-content">
+              <p class="lead-text">{{ .Params.lead | safeHTML }}</p>
+              <div class="demo-link">
+                <a target="_blank" class="text-link lead" href="{{ .Params.demo }}">Demo <svg xmlns="http://www.w3.org/2000/svg" class="mb-1" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="17" y1="7" x2="7" y2="17"></line><polyline points="8 7 17 7 17 16"></polyline></svg></a>
+              </div>
+              {{ if and (ne .Params.toc false) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") -}}
+                <div class="d-xl-none">
+                  {{ partial "sidebar/toc-mobile.html" . }}
+                </div>
+              {{ end -}}
+            </div>
+            <div class="content">
+              {{ partial "main/headline-hash.html" .Content }}
+            </div>
+            <div class="post-content">
+              {{ partial "main/section-navigation.html" . }}
+            </div>
+          </div>
+          {{ if and (ne .Params.toc false) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") -}}
+          <div class="d-none d-xl-block w-toc">
+            <div class="section-sidebar">
+              <h2 class="h5">On this page</h2>
+              {{ partial "sidebar/toc-desktop.html" . }}
+            </div>
+          </div>
+          {{ end -}}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 {{ end }}

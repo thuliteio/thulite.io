@@ -4,8 +4,11 @@ description: ""
 lead: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
-draft: true
+draft: false
 weight: 50
-images: ["{{ .Name | urlize }}.jpg"]
-contributors: ["Henk Verlinde"]
+images: []
+categories: []
+tags: []
+authors: []
+featured: false
 ---

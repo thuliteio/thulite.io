@@ -5,10 +5,10 @@ var pre = document.getElementsByTagName('pre');
 for (var i = 0; i < pre.length; ++ i)
 {
   var element = pre[i];
-  element.insertAdjacentHTML('afterbegin', '<button class="btn btn-copy"></button>');
+  element.insertAdjacentHTML('afterbegin', '<button class="btn btn-clipboard"></button>');
 }
 
-var clipboard = new Clipboard('.btn-copy', {
+var clipboard = new Clipboard('.btn-clipboard', {
 
   target: function(trigger) {
     return trigger.nextElementSibling;

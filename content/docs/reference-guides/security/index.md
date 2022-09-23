@@ -9,7 +9,7 @@ images: ["mozilla-observatory-scan-summary-hyas.png", "mozilla-observatory-scan-
 menu:
   docs:
     parent: "reference-guides"
-weight: 310
+weight: 410
 toc: true
 ---
 
@@ -42,9 +42,9 @@ See also: [Headers]({{< ref "netlify#headers" >}}).
 
 #### Content Security Policy
 
-{{< alert icon="💡" text="<a href=\"https://csper.io/evaluator\">Policy Evaluator</a> is a free tool to evaluate your website's Content Security Policy for security misconfigurations and recommendations." >}}
+{{< alert icon="💡" text="<a href=\"https://csper.io/evaluator\">Policy Evaluator</a> is a free tool to evaluate your website's Content Security Policy for security misconfigurations and recommendations." />}}
 
-{{< alert icon="💡" text="<a href=\"https://csper.io/generator\">Policy Generator</a> is a free tool to generate a Content Security Policy." >}}
+{{< alert icon="💡" text="<a href=\"https://csper.io/generator\">Policy Generator</a> is a free tool to generate a Content Security Policy." />}}
 
 ## Subresource Integrity
 

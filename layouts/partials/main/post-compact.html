@@ -1,0 +1,33 @@
+<article class="bg-white d-flex flex-column h-100">
+  <div class="p-4 pb-0">
+    <ul class="post-meta list-inline mb-3">
+      <li class="list-inline-item">
+        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 mb-1" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="5" width="16" height="16" rx="2"></rect><line x1="16" y1="3" x2="16" y2="7"></line><line x1="8" y1="3" x2="8" y2="7"></line><line x1="4" y1="11" x2="20" y2="11"></line><rect x="8" y="15" width="2" height="2"></rect></svg><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" -}}</time>
+      </li>
+      <li class="list-inline-item">•</li>
+      <li class="list-inline-item">
+        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 mb-1" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="4" width="16" height="16" rx="1"></rect><path d="M12 7v5l3 3"></path><path d="M4 12h1"></path><path d="M19 12h1"></path><path d="M12 19v1"></path></svg>{{ if lt .ReadingTime 9 -}}0{{ end -}}{{ .ReadingTime -}}&nbsp;min read
+      </li>
+    </ul>
+    <div class="position-relative">
+      <h3 class="h4 post-title mb-2 line-clamp clamp-2">
+        <a class="text-link stretched-link" href="{{ .Permalink }}">{{ .Title }}</a>
+      </h3>
+      <p class="mb-0 line-clamp clamp-2">{{ .Params.lead }}</p>
+    </div>
+  </div>
+  <div class="post-author mt-auto p-4 pt-3">
+    {{- range .Params.authors -}}
+      {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) -}}
+        {{ if .Params.avatar -}}
+          {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
+          {{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) -}}
+          <a href="{{ .Permalink }}" class="is-hoverable">
+            {{ partial "helpers/wrapped-image" (dict "width" 26 "height" 26 "image" $image "page" .Page "imageClass" "w-auto rounded-circle me-2 lazyload blur-up" "alt" .Title "convertTo" "webp" "loading" "lazy") -}}
+          </a>
+        {{ end -}}
+      {{ end -}}
+    {{ end -}}
+    by {{ if .Params.authors -}}{{ range $index, $author := .Params.authors -}}{{ if gt $index 0 -}}&nbsp;&amp;&nbsp;{{ end -}}<a class="text-link" href="{{ "/authors/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}
+  </div>
+</article>

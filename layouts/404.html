@@ -1,10 +1,13 @@
 {{ define "main" }}
-<div class="row justify-content-center">
-  <div class="col-md-12 col-lg-10 col-xl-8">
-    <article>
-      <h1 class="text-center">Page not found :(</h1>
-      <p class="text-center">The page you are looking for doesn't exist or has been moved.</p>
-    </article>
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 col-lg-10 mx-auto text-center">
+        <h1 class="page-not-found-title">4<span class="bg-dark text-white px-2">0</span>4</h1>
+        <p class="mb-4">Oops. The page you're looking for doesn't exist.</p>
+        <a href="{{ "/" | relLangURL }}" class="btn btn-dark">Back to home</a>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 {{ end }}

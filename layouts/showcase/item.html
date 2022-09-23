@@ -1,0 +1,20 @@
+<article class="showcase-item bg-white d-flex flex-column h-100">
+  <div class="showcase-image">
+    {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) }}
+    {{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) }}
+    <a class="d-block" href="{{ .Permalink }}">
+      {{ partial "helpers/wrapped-image" (dict "image" $image "page" .Page "imageClass" "w-100 h-auto lazyload blur-up" "alt" .Title "convertTo" "png" "loading" "lazy") }}
+    </a>
+  </div>
+  <div class="p-4 pb-0">
+    <div class="position-relative">
+      <h3 class="h4 post-title mb-2 line-clamp clamp-2">
+        <a class="text-link stretched-link" href="{{ .Permalink }}">{{ .Params.title }}</a>
+      </h3>
+      <p class="mb-0 line-clamp clamp-1">{{ .Params.lead }}</p>
+    </div>
+  </div>
+  <div class="showcase-type mt-auto px-4">
+    {{ partial "main/meta-showcase.html" . }}
+  </div>
+</article>

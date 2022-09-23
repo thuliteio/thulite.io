@@ -1,0 +1,91 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <div class="row gy-2 align-items-center section-title mb-0 section pt-0">
+      <div class="col-12">
+        <p class="mb-3">Showing posts from</p>
+        <h1 class="h3 mb-0 title">{{ .Title }}</h1>
+      </div>
+      <div class="col-12">
+				<ul class="list-inline breadcrumb-menu">
+					{{ partial "main/breadcrumb" . -}}
+					<li class="list-inline-item active" aria-current="page">• &nbsp; <a class="text-link" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+				</ul>
+      </div>
+    </div>
+    <div class="row gy-5 gx-md-5">
+		{{ range .Data.Pages -}}
+			<div class="col-lg-4 col-md-6">
+				<article class="bg-white d-flex flex-column h-100">
+					<div class="post-image">
+						{{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) }}
+						{{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) }}
+						<a class="d-block" href="{{ .Permalink }}">
+							{{ partial "helpers/wrapped-image" (dict "width" 400 "height" 264 "image" $image "page" .Page "imageClass" "w-100 h-auto lazyload blur-up" "alt" .Title "convertTo" "webp" "loading" "lazy") }}
+						</a>
+					</div>
+					<div class="p-4 pb-0">
+						<ul class="post-meta list-inline mb-3">
+							<li class="list-inline-item">
+								<svg xmlns="http://www.w3.org/2000/svg" class="me-1 mb-1" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="5" width="16" height="16" rx="2"></rect><line x1="16" y1="3" x2="16" y2="7"></line><line x1="8" y1="3" x2="8" y2="7"></line><line x1="4" y1="11" x2="20" y2="11"></line><rect x="8" y="15" width="2" height="2"></rect></svg><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" -}}</time>
+							</li>
+							<li class="list-inline-item">•</li>
+							<li class="list-inline-item">
+								<svg xmlns="http://www.w3.org/2000/svg" class="me-1 mb-1" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="4" width="16" height="16" rx="1"></rect><path d="M12 7v5l3 3"></path><path d="M4 12h1"></path><path d="M19 12h1"></path><path d="M12 19v1"></path></svg>{{ if lt .ReadingTime 9 -}}0{{ end -}}{{ .ReadingTime -}}&nbsp;min read
+							</li>
+						</ul>
+						<div class="position-relative">
+							<h3 class="h4 post-title mb-2 line-clamp clamp-2">
+								<a class="text-link stretched-link" href="{{ .Permalink }}">{{ .Params.title }}</a>
+							</h3>
+							<p class="mb-0 line-clamp clamp-3">{{ .Params.lead | safeHTML }}</p>
+						</div>
+					</div>
+					<div class="post-author d-flex mt-auto p-4">
+						<div class="flex-shrink-0">
+						{{- range .Params.authors -}}
+							{{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) -}}
+								{{ if .Params.avatar -}}
+									{{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
+									{{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) -}}
+									<a href="{{ .Permalink }}" class="is-hoverable">
+										{{ partial "helpers/wrapped-image" (dict "width" 42 "height" 42 "image" $image "page" .Page "imageClass" "rounded-circle w-auto lazyload blur-up" "alt" .Title "convertTo" "webp" "loading" "lazy") -}}
+									</a>
+								{{ end -}}
+							{{ end -}}
+						{{ end -}}
+						</div>
+						<div class="flex-grow-1 ms-3">
+							<p class="mb-0 lh-base small">Written by</p>
+							{{ if .Params.authors -}}{{ range $index, $author := .Params.authors -}}{{ if gt $index 0 -}}&nbsp;&amp;&nbsp;{{ end -}}<a class="text-link" href="{{ "/authors/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}
+						</div>
+					</div>
+				</article>
+			</div>
+			{{ end -}}
+      <div class="col-12 pt-4 mt-5">
+        <nav class="text-center">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link page-link-previous bg-transparent rounded-0 px-0 border-0 text-dark text-link active text-uppercase fw-medium" href="/">
+                <i class="ti ti-chevron-left"></i>
+                <span>Previous</span>
+              </a>
+            </li>
+            <li class="page-item page-count" title="Page 1 of 1">
+              <span class="current-page">1</span>
+              <span class="total-page">1</span>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link bg-transparent rounded-0 px-0 border-0 text-dark text-link active text-uppercase fw-medium" href="/">
+                <span>Next</span>
+                <i class="ti ti-chevron-right"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

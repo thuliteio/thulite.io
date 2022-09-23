@@ -1,0 +1,99 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <div class="row g-0 justify-content-center">
+      <div class="col-xl-9 col-lg-10">
+        <div class="row gy-2 align-items-center section-title mb-0 section pt-0">
+          <div class="col-12">
+            <h1 class="h3 mb-0 title">{{ .Title }}</h1>
+          </div>
+          <div class="col-12">
+            <ul class="list-inline breadcrumb-menu">
+              {{ partial "main/breadcrumb" . -}}
+              <li class="list-inline-item active" aria-current="page">• &nbsp; <a class="text-link" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-xl-9 col-lg-10">
+        {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) }}
+        {{ if $image -}}
+          {{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) }}
+          {{ partial "helpers/wrapped-image" (dict "image" $image "page" .Page "imageClass" "img-fluid mb-5 lazyload blur-up" "alt" .Title "convertTo" "webp" "loading" "lazy") }}
+        {{ end }}
+        <div class="content">
+          <h3 id="tushi-is-a-media-network-that-builds-and-operates">{{ .Params.content.title }}</h3>
+          <p>{{ .Params.content.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section bg-white">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-9 col-lg-10">
+        <div class="section-title">
+          <h2 class="h3 mb-0 title">Our Story</h2>
+        </div>
+        <div class="row gx-lg-5 gy-4">
+          <div class="col-md-6">
+            <div class="content">
+              {{ .Params.content.story.left | safeHTML }}
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="content">{{ .Params.content.story.right | safeHTML }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-9 col-lg-10">
+        <div class="section-title">
+          <h2 class="h3 mb-0 title">Our Authors</h2>
+        </div>
+        <div id="author-list" class="row gy-5 gx-md-5">
+          {{ range .Site.Taxonomies.authors }}
+            <div class="col-md-6">
+              <a class="bg-white text-dark p-3 d-flex is-hoverable" href="{{ .Page.Permalink }}">
+                <div class="flex-shrink-0 me-3">
+                  {{ $image := .Page.Resources.GetMatch (printf "**%s" .Page.Params.avatar) -}}
+                  {{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) }}
+                  {{ partial "helpers/wrapped-image" (dict "width" 90 "height" 90 "image" $image "page" .Page "imageClass" "shadow img-fluid lazyload blur-up" "alt" .Page.Title "convertTo" "webp" "loading" "lazy") }}
+                </div>
+                <div class="flex-grow-1">
+                  <div class="d-flex flex-column h-100">
+                    <div>
+                      <h3 class="h4 text-dark mb-1 line-clamp clamp-1">{{ .Page.Title }}</h3>
+                      <p class="mb-2 lh-1 line-clamp clamp-1">{{ .Page.Params.role }}</p>
+                    </div>
+                    <p class="fw-medium mt-auto mb-0 small">
+                      <i class="ti ti-edit-circle me-2"></i>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mb-1 me-2" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 15l8.385 -8.415a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3z"></path><path d="M16 5l3 3"></path><path d="M9 7.07a7.002 7.002 0 0 0 1 13.93a7.002 7.002 0 0 0 6.929 -5.999"></path></svg><span class="text-black">{{ if lt (len .Pages) 9 -}}0{{ end -}}{{ len .Pages }}</span> Published Posts
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          {{ end }}
+        </div>
+        <div class="mt-5">
+          <a class="text-link lead active" href="{{ "/authors/" | relLangURL }}"> View All Authors <svg xmlns="http://www.w3.org/2000/svg" class="mb-1" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="17" y1="7" x2="7" y2="17"></line><polyline points="8 7 17 7 17 16"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ define "sidebar-footer" }}
+{{ partial "sidebar/newsletter.html" . }}
+{{ end }}

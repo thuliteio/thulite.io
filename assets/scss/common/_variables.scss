@@ -1,171 +1,72 @@
-// Color system
-
+// style variables
+$font-primary: "DM Sans", sans-serif;
+$color-primary: #ddac6b;
+$body-background: #f2f3e8;
 $white: #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
 $black: #000;
-$blue: #0d6efd;
-$indigo: #6610f2;
-$purple: #6f42c1;
-$pink: #d63384;
-$red: #dc3545;
-$orange: #fd7e14;
-$yellow: #ffc107;
-$green: #198754;
-$teal: #20c997;
-$cyan: #0dcaf0;
-$blue: #0366d6;
-$white: #fff;
-$black: #333;
-$gray-darker: #586069;
-$gray-dark: #6a737d;
-$gray: #dfe2e5;
-$gray-light: #fafbfc;
-$blue-dark: #038;
-$blue-darker: #040d21;
-$primary: $blue;
-$secondary: $gray-600;
-$success: $green;
-$info: $cyan;
-$warning: $yellow;
-$danger: $red;
-$light: $gray-100;
-$dark: $gray-900;
-$beige: $gray-100;
-$blue-300: #8ed6fb;
-$pink-500: #d32e9d;
-$color-btn-bg: $black;
-$color-btn-border: darken($black, 5%);
-$color-btn-text: $white;
+$dark: #0a101a;
+$gray: #555;
+$light: #fafafa;
 
-/*
-$white:    #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black:    #000;
+/*! @docsearch/css Variables 3.2.1 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
 
-$yellow:   #ffe000;
-$black:    #1d2d35;
-$beige:    #fbf7f0;
-$red:      #e55235;
-$purple:   #5d2f86;
-$brown:    #aa9c84;
+:root {
+  --docsearch-primary-color: #5468ff;
+  --docsearch-text-color: #1c1e21;
+  --docsearch-spacing: 12px;
+  --docsearch-icon-stroke-width: 1.4;
+  --docsearch-highlight-color: var(--docsearch-primary-color);
+  --docsearch-muted-color: #969faf;
+  --docsearch-container-background: rgb(101 108 133 / 80%);
+  --docsearch-logo-color: #5468ff;
+  --docsearch-modal-width: 560px;
+  --docsearch-modal-height: 600px;
+  --docsearch-modal-background: #f5f6f7;
+  --docsearch-modal-shadow: inset 1px 1px 0 0 hsl(0deg 0% 100% / 50%), 0 3px 8px 0 #555a64;
+  --docsearch-searchbox-height: 56px;
+  --docsearch-searchbox-background: #ebedf0;
+  --docsearch-searchbox-focus-background: #fff;
+  --docsearch-searchbox-shadow: inset 0 0 0 2px var(--docsearch-primary-color);
+  --docsearch-hit-height: 56px;
+  --docsearch-hit-color: #444950;
+  --docsearch-hit-active-color: #fff;
+  --docsearch-hit-background: #fff;
+  --docsearch-hit-shadow: 0 1px 3px 0 #d4d9e1;
+  --docsearch-key-gradient: linear-gradient(-225deg, #d5dbe4, #f8f8f8);
+  --docsearch-key-shadow: inset 0 -2px 0 0 #cdcde6, inset 0 0 1px 1px #fff, 0 1px 2px 1px rgb(30 35 90 / 40%);
+  --docsearch-footer-height: 44px;
+  --docsearch-footer-background: #fff;
+  --docsearch-footer-shadow: 0 -1px 0 0 #e0e3e8, 0 -3px 6px 0 rgb(69 98 155 / 12%);
+}
 
-$blue-300: #8ed6fb;
-$pink-500: #d32e9d;
-
-$primary: $purple;
-*/
+html[data-theme="dark"] {
+  --docsearch-text-color: #f5f6f7;
+  --docsearch-container-background: rgb(9 10 17 / 80%);
+  --docsearch-modal-background: #15172a;
+  --docsearch-modal-shadow: inset 1px 1px 0 0 #2c2e40, 0 3px 8px 0 #000309;
+  --docsearch-searchbox-background: #090a11;
+  --docsearch-searchbox-focus-background: #000;
+  --docsearch-hit-color: #bec3c9;
+  --docsearch-hit-shadow: none;
+  --docsearch-hit-background: #090a11;
+  --docsearch-key-gradient: linear-gradient(-26.5deg, #565872, #31355b);
+  --docsearch-key-shadow: inset 0 -2px 0 0 #282d55, inset 0 0 1px 1px #51577d, 0 2px 2px 0 rgb(3 4 9 / 30%);
+  --docsearch-footer-background: #1e2136;
+  --docsearch-footer-shadow: inset 0 1px 0 0 rgb(73 76 106 / 50%), 0 -4px 8px 0 rgb(0 0 0 / 20%);
+  --docsearch-logo-color: #fff;
+  --docsearch-muted-color: #7f8497;
+}
 
 // Options
-//
-// Quickly modify global styling by enabling or disabling optional features.
-
-$enable-caret: true;
-$enable-rounded: true;
-$enable-shadows: false;
-$enable-gradients: false;
-$enable-transitions: true;
-$enable-reduced-motion: true;
-$enable-smooth-scroll: true;
-$enable-grid-classes: true;
-$enable-button-pointers: true;
-$enable-rfs: true;
-$enable-validation-icons: true;
 $enable-negative-margins: true;
-$enable-deprecation-messages: true;
-$enable-important-utilities: true;
 
-/** Bootstrap navbar fix (https://git.io/fADqW) */
-$navbar-dark-toggler-icon-bg: none;
-$navbar-light-toggler-icon-bg: none;
-
-// Options
 //
-// Quickly modify global styling by enabling or disabling optional features.
-
-$enable-responsive-font-sizes: true;
-
-// Body
-//
-// Settings for the `<body>` element.
-
-$body-bg: $white;
-$body-color: $black;
-
-// Grid containers
-//
-// Define the maximum width of `.container` for different screen sizes.
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1240px,
-  xxl: 1320px
-);
-
-@include _assert-ascending($container-max-widths, "$container-max-widths");
-
-// Grid columns
-//
-// Set the number of columns and specify the width of the gutters.
-
-$grid-columns: 16;
-$grid-gutter-width: 48px;
-$grid-row-columns: 6;
-
-// Components
-//
-// Define common padding and border radius sizes and more.
-
-$border-color: $gray-200;
-
-// Prefix for :root CSS variables
-
-$variable-prefix: bs-;
-
-// Typography
-//
-// Font, line-height, and color for body text, headings, and more.
-
-// stylelint-disable value-keyword-case
-$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-// stylelint-enable value-keyword-case
-$font-family-base: var(--#{$variable-prefix}font-sans-serif);
-$font-family-code: var(--#{$variable-prefix}font-monospace);
-$font-size-base: 1rem; // Assumes the browser default, typically `16px`
-$font-size-xl: $font-size-base * 1.375;
-$font-size-lg: $font-size-base * 1.25;
-$font-size-md: $font-size-base * 1.125;
-$font-size-sm: $font-size-base * 0.875;
-$line-height-base: 1.5;
-$headings-font-family: "Inter", $font-family-sans-serif;
-$headings-font-weight: 500;
-$headings-line-height: 1.3;
-$lead-font-weight: 400;
-
-// Links
-//
-// Style anchor elements.
-
-$link-color: $primary;
-$link-decoration: none;
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
 
 // Spacing
 //
@@ -173,58 +74,46 @@ $link-decoration: none;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
+// scss-docs-start spacer-variables-maps
 $spacer: 1rem;
-$enable-negative-margins: true;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
 
-// Navbar
+// scss-docs-end spacer-variables-maps
 
-$navbar-padding-y: $spacer / 2;
-$navbar-padding-x: 0;
-$navbar-nav-link-padding-x: 0.5rem;
-$navbar-light-color: $black;
-$navbar-light-hover-color: $primary;
-$navbar-light-active-color: $primary;
+// Components
+//
+// Define common padding and border radius sizes and more.
 
-// Cards
-
-$card-border-color: $gray-200;
+// scss-docs-start border-variables
+$border-width: 1px;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+) !default;
 
 // Alerts
 //
 // Define alert colors, border radius, and padding.
 
+// scss-docs-start alert-variables
 $alert-padding-y: $spacer;
-$alert-padding-x: $spacer * 1.5;
-$alert-margin-bottom: 0;
+$alert-padding-x: $spacer;
+$alert-margin-bottom: 1rem;
 $alert-border-radius: 0;
-$alert-link-font-weight: $headings-font-weight;
-$alert-border-width: 0;
-$alert-bg-level: 0;
-$alert-border-level: 0;
-$alert-color-level: 0;
-
-// docsearch
-$dropdown-config: (
-  main-color: $blue,
-  layout-type: normal,
-  layout-width: normal,
-  layout-alignment: align,
-  background-color: $white,
-  border-radius: 4,
-  border-width: 1,
-  border-color: $gray-200,
-  box-shadow: none,
-  branding-position: bottom,
-  spacing: normal,
-  include-desc: yes,
-  background-category-header: $white,
-  font-size: normal,
-  header-color: $black,
-  title-color: $black,
-  subtitle-color: $gray-darker,
-  text-color: $gray-darker,
-  highlight-color: $blue,
-  highlight-opacity: 0.1,
-  highlight-type: underline
-);
-$input-btn-focus-width: 0;
+$alert-link-font-weight: $font-weight-bold;
+$alert-border-width: $border-width;
+$alert-bg-scale: -80%;
+$alert-border-scale: -70%;
+$alert-color-scale: 40%;
+$alert-dismissible-padding-r: $alert-padding-x * 3; // 3x covers width of x plus default padding on either side
+// scss-docs-end alert-variables

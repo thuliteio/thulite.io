@@ -1,0 +1,33 @@
+/* stylelint-disable */
+.DocSearch-Container {
+  background-color: var(--docsearch-container-background);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: $zindex-modal;
+}
+
+.DocSearch-Hit-content-wrapper {
+  overflow-y: hidden;
+}
+
+.DocSearch-Hit a,
+.DocSearch-Footer a {
+  text-decoration: none;
+}
+
+.DocSearch-Hit-icon svg {
+  vertical-align: baseline;
+}
+
+.DocSearch-Hit-title {
+  font-size: 0.8em;
+}
+
+.DocSearch-Hit-title mark,
+.DocSearch-Hit-path mark {
+  padding: 0;
+}
+/* stylelint-enable */
