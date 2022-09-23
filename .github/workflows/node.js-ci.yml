@@ -26,6 +26,8 @@ jobs:
 
     - name: Install dependencies
       run: npm ci
+      env:
+        VENTIZO_AUTH_TOKEN: ${{ secrets.VENTIZO_AUTH_TOKEN }}
 
     - name: Run Hyas test script
       run: npm test
