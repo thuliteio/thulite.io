@@ -26,9 +26,12 @@
           <div class="bg-white p-4">
             <div class="d-sm-flex">
               <div class="flex-shrink-0">
-                {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
-                {{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) }}
-                {{ partial "helpers/wrapped-image" (dict "width" 124 "height" 124 "image" $image "page" .Page "imageClass" "img-fluid me-4 me-md-5 lazyload blur-up" "alt" .Title "convertTo" "webp" "loading" "lazy") }}
+                {{ if .Params.avatar -}}
+                  {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
+                  {{ $imageLq := $image.Resize "18x18 webp q95" -}}
+                  {{ $image = $image.Resize "124x124 webp q95" -}}
+                  <img class="img-fluid me-4 me-md-5 lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+                {{ end -}}
               </div>
               <div class="flex-grow-1 mt-3 mt-sm-0">
                 <h4 class="text-dark mb-1">{{ .Title }}</h4>

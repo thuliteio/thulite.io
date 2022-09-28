@@ -83,9 +83,13 @@ Will be processed into:
 ![Happy Dance by Neil Sanders](https://i.giphy.com/media/hIip12KtxrNU5GG0Ii/giphy.gif?cid=790b7611e72a6d08626c8c4ff1410056fbc51e0ed1f2daab&rid=giphy.gif&ct=s)
 ```
 
+<!--
 Will be processed into:
 
 ![Happy Dance by Neil Sanders](https://i.giphy.com/media/hIip12KtxrNU5GG0Ii/giphy.gif?cid=790b7611e72a6d08626c8c4ff1410056fbc51e0ed1f2daab&rid=giphy.gif&ct=s)
+-->
+
+Not (yet) supported.
 
 ## Use the image partial
 

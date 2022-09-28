@@ -4,11 +4,12 @@
     <div class="row justify-content-center">
       <div class="col-xl-9 col-lg-10 text-center">
         <div class="mb-5">
-					{{ if .Params.avatar -}}
-						{{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
-						{{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) -}}
-						{{ partial "helpers/wrapped-image" (dict "width" 180 "height" 180 "image" $image "page" .Page "imageClass" "img-fluid lazyload blur-up" "alt" .Title "convertTo" "webp" "loading" "lazy") -}}
-					{{ end -}}
+          {{ if .Params.avatar -}}
+            {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
+            {{ $imageLq := $image.Resize "18x18 webp q95" -}}
+            {{ $image = $image.Resize "180x180 webp q95" -}}
+            <img class="img-fluid lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+          {{ end -}}
         </div>
         <h4 class="text-dark mb-1">{{ .Title }}</h4>
         <p>{{ .Params.role }}</p>

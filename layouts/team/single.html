@@ -18,11 +18,9 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-xl-9 col-lg-10">
-        {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) }}
-        {{ if $image -}}
-          {{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) }}
-          {{ partial "helpers/wrapped-image" (dict "image" $image "page" .Page "imageClass" "img-fluid mb-5 lazyload blur-up" "alt" .Title "convertTo" "webp" "loading" "lazy") }}
-        {{ end }}
+        {{ $defaultImage := resources.Get (printf "%s%s" "/images/" .Site.Params.defaultImage ) }}
+        {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) | default  $defaultImage }}
+        {{ partial "lazyimg" (dict "img" $image "alt" .Title "class" "img-fluid mb-5") }}
         <div class="content">
           <h3 id="tushi-is-a-media-network-that-builds-and-operates">{{ .Params.content.title }}</h3>
           <p>{{ .Params.content.description }}</p>
@@ -64,9 +62,12 @@
             <div class="col-md-6">
               <a class="bg-white text-dark p-3 d-flex is-hoverable" href="{{ .Page.Permalink }}">
                 <div class="flex-shrink-0 me-3">
-                  {{ $image := .Page.Resources.GetMatch (printf "**%s" .Page.Params.avatar) -}}
-                  {{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) }}
-                  {{ partial "helpers/wrapped-image" (dict "width" 90 "height" 90 "image" $image "page" .Page "imageClass" "shadow img-fluid lazyload blur-up" "alt" .Page.Title "convertTo" "webp" "loading" "lazy") }}
+                  {{ if .Page.Params.avatar -}}
+                    {{ $image := .Page.Resources.GetMatch (printf "**%s" .Page.Params.avatar) -}}
+                    {{ $imageLq := $image.Resize "18x18 webp q95" -}}
+                    {{ $image = $image.Resize "90x90 webp q95" -}}
+                    <img class="shadow img-fluid lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Page.Title }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+                  {{ end -}}
                 </div>
                 <div class="flex-grow-1">
                   <div class="d-flex flex-column h-100">

@@ -40,13 +40,13 @@
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "devDependencies": {
-    "@babel/cli": "^7.18",
-    "@babel/core": "^7.18",
-    "@babel/preset-env": "^7.18",
+    "@babel/cli": "^7.19",
+    "@babel/core": "^7.19",
+    "@babel/preset-env": "^7.19",
     "@docsearch/js": "^3.2.1",
-    "@fullhuman/postcss-purgecss": "^4.1",
+    "@fullhuman/postcss-purgecss": "^5.0",
     "@hyas/core": "^0.1.1",
-    "@hyas/images": "^0.2.3",
+    "@hyas/images": "^0.3.0",
     "@hyas/seo": "^0.1.2",
     "@popperjs/core": "^2.11",
     "@ventizo/themes-tushi-assets": "^1.0.0",
@@ -54,22 +54,22 @@
     "autoprefixer": "^10.4",
     "bootstrap": "^5.2.0-beta1",
     "clipboard": "^2.0.11",
-    "eslint": "^8.19",
+    "eslint": "^8.24",
     "exec-bin": "^1.0.0",
     "highlight.js": "^11.6.0",
-    "hugo-installer": "^3.1",
+    "hugo-installer": "^4.0",
     "lazysizes": "^5.3",
-    "markdownlint-cli2": "^0.4.0",
+    "markdownlint-cli2": "^0.5.1",
     "netlify-plugin-submit-sitemap": "^0.4.0",
     "postcss": "^8.4",
     "postcss-cli": "^10.0",
     "purgecss-whitelister": "^2.4",
     "quicklink": "^2.2.0",
     "shx": "^0.3",
-    "stylelint": "^14.9",
-    "stylelint-config-standard-scss": "^4.0"
+    "stylelint": "^14.12",
+    "stylelint-config-standard-scss": "^5.0"
   },
   "otherDependencies": {
-    "hugo": "0.101.0"
+    "hugo": "0.104.1"
   }
 }

@@ -21,9 +21,10 @@
       {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) -}}
         {{ if .Params.avatar -}}
           {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
-          {{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) -}}
+          {{ $imageLq := $image.Resize "13x13 webp q95" -}}
+          {{ $image = $image.Resize "26x26 webp q95" -}}
           <a href="{{ .Permalink }}" class="is-hoverable">
-            {{ partial "helpers/wrapped-image" (dict "width" 26 "height" 26 "image" $image "page" .Page "imageClass" "w-auto rounded-circle me-2 lazyload blur-up" "alt" .Title "convertTo" "webp" "loading" "lazy") -}}
+            <img class="rounded-circle w-auto me-2 lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
           </a>
         {{ end -}}
       {{ end -}}

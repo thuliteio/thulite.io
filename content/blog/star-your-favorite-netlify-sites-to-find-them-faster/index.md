@@ -6,7 +6,7 @@ date: 2022-09-23T09:37:43+02:00
 lastmod: 2022-09-23T09:37:43+02:00
 draft: false
 weight: 50
-images: []
+images: ["star-your-favorite-netlify-sites.png"]
 categories: ["News"]
 tags: ["Hugo"]
 authors: ["Henk Verlinde"]

@@ -1,11 +1,9 @@
 <article class="bg-white d-flex flex-column h-100">
   <div class="post-image">
-    {{ $defaultImage := resources.Get (printf "%s%s" "/images/" .Site.Params.defaultImage ) }}
-    {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) | default  $defaultImage}}
-    {{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) }}
-
     <a class="d-block" href="{{ .Permalink }}">
-      {{ partial "helpers/wrapped-image" (dict "width" 400 "height" 264 "image" $image "page" .Page "imageClass" "w-100 h-auto lazyload blur-up" "alt" .Title "convertTo" "webp" "loading" "lazy") }}
+      {{ $defaultImage := resources.Get (printf "%s%s" "/images/" .Site.Params.defaultImage ) }}
+      {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) | default  $defaultImage}}
+      {{ partial "lazyimg" (dict "img" $image "alt" .Title) }}
     </a>
   </div>
   <div class="p-4 pb-0">
@@ -31,9 +29,10 @@
       {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) -}}
         {{ if .Params.avatar -}}
           {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
-          {{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) -}}
+          {{ $imageLq := $image.Resize "14x14 webp q95" -}}
+          {{ $image = $image.Resize "42x42 webp q95" -}}
           <a href="{{ .Permalink }}" class="is-hoverable">
-            {{ partial "helpers/wrapped-image" (dict "width" 42 "height" 42 "image" $image "page" .Page "imageClass" "rounded-circle w-auto lazyload blur-up" "alt" .Title "convertTo" "webp" "loading" "lazy") -}}
+            <img class="rounded-circle w-auto lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
           </a>
         {{ end -}}
       {{ end -}}

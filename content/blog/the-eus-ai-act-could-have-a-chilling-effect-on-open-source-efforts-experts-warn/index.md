@@ -6,7 +6,7 @@ date: 2022-09-07T14:25:05+02:00
 lastmod: 2022-09-07T14:25:05+02:00
 draft: false
 weight: 50
-images: []
+images: ["GettyImages-698506966.jpg"]
 categories: ["Product"]
 tags: ["Hugo", "EU"]
 authors: ["Henk Verlinde"]

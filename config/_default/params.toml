@@ -38,11 +38,11 @@ schemaGitHub = "https://github.com/h-enk/hyas"
 themeColor = "#fff"
 
 # Images
-imageResponsive = true
-imageConvertTo = "webp"
-imageImageSizes = ["480","720","1080","1280","1600","2048"]
-singleSize = false
-imageAddClass = "img-fluid lazyload blur-up"
+# imageResponsive = true
+# imageConvertTo = "webp"
+# imageImageSizes = ["480","720","1080","1280","1600","2048"]
+# singleSize = false
+# imageAddClass = "img-fluid lazyload blur-up"
 
 ## Blog
 defaultImage = "spencer-davis-ilQmlVIMN4c-unsplash.jpg" # put in `./assets/images/`
@@ -75,3 +75,28 @@ alertText = "Deliver web projects 10x faster. <a class=\"alert-link stretched-li
 [sections]
   # mainSections = ["blog", "docs"]
   sectionNav = ["docs", "plugins", "themes", "showcase"]
+
+[imaging]
+  anchor = 'Smart'
+  bgColor = '#fff'
+  hint = 'photo'
+  quality = 95
+  resampleFilter = 'Lanczos'
+
+# lazyimg
+[lazyimg]
+  resizer = "auto"
+  renderer = "lqip-webp"
+
+  # Resizer options:
+  lqipSize = "120x Gaussian"
+  maxSize = "1920x"
+  responsiveSizes = [ "320x", "640x", "768x", "1024x", "1366x", "1600x", "1920x" ]
+  resizeOptions = "Lanczos q95"
+
+  # Renderer options:
+  class = "img-fluid"
+  # alt = ""
+  noscript = true
+
+  errorHandler = "warning"

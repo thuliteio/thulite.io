@@ -1,9 +1,8 @@
 <article class="showcase-item bg-white d-flex flex-column h-100">
   <div class="showcase-image">
-    {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) }}
-    {{ $image := partial "helpers/lib/image-handling/find-image-src" (dict "src" $image "page" .Page "getRelative" true "ignoreBundleAssets" false) }}
     <a class="d-block" href="{{ .Permalink }}">
-      {{ partial "helpers/wrapped-image" (dict "image" $image "page" .Page "imageClass" "w-100 h-auto lazyload blur-up" "alt" .Title "convertTo" "jpg" "loading" "lazy") }}
+      {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) }}
+      {{ partial "lazyimg" (dict "img" $image "alt" .Title) }}
     </a>
   </div>
   <div class="p-4 pb-0">
