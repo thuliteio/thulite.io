@@ -16,6 +16,7 @@
 @import "@ventizo/themes-tushi-assets/scss/common";
 
 // @import "@ventizo/themes-tushi-assets/scss/header";
+@import "vendor/tushi/header";
 @import "@ventizo/themes-tushi-assets/scss/main";
 
 /** Import highlight.js */
@@ -35,6 +36,7 @@
 @import "components/buttons";
 @import "components/code";
 @import "components/comments";
+@import "components/footnotes";
 @import "components/forms";
 @import "components/images";
 @import "components/modal";

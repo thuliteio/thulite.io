@@ -7,14 +7,18 @@
 }
 
 /* Source: https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html */
+/*
 .single.section.docs,
 .single.section.plugins,
 .single.section.themes,
-.single.section.showcase {
+.single.section.showcase,
+*/
+.single {
   .content {
     h2,
     h3,
-    h4 {
+    h4,
+    sup {
       scroll-margin-top: 7rem;
 
       @include media-breakpoint-up(xl) {

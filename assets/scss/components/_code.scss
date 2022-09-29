@@ -1,8 +1,35 @@
 .content pre {
   background: $white;
+  white-space: pre;
 }
 
-code.hljs,
 pre code.hljs {
+  display: inline;
+  overflow-x: auto;
   padding: 0;
+}
+
+code.hljs {
+  padding: 0;
+}
+
+pre {
+  scrollbar-width: thin;
+  scrollbar-color: #ddd $light;
+}
+
+pre::-webkit-scrollbar {
+  height: 5px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: $light;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: #ddd;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
 }

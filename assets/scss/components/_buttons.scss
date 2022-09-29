@@ -1,5 +1,6 @@
-pre {
+.clipboard {
   position: relative;
+  float: right;
 }
 
 .btn-clipboard {
@@ -13,7 +14,7 @@ pre {
 }
 
 @media (min-width: 767px) {
-  pre:hover .btn-clipboard {
+  .clipboard:hover .btn-clipboard {
     opacity: 1;
   }
 
