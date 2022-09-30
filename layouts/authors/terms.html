@@ -29,8 +29,8 @@
                 {{ if .Params.avatar -}}
                   {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
                   {{ $imageLq := $image.Resize "18x18 webp q95" -}}
-                  {{ $image = $image.Resize "124x124 webp q95" -}}
-                  <img class="img-fluid me-4 me-md-5 lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+                  {{ $image = $image.Resize "248x248 webp q95" -}}
+                  <img class="img-fluid me-4 me-md-5 lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="124" height="124">
                 {{ end -}}
               </div>
               <div class="flex-grow-1 mt-3 mt-sm-0">

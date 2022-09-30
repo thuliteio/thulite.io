@@ -16,9 +16,9 @@
                   {{ if .Params.avatar -}}
                     {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
                     {{ $imageLq := $image.Resize "18x18 webp q95" -}}
-                    {{ $image = $image.Resize "50x50 webp q95" -}}
+                    {{ $image = $image.Resize "100x100 webp q95" -}}
                     <a href="{{ .Permalink }}" class="is-hoverable">
-                      <img class="rounded-circle w-auto lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+                      <img class="rounded-circle w-auto lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="50" height="50">
                     </a>
                   {{ end -}}
                 {{ end -}}

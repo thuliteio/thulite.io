@@ -30,9 +30,9 @@
         {{ if .Params.avatar -}}
           {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
           {{ $imageLq := $image.Resize "14x14 webp q95" -}}
-          {{ $image = $image.Resize "42x42 webp q95" -}}
+          {{ $image = $image.Resize "84x84 webp q95" -}}
           <a href="{{ .Permalink }}" class="is-hoverable">
-            <img class="rounded-circle w-auto lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+            <img class="rounded-circle w-auto lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="42" height="42">
           </a>
         {{ end -}}
       {{ end -}}

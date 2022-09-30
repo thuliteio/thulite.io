@@ -20,12 +20,6 @@ toc: true
 
 Hyas uses npm to centralize dependency management, making it easy to update resources, build tooling, plugins, and build scripts.
 
-{{< details "Why Hyas" >}}
-
-Hyas is just super, duh!
-
-{{< /details >}}
-
 ## Start a new Hyas project
 
 Create a new site, change directories, install dependencies, and start development server.

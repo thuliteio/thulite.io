@@ -65,8 +65,8 @@
                   {{ if .Page.Params.avatar -}}
                     {{ $image := .Page.Resources.GetMatch (printf "**%s" .Page.Params.avatar) -}}
                     {{ $imageLq := $image.Resize "18x18 webp q95" -}}
-                    {{ $image = $image.Resize "90x90 webp q95" -}}
-                    <img class="shadow img-fluid lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Page.Title }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+                    {{ $image = $image.Resize "180x180 webp q95" -}}
+                    <img class="shadow img-fluid lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Page.Title }}" width="90" height="90">
                   {{ end -}}
                 </div>
                 <div class="flex-grow-1">
