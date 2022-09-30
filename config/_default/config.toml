@@ -10,6 +10,9 @@ languageCode = "en-US"
 paginate = 7
 rssLimit = 10
 
+# Source: https://gohugo.io/getting-started/configuration/#timeout
+timeout = 60000
+
 [outputs]
   home = ["HTML", "RSS"]
 
