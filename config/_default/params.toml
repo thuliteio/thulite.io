@@ -90,7 +90,8 @@ alertText = "Deliver web projects 10x faster. <a class=\"alert-link stretched-li
 
   # Resizer options:
   lqipSize = "120x Gaussian"
-  maxSize = "1920x"
+  # maxSize = "1920x"
+  maxSize = "1366x"
   responsiveSizes = [ "320x", "640x", "768x", "1024x", "1366x", "1600x", "1920x" ]
   resizeOptions = "Lanczos q95"
 
