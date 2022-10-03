@@ -81,10 +81,10 @@
 
 [[footer]]
   name = "Privacy"
-  url = "/privacy-policy/"
+  url = "https://ventizo.com/privacy/"
   weight = 10
 
 [[footer]]
   name = "Terms"
-  url = "/terms-of-service/"
+  url = "https://ventizo.com/terms/"
   weight = 20

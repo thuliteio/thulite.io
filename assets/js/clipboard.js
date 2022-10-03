@@ -5,7 +5,7 @@ var cb = document.getElementsByClassName('clipboard');
 for (var i = 0; i < cb.length; ++ i)
 {
   var element = cb[i];
-  element.insertAdjacentHTML('afterbegin', '<button class="btn btn-clipboard"></button>');
+  element.insertAdjacentHTML('afterbegin', '<button class="btn btn-clipboard" aria-label="Clipboard button"></button>');
 }
 
 var clipboard = new Clipboard('.btn-clipboard', {

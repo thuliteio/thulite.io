@@ -60,11 +60,10 @@ defaultImage = "spencer-davis-ilQmlVIMN4c-unsplash.jpg" # put in `./assets/image
 # fillImage = "1280x720 Center" # normalize image size
 
 # Footer
-footer = "&copy; 2022 Henk Verlinde. Deploys by <a class=\"text-link\" href=\"https://www.netlify.com/\" target=\"_blank\">Netlify</a>."
-# footer = "Deploys by <a class=\"text-link\" href=\"https://www.netlify.com/\" target=\"_blank\">Netlify</a>"
+footer = "&copy; 2022 Hyas — <a href=\"https://www.netlify.com/\" target=\"_blank\">Deploys by Netlify</a>"
 
 # Feed
-copyRight = "Copyright (c) 2019-present Henk Verlinde"
+copyRight = "Copyright (c) 2019-present Hyas"
 
 # Alert
 alert = false
