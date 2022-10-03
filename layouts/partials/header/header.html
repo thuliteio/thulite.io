@@ -1,10 +1,13 @@
-<div class="header-height-fix"></div>
+{{ if .Site.Params.alert -}}
+  {{ partial "header/alert.html" . }}
+{{ else }}
+  <div class="header-height-fix"></div>
+{{ end -}}
 
 <div id="docsearch" class="d-none"></div>
 
 <!-- start header-nav -->
-
-<header class="header-nav">
+<header class="header-nav{{ if .Site.Params.alert }} header-alert{{ end }}">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -83,16 +86,6 @@
 </header>
 <!-- end header-nav -->
 
-{{ if .Site.Params.alert -}}
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 col-lg-6">
-      {{ partial "header/alert.html" . }}
-    </div>
-  </div>
-</div>
-{{ end -}}
-
 <div class="offcanvas-lg offcanvas-end d-lg-none" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
   <div class="offcanvas-header my-2">
     <h4 class="offcanvas-title" id="offcanvasResponsiveLabel">{{ .Section | humanize }}</h4>
@@ -102,4 +95,3 @@
     {{ partial "sidebar/section-navigation.html" . }}
   </div>
 </div>
-

@@ -1,3 +1,20 @@
+#announcement {
+  position: relative;
+  margin: 0;
+}
+
+.alert-global {
+  background: $dark;
+}
+
+header.header-alert {
+  position: sticky;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .alert-dismissible .btn-close {
   position: absolute;
   top: 50%;

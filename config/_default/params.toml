@@ -66,9 +66,9 @@ footer = "&copy; 2022 Hyas — <a href=\"https://www.netlify.com/\" target=\"_bl
 copyRight = "Copyright (c) 2019-present Hyas"
 
 # Alert
-alert = false
+alert = true
 alertDismissable = true
-alertText = "Deliver web projects 10x faster. <a class=\"alert-link stretched-link\" href=\"https://www.netlify.com/whitepaper/\" target=\"_blank\" rel=\"noopener\">Get the free enterprise paper →</a>"
+alertText = "Deliver web projects 10x faster. <a class=\"text-link stretched-link\" href=\"https://www.netlify.com/whitepaper/\" target=\"_blank\" rel=\"noopener\">Get the free enterprise paper</a>"
 
 # Sections
 [sections]
