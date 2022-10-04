@@ -5,7 +5,7 @@
       <div class="col-lg-3 d-none d-lg-block">
         <div class="section-sidebar">
           <h2 class="h5">{{ .Section | humanize }}</h2>
-          {{ partial "sidebar/section-navigation.html" . }}
+          {{ partial "sidebar/section-navigation" . }}
           <h2 class="h5 mt-4">Resources</h2>
         </div>
       </div>
@@ -24,7 +24,7 @@
         </div>
         <div class="row">
           <div class="w-main">
-            {{ partial "main/meta-themes.html" . }}
+            {{ partial "main/meta-themes" . }}
             <h1 class="mb-3">{{ .Title }}</h1>
             <div class="pre-content">
               <p class="lead-text">{{ .Params.lead | safeHTML }}</p>
@@ -33,22 +33,22 @@
               </div>
               {{ if and (ne .Params.toc false) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") -}}
                 <div class="d-xl-none">
-                  {{ partial "sidebar/toc-mobile.html" . }}
+                  {{ partial "sidebar/toc-mobile" . }}
                 </div>
               {{ end -}}
             </div>
             <div class="content">
-              {{ partial "main/headline-hash.html" .Content }}
+              {{ partial "main/headline-hash" .Content }}
             </div>
             <div class="post-content">
-              {{ partial "main/section-navigation.html" . }}
+              {{ partial "main/section-navigation" . }}
             </div>
           </div>
           {{ if and (ne .Params.toc false) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") -}}
           <div class="d-none d-xl-block w-toc">
             <div class="section-sidebar">
               <h2 class="h5">On this page</h2>
-              {{ partial "sidebar/toc-desktop.html" . }}
+              {{ partial "sidebar/toc-desktop" . }}
             </div>
           </div>
           {{ end -}}

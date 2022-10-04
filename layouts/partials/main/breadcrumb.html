@@ -1,5 +1,5 @@
 {{ with .Parent -}}
-  {{ partial "main/breadcrumb.html" . -}}
+  {{ partial "main/breadcrumb" . -}}
   {{ $data := .Data }}
   {{ if eq $data.Plural "types" "features" }}
     <li class="list-inline-item" aria-current="page">• &nbsp; <a class="text-link" href="/showcase/">Showcase</a></li>

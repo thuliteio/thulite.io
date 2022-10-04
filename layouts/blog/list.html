@@ -16,19 +16,19 @@
       {{ range $index, $element := first 4 (where .Data.Pages.ByWeight.Reverse "Params.featured" true) }}
         {{ if eq $index 0 -}}
         <div class="col-lg-4 col-md-6 order-0">
-          {{ partial "main/post-default.html" . }}
+          {{ partial "main/post-default" . }}
         </div>
         <div class="col-lg-4 col-md-12 order-2 order-lg-1">
           <div class="row gx-0 gx-md-5 gx-lg-0 gy-5">
         {{ else if (eq $index 1 2) -}}
         <div class="col-lg-12 col-md-6">
-          {{ partial "main/post-compact.html" . }}
+          {{ partial "main/post-compact" . }}
         </div>
         {{ else -}}
           </div>
         </div>
         <div class="col-lg-4 col-md-6 order-1 order-lg-2">
-          {{ partial "main/post-default.html" . }}
+          {{ partial "main/post-default" . }}
         </div>
         {{ end -}}
       {{ end }}
@@ -56,7 +56,7 @@
     <div class="row gy-5 gx-md-5">
       {{ range .Data.Pages -}}
       <div class="col-lg-4 col-md-6">
-        {{ partial "main/post-default.html" . }}
+        {{ partial "main/post-default" . }}
       </div>
       {{ end -}}
       <div class="col-12 pt-4 mt-5">
@@ -87,5 +87,5 @@
 {{ end }}
 
 {{ define "sidebar-footer" }}
-{{ partial "sidebar/newsletter.html" . }}
+{{ partial "sidebar/newsletter" . }}
 {{ end }}

@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
-  {{ partial "head/head.html" . }}
-  {{ partial "head/body-class.html" . }}
+  {{ partial "head/head" . }}
+  {{ partial "head/body-class" . }}
   <body class="{{ delimit (.Scratch.Get "class") " " }}"{{ if eq .Site.Params.options.scrollSpy true }} data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -90%" data-bs-smooth-scroll="true" tabindex="0"{{ end }}>
-    {{ partial "header/header.html" . }}
+    {{ partial "header/header" . }}
     {{ block "main" . }}{{ end }}
     {{ block "sidebar-prefooter" . }}{{ end }}
     {{ block "sidebar-footer" . }}{{ end }}
-    {{ partial "footer/footer.html" . }}
-    {{ partial "footer/script-footer.html" . }}
+    {{ partialCached "footer/footer" . }}
+    {{ partialCached "footer/script-footer" . }}
   </body>
 </html>

@@ -7,7 +7,7 @@
     <div class="col-lg-3 d-none d-lg-block">
       <div class="section-sidebar">
         <h2 class="h5">{{ .Section | humanize }}</h2>
-        {{ partial "sidebar/section-navigation.html" . }}
+        {{ partial "sidebar/section-navigation" . }}
 
 
         <h2 class="h5 mt-4">Resources</h2>
@@ -19,7 +19,7 @@
         <div class="col-12">
           <div class="row gy-2 align-items-center section-title mb-0 section pt-0 pb-2">
             <div class="col-12">
-              {{ partial "main/meta-plugins.html" . }}
+              {{ partial "main/meta-plugins" . }}
               <h1 class="mb-3">{{ .Title }}</h1>
             </div>
           </div>
@@ -31,15 +31,15 @@
             <p class="lead-text">{{ .Params.lead | safeHTML }}</p>
             {{ if and (ne .Params.toc false) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") -}}
               <div class="d-xl-none">
-                {{ partial "sidebar/toc-mobile.html" . }}
+                {{ partial "sidebar/toc-mobile" . }}
               </div>
             {{ end -}}
           </div>
           <div class="content">
-            {{ partial "main/headline-hash.html" .Content }}
+            {{ partial "main/headline-hash" .Content }}
           </div>
           <div class="post-content">
-            {{ partial "main/section-navigation.html" . }}
+            {{ partial "main/section-navigation" . }}
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@
     <div class="col-xl-2 d-none d-xl-block">
       <div class="section-sidebar">
         <h2 class="h5">On this page</h2>
-        {{ partial "sidebar/toc-desktop.html" . }}
+        {{ partial "sidebar/toc-desktop" . }}
       </div>
     </div>
     {{ end -}}

@@ -1,5 +1,5 @@
 {{ if .Site.Params.alert -}}
-  {{ partial "header/alert.html" . }}
+  {{ partial "header/alert" . }}
 {{ else }}
   <div class="header-height-fix"></div>
 {{ end -}}
@@ -92,6 +92,6 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    {{ partial "sidebar/section-navigation.html" . }}
+    {{ partial "sidebar/section-navigation" . }}
   </div>
 </div>

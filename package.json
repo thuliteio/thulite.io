@@ -28,6 +28,7 @@
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "lint:markdown-fix": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
+    "metrics": "exec-bin node_modules/.bin/hugo/hugo --templateMetrics --templateMetricsHints",
     "server": "exec-bin node_modules/.bin/hugo/hugo server",
     "test:dev": "npm run -s lint",
     "test": "npm run -s lint:markdown",

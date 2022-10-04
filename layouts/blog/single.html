@@ -47,16 +47,16 @@
             {{ range $index, $tag := .Params.tags -}}<li class="list-inline-item"><a class="bg-white" href="{{ "/tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a></li>{{ end -}}
             </ul>
           {{ end -}}
-          {{ partial "main/social-share.html" . }}
+          {{ partial "main/social-share" . }}
           </div>
         </div>
       </div>
     </div>
-    {{ partial "main/related-posts.html" . }}
+    {{ partial "main/related-posts" . }}
   </div>
 </section>
 {{ end }}
 
 {{ define "sidebar-footer" }}
-{{ partial "sidebar/newsletter.html" . }}
+{{ partial "sidebar/newsletter" . }}
 {{ end }}
