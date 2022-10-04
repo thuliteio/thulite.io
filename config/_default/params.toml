@@ -68,7 +68,7 @@ copyRight = "Copyright (c) 2019-present Hyas"
 # Alert
 alert = true
 alertDismissable = true
-alertText = "Deliver web projects 10x faster. <a class=\"text-link stretched-link\" href=\"https://www.netlify.com/whitepaper/\" target=\"_blank\" rel=\"noopener\">Get the free enterprise paper</a>"
+alertText = 'From Hugo starter to Hugo-powered framework. <a class="text-link stretched-link" href="/blog/">Check out the new Hyas!</a>'
 
 # Sections
 [sections]
