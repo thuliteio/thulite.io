@@ -13,7 +13,7 @@
       -->
     </div>
     <div class="row gy-5 gx-md-5">
-      {{ range $index, $element := first 4 (where .Data.Pages.ByWeight.Reverse "Params.featured" true) }}
+      {{ range $index, $element := first 4 (where .Data.Pages "Params.featured" true) }}
         {{ if eq $index 0 -}}
         <div class="col-lg-4 col-md-6 order-0">
           {{ partial "main/post-default" . }}
@@ -54,7 +54,7 @@
       -->
 		</div>
     <div class="row gy-5 gx-md-5">
-      {{ range .Data.Pages -}}
+      {{ range .Data.Pages.ByDate.Reverse -}}
       <div class="col-lg-4 col-md-6">
         {{ partial "main/post-default" . }}
       </div>

@@ -1,15 +1,15 @@
 ---
-title: "Say hello to Hyas 👋"
+title: "Say Hello to Hyas 👋"
 description: "Introducing Hyas, a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
 lead: "Hyas is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready."
 date: 2020-10-06T08:50:12+00:00
 lastmod: 2020-10-06T08:50:12+00:00
-draft: false
-weight: 50
+draft: true
+weight: 30
 images: []
-categories: ["Product", "Legal"]
-tags: ["Hugo", "Jamstack"]
-authors: ["Henk Verlinde", "Melanie Crissey"]
+categories: ["News"]
+tags: ["Hugo", "Jamstack", "Bootstrap"]
+authors: ["Henk Verlinde"]
 featured: true
 ---
 
@@ -20,12 +20,6 @@ featured: true
 ## Why
 
 > Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don't want to start from scratch. That's why I created Hyas 💚 <cite>Henk Verlinde</cite>
-
-![That's why I created Hyas](GettyImages-1281645186.jpg)
-
-```bash
-npm i -D @hyas/core @hyas/seo @hyas/images
-```
 
 ## How
 
@@ -57,7 +51,7 @@ There are two main ways to get started with Hyas:
 ## Go further
 
 - [Recipes]({{< ref "project-configuration" >}}). Get instructions on how to accomplish common tasks with Hyas.
-- [Reference Guides]({{< ref "security" >}}). Learn how to customize Hyas to fully make it your own.
+- [Reference Guides]({{< ref "/docs/reference-guides/security" >}}). Learn how to customize Hyas to fully make it your own.
 - [Extensions]({{< ref "google-fonts" >}}). Get instructions on how to add even more to Hyas.
 - [Showcase]({{< ref "showcase" >}}). See what others have build with Hyas.
 
