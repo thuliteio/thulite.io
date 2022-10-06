@@ -1,7 +1,7 @@
 {
   "name": "Hyas",
   "description": "Hugo-powered Jamstack framework for building production-ready websites",
-  "version": "1.6.0",
+  "version": "2.0.0",
   "engines": {
     "node": ">=16.17.0",
     "npm": ">=8.15.0"
@@ -31,7 +31,7 @@
     "metrics": "exec-bin node_modules/.bin/hugo/hugo --templateMetrics --templateMetricsHints",
     "server": "exec-bin node_modules/.bin/hugo/hugo server",
     "test:dev": "npm run -s lint",
-    "test": "npm run -s lint:markdown",
+    "test": "npm run -s lint",
     "env": "env",
     "precheck": "npm version",
     "check": "exec-bin node_modules/.bin/hugo/hugo version",

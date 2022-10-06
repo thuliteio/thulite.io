@@ -3,18 +3,20 @@
 }
 
 a.footnote-ref::before {
-  content: '[';
+  content: "[";
 }
 
 a.footnote-ref::after {
-  content: ']';
+  content: "]";
 }
 
 .footnotes {
   margin-top: 3rem;
+
   p {
     display: inline;
   }
+
   a.footnote-backref {
     background-image: none;
   }

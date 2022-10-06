@@ -7,6 +7,7 @@ import '@hyas/core/assets/js/core.js';
 
 // Import Tushi script
 // import '@ventizo/themes-tushi-assets/js/script.js';
+import 'js/vendor/tushi/script.js';
 
 // Import alert script
 import 'js/alert.js';

@@ -5,38 +5,22 @@
 
       <div class="col-lg-3 d-none d-lg-block">
         <div class="section-sidebar">
-          <h2 class="h5">{{ .Section | humanize }}</h2>
+          <h2 class="h5">Themes</h2>
           {{ partial "sidebar/themes-navigation" . }}
         </div>
       </div>
 
       <div class="col-lg-9">
-        <div class="row align-items-center section-title">
-          <div class="col-sm-7">
-            <h1 class="h3 mb-0 title">Featured</h1>
-          </div>
-        </div>
-
         <div class="row g-0 justify-content-center">
-          <div class="col-12">
-            <div class="row gy-5 gx-md-5">
-              {{ range where .Data.Pages.ByWeight.Reverse "Params.featured" true }}
-              <div class="col-md-12">
-                {{ .Render "item" }}
-              </div>
-              {{ end }}
-            </div>
-          </div>
-
-          <div class="w-100 d-block mt-5 pt-3"></div>
 
           <div class="col-12">
+            <!--
             <div class="row align-items-center section-title">
               <div class="col-sm-7">
                 <h1 class="h3 mb-0 title">Recent</h1>
               </div>
             </div>
-
+          -->
             <div class="row gy-5 gx-md-5">
               {{ range .Data.Pages -}}
               <div class="col-md-6">
@@ -67,7 +51,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
 

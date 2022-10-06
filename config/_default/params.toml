@@ -66,14 +66,14 @@ footer = "&copy; 2022 Hyas — <a href=\"https://www.netlify.com/\" target=\"_bl
 copyRight = "Copyright (c) 2019-present Hyas"
 
 # Alert
-alert = true
+alert = false
 alertDismissable = true
 alertText = 'From Modern Hugo Starter to Hugo-powered Jamstack framework. <a class="text-link stretched-link" href="/blog/how-hyas-evolved-into-a-framework/">Explore how Hyas evolved</a>!'
 
 # Sections
 [sections]
   # mainSections = ["blog", "docs"]
-  sectionNav = ["docs", "plugins", "themes", "showcase"]
+  sectionNav = ["docs", "plugins", "themes", "sorts", "showcase", "types", "features"]
 
 [imaging]
   anchor = 'Smart'

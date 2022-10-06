@@ -19,6 +19,9 @@
     <div class="row justify-content-center">
       <div class="col-xl-9 col-lg-10">
         <div class="content">
+          {{ if (eq .Name "Privacy" "Cookies" "Terms") -}}
+            <p><em>Last updated on {{ .Lastmod.Format "January 2, 2006" }}</em></p>
+          {{ end -}}
           {{ .Content }}
         </div>
       </div>

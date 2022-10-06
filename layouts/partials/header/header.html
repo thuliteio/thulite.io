@@ -32,7 +32,7 @@
           <div class="d-block d-lg-none">
             {{ if (in .Site.Params.sections.sectionNav .Section) -}}
             <button type="button" class="search-toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" aria-label="Section navigation toggle">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="19" r="1"></circle><circle cx="12" cy="5" r="1"></circle></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="19" r="1"></circle><circle cx="12" cy="5" r="1"></circle></svg>
             </button>
             {{ end -}}
             <button id="toggleSearchMobile" class="search-toggle" data-toggle="search" aria-label="Search Toggle">
@@ -87,11 +87,19 @@
 <!-- end header-nav -->
 
 <div class="offcanvas-lg offcanvas-end d-lg-none" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
-  <div class="offcanvas-header my-2">
-    <h4 class="offcanvas-title" id="offcanvasResponsiveLabel">{{ .Section | humanize }}</h4>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    {{ partial "sidebar/section-navigation" . }}
+    {{ if eq .Section "themes" "sorts" -}}
+      <h2 class="offcanvas-title h5" id="offcanvasResponsiveLabel">Themes</h2>
+      {{ partial "sidebar/themes-navigation" . }}
+    {{ else if eq $current.Section "showcase" "features" "types" -}}
+      <h2 class="offcanvas-title h5" id="offcanvasResponsiveLabel">Showcase</h2>
+      {{ partial "sidebar/showcase-navigation" . }}
+    {{ else -}}
+      <h2 class="offcanvas-title h5" id="offcanvasResponsiveLabel">{{ .Section | humanize }}</h2>
+      {{ partial "sidebar/section-navigation" . }}
+    {{ end -}}
   </div>
 </div>

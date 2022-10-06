@@ -3,8 +3,8 @@
   font-weight: 500;
 }
 
-.navbar-brand-center {
-  @include mobile {
+@include media-breakpoint-down(lg) {
+  .navbar-brand-center {
     margin-left: 2.125rem;
   }
 }
@@ -12,4 +12,55 @@
 .dropdown-item svg {
   margin-left: 0.25rem;
   margin-bottom: 0.25rem;
+}
+
+.offcanvas-lg {
+  --bs-offcanvas-width: 300px;
+
+  background: $body-background;
+}
+
+.offcanvas-lg.offcanvas-end {
+  border-left: 1px solid $body-background;
+}
+
+.offcanvas-header {
+  padding: 2.25rem 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  .offcanvas-header {
+    padding: 2.875rem 1rem;
+  }
+}
+
+.offcanvas-header .btn-close {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
+  background-size: 2rem;
+  color: $dark;
+  opacity: 1;
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.offcanvas-body {
+  padding-top: 0;
+}
+
+.offcanvas-title {
+  margin-top: 0.375rem;
+  margin-bottom: 0.5rem;
+}
+
+@include media-breakpoint-up(sm) {
+  .offcanvas-title {
+    margin-top: -0.25rem;
+  }
 }

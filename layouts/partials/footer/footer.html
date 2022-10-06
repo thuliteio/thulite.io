@@ -4,7 +4,7 @@
       <div class="col-lg-4 text-center text-lg-start">
         <ul class="list-inline footer-menu">
           {{ range .Site.Menus.footer -}}
-            <li class="list-inline-item m-0"><a class="text-link" target="_blank" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+            <li class="list-inline-item m-0"><a class="text-link" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
           {{ end -}}
         </ul>
       </div>

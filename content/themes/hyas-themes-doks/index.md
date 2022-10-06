@@ -11,6 +11,9 @@ menu:
     parent: ""
 weight: 120
 toc: true
+contributors: ["Hyas"]
+featured: true
+sorts: ["Official", "Project", "Documentation"]
 github: "https://github.com/h-enk/hyas-themes-doks"
 npm: "https://www.npmjs.com/package/@hyas/themes-doks"
 demo: "https://deploy-preview-881--doks.netlify.app/"

@@ -4,7 +4,7 @@ disableAliases = true
 disableHugoGeneratorInject = true
 # disableKinds = ["taxonomy", "term"]
 enableEmoji = true
-enableGitInfo = false
+enableGitInfo = true
 enableRobotsTXT = true
 languageCode = "en-US"
 paginate = 7
@@ -32,11 +32,14 @@ timeout = 60000
   tag = "tags"
   type = "types"
   feature = "features"
+  contributor = "contributors"
+  sort = "sorts"
 
 [permalinks]
   blog = "/blog/:title/"
   types = "/showcase/types/:title/"
   features = "/showcase/features/:title/"
+  sorts = "/themes/sorts/:title/"
 
 [minify.tdewolff.html]
   keepWhitespace = false

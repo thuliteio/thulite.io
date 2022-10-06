@@ -5,12 +5,12 @@
 
 [[main]]
   name = "Plugins"
-  url = "/plugins/official/hyas-core/"
+  url = "/plugins/"
   weight = 20
 
 [[main]]
   name = "Themes"
-  url = "/themes/official/hyas-themes-starter-bootstrap/"
+  url = "/themes/"
   weight = 30
 
 [[main]]
@@ -81,10 +81,15 @@
 
 [[footer]]
   name = "Privacy"
-  url = "https://ventizo.com/privacy/"
+  url = "/privacy/"
   weight = 10
+
+# [[footer]]
+#   name = "Cookies"
+#   url = "/cookies/"
+#   weight = 20
 
 [[footer]]
   name = "Terms"
-  url = "https://ventizo.com/terms/"
-  weight = 20
+  url = "/terms/"
+  weight = 30

@@ -1,21 +1,21 @@
+pre {
+  scrollbar-width: thin;
+  scrollbar-color: #ddd $light;
+}
+
 .content pre {
   background: $white;
   white-space: pre;
-}
-
-pre code.hljs {
-  display: inline;
-  overflow-x: auto;
-  padding: 0;
 }
 
 code.hljs {
   padding: 0;
 }
 
-pre {
-  scrollbar-width: thin;
-  scrollbar-color: #ddd $light;
+pre code.hljs {
+  display: inline;
+  overflow-x: auto;
+  padding: 0;
 }
 
 pre::-webkit-scrollbar {
