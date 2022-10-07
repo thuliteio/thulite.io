@@ -26,6 +26,7 @@ module.exports = {
         'btn-clipboard',
         'offcanvas-backdrop',
         'figcaption',
+        'toggle-menu',
         ...whitelister([
           // './node_modules/@hyas/themes-starter-bootstrap/assets/scss/common/_variables.scss',
           // './node_modules/@hyas/themes-starter-bootstrap/assets/scss/components/_alerts.scss',
