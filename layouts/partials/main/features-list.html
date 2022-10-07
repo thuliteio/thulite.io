@@ -1,5 +1,0 @@
-<div class="features-list">
-  <ul class="taxonomy-lists list-unstyled list-inline">
-    {{ range $index, $type := .Params.features }}<li class="list-inline-item"><a class="bg-white" href="{{ "/showcase/features/" | relURL }}{{ . | urlize }}/">{{ . | title }}</a></li>{{ end -}}
-  </ul>
-</div>

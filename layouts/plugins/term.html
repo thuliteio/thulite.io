@@ -2,31 +2,28 @@
 <section class="section">
   <div class="container">
     <div class="row">
-
       <div class="col-lg-3 d-none d-lg-block">
         <div class="section-sidebar">
-          <h2 class="h5">Showcase</h2>
-          {{ partial "sidebar/showcase-navigation" . }}
+          <h2 class="h5">Plugins</h2>
+          {{ partial "sidebar/plugins-navigation" . }}
         </div>
       </div>
-
       <div class="col-lg-9">
         <div class="row g-0 justify-content-center">
-
           <div class="col-12">
-            <!--
-            <div class="row align-items-center section-title">
-              <div class="col-sm-7">
-                <h1 class="h3 mb-0 title">Recent</h1>
-              </div>
-            </div>
-          -->
             <div class="row gy-5 gx-md-5">
-              {{ range .Data.Pages -}}
-              <div class="col-md-6">
-                {{ .Render "item" }}
+              <div class="col-12">
+                <div class="archive-block">
+                  <h2 class="h3 mb-3">{{ .Title }}</h2>
+                  <ul class="list-unstyled">
+                    {{ range .Data.Pages -}}
+                    <li class="archive-post-item">
+                      <a class="border px-4 py-3 d-block" href="{{ .RelPermalink }}">{{ .Params.title }}</a>
+                    </li>
+                    {{ end -}}
+                  </ul>
+                </div>
               </div>
-              {{ end -}}
               <div class="col-12 pt-4 mt-5">
                 <nav class="text-center">
                   <ul class="pagination justify-content-center">
@@ -53,7 +50,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>

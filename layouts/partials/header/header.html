@@ -91,7 +91,10 @@
     <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    {{ if eq .Section "themes" "sorts" -}}
+    {{ if eq .Section "plugins" -}}
+      <h2 class="offcanvas-title h5" id="offcanvasResponsiveLabel">Plugins</h2>
+      {{ partial "sidebar/plugins-navigation" . }}
+    {{ else if eq .Section "themes" -}}
       <h2 class="offcanvas-title h5" id="offcanvasResponsiveLabel">Themes</h2>
       {{ partial "sidebar/themes-navigation" . }}
     {{ else if eq $current.Section "showcase" "features" "types" -}}

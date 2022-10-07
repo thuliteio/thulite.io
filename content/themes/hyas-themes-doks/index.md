@@ -1,19 +1,15 @@
 ---
-title: "@hyas/themes-doks"
+title: "Doks"
 description: "Doks theme for Hyas sites."
 lead: "Doks theme for Hyas sites."
 date: 2022-09-20T17:33:31+02:00
 lastmod: 2022-09-20T17:33:31+02:00
 draft: false
 images: ["hyas-themes-doks.png"]
-menu:
-  themes:
-    parent: ""
 weight: 120
 toc: true
-contributors: ["Hyas"]
-featured: true
-sorts: ["Official", "Project", "Documentation"]
+contributors: ["Henk Verlinde"]
+themes: ["Featured", "Official", "Project", "Documentation"]
 github: "https://github.com/h-enk/hyas-themes-doks"
 npm: "https://www.npmjs.com/package/@hyas/themes-doks"
 demo: "https://deploy-preview-881--doks.netlify.app/"

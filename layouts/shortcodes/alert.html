@@ -1,4 +1,4 @@
-<div class="alert alert-{{ with .Get "context" }}{{.}}{{ else }}light border{{ end }} d-flex" role="alert">
+<div class="alert alert-{{ with .Get "context" }}{{.}}{{ else }}light border{{ end }} d-flex{{ with .Get "class" }} {{.}}{{ end }}" role="alert">
   {{ with .Get "icon" }}<span class="alert-icon">{{.}}</span>{{ end }}
   {{ with .Get "text"}}
     <span class="alert-text">{{ . | safeHTML }}</span>

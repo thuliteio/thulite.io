@@ -6,13 +6,11 @@ date: 2022-09-20T10:40:26+02:00
 lastmod: 2022-09-20T10:40:26+02:00
 draft: false
 images: []
-menu:
-  plugins:
-    parent: ""
 weight: 120
 toc: true
 github: "https://github.com/h-enk/hyas-seo"
 npm: "https://www.npmjs.com/package/@hyas/seo"
+plugins: ["Official", "SEO"]
 ---
 
 ## Installation

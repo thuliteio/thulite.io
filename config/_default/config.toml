@@ -30,16 +30,16 @@ timeout = 60000
   author = "authors"
   category = "categories"
   tag = "tags"
-  type = "types"
-  feature = "features"
   contributor = "contributors"
-  sort = "sorts"
+  plugin = "plugins"
+  theme = "themes"
+  showcase = "showcase"
 
 [permalinks]
   blog = "/blog/:title/"
-  types = "/showcase/types/:title/"
-  features = "/showcase/features/:title/"
-  sorts = "/themes/sorts/:title/"
+  plugins = "/plugins/:title/"
+  themes = "/themes/:title/"
+  showcase = "/showcase/:title/"
 
 [minify.tdewolff.html]
   keepWhitespace = false

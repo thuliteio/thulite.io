@@ -6,13 +6,11 @@ date: 2022-09-20T10:40:37+02:00
 lastmod: 2022-09-20T10:40:37+02:00
 draft: false
 images: []
-menu:
-  plugins:
-    parent: ""
 weight: 130
 toc: true
 github: "https://github.com/h-enk/hyas-images"
 npm: "https://www.npmjs.com/package/@hyas/images"
+plugins: ["Official", "Media"]
 ---
 
 ## Installation

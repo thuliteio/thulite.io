@@ -24,7 +24,6 @@
         <div class="row">
           <div class="w-main">
             {{ partial "main/meta-showcase" . }}
-
             <h1 class="mb-3">{{ .Title }}</h1>
             <div class="pre-content">
               <p class="lead-text">{{ .Params.lead | safeHTML }}</p>
@@ -41,8 +40,6 @@
               {{ partial "main/headline-hash" .Content }}
             </div>
             <div class="post-content">
-
-              {{ partial "main/features-list" . }}
               {{ partial "main/section-navigation" . }}
             </div>
           </div>
@@ -56,7 +53,6 @@
           {{ end -}}
         </div>
       </div>
-
     </div>
   </div>
 </section>

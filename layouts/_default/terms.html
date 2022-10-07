@@ -10,12 +10,6 @@
           <div class="col-12">
             <ul class="list-inline breadcrumb-menu">
               {{ partial "main/breadcrumb" . -}}
-              {{ $data := .Data -}}
-              {{ if eq $data.Plural "types" "features" -}}
-                <li class="list-inline-item" aria-current="page">• &nbsp; <a class="text-link" href="/showcase/">Showcase</a></li>
-              {{ else if eq $data.Plural "sorts" -}}
-                <li class="list-inline-item" aria-current="page">• &nbsp; <a class="text-link" href="/themes/">Themes</a></li>
-              {{ end -}}
               <li class="list-inline-item active" aria-current="page">• &nbsp; <a class="text-link" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
             </ul>
           </div>
@@ -58,13 +52,7 @@
               {{ $data := .Data }}
               {{ range $key, $value := .Data.Terms.ByCount }}
               <div class="col-md-4 col-6">
-              {{ if eq $data.Plural "types" "features" }}
-                <a class="text-dark px-3 py-2 d-flex lead bg-white" href="{{ $.Site.LanguagePrefix }}/showcase/{{ $data.Plural }}/{{ $value.Name | urlize }}">
-              {{ else if eq $data.Plural "sorts" }}
-                <a class="text-dark px-3 py-2 d-flex lead bg-white" href="{{ $.Site.LanguagePrefix }}/themes/{{ $data.Plural }}/{{ $value.Name | urlize }}">
-              {{ else -}}
                 <a class="text-dark px-3 py-2 d-flex lead bg-white" href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}">
-              {{ end -}}
                   <div class="flex-grow-1">
                     <span class="sort-alphabetical">{{ replace $value.Name "-" " " | title }} </span>
                     <small class="sort-popular">({{ $value.Count }})</small>

@@ -34,7 +34,7 @@ See also the Hugo docs: [Configure Hugo](https://gohugo.io/getting-started/confi
 
 #### Meta data
 
-See also: [SEO]({{< ref "seo" >}})
+See also: [SEO]({{< ref "/docs/reference-guides/seo" >}})
 
 ##### Homepage
 

@@ -7,12 +7,7 @@ lastmod: 2021-06-29T07:54:10+02:00
 draft: false
 images: ["ventizo.png"]
 website: "https://ventizo.com/"
-menu:
-  showcase:
-    parent: ""
 weight: 100
 toc: false
-featured: true
-types: ["Business"]
-features: ["bootstrap", "blog", "taxonomies"]
+showcase: ["Featured", "Business"]
 ---

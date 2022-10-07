@@ -6,13 +6,11 @@ date: 2022-09-20T10:25:08+02:00
 lastmod: 2022-09-20T10:25:08+02:00
 draft: false
 images: []
-menu:
-  plugins:
-    parent: ""
 weight: 110
 toc: true
 github: "https://github.com/h-enk/hyas-core"
 npm: "https://www.npmjs.com/package/@hyas/core"
+plugins: ["Official", "Core"]
 ---
 
 ## Installation

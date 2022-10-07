@@ -1,19 +1,15 @@
 ---
-title: "@hyas/themes-starter-bootstrap"
+title: "Bootstrap starter"
 description: "Bootstrap starter theme for Hyas sites."
 lead: "Bootstrap starter theme for Hyas sites."
 date: 2022-09-20T17:33:19+02:00
 lastmod: 2022-09-20T17:33:19+02:00
 draft: false
 images: ["hyas-themes-starter-bootstrap.png"]
-menu:
-  themes:
-    parent: ""
 weight: 110
 toc: true
-contributors: ["Hyas"]
-featured: false
-sorts: ["Official", "Starter"]
+contributors: ["Henk Verlinde"]
+themes: ["Featured", "Official", "Starter"]
 github: "https://github.com/h-enk/hyas-themes-starter-bootstrap"
 npm: "https://www.npmjs.com/package/@hyas/themes-starter-bootstrap"
 demo: "https://deploy-preview-329--hyas.netlify.app/"
