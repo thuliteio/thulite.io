@@ -55,11 +55,10 @@
 }
 
 .section-sidebar {
-  display: block;
   position: sticky;
   top: 12rem;
   height: calc(100vh - 12rem);
-  overflow-y: auto;
+  overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
 
