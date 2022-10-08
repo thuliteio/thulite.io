@@ -59,7 +59,7 @@
   height: calc(100vh - 12rem);
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
+  scrollbar-color: $light transparent;
 
   &::-webkit-scrollbar {
     width: 5px;
@@ -70,25 +70,12 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background: transparent;
+    background: $light;
   }
 
   &::-webkit-scrollbar-thumb:hover {
     background: #ddd;
   }
-}
-
-.section-sidebar:hover {
-  scrollbar-width: thin;
-  scrollbar-color: $light transparent;
-}
-
-.section-sidebar:hover::-webkit-scrollbar-thumb {
-  background: $light;
-}
-
-.section-sidebar:hover::-webkit-scrollbar-thumb:hover {
-  background: #ddd;
 }
 
 .features-list {
