@@ -1,7 +1,6 @@
 .pre-content {
   font-size: 18px;
   line-height: 1.7;
-  overflow: hidden;
 
   .toc {
     font-size: 16px;
@@ -52,11 +51,6 @@
 
 .text-link.lead:hover svg {
   transform: rotate(45deg) translateX(2px);
-}
-
-.section-main {
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .section-sidebar,
