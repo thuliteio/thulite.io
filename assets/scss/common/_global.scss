@@ -1,3 +1,7 @@
+body {
+  overflow-y: scroll;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html,
   body {
