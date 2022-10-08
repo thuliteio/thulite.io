@@ -102,6 +102,7 @@
       {{ partial "sidebar/showcase-navigation" . }}
     {{ else -}}
       <h2 class="offcanvas-title h5" id="offcanvasResponsiveLabel">{{ .Section | humanize }}</h2>
+      {{ .Scratch.Set "view" "mobile" }}
       {{ partial "sidebar/section-navigation" . }}
     {{ end -}}
   </div>

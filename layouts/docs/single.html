@@ -5,6 +5,7 @@
     <div class="col-lg-3 d-none d-lg-block">
       <div class="section-sidebar">
         <h2 class="h5">{{ .Section | humanize }}</h2>
+        {{ .Scratch.Set "view" "desktop" }}
         {{ partial "sidebar/section-navigation" . }}
       </div>
     </div>
