@@ -55,6 +55,7 @@
 }
 
 .section-sidebar {
+  display: block;
   position: sticky;
   top: 12rem;
   height: calc(100vh - 12rem);
