@@ -40,7 +40,7 @@
       </div>
       {{ if and (ne .Params.toc false) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") -}}
       <div class="col-xl-2 d-none d-xl-block">
-        <div class="section-sidebar">
+        <div class="section-toc">
           <h2 class="h5">On this page</h2>
           {{ partial "sidebar/toc-desktop" . }}
         </div>

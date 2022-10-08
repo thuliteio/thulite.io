@@ -54,12 +54,11 @@
   transform: rotate(45deg) translateX(2px);
 }
 
-.section-sidebar {
+.section-sidebar,
+.section-toc {
   top: 12rem;
   height: calc(100vh - 12rem);
   overflow-y: auto;
-
-  /*
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
 
@@ -78,19 +77,18 @@
   &::-webkit-scrollbar-thumb:hover {
     background: $light;
   }
-  */
 }
 
-/*
-.section-sidebar:hover {
+.section-sidebar:hover,
+.section-toc:hover {
   scrollbar-width: thin;
   scrollbar-color: $light transparent;
 }
 
-.section-sidebar:hover::-webkit-scrollbar-thumb {
+.section-sidebar:hover::-webkit-scrollbar-thumb,
+.section-toc:hover::-webkit-scrollbar-thumb {
   background: $light;
 }
-*/
 
 .features-list {
   margin-top: 3rem;
