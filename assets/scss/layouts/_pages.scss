@@ -54,6 +54,11 @@
   transform: rotate(45deg) translateX(2px);
 }
 
+.section-main {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .section-sidebar,
 .section-toc {
   position: sticky;
