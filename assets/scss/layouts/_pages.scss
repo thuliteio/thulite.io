@@ -61,31 +61,31 @@
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
-}
 
-.section-sidebar::-webkit-scrollbar {
-  width: 5px;
-}
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
 
-.section-sidebar::-webkit-scrollbar-track {
-  background: transparent;
-}
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-.section-sidebar::-webkit-scrollbar-thumb {
-  background: transparent;
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $light;
+  }
 }
 
 .section-sidebar:hover {
   scrollbar-width: thin;
   scrollbar-color: $light transparent;
-}
 
-.section-sidebar:hover::-webkit-scrollbar-thumb {
-  background: $light;
-}
-
-.section-sidebar::-webkit-scrollbar-thumb:hover {
-  background: $light;
+  &::-webkit-scrollbar-thumb {
+    background: $light;
+  }
 }
 
 .features-list {

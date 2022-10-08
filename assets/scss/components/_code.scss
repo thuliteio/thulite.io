@@ -1,6 +1,22 @@
 pre {
   scrollbar-width: thin;
   scrollbar-color: #ddd $light;
+
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $light;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #ddd;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+  }
 }
 
 .content pre {
@@ -16,20 +32,4 @@ pre code.hljs {
   display: inline;
   overflow-x: auto;
   padding: 0;
-}
-
-pre::-webkit-scrollbar {
-  height: 5px;
-}
-
-pre::-webkit-scrollbar-track {
-  background: $light;
-}
-
-pre::-webkit-scrollbar-thumb {
-  background: #ddd;
-}
-
-pre::-webkit-scrollbar-thumb:hover {
-  background: #b3b3b3;
 }
