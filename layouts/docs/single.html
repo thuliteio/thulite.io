@@ -2,50 +2,50 @@
 <section class="section">
   <div class="container">
     <div class="row">
-    <div class="col-lg-3 d-none d-lg-block">
-      <div class="section-sidebar">
-        <h2 class="h5">{{ .Section | humanize }}</h2>
-        {{ .Scratch.Set "view" "desktop" }}
-        {{ partial "sidebar/section-navigation" . }}
+      <div class="col-lg-3 d-none d-lg-block">
+        <div class="section-sidebar">
+          <h2 class="h5">{{ .Section | humanize }}</h2>
+          {{ .Scratch.Set "view" "desktop" }}
+          {{ partial "sidebar/section-navigation" . }}
+        </div>
       </div>
-    </div>
-    <div class="col-xl-7 col-lg-9">
-      <div class="row g-0 justify-content-center">
-        <div class="col-12">
-          <div class="row gy-2 align-items-center section-title mb-0 section pt-0 pb-2">
-            <div class="col-12">
-              <h1 class="mb-3">{{ .Title }}</h1>
+      <div class="col-xl-7 col-lg-9">
+        <div class="row g-0 justify-content-center">
+          <div class="col-12">
+            <div class="row gy-2 align-items-center section-title mb-0 section pt-0 pb-2">
+              <div class="col-12">
+                <h1 class="mb-3">{{ .Title }}</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="pre-content">
+              <p class="lead-text">{{ .Params.lead | safeHTML }}</p>
+              {{ if and (ne .Params.toc false) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") -}}
+                <div class="d-xl-none">
+                  {{ partial "sidebar/toc-mobile" . }}
+                </div>
+              {{ end -}}
+            </div>
+            <div class="content">
+              {{ partial "main/headline-hash" .Content }}
+            </div>
+            <div class="post-content">
+              {{ partial "main/section-navigation" . }}
             </div>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="pre-content">
-            <p class="lead-text">{{ .Params.lead | safeHTML }}</p>
-            {{ if and (ne .Params.toc false) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") -}}
-              <div class="d-xl-none">
-                {{ partial "sidebar/toc-mobile" . }}
-              </div>
-            {{ end -}}
-          </div>
-          <div class="content">
-            {{ partial "main/headline-hash" .Content }}
-          </div>
-          <div class="post-content">
-            {{ partial "main/section-navigation" . }}
-          </div>
+      {{ if and (ne .Params.toc false) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") -}}
+      <div class="col-xl-2 d-none d-xl-block">
+        <div class="section-toc">
+          <h2 class="h5">On this page</h2>
+          {{ partial "sidebar/toc-mobile" . }}
         </div>
       </div>
-    </div>
-    {{ if and (ne .Params.toc false) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") -}}
-    <div class="col-xl-2 d-none d-xl-block">
-      <div class="section-toc">
-        <h2 class="h5">On this page</h2>
-        {{ partial "sidebar/toc-desktop" . }}
-      </div>
-    </div>
-    {{ end -}}
+      {{ end -}}
     </div>
   </div>
 </section>
