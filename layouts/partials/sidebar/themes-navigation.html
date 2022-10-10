@@ -2,14 +2,10 @@
 <nav class="section-menu">
   <ul class="list-unstyled">
     {{ $active := eq $currentPage.Title "Themes" -}}
-    <li class="mb-1"><a class="section-link{{ if $active }} active{{ end }}" href="/themes/">All ({{ len (where .Site.RegularPages "Section" "==" "showcase") }})</a></li>
-  </ul>
-</nav>
-<nav class="section-menu">
-  <ul class="list-unstyled">
+    <li><a class="section-link{{ if $active }} active{{ end }}" href="/themes/">All ({{ len (where .Site.RegularPages "Section" "==" "showcase") }})</a></li>
     {{ range .Site.Taxonomies.themes }}
       {{ $active := eq .Page.Title $currentPage.Title -}}
-      <li class="mb-1"><a class="section-link{{ if $active }} active{{ end }}" href="{{ .Page.Permalink }}">{{ .Page.Title | title }} ({{ .Count }})</a></li>
+      <li><a class="section-link{{ if $active }} active{{ end }}" href="{{ .Page.Permalink }}">{{ .Page.Title | title }} ({{ .Count }})</a></li>
     {{ end }}
   </ul>
 </nav>

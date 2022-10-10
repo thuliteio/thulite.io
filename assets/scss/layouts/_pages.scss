@@ -173,6 +173,13 @@
   padding-top: 0.125rem;
 }
 
+.section-menu:not(.section-menu-default) {
+  li {
+    margin-top: 0.25rem;
+    padding-top: 0.25rem;
+  }
+}
+
 .lead-text {
   margin-bottom: 2rem;
 }
