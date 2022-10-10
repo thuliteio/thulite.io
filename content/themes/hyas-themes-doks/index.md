@@ -8,10 +8,8 @@ draft: false
 images: ["hyas-themes-doks.png"]
 weight: 120
 toc: true
-contributors: ["Henk Verlinde"]
-themes: ["Featured", "Official", "Project", "Documentation"]
+themes: ["Official", "Project", "Documentation"]
 github: "https://github.com/h-enk/hyas-themes-doks"
-npm: "https://www.npmjs.com/package/@hyas/themes-doks"
 demo: "https://deploy-preview-881--doks.netlify.app/"
 ---
 

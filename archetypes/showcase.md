@@ -6,9 +6,8 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
 images: []
-menu:
-  showcase:
-    parent: ""
-weight: 999
-toc: true
+weight: 150
+toc: false
+showcase: []
+website: ""
 ---

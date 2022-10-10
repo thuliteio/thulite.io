@@ -1,5 +1,5 @@
-{{ if .Params.types -}}
+{{ if .Params.showcase -}}
 <p class="meta-showcase">
-  {{ range $index, $type := .Params.types }}{{ if gt $index 0 }}, {{ end }}<a href="{{ "/showcase/types/" | relURL }}{{ . | urlize }}/">{{ . | title }}</a>{{ end -}}
+  {{ if .Params.showcase -}}{{ range $index, $showcase := .Params.showcase -}}{{ if gt $index 0 -}}, {{ end -}}<a class="text-link" href="{{ "/showcase/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}
 </p>
 {{ end -}}

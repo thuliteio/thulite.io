@@ -8,10 +8,8 @@ draft: false
 images: ["hyas-themes-starter-bootstrap.png"]
 weight: 110
 toc: true
-contributors: ["Henk Verlinde"]
-themes: ["Featured", "Official", "Starter"]
+themes: ["Official", "Starter"]
 github: "https://github.com/h-enk/hyas-themes-starter-bootstrap"
-npm: "https://www.npmjs.com/package/@hyas/themes-starter-bootstrap"
 demo: "https://deploy-preview-329--hyas.netlify.app/"
 ---
 

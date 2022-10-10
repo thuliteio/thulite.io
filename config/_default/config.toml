@@ -30,7 +30,6 @@ timeout = 60000
   author = "authors"
   category = "categories"
   tag = "tags"
-  contributor = "contributors"
   plugin = "plugins"
   theme = "themes"
   showcase = "showcase"

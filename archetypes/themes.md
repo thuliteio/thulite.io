@@ -6,12 +6,9 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
 images: []
-menu:
-  themes:
-    parent: ""
-weight: 999
+weight: 150
 toc: true
+themes: []
 github: ""
-npm: ""
 demo: ""
 ---
