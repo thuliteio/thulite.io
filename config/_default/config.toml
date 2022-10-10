@@ -37,7 +37,7 @@ timeout = 60000
 
 [permalinks]
   blog = "/blog/:title/"
-  plugins = "/plugins/:title/"
+  plugins = "/plugins/:slug/"
   themes = "/themes/:title/"
   showcase = "/showcase/:title/"
 

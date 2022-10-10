@@ -1,16 +1,14 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+slug: ""
 description: ""
 lead: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
 images: []
-menu:
-  plugins:
-    parent: ""
-weight: 999
+weight: 150
 toc: true
+plugins: []
 github: ""
-npm: ""
 ---

@@ -1,5 +1,6 @@
 ---
 title: "@hyas/images"
+slug: "hyas-images"
 description: "Image render hook + shortcode for Hyas sites."
 lead: "Image render hook + shortcode for Hyas sites."
 date: 2022-09-20T10:40:37+02:00
@@ -8,9 +9,8 @@ draft: false
 images: []
 weight: 130
 toc: true
-github: "https://github.com/h-enk/hyas-images"
-npm: "https://www.npmjs.com/package/@hyas/images"
 plugins: ["Official", "Media"]
+github: "https://github.com/h-enk/hyas-images"
 ---
 
 ## Installation

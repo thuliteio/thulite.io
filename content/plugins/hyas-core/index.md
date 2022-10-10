@@ -1,5 +1,6 @@
 ---
 title: "@hyas/core"
+slug: "hyas-core"
 description: "Core templates for Hyas sites."
 lead: "Core templates for Hyas sites."
 date: 2022-09-20T10:25:08+02:00
@@ -8,9 +9,8 @@ draft: false
 images: []
 weight: 110
 toc: true
-github: "https://github.com/h-enk/hyas-core"
-npm: "https://www.npmjs.com/package/@hyas/core"
 plugins: ["Official", "Core"]
+github: "https://github.com/h-enk/hyas-core"
 ---
 
 ## Installation

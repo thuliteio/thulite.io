@@ -1,5 +1,6 @@
 {{ if .Params.github -}}
 <p class="meta-plugins">
-  <a target="_blank" class="text-link" href="{{ .Params.github }}">GitHub</a><span class="mx-2">—</span><a target="_blank" class="text-link" href="{{ .Params.npm }}">npm</a>
+  {{ if .Params.plugins -}}{{ range $index, $plugin := .Params.plugins -}}{{ if gt $index 0 -}}, {{ end -}}<a class="text-link" href="{{ "/plugins/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}
+  <span class="mx-2">—</span><a target="_blank" class="text-link" href="{{ .Params.github }}">GitHub</a>
 </p>
 {{ end -}}
