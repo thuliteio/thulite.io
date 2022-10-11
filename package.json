@@ -1,7 +1,7 @@
 {
   "name": "Hyas",
   "description": "Hugo-powered Jamstack framework for building production-ready websites",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "engines": {
     "node": ">=16.17.0",
     "npm": ">=8.15.0"
@@ -62,6 +62,7 @@
     "lazysizes": "^5.3",
     "markdownlint-cli2": "^0.5.1",
     "netlify-plugin-submit-sitemap": "^0.4.0",
+    "plausible-tracker": "^0.3.8",
     "postcss": "^8.4",
     "postcss-cli": "^10.0",
     "purgecss-whitelister": "^2.4",

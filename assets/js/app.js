@@ -12,5 +12,8 @@ import 'js/vendor/tushi/script.js';
 // Import alert script
 import 'js/alert.js';
 
-// Import alert script
+// Import clipboard.js
 import 'js/clipboard.js';
+
+// Import Plausible Analytics Tracker
+import 'js/plausible.js';
