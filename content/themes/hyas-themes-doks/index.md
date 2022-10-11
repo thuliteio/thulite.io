@@ -8,7 +8,7 @@ draft: false
 images: ["hyas-themes-doks.png"]
 weight: 120
 toc: true
-themes: ["Official", "Project", "Documentation"]
+themes: ["Official", "Documentation"]
 github: "https://github.com/h-enk/hyas-themes-doks"
 demo: "https://deploy-preview-881--doks.netlify.app/"
 ---
@@ -213,3 +213,7 @@ Update `content`, `safelist`, and `...whitelister` sections in:
 ## Usage
 
 See the Hyas docs: [Themes](https://gethyas.com/docs/reference-guides/themes/)
+
+## Resources
+
+- [Doks website](https://getdoks.org/)
