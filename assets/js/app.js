@@ -16,4 +16,4 @@ import 'js/alert.js';
 import 'js/clipboard.js';
 
 // Import Plausible Analytics Tracker
-import 'js/plausible.js';
+// import 'js/plausible.js';

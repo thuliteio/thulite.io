@@ -68,8 +68,7 @@ copyRight = "Copyright (c) 2019-present Hyas"
 # Alert
 alert = true
 alertDismissable = true
-# alertText = 'From Modern Hugo Starter to Hugo-powered Jamstack framework. <a class="text-link stretched-link" href="/blog/how-hyas-evolved-into-a-framework/">Explore how Hyas evolved</a>!'
-alertText = 'You currently <span id="plausible_not" class="fw-bold">are not</span><span id="plausible_yes" class="fw-bold">are</span> excluding your visits from Plausible Analytics. <a id="plausible_button" class="text-link stretched-link" href="#toggle-exclude-visits" role="button">Exclude my visits</a>!'
+alertText = 'From Modern Hugo Starter to Hugo-powered Jamstack framework. <a class="text-link stretched-link" href="/blog/how-hyas-evolved-into-a-framework/">Explore how Hyas evolved</a>!'
 
 # Sections
 [sections]
