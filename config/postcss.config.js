@@ -27,6 +27,7 @@ module.exports = {
         'offcanvas-backdrop',
         'figcaption',
         'toggle-menu',
+        'fw-bold',
         ...whitelister([
           // './node_modules/@hyas/themes-starter-bootstrap/assets/scss/common/_variables.scss',
           // './node_modules/@hyas/themes-starter-bootstrap/assets/scss/components/_alerts.scss',
