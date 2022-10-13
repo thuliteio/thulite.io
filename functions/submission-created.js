@@ -1,7 +1,12 @@
 // Source: https://leighdinaya.com/blog/create-newsletter-sign-up-buttondown-netlify-functions/
 
-require('dotenv').config()
-const fetch = require('node-fetch')
+// require('dotenv').config()
+
+import * as dotenv from 'dotenv'
+dotenv.config()
+
+// const fetch = require('node-fetch')
+import fetch from 'node-fetch'
 const { BUTTONDOWN_API_KEY } = process.env
 
 exports.handler = async (event) => {
