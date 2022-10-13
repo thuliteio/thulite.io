@@ -15,15 +15,16 @@ timeout = 60000
 
 [outputs]
   home = ["HTML", "RSS"]
-  section = [ "HTML", "RSS", "SITEMAP" ]
+  section = [ "HTML", "RSS", "Sitemap" ]
 
-[outputFormats.SITEMAP]
+[outputFormats.Sitemap]
   mediatype = "application/xml"
   baseName = "sitemap"
-  isHTML = false
-  isPlainText = true
-  noUgly = true
   rel  = "sitemap"
+  isPlainText = false
+  isHTML = false
+  noUgly = true
+  permalinkable = false
 
 [caches]
   [caches.getjson]
