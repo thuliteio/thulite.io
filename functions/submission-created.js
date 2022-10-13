@@ -1,6 +1,8 @@
-require('dotenv').config()
+import * as dotenv from 'dotenv'
+import fetch from 'node-fetch';
+dotenv.config()
 
-const fetch = require('node-fetch').default
+const fetch = fetch.default
 const { BUTTONDOWN_API_KEY } = process.env
 
 exports.handler = async event => {
