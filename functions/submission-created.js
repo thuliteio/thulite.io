@@ -1,5 +1,5 @@
-import * as dotenv from 'dotenv'
 import fetch from 'node-fetch'
+import * as dotenv from 'dotenv'
 dotenv.config()
 
 const { BUTTONDOWN_API_KEY } = process.env
