@@ -11,7 +11,7 @@ dotenv.config()
 exports.handler = async (event) => {
 
   // const email = event.queryStringParameters.email || 'No email';
-  const email = JSON.parse(event.body).email || 'No email';
+  const email = JSON.parse(event.body).payload.email || 'No email';
   console.log(`Received a submission: ${email}`)
 
   const response = await fetch( 'https://api.buttondown.email/v1/subscribers', {
