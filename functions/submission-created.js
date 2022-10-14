@@ -11,8 +11,9 @@ dotenv.config()
 exports.handler = async (event) => {
 
   // const email = event.queryStringParameters.email || 'No email';
-  const email = JSON.parse(event.body).email || 'No email';
-  const page = JSON.parse(event.body).page || 'No page';
+  const formData = JSON.parse(event.body);
+  const email = formData.email;
+  const page = formData.page;
 
   console.log(`Received a submission: ${email}`)
   const response = await fetch( `https://emailoctopus.com/api/1.6/lists/${EMAILOCTOPUS_LIST_ID}/contacts`, {
