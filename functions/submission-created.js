@@ -12,6 +12,7 @@ exports.handler = async (event) => {
 
   // const email = event.queryStringParameters.email || 'No email';
   const email = JSON.parse(event.body).payload.email || 'No email';
+  const page = JSON.parse(event.body).payload.page || 'No page';
   console.log(`Received a submission: ${email}`)
   const response = await fetch( `https://emailoctopus.com/api/1.6/lists/${process.env.EMAILOCTOPUS_LIST_ID}/contacts`, {
       method: 'POST',
@@ -21,6 +22,9 @@ exports.handler = async (event) => {
       body: JSON.stringify({
         api_key: process.env.EMAILOCTOPUS_API_KEY,
         email_address: email,
+        fields: {
+          Page: page,
+        },
       }),
     }
   );
