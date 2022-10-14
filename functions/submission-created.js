@@ -1,6 +1,7 @@
 // Source: https://andrewstiefel.com/netlify-functions-email-subscription/
 
-// const { EMAILOCTOPUS_API_KEY } = process.env
+const { EMAILOCTOPUS_API_KEY } = process.env
+const { EMAILOCTOPUS_LIST_ID } = process.env.EMAILOCTOPUS_LIST_ID
 import fetch from 'node-fetch'
 
 /*
@@ -19,7 +20,7 @@ exports.handler = async (event) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        api_key: ${EMAILOCTOPUS_API_KEY},
+        api_key: EMAILOCTOPUS_API_KEY,
         email_address: email,
       }),
     }
