@@ -25,7 +25,7 @@ exports.handler = async (event) => {
         api_key: EMAILOCTOPUS_API_KEY,
         email_address: email,
         fields: {
-          'Page': page,
+          'Page': `${page}`,
         },
       }),
     }
