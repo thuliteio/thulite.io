@@ -1,6 +1,6 @@
 // Source: https://andrewstiefel.com/netlify-functions-email-subscription/
 
-const { EMAILOCTOPUS_LIST_ID, EMAILOCTOPUS_API_KEY} = process.env;
+const {EMAILOCTOPUS_LIST_ID, EMAILOCTOPUS_API_KEY} = process.env;
 import fetch from 'node-fetch'
 
 /*
@@ -11,9 +11,9 @@ dotenv.config()
 exports.handler = async (event) => {
 
   // const email = event.queryStringParameters.email || 'No email';
-  const formData = JSON.parse(event.body);
-  const email = formData.email;
-  const page = formData.page;
+  const payload = JSON.parse(event.body).payload
+  const email = payload.email
+  const page = payload.page
 
   console.log(`Received a submission: ${email}`)
   const response = await fetch( `https://emailoctopus.com/api/1.6/lists/${EMAILOCTOPUS_LIST_ID}/contacts`, {
