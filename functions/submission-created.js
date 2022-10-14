@@ -13,7 +13,7 @@ exports.handler = async (event) => {
   // const email = event.queryStringParameters.email || 'No email';
   const email = JSON.parse(event.body).payload.email || 'No email';
   console.log(`Received a submission: ${email}`)
-  const response = await fetch( 'https://emailoctopus.com/api/1.6/lists/{EMAILOCTOPUS_LIST_ID}/contacts', {
+  const response = await fetch( 'https://emailoctopus.com/api/1.6/lists/{{EMAILOCTOPUS_LIST_ID}}/contacts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
