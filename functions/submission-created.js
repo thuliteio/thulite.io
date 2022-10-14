@@ -13,7 +13,7 @@ exports.handler = async (event) => {
   // const email = event.queryStringParameters.email || 'No email';
   const payload = JSON.parse(event.body).payload
   const email = payload.email
-  const page = payload.page
+  const page = 'https://deploy-preview-244--gethyas.netlify.app/blog/how-to-deploy-to-github-pages/'
 
   console.log(`Received a submission: ${email}`)
   const response = await fetch( `https://emailoctopus.com/api/1.6/lists/${EMAILOCTOPUS_LIST_ID}/contacts`, {
