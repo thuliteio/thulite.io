@@ -47,7 +47,6 @@ See also: [Images](http://localhost:1313/docs/recipes/project-configuration/#ima
 
 {{< figure link="https://www.jit.io/" src="security-as-code-startup-jit-comes-out-of-stealth-with-38-5m-in-seed-funding.jpg" alt="Describe your image" caption="For a figure caption can be different than alt text" >}}
 
-
 ## Add a local image
 
 Place your local images in a page bundle:
