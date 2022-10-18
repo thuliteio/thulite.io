@@ -29,7 +29,7 @@
   package = "netlify-plugin-submit-sitemap"
 
 	[plugins.inputs]
-    baseUrl = "https://hyas.netlify.app/"
+    baseUrl = "https://gethyas.com/"
     sitemapPath = "/sitemap.xml"
     ignorePeriod = 0
     providers = [
