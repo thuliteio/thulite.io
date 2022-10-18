@@ -55,7 +55,6 @@ if (document.querySelector('#search') !== null) {
  * https://answers.netlify.com/t/how-to-include-dependencies-in-netlify-lambda-functions/2323/38
 */
 
-/* eslint-disable */
 const processForm = form => {
   const data = new FormData(form)
   data.append('form-name', 'newsletter');
@@ -64,10 +63,10 @@ const processForm = form => {
     body: data,
   })
   .then(() => {
-    form.innerHTML = '<p class="form--success"><strong>Almost there!</strong> Check your inbox for a confirmation e-mail.</p>';
+    form.innerHTML = '<p class="form--success mb-0">Thank you for subscribing!</p>';
   })
   .catch(error => {
-    form.innerHTML = '<p class="form--error"><strong>Error:</strong> ${error}</p>';
+    form.innerHTML = `<p class="form--error mb-0">Oops. Something\\'s wrong: ${error}</p>`;
   })
 }
 
@@ -78,7 +77,6 @@ if (emailForm) {
     processForm(emailForm);
   })
 }
-/* eslint-enable */
 
 if (document.querySelector('#sidebar-default') !== null) {
   let sidebar = document.getElementById('sidebar-default');

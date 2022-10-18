@@ -21,11 +21,15 @@
 [context.next.environment]
   HUGO_ENV = "next"
 
+[functions]
+  directory = "functions"
+  node_bundler = "esbuild"
+
 [[plugins]]
   package = "netlify-plugin-submit-sitemap"
 
 	[plugins.inputs]
-    baseUrl = "https://getdoks.org"
+    baseUrl = "https://gethyas.com"
     sitemapPath = "/sitemap.xml"
     ignorePeriod = 0
     providers = [
