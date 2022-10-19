@@ -5,7 +5,7 @@ const { EMAILLISTVERIFY_API_KEY } = process.env;
 exports.handler = async (event) => {
 
   const body = JSON.parse(event.body);
-  const { email } = body.payload.data;
+  const { email } = body.payload.data || 'joe@gmail.com';
 
   console.log(`Submission: ${email}`)
 
