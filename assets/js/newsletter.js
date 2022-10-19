@@ -15,7 +15,7 @@ const processForm = form => {
   })
   .catch(error => {
     form.innerHTML = `<p class="form-error text-center text-md-end mb-0">Oops. Something\\'s wrong: ${error}</p>`;
-    // form.innerHTML = `<p class="form--error text-center text-md-end mb-0">Email address verification failed.</p>`;
+    // form.innerHTML = `<p class="form-error text-center text-md-end mb-0">Email address verification failed.</p>`;
   })
 }
 
