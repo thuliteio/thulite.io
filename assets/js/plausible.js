@@ -16,7 +16,7 @@ if (document.querySelector('#subscribeButton') !== null) {
 
 if (document.querySelector('#subscribeButton') !== null) {
   const button = document.getElementById('subscribeButton');
-  const page = button.getAttribute('data-page');
+  const page = button.getAttribute('data-title');
 
   button.addEventListener('click', function(){
     trackEvent('Signup', { props: { Page: `${page}`} });
