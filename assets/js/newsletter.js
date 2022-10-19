@@ -11,10 +11,10 @@ const processForm = form => {
     body: data,
   })
   .then(() => {
-    form.innerHTML = '<p class="form--success text-center text-md-end mb-0">Thank you for joining!</p>';
+    form.innerHTML = '<p class="form-success text-center text-md-end mb-0">Thank you for joining!</p>';
   })
   .catch(error => {
-    form.innerHTML = `<p class="form--error text-center text-md-end mb-0">Oops. Something\\'s wrong: ${error}</p>`;
+    form.innerHTML = `<p class="form-error text-center text-md-end mb-0">Oops. Something\\'s wrong: ${error}</p>`;
     // form.innerHTML = `<p class="form--error text-center text-md-end mb-0">Email address verification failed.</p>`;
   })
 }
