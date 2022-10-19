@@ -13,7 +13,7 @@
         <input name="page" type="hidden" value="{{ .Page.Permalink }}">
       </div>
       <div class="col-md-4">
-        <button id="subscribeButton" type="submit" class="btn btn-dark w-100" aria-label="Subscribe">Subscribe</button>
+        <button id="subscribeButton" type="submit" data-title="{{ .Page.Title }}" class="btn btn-dark w-100" aria-label="Subscribe">Subscribe</button>
       </div>
     </form>
   </div>
