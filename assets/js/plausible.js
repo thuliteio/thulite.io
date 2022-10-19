@@ -1,7 +1,13 @@
 import Plausible from 'plausible-tracker'
 
-const { trackPageview } = Plausible({
+const { trackPageview, trackEvent } = Plausible({
   domain: 'gethyas.com',
 })
 
 trackPageview()
+
+if (document.querySelector('#subscribeButton') !== null) {
+  document.getElementById('subscribeButton').addEventListener('click', function(){
+    trackEvent('Signup');
+  });
+}
