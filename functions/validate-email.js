@@ -4,7 +4,7 @@ const { EMAILLISTVERIFY_API_KEY } = process.env;
 
 exports.handler = async (event) => {
 
-  if (event.headers.referrer.includes('netlify.app')) {
+  if (event.headers.referer.includes('netlify.app')) {
 
     const EMAIL = event.queryStringParameters.email
 
