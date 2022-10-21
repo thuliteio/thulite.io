@@ -4,7 +4,7 @@ const { EMAILLISTVERIFY_API_KEY } = process.env;
 
 exports.handler = async (event) => {
 
-  if (event.httpMethod !== 'POST') {
+  if (!event.headers.referrer.includes('netlify.app')) {
 
     return {
       statusCode: 403,
