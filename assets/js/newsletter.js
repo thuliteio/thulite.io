@@ -29,6 +29,8 @@ const emailForm = document.querySelector('.email-form')
 if (emailForm) {
   emailForm.addEventListener('submit', e => {
     e.preventDefault();
+    const button = document.querySelector('#subscribeButton');
+    button.setAttribute('disabled', '');
     processForm(emailForm);
   })
 }
