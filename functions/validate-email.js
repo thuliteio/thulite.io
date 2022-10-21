@@ -4,17 +4,7 @@ const { EMAILLISTVERIFY_API_KEY } = process.env;
 
 exports.handler = async (event) => {
 
-  if (!event.headers.referrer.includes('netlify.app')) {
-
-    return {
-      statusCode: 403,
-      body: JSON.stringify({
-        'status' : 403,
-        'message' : 'Forbidden',
-      }),
-    };
-
-  } else {
+  if (event.headers.referrer.includes('netlify.app')) {
 
     const EMAIL = event.queryStringParameters.email
 
@@ -45,6 +35,16 @@ exports.handler = async (event) => {
       };
 
     }
+
+  } else {
+
+    return {
+      statusCode: 403,
+      body: JSON.stringify({
+        'status' : 403,
+        'message' : 'Forbidden',
+      }),
+    };
 
   }
 
