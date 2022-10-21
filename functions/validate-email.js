@@ -4,6 +4,18 @@ const { EMAILLISTVERIFY_API_KEY } = process.env;
 
 exports.handler = async (event) => {
 
+  if (event.httpMethod !== 'POST') {
+
+    return {
+      statusCode: 403,
+      body: JSON.stringify({
+        'status' : 403,
+        'message' : 'Forbidden',
+      }),
+    };
+
+  } else {
+
     const EMAIL = event.queryStringParameters.email
 
     if (EMAIL) {
@@ -33,5 +45,7 @@ exports.handler = async (event) => {
       };
 
     }
+
+  }
 
 };
