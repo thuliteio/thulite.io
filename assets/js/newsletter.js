@@ -11,6 +11,8 @@ async function processForm(form) {
   const email = data.get('email');
   // console.log(email)
 
+  form.innerHTML = '<p class="form-info text-center text-md-end mb-0">Verifying your email address...</p>';
+
 	const response = await fetch(`/.netlify/functions/validate-email?email=${email}`)
 
   const status = await response.text()
