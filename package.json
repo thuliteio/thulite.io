@@ -44,7 +44,7 @@
     "@babel/cli": "^7.19",
     "@babel/core": "^7.19",
     "@babel/preset-env": "^7.19",
-    "@docsearch/js": "^3.2.1",
+    "@docsearch/js": "^3.3.0",
     "@fullhuman/postcss-purgecss": "^5.0",
     "@hyas/core": "^0.1.1",
     "@hyas/images": "^0.3.0",
@@ -56,7 +56,7 @@
     "bootstrap": "^5.2.0-beta1",
     "clipboard": "^2.0.11",
     "dotenv": "^16.0.3",
-    "eslint": "^8.24",
+    "eslint": "^8.26",
     "exec-bin": "^1.0.0",
     "highlight.js": "^11.6.0",
     "hugo-installer": "^4.0",
@@ -70,8 +70,8 @@
     "purgecss-whitelister": "^2.4",
     "quicklink": "^2.2.0",
     "shx": "^0.3",
-    "stylelint": "^14.12",
-    "stylelint-config-standard-scss": "^5.0"
+    "stylelint": "^14.14",
+    "stylelint-config-standard-scss": "^6.0"
   },
   "otherDependencies": {
     "hugo": "0.104.3"
