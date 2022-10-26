@@ -8,10 +8,9 @@ $dark: #0a101a;
 $gray: #555;
 $light: #fafafa;
 
-
-
 /*! @docsearch/css Variables 3.3.0 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
 
+/* stylelint-disable */
 :root {
   --docsearch-primary-color: #5468ff;
   --docsearch-text-color: #1c1e21;
@@ -58,6 +57,7 @@ html[data-theme=dark] {
   --docsearch-logo-color: #fff;
   --docsearch-muted-color: #7f8497
 }
+/* stylelint-enable */
 
 // Options
 $enable-negative-margins: true;
