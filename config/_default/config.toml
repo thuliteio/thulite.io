@@ -50,8 +50,11 @@ timeout = 60000
   themes = "/themes/:title/"
   showcase = "/showcase/:title/"
 
-[minify.tdewolff.html]
-  keepWhitespace = false
+[minify]
+  disableXML = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = false
 
 [related]
   threshold = 80
