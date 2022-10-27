@@ -55,6 +55,8 @@ timeout = 60000
   [minify.tdewolff]
     [minify.tdewolff.html]
       keepWhitespace = false
+    [minify.tdewolff.xml]
+      keepWhitespace = true
 
 [related]
   threshold = 80
