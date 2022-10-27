@@ -34,7 +34,6 @@ module.exports = {
           // './node_modules/@hyas/themes-starter-bootstrap/assets/scss/components/_alerts.scss',
           // './node_modules/@hyas/themes-starter-bootstrap/assets/scss/components/_code.scss',
           // './node_modules/@hyas/themes-starter-bootstrap/assets/scss/components/_syntax.scss',
-          './assets/scss/components/_variables.scss',
           './node_modules/highlight.js/scss/github.scss',
           './node_modules/@docsearch/css/dist/modal.css',
           './assets/scss/components/_alerts.scss',
