@@ -1,6 +1,6 @@
 ---
 title: "Configure Your Website Safely and Securely With Mozilla Observatory"
-description: ""
+description: "Configure Your Website Safely and Securely With Mozilla Observatory"
 lead: ""
 date: 2022-10-05T12:21:14+02:00
 lastmod: 2022-10-05T12:21:14+02:00
@@ -12,3 +12,5 @@ tags: ["Security"]
 authors: ["Henk Verlinde"]
 featured: true
 ---
+
+Configure Your Website Safely and Securely With Mozilla Observatory

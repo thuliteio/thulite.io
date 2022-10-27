@@ -1,6 +1,6 @@
 ---
 title: "How Hyas Evolved Into a Framework"
-description: ""
+description: "How Hyas Evolved Into a Framework"
 lead: ""
 date: 2022-10-05T11:48:59+02:00
 lastmod: 2022-10-05T11:48:59+02:00
@@ -12,3 +12,5 @@ tags: ["Hugo", "Jamstack"]
 authors: ["Henk Verlinde"]
 featured: true
 ---
+
+How Hyas Evolved Into a Framework

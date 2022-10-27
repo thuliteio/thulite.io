@@ -1,6 +1,6 @@
 ---
 title: "How to Add Plausible Analytics to Your Hyas Website"
-description: ""
+description: "How to Add Plausible Analytics to Your Hyas Website"
 lead: ""
 date: 2022-10-05T12:29:45+02:00
 lastmod: 2022-10-05T12:29:45+02:00

@@ -14,7 +14,7 @@ rssLimit = 10
 timeout = 60000
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML"]
   section = [ "HTML", "RSS", "Sitemap" ]
 
 [outputFormats.Sitemap]
