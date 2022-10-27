@@ -34,7 +34,7 @@
   {{ with .Site.Params.copyRight -}}
     <copyright>{{.}}</copyright>
   {{ end -}}
-  {{ range .Pages -}}
+  {{ range where .Site.RegularPages.ByTitle "Section" .Section }}
     {{ if ne .Params.feed_exclude true -}}
       <item>
         <title>{{ .Title }}</title>
