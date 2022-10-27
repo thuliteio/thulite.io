@@ -44,7 +44,7 @@
         {{ if .Params.categories -}}{{ range .Params.categories -}}<category>{{ . }}</category>{{ end -}}{{ end -}}
         <guid>{{ .Permalink }}</guid>
         <description>{{ .Description }}</description>
-        <content:encoded>{{ .Content | safeHTML }}</content:encoded>
+        <content:encoded>{{ printf "<![CDATA[" | safeHTML -}}{{ .Content | safeHTML }}{{ printf "]]" | safeHTML -}}></content:encoded>
       </item>
     {{ end -}}
   {{ end -}}
