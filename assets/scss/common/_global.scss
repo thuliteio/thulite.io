@@ -81,3 +81,14 @@ body.section {
     }
   }
 }
+
+.section-title {
+  margin-bottom: 40px;
+  .title {
+    background: none;
+    padding-left: 0;
+    color: $black;
+    display: inline-block;
+    font-weight: 400;
+  }
+}
