@@ -34,46 +34,23 @@ schemaTwitter = "https://twitter.com/gethyas"
 schemaLinkedIn = ""
 schemaGitHub = "https://github.com/h-enk/hyas"
 
-## Chrome Browser
-themeColor = "#fff"
-
-# Images
-# imageResponsive = true
-# imageConvertTo = "webp"
-# imageImageSizes = ["480","720","1080","1280","1600","2048"]
-# singleSize = false
-# imageAddClass = "img-fluid lazyload blur-up"
-
-## Blog
-defaultImage = "spencer-davis-ilQmlVIMN4c-unsplash.jpg" # put in `./assets/images/`
-
-# Images - Temporarily left in place for backward compatibility
-# quality = 85
-# bgColor = "#fff"
-# landscapePhotoWidths = [900, 800, 700, 600, 500]
-# portraitPhotoWidths = [800, 700, 600, 500]
-# lqipWidth = "20x"
-# smallLimit = "320"
-
-### Image template - Temporarily left in place for backward compatibility
-# defaultImage = "default-image.png" # put in `./assets/images/`
-# fillImage = "1280x720 Center" # normalize image size
+# Feed
+copyRight = "Copyright (c) 2019-present Hyas"
 
 # Footer
 footer = "&copy; 2022 Hyas — <a href=\"https://www.netlify.com/\" target=\"_blank\">Deploys by Netlify</a>"
-
-# Feed
-copyRight = "Copyright (c) 2019-present Hyas"
 
 # Alert
 alert = true
 alertDismissable = true
 alertText = 'From Modern Hugo Starter to Hugo-powered Jamstack framework. <a class="text-link stretched-link" href="/blog/how-hyas-evolved-into-a-framework/">Explore how Hyas evolved</a>!'
 
-# Sections
-[sections]
-  # mainSections = ["blog", "docs"]
-  sectionNav = ["docs", "plugins", "themes", "sorts", "showcase", "types", "features"]
+# Images
+
+## imaging
+
+## defaultImage
+defaultImage = "spencer-davis-ilQmlVIMN4c-unsplash.jpg" # put in `./assets/images/`
 
 [imaging]
   anchor = 'Smart'
@@ -82,7 +59,7 @@ alertText = 'From Modern Hugo Starter to Hugo-powered Jamstack framework. <a cla
   quality = 95
   resampleFilter = 'Lanczos'
 
-# lazyimg
+## lazyimg
 [lazyimg]
   resizer = "auto"
   renderer = "lqip-webp"
@@ -100,3 +77,8 @@ alertText = 'From Modern Hugo Starter to Hugo-powered Jamstack framework. <a cla
   noscript = true
 
   errorHandler = "warning"
+
+# Sections
+[sections]
+  # mainSections = ["blog", "docs"]
+  sectionNav = ["docs", "plugins", "themes", "sorts", "showcase", "types", "features"]

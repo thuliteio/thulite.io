@@ -9,7 +9,7 @@ module.exports = {
       content: [
         './node_modules/@hyas/core/layouts/**/*.html',
         './node_modules/@hyas/seo/layouts/**/*.html',
-        './node_modules/@hyas/themes-starter-bootstrap/layouts/**/*.html',
+        './node_modules/@hyas/images/layouts/**/*.html',
         './layouts/**/*.html',
         './content/**/*.md',
       ],
@@ -30,10 +30,6 @@ module.exports = {
         'form-success',
         'form-error',
         ...whitelister([
-          // './node_modules/@hyas/themes-starter-bootstrap/assets/scss/common/_variables.scss',
-          // './node_modules/@hyas/themes-starter-bootstrap/assets/scss/components/_alerts.scss',
-          // './node_modules/@hyas/themes-starter-bootstrap/assets/scss/components/_code.scss',
-          // './node_modules/@hyas/themes-starter-bootstrap/assets/scss/components/_syntax.scss',
           './node_modules/highlight.js/scss/github.scss',
           './node_modules/@docsearch/css/dist/modal.css',
           './assets/scss/components/_alerts.scss',
