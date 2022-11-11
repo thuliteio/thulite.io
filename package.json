@@ -1,7 +1,7 @@
 {
   "name": "gethyas.com",
   "version": "1.0.0",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "engines": {
     "node": ">=16.17.0",
     "npm": ">=8.15.0"
@@ -28,7 +28,7 @@
     "preinfo": "npm version",
     "info": "npm list",
     "postinfo": "exec-bin node_modules/.bin/hugo/hugo version",
-    "postinstall": "shx mkdir node_modules/.bin/hugo && shx cp node_modules/gethyas/node_modules/.bin/hugo/* node_modules/.bin/hugo",
+    "postinstall": "shx rm -rf node_modules/.bin/hugo && shx mkdir node_modules/.bin/hugo && shx cp node_modules/gethyas/node_modules/.bin/hugo/* node_modules/.bin/hugo",
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "devDependencies": {
