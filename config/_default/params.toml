@@ -47,11 +47,10 @@ alertText = 'From Modern Hugo Starter to Hugo-powered Jamstack framework. <a cla
 
 # Images
 
-## imaging
-
 ## defaultImage
 defaultImage = "spencer-davis-ilQmlVIMN4c-unsplash.jpg" # put in `./assets/images/`
 
+## imaging
 [imaging]
   anchor = 'Smart'
   bgColor = '#fff'
