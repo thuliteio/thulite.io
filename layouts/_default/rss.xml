@@ -1,0 +1,52 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>" | safeHTML -}}
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+<channel>
+  {{ if .IsHome -}}
+    <title>{{ .Site.Params.title }} {{ .Site.Params.titleSeparator }} {{ .Site.Params.titleAddition }}</title>
+  {{ else -}}
+    <title>{{ .Title }} {{ .Site.Params.titleSeparator }} {{ .Site.Params.title }}</title>
+  {{ end -}}
+  {{ with .OutputFormats.Get "RSS" -}}
+      {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+  {{ end -}}
+	<link>{{ .Permalink }}</link>
+  {{ with .Description -}}
+    <description>{{ . }}</description>
+  {{ else -}}
+    <description>{{ .Site.Params.description }}</description>
+  {{ end -}}
+  {{ if not .Date.IsZero -}}
+    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+  {{ end -}}
+  {{ with .Site.LanguageCode -}}
+    <language>{{.}}</language>
+  {{ end -}}
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>Hyas</generator>
+  {{ with .Site.Params.copyRight -}}
+    <copyright>{{.}}</copyright>
+  {{ end -}}
+  {{ range where .Site.RegularPages.ByTitle "Section" .Section }}
+    {{ if ne .Params.feed_exclude true -}}
+      <item>
+        <title>{{ .Title }}</title>
+        <link>{{ .Permalink }}</link>
+        <dc:creator>{{ if .Params.authors -}}{{ range $index, $author := .Params.authors -}}{{ if gt $index 0 -}}&nbsp;&amp;&nbsp;{{ end -}}{{ . }}{{ end -}}{{ end -}}</dc:creator>
+        <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+        {{ if .Params.categories -}}{{ range .Params.categories -}}<category>{{ . }}</category>{{ end -}}{{ end -}}
+        <guid>{{ .Permalink }}</guid>
+        <description>{{ .Description }}</description>
+        <content:encoded>{{ printf "<![CDATA[" | safeHTML -}}{{ .Content | safeHTML }}{{ printf "]]" | safeHTML -}}></content:encoded>
+      </item>
+    {{ end -}}
+  {{ end -}}
+	</channel>
+</rss>

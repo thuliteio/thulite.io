@@ -1,18 +1,31 @@
-<footer class="footer text-muted">
+<footer class="bg-white">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 order-last order-lg-first">
-        <ul class="list-inline">
-          <li class="list-inline-item">{{ .Site.Params.footer | safeHTML }}</li>
+    <div class="row gy-3">
+      <div class="col-lg-4 text-center text-lg-start">
+        <ul class="list-inline footer-menu">
+          {{ range .Site.Menus.footer -}}
+            <li class="list-inline-item m-0"><a class="text-link" target="_blank" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+          {{ end -}}
         </ul>
       </div>
-      <div class="col-lg-8 order-first order-lg-last text-lg-end">
-        <ul class="list-inline">
-          {{ range .Site.Menus.footer -}}
-            <li class="list-inline-item"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+      <div class="col-lg-4 text-center">
+        <p class="copyright-text mb-0">{{ .Site.Params.footer | safeHTML }}</p>
+      </div>
+      <div class="col-lg-4 text-center text-lg-end">
+        <ul class="list-inline social-links">
+          {{ range .Site.Menus.social -}}
+            <li class="list-inline-item lead text-center">
+              <a class="is-hoverable" target="_blank" href="{{ .URL | relURL }}" title="{{ .Name }}">{{ .Pre | safeHTML }}</a>
+            </li>
           {{ end -}}
         </ul>
       </div>
     </div>
   </div>
 </footer>
+
+<!--
+<button class="scroll-to-top">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="12" y1="5" x2="12" y2="19"></line><line x1="18" y1="11" x2="12" y2="5"></line><line x1="6" y1="11" x2="12" y2="5"></line></svg>
+</button>
+-->

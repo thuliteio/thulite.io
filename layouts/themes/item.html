@@ -1,0 +1,19 @@
+<article class="showcase-item bg-white d-flex flex-column h-100">
+  <div class="showcase-image">
+    <a class="d-block" href="{{ .Permalink }}">
+      {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) }}
+      {{ partial "lazyimg" (dict "img" $image "alt" .Title) }}
+    </a>
+  </div>
+  <div class="p-4 pb-0">
+    <div class="position-relative">
+      <h3 class="h4 post-title mb-2 line-clamp clamp-2">
+        <a class="text-link stretched-link" href="{{ .Permalink }}">{{ .Params.title }}</a>
+      </h3>
+      <p class="mb-0 line-clamp clamp-1">{{ .Params.lead }}</p>
+    </div>
+  </div>
+  <div class="showcase-type mt-auto px-4">
+    {{ partial "main/meta-themes-compact" . }}
+  </div>
+</article>

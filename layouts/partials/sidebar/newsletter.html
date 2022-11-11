@@ -1,20 +1,33 @@
-<div class="card">
-  <div class="card-bar"></div>
-  <div class="card-body">
-    <h3 class="h4 card-title">Stay in the loop</h3>
-    <p class="card-text">Subscribe to the Hyas newsletter and get occasional updates.</p>
-    <form class="row gx-2 gy-3 email-form" name="newsletter" method="post" netlify-honeypot="name" data-netlify="true" onsubmit="subscribeButton.disabled = true">
-      <div class="col-md-12">
-        <input type="hidden" name="subject" value="Hyas newsletter submission">
-        <div class="visually-hidden">
-          <input name="name" type="text" class="form-control" placeholder="your name" aria-label="Name">
+<!-- start newsletter -->
+<section class="line-bg bg-white">
+  <div class="newsletter-block border-bottom">
+    <div class="container">
+      <div class="row gy-5 align-items-center justify-content-center text-center text-md-start">
+        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-10">
+          <div class="pe-0 pe-xl-4">
+            <h2 class="mb-3 lh-sm">Stay in the loop</h2>
+            <p class="mb-0">Join the Hyas newsletter and occasionally get updates on new releases, plugins, themes, and guides.</p>
+          </div>
         </div>
-        <input name="email" type="email" class="form-control" placeholder="your@email.com" aria-label="Email address" required>
-        <input name="page" type="hidden" value="{{ .Page.Permalink }}">
+        <div class="col-xl-4 col-lg-5 col-md-6">
+          <div class="ps-0 ps-xl-4">
+            <form class="email-form" name="newsletter" method="post" netlify-honeypot="name" data-netlify="true">
+              <div class="input-group">
+                <input type="hidden" name="subject" value="Hyas newsletter submission">
+                <div class="visually-hidden">
+                  <input name="name" type="text" class="form-control" placeholder="Full name" aria-label="Full name">
+                </div>
+                <input name="email" type="email" class="form-control" placeholder="Email address" aria-label="Email address" required>
+                <input name="page" type="hidden" value="{{ .Page.Permalink }}">
+                <div class="input-group-append w-100">
+                  <button id="subscribeButton" type="submit" data-title="{{ .Page.Title }}" class="input-group-text w-100 mb-0" aria-label="Subscribe">Subscribe <svg xmlns="http://www.w3.org/2000/svg" class="ms-auto" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="17" y1="7" x2="7" y2="17" /><polyline points="8 7 17 7 17 16" /></svg></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <button id="subscribeButton" type="submit" data-title="{{ .Page.Title }}" class="btn btn-dark w-100" aria-label="Subscribe">Subscribe</button>
-      </div>
-    </form>
+    </div>
   </div>
-</div>
+</section>
+<!-- end newsletter -->

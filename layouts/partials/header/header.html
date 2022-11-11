@@ -1,143 +1,109 @@
-<div class="header-bar"></div>
-
 {{ if .Site.Params.alert -}}
-  {{ partial "header/alert.html" . }}
+  {{ partial "header/alert" . }}
+{{ else }}
+  <div class="header-height-fix"></div>
 {{ end -}}
 
+<div id="docsearch" class="d-none"></div>
 
-
-<header class="navbar navbar-expand-md navbar-light doks-navbar">
-  <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
-    <a class="navbar-brand p-0 me-auto" href="{{ "/" | relURL }}" aria-label="{{ .Site.Params.Title }}">
-      {{ .Site.Params.Title }}
-    </a>
-
-    <button class="btn btn-menu d-block d-md-none order-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoks" aria-controls="offcanvasDoks" aria-label="Open main menu">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-    </button>
-
-    <div class="offcanvas offcanvas-end border-0 py-md-1" tabindex="-1" id="offcanvasDoks" data-bs-backdrop="true" aria-labelledby="offcanvasDoksLabel">
-      <div class="header-bar d-md-none"></div>
-      <div class="offcanvas-header d-md-none">
-        <h2 class="h5 offcanvas-title ps-2" id="offcanvasDoksLabel"><a class="text-dark" href="{{ "/" | relURL }}">{{ .Site.Params.Title }}</a></h2>
-        <button type="button" class="btn-close text-reset me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu"></button>
-      </div>
-      <div class="offcanvas-body px-4">
-        <h3 class="mb-3 d-md-none">Main</h3>
-        <ul class="nav flex-column flex-md-row ms-md-n3">
-          {{- $current := . -}}
-          {{ range .Site.Menus.main -}}
-            {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
-            {{- $active = or $active (eq .Name $current.Title) -}}
-            {{- $active = or $active (and (eq .Name "Docs") (eq $current.Section "docs")) -}}
-            {{- $active = or $active (and (eq .Name "Themes") (eq $current.Section "themes")) -}}
-            {{- $active = or $active (and (eq .Name "Showcase") (eq $current.Section "showcase")) -}}
-            {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
-            <li class="nav-item">
-              <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a>
-            </li>
-          {{ end -}}
-        </ul>
-        <hr class="text-black-50 my-4 d-md-none">
-        <h3 class="mb-3 d-md-none">Socials</h3>
-        <ul class="nav flex-column flex-md-row ms-md-auto me-md-n5 pe-md-2">
-          {{ range .Site.Menus.social -}}
-            <li class="nav-item">
-              <a class="nav-link ps-0 py-1" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="ms-2 d-md-none">{{ .Name | safeHTML }}</small></a>
-            </li>
-          {{ end -}}
-        </ul>
+<!-- start header-nav -->
+<header class="header-nav{{ if .Site.Params.alert }} header-alert{{ end }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+          <button class="navbar-toggler d-inline-flex d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navHeader" aria-controls="navHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" class="menu-open" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="14" y2="12"></line>
+              <line x1="4" y1="18" x2="18" y2="18"></line>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="menu-close" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <a class="navbar-brand d-flex mb-0 me-0" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
+            <span {{ if (in .Site.Params.sections.sectionNav .Section) -}}class="navbar-brand-center"{{ end -}}>{{ .Site.Params.Title }}</span>
+            <!-- <img loading="lazy" class="img-fluid" width="130" height="31" src="assets/images/logo.png" alt=""> -->
+          </a>
+          <div class="d-block d-lg-none">
+            {{ if (in .Site.Params.sections.sectionNav .Section) -}}
+            <button type="button" class="search-toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" aria-label="Section navigation toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="19" r="1"></circle><circle cx="12" cy="5" r="1"></circle></svg>
+            </button>
+            {{ end -}}
+            <button id="toggleSearchMobile" class="search-toggle" data-toggle="search" aria-label="Search Toggle">
+              <svg width="28" height="28" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5 15.5L19 19" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" />
+                <path d="M5 11C5 14.3137 7.68629 17 11 17C12.6597 17 14.1621 16.3261 15.2483 15.237C16.3308 14.1517 17 12.654 17 11C17 7.68629 14.3137 5 11 5C7.68629 5 5 7.68629 5 11Z" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" />
+              </svg>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navHeader">
+            <ul class="navbar-nav ms-auto">
+              {{ $current := . -}}
+              {{ $section := $current.Section -}}
+              {{ range .Site.Menus.main -}}
+                {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
+                {{ $active = or $active (eq .Name $current.Title) -}}
+                {{ $active = or $active (and (eq .Name ($section | humanize)) (eq $current.Section $section)) -}}
+                {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors" "categories" "tags")) -}}
+                {{ if .HasChildren -}}
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .Name }}</a>
+                    <ul class="dropdown-menu">
+                      {{ range .Children -}}
+                      {{ $active = eq .Name $current.Title -}}
+                        <li>
+                          <a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}"{{ if $active }} aria-current="true"{{ end }}{{ with .Params.target}} target="{{ . }}"{{ end }}>{{ .Name }}{{ with .Post }}{{ . | safeHTML }}{{ end }}</a>
+                        </li>
+                      {{ end -}}
+                    </ul>
+                  </li>
+                {{ else -}}
+                  <li class="nav-item">
+                    <a class="nav-link{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                  </li>
+                {{ end -}}
+              {{ end -}}
+            </ul>
+            <div class="navbar-right d-none d-lg-block">
+              <button id="toggleSearchDesktop" class="search-toggle ms-2" data-toggle="search" aria-label="Search Toggle">
+                <svg width="30" height="30" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 15.5L19 19" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" />
+                  <path d="M5 11C5 14.3137 7.68629 17 11 17C12.6597 17 14.1621 16.3261 15.2483 15.237C16.3308 14.1517 17 12.654 17 11C17 7.68629 14.3137 5 11 5C7.68629 5 5 7.68629 5 11Z" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
-  </nav>
+  </div>
 </header>
+<!-- end header-nav -->
 
-{{ if eq .Section "docs" -}}
-<nav class="doks-subnavbar py-2 sticky-lg-top" aria-label="Secondary navigation">
-  <div class="container-xxl d-flex align-items-md-center">
-
-    <!--
-    <form class="doks-search position-relative flex-grow-1 me-auto">
-      <input id="search" class="form-control is-search" type="search" placeholder="Search docs..." aria-label="Search docs..." autocomplete="off">
-    </form>
-    -->
-
-    <div class="d-inline-flex me-auto placeholder-glow">
-      <div id="search-placeholder" aria-hidden="true">
-        <a href="#" tabindex="-1" class="btn btn-light disabled placeholder"></a>
-      </div>
-      <div id="docsearch"></div>
-    </div>
-
-    <span class="navbar-text fs-6 d-none d-sm-block">v{{ $data := getJSON "https://raw.githubusercontent.com/h-enk/hyas/master/package.json" }}{{ $data.version }}</span>
-
-    <button class="btn doks-sidebar-toggle d-lg-none ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle documentation navigation">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
-    </button>
-
+<div class="offcanvas-lg offcanvas-end d-lg-none" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
   </div>
-</nav>
-
-<div class="container-xxl">
-  <aside class="doks-sidebar">
-    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
-      {{ partial "sidebar/docs-menu.html" . }}
-    </nav>
-  </aside>
-</div>
-{{ end -}}
-
-{{ if eq .Section "themes" -}}
-<nav class="doks-subnavbar py-2 sticky-lg-top" aria-label="Secondary navigation">
-  <div class="container-xxl d-flex align-items-md-center">
-
-    <nav class="nav">
-      {{ range .Site.Menus.secondary -}}
-        <a class="nav-link text-dark" href="{{ .URL | relURL }}">{{ .Name | safeHTML }}</a>
-      {{ end -}}
-    </nav>
-
-    <button class="btn doks-sidebar-toggle d-lg-none ms-auto order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle themes navigation">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
-    </button>
-
+  <div class="offcanvas-body">
+    {{ if eq .Section "plugins" -}}
+      <h2 class="offcanvas-title h5" id="offcanvasResponsiveLabel">Plugins</h2>
+      {{ partial "sidebar/plugins-navigation" . }}
+    {{ else if eq .Section "themes" -}}
+      <h2 class="offcanvas-title h5" id="offcanvasResponsiveLabel">Themes</h2>
+      {{ partial "sidebar/themes-navigation" . }}
+    {{ else if eq $current.Section "showcase" "features" "types" -}}
+      <h2 class="offcanvas-title h5" id="offcanvasResponsiveLabel">Showcase</h2>
+      {{ partial "sidebar/showcase-navigation" . }}
+    {{ else -}}
+      <h2 class="offcanvas-title h5" id="offcanvasResponsiveLabel">{{ .Section | humanize }}</h2>
+      {{ .Scratch.Set "view" "mobile" }}
+      {{ partial "sidebar/section-navigation" . }}
+    {{ end -}}
   </div>
-</nav>
-
-<div class="container-xxl">
-  <aside class="doks-sidebar">
-    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
-      {{ partial "sidebar/themes-menu.html" . }}
-    </nav>
-  </aside>
 </div>
-{{ end -}}
-
-{{ if eq .Section "showcase" -}}
-<nav class="doks-subnavbar py-2 sticky-lg-top" aria-label="Secondary navigation">
-  <div class="container-xxl d-flex align-items-md-center">
-
-    <nav class="nav">
-      {{ range .Site.Menus.tertiary -}}
-        <a class="nav-link text-dark" href="{{ .URL | relURL }}" target="_blank" rel="noopener">{{ .Name | safeHTML }}</a>
-      {{ end -}}
-    </nav>
-
-    <button class="btn doks-sidebar-toggle d-lg-none ms-auto order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle showcase navigation">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
-    </button>
-
-  </div>
-</nav>
-
-<div class="container-xxl">
-  <aside class="doks-sidebar">
-    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
-      {{ partial "sidebar/showcase-menu.html" . }}
-    </nav>
-  </aside>
-</div>
-{{ end -}}

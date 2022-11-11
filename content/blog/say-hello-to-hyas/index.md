@@ -1,13 +1,16 @@
 ---
-title: "Say hello to Hyas 👋"
+title: "Say Hello to Hyas 👋"
 description: "Introducing Hyas, a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
-lead: "Introducing Hyas, a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
+lead: "Hyas is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready."
 date: 2020-10-06T08:50:12+00:00
 lastmod: 2020-10-06T08:50:12+00:00
-draft: false
-weight: 50
-images: ["say-hello-to-hyas.png"]
-contributors: ["Henk Verlinde"]
+draft: true
+weight: 30
+images: []
+categories: ["News"]
+tags: ["Hugo", "Jamstack", "Bootstrap"]
+authors: ["Henk Verlinde"]
+featured: true
 ---
 
 ## Demo
@@ -16,7 +19,7 @@ contributors: ["Henk Verlinde"]
 
 ## Why
 
-Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don't want to start from scratch. That's why I created Hyas 💚
+> Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don't want to start from scratch. That's why I created Hyas 💚 <cite>Henk Verlinde</cite>
 
 ## How
 
@@ -42,15 +45,15 @@ The Hyas goodness:
 
 There are two main ways to get started with Hyas:
 
-1. [Themes]({{< ref "doks" >}}) — get started with a theme build on Hyas.
+1. [Themes]({{< ref "themes" >}}) — get started with a theme build on Hyas.
 2. [Quick Start]({{< ref "quick-start" >}}) — one pager to start a new Hyas project.
 
 ## Go further
 
 - [Recipes]({{< ref "project-configuration" >}}). Get instructions on how to accomplish common tasks with Hyas.
-- [Reference Guides]({{< ref "security" >}}). Learn how to customize Hyas to fully make it your own.
-- [Extensions]({{< ref "add-google-fonts" >}}). Get instructions on how to add even more to Hyas.
-- [Showcase]({{< ref "ventizo" >}}). See what others have build with Hyas.
+- [Reference Guides]({{< ref "/docs/reference-guides/security" >}}). Learn how to customize Hyas to fully make it your own.
+- [Extensions]({{< ref "google-fonts" >}}). Get instructions on how to add even more to Hyas.
+- [Showcase]({{< ref "showcase" >}}). See what others have build with Hyas.
 
 ## Try Hyas
 

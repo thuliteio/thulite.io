@@ -1,0 +1,8 @@
+{{ with .Parent -}}
+  {{ partial "main/breadcrumb" . -}}
+  {{ $data := .Data }}
+  {{ if eq $data.Plural "types" "features" }}
+    <li class="list-inline-item" aria-current="page">• &nbsp; <a class="text-link" href="/showcase/">Showcase</a></li>
+  {{ end -}}
+  <li class="list-inline-item">{{ if not .IsHome }}• &nbsp; {{ end }}<a class="text-link" href="{{ .RelPermalink }}">{{ if .IsHome }}Home{{ else if eq .CurrentSection .FirstSection }}{{ .Section | humanize }}{{ else }}{{ .Title }}{{ end }}</a></li>
+{{ end -}}

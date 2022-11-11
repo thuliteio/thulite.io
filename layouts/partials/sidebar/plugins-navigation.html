@@ -1,0 +1,11 @@
+{{ $currentPage := . -}}
+<nav class="section-menu">
+  <ul class="list-unstyled">
+    {{ $active := eq $currentPage.Title "Plugins" -}}
+    <li><a class="section-link{{ if $active }} active{{ end }}" href="/plugins/">All ({{ len (where .Site.RegularPages "Section" "==" "showcase") }})</a></li>
+    {{ range .Site.Taxonomies.plugins }}
+      {{ $active := eq .Page.Title $currentPage.Title -}}
+      <li><a class="section-link{{ if $active }} active{{ end }}" href="{{ .Page.Permalink }}">{{ .Page.Title | title }} ({{ .Count }})</a></li>
+    {{ end }}
+  </ul>
+</nav>

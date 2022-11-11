@@ -1,0 +1,3 @@
+<p class="meta-themes">
+  {{ if .Params.themes -}}{{ range $index, $theme := .Params.themes -}}{{ if gt $index 0 -}}, {{ end -}}<a class="text-link" href="{{ "/themes/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}
+</p>

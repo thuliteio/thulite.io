@@ -9,13 +9,13 @@ images: []
 menu:
   docs:
     parent: "reference-guides"
-weight: 340
+weight: 440
 toc: true
 ---
 
 ## Linting
 
-See also: [lint](/docs/prologue/commands/#lint)
+See also: [lint](/docs/overview/commands/#lint)
 
 ## Development server
 
@@ -47,7 +47,7 @@ See also the Netlify docs: [What is Netlify Dev?](https://cli.netlify.com/netlif
 
 ## Build server
 
-{{< alert icon="💡" text="<a href=\"https://github.com/http-party/http-server\">http-server</a> is a simple zero-configuration command-line http server." >}}
+{{< alert icon="💡" text="<a href=\"https://github.com/http-party/http-server\">http-server</a> is a simple zero-configuration command-line http server." />}}
 
 Update the `build:lan` command in `./package.json` for `--baseURL`.
 
@@ -59,7 +59,7 @@ npm run build:lan
 
 See also the Hyas docs:
 
-- [Hyas CLI](/docs/prologue/hyas-cli/)
+- [Hyas CLI](/docs/overview/hyas-cli/)
 
 ## GitHub CLI
 

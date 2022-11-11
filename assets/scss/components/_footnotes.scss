@@ -1,0 +1,23 @@
+.content a.footnote-ref {
+  background-image: none;
+}
+
+a.footnote-ref::before {
+  content: "[";
+}
+
+a.footnote-ref::after {
+  content: "]";
+}
+
+.footnotes {
+  margin-top: 3rem;
+
+  p {
+    display: inline;
+  }
+
+  a.footnote-backref {
+    background-image: none;
+  }
+}

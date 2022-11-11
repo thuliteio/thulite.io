@@ -9,7 +9,7 @@ images: ["google-lighthouse-scan-results-hyas.gif"]
 menu:
   docs:
     parent: "reference-guides"
-weight: 320
+weight: 420
 toc: true
 ---
 

@@ -1,26 +1,62 @@
 {{ define "main" }}
-<div class="row justify-content-center">
-  <div class="col-md-12 col-lg-10 col-xl-8">
-    <article>
-      <div class="blog-header">
-        <h1>{{ .Title }}</h1>
-        {{ partial "main/blog-meta.html" . }}
+<section class="bg-body">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-9 col-lg-10">
+        <div class="section">
+          <p class="mb-4 text-muted">{{ if lt .ReadingTime 9 -}}0{{ end -}}{{ .ReadingTime -}}&nbsp;min reading in <span class="mx-2">—</span>
+            {{ if .Params.categories -}}{{ range $index, $category := .Params.categories -}}{{ if gt $index 0 -}}, {{ end -}}<a class="text-link" href="{{ "/categories/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}
+          </p>
+          <h1 class="mb-3">{{ .Title }}</h1>
+          <p class="mb-4 pb-1">{{ .Params.lead | safeHTML }}</p>
+          <div class="post-author d-flex">
+            <div class="flex-shrink-0">
+              {{- range .Params.authors -}}
+                {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) -}}
+                  {{ if .Params.avatar -}}
+                    {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
+                    {{ $imageLq := $image.Resize "18x18 webp q95" -}}
+                    {{ $image = $image.Resize "100x100 webp q95" -}}
+                    <a href="{{ .Permalink }}" class="is-hoverable">
+                      <img class="rounded-circle w-auto lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="50" height="50">
+                    </a>
+                  {{ end -}}
+                {{ end -}}
+              {{ end -}}
+            </div>
+            <div class="flex-grow-1 ms-3"> by {{ if .Params.authors -}}{{ range $index, $author := .Params.authors -}}{{ if gt $index 0 -}}&nbsp;&amp;&nbsp;{{ end -}}<a class="text-link" href="{{ "/authors/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}
+              <p class="mb-0 lh-base">Published at <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" -}}</time></p>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      {{ .Content }}
-    </article>
+      <div class="col-lg-12">
+        {{ $defaultImage := resources.Get (printf "%s%s" "/images/" .Site.Params.defaultImage ) }}
+        {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) | default  $defaultImage }}
+        {{ partial "lazyimg" (dict "img" $image "alt" .Title "class" "img-fluid w-100 h-auto") }}
+      </div>
+      <div class="col-xl-9 col-lg-10">
+        <div class="section">
+          <div class="content">
+            {{ .Content }}
+          </div>
+          <div class="d-block d-sm-flex justify-content-between align-items-center mt-5 pt-3">
+          {{ if .Params.tags -}}
+            <ul class="taxonomy-lists list-unstyled list-inline">
+              <li class="list-inline-item d-block mb-3">Tags: </li>
+            {{ range $index, $tag := .Params.tags -}}<li class="list-inline-item"><a class="bg-white" href="{{ "/tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a></li>{{ end -}}
+            </ul>
+          {{ end -}}
+          {{ partial "main/social-share" . }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ partial "main/related-posts" . }}
   </div>
-</div>
+</section>
 {{ end }}
 
 {{ define "sidebar-footer" }}
-<section class="section section-sm mt-n5">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-12 col-lg-10 col-xl-8">
-        {{ partial "sidebar/newsletter.html" . -}}
-      </div>
-    </div>
-  </div>
-</section>
+{{ partial "sidebar/newsletter" . }}
 {{ end }}

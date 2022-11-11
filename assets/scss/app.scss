@@ -1,31 +1,47 @@
 /** Import Bootstrap functions */
 @import "bootstrap/scss/functions";
 
-/** Import theme variables */
+/** Import Tushi variables */
+@import "@ventizo/themes-tushi-assets/scss/variables";
+
+/** Import custom variables */
 @import "common/variables";
 
 /** Import Bootstrap */
 @import "bootstrap/scss/bootstrap";
 
+/** Import Tushi styles */
+@import "@ventizo/themes-tushi-assets/scss/mixins";
+@import "@ventizo/themes-tushi-assets/scss/typography";
+@import "@ventizo/themes-tushi-assets/scss/common";
+
+// @import "@ventizo/themes-tushi-assets/scss/header";
+@import "vendor/tushi/header";
+@import "@ventizo/themes-tushi-assets/scss/main";
+
+/** Import highlight.js */
+@import "highlight.js/scss/github";
+
 /** Import docsearch */
 // @import "@docsearch/css/dist/_variables";
 // @import "@docsearch/css/dist/button";
-// @import "@docsearch/css/dist/modal";
-@import "@docsearch/css/dist/style";
+@import "@docsearch/css/dist/modal";
 
-/** Import theme styles */
+// @import "@docsearch/css/dist/style";
+
+/** Import custom styles */
 @import "common/fonts";
 @import "common/global";
-@import "common/dark";
 @import "components/alerts";
 @import "components/buttons";
 @import "components/code";
-@import "components/search";
-
-// @import "components/syntax";
 @import "components/comments";
+
+// @import "components/details";
+@import "components/footnotes";
 @import "components/forms";
 @import "components/images";
+@import "components/modal";
 @import "layouts/footer";
 @import "layouts/header";
 @import "layouts/pages";

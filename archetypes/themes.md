@@ -6,15 +6,9 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
 images: []
-link: ""
-contributors: [""]
-menu:
-  themes:
-    parent: "browse"
-weight: 999
-toc: false
+weight: 150
+toc: true
+themes: []
+github: ""
+demo: ""
 ---
-
-<div class="card my-3">
-  {{< img src="{{ .Name | urlize }}.png" alt="{{ replace .Name "-" " " | title }}" class="card-img-top m-0 p-1" >}}
-</div>

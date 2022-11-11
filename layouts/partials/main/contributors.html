@@ -1,0 +1,13 @@
+{{ $width := .width }}
+{{ $height := .height }}
+{{ $repo := printf "%s%s%s" "https://api.github.com/repos/" .repo "/contributors" }}
+{{ $imageClass := .imageClass }}
+
+{{ $contributors := getJSON $repo }}
+{{ range $contributors }}
+  <a href="{{ .html_url }}" target="_blank"><img class="{{ $imageClass }}" loading="lazy" src="{{ .avatar_url }}" alt="{{ .login }}" width="{{ $width }}" height="{{ $height }}"></a>
+{{ end }}
+
+<!--
+Failed to get JSON resource "https://api.github.com/repos/h-enk/hyas/contributors": Failed to retrieve remote file: Forbidden, body: "{\"message\":\"API rate limit exceeded for 83.83.234.67. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n" If you feel that this should not be logged as an ERROR, you can ignore it by adding this to your site config: ignoreErrors = ["error-remote-getjson"] Failed to get JSON resource "https://api.github.com/repos/h-enk/doks/contributors": ignoreErrors = ["error-remote-getjson"]  logged 2 error(s)
+-->

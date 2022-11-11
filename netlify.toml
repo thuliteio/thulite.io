@@ -1,10 +1,10 @@
 [build]
+  base = "."
   publish = "public"
-  functions = "functions"
 
 [build.environment]
-  NODE_VERSION = "16.16.0"
-  NPM_VERSION = "8.11.0"
+  NODE_VERSION = "16.17.0"
+  NPM_VERSION = "8.15.0"
 
 [context.production]
   command = "npm run build"
@@ -29,7 +29,7 @@
   package = "netlify-plugin-submit-sitemap"
 
 	[plugins.inputs]
-    baseUrl = "https://gethyas.com"
+    baseUrl = "https://gethyas.com/"
     sitemapPath = "/sitemap.xml"
     ignorePeriod = 0
     providers = [
@@ -39,8 +39,26 @@
 
 [dev]
   framework = "#custom"
-  command = "npm run start"
+  command = "npm run dev"
   targetPort = 1313
   port = 8888
   publish = "public"
   autoLaunch = false
+
+# Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+
+# Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://*.algolia.net https://*.algolianet.com https://*.algolia.io https://plausible.io/api/event; font-src 'self'; img-src 'self' data: https://www.netlify.com https://i.giphy.com; script-src 'self' 'unsafe-eval' 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk=' 'sha256-Sz0IuK/4LfFJVp69F4UHK80xoxDZLOBPMJhPi0XZl3A='; style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-M1kGOWjNSlJppsMie9dwdhzSu4/KCyPdtUrnwt99g5c=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-M1kGOWjNSlJppsMie9dwdhzSu4/KCyPdtUrnwt99g5c=' 'sha256-lYPgVeO0CacLwwUB4DyR9jnHyogvo7NBwUv0zXx/qBY='"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin"
+    Feature-Policy = "geolocation 'self'"
+    Cache-Control= '''
+    public,
+    max-age=31536000'''
+    Access-Control-Allow-Origin = "*"

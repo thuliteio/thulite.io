@@ -1,17 +1,17 @@
 import Clipboard from 'clipboard';
 
-var pre = document.getElementsByTagName('pre');
+var cb = document.getElementsByClassName('clipboard');
 
-for (var i = 0; i < pre.length; ++ i)
+for (var i = 0; i < cb.length; ++ i)
 {
-  var element = pre[i];
-  element.insertAdjacentHTML('afterbegin', '<button class="btn btn-copy"></button>');
+  var element = cb[i];
+  element.insertAdjacentHTML('afterbegin', '<button class="btn btn-clipboard" aria-label="Clipboard button"></button>');
 }
 
-var clipboard = new Clipboard('.btn-copy', {
+var clipboard = new Clipboard('.btn-clipboard', {
 
   target: function(trigger) {
-    return trigger.nextElementSibling;
+    return trigger.parentNode.nextElementSibling;
   },
 
 });

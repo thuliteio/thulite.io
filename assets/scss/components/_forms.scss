@@ -1,32 +1,7 @@
-/** Search form */
-.search-form {
-  @extend .form-inline !optional;
+.form-error {
+  color: #dc3545;
 }
 
-.search-form label {
-  @extend .form-group;
-
-  font-weight: normal;
-}
-
-.search-form .search-field {
-  @extend .form-control;
-}
-
-.search-form .search-submit {
-  @extend .btn;
-  @extend .btn-secondary;
-}
-
-.email-form {
-  margin-bottom: 1rem;
-}
-
-.email-form .form-control {
-  background: $gray-100;
-  border-color: transparent;
-}
-
-.email-form .form-control:focus {
-  border: 1px solid $primary;
+.form-success {
+  color: #198754;
 }
