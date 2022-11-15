@@ -1,11 +1,11 @@
 [[main]]
-  name = "Docs"
-  url = "/docs/overview/get-started/"
+  name = "Showcase"
+  url = "/showcase/"
   weight = 10
 
 [[main]]
-  name = "Plugins"
-  url = "/plugins/"
+  name = "Docs"
+  url = "/docs/overview/get-started/"
   weight = 20
 
 [[main]]
@@ -14,8 +14,8 @@
   weight = 30
 
 [[main]]
-  name = "Showcase"
-  url = "/showcase/"
+  name = "Plugins"
+  url = "/plugins/"
   weight = 40
 
 [[main]]

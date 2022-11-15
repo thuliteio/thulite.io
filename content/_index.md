@@ -1,7 +1,7 @@
 ---
-title : "Hugo-powered Jamstack framework"
-description: "Hyas is a Hugo-powered Jamstack framework for building production-ready websites."
-lead: "Get ready for building production-ready websites faster."
+title : "Build websites faster"
+description: "Get a production-ready Hugo website with a single command."
+lead: "Get a production-ready Hugo website with a single command."
 date: 2020-10-06T08:47:36+00:00
 lastmod: 2020-10-06T08:47:36+00:00
 draft: false
