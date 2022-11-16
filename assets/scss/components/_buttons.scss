@@ -5,7 +5,11 @@
 
 .btn-clipboard {
   transition: opacity 0.25s ease-in-out;
+
+  /*
   opacity: 0;
+  */
+  opacity: 1;
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;

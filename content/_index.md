@@ -1,11 +1,12 @@
 ---
 title : "Build websites faster"
-description: "Get a production-ready Hugo website with a single command."
-lead: "Get a production-ready Hugo website with a single command."
+description: "Get a flexible, production-ready Hugo website with the Hyas framework."
+lead: "Get a flexible, production-ready Hugo website with the Hyas framework."
 date: 2020-10-06T08:47:36+00:00
 lastmod: 2020-10-06T08:47:36+00:00
 draft: false
 images: []
+alertText: 'Hyas 2.0 is here. <a class="text-link stretched-link" href="/blog/how-hyas-evolved-into-a-framework/">Read the launch post</a>!'
 ---
 
 <!--

@@ -5,53 +5,31 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-8 col-lg-9 col-md-10 position-relative mx-auto text-center">
+        {{ if .Params.alertText -}}
+          <div class="d-flex justify-content-center">
+            <div class="alert alert-light alert-banner" role="alert">
+              {{ .Params.alertText | safeHTML }}
+            </div>
+          </div>
+        {{ end -}}
         <h1 class="title display-1 d-inline mb-0">
           <!--<svg class="shape text-primary" width="46" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M15 46A91.9 91.9 0 0 0 2 43.8c-1-.1-1.8.5-1.9 1.5-.1.9.6 1.7 1.4 1.8a87 87 0 0 1 12.7 2.3c.9.3 1.8-.2 2.1-1.1.3-1-.3-1.9-1.1-2.1ZM28.1 29c-7-7-14.7-13.2-21.5-20.5-.6-.7-1.7-.7-2.3 0-.7.6-.8 1.6-.1 2.3C11 18 18.8 24.2 25.7 31.3c.7.7 1.7.7 2.4 0 .6-.6.7-1.7 0-2.3ZM41 1.8l.7 12.1c0 1 .8 1.7 1.7 1.6 1 0 1.6-.8 1.6-1.7l-.6-12.2c0-1-.8-1.6-1.8-1.6-.8 0-1.6.9-1.5 1.8Z" fill="currentColor" />
           </svg>-->{{ .Title }}
         </h1>
         <p class="lead mt-2 mb-lg-4">{{ .Params.Lead | safeHTML }}</p>
-        <!--
-        <a class="btn btn-dark mt-1" href="{{ "docs/overview/get-started/" | absURL }}" role="button">Get Started</a>
-        -->
-
         <div class="d-flex flex-column flex-lg-row align-items-md-stretch justify-content-md-center gap-3 mb-4">
-
           <a href="{{ "docs/overview/get-started/" | absURL }}" class="btn btn-dark d-flex align-items-center justify-content-center" role="button">Get Started</a>
-
           <div class="d-inline-block v-align-middle fs-5">
-
             <div class="content code-snippet">
-              <div class="clipboard"><!--<button class="btn btn-clipboard" aria-label="Clipboard button"></button>--></div>
+              <div class="clipboard"></div>
               <pre><code class="hljs language-bash">npm create hyas@latest</code></pre>
             </div>
-<!--
-          <div class="bd-code-snippet">
-            <div class="bd-clipboard">
-              <button type="button" class="btn-clipboard" title="">
-                <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"></use></svg>      </button>   </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@5.2.2</span></span></code></pre></div></div>
-              -->
+          </div>
         </div>
-
-        </div>
-
-<!--
-        <div class="d-flex flex-column flex-md-row mt-1">
-
-            <a class="btn btn-dark" href="{{ "docs/overview/get-started/" | absURL }}" role="button">Get Started</a>
-
-              <div class="content code-snippet">
-                <div class="clipboard"><button class="btn btn-clipboard" aria-label="Clipboard button"></button></div>
-                <pre><code class="hljs language-bash">npm create hyas@latest</code></pre>
-              </div>
-
-        </div>
-      -->
-
-
-
-
+        <!--
         <p class="text-muted mt-4 mt-lg-3">Open-source MIT Licensed. <a class="text-link" href="https://github.com/h-enk/hyas" target="_blank">GitHub v{{ $data := getJSON "https://raw.githubusercontent.com/h-enk/hyas/master/package.json" }}{{ $data.version }}</a></p>
+        -->
       </div>
     </div>
   </div>
