@@ -15,8 +15,8 @@ header:not(.DocSearch-SearchBar) {
   z-index: 1000;
   padding: 30px 0;
   transition: 0.4s cubic-bezier(0.2, 1, 0.2, 1);
-  // background-color: $white;
-  background-color:hsla(0, 100%, 100%, 0.9);
+  background-color: $white;
+  // background-color:hsla(0, 100%, 100%, 0.9);
   width: 100%;
   top: 0;
   left: 0;

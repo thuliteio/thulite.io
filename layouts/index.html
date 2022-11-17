@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-xl-8 col-lg-9 col-md-10 position-relative mx-auto text-center">
         {{ if .Params.alertText -}}
-          <div class="d-flex justify-content-center">
+          <div class="d-flex justify-content-center mt-n3 mb-3">
             <div class="alert alert-light alert-banner" role="alert">
               {{ .Params.alertText | safeHTML }}
             </div>
@@ -18,7 +18,7 @@
           </svg>-->{{ .Title }}
         </h1>
         <p class="lead mt-2 mb-lg-4">{{ .Params.Lead | safeHTML }}</p>
-        <div class="d-flex flex-column flex-lg-row align-items-md-stretch justify-content-md-center gap-3 mb-4">
+        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-stretch justify-content-md-center gap-3 mb-4">
           <a href="{{ "docs/overview/get-started/" | absURL }}" class="btn btn-dark d-flex align-items-center justify-content-center" role="button">Get Started</a>
           <div class="d-inline-block v-align-middle fs-5">
             <div class="content code-snippet">
