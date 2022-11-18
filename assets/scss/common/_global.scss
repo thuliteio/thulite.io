@@ -82,9 +82,9 @@ body.section {
   }
 }
 
-/*
 .section-title {
   margin-bottom: 40px;
+
   .title {
     background: none;
     padding-left: 0;
@@ -93,4 +93,11 @@ body.section {
     font-weight: 400;
   }
 }
-*/
+
+.section.bg-light {
+  background: $light !important;
+}
+
+.bg-body {
+  background: $body-background;
+}
