@@ -38,8 +38,9 @@ schemaGitHub = "https://github.com/h-enk/hyas"
 copyRight = "Copyright (c) 2019-present Hyas"
 
 # Footer
-# footer = "&copy; 2022 Hyas — <a href=\"https://www.netlify.com/\" target=\"_blank\">Deploys by Netlify</a>"
-footer = "&copy; 2022 Hyas"
+footer = "&copy; 2022 Hyas — <a href=\"https://www.netlify.com/\" target=\"_blank\">Deploys by Netlify</a>"
+# footer = "&copy; 2022 Hyas"
+sponsor = "Deploys by Netlify"
 
 # Alert
 alert = false
