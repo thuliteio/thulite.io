@@ -33,7 +33,7 @@
       <div class="col-lg-12">
         {{ $defaultImage := resources.Get (printf "%s%s" "/images/" .Site.Params.defaultImage ) }}
         {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) | default  $defaultImage }}
-        {{ partial "lazyimg" (dict "img" $image "alt" .Title "class" "img-fluid w-100 h-auto") }}
+        {{ partial "lazyimg" (dict "img" $image "alt" .Title "class" "img-fluid w-100 h-auto rounded-3") }}
       </div>
       <div class="col-xl-9 col-lg-10">
         <div class="section">
@@ -44,7 +44,7 @@
           {{ if .Params.tags -}}
             <ul class="taxonomy-lists list-unstyled list-inline">
               <li class="list-inline-item d-block mb-3">Tags: </li>
-            {{ range $index, $tag := .Params.tags -}}<li class="list-inline-item"><a class="bg-white" href="{{ "/tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a></li>{{ end -}}
+            {{ range $index, $tag := .Params.tags -}}<li class="list-inline-item"><a class="bg-white rounded-3" href="{{ "/tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a></li>{{ end -}}
             </ul>
           {{ end -}}
           {{ partial "main/social-share" . }}

@@ -6,6 +6,9 @@
     "scss/comment-no-empty": null,
     "max-line-length": null,
     "scss/at-extend-no-missing-placeholder": null,
+    "color-function-notation": "legacy",
+    "alpha-value-notation": "number",
+    "property-no-vendor-prefix": null,
     "at-rule-no-unknown": [
       true,
       {

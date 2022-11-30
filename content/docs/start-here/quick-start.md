@@ -1,0 +1,69 @@
+---
+title: "Quick Start"
+description: "One page summary of how to start a new Hyas project."
+lead: "One page summary of how to start a new Hyas project."
+date: 2020-11-16T13:59:39+01:00
+lastmod: 2020-11-16T13:59:39+01:00
+draft: false
+images: []
+menu:
+  docs:
+    parent: "start-here"
+weight: 120
+toc: true
+---
+
+## Requirements
+
+- [Git](https://git-scm.com/): latest source release
+- [Node.js](https://nodejs.org/) (includes npm): latest LTS version or newer
+
+Hyas uses npm to centralize dependency management, making it easy to update resources, build tooling, plugins, and build scripts.
+
+## Start a new Hyas project
+
+Create a new site, change directories, install dependencies, and start development server.
+
+### Create a new site
+
+{{< tabs "create-new-site" >}}
+{{< tab "npm" >}}
+
+```bash
+npm create hyas@latest
+```
+
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm create hyas
+```
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn create hyas
+```
+
+{{< /tab >}}
+{{< /tabs >}}
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start development server
+
+```bash
+npm run start
+```
+
+Hyas will start the Hugo development webserver accessible by default at `http://localhost:1313`. Saved changes will live reload in the browser.
+
+## Other commands
+
+Hyas comes with commands for common tasks. [Commands →]({{< ref "commands" >}})

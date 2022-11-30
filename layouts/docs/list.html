@@ -19,10 +19,25 @@
     <div class="row justify-content-center">
       <div class="col-xl-9 col-lg-10">
         <div class="archive-block">
+          {{ if (eq .Title "Docs") -}}
+            {{ range .Sections -}}
+              <h2 class="h3 mb-3">{{ .Title }}</h2>
+              {{ partial "main/archive-recursive.html" . }}
+            {{ end -}}
+          {{ else -}}
+            <ul class="list-unstyled">
+              {{ range .RegularPages -}}
+                <li class="archive-post-item">
+                  <a class="border px-4 py-3 d-block" href="{{ .RelPermalink }}">{{ .Params.title | title }}</a>
+                </li>
+              {{ end -}}
+            </ul>
+          {{ end -}}
           <!-- <h2 class="h3 mb-3">2022</h2> -->
+          <!--
           <ul class="list-unstyled">
           {{ $currentSection := .CurrentSection }}
-          {{ range where .Site.RegularPages.ByTitle "Section" .Section }}
+          {{ range where .Site.RegularPages "Section" .Section }}
             {{ if in (.RelPermalink | string) $currentSection.RelPermalink }}
               <li class="archive-post-item">
                 <a class="border px-4 py-3 d-block" href="{{ .RelPermalink }}">{{ .Params.title | title }}</a>
@@ -30,6 +45,7 @@
             {{ end }}
           {{ end }}
           </ul>
+          -->
         </div>
       </div>
     </div>

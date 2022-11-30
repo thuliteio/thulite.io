@@ -1,9 +1,9 @@
-<article class="bg-white d-flex flex-column h-100">
-  <div class="post-image">
+<article class="bg-white d-flex flex-column h-100 rounded-3">
+  <div class="post-image rounded-top">
     <a class="d-block" href="{{ .Permalink }}">
       {{ $defaultImage := resources.Get (printf "%s%s" "/images/" .Site.Params.defaultImage ) }}
       {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) | default  $defaultImage}}
-      {{ partial "lazyimg" (dict "img" $image "alt" .Title) }}
+      {{ partial "lazyimg" (dict "img" $image "alt" .Title "class" "img-fluid rounded-top") }}
     </a>
   </div>
   <div class="p-4 pb-0">

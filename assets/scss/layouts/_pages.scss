@@ -99,6 +99,16 @@
   font-size: 16px;
 }
 
+.archive-post-item:first-child a {
+  border-top-left-radius: var(--bs-border-radius);
+  border-top-right-radius: var(--bs-border-radius);
+}
+
+.archive-post-item:last-child a {
+  border-bottom-right-radius: var(--bs-border-radius) !important;
+  border-bottom-left-radius: var(--bs-border-radius) !important;
+}
+
 .section-menu {
   .btn-toggle {
     display: inline-flex;
@@ -141,9 +151,14 @@
 
   .btn-toggle-nav a {
     display: inline-flex;
+
+    /*
     padding: 0.1875rem 0.5rem;
     margin-top: 0.125rem;
     margin-left: 1.25rem;
+    */
+    padding: 0.125rem 0.5rem;
+    margin: 0.0625rem 0 0.0625rem 1.25rem;
     text-decoration: none;
   }
 

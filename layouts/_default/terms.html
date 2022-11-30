@@ -33,7 +33,7 @@
             <div class="row g-2 taxonomy-lists">
               {{ range .Data.Pages.ByTitle -}}
                 <div class="col-md-4 col-6">
-                  <a class="text-dark px-3 py-2 d-flex lead bg-white" href="{{ .Permalink }}">
+                  <a class="text-dark px-3 py-2 d-flex lead bg-white rounded-3" href="{{ .Permalink }}">
                     <div class="flex-grow-1">
                       <span class="sort-alphabetical">{{ .Title }}</span>
                       <small class="sort-popular">({{ len .Data.Pages }})</small>
@@ -52,7 +52,7 @@
               {{ $data := .Data }}
               {{ range $key, $value := .Data.Terms.ByCount }}
               <div class="col-md-4 col-6">
-                <a class="text-dark px-3 py-2 d-flex lead bg-white" href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}">
+                <a class="text-dark px-3 py-2 d-flex lead bg-white rounded-3" href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}">
                   <div class="flex-grow-1">
                     <span class="sort-alphabetical">{{ replace $value.Name "-" " " | title }} </span>
                     <small class="sort-popular">({{ $value.Count }})</small>

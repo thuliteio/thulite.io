@@ -5,7 +5,7 @@
 
 [[main]]
   name = "Docs"
-  url = "/docs/overview/get-started/"
+  url = "/docs/start-here/getting-started/"
   weight = 20
 
 [[main]]
@@ -24,16 +24,16 @@
   weight = 50
 
 [[main]]
-  name = "Resources"
+  name = "Community"
   weight = 60
-  identifier = "resources"
+  identifier = "community"
 
 [[main]]
-  name = "GitHub"
+  name = "GitHub repository"
   weight = 61
   url = "https://github.com/h-enk/hyas"
   post = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"></path><line x1="10" y1="14" x2="20" y2="4"></line><polyline points="15 4 20 4 20 9"></polyline></svg>'
-  parent = "resources"
+  parent = "community"
   [main.params]
     target = "_blank"
 
@@ -42,7 +42,7 @@
   weight = 62
   url = "https://github.com/h-enk/hyas/discussions"
   post = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"></path><line x1="10" y1="14" x2="20" y2="4"></line><polyline points="15 4 20 4 20 9"></polyline></svg>'
-  parent = "resources"
+  parent = "community"
   [main.params]
     target = "_blank"
 
@@ -51,21 +51,30 @@
   weight = 63
   url = "https://opencollective.com/hyas"
   post = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"></path><line x1="10" y1="14" x2="20" y2="4"></line><polyline points="15 4 20 4 20 9"></polyline></svg>'
-  parent = "resources"
+  parent = "community"
   [main.params]
     target = "_blank"
 
 [[main]]
-  name = "Contributing"
+  name = "Doks website"
   weight = 64
-  url = "/contributing/"
-  parent = "resources"
+  url = "https://getdoks.org/"
+  post = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"></path><line x1="10" y1="14" x2="20" y2="4"></line><polyline points="15 4 20 4 20 9"></polyline></svg>'
+  parent = "community"
+  [main.params]
+    target = "_blank"
 
-[[main]]
-  name = "Code of Conduct"
-  weight = 65
-  url = "/code-of-conduct/"
-  parent = "resources"
+# [[main]]
+#   name = "Contributing"
+#   weight = 64
+#   url = "/contributing/"
+#   parent = "community"
+#
+# [[main]]
+#   name = "Code of Conduct"
+#   weight = 65
+#   url = "/code-of-conduct/"
+#   parent = "community"
 
 # [[social]]
 #   name = "RSS Feed"
@@ -82,7 +91,7 @@
 [[social]]
   name = "GitHub"
   pre = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>'
-  url = "https://github.com/h-enk/hyas"
+  url = "https://github.com/gethyas"
   weight = 20
 
 # [[social]]

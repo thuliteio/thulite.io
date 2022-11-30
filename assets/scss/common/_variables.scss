@@ -1,4 +1,4 @@
-// style variables
+// Tushi variables
 $font-primary: "DM Sans", sans-serif;
 $color-primary: #ddac6b;
 $body-background: #f2f3e8;
@@ -8,18 +8,70 @@ $dark: #0a101a;
 $gray: #555;
 $light: #fafafa;
 
+$color-mktg-btn-shadow-hover: 0 4px 7px rgba(0, 0, 0, 0.15), 0 100px 80px rgba(255, 255, 255, 0.02), 0 42px 33px rgba(255, 255, 255, 0.024), 0 22px 18px rgba(255, 255, 255, 0.028), 0 12px 10px rgba(255, 255, 255, 0.034), 0 7px 5px rgba(255, 255, 255, 0.04), 0 3px 2px rgba(255, 255, 255, 0.07);
+
+// GitHub colors
+
+/* Blue */
+$blue-3900: #8b949e;
+$blue-7300: #161b22;
+
+/* Gray */
+$gray-800: #f6f8fa;
+$gray-7500: #0d1117;
+
+/* Green */
+$green-100: #aff5b4;
+$green-200: #8aff8a;
+$green-300: #7ee787;
+$green-400: #56d364;
+
+/* Purple */
+$purple-100: #f2eafe;
+$purple-200: #eddeff;
+$purple-300: #ecd8ff;
+$purple-400: #e7d6ff;
+$purple-500: #e2c5ff;
+$purple-600: #dbc7fc;
+$purple-700: #d8b9ff;
+$purple-800: #d2a8ff;
+$purple-900: #c297ff;
+$purple-1000: #bc8cff;
+$purple-1100: #b34bff;
+$purple-1200: #48227d;
+
+/* Purple violet */
+$purpleViolet-1300: #6e40c9;
+
+/* Lime */
+$lime-100: #c9ff00;
+
+// Overrides Tushi variables
+$font-primary: "DM Sans", sans-serif;
+$color-primary: #ddac6b;
+$body-background: $gray-800;
+$white: #fff;
+$black: #000;
+$dark: #0a101a;
+$gray: #555;
+$light: #fafafa;
+
+$primary: $purpleViolet-1300;
+
 /*! @docsearch/css Variables 3.3.0 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
 
 /* stylelint-disable */
 :root {
-  --docsearch-primary-color: #5468ff;
+  // --docsearch-primary-color: #5468ff;
+  --docsearch-primary-color: #6e40c9;
   --docsearch-text-color: #1c1e21;
   --docsearch-spacing: 12px;
   --docsearch-icon-stroke-width: 1.4;
   --docsearch-highlight-color: var(--docsearch-primary-color);
   --docsearch-muted-color: #969faf;
   --docsearch-container-background: rgba(101, 108, 133, 0.8);
-  --docsearch-logo-color: #5468ff;
+  // --docsearch-logo-color: #5468ff;
+  --docsearch-logo-color: #6e40c9;
   --docsearch-modal-width: 560px;
   --docsearch-modal-height: 600px;
   --docsearch-modal-background: #f5f6f7;
@@ -38,6 +90,11 @@ $light: #fafafa;
   --docsearch-footer-height: 44px;
   --docsearch-footer-background: #fff;
   --docsearch-footer-shadow: 0 -1px 0 0 #e0e3e8, 0 -3px 6px 0 rgba(69, 98, 155, 0.12)
+}
+
+.cls-1,
+.cls-2 {
+  fill: $purpleViolet-1300 !important;
 }
 
 html[data-theme=dark] {
@@ -62,6 +119,12 @@ html[data-theme=dark] {
 // Options
 $enable-negative-margins: true;
 
+// scss-docs-start font-variables
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       "DM Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+// stylelint-enable value-keyword-case
+
 //
 $font-weight-lighter: lighter;
 $font-weight-light: 300;
@@ -69,6 +132,8 @@ $font-weight-normal: 400;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
 $font-weight-bolder: bolder;
+
+$display-font-weight: 500;
 
 // Spacing
 //
@@ -101,7 +166,16 @@ $border-widths: (
   3: 3px,
   4: 4px,
   5: 5px
-) !default;
+);
+
+// scss-docs-start border-radius-variables
+$border-radius:               0.375rem;
+$border-radius-sm:            0.25rem;
+$border-radius-lg:            0.5rem;
+$border-radius-xl:            1rem;
+$border-radius-2xl:           2rem;
+$border-radius-pill:          50rem;
+// scss-docs-end border-radius-variables
 
 // Alerts
 //

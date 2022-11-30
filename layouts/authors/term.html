@@ -8,7 +8,7 @@
             {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
             {{ $imageLq := $image.Resize "18x18 webp q95" -}}
             {{ $image = $image.Resize "360x360 webp q95" -}}
-            <img class="img-fluid lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="180" height="180">
+            <img class="img-fluid lazyload blur-up rounded-3" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="180" height="180">
           {{ end -}}
         </div>
         <h4 class="text-dark mb-1">{{ .Title }}</h4>

@@ -1,0 +1,12 @@
+<!-- Based on: https://stackoverflow.com/a/69659047 -->
+{{ $child_pages := union .Sections .Pages }}
+<ul class="list-unstyled">
+  {{ range $child_pages -}}
+  <li class="archive-post-item">
+    <a class="border px-4 py-3 d-block" href="{{ .RelPermalink }}">{{ .Params.title | title }}</a>
+    {{ if or (.Sections) (.Pages) -}}
+      {{ partial "recursive.html" . }}
+    {{ end -}}
+  </li>
+  {{ end -}}
+</ul>

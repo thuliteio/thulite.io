@@ -1,7 +1,7 @@
 ---
 title : "Build websites faster"
-description: "Get a flexible, production-ready Hugo website with the Hyas framework."
-lead: "Get a flexible, production-ready Hugo website with the Hyas framework."
+description: "Get a flexible and production-ready Hugo website faster with the Hyas framework."
+lead: "Get a flexible and production-ready Hugo website faster with the Hyas framework."
 date: 2020-10-06T08:47:36+00:00
 lastmod: 2020-10-06T08:47:36+00:00
 draft: false

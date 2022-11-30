@@ -54,7 +54,7 @@
                 {{ if .HasChildren -}}
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .Name }}</a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu rounded-3">
                       {{ range .Children -}}
                       {{ $active = eq .Name $current.Title -}}
                         <li>

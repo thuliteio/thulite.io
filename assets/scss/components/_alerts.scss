@@ -4,7 +4,7 @@
 }
 
 .alert-global {
-  background: $dark;
+  background: $gray-800;
 }
 
 header.header-alert {
@@ -79,7 +79,7 @@ header.header-alert {
 .alert-light {
   --bs-alert-color: #555;
   --bs-alert-bg: #fff;
-  --bs-alert-border-color: rgb(233 233 233);
+  --bs-alert-border-color: rgb(233, 233, 233);
 }
 
 .alert-light .alert-link {
@@ -87,5 +87,5 @@ header.header-alert {
 }
 
 .alert-banner {
-  padding: 0.5rem 1.5rem;
+  padding: 0.375rem 1.125rem;
 }
