@@ -48,6 +48,7 @@ $violet-400: #2426ca;
 $violet-500: #03001c;
 
 /* Purple violet */
+$purpleViolet-100: #e9dffb;
 $purpleViolet-1300: #6e40c9;
 
 /* Lime */
@@ -82,8 +83,10 @@ $color-primary: $purpleViolet-1300;
   --docsearch-logo-color: #6e40c9;
   --docsearch-modal-width: 560px;
   --docsearch-modal-height: 600px;
-  --docsearch-modal-background: #f5f6f7;
-  --docsearch-modal-shadow: inset 1px 1px 0 0 hsla(0, 0%, 100%, 0.5), 0 3px 8px 0 #555a64;
+  // --docsearch-modal-background: #f5f6f7;
+  --docsearch-modal-background: #f6f8fa;
+  // --docsearch-modal-shadow: inset 1px 1px 0 0 hsla(0, 0%, 100%, 0.5), 0 3px 8px 0 #555a64;
+  --docsearch-modal-shadow: 0;
   --docsearch-searchbox-height: 56px;
   --docsearch-searchbox-background: #ebedf0;
   --docsearch-searchbox-focus-background: #fff;
@@ -92,16 +95,20 @@ $color-primary: $purpleViolet-1300;
   --docsearch-hit-color: #444950;
   --docsearch-hit-active-color: #fff;
   --docsearch-hit-background: #fff;
-  --docsearch-hit-shadow: 0 1px 3px 0 #d4d9e1;
-  --docsearch-key-gradient: linear-gradient(-225deg, #d5dbe4, #f8f8f8);
-  --docsearch-key-shadow: inset 0 -2px 0 0 #cdcde6, inset 0 0 1px 1px #fff, 0 1px 2px 1px rgba(30, 35, 90, 0.4);
+  // --docsearch-hit-shadow: 0 1px 3px 0 #d4d9e1;
+  --docsearch-hit-shadow: 0;
+  // --docsearch-key-gradient: linear-gradient(-225deg, #d5dbe4, #f8f8f8);
+  --docsearch-key-gradient: #f6f8fa;
+  // --docsearch-key-shadow: inset 0 -2px 0 0 #cdcde6, inset 0 0 1px 1px #fff, 0 1px 2px 1px rgba(30, 35, 90, 0.4);
+  --docsearch-key-shadow: 0;
   --docsearch-footer-height: 44px;
   --docsearch-footer-background: #fff;
-  --docsearch-footer-shadow: 0 -1px 0 0 #e0e3e8, 0 -3px 6px 0 rgba(69, 98, 155, 0.12)
+  // --docsearch-footer-shadow: 0 -1px 0 0 #e0e3e8, 0 -3px 6px 0 rgba(69, 98, 155, 0.12)
+  --docsearch-footer-shadow: 0;
 }
 
-.cls-1,
-.cls-2 {
+.DocSearch-Logo .cls-1,
+.DocSearch-Logo .cls-2 {
   fill: $purpleViolet-1300 !important;
 }
 

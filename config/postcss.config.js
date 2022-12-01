@@ -29,6 +29,8 @@ module.exports = {
         'toggle-menu',
         'form-success',
         'form-error',
+        'cls-1',
+        'cls-2',
         ...whitelister([
           './node_modules/highlight.js/scss/github.scss',
           './node_modules/@docsearch/css/dist/modal.css',
