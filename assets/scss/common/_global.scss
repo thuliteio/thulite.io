@@ -122,8 +122,7 @@ body.section {
   padding: 7rem 0 8rem;
 
   @include tablet {
-    // text-align: center;
-    text-align: left;
+    text-align: center;
   }
 
   @include mobile {
