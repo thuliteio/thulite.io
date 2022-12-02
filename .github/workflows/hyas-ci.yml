@@ -26,16 +26,19 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'pnpm'
         registry-url: 'https://npm.pkg.github.com'
-      env:
-        VENTIZO_AUTH_TOKEN: ${{ secrets.VENTIZO_AUTH_TOKEN }}
 
     - name: Install dependencies
       run: pnpm install
+      env:
+        VENTIZO_AUTH_TOKEN: ${{ secrets.VENTIZO_AUTH_TOKEN }}
 
     - name: Run test script
       run: pnpm test
+      env:
+        VENTIZO_AUTH_TOKEN: ${{ secrets.VENTIZO_AUTH_TOKEN }}
 
     - name: Build production website
       run: pnpm build
+      env:
+        VENTIZO_AUTH_TOKEN: ${{ secrets.VENTIZO_AUTH_TOKEN }}
