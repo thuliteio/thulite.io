@@ -1,0 +1,40 @@
+name: Hyas CI
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os-version }}
+
+    strategy:
+      matrix:
+        os-version: [ubuntu-latest, windows-latest, macos-latest]
+        node-version: [lts/*, latest]
+
+    steps:
+    - name: Check out project
+      uses: actions/checkout@v3
+
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: latest
+
+    - name: Install Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'pnpm'
+
+    - name: Install dependencies
+      run: pnpm install
+      env:
+        VENTIZO_AUTH_TOKEN: ${{ secrets.VENTIZO_AUTH_TOKEN }}
+
+    - name: Run test script
+      run: pnpm test
+
+    - name: Build production website
+      run: pnpm build
