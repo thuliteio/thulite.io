@@ -26,7 +26,6 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'pnpm'
 
     - name: Set pnpm config 1/2
       run: pnpm config set '@ventizo:registry' "https://npm.pkg.github.com"
