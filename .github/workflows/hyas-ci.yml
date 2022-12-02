@@ -36,6 +36,10 @@ jobs:
 
     - name: Run test script
       run: pnpm test
+      env:
+        VENTIZO_AUTH_TOKEN: ${{ secrets.VENTIZO_AUTH_TOKEN }}
 
     - name: Build production website
       run: pnpm build
+      env:
+        VENTIZO_AUTH_TOKEN: ${{ secrets.VENTIZO_AUTH_TOKEN }}
