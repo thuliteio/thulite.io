@@ -112,6 +112,15 @@ $color-primary: $purpleViolet-1300;
   fill: $purpleViolet-1300 !important;
 }
 
+#Layer_1 .cls-1,
+#Layer_1 .cls-2 {
+  fill: #003dff;
+}
+
+#Layer_1 .cls-2 {
+  fill-rule: evenodd;
+}
+
 html[data-theme=dark] {
   --docsearch-text-color: #f5f6f7;
   --docsearch-container-background: rgba(9, 10, 17, 0.8);
