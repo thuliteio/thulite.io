@@ -28,10 +28,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
 
+    - name: Set pnpm config
+      run: pnpm config set '//npm.pkg.github.com/:_authToken' "${VENTIZO_AUTH_TOKEN}"
+      env:
+        VENTIZO_AUTH_TOKEN: ${{secrets.VENTIZO_AUTH_TOKEN}}
+
     - name: Install dependencies
       run: pnpm install
-      env:
-        VENTIZO_AUTH_TOKEN: ${{ secrets.VENTIZO_AUTH_TOKEN }}
 
     - name: Run test script
       run: pnpm test
