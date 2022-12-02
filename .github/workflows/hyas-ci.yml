@@ -17,26 +17,22 @@ jobs:
     - name: Check out project
       uses: actions/checkout@v3
 
-    - name: Install pnpm
+    - name: Set up pnpm
       uses: pnpm/action-setup@v2
       with:
         version: latest
 
-    - name: Install Node.js ${{ matrix.node-version }}
+    - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-
-    - name: Set pnpm config 1/2
-      run: pnpm config set '@ventizo:registry' "https://npm.pkg.github.com"
-
-    - name: Set pnpm config 2/2
-      run: pnpm config set '//npm.pkg.github.com/:_authToken' "${VENTIZO_AUTH_TOKEN}"
-      env:
-        VENTIZO_AUTH_TOKEN: ${{secrets.VENTIZO_AUTH_TOKEN}}
+        cache: 'pnpm'
+        registry-url: 'https://npm.pkg.github.com'
 
     - name: Install dependencies
       run: pnpm install
+      env:
+        VENTIZO_AUTH_TOKEN: ${{ secrets.VENTIZO_AUTH_TOKEN }}
 
     - name: Run test script
       run: pnpm test
