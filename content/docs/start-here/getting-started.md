@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 description: "Get started with Hyas."
-lead: "Hyas is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
+# lead: "Hyas is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -12,6 +12,20 @@ menu:
 weight: 110
 toc: true
 ---
+
+## What is Hyas?
+
+Hyas is an __all-in-one web framework__ for building __flexible, production-ready__ Hugo websites.
+
+## Key features
+
+- [..]
+
+Check out our detailed [Why Hyas]({{< ref "why-hyas" >}}) breakdown to learn more about what makes Hyas special. ✨
+
+## Try Hyas in your browser
+
+<a class="btn btn-link p-0" href="https://gitpod.io/#https://github.com/h-enk/hyas" target="_blank"><img alt="Open in Gitpod" src="/images/open-in-gitpod.svg"></a>
 
 ## Get started
 
