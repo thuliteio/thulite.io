@@ -44,7 +44,7 @@
           {{ if .Params.tags -}}
             <ul class="taxonomy-lists list-unstyled list-inline">
               <li class="list-inline-item d-block mb-3">Tags: </li>
-            {{ range $index, $tag := .Params.tags -}}<li class="list-inline-item"><a class="bg-white rounded-3" href="{{ "/tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a></li>{{ end -}}
+            {{ range $index, $tag := .Params.tags -}}<li class="list-inline-item"><a class="bg-white rounded-3" href="{{ "/tags/" | absURL }}{{ . | urlize }}/"><span class="text-gradient-purple-coral">{{ . }}</span></a></li>{{ end -}}
             </ul>
           {{ end -}}
           {{ partial "main/social-share" . }}

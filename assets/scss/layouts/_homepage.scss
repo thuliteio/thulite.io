@@ -1,0 +1,17 @@
+.community-list {
+  a {
+    .icon svg {
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      color: $dark;
+
+      .icon svg {
+        transform: scale(1.2) translateX(2px);
+        opacity: 1 !important;
+      }
+    }
+  }
+}

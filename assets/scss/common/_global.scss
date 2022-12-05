@@ -42,7 +42,7 @@ body.section {
   background: $gray-7500 !important;
 }
 
-.bg-dark .title {
+.bg-dark .card-title {
   color: $white;
 }
 
@@ -61,6 +61,11 @@ body.section {
 .bg-dark .alert,
 .bg-dark .text-link {
   color: $white;
+}
+
+.bg-dark .form-control,
+.bg-dark .btn-newsletter {
+  background: $gray-7600 !important;
 }
 
 .bg-subtle {

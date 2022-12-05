@@ -88,4 +88,9 @@ header.header-alert {
 
 .alert-banner {
   padding: 0.375rem 1.125rem;
+  color: $gray;
+}
+
+.alert-banner a {
+  color: $gray !important;
 }
