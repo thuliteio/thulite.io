@@ -181,3 +181,26 @@ body.section {
 .bg-purple-100 {
   background-color: $purple-100 !important;
 }
+
+.bg-glow-one {
+  background-image: url("images/bg-glow-one.svg");
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: 25% 50%;
+  height: auto;
+
+  @include media-breakpoint-up(md) {
+    background-position: 100% 50%;
+  }
+}
+
+.bg-sponsors {
+  background: linear-gradient(92.05deg, #f2eafe 12.09%, #ffeff7 42.58%, #fcebeb 84.96%);
+}
+
+.text-gradient-purple-coral {
+  background: linear-gradient(87.54deg, #9867f0 -6.8%, #ed4e50 84.14%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
