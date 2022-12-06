@@ -31,6 +31,7 @@ module.exports = {
         'form-error',
         'cls-1',
         'cls-2',
+        'strong',
         ...whitelister([
           './node_modules/highlight.js/scss/github.scss',
           './node_modules/@docsearch/css/dist/modal.css',

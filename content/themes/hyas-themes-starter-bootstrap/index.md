@@ -13,6 +13,8 @@ github: "https://github.com/h-enk/hyas-themes-starter-bootstrap"
 demo: "https://deploy-preview-329--hyas.netlify.app/"
 ---
 
+<a class="btn btn-link p-0" href="https://gitpod.io/#https://github.com/h-enk/hyas" target="_blank"><img alt="Open in Gitpod" src="/images/open-in-gitpod.svg"></a>
+
 ## Requirements
 
 - [@hyas/core](https://www.npmjs.com/package/@hyas/core)

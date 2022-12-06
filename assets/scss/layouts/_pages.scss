@@ -249,3 +249,53 @@
 .card-sponsor {
   min-height: 7rem;
 }
+
+.content ul.list-unstyled li {
+  padding-left: 0;
+
+  &::before {
+    background: none;
+  }
+}
+
+.content ul.list-toolbox li {
+  padding-left: 2rem;
+
+  &::before {
+    background: none;
+    content: "🧰";
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    left: 0;
+    top: -0.125rem;
+  }
+}
+
+.content ul.list-books li {
+  padding-left: 2rem;
+
+  &::before {
+    background: none;
+    content: "📚";
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.content ul.list-speech-balloon li {
+  padding-left: 2rem;
+
+  &::before {
+    background: none;
+    content: "💬";
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
