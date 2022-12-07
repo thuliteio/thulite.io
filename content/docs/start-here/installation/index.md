@@ -59,11 +59,11 @@ yarn create hyas
 
 You can run `create-hyas` anywhere on your machine, so there’s no need to create a new empty directory for your project before you begin. If you don’t have an empty directory yet for your new project, the wizard will help create one for you automatically.
 
-If all goes well, you should see a “Ready for liftoff!” message followed by some recommended “Next steps”. `cd` into your new project directory to begin using Hyas.
+If all goes well, you should see a "Done" message followed by some recommended "Next steps".
 
 ## 2. Install dependencies
 
-If you skipped the `npm install` step during the `create-hyas` wizard, then be sure to install your dependencies before continuing.
+`cd` into your new project directory to begin using Hyas. Install your dependencies before continuing.
 
 {{< tabs "install-dependencies" >}}
 {{< tab "npm" >}}
@@ -91,54 +91,47 @@ yarn install
 
 ## 3. Start Hyas ✨
 
-## Next Steps
+Hyas uses the Hugo development server that has everything you need for project development. The `dev` command will start the local development server so that you can see your new website in action for the very first time.
 
----
+Use your favorite package manager to run this command and start the Hugo development server.
 
-## Start a new Hyas project
-
-Create a new site, change directories, install dependencies, and start development server.
-
-### Create a new site
-
-{{< tabs "create-new-site" >}}
+{{< tabs "run-development-server" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm create hyas@latest
+npm run dev
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm create hyas
+pnpm run dev
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn create hyas
+yarn run dev
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-### Install dependencies
+If all goes well, Hyas should now be serving your project on [http://localhost:1313/](http://localhost:1313/)!
 
-```bash
-npm install
-```
+The Hugo server will listen for live file and configuration changes in your project directory, so you will not need to restart the server as you make changes during development.
 
-### Start development server
+If you aren't able to open your project in the browser, go back to the terminal where you ran the `dev` command and look to see if an error occurred, or if your project is being served at a different URL than the one linked to above.
 
-```bash
-npm run start
-```
+## Next Steps
 
-Hyas will start the Hugo development webserver accessible by default at `http://localhost:1313`. Saved changes will live reload in the browser.
+Success! You are now ready to start building with Hyas! 🥳
 
-## Other commands
+Here are a few topics that we recommend exploring next. You can read them in any order. You can even leave our documentation for a bit and go play in your new Hyas project codebase, coming back here whenever you run into trouble or have a question.
 
-Hyas comes with commands for common tasks. [Commands →]({{< ref "commands" >}})
+- __Add a plugin__: Learn how to extend Hyas with support for SEO, images, CMSs and more in our [Plugins guide]({{< ref "docs/guides/plugins" >}}).
+- __Deploy your site__: Learn how to build and deploy a Hyas project to the web in our [Deployment guide]({{< ref "deploy" >}}).
+- __Understand your codebase__: Learn more about Hyas' project structure in our [Project Structure guide]({{< ref "project-structure" >}}).
+{.list-books}

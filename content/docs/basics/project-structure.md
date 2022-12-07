@@ -1,5 +1,5 @@
 ---
-title: "Directory Structure"
+title: "Project Structure"
 description: "The Hyas project directory structure extends Hugo's."
 lead: "The Hyas project directory structure extends Hugo's."
 date: 2020-04-20T14:14:16+02:00
