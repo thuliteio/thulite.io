@@ -25,7 +25,6 @@ toc: true
 
 `create-hyas` is the fastest way to start a new Hyas project from scratch. It will walk you through every step of setting up your new Hyas project. It allows you to choose from a few different starter templates or provide your own using the `--template` argument.
 
-
 {{< alert icon="🚀" >}}
 Prefer to try Hyas in your browser? [Browse our themes]({{< ref "themes" >}}) and spin up a new Hyas project without ever leaving your browser.
 {{< /alert >}}
