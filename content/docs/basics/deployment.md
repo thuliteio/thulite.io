@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "hosting"
-weight: 381
+    parent: "basics"
+weight: 470
 toc: true
 ---
 

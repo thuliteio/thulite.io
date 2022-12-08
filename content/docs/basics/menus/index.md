@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "pages-and-menus"
-weight: 332
+    parent: "basics"
+weight: 450
 toc: true
 ---
 

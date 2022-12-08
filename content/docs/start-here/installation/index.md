@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "installation"
+    parent: "start-here"
 weight: 120
 toc: true
 ---

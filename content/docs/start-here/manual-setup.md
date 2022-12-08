@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "installation"
+    parent: "start-here"
 weight: 130
 toc: true
 url: "/docs/start-here/installation/manual-setup/"
