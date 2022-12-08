@@ -20,3 +20,6 @@ import 'js/clipboard.js';
 
 // Import newsletter script
 import 'js/newsletter.js';
+
+// Import tabs script
+import 'js/tabs.js';
