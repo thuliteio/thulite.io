@@ -75,7 +75,7 @@ Hyas v2.0 introduces some changes that you should be aware of when migrating fro
 
 ### Modular setup
 
-Hyas v2.0 is setup modularly, making it flexible and easier to add plugins and themes to your project. Hyas packages:
+Hyas v2.0 is setup modularly, making it flexible and easier to add plugins and themes to your project. The Hyas packages:
 
 - [gethyas](https://github.com/h-enk/hyas)
 - [create-hyas](https://github.com/gethyas/create-hyas)
