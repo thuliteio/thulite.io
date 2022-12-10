@@ -32,6 +32,7 @@ module.exports = {
         'cls-1',
         'cls-2',
         'strong',
+        'ol',
         ...whitelister([
           './node_modules/highlight.js/scss/github.scss',
           './node_modules/@docsearch/css/dist/modal.css',
