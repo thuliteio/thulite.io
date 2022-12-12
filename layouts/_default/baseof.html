@@ -2,7 +2,7 @@
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
   {{ partial "head/head" . }}
   {{ partial "head/body-class" . }}
-  <body class="{{ delimit (.Scratch.Get "class") " " }}"{{ if eq .Site.Params.options.scrollSpy true }} data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -90%" data-bs-smooth-scroll="true" tabindex="0"{{ end }}>
+  <body class="{{ delimit (.Scratch.Get "class") " " }}">
     {{ partial "header/header" . }}
     {{ block "main" . }}{{ end }}
     {{ block "sidebar-prefooter" . }}{{ end }}

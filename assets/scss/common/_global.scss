@@ -213,3 +213,13 @@ body.section {
 strong {
   font-weight: 500 !important;
 }
+
+.bg-gradient-gray-800 {
+  background-image: linear-gradient(180deg, $gray-800, $white);
+  background-attachment: fixed;
+}
+
+.bg-gradient-purple-100 {
+  background-image: linear-gradient(180deg, $purple-100, $white);
+  background-attachment: fixed;
+}
