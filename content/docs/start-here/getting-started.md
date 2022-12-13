@@ -19,10 +19,10 @@ Hyas is an __all-in-one web framework__ for building __flexible, production-read
 
 ## Key features
 
-- __Dependency management__: Manage dependencies in one place with npm.
+- __Dependency manager__: Hyas makes managing dependencies easier.
 - __Site generator__: Hyas installs Hugo locally in your project.
-- __Code with confidence__: Check for errors and fix automatically.
-- __Ready for production__: Top scores for security, performance, and SEO.
+- __Code with confidence__: Hyas reduces errors and improves your code quality.
+- __Ready for production__: Get top scores for security, performance, and SEO.
 - __Easy to use__: You don't need to be an expert to build something with Hyas.
 - __Fully-featured, but flexible__: Make your Hyas website completely your own.
 
