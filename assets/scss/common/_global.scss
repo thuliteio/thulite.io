@@ -223,3 +223,12 @@ strong {
   background-image: linear-gradient(180deg, $purple-100, $white);
   background-attachment: fixed;
 }
+
+.content ol {
+  padding-left: 2rem;
+}
+
+.content ol li {
+  padding-left: 0.5rem;
+  list-style-position: outside;
+}

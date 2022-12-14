@@ -1,5 +1,5 @@
 ---
-title: "Deployment"
+title: "Deploy"
 description: "Deploy your Hyas site to Netlify or any other static web host."
 lead: "Deploy your Hyas site to Netlify or any other static web host."
 date: 2020-04-20T12:46:25+02:00
@@ -20,3 +20,5 @@ See [Netlify]({{< ref "netlify" >}}).
 ## Deploy to other hosts
 
 See the Hugo Docs: [Hosting & Deployment](https://gohugo.io/hosting-and-deployment/).
+
+- [Microsoft Azure &rarr;]({{< ref "microsoft-azure" >}})
