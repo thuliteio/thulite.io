@@ -15,7 +15,7 @@
               <div class="col-12">
                 <div class="wrapper-image">
                   {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) }}
-                  {{ partial "lazyimg" (dict "img" $image "alt" .Title) }}
+                  {{ partial "lazyimg" (dict "img" $image "alt" .Title "class" "img-fluid rounded-3 shadow-sm") }}
                 </div>
               </div>
             </div>
@@ -27,6 +27,9 @@
             <h1 class="mb-3">{{ .Title }}</h1>
             <div class="pre-content">
               <p class="lead-text">{{ .Params.lead | safeHTML }}</p>
+              <div class="demo-link">
+                <a class="btn btn-link p-0" href="https://gitpod.io/#{{ .Params.github | safeURL }}" target="_blank"><img alt="Open in Gitpod" src="/images/open-in-gitpod.svg"></a>
+              </div>
               <div class="demo-link">
                 <a target="_blank" class="text-link lead" href="{{ .Params.demo }}">Demo <svg xmlns="http://www.w3.org/2000/svg" class="mb-1" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="17" y1="7" x2="7" y2="17"></line><polyline points="8 7 17 7 17 16"></polyline></svg></a>
               </div>

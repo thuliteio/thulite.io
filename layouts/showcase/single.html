@@ -15,7 +15,7 @@
               <div class="col-12">
                 <div class="wrapper-image">
                   {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) }}
-                  {{ partial "lazyimg" (dict "img" $image "alt" .Title) }}
+                  {{ partial "lazyimg" (dict "img" $image "alt" .Title "class" "img-fluid rounded-3 shadow-sm") }}
                 </div>
               </div>
             </div>

@@ -1,7 +1,7 @@
 ---
 title: "Validate"
-description: "Manage business ideas the right way. Shape your ideas, test, plan, collaborate, and get organized — all in one tool."
-lead: "Manage business ideas the right way. Shape your ideas, test, plan, collaborate, and get organized — all in one tool. Coming soon!"
+description: "Business website of Validate, a SaaS platform for testing business ideas."
+lead: "Business website of Validate, a SaaS platform for testing business ideas."
 date: 2020-12-15T17:14:09+01:00
 lastmod: 2020-12-15T17:14:09+01:00
 draft: false

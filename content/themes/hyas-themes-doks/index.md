@@ -13,6 +13,7 @@ github: "https://github.com/h-enk/hyas-themes-doks"
 demo: "https://deploy-preview-881--doks.netlify.app/"
 ---
 
+<!--
 ## Requirements
 
 - [@hyas/core](https://www.npmjs.com/package/@hyas/core)
@@ -161,7 +162,6 @@ Add to `./config/_default/params.toml`:
 ## Documentation
 # docsVersion = "0.3"
 
-
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
@@ -217,3 +217,4 @@ See the Hyas docs: [Themes](https://gethyas.com/docs/reference-guides/themes/)
 ## Resources
 
 - [Doks website](https://getdoks.org/)
+-->

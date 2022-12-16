@@ -32,7 +32,7 @@ Check out our detailed [Why Hyas]({{< ref "why-hyas" >}}) breakdown to learn mor
 
 Choose from a variety of [themes]({{< ref "themes" >}}) to get started. Play around with a full, working version of Hyas right in your browser! For example, launch the basic theme:
 
-<a class="btn btn-link p-0" href="https://gitpod.io/#https://github.com/h-enk/hyas" target="_blank"><img alt="Open in Gitpod" src="/images/open-in-gitpod.svg"></a>
+<a class="btn btn-link p-0" href="https://gitpod.io/#https://github.com/gethyas/basic-theme" target="_blank"><img alt="Open in Gitpod" src="/images/open-in-gitpod.svg"></a>
 
 ## Start your first project
 

@@ -2,10 +2,11 @@
 <nav class="section-menu">
   <ul class="list-unstyled">
     {{ $active := eq $currentPage.Title "Plugins" -}}
-    <li><a class="section-link{{ if $active }} active{{ end }}" href="/plugins/">All ({{ len (where .Site.RegularPages "Section" "==" "showcase") }})</a></li>
+    <li><a class="section-link{{ if $active }} active{{ end }}" href="/plugins/">All ({{ len (where .Site.RegularPages "Section" "==" "plugins") }})</a></li>
     {{ range .Site.Taxonomies.plugins }}
       {{ $active := eq .Page.Title $currentPage.Title -}}
       <li><a class="section-link{{ if $active }} active{{ end }}" href="{{ .Page.Permalink }}">{{ .Page.Title | title }} ({{ .Count }})</a></li>
     {{ end }}
+    <li><a class="text-link" target="_blank" href="https://github.com/h-enk/hyas/discussions/categories/show-and-tell">Submit <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"></path><line x1="10" y1="14" x2="20" y2="4"></line><polyline points="15 4 20 4 20 9"></polyline></svg></a></li>
   </ul>
 </nav>
