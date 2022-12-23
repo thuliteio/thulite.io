@@ -46,7 +46,7 @@ sponsor = "Deploys by Netlify"
 alert = true
 alertDismissable = true
 # alertText = 'From Modern Hugo Starter to Hugo-powered Jamstack framework. <a class="text-link active stretched-link" href="/blog/how-hyas-evolved-into-a-framework/">Explore how Hyas evolved</a>!'
-alertText = '⚠️ This site is still in beta. The documentation is not yet complete.'
+alertText = '⚠️ This site is still in beta. Things might be not complete or correct.'
 
 # Images
 
