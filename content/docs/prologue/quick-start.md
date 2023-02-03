@@ -45,7 +45,7 @@ npm install
 ### Start development server
 
 ```bash
-npm run start
+npm run dev
 ```
 
 Hyas will start the Hugo development webserver accessible by default at `http://localhost:1313`. Saved changes will live reload in the browser.
