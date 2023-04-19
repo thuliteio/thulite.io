@@ -62,7 +62,7 @@ footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\
 copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
 
 # Alert
-alert = true
+alert = false
 alertDismissable = true
 # alertText = "Deliver web projects 10x faster. <a class=\"alert-link\" href=\"https://www.netlify.com/whitepaper/\" target=\"_blank\" rel=\"noopener\">Get the free enterprise paper →</a>"
 alertText = "🚀 Hyas 2.0 is here! <a class=\"alert-link stretched-link\" href=\"https://deploy-preview-256--gethyas.netlify.app/\">View the beta site →</a>"
