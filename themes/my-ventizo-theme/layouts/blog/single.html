@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) -}}
+{{ if $image -}}
+  <section class="section pt-1">
+    <div class="container-lg">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-fluid">
+          {{ partial "picture"  (dict
+          "ctx" .
+          "aspect_ratio" "21:9"
+          "src" $image
+          "alt" .Title
+          "class" "img-fluid w-100 h-auto rounded-0"
+          )}}
+        </div>
+        <div class="col-lg-8 col-blog-image">
+          {{ partial "main/blog-meta" . }}
+        </div>
+        {{ partial "main/blog-content" . }}
+      </div>
+    </div>
+  </section>
+{{ else -}}
+  <div class="noise"></div>
+  <section class="section-xl noise-underlay bg-{{ .Params.gradient | default "blue-green" }}-gradient"></section>
+  <section class="section-lg pt-1">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-blog">
+          {{ partial "main/blog-meta" . }}
+        </div>
+        {{ partial "main/blog-content" . }}
+      </div>
+    </div>
+  </section>
+{{ end -}}
+{{ end }}

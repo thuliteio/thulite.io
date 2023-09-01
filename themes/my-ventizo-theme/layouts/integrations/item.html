@@ -1,0 +1,32 @@
+<div class="card rounded-0">
+  {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) -}}
+
+  {{ if $image -}}
+    {{ partial "img"  (dict
+    "ctx" .
+    "src" $image
+    "alt" .Title
+    "class" "card-img-top img-fluid w-100 h-auto rounded-0"
+    )}}
+  {{ end -}}
+  <div class="card-body">
+    <h3 class="card-title fs-3"><a class="stretched-link text-white text-decoration-none" href="{{ .Params.docs }}" target="_blank">{{.Title}}</a></h3>
+    <p class="card-text">{{ .Summary }}</p>
+  </div>
+
+  <!--
+  <div class="card-footer">
+    <div class="row">
+      <div class="col-6">
+        <p class="mb-0">
+          {{ partial "main/creator-link" (dict "repo" .Params.repo ) }}
+        </p>
+      </div>
+      <div class="col-6">
+        <p class="text-end mb-0">{{ .Params.cost }}</p>
+      </div>
+    </div>
+  </div>
+  -->
+
+</div>

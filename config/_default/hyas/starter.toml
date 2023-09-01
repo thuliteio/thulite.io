@@ -1,0 +1,50 @@
+# Color mode
+colorMode = "dark" # auto (default), light or dark
+colorModeToggler = true # true (default) or false (this setting is only relevant when colorMode = auto)
+
+# Navbar
+navbarSticky = false # false (default) or true
+containerBreakpoint = "lg" # "", "sm", "md", "lg" (default), "xl", "xxl", or "fluid"
+offCanvas = "top" # "top", "end" (default), "bottom", or "start"
+
+## Button
+navBarButton = true # false (default) or true
+navBarButtonUrl = "/about/"
+navBarButtonText = "Get started"
+
+# FlexSearch
+flexSearch = false
+indexPages = [] # [] (all regular pages, default) or list of sections (e.g. ["blog", "guides"])
+showSearch = [] # [] (all pages, default) or homepage (optionally) and list of sections (e.g. ["homepage", "blog", "guides"])
+
+## Search results
+showDate = false # false (default) or true
+showSummary = true # true (default) or false
+searchLimit = 0 # 0 (no limit, default) or natural number
+
+# Global alert
+alert = false # false (default) or true
+alertDismissable = true # true (default) or false
+alertText = '<a class="alert-link stretched-link" href="/hyas-2.1/">Hyas version 2.1 just launched!</a>'
+
+# Global notice
+notice = false # false (default) or true
+noticeText = 'Hyas 2.1 is here!' # E.g. 'Hyas 2.1 is here!'
+noticeLink = '/blog/hyas-2.1/' # E.g. '/blog/hyas-2.1/'
+
+# Plausible Analytics
+plausibleAnalyticsDomain = "gethyas.com" # "example.com" (default)
+
+# Bootstrap
+bootstrapJavascript = true # false (default) or true
+
+# Nav
+toTopButton = false # false (default) or true
+breadcrumbTrail = false # false (default) or true
+headlineHash = false # false (default) or true
+
+# Footer
+footer = '© 2023 Hyas — <a href="https://github.com/gethyas/hyas/blob/master/LICENSE" target="_blank">MIT License</a>'
+
+# SCSS
+# backGround = "yellowgreen"

@@ -1,0 +1,7 @@
+<!-- https://discourse.gohugo.io/t/breadcrumb-navigation-for-highly-nested-content/27359/6 -->
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    {{ partial "main/breadcrumb" . -}}
+    <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+  </ol>
+</nav>

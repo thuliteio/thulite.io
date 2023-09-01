@@ -1,0 +1,18 @@
+<p class="meta font-monospace text-center">{{ .PublishDate.Format "January 2, 2006" }}</p>
+<h1 class="display-3 fw-normal text-center">{{ .Title }}</h1>
+<p class="meta font-monospace text-center meta-blog">
+  {{- range .Params.authors -}}
+    {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) -}}
+      {{ if .Params.avatar -}}
+        {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
+        {{ $imageLq := $image.Resize "14x14 webp q95" -}}
+        {{ $image = $image.Resize "84x84 webp q95" -}}
+        <a href="{{ .Permalink }}">
+          <img class="rounded-circle w-auto lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="42" height="42">
+        </a> {{ .Title }}
+      {{ end -}}
+    {{ end -}}
+  {{ end -}}
+  {{ if and .Params.authors .Params.categories -}}<span>—&nbsp;</span>{{ end -}}
+  {{ if .Params.categories -}}{{ range $index, $category := .Params.categories -}}{{ if gt $index 0 -}}, {{ end -}}<a class="text-link" href="{{ "/categories/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}</p>
+<hr>

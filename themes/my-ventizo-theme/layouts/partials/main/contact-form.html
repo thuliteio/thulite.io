@@ -1,0 +1,25 @@
+<form class="contact-form" name="contact" method="post" data-netlify="true" netlify-honeypot="phone-number" onsubmit="sendButton.disabled = true">
+  <div class="row g-3">
+    <div class="col-12 col-md-6 visually-hidden">
+      <input type="text" name="phone-number" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
+    </div>
+    <div class="col-12 col-md-6">
+      <input type="text" name="first-name" class="form-control" placeholder="First Name *" aria-label="First Name" required>
+    </div>
+    <div class="col-12 col-md-6">
+      <input type="text" name="last-name" class="form-control" placeholder="Last Name *" aria-label="Last Name" required>
+    </div>
+    <div class="col-12 col-md-6">
+      <input type="email" name="email" class="form-control" placeholder="Email *" aria-label="Email" required>
+    </div>
+    <div class="col-12 col-md-6">
+      <input type="text" name="company-name" class="form-control" placeholder="Company Name" aria-label="Company Name">
+    </div>
+    <div class="col-12">
+      <textarea name="message" class="form-control" rows="5" placeholder="Message *" aria-label="Message" required></textarea>
+    </div>
+    <div class="col-12">
+      <button id="sendButton" class="btn btn-primary" type="submit" name="button" data-text="Send" aria-label="Send"><span>Send</span></button>
+    </div>
+  </div>
+</form>

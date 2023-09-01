@@ -1,0 +1,45 @@
+footer {
+  border-top: 1px solid var(--sl-color-gray-6);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+footer hr {
+  border-top: 1px solid var(--sl-color-gray-6);
+  opacity: 1;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+@include media-breakpoint-down(md) {
+  footer .nav-secondary .col-6 {
+    margin-top: 1.5rem;
+  }
+}
+
+footer .nav-secondary h3 {
+  color: var(--sl-color-gray-3);
+}
+
+footer .nav-secondary li:not(.list-inline-item) {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+footer .nav-secondary a {
+  color: $white;
+  text-decoration: none;
+}
+
+footer .nav-tertiary a {
+  color: var(--sl-color-gray-2);
+  text-decoration: none;
+}
+
+footer .nav-secondary a:hover {
+  color: var(--sl-color-gray-3);
+}
+
+footer .nav-tertiary a:hover {
+  color: var(--sl-color-gray-3);
+}

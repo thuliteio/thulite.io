@@ -1,0 +1,162 @@
+.home {
+  .card {
+    border-radius: 0;
+    padding: 0.5rem;
+  }
+
+  .card-title {
+    font-weight: 400;
+    font-size: 2.125rem;
+    line-height: 1.2;
+  }
+
+  .card-title.custom-title-width {
+    width: 75%;
+
+    @include media-breakpoint-up(xxl) {
+      width: 70%;
+    }
+  }
+
+  .card-text {
+    margin-top: 0.75rem;
+  }
+
+  .card-footer {
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+    color: var(--bs-card-cap-color);
+    background-color: transparent;
+    border-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .text-features {
+    line-height: 1.1;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 3rem;
+    }
+
+    span {
+      font-weight: 700;
+    }
+
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .row-first {
+    margin-top: 5rem;
+  }
+
+  .row-last {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 1.5rem;
+
+    .card-title {
+      font-size: 3rem;
+      line-height: 1.1;
+      
+    }
+  }
+}
+
+// Google lighthouse
+
+.row-lighthouse {
+  margin: 2rem 0;
+}
+
+
+@include media-breakpoint-up(xxl) {
+  .row-lighthouse {
+    margin: 2rem;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .row-lighthouse .col-6:nth-child(-n + 2) {
+    margin-bottom: 2rem;
+  }
+}
+
+.circle-score {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border: 3px solid #0c6;
+  border-radius: 50%;
+  background-color: #1e3328;
+  
+  .score {
+    font-size: 1.5rem;
+    color: #0c6;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .circle-score {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #0c6;
+    border-radius: 50%;
+    background-color: #1e3328;
+    
+    .score {
+      font-size: 2rem;
+      color: #0c6;
+    }
+  }
+}
+
+p.score-category {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.row-themes {
+.card-body {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 1.5rem 0;
+  
+  p.card-text {
+    margin-bottom: 0;
+  }
+}
+
+  .card-footer {
+    border-top: 1px solid var(--sl-color-gray-5);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: transparent;
+    padding: 1.5rem 0;
+
+    hr {
+      margin-top: 0;
+    }
+  }
+}
+
+.showcase .card {
+  height: auto;
+}
+
+.showcase .card-img-overlay {
+  position: absolute;
+  inset: auto 0 0;
+  padding: var(--bs-card-img-overlay-padding);
+  border-radius: 0;
+  background-color: hsla(224deg, 14%, 16%, 0.95);
+  transition-timing-function: cubic-bezier(0,0,.2,1);
+  transition-duration: .3s;
+  transition-property: opacity;
+  opacity: 0;
+}
+
+.showcase .card:hover .card-img-overlay {
+  opacity: 1;
+}

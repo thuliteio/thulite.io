@@ -1,0 +1,54 @@
+<section class="section noise-container border-bottom">
+  <div class="noise"></div>
+  <div class="bg-grid position-absolute inset-0 z-n1"></div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col col-lg-7 text-center">
+        <h1 class="display-2 fw-normal">
+          {{ if eq .CurrentSection .FirstSection }}
+            {{ .Summary }}
+          {{ else -}}
+            {{ .Title }}
+            <p class="lead">{{ .Summary }}</p>
+          {{ end -}}
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="noise-container">
+  <div class="noise"></div>
+  <div class="container-fluid">
+    <div class="row row-showcase justify-content-center py-5">
+      <div class="col-main-section">
+        <div class="row row-flex">
+          <!-- Source: https://discourse.gohugo.io/t/how-to-conditionally-apply-html-code-after-every-3-posts/3118/2 -->
+          {{ range $i, $e := .Paginator.Pages }}
+            {{ if or (mod $i 5 | eq 0) (mod $i 5 | eq 1) }}
+              <div class="col-md-6">
+            {{ else }}
+              <div class="col-md-6 col-lg-4">
+            {{ end }}
+                {{ .Render "item" }}
+              </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-lg">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-11 col-md-8 col-lg-6 text-center">
+        <h2 class="display-5 fw-normal text-white">Submit your site</h2>
+        <p class="lead">Anyone is welcome to submit a site for our Showcase!</p>
+        <div class="actions d-flex justify-content-center align-items-center">
+          <a target="_blank" rel="noopener noreferer" class="btn btn-lg btn-light rounded-pill" href="https://github.com/orgs/gethyas/discussions/new?category=showcase" role="button"><span>Submit site</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
