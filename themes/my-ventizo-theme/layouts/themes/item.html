@@ -2,7 +2,7 @@
   {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) -}}
 
   {{ if $image -}}
-    {{ partial "img"  (dict
+    {{ partial "picture"  (dict
     "ctx" .
     "src" $image
     "alt" .Title

@@ -2,7 +2,7 @@
   {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) -}}
   {{ if $image -}}
     <a class="stretched-link text-white text-decoration-none" href="{{ .Params.website }}" target="_blank">
-      {{ partial "img"  (dict
+      {{ partial "picture"  (dict
       "ctx" .
       "src" $image
       "alt" .Title 
