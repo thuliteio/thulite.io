@@ -132,6 +132,8 @@
   padding-bottom: 0.625rem;
 }
 
+.btn-light.btn-action:hover,
+.btn-outline-light.btn-action:hover,
 .btn-primary.btn-action:hover,
 .btn-outline-primary.btn-action:hover {
   color: var(--sl-color-gray-6);
