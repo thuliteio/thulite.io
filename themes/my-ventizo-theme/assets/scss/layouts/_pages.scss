@@ -218,22 +218,23 @@ hr {
 }
 
 .col-blog-image {
+  position: relative;
   padding: 3rem 3rem 0;
   background: $body-bg-dark;
 
   @include media-breakpoint-up(lg) {
-    padding-top: 2rem;
     margin-top: -2rem;
+    padding-top: 2rem;
   }
 
   @include media-breakpoint-up(xl) {
-    padding-top: 3rem;
     margin-top: -3rem;
+    padding-top: 3rem;
   }
 
   @include media-breakpoint-up(xxl) {
-    padding-top: 4rem;
     margin-top: -4rem;
+    padding-top: 4rem;
   }
 }
 
@@ -382,19 +383,19 @@ hr {
     font-weight: 400;
   }
 
-/*
+  /*
   .highlight {
     padding: 2px;
     background-image: linear-gradient(66.77deg, var(--sl-color-blue) 0%, var(--sl-color-purple) 100%);
     background-image: linear-gradient(to right, #ff7b72, #f0883e);
   }
-*/
+  */
 
   .highlight pre {
     border: 2px solid var(--sl-color-gray-5);
-    
+
     /*
-    border: 1px solid $link-color-dark;
+    border: 2px solid $link-color-dark;
     */
 
     border-radius: 0;

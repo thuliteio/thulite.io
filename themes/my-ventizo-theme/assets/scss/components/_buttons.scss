@@ -131,3 +131,8 @@
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
+
+.btn-primary.btn-action:hover,
+.btn-outline-primary.btn-action:hover {
+  color: var(--sl-color-gray-6);
+}
