@@ -577,6 +577,7 @@ p.meta-tags {
   }
 }
 
+.single.blog .content ul li,
 .prose ul li {
   font-size: 1rem;
   padding-top: 0.25rem;
@@ -589,6 +590,7 @@ p.meta-tags {
   }
 }
 
+.single.blog .content ul li::before,
 .prose ul li::before {
   content: "";
   background: url("/svgs/star.svg") center no-repeat;
