@@ -1,0 +1,7 @@
+<!-- Insert scripts NEEDED by stylesheets here -->
+{{ if eq site.Data.starter.colorMode "auto" -}}
+  {{ partial "footer/esbuild" (dict "src" "js/color-mode.js" "transpile" false) -}}
+{{ end -}}
+{{- if and (site.Data.starter.alert) (site.Data.starter.alertDismissable) -}}
+  {{ partial "footer/esbuild" (dict "src" "js/dismissable-alert.js" "transpile" false) -}}
+{{- end -}}

@@ -1,35 +1,81 @@
 [[mounts]]
+  source = "config/_default/hyas"
+  target = "data"
+
+[[mounts]]
+  source = "node_modules/@hyas/core/assets"
+  target = "assets"
+
+[[mounts]]
+  source = "node_modules/@hyas/core/layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "node_modules/gethyas/assets"
+  target = "assets"
+
+[[mounts]]
+  source = "node_modules/@hyas/seo/layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "node_modules/@hyas/images/assets"
+  target = "assets"
+  excludeFiles = "/scss/**.scss"
+
+[[mounts]]
+  source = "node_modules/@hyas/images/layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "node_modules/@tabler/icons/icons"
+  target = "assets/svgs/tabler-icons"
+
+[[mounts]]
+  source = "assets/svgs"
+  target = "assets/svgs"
+
+[[mounts]]
+  source = "node_modules/@hyas/inline-svg/layouts"
+  target = "layouts"
+
+# [[mounts]]
+#   source = "node_modules/@ventizo/starter-core/archetypes"
+#   target = "archetypes"
+
+[[mounts]]
+  source = "node_modules/@ventizo/starter-core/assets"
+  target = "assets"
+  excludeFiles = "/scss/**.scss"
+
+[[mounts]]
+  source = "node_modules/@ventizo/starter-core/layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "themes/my-ventizo-theme/archetypes"
+  target = "archetypes"
+
+[[mounts]]
+  source = "themes/my-ventizo-theme/assets"
+  target = "assets"
+
+[[mounts]]
+  source = "themes/my-ventizo-theme/layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "archetypes"
+  target = "archetypes"
+
+[[mounts]]
   source = "assets"
   target = "assets"
 
 [[mounts]]
-  source = "static"
-  target = "static"
-
-[[mounts]]
-  source = "node_modules/lazysizes"
-  target = "assets/js/vendor/lazysizes"
-
-[[mounts]]
-  source = "node_modules/instant.page"
-  target = "assets/js/vendor/instant.page"
-
-[[mounts]]
-  source = "node_modules/docsearch.js"
-  target = "assets/js/vendor/docsearch.js"
-
-[[mounts]]
-  source = "node_modules/clipboard"
-  target = "assets/js/vendor/clipboard"
-
-[[mounts]]
-  source = "node_modules/bootstrap"
-  target = "assets/js/vendor/bootstrap"
+  source = "data"
+  target = "data"
 
 [[mounts]]
   source = "layouts"
-  target = "layouts"
-
-[[mounts]]
-  source = "node_modules/@hyas/images/layouts"
   target = "layouts"

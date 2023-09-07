@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="noise"></div>
+<section class="section-md bg-purple-orange-gradient">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-7">
+        <h1 class="display-2 fw-normal">{{ .Title }}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-lg">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 col-xl-7">
+        <div class="content">
+        {{ if site.Data.starter.headlineHash -}}
+          {{ partial "main/headline-hash" .Content }}
+        {{ else -}}
+          {{ .Content }}
+        {{ end -}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

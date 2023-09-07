@@ -1,0 +1,14 @@
+{{ $api := "https://api.github.com/repos" }}
+{{ $repo := .repo }}
+
+{{ $repoParsed := urls.Parse $repo }}
+{{ $path := $repoParsed.Path }}
+{{ $url := printf "%s%s" $api $path }}
+
+{{ with resources.GetRemote $url }}
+{{ $data := . | transform.Unmarshal }}
+  <a class="text-link" href="{{ $data.owner.html_url }}" target="_blank">
+    <img class="img-creator rounded-circle w-auto lazyload blur-up" src="{{ $data.owner.avatar_url }}" alt="Avatar of {{ $data.owner.login }}" width="48" height="48" loading="lazy" decoding="async">
+    <span class="ms-1">{{ $data.owner.login }}</span>
+  </a>
+{{ end }}

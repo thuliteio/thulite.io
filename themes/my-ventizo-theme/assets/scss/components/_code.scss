@@ -1,0 +1,33 @@
+pre {
+  border: 1px solid var(--sl-color-gray-5);
+}
+
+pre code {
+  font-size: 0.9375rem;
+}
+
+// Source: https://css-tricks.com/almanac/properties/s/scrollbar/
+pre::-webkit-scrollbar {
+  height: 0.25rem;
+}
+
+pre::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+}
+
+@include color-mode(dark) {
+  pre::-webkit-scrollbar-track {
+    background-color: var(--sl-color-gray-5);
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+  
+  pre::-webkit-scrollbar-thumb {
+    background-color: var(--sl-color-gray-6);
+    border-radius: 0.125rem;
+  }
+}

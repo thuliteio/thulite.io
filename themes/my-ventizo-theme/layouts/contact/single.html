@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="section-lg">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1 class="display-1 fw-normal">{{ .Title }}</h1>
+        <p class="lead">{{ .Params.Lead | safeHTML }}</p>
+        {{ .Content }}
+        {{ partial "main/contact-form" . }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

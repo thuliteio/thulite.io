@@ -1,0 +1,14 @@
+{{ $api := "https://api.github.com/repos" }}
+{{ $repo := .repo }}
+
+{{ $repoParsed := urls.Parse $repo }}
+{{ $path := $repoParsed.Path }}
+{{ $url := printf "%s%s" $api $path }}
+
+{{ with resources.GetRemote $url }}
+{{ $data := . | transform.Unmarshal }}
+{{ $count := $data.stargazers_count }}
+  <a class="text-link" href="{{ $repo }}/stargazers" target="_blank">
+    <span class="ms-1">{{ lang.NumFmt 0 $count "- . ," }}</span>
+  </a>
+{{ end }}

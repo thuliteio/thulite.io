@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+<section class="section noise-container border-bottom">
+  <div class="noise"></div>
+  <div class="bg-grid position-absolute inset-0 z-n1"></div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col col-lg-7 text-center">
+        <h1 class="display-1 fw-normal">
+          {{ .Title }}
+        </h1>
+        <p class="lead">{{ .Summary }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="noise-container">
+  <div class="noise"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="row row-blog justify-content-center py-5">
+          <div class="col-main">
+            {{ range .Paginator.Pages -}}
+              <div class="card rounded-0 my-4 px-2">
+                <div class="card-body">
+                  <h2 class="mb-0"><a class="stretched-link text-white text-decoration-none font-monospace" href="{{.Permalink}}">{{.Title}}</a></h2>
+                </div>
+              </div>
+            {{ end }}
+            {{ template "_internal/pagination.html" . }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

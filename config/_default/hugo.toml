@@ -1,0 +1,73 @@
+title = "Hyas"
+baseurl = "/"
+canonifyURLs = false
+disableAliases = true
+disableHugoGeneratorInject = true
+# disableKinds = ["taxonomy", "term"]
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = true
+languageCode = "en-US"
+paginate = 10
+rssLimit = 10
+
+[social]
+  twitter = "ventizo"
+
+[outputs]
+  home = ["HTML", "RSS", "searchIndex"]
+
+[outputFormats.searchIndex]
+  mediaType = "application/json"
+  baseName = "search-index"
+  isPlainText = true
+  notAlternative = true
+
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = -1 # "30m"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[taxonomies]
+  author = "authors"
+  category = "categories"
+  tag = "tags"
+  type = "types"
+  technology = "technologies"
+  sort = "sorts"
+
+[permalinks]
+  blog = "/blog/:title/"
+  themes = "/themes/:title/"
+  types = "/themes/:title/"
+  technologies = "/technologies/:title/"
+  sorts = "/integrations/:title/"
+
+[minify.tdewolff.html]
+  keepWhitespace = false
+
+[related]
+  threshold = 80
+  includeNewer = true
+  toLower = false
+    [[related.indices]]
+    name = "categories"
+    weight = 100
+    [[related.indices]]
+    name = "tags"
+    weight = 80
+    [[related.indices]]
+    name = "date"
+    weight = 10
+
+[imaging]
+  anchor = 'Smart'
+  bgColor = '#fff'
+  hint = 'photo'
+  quality = 90
+  resampleFilter = 'Lanczos'

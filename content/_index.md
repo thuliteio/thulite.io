@@ -1,13 +1,9 @@
 ---
-title : "Modern Hugo Starter"
-description: "Hyas is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
-lead: "Hyas is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
-date: 2020-10-06T08:47:36+00:00
-lastmod: 2020-10-06T08:47:36+00:00
+title : "Build something amazing"
+description: "Hyas is an all-in-one web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm."
+summary: "Hyas is an all-in-one web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm."
+date: 2020-04-17T12:18:10+00:00
+lastmod: 2020-04-17T12:18:10+00:00
 draft: false
 images: []
 ---
-
-<!--
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas "Deploy to Netlify")
--->
