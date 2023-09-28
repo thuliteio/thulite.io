@@ -34,7 +34,7 @@
     <ul class="nav-social list-inline d-none d-sm-flex order-lg-3 my-auto">
     {{ range .Site.Menus.social -}}
       <li class="list-inline-item">
-        <a href="{{ .URL | absURL }}" target="_blank">{{ .Pre }}<span class="visually-hidden">{{ .Name }}</span></a>
+        <a rel="me" href="{{ .URL | absURL }}" target="_blank">{{ .Pre }}<span class="visually-hidden">{{ .Name }}</span></a>
       </li>
     {{ end -}}
     </ul>
@@ -100,7 +100,7 @@
         <ul class="nav-social list-inline d-flex flex-row d-lg-none order-lg-3">
         {{ range .Site.Menus.social -}}
           <li class="list-inline-item">
-            <a href="{{ .URL | absURL }}" target="_blank">{{ .Pre }}<span class="visually-hidden">{{ .Name }}</span></a>
+            <a rel="me" href="{{ .URL | absURL }}" target="_blank">{{ .Pre }}<span class="visually-hidden">{{ .Name }}</span></a>
           </li>
         {{ end -}}
         </ul>

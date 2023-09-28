@@ -279,3 +279,7 @@ li input[type="checkbox"]:checked {
 .bg-dark {
   background-color: var(--sl-color-gray-6) !important;
 }
+
+.nav-social .list-inline-item:not(:last-child) {
+  margin-right: 0.75rem;
+}

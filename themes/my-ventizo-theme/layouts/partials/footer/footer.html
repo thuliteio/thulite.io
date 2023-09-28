@@ -5,7 +5,7 @@
         <ul class="nav-social list-inline text-md-end">
         {{ range .Site.Menus.social -}}
           <li class="list-inline-item">
-            <a href="{{ .URL | absURL }}" target="_blank">{{ .Pre }}<span class="visually-hidden">{{ .Name }}</span></a>
+            <a rel="me" href="{{ .URL | absURL }}" target="_blank">{{ .Pre }}<span class="visually-hidden">{{ .Name }}</span></a>
           </li>
         {{ end -}}
         </ul>
