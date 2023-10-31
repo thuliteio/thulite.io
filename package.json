@@ -29,8 +29,10 @@
     "postinstall": "shx rm -rf node_modules/.bin/hugo && shx mkdir node_modules/.bin/hugo && shx cp node_modules/gethyas/node_modules/.bin/hugo/* node_modules/.bin/hugo",
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
+  "dependencies": {
+    "@ventizo/starter-core": "^1.1.0"
+  },
   "devDependencies": {
-    "@ventizo/starter-core": "^1.1.0",
     "auto-changelog": "^2.4.0"
   },
   "engines": {
