@@ -5,8 +5,12 @@ summary: "If you access or use the Service, it means you agree to be bound by al
 date: 2023-03-17T12:17:55+01:00
 lastmod: 2023-03-17T12:17:55+01:00
 draft: false
-images: []
 type: legal
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
 ---
 
 _These terms of service ("Terms") apply to your access and use of the Hyas website (the "Service"). Please read them carefully._

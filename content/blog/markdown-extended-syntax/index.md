@@ -6,12 +6,17 @@ date: 2022-12-21T18:56:30+01:00
 lastmod: 2022-12-21T18:56:30+01:00
 draft: true
 weight: 60
-images: ["markdown.png"]
+covers: ["markdown.png"]
 gradient: "blue-green" # blue-green(default), blue-purple, orange-yellow, pink-blue, or purple-orange (this setting is only relevant when "images: []")
 categories: ["Guides"]
 tags: ["Markdown", "Cheat sheet"]
 authors: ["Henk Verlinde"]
 featured: true
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
 ---
 
 This Markdown cheat sheet provides a quick overview of all extended Markdown syntax elements. If you need more information about any of these elements, refer to the reference guide for [extended syntax](https://www.markdownguide.org/extended-syntax).

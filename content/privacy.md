@@ -5,8 +5,12 @@ summary: "The Hyas Privacy Policy describes the privacy practices of Hyas websit
 date: 2023-03-17T09:43:47+01:00
 lastmod: 2023-03-17T09:43:47+01:00
 draft: false
-images: []
 type: legal
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
 ---
 
 _In addition to this Privacy Policy, Hyas also has [Terms of Service](/terms)._

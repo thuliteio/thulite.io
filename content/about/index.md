@@ -3,6 +3,11 @@ title: "About"
 date: 2023-01-24T08:22:32+01:00
 draft: true
 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere lectus massa, at posuere felis pellentesque id."
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula volutpat turpis, a facilisis libero egestas ut. Etiam euismod nulla a risus tempus dignissim. Maecenas pulvinar, nibh vitae volutpat blandit, dui lacus dapibus purus, vel placerat nulla orci id lorem.

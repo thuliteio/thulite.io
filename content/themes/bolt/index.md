@@ -5,7 +5,7 @@ summary: "Minimal blog theme based on bolt.css."
 date: 2022-12-19T16:41:01+01:00
 lastmod: 2022-12-19T16:41:01+01:00
 draft: false
-images: ["bolt.png"]
+covers: ["cover-bolt.png"]
 toc: true
 types: ["Official", "Blog"]
 technologies: ["bolt.css"]
@@ -14,6 +14,16 @@ demo: "https://bolt-hyas.netlify.app/"
 cost: free # free (default) or paid
 featured: true # false (default) or true
 weight: 20
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
+  structured_data:
+    product:
+      currency: USD
+      price: 0
+      availability: https://schema.org/OnlineOnly
 ---
 
 ## Features

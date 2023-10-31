@@ -6,12 +6,17 @@ date: 2023-02-22T09:48:59+01:00
 lastmod: 2023-02-22T09:48:59+01:00
 draft: true
 weight: 50
-images: []
+covers: []
 gradient: "orange-yellow" # blue-green(default), blue-purple, orange-yellow, pink-blue, or purple-orange (this setting is only relevant when "images: []")
 categories: ["Guides"]
 tags: []
 authors: ["Henk Verlinde"]
 featured: false
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus dolor eu laoreet pretium. Etiam at feugiat risus. Nullam sodales facilisis felis, sed finibus neque interdum congue. Suspendisse eu neque quis magna ultricies consequat.
