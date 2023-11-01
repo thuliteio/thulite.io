@@ -1,10 +1,9 @@
 <div class="card rounded-0">
-  {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.covers 0)) -}}
-
-  {{ if $image -}}
+  {{ $featured := partial "main/get-featured" . }}
+  {{ if $featured -}} 
     {{ partial "picture"  (dict
     "page" .
-    "src" $image
+    "src" $featured
     "alt" .Title
     "class" "card-img-top img-fluid blur-up w-100 h-auto rounded-0"
     )}}

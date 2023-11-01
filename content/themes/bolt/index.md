@@ -5,7 +5,6 @@ summary: "Minimal blog theme based on bolt.css."
 date: 2022-12-19T16:41:01+01:00
 lastmod: 2022-12-19T16:41:01+01:00
 draft: false
-covers: ["cover-bolt.png"]
 toc: true
 types: ["Official", "Blog"]
 technologies: ["bolt.css"]

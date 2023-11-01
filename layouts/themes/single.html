@@ -1,19 +1,18 @@
 {{ define "main" }}
-{{ $image := .Resources.GetMatch (printf "**%s" (index .Params.covers 0)) -}}
-
 <section class="section py-0">
   <div class="container-lg">
     <div class="row justify-content-center">
-
-      <div class="col-lg-11 px-0">
-        {{ partial "picture"  (dict
-        "page" .
-        "src" $image
-        "alt" .Title
-        "class" "img-fluid blur-up w-100 h-auto rounded-0"
-        )}}
-      </div>
-
+      {{ $featured := partial "main/get-featured" . }}
+      {{ if $featured -}}
+        <div class="col-lg-11 px-0">
+          {{ partial "picture"  (dict
+          "page" .
+          "src" $featured
+          "alt" .Title
+          "class" "img-fluid blur-up w-100 h-auto rounded-0"
+          )}}
+        </div>
+      {{ end -}}
       <div class="col-lg-11">
         <div class="row">
           

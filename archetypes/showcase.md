@@ -5,7 +5,6 @@ summary: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
-covers: []
 website: "" # URL
 weight: 50
 seo:

@@ -80,13 +80,13 @@
               <div class="card rounded-0 my-4 px-2">
                 <div class="card-body">
                   <p class="font-monospace">{{ .PublishDate.Format "January 2, 2006" }}</p>
-                    {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.covers 0)) -}}
-                    {{ if $image -}}
+                    {{ $featured := partial "main/get-featured" . }}
+                    {{ if $featured -}}
                       {{ partial "picture-21x9"  (dict
                       "page" .
-                      "src" $image
+                      "src" $featured
                       "alt" .Title
-                      "class" "img-fluid blur-up w-100 h-auto rounded-0 mb-3"
+                      "class" "img-fluid blur-up w-100 h-auto rounded-0 mb-1"
                       )}}
                     {{ end -}}
                     <div class="row mt-4">

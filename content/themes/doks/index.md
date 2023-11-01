@@ -5,7 +5,6 @@ summary: "Modern documentation theme."
 date: 2022-09-21T17:33:31+02:00
 lastmod: 2022-09-21T17:33:31+02:00
 draft: false
-covers: ["cover-doks.png"]
 toc: true
 types: ["Official", "Documentation"]
 technologies: ["Bootstrap"]

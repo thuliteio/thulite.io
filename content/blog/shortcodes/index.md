@@ -6,8 +6,7 @@ date: 2023-02-22T09:48:59+01:00
 lastmod: 2023-02-22T09:48:59+01:00
 draft: true
 weight: 50
-covers: []
-gradient: "orange-yellow" # blue-green(default), blue-purple, orange-yellow, pink-blue, or purple-orange (this setting is only relevant when "images: []")
+gradient: "pink-blue" # blue-green(default), blue-purple, orange-yellow, pink-blue, or purple-orange (this setting is only relevant when "images: []")
 categories: ["Guides"]
 tags: []
 authors: ["Henk Verlinde"]

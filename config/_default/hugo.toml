@@ -77,8 +77,8 @@ copyRight = "Copyright (c) 2020-2023 Henk Verlinde"
     weight = 10
 
 [imaging]
-  anchor = "Smart"
+  anchor = "Center"
   bgColor = "#ffffff"
   hint = "photo"
-  quality = 75
-  resampleFilter = "Box"
+  quality = 85
+  resampleFilter = "Lanczos"

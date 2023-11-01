@@ -6,7 +6,6 @@ date: 2022-12-21T18:56:30+01:00
 lastmod: 2022-12-21T18:56:30+01:00
 draft: true
 weight: 60
-covers: ["markdown.png"]
 gradient: "blue-green" # blue-green(default), blue-purple, orange-yellow, pink-blue, or purple-orange (this setting is only relevant when "images: []")
 categories: ["Guides"]
 tags: ["Markdown", "Cheat sheet"]

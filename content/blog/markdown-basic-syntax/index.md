@@ -6,7 +6,6 @@ date: 2022-12-21T16:50:30+01:00
 lastmod: 2022-12-21T16:50:30+01:00
 draft: true
 weight: 50
-covers: ["markdown.png"]
 gradient: "" # blue-green(default), blue-purple, orange-yellow, pink-blue, or purple-orange (this setting is only relevant when "images: []")
 categories: ["Product", "Legal"]
 tags: ["Markdown", "Cheat sheet"]
@@ -110,7 +109,7 @@ This Markdown cheat sheet provides a quick overview of all basic Markdown syntax
 ## Image
 
 ```md
-![alt text](markdown.png)
+![alt text](featured-markdown.png)
 ```
 
-![alt text](markdown.png)
+![alt text](featured-markdown.png)
