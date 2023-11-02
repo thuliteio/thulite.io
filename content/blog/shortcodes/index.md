@@ -6,7 +6,7 @@ date: 2023-02-22T09:48:59+01:00
 lastmod: 2023-02-22T09:48:59+01:00
 draft: true
 weight: 50
-gradient: "pink-blue" # blue-green(default), blue-purple, orange-yellow, pink-blue, or purple-orange (this setting is only relevant when "images: []")
+gradient: "blue-green" # blue-green(default), blue-purple, orange-yellow, pink-blue, or purple-orange (this setting is only relevant when "images: []")
 categories: ["Guides"]
 tags: []
 authors: ["Henk Verlinde"]
@@ -32,17 +32,15 @@ Sed vel ipsum elementum, mattis sem in, venenatis dui. Sed ac risus vel enim iac
 
 {{< callout >}} This is a default callout. Example text to show it in action. {{< /callout >}}
 
-{{< callout info >}} This is an info callout. Example text to show it in action. {{< /callout >}}
+{{< callout tip >}} This is a tip callout. Example text to show it in action. {{< /callout >}}
 
-{{< callout warning >}} This is a warning callout. Example text to show it in action. {{< /callout >}}
+{{< callout caution >}} This is a caution callout. Example text to show it in action. {{< /callout >}}
 
 {{< callout danger >}} This is a danger callout. Example text to show it in action. {{< /callout >}}
 
-{{< callout context="info" icon="info-circle" >}}
+{{< callout context="note" icon="info-circle" title="Prefer to install Hyas manually?" >}}
 Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within a callout works with this kind of content.
 {{< /callout >}}
-
-{{< callout context="info" title="Callout title" >}} This is an info callout. Example text to show it in action. {{< /callout >}}
 
 ## Details
 

@@ -1,6 +1,6 @@
 {
   "name": "hyas-website",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Hyas website",
   "author": "Ventizo",
   "license": "UNLICENSED",
@@ -13,8 +13,8 @@
     "dev:drafts": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache --buildDrafts --port=3000",
     "create": "exec-bin node_modules/.bin/hugo/hugo new",
     "lint": "pnpm lint:scripts && pnpm lint:styles && pnpm lint:markdown",
-    "lint:scripts": "eslint --cache themes/my-ventizo-theme/assets/js",
-    "lint:styles": "stylelint --cache \"themes/my-ventizo-theme/assets/scss/**/*.{css,sass,scss}\"",
+    "lint:scripts": "eslint --cache assets/js",
+    "lint:styles": "stylelint --cache \"assets/scss/**/*.{css,sass,scss}\"",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "test": "pnpm lint",
     "build": "exec-bin node_modules/.bin/hugo/hugo --minify",

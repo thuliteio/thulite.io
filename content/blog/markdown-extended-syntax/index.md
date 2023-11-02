@@ -20,17 +20,6 @@ seo:
 
 This Markdown cheat sheet provides a quick overview of all extended Markdown syntax elements. If you need more information about any of these elements, refer to the reference guide for [extended syntax](https://www.markdownguide.org/extended-syntax).
 
-```html
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="https://getdoks.org/">Home</a></li>
-    <li class="breadcrumb-item"><a href="https://getdoks.org/docs/">Docs</a></li>
-    <li class="breadcrumb-item"><a href="https://getdoks.org/docs/overview/">overview</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Introduction</li>
-  </ol>
-</nav>
-```
-
 ## Table
 
 ```md
@@ -75,7 +64,7 @@ Here's a sentence with a footnote. [^1]
 [^1]: This is the footnote.
 ```
 
-Here's a sentence with a footnote. [^1]
+Here's a sentence with a footnote.[^1]
 
 [^1]: This is the footnote.
 
@@ -115,13 +104,13 @@ term
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-{.list-unstyled}
+{.list-task}
 ```
 
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-{.list-unstyled}
+{.list-task}
 
 ## Emoji
 

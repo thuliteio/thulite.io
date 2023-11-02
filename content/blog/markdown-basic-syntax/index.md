@@ -72,6 +72,22 @@ This Markdown cheat sheet provides a quick overview of all basic Markdown syntax
 
 ## Unordered List
 
+### Normal
+
+```md
+- First item
+- Second item
+- Third item
+{.list-normal}
+```
+
+- First item
+- Second item
+- Third item
+{.list-normal}
+
+### Default
+
 ```md
 - First item
 - Second item

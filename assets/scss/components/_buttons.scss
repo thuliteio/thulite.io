@@ -6,7 +6,7 @@
 // Clipboard button
 .btn-clipboard {
   transition: opacity 0.25s ease-in-out;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
@@ -63,8 +63,8 @@
   height: 22px;
   display: inline-block;
   content: '';
-  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' stroke-width='1.25' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M5 12l5 5l10 -10'%3E%3C/path%3E%3C/svg%3E") no-repeat 50% 50%;
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' stroke-width='1.25' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M5 12l5 5l10 -10'%3E%3C/path%3E%3C/svg%3E") no-repeat 50% 50%;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M5 12l5 5l10 -10'%3E%3C/path%3E%3C/svg%3E") no-repeat 50% 50%;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M5 12l5 5l10 -10'%3E%3C/path%3E%3C/svg%3E") no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: var(--sl-color-gray-1);
@@ -74,7 +74,7 @@
   // Clipboard button
   .btn-clipboard {
     color: var(--sl-color-gray-2);
-    background-color: transparent;
+    background-color: var(--sl-color-black);
     border-color: transparent;
   }
 
@@ -86,7 +86,7 @@
   // Clipboard button
   .btn-clipboard:hover {
     color: var(--sl-color-gray-1);
-    background-color: transparent;
+    background-color: var(--sl-color-black) !important;
     border-color: transparent;
   }
 
@@ -98,7 +98,8 @@
   // Clipboard button
   .btn-clipboard:focus,
   .btn-clipboard:active {
-    border-color: transparent !important;
+    border-color: transparent !important;    
+    background-color: var(--sl-color-black) !important;
   }
 
   // Check icon

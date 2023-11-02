@@ -1,6 +1,5 @@
+assets/scss/common/_syntax.scss
+assets/scss/common/_variables-dark.scss
+assets/scss/common/_variables.scss
 assets/scss/vendor
-themes/my-ventizo-theme/assets/scss/common/_syntax.scss
-themes/my-ventizo-theme/assets/scss/common/_variables-dark.scss
-themes/my-ventizo-theme/assets/scss/common/_variables.scss
-themes/my-ventizo-theme/assets/scss/vendor
 node_modules

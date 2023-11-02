@@ -37,9 +37,29 @@ Check out our detailed [Why Hyas](https://docs.gethyas.com/concepts/why-hyas/) b
 
 Hyas 2.0 is available now on npm. Visit [start.gethyas.com](https://start.gethyas.com/) to try out Hyas 2.0 in your browser, or run the following command in your terminal to get started in a new project:
 
+{{< tabs "create-new-site" >}}
+{{< tab "npm" >}}
+
 ```bash
 npm create hyas@latest
 ```
+
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm create hyas@latest
+```
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn create hyas
+```
+
+{{< /tab >}}
+{{< /tabs >}}
 
 Upgrading an existing project to Hyas 2.0? Check out the [v2.0 Upgrade Guide](https://docs.gethyas.com/guides/upgrade-to/v2/) for full details and individual upgrade guidance for each change.
 

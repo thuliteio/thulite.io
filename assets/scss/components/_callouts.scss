@@ -6,44 +6,13 @@
   --#{$prefix}link-color-rgb: var(--callout-link);
   --#{$prefix}code-color: var(--callout-code-color);
 
-  padding: 1.25rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
   color: var(--callout-color, inherit);
   background-color: var(--callout-bg, var(--bs-gray-100));
+  border-left: 0.25rem solid var(--callout-border, var(--bs-gray-300));
+  border-radius: 0;
 
-  // border-left: .25rem solid var(--callout-border, var(--bs-gray-300));
-  border: .0625rem solid var(--callout-border, var(--bs-gray-300));
-  border-radius: 0.25rem;
-
-  h4 {
-    margin-top: 0;
-    margin-bottom: .25rem;
-  }
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-
-  + .callout {
-    margin-top: -.25rem;
-  }
-
-  .svg-inline {
-    position: relative;    
-    margin: -0.25rem 0 0;
-  }
-
-  .callout-title {
-    display: block;
-    margin-bottom: 0.25rem;
-    font-weight: $headings-font-weight;
-    text-transform: uppercase;
-    font-size: 1rem;
-
-    .svg-inline {
-      margin-right: 0.25rem;
-    }
+  a {
+    text-decoration: underline;
   }
 
   code {
@@ -51,62 +20,147 @@
     color: inherit;
   }
 
-  a {
-    @extend .alert-link;
-
-    font-weight: $font-weight-medium;
-  }
-
   .highlight {
     background-color: rgba($black, .05);
   }
-}
 
-// Variations
-@each $variant in $callout-variants {
-  .callout-#{$variant} {
-    --callout-color: var(--bs-#{$variant}-text-emphasis);
-    --callout-bg: var(--bs-#{$variant}-bg-subtle);
+  .callout-icon.svg-inline {
+    flex-shrink: 0;
+    height: calc(#{$line-height-base} * #{$font-size-md});
+  }
 
-    // --callout-bg: var(--bs-light-bg-subtle);
-    --callout-border: var(--bs-#{$variant}-border-subtle);
+  .callout-title {
+    font-weight: $font-weight-medium;
   }
 }
 
-.callout.callout-info code {
-  background: tint-color($info, 80%);
+// Colors
+.callout.callout-note {
+  border-color: var(--sl-color-blue);
+  background-color: var(--sl-color-blue-high);
+
+  .callout-icon,
+  .callout-title,
+  .callout-body {
+    color: var(--sl-color-blue-low);
+  }
+
+  code {
+    background: tint-color($info, 80%);
+  }
 }
 
-.callout.callout-danger code {
-  background: tint-color($danger, 80%);
+.callout.callout-tip {
+  border-color: var(--sl-color-purple);
+  background-color: var(--sl-color-purple-high);
+
+  .callout-icon,
+  .callout-title,
+  .callout-body {
+    color: var(--sl-color-purple-low);
+  }
+
+  code {
+    background: tint-color($purple, 80%);
+  }
 }
 
-.callout.callout-warning code {
-  background: tint-color($warning, 80%);
+.callout.callout-caution {
+  border-color: var(--sl-color-orange);
+  background-color: var(--sl-color-orange-high);
+
+  .callout-icon,
+  .callout-title,
+  .callout-body {
+    color: var(--sl-color-orange-low);
+  }
+
+  code {
+    background: tint-color($yellow, 80%);
+  }
+}
+
+.callout.callout-danger {
+  border-color: var(--sl-color-red);
+  background-color: var(--sl-color-red-high);
+
+  .callout-icon,
+  .callout-title,
+  .callout-body {
+    color: var(--sl-color-red-low);
+  }
+
+  code {
+    background: tint-color($red, 80%);
+  }
 }
 
 .callout.callout-light code {
-  background: tint-color($light, 80%);
+  background: var(--sl-color-gray-1);
 }
 
 @include color-mode(dark) {
-  .callout.callout-info code {
-    background: shade-color($info, 70%);
-    color: inherit;
+  .callout {
+    color: var(--sl-color-gray-1);
   }
-  
-  .callout.callout-danger code {
-    background: shade-color($danger, 70%);
-    color: inherit;
+
+  .callout.callout-note {
+    border-color: var(--sl-color-blue);
+    background-color: var(--sl-color-blue-low);
+
+    .callout-icon,
+    .callout-title,
+    .callout-body {
+      color: var(--sl-color-blue-high);
+    }
+
+    code {
+      background: shade-color($info, 75%);
+    }
   }
-  
-  .callout.callout-warning code {
-    background: shade-color($warning, 70%);
-    color: inherit;
+
+  .callout.callout-tip {
+    border-color: var(--sl-color-purple);
+    background-color: var(--sl-color-purple-low);
+
+    .callout-icon,
+    .callout-title,
+    .callout-body {
+      color: var(--sl-color-purple-high);
+    }
+
+    code {
+      background: shade-color($purple, 75%);
+    }
   }
-  
-  .callout.callout-light code {
-    background: shade-color($light, 70%);
-    color: inherit;
+
+  .callout.callout-caution {
+    border-color: var(--sl-color-orange);
+    background-color: var(--sl-color-orange-low);
+
+    .callout-icon,
+    .callout-title,
+    .callout-body {
+      color: var(--sl-color-orange-high);
+    }
+
+    code {
+      background: shade-color($yellow, 75%);
+    }
+  }
+
+  .callout.callout-danger {
+    border-color: var(--sl-color-red);
+    background-color: var(--sl-color-red-low);
+
+    .callout-icon,
+    .callout-title,
+    .callout-body {
+      color: var(--sl-color-red-high);
+    }
+
+    code {
+      background: shade-color($red, 75%);
+    }
   }
 }

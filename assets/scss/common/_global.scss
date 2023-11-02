@@ -268,7 +268,13 @@ li input[type="checkbox"]:checked {
   flex-wrap: wrap;
 }
 
+/*
 .row-flex [class*="col-"] {
+  margin-bottom: 30px;
+}
+*/
+
+.row-flex .col-md-6 {
   margin-bottom: 30px;
 }
 
