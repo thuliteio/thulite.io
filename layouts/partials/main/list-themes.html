@@ -76,7 +76,7 @@
             -->
 
             <div class="row row-flex">
-              {{ range .Paginator.Pages.ByTitle -}}
+              {{ range .Paginator.Pages.ByDate.Reverse -}}
               <div class="col-md-6 col-xl-4">
                 {{ .Render "item" }}
               </div>

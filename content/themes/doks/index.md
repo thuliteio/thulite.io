@@ -8,8 +8,8 @@ draft: false
 toc: true
 types: ["Official", "Documentation"]
 technologies: ["Bootstrap"]
-repo: "https://github.com/h-enk/doks"
-demo: "https://v1--doks.netlify.app/"
+repo: "https://github.com/gethyas/doks"
+demo: "https://doks.netlify.app/"
 cost: free # free (default) or paid
 featured: true # false (default) or true
 weight: 10

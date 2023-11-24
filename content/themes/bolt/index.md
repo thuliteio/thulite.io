@@ -1,7 +1,7 @@
 ---
 title: "Bolt"
-description: "Bolt theme for Hyas sites."
-summary: "Minimal blog theme based on bolt.css."
+description: "Minimal, simple blog theme."
+summary: "Minimal, simple blog theme."
 date: 2022-12-19T16:41:01+01:00
 lastmod: 2022-12-19T16:41:01+01:00
 draft: false
