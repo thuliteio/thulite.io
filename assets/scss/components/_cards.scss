@@ -66,13 +66,13 @@
 // Google lighthouse
 
 .row-lighthouse {
-  margin: 2rem 0;
+  margin: 2rem;
 }
 
 
 @include media-breakpoint-up(xxl) {
   .row-lighthouse {
-    margin: 2rem;
+    margin: 2.5rem;
   }
 }
 

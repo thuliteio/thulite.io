@@ -11,7 +11,17 @@
         </ul>
       </div>
       <div class="col-6 col-md-3 col-lg-2">
-        <h3 class="h5 font-monospace">Resources</h3>
+        <h3 class="font-monospace">Documentation</h3>
+        <ul class="list-unstyled">
+        {{ range .Site.Menus.documentation -}}
+          <li>
+            <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+          </li>
+        {{ end -}}
+        </ul>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <h3 class="font-monospace">Resources</h3>
         <ul class="list-unstyled">
         {{ range .Site.Menus.resources -}}
           <li>
@@ -21,7 +31,7 @@
         </ul>
       </div>
       <div class="col-6 col-md-3 col-lg-2">
-        <h3 class="h5 font-monospace">Community</h3>
+        <h3 class="font-monospace">Ecosystem</h3>
         <ul class="list-unstyled">
         {{ range .Site.Menus.community -}}
           <li>
@@ -32,7 +42,7 @@
       </div>
       <!--
       <div class="col-6 col-md-3 col-lg-2">
-        <h3 class="h5 font-monospace">About</h3>
+        <h3 class="font-monospace">About</h3>
         <ul class="list-unstyled">
         {{ range .Site.Menus.about -}}
           <li>
@@ -43,7 +53,7 @@
       </div>
       -->
       <div class="col-6 col-md-3 col-lg-2">
-        <h3 class="h5 font-monospace">More links</h3>
+        <h3 class="font-monospace">More links</h3>
         <ul class="list-unstyled">
         {{ range .Site.Menus.links -}}
           <li>
