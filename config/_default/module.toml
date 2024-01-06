@@ -1,8 +1,8 @@
 # mounts
 ## archetypes
-# [[mounts]]
-#   source = "node_modules/@ventizo/starter-core/archetypes"
-#   target = "archetypes"
+[[mounts]]
+  source = "node_modules/@ventizo/starter-core/archetypes"
+  target = "archetypes"
 
 [[mounts]]
   source = "archetypes"
@@ -21,20 +21,10 @@
 [[mounts]]
   source = "node_modules/@ventizo/starter-core/assets"
   target = "assets"
-  # excludeFiles = ["scss/common/_variables-custom.scss", "scss/common/_custom.scss"]
-  excludeFiles = "/scss/**.scss"
 
 [[mounts]]
   source = "node_modules/flexsearch"
   target = "assets/js/vendor/flexsearch"
-
-[[mounts]]
-  source = "node_modules/katex"
-  target = "assets/js/vendor/katex"
-
-[[mounts]]
-  source = "node_modules/mermaid"
-  target = "assets/js/vendor/mermaid"
 
 [[mounts]]
   source = "node_modules/@tabler/icons/icons"
@@ -50,14 +40,6 @@
   target = "content"
 
 ## data
-[[mounts]]
-  source = "node_modules/@ventizo/starter-core/data"
-  target = "data"
-
-[[mounts]]
-  source = "config/_default/hyas"
-  target = "data"
-
 [[mounts]]
   source = "data"
   target = "data"
@@ -87,7 +69,6 @@
 [[mounts]]
   source = "node_modules/@ventizo/starter-core/layouts"
   target = "layouts"
-  excludeFiles = ["_default/term.html", "blog/**.html", "contact/**.html", "legal/**.html"]
 
 [[mounts]]
   source = "node_modules/@hyas/inline-svg/layouts"

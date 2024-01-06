@@ -1,6 +1,6 @@
 {
   "name": "hyas-website",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Hyas website",
   "author": "Ventizo",
   "license": "UNLICENSED",
@@ -26,14 +26,24 @@
     "preinfo": "pnpm version && pnpm -v",
     "info": "pnpm list",
     "postinfo": "exec-bin node_modules/.bin/hugo/hugo version",
-    "postinstall": "shx rm -rf node_modules/.bin/hugo && shx mkdir node_modules/.bin/hugo && shx cp node_modules/gethyas/node_modules/.bin/hugo/* node_modules/.bin/hugo",
+    "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo",
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
-    "@ventizo/starter-core": "^1.1.0"
+    "@hyas/images": "^2.0.3",
+    "@hyas/inline-svg": "^1.0.5",
+    "@hyas/seo": "^2.1.0",
+    "@tabler/icons": "^2.40.0",
+    "@ventizo/starter-core": "^2.0.0",
+    "exec-bin": "^1.0.0",
+    "hugo-installer": "^4.0.1",
+    "gethyas": "^2.2.2"
   },
   "devDependencies": {
     "auto-changelog": "^2.4.0"
+  },
+  "otherDependencies": {
+    "hugo": "0.121.1"
   },
   "engines": {
     "node": ">=16.12.0",

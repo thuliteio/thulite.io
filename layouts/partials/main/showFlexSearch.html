@@ -1,7 +1,0 @@
-{{ $showFlexSearch := site.Params.starter.flexSearch -}}
-{{ if $showFlexSearch -}}
-  {{ if isset site.Params.starter "showSearch" -}}
-    {{ $showFlexSearch = or (eq (len site.Params.starter.showSearch) 0) (in site.Params.starter.showSearch .Section) (and .IsHome (in site.Params.starter.showSearch "homepage")) -}}
-  {{ end -}}
-{{ end -}}
-{{ .Scratch.Set "showFlexSearch" $showFlexSearch -}}

@@ -3,6 +3,16 @@ title = "Hyas"
 description = "Node.js web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm."
 images = ["cover.png"]
 
+# mainSections
+mainSections = ["docs", "legal"]
+
+# Add-ons
+[add_ons]
+  carbonAds = false # false (default) or true
+  docSearch = false # false (default) or true
+  plausibleDomain = "ventizo/com" # "example.com" (default)
+  keila = false # false (default) or true
+
 # Starter (@ventizo/starter-core)
 [starter]
   # Color mode
