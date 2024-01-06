@@ -58,6 +58,8 @@ module.exports = {
         'page-link',
         ...whitelister([
           './assets/scss/**/*.scss',
+          './node_modules/@ventizo/starter-core/assets/scss/components/_code.scss',
+          './node_modules/@ventizo/starter-core/assets/scss/components/_expressive-code.scss',
           './node_modules/@ventizo/starter-core/assets/scss/common/_syntax.scss',
         ]),
       ],
