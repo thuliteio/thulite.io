@@ -11,6 +11,3 @@
   {{ partial "footer/esbuild" (dict "src" "js/gallery.js" "load" "async" "transpile" false) -}}
 {{ end -}}
 */}}
-
-{{ $plausibleAnalyticsDomain := site.Params.starter.plausibleAnalyticsDomain -}}
-{{ partial "footer/esbuild" (dict "src" "js/app.js" "targetPath" "main.js" "load" "async" "transpile" false "params" (dict "plausibleAnalyticsDomain" $plausibleAnalyticsDomain)) -}}

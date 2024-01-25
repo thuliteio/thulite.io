@@ -10,7 +10,7 @@ mainSections = ["docs", "legal"]
 [add_ons]
   carbonAds = false # false (default) or true
   docSearch = false # false (default) or true
-  plausibleDomain = "ventizo/com" # "example.com" (default)
+  plausibleDomain = "gethyas.com" # "example.com" (default)
   keila = false # false (default) or true
 
 # Starter (@ventizo/starter-core)
@@ -50,9 +50,6 @@ mainSections = ["docs", "legal"]
   notice = true # false (default) or true
   noticeText = 'Hyas 2 is here!' # E.g. 'Hyas 2.1 is here!'
   noticeLink = '/blog/hyas-2/' # E.g. '/blog/hyas-2.1/'
-
-  # Plausible Analytics
-  plausibleAnalyticsDomain = "gethyas.com" # "example.com" (default)
 
   # Bootstrap
   bootstrapJavascript = true # false (default) or true
