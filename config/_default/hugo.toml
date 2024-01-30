@@ -22,9 +22,6 @@ copyRight = "Copyright (c) 2020-2023 Henk Verlinde"
 [build.buildStats]
   enable = true
 
-[social]
-  twitter = "ventizo"
-
 [outputs]
   home = ["HTML", "RSS", "searchIndex"]
 

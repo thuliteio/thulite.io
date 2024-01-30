@@ -37,8 +37,8 @@ $line-height-base:            1.75; // 1.5 (default)
 $h1-font-size:                $font-size-base * 5; // $font-size-base * 2.5 (default);
 
 // scss-docs-start headings-variables
-$headings-font-family:        "Mona Sans", "Mona Sans Header Fallback", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$headings-font-weight:        300; // 500 (default)
+$headings-font-family:        Obviously, 'obviously-regular-fallback', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-weight:        400; // 500 (default)
 // scss-docs-end headings-variables
 
 $lead-font-size:              $font-size-base * 1.125; // $font-size-base * 1.25 (default)
