@@ -50,7 +50,7 @@ mainSections = ["docs", "legal"]
   alertText = '<a class="alert-link stretched-link" href="/hyas-2.1/">Hyas version 2.1 just launched!</a>'
 
   # Global notice
-  notice = true # false (default) or true
+  notice = false # false (default) or true
   noticeText = 'Hyas 2 is here!' # E.g. 'Hyas 2.1 is here!'
   noticeLink = '/blog/hyas-2/' # E.g. '/blog/hyas-2.1/'
 
@@ -65,7 +65,7 @@ mainSections = ["docs", "legal"]
   scrollSpy = true # true (default) or false
 
   # Footer
-  footer = '© 2023 Hyas — <a href="https://github.com/gethyas/hyas/blob/master/LICENSE" target="_blank">MIT License</a>'
+  footer = '© 2024 Hyas — <a href="https://github.com/gethyas/hyas/blob/master/LICENSE" target="_blank">MIT License</a>'
 
   # Multilingual
   multilingualMode = false # false (default) or true

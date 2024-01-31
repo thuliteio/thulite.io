@@ -1,12 +1,12 @@
 ---
-title : "Build something amazing"
+title : "Build your future website"
 description: "Hyas is a Node.js web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm."
-summary: "Hyas is a Node.js web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm."
+summary: "Hyas is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
 date: 2020-04-17T12:18:10+00:00
 lastmod: 2020-04-17T12:18:10+00:00
 draft: false
 seo:
-  title: "Hyas — Build something amazing" # custom title (optional)
+  title: "Hyas — Build your future website" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
