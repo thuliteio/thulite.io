@@ -1,8 +1,8 @@
 ---
 title: "Hyas 2.0"
 url: "/blog/hyas-2/"
-description: "Introducing Hyas 2.0!"
-summary: "Hyas 2.0 is a restructure release, making Hyas more robust, reliable, and flexible."
+description: "Hyas 2.0 is a code restructuring release, making Hyas more robust and flexible."
+summary: "Hyas 2.0 is a code restructuring release, making Hyas more robust and flexible."
 date: 2023-09-01T11:51:15+02:00
 lastmod: 2023-09-01T11:51:15+02:00
 draft: false
@@ -19,23 +19,29 @@ seo:
   noindex: false # false (default) or true
 ---
 
-**Introducing Hyas 2.0!**
+We are thrilled to announce Hyas v2.0 — a code restructuring release, making Hyas more robust and flexible.
+{.lead}
 
-Hyas 2.0 is a restructure release, making Hyas more robust, reliable, and flexible. Hyas is a **Node.js web framework** for building **fast, security-focused** websites.
+Hyas' code base is now fully modularized. Main functionalities — for example Images and SEO — are now available as separate Hyas integrations, making them easier to maintain and update. The restructured Hyas makes it easier to build any website you want.
 
-Why choose Hyas over another web framework? Here are five core design principles to help explain why we built Hyas, the problems that it exists to solve, and why Hyas may be the best choice for your project or team.
+```quote
+"Hyas is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
+```
 
-Hyas is...
+## Key features
 
-- **Fast by default**: It should be impossible to build a slow website with Hyas.
-- **Security focused**: Your website should keep up with the latest in web security standards.
-- **Robust and reliable**: Your website should follow best practices for building web apps.
-- **Easy to use**: You don't need to be an expert to build something with Hyas.
-- **Fully-featured, but flexible**: A growing number of Hyas integrations to choose from.
+- **Hugo powered**: Fast website build times and flexible project organization.
+- **Fully npm managed**: Straightforward and easy dependency management.
+- **Production-ready**: Optimized for speed, SEO, and security.
+- **Customizable**: Tailwind, Images, and other integrations to choose from.
+- **Development tools**: Find and fix problems in scripts, styles, and markdown.
+- **Deploy anywhere**: Deployment guides to different deployment services.
 
 Check out our detailed [Why Hyas](https://docs.gethyas.com/concepts/why-hyas/) breakdown to learn more about what makes Hyas special.
 
-Hyas 2.0 is available now on npm. Visit [start.gethyas.com](https://start.gethyas.com/) to try out Hyas 2.0 in your browser, or run the following command in your terminal to get started in a new project:
+## Get started
+
+Hyas 2.0 is available now on npm. Visit [start.gethyas.com](https://start.gethyas.com/) to try out Hyas 2.0 in your browser, or run the following command in your terminal to get started with a new project:
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}
@@ -61,6 +67,16 @@ yarn create hyas
 {{< /tab >}}
 {{< /tabs >}}
 
-Upgrading an existing project to Hyas 2.0? Check out the [v2.0 Upgrade Guide](https://docs.gethyas.com/guides/upgrade-to/v2/) for full details and individual upgrade guidance for each change.
+Upgrading an existing project to Hyas 2.0? Check out the [v2.0 Upgrade Guide](https://docs.gethyas.com/guides/upgrade-to/v2/).
 
-Build something amazing!
+## New website
+
+To celebrate Hyas v2.0, we kicked off a brand-new redesign of our website: [gethyas.com](https://gethyas.com/)
+
+{{< img loading="lazy" fetchpriority="auto" src="gethyas.com.jpg" alt="Screenshot homepage gethyas.com" class="border-img mb-3">}}
+
+The new website tells our story better, with a fresh can of paint and a focus on content, performance, and community.
+
+## Acknowledgements
+
+This release wouldn't have been possible without the effort of the amazing open source community. Thank you, everyone.

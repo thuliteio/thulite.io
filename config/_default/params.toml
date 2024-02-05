@@ -1,6 +1,6 @@
 # Hugo
 title = "Hyas"
-description = "Node.js web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm."
+description = "Hyas is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
 images = ["cover.png"]
 
 # mainSections
@@ -51,8 +51,8 @@ mainSections = ["docs", "legal"]
 
   # Global notice
   notice = false # false (default) or true
-  noticeText = 'Hyas 2 is here!' # E.g. 'Hyas 2.1 is here!'
-  noticeLink = '/blog/hyas-2/' # E.g. '/blog/hyas-2.1/'
+  noticeText = 'Images 3.1 is here' # E.g. 'Hyas 2.1 is here!'
+  noticeLink = '/blog/images-3-1/' # E.g. '/blog/hyas-2.1/'
 
   # Bootstrap
   bootstrapJavascript = true # false (default) or true

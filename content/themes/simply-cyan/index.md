@@ -11,7 +11,7 @@ technologies: ["CSS"]
 repo: "https://github.com/h-enk/simply-cyan"
 demo: "https://simply-cyan.netlify.app/"
 cost: free # free (default) or paid
-featured: true # false (default) or true
+featured: false # false (default) or true
 weight: 30
 seo:
   title: "" # custom title (optional)
@@ -25,4 +25,17 @@ seo:
       availability: https://schema.org/OnlineOnly
 ---
 
-Simply Cyan is port of the [Simply Cyan theme](https://github.com/PQuod/simply-cyan-theme) for Jekyll created by Lucie Desaubliaux. It also functions as an example of how to develop a community theme for Hyas.
+Simply Cyan's stylish design prioritizes essential elements and readability, resulting in a lightweight and efficient website.
+
+## Features
+
+- Minimal layout
+- Dark mode /light mode
+- Font size toggle
+- Font style toggle
+- Categories
+- About page
+
+## Credits
+
+Simply Cyan is a port of the [Simply Cyan theme](https://github.com/PQuod/simply-cyan-theme) for Jekyll created by Lucie Desaubliaux.

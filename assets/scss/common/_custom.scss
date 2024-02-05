@@ -20,8 +20,8 @@ img {
 }
 
 .icon-wrapper{
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
   border: 1px solid var(--sl-color-gray-5);
   border-radius: 50%;
   background-color: var(--sl-color-gray-6);
@@ -63,4 +63,58 @@ img {
 
 .card-link:active {
   border: 2px solid $link-color-dark;
+}
+
+.notice {
+  padding: 0.25rem 1rem 0.25rem 1.25rem;
+  background-color: var(--sl-color-gray-4);
+  color: var(--sl-color-white);
+
+  .icon-tabler-arrow-right {
+    margin-left: 0.25rem;
+  }
+}
+
+.notice:hover {
+  background-color: var(--sl-color-gray-3);
+}
+
+.home .highlight pre {
+  border: 2px solid var(--sl-color-gray-4);
+}
+
+.home .card-title {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@include media-breakpoint-up(lg) {
+  .home .card-title {
+    font-size: 2.125rem;
+  }
+
+  .home .card-title.card-title-custom {
+    font-size: 2.375rem;
+    line-height: 1.1;
+  }
+
+  .home .card-title.card-title-community {
+    font-size: 2.625rem;
+    line-height: 1.1;
+  }
+}
+
+.home .card-title.custom-title-width {
+  width: 80%;
+}
+
+@include media-breakpoint-up(lg) {
+  .home .card-title.custom-title-width {
+    width: 75%;
+  }
+}
+
+.border-img {
+  border: 1px solid #343841;
 }

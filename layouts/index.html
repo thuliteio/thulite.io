@@ -2,13 +2,15 @@
 <section class="section-lg">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-9 col-lg-7 col-xxl-5 text-center">
+      <div class="col-11 col-lg-7 col-xxl-5 text-center">
         {{ if site.Params.starter.notice -}}
         <a class="d-flex flex-column flex-lg-row justify-content-center align-items-center mb-4 text-dark lh-sm text-decoration-none" href="{{ site.Params.starter.noticeLink }}">
-          <strong class="d-sm-inline-block px-4 py-2 me-2 mb-2 mb-lg-0 rounded-pill bg-orange-yellow-gradient text-white">{{ site.Params.starter.noticeText }}</strong>
-          <!-- <span class="text-body-secondary">Color mode support, expanded color palette, and more!</span> -->
+          <span class="notice rounded-pill">{{ site.Params.starter.noticeText }}<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg></span>
         </a>
         {{ end -}}
+      </div>
+      <div class="w-100"></div>
+      <div class="col-9 col-lg-7 col-xxl-5 text-center">
         <h1 class="display-1 fw-normal text-white">{{ .Title }}</h1>
         <p class="lead mt-4">{{ .Summary }}</p>
         <div class="actions d-flex justify-content-center align-items-center">
@@ -71,7 +73,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-11 col-md-8 col-lg-6 text-center">
-        <h2 class="display-4 fw-normal text-white">Security</h2>
+        <h2 class="display-4 fw-normal text-white">More secure</h2>
         <p class="lead my-4">Leverage Hyas' website security defaults to meet the latest web security standards and best practices.</p>
       </div>
       <div class="col-md-9 col-lg-7 col-xl-8 col-xxl-7 text-center">
@@ -126,7 +128,7 @@
           <div class="card-footer">
             <div class="row align-items-end row-first">
               <div class="col-12 col-lg-6">
-                <h2 class="card-title custom-title-width mb-0"><a class="stretched-link text-white text-decoration-none" href="https://docs.gethyas.com/guides/integrations/">Discover Hyas integrations</a></h2>
+                <h2 class="card-title card-title-custom custom-title-width mb-0"><a class="stretched-link text-white text-decoration-none" href="https://docs.gethyas.com/guides/integrations/">Discover Hyas integrations</a></h2>
               </div>
               <div class="col-12 col-lg-6">
                 <p class="card-text mb-1">Unlock Tailwind CSS, Bootstrap, and other popular CSS frameworks. Add new features to your project, like Images and SEO.</p>
@@ -152,7 +154,7 @@
           <div class="card-footer">
             <div class="row align-items-end row-first">
               <div class="col-12">
-                <h2 class="card-title custom-title-width title-bottom mb-0 mt-lg-5"><a class="stretched-link text-white text-decoration-none" href="https://docs.gethyas.com/guides/deploy/">Deploy your Hyas site anywhere</a></h2>
+                <h2 class="card-title card-title-custom custom-title-width title-bottom mb-0 mt-lg-5"><a class="stretched-link text-white text-decoration-none" href="https://docs.gethyas.com/guides/deploy/">Deploy anywhere</a></h2>
               </div>
             </div>
           </div>
@@ -209,7 +211,7 @@
           <div class="card-footer">
             <div class="row align-items-end row-last">
               <div class="col-12 col-lg-6">
-                <h2 class="card-title custom-title-width text-white">Join our community</h2>
+                <h2 class="card-title card-title-community custom-title-width text-white">Join our community</h2>
                 <p class="card-text mb-4">Get support, get involved, and join our community of Hyas developers — it all happens on Discussions.</p>
                 <a class="btn btn-lg btn-light rounded-pill mb-1" href="https://github.com/orgs/gethyas/discussions" role="button"><span>Join Discussions</span></a>
               </div>
