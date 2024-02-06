@@ -79,6 +79,13 @@ img {
   background-color: var(--sl-color-gray-3);
 }
 
+code, kbd, samp, pre {
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-size: 1em;
+  color: inherit
+}
+
 .home .highlight pre {
   border: 2px solid var(--sl-color-gray-4);
 }
@@ -117,4 +124,21 @@ img {
 
 .border-img {
   border: 1px solid #343841;
+}
+
+// Details
+details {
+  border: 1px solid #343841;
+}
+
+summary:hover {
+  background: var(--sl-color-gray-6);
+}
+
+details summary::after {
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28222, 226, 230, 0.75%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+}
+
+details[open] > summary {
+  border-bottom: 1px solid #343841;
 }

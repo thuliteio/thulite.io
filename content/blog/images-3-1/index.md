@@ -5,7 +5,7 @@ description: "Images 3.1 is out — new shortcodes and partials, an improved ima
 summary: "Images 3.1 is out —  new shortcodes and partials, an improved image render hook, and a new documentation website."
 date: 2024-02-02T08:03:57+01:00
 lastmod: 2024-02-02T08:03:57+01:00
-draft: true
+draft: false
 weight: 50
 gradient: "" # blue-green(default), blue-purple, orange-yellow, pink-blue, or purple-orange (this setting is only relevant when "images: []")
 categories: ["Product", "Integrations"] # E.g. ["Product", "Legal"]
@@ -22,15 +22,21 @@ seo:
 Images 3.1 is out —  new shortcodes and partials, an improved image render hook, and a new documentation website.
 {.lead}
 
+Images now has a new code base, making it more robust, flexible, and easy to use.
+
 ## Highlights
 
-- [Shortcodes and partials](#shortcodes-and-partials)
-- [Image render hook](#image-render-hook)
-- [Documentation website](#documentation-website)
+- Improved [image render hook](#image-render-hook) for Markdown images.
+- New [shortcodes and partials](#shortcodes-and-partials) for `picture`, `img`, and `figure` elements.
+- Store your images as a page resource, global resource, or remote resource.
+- Set defaults for `loading`, `decoding`, `fetchpriority`, and more — override locally.
+- Use the automatic `sizes` attribute calculation :rocket:
+- Show your images with a blurred-up LQIP :star2:
+- New [documentation website](#documentation-website).
 
 ## Get started
 
-To take advantage of the latest features, make sure you're running the latest version of Images. You can upgrade to Images 3 by running the following command for your package manager of choice:
+To take advantage of the latest features, make sure you're running the latest version of Images and have set the new [parameters](https://images.gethyas.com/docs/basics/customizing-images/#update-parameters). You can upgrade to Images 3.1 by running the following command for your package manager of choice:
 
 {{< tabs "update-images" >}}
 {{< tab "npm" >}}
@@ -58,18 +64,66 @@ yarn upgrade @hyas/images --latest
 
 ## Shortcodes and partials
 
-In 2.0 we removed our old image integration, and along with it some existing features we know you were using. We decided to build back better, with a stronger image story that was only getting started.
+You can add images to your `html` pages by using the the `img`, `picture`, or `figure` partial. The shortcodes are wrappers for the partials. Add images to your `.md` pages by using the `img`, `picture`, or `figure` shortcode — for example:
+
+```md
+{{</* img
+  process="fill 1600x900"
+  src="images/my-image.jpg"
+  alt="My super image in multiple formats!"
+*/>}}
+```
+
+The above code will generate the following HTML, and allow the browser to determine the best image to display:
+
+```html
+<img
+  srcset="..."
+  data-srcset="..."
+  data-sizes="auto"
+  src="..."
+  width="1600"
+  height="900"
+  decoding="async"
+  fetchpriority="auto"
+  loading="lazy"
+  alt="My super image in multiple formats!"
+  class="blur-up lazyautosizes ls-is-cached lazyloaded"
+  sizes="628px"
+>
+```
 
 ## Image render hook
 
+You can add images to your `.md` pages by using the Markdown syntax for images.
+
+```md
+![A starry night sky](images/stars.jpg)
+```
+
+The Markdown above get rendered into the following HTML:
+
+```html
+<img
+  src="/images/stars_hu5459c0360c2b0cb7a147d2df0eb350ca_80218_1920x1280_resize_q85_h2_lanczos.webp"
+  width="410"
+  height="274"
+  decoding="async"
+  fetchpriority="auto"
+  loading="lazy"
+  alt="A starry night sky"
+  id="h-rh-i-1"
+>
+```
+
 ## Documentation website
 
-To celebrate Images v3.1, we kicked off a brand-new redesign of our website: [gethyas.com](https://gethyas.com/)
+To better explain the possibilities of Images, we launched a new documentation website: [images.gethyas.com](https://images.gethyas.com/).
 
 {{< img loading="lazy" fetchpriority="auto" src="images.gethyas.com.jpg" alt="Screenshot homepage images.gethyas.com" class="border-img mb-3">}}
 
-The new website tells our story better, with a fresh can of paint and a focus on content, performance, and community.
+The new website contains handy how-to-guides and reference guides.
 
 ## Acknowledgements
 
-This release wouldn't have been possible without the effort of the amazing open source community. Thank you, everyone.
+This release wouldn’t have been possible without the effort of the amazing open source community. Thank you, everyone.

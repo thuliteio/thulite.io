@@ -50,7 +50,7 @@ mainSections = ["docs", "legal"]
   alertText = '<a class="alert-link stretched-link" href="/hyas-2.1/">Hyas version 2.1 just launched!</a>'
 
   # Global notice
-  notice = false # false (default) or true
+  notice = true # false (default) or true
   noticeText = 'Images 3.1 is here' # E.g. 'Hyas 2.1 is here!'
   noticeLink = '/blog/images-3-1/' # E.g. '/blog/hyas-2.1/'
 
