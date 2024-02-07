@@ -30,6 +30,17 @@
   autoLaunch = false
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+[[redirects]]
+  from = "/new/basics?on=gitpod"
+  to = "https://gitpod.io/#https://github.com/gethyas/basic-starter"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/new/basics?on=codesandbox"
+  to = "https://codesandbox.io/p/sandbox/github/gethyas/basic-starter"
+  status = 301
+  force = true
 
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
