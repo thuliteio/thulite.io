@@ -31,8 +31,8 @@
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
-  from = "https://new.gethyas.com/*"
-  to = "https://gethyas.com/new/:splat"
+  from = "/new/"
+  to = "https://new.gethyas.com"
   status = 301
   force = true
 
