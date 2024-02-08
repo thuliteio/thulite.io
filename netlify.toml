@@ -32,8 +32,14 @@
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
   from = "/new/*"
-  to = "https://jazzy-donut-4af8c4.netlify.app/:splat/"
+  to = "https://jazzy-donut-4af8c4.netlify.app/:splat"
   status = 200
+  force = true
+
+[[redirects]]
+  from = "/new/basics?on=gitpod"
+  to = "https://gitpod.io/#https://github.com/gethyas/create-hyas/tree/main/template-basic-starter"
+  status = 301
   force = true
 
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
