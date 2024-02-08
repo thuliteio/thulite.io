@@ -41,7 +41,7 @@ Check out our detailed [Why Hyas](https://docs.gethyas.com/concepts/why-hyas/) b
 
 ## Get started
 
-Hyas 2.0 is available now on npm. Visit [gethyas.com/new](https://gethyas.com/new/) to try out Hyas 2.0 in your browser, or run the following command in your terminal to get started with a new project:
+Hyas 2.0 is available now on npm. Visit [new.gethyas.com](https://new.gethyas.com/) to try out Hyas 2.0 in your browser, or run the following command in your terminal to get started with a new project:
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}

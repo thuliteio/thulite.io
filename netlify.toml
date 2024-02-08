@@ -30,18 +30,6 @@
   autoLaunch = false
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
-[[redirects]]
-  from = "/new/*"
-  to = "https://jazzy-donut-4af8c4.netlify.app/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/basics"
-  to = "https://gitpod.io/#https://github.com/gethyas/basic-starter"
-  status = 301
-  force = true
-  query = {on = "gitpod"}
 
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
@@ -50,7 +38,7 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://plausible.io; font-src 'self' https://new.gethyas.com; img-src 'self' https://new.gethyas.com https://avatars.githubusercontent.com data:; script-src 'self' https://new.gethyas.com https://plausible.io 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk='; style-src 'self' https://new.gethyas.com"
+    Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://plausible.io; font-src 'self'; img-src 'self' https://avatars.githubusercontent.com data:; script-src 'self' https://plausible.io 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk='; style-src 'self'"
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin"
     Feature-Policy = "geolocation 'self'"
