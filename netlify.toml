@@ -24,7 +24,7 @@
 [dev]
   framework = "#custom"
   command = "pnpm dev"
-  targetPort = 1313
+  targetPort = 3000
   port = 8888
   publish = "public"
   autoLaunch = false
@@ -37,8 +37,9 @@
   force = true
 
 [[redirects]]
-  from = "/new/basics?on=gitpod"
-  to = "https://gitpod.io/#https://github.com/gethyas/create-hyas/tree/main/template-basic-starter"
+  from = "/new/basics/"
+  query = {on = "gitpod"}
+  to = "https://gitpod.io/#https://github.com/gethyas/basic-starter"
   status = 301
   force = true
 
