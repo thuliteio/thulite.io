@@ -36,6 +36,12 @@
   status = 200
   force = true
 
+[[redirects]]
+  from = "/new"
+  to = "https://gethyas.com/new/"
+  status = 301
+  force = true
+
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
   for = "/*"
