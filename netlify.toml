@@ -36,6 +36,13 @@
   status = 200
   force = true
 
+[[redirects]]
+  from = "/basics"
+  to = "https://gitpod.io/#https://github.com/gethyas/basic-starter"
+  status = 301
+  force = true
+  query = {on = "gitpod"}
+
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
   for = "/*"
