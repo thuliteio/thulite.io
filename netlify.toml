@@ -32,14 +32,8 @@
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
   from = "/new/*"
-  to = "https://jazzy-donut-4af8c4.netlify.app/:splat"
+  to = "https://jazzy-donut-4af8c4.netlify.app/:splat/"
   status = 200
-  force = true
-
-[[redirects]]
-  from = "/new"
-  to = "https://gethyas.com/new/"
-  status = 301
   force = true
 
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
