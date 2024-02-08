@@ -34,7 +34,7 @@
   from = "/new/*"
   to = "https://gethyas.netlify.app/new/:splat"
   status = 200
-  force = false
+  force = true
 
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
