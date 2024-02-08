@@ -38,7 +38,7 @@
 
 [[redirects]]
   from = "/new/basics/"
-  query = {on = "gitpod"}
+  query = {on=gitpod}
   to = "https://gitpod.io/#https://github.com/gethyas/basic-starter"
   status = 301
   force = true
