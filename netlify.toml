@@ -32,7 +32,7 @@
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
   from = "/new/*"
-  to = "https://gethyas.netlify.app/new/:splat"
+  to = "https://jazzy-donut-4af8c4.netlify.app/:splat"
   status = 200
   force = true
 
