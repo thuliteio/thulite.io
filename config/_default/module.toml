@@ -21,9 +21,9 @@
   source = "node_modules/@ventizo/starter-core/assets"
   target = "assets"
 
-[[mounts]]
-  source = "node_modules/flexsearch"
-  target = "assets/js/vendor/flexsearch"
+# [[mounts]]
+#   source = "node_modules/flexsearch"
+#   target = "assets/js/vendor/flexsearch"
 
 [[mounts]]
   source = "node_modules/@tabler/icons/icons"

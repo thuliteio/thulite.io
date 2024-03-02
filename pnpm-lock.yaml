@@ -15,8 +15,8 @@ dependencies:
     specifier: ^2.1.0
     version: 2.1.0
   '@tabler/icons':
-    specifier: ^2.46.0
-    version: 2.46.0
+    specifier: ^2.47.0
+    version: 2.47.0
   '@ventizo/starter-core':
     specifier: ^2.1.0
     version: 2.1.0
@@ -1439,8 +1439,8 @@ packages:
       defer-to-connect: 2.0.1
     dev: false
 
-  /@tabler/icons@2.46.0:
-    resolution: {integrity: sha512-Q5G8Pj5IO+Uhc6pszpu5/hGYY018JwEzzvmuqr+gKJtfIvAHA3umpwUilMRLEy89p+WCP+YsDhicMhfBCCv1qA==}
+  /@tabler/icons@2.47.0:
+    resolution: {integrity: sha512-4w5evLh+7FUUiA1GucvGj2ReX2TvOjEr4ejXdwL/bsjoSkof6r1gQmzqI+VHrE2CpJpB3al7bCTulOkFa/RcyA==}
     dev: false
 
   /@types/cacheable-request@6.0.3:
