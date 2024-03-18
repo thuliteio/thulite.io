@@ -8,6 +8,7 @@ mainSections = ["docs", "legal"]
 
 [social]
   twitter = "gethyas"
+  facebook_admin = ""
 
 # Add-ons
 [add_ons]
@@ -51,8 +52,8 @@ mainSections = ["docs", "legal"]
 
   # Global notice
   notice = true # false (default) or true
-  noticeText = 'Images 3.1 is here' # E.g. 'Hyas 2.1 is here!'
-  noticeLink = '/blog/images-3-1/' # E.g. '/blog/hyas-2.1/'
+  noticeText = 'SEO 2.2 is out' # E.g. 'Hyas 2.1 is here!'
+  noticeLink = '/blog/seo-2-2/' # E.g. '/blog/hyas-2.1/'
 
   # Bootstrap
   bootstrapJavascript = true # false (default) or true
@@ -135,14 +136,11 @@ mainSections = ["docs", "legal"]
 # SEO (@hyas/seo)
 [seo]
   [seo.title]
-    separator = " — "
-    suffix = ""
+    separator = "—" # "|" (default)
+    suffix = "" # title hugo.toml (default)
   [seo.favicons]
-    sizes = []
     icon = "favicon.png" # favicon.png (default)
     svgIcon = "favicon.svg" # favicon.svg (default)
-    maskIcon = "mask-icon.svg" # mask-icon.svg (default)
-    maskIconColor = "white" # white (default)
   [seo.schemas]
     type = "Organization" # Organization (default) or Person
     logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)

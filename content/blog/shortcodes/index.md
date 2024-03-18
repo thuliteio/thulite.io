@@ -15,7 +15,7 @@ seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus dolor eu laoreet pretium. Etiam at feugiat risus. Nullam sodales facilisis felis, sed finibus neque interdum congue. Suspendisse eu neque quis magna ultricies consequat.

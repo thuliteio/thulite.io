@@ -10,7 +10,7 @@ seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 _These terms of service ("Terms") apply to your access and use of the Hyas website (the "Service"). Please read them carefully._

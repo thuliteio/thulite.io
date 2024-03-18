@@ -15,7 +15,7 @@ seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 This Markdown cheat sheet provides a quick overview of all basic Markdown syntax elements. If you need more information about any of these elements, refer to the reference guide for [basic syntax](https://www.markdownguide.org/basic-syntax).

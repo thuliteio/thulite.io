@@ -9,7 +9,7 @@ seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 Have a question? We'll get back to you within 24 hours. Email us at [team@ventizo.com](mailto:team@ventizo.com) or use the form below.

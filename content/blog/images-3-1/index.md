@@ -16,7 +16,7 @@ seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 Images 3.1 is out —  new shortcodes and partials, an improved image render hook, and a new documentation website.

@@ -10,7 +10,7 @@ seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 _In addition to this Privacy Policy, Hyas also has [Terms of Service](/terms)._
