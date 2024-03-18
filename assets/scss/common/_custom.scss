@@ -67,7 +67,10 @@ img {
 
 .notice {
   padding: 0.25rem 1rem 0.25rem 1.25rem;
-  background-color: var(--sl-color-gray-4);
+  
+  // background-color: var(--sl-color-gray-4);
+  background-image: linear-gradient(to right, #ff7b72, #f0883e);
+  opacity: 1;
   color: var(--sl-color-white);
 
   .icon-tabler-arrow-right {
@@ -76,7 +79,8 @@ img {
 }
 
 .notice:hover {
-  background-color: var(--sl-color-gray-3);
+  // background-color: var(--sl-color-gray-3);
+  opacity: 0.9;
 }
 
 code, kbd, samp, pre {
