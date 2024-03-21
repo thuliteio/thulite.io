@@ -8,6 +8,7 @@ draft: false
 toc: true
 types: ["Official", "Blog"]
 technologies: ["bolt.css"]
+pricing: "Free"
 repo: "https://github.com/gethyas/bolt"
 demo: "https://bolt-hyas.netlify.app/"
 cost: free # free (default) or paid

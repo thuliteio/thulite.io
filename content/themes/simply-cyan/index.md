@@ -8,6 +8,7 @@ draft: false
 toc: true
 types: ["Blog"]
 technologies: ["CSS"]
+pricing: "Free"
 repo: "https://github.com/h-enk/simply-cyan"
 demo: "https://simply-cyan.netlify.app/"
 cost: free # free (default) or paid

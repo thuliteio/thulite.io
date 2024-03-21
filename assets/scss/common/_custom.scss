@@ -146,3 +146,7 @@ details summary::after {
 details[open] > summary {
   border-bottom: 1px solid #343841;
 }
+
+.single.themes .prose a.link-action {
+  margin-bottom: 2rem;
+}

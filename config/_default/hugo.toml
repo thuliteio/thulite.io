@@ -47,6 +47,7 @@ copyRight = "Copyright (c) 2010-2024 Ventizo"
   tag = "tags"
   type = "types"
   technology = "technologies"
+  pricing = "pricing"
   sort = "sorts"
 
 [permalinks]
@@ -54,6 +55,7 @@ copyRight = "Copyright (c) 2010-2024 Ventizo"
   themes = "/themes/:title/"
   types = "/themes/:title/"
   technologies = "/technologies/:title/"
+  pricing = "/pricing/:title/"
   sorts = "/integrations/:title/"
 
 [minify.tdewolff.html]
@@ -64,14 +66,23 @@ copyRight = "Copyright (c) 2010-2024 Ventizo"
   includeNewer = true
   toLower = false
     [[related.indices]]
-    name = "categories"
+    name = "types"
     weight = 100
     [[related.indices]]
-    name = "tags"
+    name = "technologies"
     weight = 80
     [[related.indices]]
-    name = "date"
+    name = "pricing"
     weight = 10
+    # [[related.indices]]
+    # name = "categories"
+    # weight = 100
+    # [[related.indices]]
+    # name = "tags"
+    # weight = 80
+    # [[related.indices]]
+    # name = "date"
+    # weight = 10
 
 [imaging]
   anchor = "Center"

@@ -1,0 +1,189 @@
+{{ define "main" }}
+<section class="section py-0">
+  <div class="container-lg">
+    <div class="row justify-content-center">
+      {{ $featured := partial "main/get-featured" . }}
+      {{ if $featured -}}
+        <div class="col-lg-11 px-0">
+          {{ partial "picture"  (dict
+            "page" .
+            "src" $featured
+            "process" "fill 1600x900"
+            "lqip" "16x webp q20"
+            "decoding" "async"
+            "fetchpriority" "auto"
+            "loading" "eager"
+            "alt" .Title
+            "class" "rounded-0"
+          )}}
+        </div>
+      {{ end -}}
+      <div class="col-lg-11">
+        <div class="row">
+          
+          <div class="col col-sidebar col-themes border-end p-0 order-0 order-lg-1">
+    
+            <div class="sidebar-section border-bottom px-4 py-5 p-lg-5">
+
+              <div class="content prose d-lg-none">
+                {{/* partial "main/themes-back" . */}}
+                <h1 class="display-3 fw-normal mt-0">{{ .Title }}</h1>
+                <p class="lead mb-4">{{ .Summary }}</p>
+              </div>
+
+              <div class="d-grid gap-3">
+                {{ $start := "" }}
+                {{- if .Params.start }}
+                  {{ $start = .Params.start }}
+                {{- else }}
+                  {{ $start = .Params.repo }}
+                {{- end }}
+                <a class="btn btn-light btn-action rounded-pill" href="{{ $start }}" role="button">Get started
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M17 7l-10 10"></path>
+                    <path d="M8 7l9 0l0 9"></path>
+                  </svg>
+                </a>
+                {{- if .Params.demo }}
+                <a class="btn btn-outline-light btn-action rounded-pill" href="{{ .Params.demo }}" role="button">Live demo
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M17 7l-10 10"></path>
+                    <path d="M8 7l9 0l0 9"></path>
+                  </svg>
+                </a>
+                {{- end }}
+              </div>
+
+            </div>
+            
+            <div class="sidebar-section border-bottom22 px-4 py-5 p-lg-5">
+
+              <!--
+              <div class="row">
+                <div class="col">
+                  <p class="themes-meta font-monospace mb-0">Cost</p>
+                </div>
+                <div class="col">
+                  <p class="mb-0 text-end">{{ .Params.cost }}</p>
+                </div>
+              </div>
+
+              <hr>
+              -->
+
+              <div class="row">
+                <div class="col">
+                  <p class="themes-meta font-monospace mb-0">Cost</p>
+                </div>
+                <div class="col">
+                  <p class="mb-0 text-end">
+                    {{ .Params.pricing }}
+                  </p>
+                </div>
+              </div>
+              <hr>
+
+              <div class="row">
+                <div class="col">
+                  <p class="themes-meta font-monospace mb-0">Created by</p>
+                </div>
+                <div class="col">
+                  <p class="mb-0 text-end">
+                    {{ partial "main/creator-link" (dict "repo" .Params.repo ) }}
+                  </p>
+                </div>
+              </div>
+
+              <!--
+              <hr>
+
+              <div class="row">
+                <div class="col">
+                  <p class="themes-meta font-monospace mb-0">GitHub stars</p>
+                </div>
+                <div class="col">
+                  <p class="mb-0 text-end">
+                    {{ partial "sidebar/star-count" (dict "repo" .Params.repo ) }}
+                  </p>
+                </div>
+              </div>
+              -->
+
+              <!--
+              <hr>
+
+              <div class="row">
+                <div class="col">
+                  <p class="themes-meta font-monospace mb-0">Last commit</p>
+                </div>
+                <div class="col">
+                  <p class="mb-0 text-end">
+                    {{ partial "sidebar/pushed-at" (dict "repo" .Params.repo ) }}
+                  </p>
+                </div>
+              </div>
+              -->
+
+              {{- if eq .Params.pricing "Free" }}
+                <hr>
+                {{ partial "sidebar/deploy-netlify" (dict "repo" .Params.repo ) }}
+              {{- end }}
+
+            </div>
+    
+          </div>
+
+          <div class="col border-start border-end">
+            <div class="row row-themes justify-content-center py-5">
+
+              <div class="col-main-section">
+                <div class="content prose">
+
+                  <div class="d-none d-lg-block">
+                    {{/* partial "main/themes-back" . */}}
+                    <h1 class="display-4 fw-normal mt-0">{{ .Title }}</h1>
+                    <p class="lead">{{ .Summary }}</p>
+                    <hr>
+                  </div>
+
+                  {{ .Content }}
+
+                </div>
+              </div>
+    
+            </div>
+          </div>
+          
+        </div>
+      </div>
+   
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+  {{ with $related }}
+    <section class="section noise-container border-top">
+      <div class="noise"></div>
+      <div class="bg-grid position-absolute inset-0 z-n1"></div>
+      <div class="container-lg">
+        <div class="row row-themes justify-content-center">
+          <div class="col-main-section">
+            <div class="row row-flex">
+              <h3 class="h2 text-center mb-5">Other themes to consider</h3>
+              {{ range . -}}
+                <div class="col-md-6 col-xl-4">
+                  {{ .Render "item" }}
+                </div>
+              {{ end -}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
