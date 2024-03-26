@@ -27,9 +27,9 @@ seo:
       availability: https://schema.org/OnlineOnly
 ---
 
-Norrsken's design is inspired by the aurora borealis, with white text on a dark background and colorful gradient accents.
+Norrsken's design is inspired by the aurora borealis — with white text on a dark background and colorful gradient accents.
 
-The monospace typeface in Norrsken — [Geist Mono](https://vercel.com/font/mono) — gives it both good readability and a unique style.
+The monospace typeface — Geist Mono — gives it both good readability and a unique style.
 
 ## Features
 
@@ -43,12 +43,10 @@ The monospace typeface in Norrsken — [Geist Mono](https://vercel.com/font/mono
 
 ## Integrations
 
-Norrsken includes the following Hyas integrations:
-
 - Images
 - SEO
 - Inline SVG
 
 ## Credits
 
-Norrsken is designed by Anders Norén and developed by Henk Verlinde — the creator of Hyas and Doks.
+Norrsken is designed by Anders Norén, a Swedish designer and developer, and built for Hyas by Henk Verlinde — the creator of Doks and Hyas.
