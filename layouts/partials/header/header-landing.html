@@ -1,0 +1,23 @@
+{{ if site.Params.starter.navbarSticky -}}
+<div class="sticky-top">
+{{ end -}}
+<header class="navbar navbar-expand-lg">
+  {{ with site.Params.starter.containerBreakpoint -}}<div class="container-{{ . }}">{{ else -}}<div class="container">{{ end -}}
+  <a class="navbar-brand ms-2 me-auto me-lg-3 " href="{{ "/" | absURL }}">
+    {{ partial "inline-svg" (dict "src" "svgs/hyas-logo-semibold-wide.svg" "width" "80px" "height" "100%" "class" "svg-inline-custom svg-monochrome") }}
+    <span class="visually-hidden">{{ site.Title }}</span>
+  </a>
+<!--
+  <a class="btn btn-light rounded-pill px-4" href="{{ "/contact/" | absURL }}" role="button">Contact</a>
+-->
+  <ul class="list-inline nav-social mb-0">
+    {{ range .Site.Menus.landing -}}
+      <li class="list-inline-item">
+        <a rel="me" href="{{ .URL | absURL }}" target="_blank">{{ .Pre }}<span class="visually-hidden">{{ .Name }}</span></a>
+      </li>
+    {{ end -}}
+  </ul>
+</header>
+{{ if site.Params.starter.navbarSticky -}}
+</div>
+{{ end -}}

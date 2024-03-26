@@ -10,8 +10,8 @@ types: ["Official", "Blog"]
 technologies: ["Tailwind CSS"]
 pricing: "Paid"
 repo: "https://github.com/gethyas/hyas"
-start: "https://norrsken.gethyas.com/"
-demo: "https://norrsken.netlify.app/"
+start: "https://gethyas.com/norrsken/"
+demo: ""
 cost: paid # free (default) or paid
 featured: true # false (default) or true
 weight: 50

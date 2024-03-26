@@ -52,7 +52,7 @@ mainSections = ["docs", "legal"]
 
   # Global notice
   notice = true # false (default) or true
-  noticeText = 'SEO 2.2 is out' # E.g. 'Hyas 2.1 is here!'
+  noticeText = 'SEO 2.2 is out!' # E.g. 'Hyas 2.1 is here!'
   noticeLink = '/blog/seo-2-2/' # E.g. '/blog/hyas-2.1/'
 
   # Bootstrap
