@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-11 col-md-8 col-xl-7 col-xxl-6">
-        <p class="meta font-monospace text-center">Paid theme</p>
+        <p class="meta font-monospace text-center">Pay What You Want</p>
         <h1 class="display-4 fw-normal">{{ .Title }}</h1>
         <p class="lead mt-3 mb-0">{{ .Summary }}</p>
       </div>
@@ -30,24 +30,6 @@
   {{- partial "picture" $opts }}
   </div>
 </section>
-
-<!--
-<section class="section">
-  <div class="container">
-  {{- $opts := dict
-    "page" .
-    "src" "norrsken-homepage-blogpost.jpg"
-    "lqip" "20x webp q20"
-    "decoding" "async"
-    "fetchpriority" "auto"
-    "loading" "eager"
-    "alt" "Homepage and blog post screenshots Norrsken theme"
-    "class" "rounded-3 d-block mx-auto"
-  }}
-  {{- partial "picture" $opts }}
-  </div>
-</section>
--->
 
 <section class="section">
   <div class="container">
@@ -105,13 +87,13 @@
   <div class="container">
   {{- $opts := dict
     "page" .
-    "src" "dylan-shaw-XNOGg2MsGpk-unsplash.jpg"
-    "process" "fill 800x450"
-    "lqip" "16x webp q20"
+    "src" "norrsken-blog-post.png"
+    "process" "fit 360x740"
+    "lqip" "18x webp q20"
     "decoding" "async"
     "fetchpriority" "auto"
     "loading" "lazy"
-    "alt" "Orange tent on snow covered ground during night time — Abisko, Sweden"
+    "alt" "Blog post screenshot Norrsken theme"
     "class" "rounded-3 d-block mx-auto"
   }}
   {{- partial "picture" $opts }}
