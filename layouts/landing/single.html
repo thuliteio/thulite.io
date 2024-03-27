@@ -19,6 +19,23 @@
   <div class="container">
   {{- $opts := dict
     "page" .
+    "src" "cover-norrsken.png"
+    "lqip" "16x webp q20"
+    "decoding" "async"
+    "fetchpriority" "auto"
+    "loading" "eager"
+    "alt" "Homepage screenshot Norrsken theme"
+    "class" "rounded-3 d-block mx-auto"
+  }}
+  {{- partial "picture" $opts }}
+  </div>
+</section>
+
+<!--
+<section class="section">
+  <div class="container">
+  {{- $opts := dict
+    "page" .
     "src" "norrsken-homepage-blogpost.jpg"
     "lqip" "20x webp q20"
     "decoding" "async"
@@ -30,6 +47,7 @@
   {{- partial "picture" $opts }}
   </div>
 </section>
+-->
 
 <section class="section">
   <div class="container">
@@ -80,6 +98,23 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+  {{- $opts := dict
+    "page" .
+    "src" "dylan-shaw-XNOGg2MsGpk-unsplash.jpg"
+    "process" "fill 800x450"
+    "lqip" "16x webp q20"
+    "decoding" "async"
+    "fetchpriority" "auto"
+    "loading" "lazy"
+    "alt" "Orange tent on snow covered ground during night time — Abisko, Sweden"
+    "class" "rounded-3 d-block mx-auto"
+  }}
+  {{- partial "picture" $opts }}
   </div>
 </section>
 
