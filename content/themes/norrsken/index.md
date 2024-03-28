@@ -49,4 +49,4 @@ The monospace typeface — Geist Mono — gives it both good readability and a u
 
 ## Credits
 
-Norrsken is designed by Anders Norén, a Swedish designer and developer, and built for Hyas by Henk Verlinde — the creator of Doks and Hyas.
+Norrsken is designed by Anders Norén, a Swedish designer and developer, and build by Henk Verlinde, the creator of Hyas and Doks.
