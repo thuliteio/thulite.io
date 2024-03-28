@@ -161,3 +161,9 @@ header .nav-secondary a:hover {
   height: 48px;
   margin-top: 0.5rem;
 }
+
+.landing .form-control,
+.landing .btn:not(.btn-up) {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
