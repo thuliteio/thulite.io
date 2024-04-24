@@ -2,56 +2,85 @@
 
 $callout-variants: light, info, warning, danger;
 
-$primary:       hsl(224, 100%, 85%);
+$primary: hsl(224, 100%, 85%);
 
-$enable-negative-margins:     true;
+$enable-negative-margins: true;
 
-$link-hover-decoration:  none;
+$link-hover-decoration: none;
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1410px // 1320px
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1410px // 1320px
 );
 // scss-docs-end container-max-widths
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
-$font-family-sans-serif:      "InterVariable", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-monospace:       "MD IO 0.5", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-sans-serif:
+    "InterVariable",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    "Noto Sans",
+    "Liberation Sans",
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+$font-family-monospace: "MD IO 0.5", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-$font-size-base:              1rem; // Assumes the browser default, typically `16px`
-$font-size-md:                $font-size-base * 1.125;
-$font-size-xl:                $font-size-base * 1.375;
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-md: $font-size-base * 1.125;
+$font-size-xl: $font-size-base * 1.375;
 
-$font-weight-light:           300;
-$font-weight-bolder:          600; // bolder (default)
+$font-weight-light: 300;
+$font-weight-bolder: 600; // bolder (default)
 
-$font-weight-base:            $font-weight-light;
+$font-weight-base: $font-weight-light;
 
-$line-height-base:            1.75; // 1.5 (default)
+$line-height-base: 1.75; // 1.5 (default)
 
-$h1-font-size:                $font-size-base * 5; // $font-size-base * 2.5 (default);
+$h1-font-size: $font-size-base * 5; // $font-size-base * 2.5 (default);
 
 // scss-docs-start headings-variables
-$headings-font-family:        Obviously, 'obviously-regular-fallback', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$headings-font-weight:        400; // 500 (default)
+$headings-font-family:
+    Obviously,
+    "obviously-regular-fallback",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    "Noto Sans",
+    "Liberation Sans",
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+$headings-font-weight: 400; // 500 (default)
 // scss-docs-end headings-variables
 
-$lead-font-size:              $font-size-base * 1.125; // $font-size-base * 1.25 (default)
+$lead-font-size: $font-size-base * 1.125; // $font-size-base * 1.25 (default)
 
-$table-border-color:          var(--sl-color-gray-6); // var(--#{$prefix}border-color);
+$table-border-color: var(--sl-color-gray-6); // var(--#{$prefix}border-color);
 
 $spacer: 1rem;
 
-$navbar-padding-y:                  $spacer * 1;
+$navbar-padding-y: $spacer * 1;
 
 // Dark color mode variables
-$body-color-dark:                   hsl(224, 6%, 77%);
-$body-bg-dark:                      hsl(224, 10%, 10%);
-$headings-color-dark:               hsl(0, 0%, 100%);
-$link-color-dark:                   hsl(224, 100%, 85%);
-$link-hover-color-dark:             $link-color-dark;
+$body-color-dark: hsl(224, 6%, 77%);
+$body-bg-dark: hsl(224, 10%, 10%);
+$headings-color-dark: hsl(0, 0%, 100%);
+$link-color-dark: hsl(224, 100%, 85%);
+$link-hover-color-dark: $link-color-dark;

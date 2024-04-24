@@ -1,5 +1,5 @@
 ---
-title : "Build your future website"
+title: "Build your future website"
 description: "Hyas is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
 summary: "Hyas is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
 date: 2020-04-17T12:18:10+00:00
