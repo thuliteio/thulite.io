@@ -61,27 +61,12 @@ yarn upgrade @hyas/seo --latest
 Add a `png` favicon file (and optionally an `svg` favicon file) to your `assets` directory, and Hyas SEO generates all necessary files and meta tags — for example:
 
 ```html
-<link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link
-  rel="apple-touch-icon"
-  href="/apple-touch-icon.png"
-  sizes="180x180"
-  type="image/png"
->
-<link
-  rel="icon"
-  href="/favicon-192x192.png"
-  sizes="192x192"
-  type="image/png"
->
-<link
-  rel="icon"
-  href="/favicon-512x512.png"
-  sizes="512x512"
-  type="image/png"
->
-<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" type="image/png" />
+<link rel="icon" href="/favicon-192x192.png" sizes="192x192" type="image/png" />
+<link rel="icon" href="/favicon-512x512.png" sizes="512x512" type="image/png" />
+<link rel="manifest" href="/manifest.webmanifest" />
 ```
 
 Hyas SEO also generates a `manifest.webmanifest` file. Read more about [favicons](https://seo.gethyas.com/docs/built-ins/favicons/) in our documentation.

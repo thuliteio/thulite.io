@@ -24,12 +24,16 @@ This Markdown cheat sheet provides a quick overview of all basic Markdown syntax
 
 ```md
 # H1
+
 ## H2
+
 ### H3
 ```
 
 # H1
+
 ## H2
+
 ### H3
 
 ## Bold
@@ -43,20 +47,20 @@ This Markdown cheat sheet provides a quick overview of all basic Markdown syntax
 ## Italic
 
 ```md
-*italicized text*
+_italicized text_
 ```
 
-*italicized text*
+_italicized text_
 
 ## Blockquote
 
 ```md
 > blockquote
-{.blockquote}
+> {.blockquote}
 ```
 
 > blockquote
-{.blockquote}
+> {.blockquote}
 
 ## Ordered List
 
@@ -78,13 +82,13 @@ This Markdown cheat sheet provides a quick overview of all basic Markdown syntax
 - First item
 - Second item
 - Third item
-{.list-normal}
+  {.list-normal}
 ```
 
 - First item
 - Second item
 - Third item
-{.list-normal}
+  {.list-normal}
 
 ### Default
 
