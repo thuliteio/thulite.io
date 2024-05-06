@@ -10,3 +10,4 @@ LICENSE
 .npmrc
 .gitkeep
 *.woff*
+hugo_stats.json

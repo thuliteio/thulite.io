@@ -66,12 +66,16 @@ img {
 }
 
 .notice {
-    padding: 0.25rem 1.25rem;
+    // padding: 0.25rem 1.25rem;
+    padding: 0.75rem 1.75rem;
 
-    // background-color: var(--sl-color-gray-4);
-    background-image: linear-gradient(to right, #ff7b72, #f0883e);
+    // background-color: var(--sl-color-gray-3);
+    border: 1px solid var(--sl-color-gray-5);
+    background-color: var(--sl-color-gray-6);
+    // background-image: linear-gradient(to right, #ff7b72, #f0883e);
     opacity: 1;
     color: var(--sl-color-white);
+    margin-bottom: 0.5rem;
 }
 
 .notice:hover {

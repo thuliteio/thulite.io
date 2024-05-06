@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="section-lg">
+<section class="section-md">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-11 col-lg-7 col-xxl-5 text-center">
@@ -10,241 +10,202 @@
         {{ end -}}
       </div>
       <div class="w-100"></div>
-      <div class="col-9 col-lg-7 col-xxl-5 text-center">
+      <div class="col-9 col-lg-7 col-xxl-7 text-center">
         <h1 class="display-1 fw-normal text-white">{{ .Title }}</h1>
-        <p class="lead mt-4">{{ .Summary }}</p>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-9 col-lg-7 col-xxl-5 text-center">
+        <p class="lead mt-2">{{ .Summary }}</p>
         <div class="actions d-flex justify-content-center align-items-center">
           <a target="_blank" rel="noopener noreferer" class="btn btn-lg btn-light rounded-pill" href="https://docs.gethyas.com/" role="button"><span>Get started</span></a>
           <div class="code-block highlight ms-4 d-none d-md-block"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm create hyas@latest</span></span></code></pre></div>
         </div>
-        {{ .Content }}
       </div>
     </div>
   </div>
 </section>
 
-<section class="section-lg">
+<section class="section">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-11 col-md-8 col-lg-6 text-center">
+    <div class="row justify-content-center align-items-center g-4">
+      <div class="col-11 col-md-9 col-lg-5">
         <h2 class="display-4 fw-normal text-white">Full speed</h2>
-        <p class="lead my-4">Unlock Hyas' unique page load performance to improve conversion rates, Core Web Vitals, and SEO.</p>
+        <p class="lead">Unlock Hyas' unique page load performance to improve conversion rates, Core Web Vitals, and SEO.</p>
+        <p class="mt-4 mb-0">Based on Lighthouse 11.0.0 — <a class="text-white" href="https://googlechrome.github.io/lighthouse/viewer/?gist=73a46ae67cbe2f70318635b09a548ff0">Check the full report</a></p>
       </div>
-      <div class="col-md-9 col-lg-7 col-xl-8 col-xxl-7 text-center">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="text-start font-monospace">Google Lighthouse</h3>
-            <div class="row row-lighthouse justify-content-center">
-              <div class="col-6 col-xl-3">
-                <div class="circle-score d-inline-flex align-items-center justify-content-center">
-                  <div class="score font-monospace">100</div>
-                </div>
-                <p class="score-category">Performance</p>
-              </div>
-              <div class="col-6 col-xl-3">
-                <div class="circle-score d-inline-flex align-items-center justify-content-center">
-                  <div class="score font-monospace">100</div>
-                </div>
-                <p class="score-category">Accessibility</p>
-              </div>
-              <div class="col-6 col-xl-3">
-                <div class="circle-score d-inline-flex align-items-center justify-content-center">
-                  <div class="score font-monospace">100</div>
-                </div>
-                <p class="score-category">Best Practices</p>
-              </div>
-              <div class="col-6 col-xl-3">
-                <div class="circle-score d-inline-flex align-items-center justify-content-center">
-                  <div class="score font-monospace">100</div>
-                </div>
-                <p class="score-category">SEO</p>
-              </div>
-            </div>
-            <p class="mt-4 mb-0">Based on Lighthouse 11.0.0 — <a class="text-white" href="https://googlechrome.github.io/lighthouse/viewer/?gist=73a46ae67cbe2f70318635b09a548ff0">Check the full report</a> </p>
-          </div>
-        </div>
-
+      <div class="col-11 col-md-9 col-lg-7">
+        {{- $opts := dict
+          "page" .
+          "src" "images/performance.png"
+          "process" "fill 1600x900"
+          "lqip" "16x webp q20"
+          "decoding" "async"
+          "fetchpriority" "auto"
+          "loading" "lazy"
+          "alt" "Google Lighthouse scoring for hyas.netlify.app"
+          "class" "mx-auto rounded-3"
+        }}
+        {{- partial "img" $opts }}
       </div>
     </div>
   </div>
 </section>
 
-<section class="section-lg">
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center align-items-center g-4">
+      <div class="col-11 col-md-9 col-lg-5">
+        <h2 class="display-4 fw-normal text-white">Max secure</h2>
+        <p class="lead">Leverage Hyas' website security defaults to meet the latest web security standards and best practices.</p>
+        <p class="mt-4 mb-0">Based on Observatory 0.7.1 — <a class="text-white" href="https://observatory.mozilla.org/analyze/hyas.netlify.app">Check the full report</a></p>
+      </div>
+      <div class="col-11 col-md-9 col-lg-7">
+        {{- $opts := dict
+          "page" .
+          "src" "images/security.png"
+          "process" "fill 1600x900"
+          "lqip" "16x webp q20"
+          "decoding" "async"
+          "fetchpriority" "auto"
+          "loading" "lazy"
+          "alt" "Mozilla Observatory scoring for hyas.netlify.app"
+          "class" "mx-auto rounded-3"
+        }}
+        {{- partial "img" $opts }}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section ">
+  <div class="container">
+    <div class="content">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 p-3">
+          <div class="card px-1 px-lg-3">
+            <div class="card-body">
+              <h2 class="mt-3">Add integrations</h2>
+              <p>Unlock Tailwind CSS or Bootstrap. Add new features to your project, like Images, Inline SVG, and SEO.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 p-3">
+          <div class="card px-1 px-lg-3">
+            <div class="card-body">
+              <h2 class="mt-3">Deploy anywhere</h2>
+              <p>Deploy your Hyas website where you want — get guides for Netlify, Vercel, GitHub Pages, and more.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 p-3">
+          <div class="card px-1 px-lg-3">
+            <div class="card-body">
+              <h2 class="mt-3">Try in your browser</h2>
+              <p>Start your first Hyas project right in the browser — no local development environment required!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 p-3">
+          <div class="card px-1 px-lg-3">
+            <div class="card-body">
+              <h2 class="mt-3">Start with a theme</h2>
+              <p>Jumpstart your next project with a theme: blog, portfolio, documentation, landing page, and more.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-11 col-md-8 col-lg-6 text-center">
-        <h2 class="display-4 fw-normal text-white">More secure</h2>
-        <p class="lead my-4">Leverage Hyas' website security defaults to meet the latest web security standards and best practices.</p>
-      </div>
-      <div class="col-md-9 col-lg-7 col-xl-8 col-xxl-7 text-center">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="text-start font-monospace">Mozilla Observatory</h3>
-            <div class="row row-lighthouse justify-content-center">
-              <div class="col">
-                {{- $opts := dict
-                  "page" .
-                  "src" "images/mozilla-observatory.jpg"
-                  "lqip" "13x webp q20"
-                  "decoding" "async"
-                  "fetchpriority" "auto"
-                  "loading" "lazy"
-                  "alt" "Mozilla Observatory scoring for hyas.netlify.app"
-                  "class" "mx-auto rounded-3"
-                }}
-                {{- partial "img" $opts }}
-              </div>
-            </div>
-            <p class="mt-4 mb-0">Based on Observatory 0.7.1 — <a class="text-white" href="https://observatory.mozilla.org/analyze/hyas.netlify.app">Check the full report</a> </p>
-          </div>
+
+      <div class="col-11 col-lg-9 col-xl-7 col-xxl-6">
+        <div class="content-landing">
+          {{ .Content }}
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<section class="section-lg">
-  <div class="container container-features">
-    <div class="row justify-content-center">
-      <div class="col-10 col-md-8 col-lg-6 text-center">
-        <h2 class="display-4 fw-normal text-white text-features">Zero to website in <span>no time</span></h2>
-      </div>
-    </div>
-    <div class="row g-4">
-      <div class="col-12 col-md-6 col-lg-8">
-        <div class="card card-link h-100">
-          <div class="card-body pb-0">
-            <p class="font-monospace mb-2">Easy to use</p>
-            <div class="icon-wrapper d-inline-flex align-items-center justify-content-center">
-              {{- $opts := dict
-                "src" "svgs/tailwind.svg"
-                "width" "2.5rem"
-                "height" "2.5rem"
-                "class" "icon-integrations"
-               }}
-              {{- partial "inline-svg" $opts }}
-            </div>
-          </div>
-          <div class="card-footer">
-            <div class="row align-items-end row-first">
-              <div class="col-12 col-lg-6">
-                <h2 class="card-title card-title-custom custom-title-width mb-0"><a class="stretched-link text-white text-decoration-none" href="https://docs.gethyas.com/guides/integrations/">Discover Hyas integrations</a></h2>
-              </div>
-              <div class="col-12 col-lg-6">
-                <p class="card-text mb-1">Unlock Tailwind CSS, Bootstrap, and other popular CSS frameworks. Add new features to your project, like Images and SEO.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card card-link h-100">
-          <div class="card-body pb-0">
-            <p class="font-monospace mb-2">Easy to deploy</p>
-            <div class="icon-wrapper d-inline-flex align-items-center justify-content-center">
-              {{- $opts := dict
-                "src" "svgs/github.svg"
-                "width" "2.5rem"
-                "height" "2.5rem"
-                "class" "icon-deployment"
-               }}
-              {{- partial "inline-svg" $opts }}
-            </div>
-          </div>
-          <div class="card-footer">
-            <div class="row align-items-end row-first">
-              <div class="col-12">
-                <h2 class="card-title card-title-custom custom-title-width title-bottom mb-0 mt-lg-5"><a class="stretched-link text-white text-decoration-none" href="https://docs.gethyas.com/guides/deploy/">Deploy anywhere</a></h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 bg-blue-purple-gradient">
-          <div class="card-body">
-            <p class="font-monospace">Sandbox</p>
-            <h2 class="card-title custom-title-width">Try Hyas in your browser</h2>
-            <p class="card-text">Start your first Hyas project right in the browser — no local development environment required!</p>
-          </div>
-          <div class="card-footer">
-            <a class="btn btn-lg btn-light rounded-pill mb-1" href="https://new.gethyas.com/" role="button"><span>Start a project</span></a>
-          </div>
-        </div>
-      </div>
-      <div class=" col-12 col-md-6 col-lg-4">
-        <div class="card h-100 bg-blue-green-gradient">
-          <div class="card-body">
-            <p class="font-monospace">Get started</p>
-            <h2 class="card-title custom-title-width">Explore Hyas themes</h2>
-            <p class="card-text">Discover themes to take your project to the next level: blog, portfolio, documentation themes and more.</p>
-          </div>
-          <div class="card-footer">
-            <a class="btn btn-lg btn-light rounded-pill mb-1" href="/themes/" role="button"><span>Explore Themes</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 bg-red-pink-gradient">
-          <div class="card-body">
-            <p class="font-monospace">Documentation</p>
-            <h2 class="card-title custom-title-width">Learn more in our docs</h2>
-            <p class="card-text">Thanks to our amazing contributors, our docs are the best place to learn, troubleshoot, and explore Hyas.</p>
-          </div>
-          <div class="card-footer">
-            <a class="btn btn-lg btn-light rounded-pill mb-1" href="https://docs.gethyas.com/" role="button"><span>Start Learning</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-12">
-        <div class="card h-100 overflow-hidden">
-          <div class="card-body pb-0">
-            <p class="font-monospace mb-2">Community</p>
+<section class="section ">
+  <div class="container">
+    <div class="content">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 p-lg-3">
+          <h2>Learn in our docs</h2>
+          <p>Our docs are the best place to learn, troubleshoot, and explore Hyas — discover how-to guides and more.</p>
+          <a class="text-white mb-1" href="https://docs.gethyas.com/">Start learning
             {{- $opts := dict
-              "src" "svgs/community.svg"
-              "width" "8rem"
-              "height" "8rem"
-              "class" "icon-community"
-              }}
+              "src" "outline/chevron-right"
+              "width" "1.25rem"
+              "height" "1.25rem"
+              "stroke-width" "1.5"
+              "class" "ms-1"
+             }}
             {{- partial "inline-svg" $opts }}
-          </div>
-          <div class="card-footer">
-            <div class="row align-items-end row-last">
-              <div class="col-12 col-lg-6">
-                <h2 class="card-title card-title-community custom-title-width text-white">Join our community</h2>
-                <p class="card-text mb-4">Get support, get involved, and join our community of Hyas developers — it all happens on Discussions.</p>
-                <a class="btn btn-lg btn-light rounded-pill mb-1" href="https://github.com/orgs/gethyas/discussions" role="button"><span>Join Discussions</span></a>
-              </div>
-            </div>
-          </div>
+          </a>
+        </div>
+        <div class="col-lg-5 p-lg-3">
+          <h2>Join our community</h2>
+          <p>Get support, get involved, and join our community of Hyas developers — it all happens on Discussions.</p>
+          <a class="text-white mb-1" href="https://github.com/orgs/gethyas/discussions">Join Discussions
+            {{- $opts := dict
+              "src" "outline/chevron-right"
+              "width" "1.25rem"
+              "height" "1.25rem"
+              "stroke-width" "1.5"
+              "class" "ms-1"
+             }}
+            {{- partial "inline-svg" $opts }}
+          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section-lg position-relative">
-  <div class="bg-grid position-absolute inset-0 z-n1"></div>
+
+
+<section class="section-lg position-relative border-top border-bottom bg-dark">
+  <div class="bg-grid22 position-absolute inset-0 z-n1"></div>
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-10 col-lg-8 col-xxl-6 text-center">
-        <h1 class="display-4 fw-normal text-white">Start building with Hyas today</h1>
+        <h1 class="display-4 fw-normal text-white">Start building with Hyas</h1>
         <div class="actions d-flex justify-content-center align-items-center">
           <a target="_blank" rel="noopener noreferer" class="btn btn-lg btn-light rounded-pill" href="https://docs.gethyas.com/" role="button"><span>Get started</span></a>
         </div>
-        {{ .Content }}
       </div>
     </div>
   </div>
 </section>
 
-<section class="section-lg">
+<section class="section">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-9 col-xl-7 col-xxl-5">
+      <p class="lead text-center font-monospace mb-4">Sponsors</p>
+    </div>
+  </div>
+</div>
   <div class="container container-sponsors">
+
+<!--
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-8 text-center">
+      <div class="col-11 col-lg-9 text-center">
         <h2 class="text-sponsors">Hyas is free, open source software made possible by these amazing sponsors</h2>
       </div>
     </div>
+-->
 
     <div class="row justify-content-center">
       <div class="col-5 col-md-4 text-center">
@@ -265,7 +226,7 @@
           </div>
         </div>
       </div>
-      <div class="col-5 col-md-4 text-center">  
+      <div class="col-5 col-md-4 text-center">
         <div class="card card-logo">
           <div class="card-body d-flex justify-content-center p-0">
             <a href="https://height.app/" class="logo-link stretched-link">
@@ -277,7 +238,7 @@
     </div>
 
     <div class="row justify-content-center mt-2 mt-md-4">
-      <div class="col-5 col-md-4 text-center">  
+      <div class="col-5 col-md-4 text-center">
         <div class="card card-logo">
           <div class="card-body d-flex justify-content-center p-0">
             <a href="https://infisical.com/" class="logo-link stretched-link">
