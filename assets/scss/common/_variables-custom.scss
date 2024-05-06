@@ -22,20 +22,28 @@ $container-max-widths: (
 
 $font-family-sans-serif:
     "InterVariable",
-    system-ui,
     -apple-system,
+    BlinkMacSystemFont,
     "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    "Noto Sans",
-    "Liberation Sans",
+    Helvetica,
     Arial,
     sans-serif,
     "Apple Color Emoji",
     "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji";
+    "Segoe UI Symbol";
+
 $font-family-monospace: "MD IO 0.5", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+/*
+$font-family-monospace:
+    ui-monospace,
+    SFMono-Regular,
+    SF Mono,
+    Menlo,
+    Consolas,
+    Liberation Mono,
+    monospace;
+*/
 
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
 $font-size-md: $font-size-base * 1.125;
@@ -52,22 +60,20 @@ $h1-font-size: $font-size-base * 5; // $font-size-base * 2.5 (default);
 
 // scss-docs-start headings-variables
 $headings-font-family:
-    Obviously,
-    "obviously-regular-fallback",
-    system-ui,
+    "Mona Sans",
+    "Mona Sans Header Fallback",
     -apple-system,
+    BlinkMacSystemFont,
     "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    "Noto Sans",
-    "Liberation Sans",
+    Helvetica,
     Arial,
     sans-serif,
     "Apple Color Emoji",
     "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji";
-$headings-font-weight: 400; // 500 (default)
+    "Segoe UI Symbol";
+
+$headings-font-weight: 500; // 500 (default)
+$headings-line-height: 1.2; // 1.2 (default);
 // scss-docs-end headings-variables
 
 $lead-font-size: $font-size-base * 1.125; // $font-size-base * 1.25 (default)

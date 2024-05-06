@@ -1,6 +1,6 @@
 ---
 title: "Integrations"
-description: "Kick it into lightpeed with integrations."
+description: "Kick it into lightspeed with integrations."
 summary: "Kick it into lightspeed with integrations"
 date: 2023-08-29T14:01:52+02:00
 lastmod: 2023-08-29T14:01:52+02:00
