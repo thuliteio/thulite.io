@@ -46,9 +46,9 @@ mainSections = ["docs", "legal"]
   searchLimit = 99 # 0 (no limit, default) or natural number
 
   # Global alert
-  alert = false # false (default) or true
+  alert = true # false (default) or true
   alertDismissable = true # true (default) or false
-  alertText = '<a class="alert-link stretched-link" href="/hyas-2.1/">Hyas version 2.1 just launched!</a>'
+  alertText = '<a class="alert-link stretched-link" href="/blog/hyas-2-4/">Hyas 2.4 is now available! </a>'
 
   # Global notice
   notice = true # false (default) or true
