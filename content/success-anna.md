@@ -1,7 +1,8 @@
 ---
 title: "Success"
-description: "Thank you — we will notify you when Norrsken is available!"
-summary: "Thank you — we will notify you when Norrsken is available!"
+url: "/anna/success/"
+description: "Thank you — we will notify you when Anna is available!"
+summary: "Thank you — we will notify you when Anna is available!"
 date: 2024-03-26T18:04:06+01:00
 lastmod: 2024-03-26T18:04:06+01:00
 draft: false
@@ -12,4 +13,4 @@ seo:
   robots: "noindex, nofollow" # custom robot tags (optional)
 ---
 
-Thank you — we will notify you when Norrsken is available!
+Thank you — we will notify you when Anna is available!

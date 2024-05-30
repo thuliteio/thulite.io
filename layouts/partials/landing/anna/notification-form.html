@@ -1,0 +1,10 @@
+<form class="row gx-2 gy-3 my-3" name="get-notified-anna" action="/anna/success/" method="post" netlify-honeypot="name" data-netlify="true">
+  <div class="col-md-8">
+    <input name="name" type="text" class="form-control visually-hidden" placeholder="Your Name" aria-label="Name">
+    <input name="email" type="email" class="form-control rounded-pill px-4" placeholder="your@email.com" aria-label="Email address" aria-describedby="button-submit" required>
+    <input name="page" type="hidden" value="{{ .Page.Permalink }}">
+  </div>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-light rounded-pill w-100" aria-label="Submit" id="button-submit">Get Notified</button>
+  </div>
+</form>
