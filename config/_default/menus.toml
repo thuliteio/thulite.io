@@ -138,12 +138,12 @@
 #   name = "Blog"
 #   url = "/blog/"
 #   weight = 10
-# 
+#
 # [[about]]
 #   name = "Who we are"
 #   url = "/about/"
 #   weight = 20
-# 
+#
 # [[about]]
 #   name = "Partner with us!"
 #   url = "/partnerships/"
@@ -163,6 +163,11 @@
   name = "Norrsken"
   url = "/norrsken/"
   weight = 30
+
+[[links]]
+  name = "Anna"
+  url = "/anna/"
+  weight = 40
 
 [[legal]]
   name = "Privacy Policy"
