@@ -30,12 +30,11 @@
   </div>
 </section>
 
-<!--
 <section class="section">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 col-xl-7">
-        <p class="lead text-center mb-0">TinaCMS provides an intuitive content editing interface for your Markdown files. Benefit from configurable shortcodes and unlock an enhanced content creation experience.</p>
+        <p class="lead text-center mb-0">TinaCMS provides an intuitive content editing interface for your Markdown files. Benefit from Doks shortcodes and unlock an enhanced content creation experience.</p>
       </div>
     </div>
   </div>
@@ -45,19 +44,19 @@
   <div class="container">
   {{- $opts := dict
     "page" .
-    "src" "norrsken-blockquote.png"
-    "process" "fit 720x240"
-    "lqip" "15x webp q20"
+    "src" "blog-post-anna.png"
+    "lqip" "16x webp q20"
     "decoding" "async"
     "fetchpriority" "auto"
     "loading" "lazy"
     "alt" "Blockquote screenshot Norrsken theme"
     "class" "rounded-3 d-block mx-auto"
   }}
-  {{/* - partial "picture" $opts */}}
+  {{- partial "picture" $opts }}
   </div>
 </section>
 
+<!--
 <section class="section ">
   <div class="container">
     <div class="content">
@@ -82,29 +81,30 @@
     </div>
   </div>
 </section>
+-->
 
 <section class="section">
   <div class="container">
   {{- $opts := dict
     "page" .
-    "src" "norrsken-blog-post.png"
-    "process" "fit 360x740"
-    "lqip" "18x webp q20"
+    "src" "callout-shortcode-anna.png"
+    "lqip" "16x webp q20"
     "decoding" "async"
     "fetchpriority" "auto"
     "loading" "lazy"
     "alt" "Blog post screenshot Norrsken theme"
     "class" "rounded-3 d-block mx-auto"
   }}
-  {{/* - partial "picture" $opts */}}
+  {{- partial "picture" $opts }}
   </div>
 </section>
 
+<!--
 <section class="section">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 col-xl-7">
-        <p class="lead text-center mb-0">With Norrsken you get a beautiful blog theme that is fast and lightweight, optimized for search engines, and easily customizable.</p>
+        <p class="lead text-center mb-0">Integrate TinaCMS into your Doks projects and enjoy the advantages of markdown content, shortcodes support, and Git-backed version control.</p>
       </div>
     </div>
   </div>
