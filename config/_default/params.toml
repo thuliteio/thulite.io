@@ -48,7 +48,7 @@ mainSections = ["docs", "legal"]
   # Global alert
   alert = true # false (default) or true
   alertDismissable = true # true (default) or false
-  alertText = '<a class="alert-link stretched-link" href="/blog/hyas-2-4/">Hyas 2.4 is now available! </a>'
+  alertText = '<a class="alert-link stretched-link" href="/anna/">Anna will ship soon! </a>'
 
   # Global notice
   notice = true # false (default) or true
