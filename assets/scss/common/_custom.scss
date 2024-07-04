@@ -174,3 +174,8 @@ header .nav-secondary a:hover {
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
 }
+
+// Email obfuscation
+span.email b {
+  display: none;
+}

@@ -6,6 +6,9 @@ images = ["cover.png"]
 # mainSections
 mainSections = ["docs", "legal"]
 
+# defaultEmail
+defaultEmail = "support@gethyas.com"
+
 [social]
   twitter = "gethyas"
   facebook_admin = ""

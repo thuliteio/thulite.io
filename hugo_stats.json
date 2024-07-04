@@ -2,6 +2,7 @@
   "htmlElements": {
     "tags": [
       "a",
+      "b",
       "base",
       "blockquote",
       "body",
@@ -10,7 +11,6 @@
       "code",
       "defs",
       "div",
-      "em",
       "figcaption",
       "figure",
       "footer",
@@ -154,7 +154,9 @@
       "dropdown-menu",
       "dropdown-menu-pre",
       "dropdown-toggle",
+      "email",
       "error404",
+      "eula",
       "fade",
       "flex-column",
       "flex-grow-1",
@@ -329,7 +331,7 @@
     ],
     "ids": [
       "a",
-      "accepting-these-terms",
+      "accepting-the-terms",
       "acknowledgements",
       "announcement",
       "assignment",
@@ -337,7 +339,7 @@
       "bug-fixes",
       "button-submit",
       "changes",
-      "changes-to-these-terms",
+      "changes-to-the-terms",
       "clip0_235_26",
       "cookies",
       "copyright-complaints",
@@ -359,6 +361,7 @@
       "image-render-hook",
       "improved-scripts-setup",
       "information-gathering-and-usage",
+      "information-sharing",
       "integrations",
       "jurisdiction",
       "key-features",
@@ -397,8 +400,7 @@
       "termination",
       "third-party-services",
       "unavoidable-legal-stuff",
-      "we-may-share-your-information-with",
-      "your-content-amp-conduct"
+      "your-content--conduct"
     ]
   }
 }

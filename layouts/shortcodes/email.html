@@ -1,0 +1,13 @@
+{{- /* Set defaults and get args. */}}
+{{- $address := index .Params 0 | default site.Params.defaultEmail }}
+
+{{- /* Get parts. */}}
+{{- $addressParts := split $address "@" }}
+{{- $userName := (index $addressParts 0) }}
+{{- $rootDomain := (index $addressParts 1) }}
+{{- $rootDomainParts := split $rootDomain "." }}
+{{- $domainName := (index $rootDomainParts 0) }}
+{{- $topLevelDomain := (index $rootDomainParts 1) }}
+
+{{- /* Render. */}}
+{{- printf "<span class=\"email\">%s@%s<b>.%s</b>.%s</span>" $userName $domainName $domainName $topLevelDomain | safeHTML -}}
