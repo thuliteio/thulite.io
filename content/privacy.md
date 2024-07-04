@@ -46,7 +46,7 @@ Data is kept for the time necessary to provide the products or services requeste
 
 ## Rights of Data Subjects
 
-Data subject (customer) can always request Hyas to allow access and correction, supplement or update of data. Subject to a reasonable request of a data subject, Hyas will remove data pertaining to a data subject unless applicable laws impose a duty to retain data for certain time or identification, location and deletion of data imposes a disproportionate financial burden upon Hyas. Any requests for access, correction or deletion of data should be directed to Hyas by sending an email to {{< email "privacy@gethyas.com" >}}.
+Data subject (customer) can always request Hyas to allow access and correction, supplement or update of data. Subject to a reasonable request of a data subject, Hyas will remove data pertaining to a data subject unless applicable laws impose a duty to retain data for certain time or identification, location and deletion of data imposes a disproportionate financial burden upon Hyas. Any requests for access, correction or deletion of data should be directed to Hyas by sending an email to __{{< email "privacy@gethyas.com" >}}__.
 
 You may be aware that a European Union law, called the General Data Protection Regulation or "GDPR" gives certain rights to individuals in relation to their personal data. In order to enable you to exercise these rights with ease in relation to how Hyas uses your personal data, we provide you with access to the following settings via your Account Settings page:
 
@@ -79,4 +79,4 @@ Hyas may periodically update this policy. We encourage you to periodically revie
 
 ## Questions
 
-Thank you for reading our Privacy Policy. If you have any questions about this Policy, please contact our Data Protection Officer by emailing {{< email "privacy@gethyas.com" >}}.
+Thank you for reading our Privacy Policy. If you have any questions about this Policy, please contact our Data Protection Officer by emailing __{{< email "privacy@gethyas.com" >}}__.
