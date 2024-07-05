@@ -36,6 +36,9 @@ importers:
       prettier:
         specifier: ^3.3.2
         version: 3.3.2
+      spotlight.js:
+        specifier: ^0.7.8
+        version: 0.7.8
       vite:
         specifier: ^5.3.3
         version: 5.3.3
@@ -1883,6 +1886,9 @@ packages:
 
   spawndamnit@2.0.0:
     resolution: {integrity: sha512-j4JKEcncSjFlqIwU5L/rp2N5SIPsdxaRsIv678+TZxZ0SRDJTm8JrxJMjE/XuiEZNEir3S8l0Fa3Ke339WI4qA==}
+
+  spotlight.js@0.7.8:
+    resolution: {integrity: sha512-zq822gqhjaMHt31oZi4do211NwqBcxZ4u7Xtb+OEsbLrz37dcELhBCoQXFu/0sTiomqD6tm5g6tmqvE7S6h4ng==}
 
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
@@ -4087,6 +4093,8 @@ snapshots:
     dependencies:
       cross-spawn: 5.1.0
       signal-exit: 3.0.7
+
+  spotlight.js@0.7.8: {}
 
   sprintf-js@1.0.3: {}
 

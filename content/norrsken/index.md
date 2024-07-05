@@ -1,8 +1,8 @@
 ---
 title: "Norrsken"
 slug: "norrsken"
-description: "Norrsken is a simple blog theme, designed to be an archive for all your digital things. Available mid-2024!"
-summary: "Norrsken is a simple blog theme, designed to be an archive for all your digital things. Available mid-2024!"
+description: "Norrsken is a simple blog theme, designed to be an archive for all your digital things."
+summary: "Norrsken is a simple blog theme, designed to be an archive for all your digital things."
 date: 2024-03-22T11:12:22+01:00
 lastmod: 2024-03-22T11:12:22+01:00
 draft: false

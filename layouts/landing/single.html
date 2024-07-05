@@ -3,6 +3,8 @@
     {{ partial "landing/norrsken/main" . }}
   {{- else if eq .Slug "anna" }}
     {{ partial "landing/anna/main" . }}
+  {{- else if eq .Slug "vermeer" }}
+    {{ partial "landing/vermeer/main" . }}
   {{- end }}
 {{ end }}
 
@@ -11,5 +13,7 @@
     {{ partial "landing/norrsken/footer" . }}
   {{- else if eq .Slug "anna" }}
     {{ partial "landing/anna/footer" . }}
+  {{- else if eq .Slug "vermeer" }}
+    {{ partial "landing/vermeer/footer" . }}
   {{- end }}
 {{ end }}

@@ -184,3 +184,22 @@ span.email b {
   font-weight: 400;
   text-underline-offset: 2px;
 }
+
+.spotlight {
+    transition: transform 0.3s;
+}
+
+.spotlight:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
+.spl-header {
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+}
+
+.spl-title {
+    font-family: var(--bs-body-font-family);
+    font-weight: 300;
+ }

@@ -1,20 +1,20 @@
 ---
-title: "Norrsken"
-description: "Simple, stylish blog theme."
-summary: "Simple, stylish blog theme."
-date: 2024-03-21T14:10:40+01:00
-lastmod: 2024-03-21T14:10:40+01:00
+title: "Vermeer"
+description: "Beautiful profile theme."
+summary: "Beautiful profile theme."
+date: 2024-07-04T12:04:55+02:00
+lastmod: 2024-07-04T12:04:55+02:00
 draft: false
 toc: true
-types: ["Official", "Blog"]
-technologies: ["Tailwind CSS"]
+types: ["Official", "Profile"]
+technologies: ["Bootstrap", "CSS"]
 pricing: "Paid"
 repo: "https://github.com/gethyas/hyas"
-start: "https://gethyas.com/norrsken/"
-demo: ""
+start: "https://gethyas.com/vermeer/"
+demo: "https://vermeer.netlify.app/"
 cost: paid # free (default) or paid
 featured: true # false (default) or true
-weight: 30
+weight: 20
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
@@ -27,25 +27,21 @@ seo:
       availability: https://schema.org/OnlineOnly
 ---
 
-Norrsken's design is inspired by the aurora borealis — with white text on a dark background and colorful gradient accents.
-
-The monospace typeface — Geist Mono — gives it both good readability and a unique style.
+Vermeer is a profile theme with an eye-catching marquee at the top of the page. Add your photograph, bio, links, and socials, and your profile page is ready to go.
 
 ## Features
 
 - Clean, unique design
 - High readability
-- Flexible, customizable setup
+- Easy to use
 - Lightweight and fast
-- Dark/light mode
-- Code highlighting
-- Blog pages (list, single, and categories)
+- 13 built-in color schemes
+- Respects reduced motion user preference
 
 ## Integrations
 
 - Images
 - SEO
-- Inline SVG
 
 ## Credits
 

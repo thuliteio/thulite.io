@@ -2,13 +2,13 @@
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-11 col-md-8 col-xl-7 col-xxl-6">
-        <p class="meta font-monospace text-center">Paid integration</p>
+        <p class="meta font-monospace text-center">Paid theme</p>
         <h1 class="display-4 fw-normal">{{ .Title }}</h1>
         <p class="lead mt-3 mb-0">{{ .Summary }}</p>
       </div>
       <div class="w-100 "></div>
       <div class="col-md-11 col-lg-9 col-xl-7 col-xxl-5">
-        {{ partial "landing/anna/notification-form.html" . -}}
+        {{ partial "landing/norrsken/notification-form.html" . -}}
       </div>
     </div>
   </div>
@@ -18,12 +18,12 @@
   <div class="container">
   {{- $opts := dict
     "page" .
-    "src" "cover-anna.png"
+    "src" "cover-vermeer.png"
     "lqip" "16x webp q20"
     "decoding" "async"
     "fetchpriority" "auto"
     "loading" "eager"
-    "alt" "Docs list page TinaCMS"
+    "alt" "Homepage screenshot Norrsken theme"
     "class" "rounded-3 d-block mx-auto"
   }}
   {{- partial "picture" $opts }}
@@ -34,7 +34,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 col-xl-7">
-        <p class="lead text-center mb-0">TinaCMS provides an intuitive content editing interface for your Markdown files. Benefit from Doks shortcodes and unlock an enhanced content creation experience.</p>
+        <p class="lead text-center mb-0">Vermeer is designed by Anders Norén, a Swedish designer and developer, and built by Henk Verlinde, the creator of Hyas and Doks.</p>
       </div>
     </div>
   </div>
@@ -42,21 +42,41 @@
 
 <section class="section">
   <div class="container">
+
+    <div class="spotlight-group d-flex flex-wrap justify-content-center">
+      {{ range .Resources.Match "color-schemes/**" }}
+        {{ $base := strings.TrimLeft "color-schemes" .Name }}
+        {{ $base = strings.TrimSuffix (path.Ext .Name) $base }}
+        {{ $image_800 := .Resize "800x webp" }}
+        {{ $image := .Process "webp" }}
+        <div class="spotlight m-2 m-md-3"
+          data-src="{{ $image.RelPermalink }}"
+          data-src-800="{{ $image_800.RelPermalink }}"
+          data-src-1600="{{ $image.RelPermalink }}">
+          {{ with .Fill "150x150 q100 Center" }}
+            <img class="lazyload blur-up rounded-3" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $base | humanize }}" decoding="async" fetchpriority="auto" loading="lazy">
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+<!--
   {{- $opts := dict
     "page" .
-    "src" "blog-post-anna.png"
-    "lqip" "16x webp q20"
+    "src" "norrsken-blockquote.png"
+    "process" "fit 720x240"
+    "lqip" "15x webp q20"
     "decoding" "async"
     "fetchpriority" "auto"
     "loading" "lazy"
-    "alt" "Blog post form TinaCMS"
+    "alt" "Blockquote screenshot Norrsken theme"
     "class" "rounded-3 d-block mx-auto"
   }}
   {{- partial "picture" $opts }}
+-->
+
   </div>
 </section>
 
-<!--
 <section class="section ">
   <div class="container">
     <div class="content">
@@ -81,31 +101,45 @@
     </div>
   </div>
 </section>
--->
-
-<section class="section">
-  <div class="container">
-  {{- $opts := dict
-    "page" .
-    "src" "callout-shortcode-anna.png"
-    "lqip" "16x webp q20"
-    "decoding" "async"
-    "fetchpriority" "auto"
-    "loading" "lazy"
-    "alt" "Callout shortcode form TinaCMS"
-    "class" "rounded-3 d-block mx-auto"
-  }}
-  {{- partial "picture" $opts }}
-  </div>
-</section>
 
 <!--
 <section class="section">
   <div class="container">
+
+  {{- $opts := dict
+    "page" .
+    "src" "norrsken-blog-post.png"
+    "process" "fit 360x740"
+    "lqip" "18x webp q20"
+    "decoding" "async"
+    "fetchpriority" "auto"
+    "loading" "lazy"
+    "alt" "Blog post screenshot Norrsken theme"
+    "class" "rounded-3 d-block mx-auto"
+  }}
+  {{- partial "picture" $opts }}
+
+  </div>
+</section>
+-->
+
+<section class="section">
+  <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 col-xl-7">
-        <p class="lead text-center mb-0">Integrate TinaCMS into your Doks projects and enjoy the advantages of markdown content, shortcodes support, and Git-backed version control.</p>
+        <p class="lead text-center mb-0">With Norrsken you get a beautiful blog theme that is fast and lightweight, optimized for search engines, and easily customizable.</p>
       </div>
+      <!--
+      <div class="col-lg-9 col-xl-2">
+        <button type="submit" class="btn btn-light rounded-pill w-100" aria-label="Submit" id="button-submit">Demo
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M17 7l-10 10"></path>
+            <path d="M8 7l9 0l0 9"></path>
+          </svg>
+        </button>
+      </div>
+      -->
     </div>
   </div>
 </section>
@@ -150,4 +184,3 @@
     </div>
   </div>
 </section>
--->
