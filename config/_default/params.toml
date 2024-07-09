@@ -55,8 +55,8 @@ defaultEmail = "support@gethyas.com"
 
   # Global notice
   notice = true # false (default) or true
-  noticeText = 'Discover Norrsken!' # E.g. 'Hyas 2.1 is here!'
-  noticeLink = '/norrsken/' # E.g. '/blog/hyas-2.1/'
+  noticeText = 'Discover Vermeer!' # E.g. 'Hyas 2.1 is here!'
+  noticeLink = '/vermeer/' # E.g. '/blog/hyas-2.1/'
 
   # Bootstrap
   bootstrapJavascript = true # false (default) or true

@@ -169,6 +169,11 @@
   url = "/anna/"
   weight = 40
 
+[[links]]
+  name = "Vermeer"
+  url = "/vermeer/"
+  weight = 50
+
 [[legal]]
   name = "Privacy Policy"
   url = "/privacy/"
