@@ -30,6 +30,10 @@
   target = "assets/svgs/tabler-icons"
 
 [[mounts]]
+  source = "node_modules/spotlight.js/dist/css"
+  target = "assets/css"
+
+[[mounts]]
   source = "assets"
   target = "assets"
 
