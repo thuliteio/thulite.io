@@ -1,6 +1,6 @@
 ---
 title: "Doks"
-description: "Doks theme for Hyas sites."
+description: "Full-featured documentation theme."
 summary: "Full-featured documentation theme."
 date: 2022-09-21T17:33:31+02:00
 lastmod: 2022-09-21T17:33:31+02:00
@@ -41,7 +41,7 @@ Doks' straightforward design prioritizes essential elements and readability, res
 
 ## Integrations
 
-Doks includes the following Hyas integrations:
+Doks includes the following Thulite integrations:
 
 - Images
 - SEO

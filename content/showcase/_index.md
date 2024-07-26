@@ -1,7 +1,7 @@
 ---
 title: "Showcase"
-description: "Explore what's possible with Hyas."
-summary: "Explore what's possible with Hyas"
+description: "Explore what's possible with Thulite."
+summary: "Explore what's possible with Thulite"
 date: 2023-08-29T15:50:07+02:00
 lastmod: 2023-08-29T15:50:07+02:00
 draft: false

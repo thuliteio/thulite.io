@@ -13,4 +13,10 @@ seo:
   robots: "noindex, nofollow" # custom robot tags (optional)
 ---
 
-Thank you — we will notify you when Anna is available!
+Thank you — we will notify you when **Anna** is available!
+{.lead}
+
+## Other products
+
+- [Vermeer](/vermeer/)
+- [Norrsken](/norrsken/)

@@ -203,3 +203,15 @@ span.email b {
     font-family: var(--bs-body-font-family);
     font-weight: 300;
  }
+
+ .thulite-logo-semibold-wide {
+    width: 110px;
+    height: 100%;
+}
+
+@include media-breakpoint-down(lg) {
+    .thulite-logo-semibold-wide {
+        width: 100px;
+        height: 100%;
+    }
+}

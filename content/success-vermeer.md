@@ -13,4 +13,10 @@ seo:
   robots: "noindex, nofollow" # custom robot tags (optional)
 ---
 
-Thank you — we will notify you when Vermeer is available!
+Thank you — we will notify you when **Vermeer** is available!
+{.lead}
+
+## Other products
+
+- [Norrsken](/norrsken/)
+- [Anna](/anna/)

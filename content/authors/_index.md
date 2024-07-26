@@ -1,6 +1,6 @@
 ---
 title: "Authors"
-description: "The Hyas authors."
+description: "The Thulite authors."
 date: 2020-10-06T08:50:29+00:00
 lastmod: 2020-10-06T08:50:29+00:00
 draft: false
@@ -11,4 +11,4 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-The Hyas authors.
+The Thulite authors.

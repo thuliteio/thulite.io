@@ -45,4 +45,4 @@ Vermeer is a profile theme with an eye-catching marquee at the top of the page. 
 
 ## Credits
 
-Vermeer is designed by Anders Norén, a Swedish designer and developer, and built by Henk Verlinde, the creator of Hyas and Doks.
+Vermeer is designed by Anders Norén, a Swedish designer and developer, and built by Henk Verlinde, the creator of Thulite and Doks.

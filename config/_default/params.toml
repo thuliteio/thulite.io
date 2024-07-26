@@ -1,13 +1,13 @@
 # Hugo
-title = "Hyas"
-description = "Hyas is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
+title = "Thulite"
+description = "Thulite is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
 images = ["cover.png"]
 
 # mainSections
 mainSections = ["docs", "legal"]
 
 # defaultEmail
-defaultEmail = "support@gethyas.com"
+defaultEmail = "support@thulite.io"
 
 [social]
   twitter = "gethyas"
@@ -51,7 +51,8 @@ defaultEmail = "support@gethyas.com"
   # Global alert
   alert = true # false (default) or true
   alertDismissable = true # true (default) or false
-  alertText = '<a class="alert-link stretched-link" href="/anna/">Anna will ship soon! </a>'
+  # alertText = '<a class="alert-link stretched-link" href="/anna/">Anna will ship soon!</a>'
+  alertText = '<a class="alert-link stretched-link" href="/blog/hyas-is-now-thulite/">Hyas is now <strong>Thulite</strong>!</a>'
 
   # Global notice
   notice = true # false (default) or true
@@ -69,7 +70,7 @@ defaultEmail = "support@gethyas.com"
   scrollSpy = true # true (default) or false
 
   # Footer
-  footer = '© 2024 Hyas — <a href="https://github.com/gethyas/hyas/blob/master/LICENSE" target="_blank">MIT License</a>'
+  footer = '© 2024 Thulite — <a href="https://github.com/gethyas/hyas/blob/master/LICENSE" target="_blank">MIT License</a>'
 
   # Multilingual
   multilingualMode = false # false (default) or true
@@ -147,7 +148,7 @@ defaultEmail = "support@gethyas.com"
   [seo.schemas]
     type = "Organization" # Organization (default) or Person
     logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)
-    name = "Hyas" # Name of Organization or Person
+    name = "Thulite" # Name of Organization or Person
     sameAs = ["https://github.com/gethyas/hyas", "https://twitter.com/gethyas", "https://fosstodon.org/@hyas"] # E.g. ["https://github.com/gethyas/hyas", "https://fosstodon.org/@hyas"]
     images = ["cover.png"] # ["cover.png"] (default)
     article = [] # Article sections
