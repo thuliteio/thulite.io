@@ -17,7 +17,7 @@ defaultEmail = "support@thulite.io"
 [add_ons]
   carbonAds = false # false (default) or true
   docSearch = false # false (default) or true
-  plausibleDomain = "gethyas.com" # "example.com" (default)
+  plausibleDomain = "thulite.io" # "example.com" (default)
   keila = false # false (default) or true
 
 # Starter (@ventizo/starter-core)
