@@ -11,10 +11,10 @@
   command = "npm run build"
 
 [context.deploy-preview]
-  command = "npm run build -- --baseURL=$DEPLOY_PRIME_URL"
+  command = "hugo --minify --gc --baseURL $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "npm run build -- --baseURL=$DEPLOY_PRIME_URL"
+  command = "hugo --minify --gc --baseURL $DEPLOY_PRIME_URL"
 
 [context.next]
   command = "npm run build"
