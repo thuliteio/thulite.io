@@ -11,10 +11,10 @@
   command = "npm run build"
 
 [context.deploy-preview]
-  command = "npm run build --baseURL=/"
+  command = "npm run build -- --baseURL=/"
 
 [context.branch-deploy]
-  command = "npm run build --baseURL=/"
+  command = "npm run build -- --baseURL=/"
 
 [context.next]
   command = "npm run build"
