@@ -33,7 +33,7 @@
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
   from = "https://gethyas.com/*"
-  to = "https://thulite.io/"
+  to = "https://thulite.io/:splat"
   status = 301
   force = true
 
