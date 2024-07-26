@@ -31,6 +31,17 @@
   autoLaunch = false
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+[[redirects]]
+  from = "https://gethyas.com/*"
+  to = "https://thulite.io/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.gethyas.com/*"
+  to = "https://thulite.io/"
+  status = 301
+  force = true
 
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
