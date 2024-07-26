@@ -89,14 +89,9 @@
   url = "/integrations/"
   weight = 40
 
-# [[community]]
-#   name = "Discussions"
-#   url = "https://github.com/orgs/gethyas/discussions"
-#   weight = 5
-
 [[community]]
-  name = "Community"
-  url = "https://community.gethyas.com/"
+  name = "Discussions"
+  url = "https://github.com/orgs/gethyas/discussions"
   weight = 5
 
 [[community]]
@@ -115,7 +110,7 @@
 #   weight = 30
 
 [[documentation]]
-  name = "Hyas"
+  name = "Thulite"
   url = "https://docs.gethyas.com/"
   weight = 10
 
@@ -160,18 +155,18 @@
   weight = 20
 
 [[links]]
+  name = "Vermeer"
+  url = "/vermeer/"
+  weight = 30
+
+[[links]]
   name = "Norrsken"
   url = "/norrsken/"
-  weight = 30
+  weight = 40
 
 [[links]]
   name = "Anna"
   url = "/anna/"
-  weight = 40
-
-[[links]]
-  name = "Vermeer"
-  url = "/vermeer/"
   weight = 50
 
 [[legal]]
