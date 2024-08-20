@@ -100,9 +100,14 @@
   weight = 10
 
 [[community]]
-  name = "Contributing"
-  url = "https://github.com/gethyas/.github/blob/main/CONTRIBUTING.md"
+  name = "Status"
+  url = "https://status.thulite.io/"
   weight = 20
+
+# [[community]]
+#   name = "Contributing"
+#   url = "https://github.com/gethyas/.github/blob/main/CONTRIBUTING.md"
+#   weight = 20
 
 # [[community]]
 #   name = "Open Collective"
