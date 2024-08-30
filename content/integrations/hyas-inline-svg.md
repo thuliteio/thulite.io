@@ -1,11 +1,11 @@
 ---
-title: "@hyas/inline-svg"
-description: "Inline SVG integration for Hyas."
-summary: "Inline SVG integration for Hyas."
+title: "@thulite/inline-svg"
+description: "Inline SVG integration for Thulite."
+summary: "Inline SVG integration for Thulite."
 date: 2023-08-29T14:04:06+02:00
 lastmod: 2023-08-29T14:04:06+02:00
 draft: false
-docs: https://docs.gethyas.com/guides/integrations/inline-svg/
+docs: https://docs.thulite.io/guides/integrations/inline-svg/
 sorts: ["Official", "Images"]
 featured: false # false (default) or true
 weight: 50

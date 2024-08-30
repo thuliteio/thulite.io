@@ -36,27 +36,27 @@ Images now has a new code base, making it more robust, flexible, and easy to use
 
 ## Get started
 
-To take advantage of the latest features, make sure you're running the latest version of Images and have set the new [parameters](https://images.gethyas.com/docs/basics/customizing-images/#update-parameters). You can upgrade to Images 3.1 by running the following command for your package manager of choice:
+To take advantage of the latest features, make sure you're running the latest version of Images and have set the new [parameters](https://images.thulite.io/docs/basics/customizing-images/#update-parameters). You can upgrade to Images 3.1 by running the following command for your package manager of choice:
 
 {{< tabs "update-images" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm install @hyas/images@latest
+npm install @thulite/images@latest
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm upgrade @hyas/images --latest
+pnpm upgrade @thulite/images --latest
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn upgrade @hyas/images --latest
+yarn upgrade @thulite/images --latest
 ```
 
 {{< /tab >}}
@@ -96,7 +96,7 @@ The Markdown above get rendered into the following HTML:
 
 ## Documentation website
 
-To better explain the possibilities of Images, we launched a new documentation website: [images.gethyas.com](https://images.gethyas.com/).
+To better explain the possibilities of Images, we launched a new documentation website: [images.thulite.io](https://images.thulite.io/).
 
 {{< img loading="lazy" fetchpriority="auto" src="images.gethyas.com.jpg" alt="Screenshot homepage images.gethyas.com" class="border-img mb-3">}}
 

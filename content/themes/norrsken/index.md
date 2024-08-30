@@ -9,8 +9,8 @@ toc: true
 types: ["Official", "Blog"]
 technologies: ["Tailwind CSS"]
 pricing: "Paid"
-repo: "https://github.com/gethyas/hyas"
-start: "https://gethyas.com/norrsken/"
+repo: "https://github.com/thuliteio/thulite"
+start: "https://thulite.io/norrsken/"
 demo: ""
 cost: paid # free (default) or paid
 featured: true # false (default) or true

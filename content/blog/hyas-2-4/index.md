@@ -32,7 +32,7 @@ Hyas 2.4 is now available! This release includes a new Hugo requirement, an impr
 <!-- omit in toc -->
 ## Get started
 
-To upgrade an existing project, see the updated [Upgrade to Hyas v2](https://docs.gethyas.com/guides/upgrade-to/v2/) guide.
+To upgrade an existing project, see the updated [Upgrade to Hyas v2](https://docs.thulite.io/guides/upgrade-to/v2/) guide.
 
 ## New Hugo requirement
 
@@ -57,7 +57,7 @@ Hyas 2.4 introduces a cleaner `scripts` section in your projects' `package.json`
     "preview": "vite preview --outDir public"
   },
   "dependencies": {
-    "gethyas": "^2.4.2"
+    "thuliteio": "^2.4.2"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
@@ -101,4 +101,4 @@ yarn run build --baseURL=/ && yarn run preview --host
 <!-- omit in toc -->
 ## Bug Fixes
 
-Hyas 2.4 also includes several bug fixes. Check out the [release notes](https://github.com/gethyas/hyas/releases) to learn more.
+Hyas 2.4 also includes several bug fixes. Check out the [release notes](https://github.com/thuliteio/thulite/releases) to learn more.

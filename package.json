@@ -1,12 +1,12 @@
 {
-  "name": "hyas-website",
+  "name": "thulite-website",
   "version": "1.4.0",
-  "description": "Hyas website",
-  "author": "Ventizo",
+  "description": "Thulite website",
+  "author": "Thulite",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gethyas/gethyas.com.git"
+    "url": "https://github.com/thuliteio/thulite.io.git"
   },
   "scripts": {
     "create": "hugo new",
@@ -16,19 +16,19 @@
     "preview": "vite preview --outDir public"
   },
   "dependencies": {
-    "@hyas/images": "^3.2.0",
-    "@hyas/inline-svg": "^1.1.0",
-    "@hyas/seo": "^2.3.0",
-    "@tabler/icons": "^3.8.0",
-    "@ventizo/starter-core": "^2.3.0",
-    "gethyas": "^2.4.2"
+    "@thulite/images": "^3.3.0",
+    "@thulite/inline-svg": "^1.2.0",
+    "@thulite/seo": "^2.4.0",
+    "@tabler/icons": "^3.12.0",
+    "@ventizo/starter-core": "^2.4.0",
+    "thulite": "^2.5.0"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.7",
-    "prettier": "^3.3.2",
+    "prettier": "^3.3.3",
     "spotlight.js": "^0.7.8",
-    "vite": "^5.3.3"
+    "vite": "^5.4.2"
   },
   "engines": {
     "node": ">=20.11.0"
