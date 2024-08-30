@@ -37,41 +37,41 @@ Hyas' code base is now fully modularized. Main functionalities — for example I
 - **Development tools**: Find and fix problems in scripts, styles, and markdown.
 - **Deploy anywhere**: Deployment guides to different deployment services.
 
-Check out our detailed [Why Hyas](https://docs.gethyas.com/concepts/why-hyas/) breakdown to learn more about what makes Hyas special.
+Check out our detailed [Why Hyas](https://docs.thulite.io/concepts/why-thulite/) breakdown to learn more about what makes Hyas special.
 
 ## Get started
 
-Hyas 2.0 is available now on npm. Visit [new.gethyas.com](https://new.gethyas.com/) to try out Hyas 2.0 in your browser, or run the following command in your terminal to get started with a new project:
+Hyas 2.0 is available now on npm. Visit [new.thulite.io](https://new.thulite.io/) to try out Hyas 2.0 in your browser, or run the following command in your terminal to get started with a new project:
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm create hyas@latest
+npm create thulite@latest
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm create hyas@latest
+pnpm create thulite@latest
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn create hyas
+yarn create thulite
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-Upgrading an existing project to Hyas 2.0? Check out the [v2.0 Upgrade Guide](https://docs.gethyas.com/guides/upgrade-to/v2/).
+Upgrading an existing project to Hyas 2.0? Check out the [v2.0 Upgrade Guide](https://docs.thulite.io/guides/upgrade-to/v2/).
 
 ## New website
 
-To celebrate Hyas v2.0, we kicked off a brand-new redesign of our website: [gethyas.com](https://gethyas.com/)
+To celebrate Hyas v2.0, we kicked off a brand-new redesign of our website: [thulite.io](https://thulite.io/)
 
 {{< img loading="lazy" fetchpriority="auto" src="gethyas.com.jpg" alt="Screenshot homepage gethyas.com" class="border-img mb-3">}}
 

@@ -9,8 +9,8 @@ toc: true
 types: ["Official", "Blog"]
 technologies: ["bolt.css"]
 pricing: "Free"
-repo: "https://github.com/gethyas/bolt"
-demo: "https://bolt-hyas.netlify.app/"
+repo: "https://github.com/thuliteio/bolt"
+demo: "https://bolt-thulite.netlify.app/"
 cost: free # free (default) or paid
 featured: false # false (default) or true
 weight: 20

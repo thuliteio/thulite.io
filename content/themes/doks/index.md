@@ -9,7 +9,7 @@ toc: true
 types: ["Official", "Documentation", "Blog"]
 technologies: ["Bootstrap"]
 pricing: "Free"
-repo: "https://github.com/gethyas/doks"
+repo: "https://github.com/thuliteio/doks"
 demo: "https://doks.netlify.app/"
 cost: free # free (default) or paid
 featured: true # false (default) or true

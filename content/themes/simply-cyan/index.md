@@ -6,7 +6,7 @@ date: 2023-11-24T12:04:30+01:00
 lastmod: 2023-11-24T12:04:30+01:00
 draft: false
 toc: true
-types: ["Blog"]
+types: ["Blog", "Community"]
 technologies: ["CSS"]
 pricing: "Free"
 repo: "https://github.com/h-enk/simply-cyan"

@@ -5,7 +5,7 @@
 [build.environment]
   NODE_VERSION = "20.11.0"
   NPM_VERSION = "10.2.4"
-  HUGO_VERSION = "0.129.0"
+  HUGO_VERSION = "0.131.0"
 
 [context.production]
   command = "npm run build"
@@ -34,6 +34,12 @@
 [[redirects]]
   from = "https://gethyas.com/*"
   to = "https://thulite.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://new.gethyas.com/*"
+  to = "https://new.thulite.io/:splat"
   status = 301
   force = true
 

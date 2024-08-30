@@ -9,8 +9,8 @@ toc: true
 types: ["Official", "Profile"]
 technologies: ["Bootstrap", "CSS"]
 pricing: "Paid"
-repo: "https://github.com/gethyas/hyas"
-start: "https://gethyas.com/vermeer/"
+repo: "https://github.com/thuliteio/thulite"
+start: "https://thulite.io/vermeer/"
 demo: "https://vermeer.netlify.app/"
 cost: paid # free (default) or paid
 featured: true # false (default) or true

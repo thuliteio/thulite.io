@@ -38,7 +38,7 @@ Sed vel ipsum elementum, mattis sem in, venenatis dui. Sed ac risus vel enim iac
 
 {{< callout danger >}} This is a danger callout. Example text to show it in action. {{< /callout >}}
 
-{{< callout context="note" icon="info-circle" title="Prefer to install Hyas manually?" >}}
+{{< callout context="note" icon="info-circle" title="Prefer to install Thulite manually?" >}}
 Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within a callout works with this kind of content.
 {{< /callout >}}
 
@@ -54,33 +54,33 @@ This Boolean attribute indicates whether the details — that is, the contents o
 
 ## Tabs
 
-Run the following command in your terminal to start our handy install wizard, `create-hyas`.
+Run the following command in your terminal to start our handy install wizard, `create-thulite`.
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm create hyas@latest
+npm create thulite@latest
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm create hyas@latest
+pnpm create thulite@latest
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn create hyas
+yarn create thulite
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-`cd` into your new project directory to begin using Hyas. Install your dependencies before continuing.
+`cd` into your new project directory to begin using Thulite. Install your dependencies before continuing.
 
 {{< tabs "install-dependencies" >}}
 {{< tab "npm" >}}
