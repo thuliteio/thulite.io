@@ -1,5 +1,13 @@
 # thulite-website
 
+## 1.5.0
+
+### Minor Changes
+
+- [#307](https://github.com/thuliteio/thulite.io/pull/307) [`64b5ff1`](https://github.com/thuliteio/thulite.io/commit/64b5ff1f4341d53684cadde602c9964f257cb13c) Thanks [@h-enk](https://github.com/h-enk)! - Update for name change from Hyas to Thulite
+
+- [#308](https://github.com/thuliteio/thulite.io/pull/308) [`07be308`](https://github.com/thuliteio/thulite.io/commit/07be308d5a2ab6e1c663f8edb29cff47414800be) Thanks [@h-enk](https://github.com/h-enk)! - Update for migration from Hyas to Thulite
+
 ## 1.4.0
 
 ### Minor Changes
