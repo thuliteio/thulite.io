@@ -38,12 +38,6 @@
   force = true
 
 [[redirects]]
-  from = "https://new.gethyas.com/*"
-  to = "https://new.thulite.io/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "https://www.gethyas.com/*"
   to = "https://thulite.io/"
   status = 301
