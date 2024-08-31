@@ -33,7 +33,7 @@ defaultEmail = "support@thulite.io"
 
   ## Button
   navBarButton = true # false (default) or true
-  navBarButtonUrl = "/about/"
+  navBarButtonUrl = "https://docs.thulite.io/getting-started/"
   navBarButtonText = "Get started"
 
   # FlexSearch
