@@ -43,6 +43,12 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "https://svg.thulite.io/*"
+  to = "https://thulite.io/"
+  status = 302
+  force = true
+
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
   for = "/*"
