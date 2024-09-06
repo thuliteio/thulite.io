@@ -1,7 +1,7 @@
 # Hugo
 title = "Thulite"
 description = "Thulite is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
-images = ["cover.png"]
+images = ["cover-thulite.png"]
 
 # mainSections
 mainSections = ["docs", "legal"]
@@ -150,7 +150,7 @@ defaultEmail = "support@thulite.io"
     logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)
     name = "Thulite" # Name of Organization or Person
     sameAs = ["https://github.com/thuliteio/thulite", "https://x.com/thuliteio", "https://fosstodon.org/@thulite"] # E.g. ["https://github.com/thuliteio/thulite", "https://fosstodon.org/@thulite"]
-    images = ["cover.png"] # ["cover.png"] (default)
+    images = ["cover-thulite.png"] # ["cover.png"] (default)
     article = [] # Article sections
     newsArticle = [] # NewsArticle sections
     blogPosting = ["blog"] # BlogPosting sections
