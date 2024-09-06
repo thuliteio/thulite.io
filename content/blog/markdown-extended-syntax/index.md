@@ -106,13 +106,13 @@ term
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-      {.list-task}
+{.list-task}
 ```
 
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-      {.list-task}
+{.list-task}
 
 ## Emoji
 

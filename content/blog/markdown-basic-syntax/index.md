@@ -129,7 +129,7 @@ _italicized text_
 ## Image
 
 ```md
-![alt text](featured-markdown.png)
+![alt text](cover-markdown-basic-syntax.png)
 ```
 
-![alt text](featured-markdown.png)
+![alt text](cover-markdown-basic-syntax.png)

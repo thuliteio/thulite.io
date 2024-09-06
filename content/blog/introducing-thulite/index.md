@@ -43,8 +43,9 @@ Nothing but the name. Thulite will continue to leverage the power of Hugo and np
 
 ## What's next
 
-- Update all websites for the new name
-- Rename the GitHub organization
-- Rename the npm organization
+- [x] ~~Update all websites for the new name~~
+- [x] ~~Rename the GitHub organization~~
+- [x] ~~Rename the npm organization~~
+{.list-task}
 
 Thank you for using the Hyas web framework for the last five years. We hope you continue building exceptional websites with **Thulite**!
