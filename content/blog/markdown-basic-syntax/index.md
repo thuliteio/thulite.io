@@ -82,13 +82,13 @@ _italicized text_
 - First item
 - Second item
 - Third item
-  {.list-normal}
+{.list-normal}
 ```
 
 - First item
 - Second item
 - Third item
-  {.list-normal}
+{.list-normal}
 
 ### Default
 
@@ -129,7 +129,7 @@ _italicized text_
 ## Image
 
 ```md
-![alt text](cover-markdown-basic-syntax.png)
+![alt text](star-history-202497.png)
 ```
 
-![alt text](cover-markdown-basic-syntax.png)
+![alt text](star-history-202497.png)
