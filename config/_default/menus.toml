@@ -51,6 +51,21 @@
   url = "/blog/"
   weight = 40
 
+[[marketing]]
+  name = "Documentation"
+  url = "https://vermeer.thulite.io/"
+  weight = 10
+
+[[marketing]]
+  name = "Demo"
+  url = "https://vermeer.netlify.app/"
+  weight = 20
+
+[[marketing]]
+  name = "Support"
+  url = "https://support.thulite.io/"
+  weight = 20
+
 # Icon source: https://icon-sets.iconify.design/ri/
 
 [[social]]
@@ -76,20 +91,21 @@
 #   url = "https://docs.thulite.io/"
 #   weight = 10
 
+
 [[resources]]
   name = "Starter templates"
   url = "https://new.thulite.io/"
-  weight = 20
+  weight = 10
 
 [[resources]]
   name = "Themes"
   url = "/themes/"
-  weight = 30
+  weight = 20
 
 [[resources]]
   name = "Integrations"
   url = "/integrations/"
-  weight = 40
+  weight = 30
 
 [[community]]
   name = "Discussions"
@@ -102,19 +118,14 @@
   weight = 10
 
 [[community]]
-  name = "Status"
-  url = "https://status.thulite.io/"
+  name = "Open Collective"
+  url = "https://opencollective.com/thulite"
   weight = 20
 
 # [[community]]
 #   name = "Contributing"
 #   url = "https://docs.thulite.io/contribute/"
 #   weight = 20
-
-[[community]]
-  name = "Open Collective"
-  url = "https://opencollective.com/thulite"
-  weight = 30
 
 [[documentation]]
   name = "Thulite"
@@ -136,6 +147,11 @@
   url = "https://seo.thulite.io/"
   weight = 40
 
+# [[documentation]]
+#   name = "Doks"
+#   url = "https://getdoks.org/"
+#   weight = 50
+
 # [[about]]
 #   name = "Blog"
 #   url = "/blog/"
@@ -156,25 +172,20 @@
   url = "/blog/"
   weight = 10
 
-[[links]]
-  name = "Doks"
-  url = "https://getdoks.org/"
-  weight = 20
+# [[links]]
+#   name = "Doks"
+#   url = "https://getdoks.org/"
+#   weight = 20
 
 [[links]]
-  name = "Vermeer"
-  url = "/vermeer/"
+  name = "Thulite Store"
+  url = "https://store.thulite.io/"
   weight = 30
 
 [[links]]
-  name = "Norrsken"
-  url = "/norrsken/"
+  name = "Status"
+  url = "https://status.thulite.io/"
   weight = 40
-
-[[links]]
-  name = "Anna"
-  url = "/anna/"
-  weight = 50
 
 [[legal]]
   name = "Privacy Policy"
@@ -185,6 +196,11 @@
   name = "Terms of Service"
   url = "/terms/"
   weight = 20
+
+[[legal]]
+  name = "EULA"
+  url = "/eula/"
+  weight = 30
 
 [[landing]]
   name = "GitHub"

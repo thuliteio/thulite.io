@@ -49,15 +49,16 @@ defaultEmail = "support@thulite.io"
   searchLimit = 99 # 0 (no limit, default) or natural number
 
   # Global alert
-  alert = true # false (default) or true
+  alert = false # false (default) or true
   alertDismissable = true # true (default) or false
   # alertText = '<a class="alert-link stretched-link" href="/anna/">Anna will ship soon!</a>'
-  alertText = '<a class="alert-link stretched-link" href="/blog/hyas-is-now-thulite/">Hyas is now <strong>Thulite</strong>!</a>'
+  # alertText = '<a class="alert-link stretched-link" href="/blog/hyas-is-now-thulite/">Hyas is now <strong>Thulite</strong>!</a>'
+  alertText = '<a class="alert-link stretched-link" href="/vermeer/">Introducing <strong>Vermeer</strong>!</a>'
 
   # Global notice
-  notice = true # false (default) or true
-  noticeText = 'Discover Vermeer!' # E.g. 'Hyas 2.1 is here!'
-  noticeLink = '/vermeer/' # E.g. '/blog/hyas-2.1/'
+  notice = false # false (default) or true
+  noticeText = 'Discover Anna!' # E.g. 'Hyas 2.1 is here!'
+  noticeLink = '/anna/' # E.g. '/blog/hyas-2.1/'
 
   # Bootstrap
   bootstrapJavascript = true # false (default) or true
@@ -71,6 +72,7 @@ defaultEmail = "support@thulite.io"
 
   # Footer
   footer = '© 2024 Thulite — <a href="https://github.com/thuliteio/thulite/blob/main/LICENSE" target="_blank">MIT License</a>'
+  footerSimple = '© 2024 Thulite'
 
   # Multilingual
   multilingualMode = false # false (default) or true
