@@ -8,7 +8,7 @@ draft: false
 toc: true
 types: ["Official", "Documentation", "Blog"]
 technologies: ["Bootstrap"]
-pricing: "Free"
+pricing: "Free" # "Free" (default) or "Paid"
 repo: "https://github.com/thuliteio/doks"
 demo: "https://doks.netlify.app/"
 cost: free # free (default) or paid

@@ -8,9 +8,9 @@ draft: false
 toc: true
 types: ["Official", "Blog"]
 technologies: ["Tailwind CSS"]
-pricing: "Paid"
+pricing: "Paid" # "Free" (default) or "Paid"
 repo: "https://github.com/thuliteio/thulite"
-start: "https://thulite.io/norrsken/"
+website: "https://store.thulite.io/norrsken/"
 demo: ""
 cost: paid # free (default) or paid
 featured: true # false (default) or true

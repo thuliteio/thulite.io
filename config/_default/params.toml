@@ -13,6 +13,11 @@ defaultEmail = "support@thulite.io"
   twitter = "thuliteio"
   facebook_admin = ""
 
+[themes]
+  [themes.messages]
+    inactive = "Not available, contact support"
+    other = "Unkown error, contact support"
+
 # Add-ons
 [add_ons]
   carbonAds = false # false (default) or true

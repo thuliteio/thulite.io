@@ -8,7 +8,7 @@ draft: false
 toc: true
 types: ["Official", "Blog"]
 technologies: ["bolt.css"]
-pricing: "Free"
+pricing: "Free" # "Free" (default) or "Paid"
 repo: "https://github.com/thuliteio/bolt"
 demo: "https://bolt-thulite.netlify.app/"
 cost: free # free (default) or paid

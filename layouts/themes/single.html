@@ -32,19 +32,37 @@
               </div>
 
               <div class="d-grid gap-3">
-                {{ $start := "" }}
-                {{- if .Params.start }}
-                  {{ $start = .Params.start }}
+                {{- if eq .Params.pricing "Free" }}
+                  <a class="btn btn-light btn-action rounded-pill" href="{{ .Params.repo }}" role="button">Get started
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M17 7l-10 10"></path>
+                      <path d="M8 7l9 0l0 9"></path>
+                    </svg>
+                  </a>
+                {{- else if eq .Params.pricing "Paid" }}
+                  <a class="btn btn-light btn-action rounded-pill" href="{{ .Params.website }}" role="button">Buy now
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M17 7l-10 10"></path>
+                      <path d="M8 7l9 0l0 9"></path>
+                    </svg>
+                  </a>
                 {{- else }}
-                  {{ $start = .Params.repo }}
+                  {{- $opts := dict
+                    "page" .
+                    "src" "outline/alert-triangle"
+                    "stroke-width" "1"
+                    "stroke" "#e685b5"
+                    "height" "2rem"
+                    "width" "2rem"
+                    "class" "svg-inline-custom me-1"
+                  }}
+                  <p class="mb-0">
+                    {{- partial "inline-svg" $opts }}
+                    <code>{{ site.Params.themes.messages.other }}</code>
+                  </p>
                 {{- end }}
-                <a class="btn btn-light btn-action rounded-pill" href="{{ $start }}" role="button">Get started
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M17 7l-10 10"></path>
-                    <path d="M8 7l9 0l0 9"></path>
-                  </svg>
-                </a>
                 {{- if .Params.demo }}
                 <a class="btn btn-outline-light btn-action rounded-pill" href="{{ .Params.demo }}" role="button">Live demo
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
