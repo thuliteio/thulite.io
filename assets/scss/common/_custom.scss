@@ -218,16 +218,19 @@ span.email b {
     }
 }
 
-.home .card.card-main,
-.showcase .card.card-main {
-    padding: 5rem ;
+.home .card.card-main {
+    padding: 3rem 2rem;
 }
 
+@include media-breakpoint-up(md) {
+    .home .card.card-main {
+        padding: 6rem 4rem;
+    }
+}
 
 @include media-breakpoint-up(lg) {
-    .home .card.card-main,
-    .showcase .card.card-main {
-        padding: 10rem ;
+    .home .card.card-main {
+        padding: 9rem 6rem;
     }
 }
 
