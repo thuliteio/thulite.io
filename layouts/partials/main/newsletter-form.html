@@ -1,0 +1,10 @@
+<form class="row justify-content-end gx-2 gy-3" name="newsletter" action="/newsletter/success/" method="post" netlify-honeypot="name" data-netlify="true">
+  <div class="col-lg-6 col-xl-5">
+    <input name="name" type="text" class="form-control visually-hidden" placeholder="Your Name" aria-label="Name">
+    <input name="email" type="email" class="form-control rounded-pill px-4" placeholder="your@email.com" aria-label="Email address" aria-describedby="button-submit" required>
+    <input name="page" type="hidden" value="{{ .Page.Permalink }}">
+  </div>
+  <div class="col-lg-4 col-xl-3">
+    <button type="submit" class="btn btn-light rounded-pill w-100" aria-label="Submit" id="button-submit">Subscribe</button>
+  </div>
+</form>
