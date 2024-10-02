@@ -217,31 +217,3 @@ span.email b {
         }
     }
 }
-
-.home .card.card-main {
-    padding: 3rem 2rem;
-}
-
-@include media-breakpoint-up(md) {
-    .home .card.card-main {
-        padding: 6rem 4rem;
-    }
-}
-
-@include media-breakpoint-up(lg) {
-    .home .card.card-main {
-        padding: 9rem 6rem;
-    }
-}
-
-.display-7 {
-    font-size: calc(1rem + 1.5vw);
-    font-weight: 300;
-    line-height: 1.3;
-}
-
-@include media-breakpoint-up(lg) {
-    .display-7 {
-        font-size: 2rem;
-    }
-}

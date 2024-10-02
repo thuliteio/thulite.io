@@ -175,12 +175,13 @@
   </div>
 </section>
 
-<section class="section ">
+<section class="section position-relative">
+  <div class="bg-grid position-absolute inset-0 z-n1"></div>
   <div class="container">
     <div class="content">
       <div class="row justify-content-center">
-        <div class="col-lg-5 p-lg-3">
-          <h2>Learn in our docs</h2>
+        <div class="col-lg-5">
+          <h2 class="mt-0">Learn in our docs</h2>
           <p>Our docs are the best place to learn, troubleshoot, and explore Thulite — discover how-to guides and more.</p>
           <a class="text-white mb-1" href="https://docs.thulite.io/">Start learning
             {{- $opts := dict
@@ -193,8 +194,8 @@
             {{- partial "inline-svg" $opts }}
           </a>
         </div>
-        <div class="col-lg-5 mt-3 mt-lg-0p-lg-3">
-          <h2>Join our community</h2>
+        <div class="col-lg-5">
+          <h2 class="mt-5 mt-lg-0">Join our community</h2>
           <p>Get support, get involved, and join our community of Thulite developers — it all happens on Discussions.</p>
           <a class="text-white mb-1" href="https://github.com/orgs/thuliteio/discussions">Join Discussions
             {{- $opts := dict
@@ -212,30 +213,25 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section-lg position-relative border-top border-bottom bg-dark">
+  <div class="bg-grid22 position-absolute inset-0 z-n1"></div>
   <div class="container">
-    <div class="content">
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="card card-main">
-            <div class="card-body">
-              <h2 class="display-5 fw-normal text-center text-white mt-1">Start building with Thulite</h2>
-              <div class="actions d-flex justify-content-center align-items-center">
-                <a class="btn btn-lg btn-light rounded-pill" href="https://docs.thulite.io/getting-started/" role="button"><span>Get started</span></a>
-              </div>
-            </div>
-          </div>
+    <div class="row justify-content-center">
+      <div class="col-10 col-lg-8 col-xxl-6 text-center">
+        <h2 class="display-5 fw-normal text-white">Start building with Thulite</h2>
+        <div class="actions d-flex justify-content-center align-items-center">
+          <a class="btn btn-lg btn-light rounded-pill" href="https://docs.thulite.io/getting-started/" role="button"><span>Get started</span></a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section mb-3 mb-lg-5">
+<section class="section">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 col-xl-7 col-xxl-5">
-        <p class="lead text-center font-monospace mb-4 mb-lg-5">Sponsors</p>
+        <p class="lead text-center font-monospace my-4 mt-lg-3 mb-lg-5">Sponsors</p>
       </div>
     </div>
   </div>
