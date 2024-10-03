@@ -1,4 +1,4 @@
-{{ if .IsHome }}
+{{ if or .IsHome (eq .Type "blog") (eq .Type "categories") (eq .Type "tags") (eq .Type "authors") }}
   <section class="section border-top bg-dark">
     <div class="container">
       <div class="row justify-content-center align-items-center g-2">
