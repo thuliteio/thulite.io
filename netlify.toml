@@ -3,9 +3,9 @@
   functions = "functions"
 
 [build.environment]
-  NODE_VERSION = "20.11.0"
-  NPM_VERSION = "10.2.4"
-  HUGO_VERSION = "0.131.0"
+  NODE_VERSION = "20.17.0"
+  NPM_VERSION = "10.8.2"
+  HUGO_VERSION = "0.134.2"
 
 [context.production]
   command = "npm run build"
@@ -41,12 +41,6 @@
   from = "https://www.gethyas.com/*"
   to = "https://thulite.io/"
   status = 301
-  force = true
-
-[[redirects]]
-  from = "https://svg.thulite.io/*"
-  to = "https://thulite.io/"
-  status = 302
   force = true
 
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file

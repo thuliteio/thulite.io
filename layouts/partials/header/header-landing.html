@@ -8,8 +8,6 @@
     <span class="visually-hidden">{{ site.Title }}</span>
   </a>
 <!--
-  <a class="btn btn-light rounded-pill px-4" href="{{ "/contact/" | absURL }}" role="button">Contact</a>
--->
   <ul class="list-inline nav-social mb-0">
     {{ range .Site.Menus.landing -}}
       <li class="list-inline-item">
@@ -17,6 +15,7 @@
       </li>
     {{ end -}}
   </ul>
+-->
 </header>
 {{ if site.Params.starter.navbarSticky -}}
 </div>

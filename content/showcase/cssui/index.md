@@ -1,11 +1,11 @@
 ---
-title: "Proteinreport"
-description: "Proteinreport"
-summary: "Proteinreport"
-date: 2023-11-27T16:06:58+01:00
-lastmod: 2023-11-27T16:06:58+01:00
+title: "CSSUI"
+description: "CSSUI"
+summary: "CSSUI"
+date: 2024-09-28T21:02:33+02:00
+lastmod: 2024-09-28T21:02:33+02:00
 draft: true
-website: "https://www.proteinreport.org/" # URL
+website: "https://www.cssui.dev/" # URL
 weight: 50
 seo:
   title: "" # custom title (optional)

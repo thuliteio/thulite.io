@@ -8,9 +8,9 @@ draft: false
 toc: true
 types: ["Official", "Profile"]
 technologies: ["Bootstrap", "CSS"]
-pricing: "Paid"
+pricing: "Paid" # "Free" (default) or "Paid"
 repo: "https://github.com/thuliteio/thulite"
-start: "https://thulite.io/vermeer/"
+website: "https://store.thulite.io/vermeer/"
 demo: "https://vermeer.netlify.app/"
 cost: paid # free (default) or paid
 featured: true # false (default) or true

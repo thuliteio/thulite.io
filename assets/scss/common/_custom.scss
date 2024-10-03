@@ -80,7 +80,6 @@ img {
 }
 
 .notice:hover {
-    // background-color: var(--sl-color-gray-3);
     opacity: 0.9;
 }
 
@@ -170,12 +169,6 @@ header .nav-secondary a:hover {
     margin-top: 0.5rem;
 }
 
-.landing .form-control,
-.landing .btn:not(.btn-up) {
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-}
-
 // Email obfuscation
 span.email b {
   display: none;
@@ -185,25 +178,6 @@ span.email b {
   font-weight: 400;
   text-underline-offset: 2px;
 }
-
-.spotlight {
-    transition: transform 0.3s;
-}
-
-.spotlight:hover {
-    cursor: pointer;
-    transform: scale(1.025);
-}
-
-.spl-header {
-    padding-left: 0.75rem;
-    padding-right: 0.5rem;
-}
-
-.spl-title {
-    font-family: var(--bs-body-font-family);
-    font-weight: 300;
- }
 
  .thulite-logo-semibold-wide {
     width: 110px;
@@ -216,3 +190,75 @@ span.email b {
         height: 100%;
     }
 }
+
+.icon-circle {
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 50%;
+    border: 1px solid var(--sl-color-gray-5);
+    background-color: var(--sl-color-gray-6);
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .icon-circle {
+        width: 3.5rem;
+        height: 3.5rem;
+
+        svg {
+            width: 1.75rem;
+            height: 1.75rem;
+        }
+    }
+}
+
+.landing .form-control, .landing .btn:not(.btn-up) {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+
+// Source: https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6
+
+.spotlight-group {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .spotlight {
+      flex: 0 0 auto;
+    }
+  }
+
+  .spotlight {
+    transition: transform 0.3s;
+  }
+
+  .spotlight:first-child {
+    margin-left: 0 !important;
+  }
+
+  .spotlight:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+  }
+
+  .spl-header {
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+  }
+
+  .spl-title {
+    font-family: var(--bs-body-font-family);
+    font-weight: 300;
+  }
