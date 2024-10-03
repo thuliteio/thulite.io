@@ -1,5 +1,0 @@
----
-"thulite-website": minor
----
-
-Restructure

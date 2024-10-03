@@ -1,5 +1,11 @@
 # thulite-website
 
+## 1.6.0
+
+### Minor Changes
+
+- [#309](https://github.com/thuliteio/thulite.io/pull/309) [`c6607f0`](https://github.com/thuliteio/thulite.io/commit/c6607f0997718635c9def47c82c3d30c5b971f89) Thanks [@h-enk](https://github.com/h-enk)! - Restructure
+
 ## 1.5.0
 
 ### Minor Changes
