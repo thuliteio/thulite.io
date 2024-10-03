@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="section-xl position-relative">
+  <div class="bg-grid position-absolute inset-0 z-n1"></div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 col-xl-7">
+        <div class="content">
+          <h1 class="display-2 fw-normal">{{ .Title }}</h1>
+          {{ .Summary }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
