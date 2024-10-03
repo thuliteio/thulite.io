@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}" data-bs-theme="{{ site.Params.starter.colorMode | default "auto" }}">
+  {{ partial "head/head" . }}
+  {{ partial "head/body-class" . }}
+  <body class="{{ delimit (.Scratch.Get "class") " " }}">
+    {{ partial "header/header-landing" . }}
+    {{ block "main" . }}{{ end }}
+    {{ block "sidebar-prefooter" . }}{{ end }}
+    {{ block "sidebar-footer" . }}{{ end }}
+    {{ partial "footer/footer-landing" . }}
+    {{ if templates.Exists "partials/footer/script-footer.html" -}}
+      {{ partial "footer/script-footer" . }}
+    {{ else -}}
+      {{ partial "footer/script-footer-core" . }}
+    {{ end -}}
+  </body>
+</html>

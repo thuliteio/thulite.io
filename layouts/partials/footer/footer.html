@@ -83,7 +83,7 @@
     <div class="row nav-tertiary">
       <div class="col-md-6">
         <ul class="list-inline text-center text-md-start">
-          {{ range first 2 .Site.Menus.legal -}}
+          {{ range .Site.Menus.legal -}}
             <li class="list-inline-item">
               <a href="{{ .URL | absURL }}">{{ .Name }}</a>
             </li>

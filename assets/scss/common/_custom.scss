@@ -217,3 +217,48 @@ span.email b {
         }
     }
 }
+
+.landing .form-control, .landing .btn:not(.btn-up) {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+
+// Source: https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6
+
+.spotlight-group {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .spotlight {
+      flex: 0 0 auto;
+    }
+  }
+
+  .spotlight {
+    transition: transform 0.3s;
+  }
+
+  .spotlight:first-child {
+    margin-left: 0 !important;
+  }
+
+  .spotlight:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+  }
+
+  .spl-header {
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+  }
+
+  .spl-title {
+    font-family: var(--bs-body-font-family);
+    font-weight: 300;
+  }

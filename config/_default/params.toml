@@ -77,7 +77,7 @@ defaultEmail = "support@thulite.io"
 
   # Footer
   footer = '© 2024 Thulite — <a href="https://github.com/thuliteio/thulite/blob/main/LICENSE" target="_blank">MIT License</a>'
-  footerSimple = '© 2024 Thulite'
+  footerLanding = '© 2024 Thulite — <a href="https://store.thulite.io/licenses/" target="_blank">Licenses</a>'
 
   # Multilingual
   multilingualMode = false # false (default) or true

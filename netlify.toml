@@ -43,24 +43,6 @@
   status = 301
   force = true
 
-[[redirects]]
-  from = "/vermeer/"
-  to = "https://store.thulite.io/vermeer/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/norrsken/"
-  to = "https://store.thulite.io/norrsken/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/anna/"
-  to = "https://store.thulite.io/anna/"
-  status = 301
-  force = true
-
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
   for = "/*"
