@@ -1,8 +1,8 @@
 ---
 title: "Vermeer"
 url: "/vermeer/"
-description: "Vermeer is a profile theme with an eye-catching marquee at the top of the page. Available soon!"
-summary: "Vermeer is a profile theme with an eye-catching marquee at the top of the page. Available soon!"
+description: "Vermeer is a one-page profile theme for Thulite that will make you stand out. Available soon!"
+summary: "Vermeer is a one-page profile theme for Thulite that will make you stand out. Available soon!"
 date: 2024-10-03T10:01:38+02:00
 lastmod: 2024-10-03T10:01:38+02:00
 draft: false
