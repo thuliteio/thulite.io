@@ -27,7 +27,7 @@ seo:
       availability: https://schema.org/OnlineOnly
 ---
 
-Vermeer is a one-page profile theme for Thulite that will make you stand out. Unique design, accessible, and easy setup.
+Vermeer is a one-page profile theme for Thulite. It features a unique design, easy setup, and 13 different color schemes.
 
 ## Features
 
