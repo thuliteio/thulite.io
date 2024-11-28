@@ -59,7 +59,7 @@ defaultEmail = "support@thulite.io"
   # alertText = '<a class="alert-link stretched-link" href="/anna/">Anna will ship soon!</a>'
   # alertText = '<a class="alert-link stretched-link" href="/blog/hyas-is-now-thulite/">Hyas is now <strong>Thulite</strong>!</a>'
   # alertText = '<a class="alert-link stretched-link" href="/vermeer/">Introducing <strong>Vermeer</strong>!</a>'
-  alertText = '<strong>Cyber Sale</strong>! <a class="alert-link stretched-link text-decoration-none" href="https://store.thulite.io/vermeer/">Get Vermeer at 40% off with code <strong>THULITE40</strong></a>'
+  alertText = '<strong>Cyber Sale</strong>! <a class="alert-link stretched-link text-decoration-none" href="https://store.thulite.io/vermeer/?utm_source=thulite&utm_medium=banner&utm_campaign=cyber_sale">Get Vermeer at 40% off with code <strong>THULITE40</strong></a>'
 
   # Global notice
   notice = true # false (default) or true
