@@ -1,11 +1,11 @@
 ---
-title: "GameSupport"
-description: "GameSupport"
-summary: "GameSupport"
-date: 2023-08-31T08:47:02+02:00
-lastmod: 2023-08-31T08:47:02+02:00
+title: "Henk Verlinde"
+description: "Henk Verlinde"
+summary: "Henk Verlinde"
+date: 2024-12-02T16:37:04+01:00
+lastmod: 2024-12-02T16:37:04+01:00
 draft: false
-website: "https://gamesupport.gg/" # URL
+website: "https://henkverlinde.com/" # URL
 weight: 50
 seo:
   title: "" # custom title (optional)
