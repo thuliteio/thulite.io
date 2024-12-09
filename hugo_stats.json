@@ -53,9 +53,6 @@
     "classes": [
       "actions",
       "active",
-      "alert",
-      "alert-global",
-      "alert-link",
       "align-items-center",
       "authors",
       "bg-blue-green-gradient",
@@ -344,7 +341,6 @@
       "visually-hidden",
       "w-100",
       "w-8",
-      "z-0",
       "z-n1"
     ],
     "ids": [
