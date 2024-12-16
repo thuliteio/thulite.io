@@ -77,6 +77,11 @@ img {
     opacity: 1;
     color: var(--sl-color-white);
     margin-bottom: 0.5rem;
+
+    /*
+    background: linear-gradient(var(--sl-color-gray-6), var(--sl-color-gray-6)) padding-box, linear-gradient(103.55deg, #7152DC 16.12%, #2886A9 41.87%, rgba(63, 122, 144, 0.53) 84.45%) border-box;
+    border: 1px solid transparent;
+    */
 }
 
 .notice:hover {

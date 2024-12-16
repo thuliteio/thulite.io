@@ -63,8 +63,8 @@ defaultEmail = "support@thulite.io"
 
   # Global notice
   notice = true # false (default) or true
-  noticeText = 'Hyas is now Thulite' # E.g. 'Thulite Store is open!'
-  noticeLink = '/blog/hyas-is-now-thulite/' # E.g. '/blog/hyas-2.1/'
+  noticeText = 'Anna will ship soon' # E.g. 'Thulite Store is open!'
+  noticeLink = '/anna/' # E.g. '/blog/hyas-2.1/'
 
   # Bootstrap
   bootstrapJavascript = true # false (default) or true
