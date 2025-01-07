@@ -4,7 +4,7 @@ description: "Henk Verlinde"
 summary: "Henk Verlinde"
 date: 2024-12-02T16:37:04+01:00
 lastmod: 2024-12-02T16:37:04+01:00
-draft: false
+draft: true
 website: "https://henkverlinde.com/" # URL
 weight: 50
 seo:
