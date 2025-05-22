@@ -267,3 +267,16 @@ span.email b {
     font-family: var(--bs-body-font-family);
     font-weight: 300;
   }
+
+//
+
+/*
+h1, h2, h3 {
+    font-family: var(--bs-font-monospace);
+}
+    */
+
+img, img-fluid {
+    max-width: 100%;
+    height: auto;
+}
