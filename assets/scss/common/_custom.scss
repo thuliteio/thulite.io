@@ -295,3 +295,30 @@ h1.display-3.fw-normal,
 h1.display-4.fw-normal {
     font-weight: 600 !important;
 }
+
+.card.card-cta-lg {
+    // background-image: linear-gradient(to right, #58a6ff, #56d364);
+    background-image: radial-gradient(circle at 85% 1%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 96%,transparent 96%, transparent 100%),radial-gradient(circle at 14% 15%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 1%,transparent 1%, transparent 100%),radial-gradient(circle at 60% 90%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 20%,transparent 20%, transparent 100%),radial-gradient(circle at 79% 7%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 78%,transparent 78%, transparent 100%),radial-gradient(circle at 55% 65%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 52%,transparent 52%, transparent 100%),linear-gradient(135deg, rgb(88,166,255),rgb(86,211,100));
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-radius: 1.5rem;
+}
+
+@include media-breakpoint-up(lg) {
+.card.card-cta-lg {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+}
+
+/*
+.sidebar-section a:not(.btn, .text-link) {
+  // color: #b3c7ff;
+  color: rgba(232, 196, 249, 1);
+}
+
+.sidebar-section a:not(.btn, .text-link):hover {
+  // color: #b3c7ff;
+  color: $white;
+}
+*/
