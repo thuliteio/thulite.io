@@ -280,3 +280,18 @@ img, img-fluid {
     max-width: 100%;
     height: auto;
 }
+
+//
+h1.display-1.fw-normal {
+    font-weight: 700 !important;
+}
+
+h2,
+h3,
+h2.display-4.fw-normal,
+h2.display-5.fw-normal,
+h2.display-6.fw-normal,
+h1.display-3.fw-normal,
+h1.display-4.fw-normal {
+    font-weight: 600 !important;
+}
