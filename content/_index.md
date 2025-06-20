@@ -1,7 +1,10 @@
 ---
-title: "Build fast, secure websites"
-description: "Thulite is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
-summary: "Thulite is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
+# title: "Build fast, secure websites"
+title: The lightweight web framework for static sites
+# description: "Thulite is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
+description: Fast, modular, and developer-friendly. Build static sites with real power — without the bloat.
+# summary: "Thulite is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
+summary: Fast, modular, and developer-friendly. Build static sites with real power — without the bloat.
 date: 2020-04-17T12:18:10+00:00
 lastmod: 2020-04-17T12:18:10+00:00
 draft: false

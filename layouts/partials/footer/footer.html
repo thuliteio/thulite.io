@@ -1,17 +1,28 @@
 {{ if or .IsHome (eq .Type "blog") (eq .Type "categories") (eq .Type "tags") (eq .Type "authors") }}
-  <section class="section border-top bg-dark">
-    <div class="container">
-      <div class="row justify-content-center align-items-center g-2">
-        <div class="col-11 col-md-9 col-lg-5">
+
+
+<section class="section position-relative22">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col col-lg-10 text-center">
+
+
+          <div class="card card-cta-lg">
+            <div class="card-body">
           <h2 class="display-6 fw-normal text-white">Let's keep in touch</h2>
-          <p class="mb-lg-0">Enter your email to stay up to date with the latest updates from Thulite.</p>
-        </div>
-        <div class="col-11 col-md-9 col-lg-7">
-          {{ partial "main/newsletter-form" }}
-        </div>
+          <p>Enter your email to stay up to date with the latest updates from Thulite.</p>
+                    {{ partial "main/newsletter-form" }}
+
+
+            </div>
+          </div>
+
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
 {{ end }}
 
 <footer>

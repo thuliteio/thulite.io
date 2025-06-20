@@ -296,15 +296,40 @@ h1.display-4.fw-normal {
     font-weight: 600 !important;
 }
 
+.card.card-cta {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 1.5rem;
+}
+
 .card.card-cta-lg {
-    // background-image: linear-gradient(to right, #58a6ff, #56d364);
-    background-image: radial-gradient(circle at 85% 1%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 96%,transparent 96%, transparent 100%),radial-gradient(circle at 14% 15%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 1%,transparent 1%, transparent 100%),radial-gradient(circle at 60% 90%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 20%,transparent 20%, transparent 100%),radial-gradient(circle at 79% 7%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 78%,transparent 78%, transparent 100%),radial-gradient(circle at 55% 65%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 52%,transparent 52%, transparent 100%),linear-gradient(135deg, rgb(88,166,255),rgb(86,211,100));
     padding-top: 5rem;
     padding-bottom: 5rem;
     border-radius: 1.5rem;
 }
 
+.bg-blue-circles{
+    background-image: radial-gradient(circle at 17% 77%, rgba(17, 17, 17,0.04) 0%, rgba(17, 17, 17,0.04) 50%,rgba(197, 197, 197,0.04) 50%, rgba(197, 197, 197,0.04) 100%),radial-gradient(circle at 26% 17%, rgba(64, 64, 64,0.04) 0%, rgba(64, 64, 64,0.04) 50%,rgba(244, 244, 244,0.04) 50%, rgba(244, 244, 244,0.04) 100%),radial-gradient(circle at 44% 60%, rgba(177, 177, 177,0.04) 0%, rgba(177, 177, 177,0.04) 50%,rgba(187, 187, 187,0.04) 50%, rgba(187, 187, 187,0.04) 100%),linear-gradient(19deg, rgb(28, 117, 250),rgb(34, 2, 159));
+}
+
+.bg-green-circles{
+    background-image: radial-gradient(circle at 17% 1%, rgba(198, 198, 198,0.03) 0%, rgba(198, 198, 198,0.03) 50%,rgba(42, 42, 42,0.03) 50%, rgba(42, 42, 42,0.03) 100%),radial-gradient(circle at 8% 81%, rgba(253, 253, 253,0.03) 0%, rgba(253, 253, 253,0.03) 50%,rgba(36, 36, 36,0.03) 50%, rgba(36, 36, 36,0.03) 100%),radial-gradient(circle at 83% 29%, rgba(164, 164, 164,0.03) 0%, rgba(164, 164, 164,0.03) 50%,rgba(60, 60, 60,0.03) 50%, rgba(60, 60, 60,0.03) 100%),radial-gradient(circle at 96% 62%, rgba(170, 170, 170,0.03) 0%, rgba(170, 170, 170,0.03) 50%,rgba(169, 169, 169,0.03) 50%, rgba(169, 169, 169,0.03) 100%),linear-gradient(338deg, rgb(2, 141, 213),rgb(5, 172, 81));
+}
+
+.bg-purple-circles {
+    background-image: radial-gradient(circle at 28% 93%, rgba(2, 2, 2,0.04) 0%, rgba(2, 2, 2,0.04) 50%,rgba(223, 223, 223,0.04) 50%, rgba(223, 223, 223,0.04) 100%),radial-gradient(circle at 13% 75%, rgba(185, 185, 185,0.04) 0%, rgba(185, 185, 185,0.04) 50%,rgba(25, 25, 25,0.04) 50%, rgba(25, 25, 25,0.04) 100%),radial-gradient(circle at 79% 39%, rgba(34, 34, 34,0.04) 0%, rgba(34, 34, 34,0.04) 50%,rgba(57, 57, 57,0.04) 50%, rgba(57, 57, 57,0.04) 100%),linear-gradient(56deg, rgb(39, 37, 178),rgb(169, 88, 194));
+}
+
+.bg-blue-lens-flare {
+    background-image: radial-gradient(circle at 87% 4%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),radial-gradient(circle at 51% 31%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),radial-gradient(circle at 58% 26%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 4% 34%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 30% 82%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 68% 92%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 19% 32%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 50% 41%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 46% 3%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 49% 58%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),linear-gradient(0deg, rgb(52, 208, 235),rgb(68, 23, 221));
+}
+
 @include media-breakpoint-up(lg) {
+.card.card-cta {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
 .card.card-cta-lg {
     padding-top: 9rem;
     padding-bottom: 9rem;
@@ -322,3 +347,26 @@ h1.display-4.fw-normal {
   color: $white;
 }
 */
+
+.home .card {
+    border-radius: 0.5rem;
+}
+
+.card-sponsor {
+    border-radius: 0.25rem;
+
+    @include media-breakpoint-up(lg) {
+        svg {
+            width: 115px;
+        }
+    }
+}
+
+.card-sponsor:hover {
+    background-color: var(--sl-color-gray-6);
+    border-color: var(--sl-color-gray-5);
+}
+
+.card-sponsor .card-body{
+    margin: 1.5rem 0;
+}

@@ -62,7 +62,7 @@ defaultEmail = "support@thulite.io"
   alertText = '<strong>Cyber Sale</strong>! <a class="alert-link stretched-link text-decoration-none" href="https://store.thulite.io/vermeer/?utm_source=thulite&utm_medium=banner&utm_campaign=cyber_sale">Get Vermeer at 40% off with code <strong>THULITE40</strong></a>'
 
   # Global notice
-  notice = true # false (default) or true
+  notice = false # false (default) or true
   noticeText = 'Hyas is now Thulite' # E.g. 'Thulite Store is open!'
   noticeLink = '/blog/hyas-is-now-thulite/' # E.g. '/blog/hyas-2.1/'
 
