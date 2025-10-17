@@ -1,19 +1,22 @@
----
-title: "Showcase"
-description: "Explore what's possible with Thulite."
-summary: "Explore what's possible with Thulite"
-date: 2023-08-29T15:50:07+02:00
-lastmod: 2023-08-29T15:50:07+02:00
-draft: false
-_build:
-  render: true
-cascade:
-  _build:
-    list: true
-    render: false
-seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
----
++++
+title = 'Showcase'
+summary = 'Discover what you can build with Thulite'
+description = ''
+date = '2025-09-19T20:25:07+02:00'
+lastmod = '2025-09-19T20:25:07+02:00'
+draft = false
+
+[build]
+render = 'always'
+
+[[cascade]]
+[cascade.build]
+list = 'always'
+render = 'never'
+
+[seo]
+title = "" # custom title (optional)
+description = "" # custom description (recommended)
+canonical = "" # custom canonical URL (optional)
+noindex = false # false (default) or true
++++

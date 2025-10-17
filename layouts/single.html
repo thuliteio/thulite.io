@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-6">
+        <h1 class="text-center my-3">{{ .Title }}</h1>
+          <p class="text-center text-body-secondary fs-4">{{ .Params.lastmod | time.Format ":date_long" }}</p>
+        <hr>
+        <div class="page-content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

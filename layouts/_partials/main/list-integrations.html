@@ -1,0 +1,49 @@
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <h1 class="text-center">{{ .LinkTitle }}</h1>
+        <p class="text-center d-none">{{ .Summary }}</p>
+        <div class="mt-4">
+          {{ partial "main/list-sorts" . }}
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="row g-4">
+      {{ range .Paginator.Pages.ByTitle }}
+        <div class="col-lg-6 col-xl-4">
+
+          <div class="card rounded-022 border-022 p-2">
+            {{ $featured := partial "main/get-featured" . }}
+            {{ if $featured -}}
+              {{ partial "picture"  (dict
+                "page" .
+                "src" $featured
+                "process" "fill 1350x900"
+                "lqip" "18x webp q20"
+                "decoding" "async"
+                "fetchpriority" "auto"
+                "loading" "lazy"
+                "alt" .Title
+                "class" "card-img-top rounded-022"
+              )}}
+            {{ end -}}
+            <div class="card-body px-022">
+              <h2 class="card-title fs-5"><a class="nav-link stretched-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+              <p class="card-text text-body-secondary">{{ .Summary }}</p>
+            </div>
+          </div>
+
+        </div>
+      {{ end }}
+    </div>
+    {{ if gt .Paginator.TotalPages 1 }}
+      <div class="row">
+        <div class="col">
+          {{ partial "pagination.html" (dict "page" . "format" "default") }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>

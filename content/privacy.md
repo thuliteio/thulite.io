@@ -1,17 +1,11 @@
----
-title: "Privacy Policy"
-description: "Thulite' Privacy Policy"
-summary: "Thulite' Privacy Policy"
-date: 2023-03-17T09:43:47+01:00
-lastmod: 2024-07-26T09:43:47+01:00
-draft: false
-type: legal
-seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
----
++++
+title = 'Privacy Policy'
+summary = ''
+description = ''
+date = '2025-08-29T06:03:52+02:00'
+lastmod = '2025-09-05T01:51:13+02:00'
+draft = false
++++
 
 In addition to this Privacy Policy, Thulite also has [Terms of Service](/terms/).
 

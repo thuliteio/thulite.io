@@ -13,18 +13,14 @@ defaultMarkdownHandler = "goldmark"
     unsafe = true
 
 [highlight]
-  anchorLineNos = false
-  codeFences = true
+  codeFences = false
   guessSyntax = false
-  hl_Lines = ''
-  hl_inline = false
-  lineAnchors = ''
+  hl_Lines = ""
   lineNoStart = 1
   lineNos = false
   lineNumbersInTable = true
   noClasses = false
-  noHl = false
-  style = 'github-dark'
+  style = "dracula"
   tabWidth = 4
 
 [tableOfContents]

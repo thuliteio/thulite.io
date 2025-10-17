@@ -1,0 +1,181 @@
+// Global declarations for the project
+.section-sm:not(body.section) {
+  padding: 3rem 0;
+}
+
+.section:not(body.section) {
+  padding: 3rem 0;
+}
+
+.section-md:not(body.section) {
+  padding: 4rem 0;
+}
+
+.section-lg:not(body.section) {
+  padding: 5rem 0;
+}
+
+@include media-breakpoint-up(md) {
+  .section-sm:not(body.section) {
+    padding: 3rem 0;
+  }
+
+  .section:not(body.section) {
+    padding: 5rem 0;
+  }
+
+  .section-md:not(body.section) {
+    padding: 6rem 0;
+  }
+
+  .section-lg:not(body.section) {
+    padding: 7rem 0;
+  }
+}
+
+.section-light {
+  background-color: $light-base;
+
+  h1, h2, p {
+    color: $light-contrast;
+  }
+}
+
+hr {
+  width: 128px;
+  background-image: $aurora-horizontal-fade;
+  border: none;
+  height: 1px;
+  margin: 4rem auto;
+  color: inherit;
+  opacity: 1;
+}
+
+img {
+  border-radius: 4px;
+}
+
+.card {
+  border: 1px solid $contrast-4;
+}
+
+mark, .mark {
+  padding: 0.1875em;
+  color: $base;
+  background-color: $contrast;
+}
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+p:not(.card-text) {
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+}
+
+dt {
+  font-weight: 500;
+  margin-top: 1.25rem;
+  margin-bottom: 0.125rem;
+}
+
+dd {
+  margin-bottom: 0.125rem;
+}
+
+.card-title {
+  font-size: $font-size-lg;
+}
+
+.nav-link {
+ color: $contrast;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $contrast;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+  }
+}
+
+.row-sponsors {
+  text-align: center;
+  padding: 3rem 3rem 0;
+
+  .col-6 {
+    position: relative;
+    padding: 0.5rem 0;
+    border: 1px solid $contrast-4;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.15em;
+    }
+  }
+
+  .col-6:first-child {
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  .col-6:nth-child(2) {
+    border-bottom: 0;
+  }
+
+  .col-6:nth-child(3) {
+    border-right: 0;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .row-sponsors {
+    text-align: center;
+    padding: 3rem 9rem 0;
+
+    .col-6 {
+      position: relative;
+      padding: 0.75rem 0;
+      border: 1px solid $contrast-4;
+    }
+
+    .col-6:first-child {
+      border-right: 0;
+      border-bottom: 1px solid $contrast-4;
+    }
+
+    .col-6:nth-child(2) {
+      border-bottom: 1px solid $contrast-4;
+    }
+
+    .col-6:nth-child(3) {
+      border-left: 0;
+    }
+  }
+}
+
+// Step card styles
+.step-number {
+  width: 2.25rem;
+  height: 2.25rem;
+  background: $contrast;
+  color: $base;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.feature-icon {
+  width: 3rem;
+  height: 3rem;
+}

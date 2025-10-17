@@ -1,0 +1,57 @@
+// Base code styling
+code {
+  font-family: $font-family-monospace;
+  font-size: 0.875em;
+  line-height: 1.4;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  background-color: $base-2;
+  color: $contrast;
+  border: 1px solid $contrast-4;
+}
+
+// Block code styling
+pre {
+  font-family: $font-family-monospace;
+  font-size: 0.875em;
+  line-height: 1.5;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0.5rem;
+  background: $base;
+  color: $contrast;
+  border: 1px solid $contrast-4;
+  overflow-x: auto;
+  position: relative;
+
+  // Scrollbar styling
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $base-2;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $contrast-4;
+    border-radius: 4px;
+
+    &:hover {
+      background: $contrast-3;
+    }
+  }
+
+  // Firefox scrollbar
+  scrollbar-width: thin;
+  scrollbar-color: $contrast-4 $base-2;
+
+  code {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+  }
+}

@@ -1,0 +1,61 @@
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <h1 class="text-center">{{ .LinkTitle }}</h1>
+        <p class="text-center d-none">{{ .Summary }}</p>
+        <div class="mt-4">
+          {{ partial "main/list-categories" . }}
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="row justify-content-center g-4">
+      {{ range .Paginator.Pages }}
+
+        <div class="col-lg-6">
+
+          <div class="card rounded-022 border-022 p-2">
+            <div class="card-body px-022">
+              <h2 class="card-title fs-5"><a class="nav-link stretched-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+              <p class="card-text text-body-secondary">{{ .Params.date | time.Format ":date_long" }}</p>
+            </div>
+          </div>
+
+        </div>
+
+<div class="w-100 m-0"></div>
+
+        <!--
+        <div class="col-lg-6">
+
+          <div class="card rounded-0 border-0">
+            <div class="card-body px-0">
+              <h2 class="card-title fs-5"><a class="nav-link stretched-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+              <p class="card-text text-body-secondary">{{ .Params.date | time.Format ":date_medium" }}</p>
+              <p class="card-text text-body-secondary">{{ .Summary }}</p>
+            </div>
+          </div>
+
+        </div>
+      -->
+
+        <!--
+        <div class="col-lg-6 col-xl-4">
+          <div class="position-relative p-4 card">
+            <h2 class="fs-5"><a class="text-decoration-none stretched-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+            <p class="text-body-secondary mt-0">{{ .Params.date | time.Format ":date_medium" }}</p>
+          </div>
+        </div>
+        -->
+      {{ end }}
+    </div>
+    {{ if gt .Paginator.TotalPages 1 }}
+      <div class="row">
+        <div class="col">
+          {{ partial "pagination.html" (dict "page" . "format" "default") }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>

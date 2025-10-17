@@ -1,0 +1,13 @@
+<ul class="nav justify-content-center">
+  {{- $current := . -}}
+  {{- $title := $current.Title | urlize -}}
+  <li class="nav-item">
+    <a class="nav-link{{ if .IsHome }} active{{ end }}"{{ if .IsHome }} aria-current="page"{{ end }} href="/blog/">All ({{ len (where site.RegularPages "Section" "==" "blog") }})</a>
+  </li>
+  {{ range site.Taxonomies.categories.Alphabetical }}
+    {{- $active := eq .Name $title -}}
+    <li class="nav-item">
+      <a class="nav-link{{ if $active }} active{{ end }}"{{ if $active }} aria-current="page"{{ end }} href="{{ .Page.Permalink }}">{{ .Page.LinkTitle }} ({{ .Count }})</a>
+    </li>
+  {{ end }}
+</ul>

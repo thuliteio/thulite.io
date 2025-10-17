@@ -1,0 +1,43 @@
+.showcase .card {
+    height: auto;
+}
+
+.showcase .card-img-overlay {
+    position: absolute;
+    inset: auto 0 0;
+    padding: 1rem;
+    border-radius: 0;
+    background-color: $base-2;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    opacity: 0;
+}
+
+.showcase .card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.row-flex .card {
+    height: 100%;
+}
+// Source: https://codepen.io/ondrejsvestka/pen/gWPpPo
+
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*
+.row-flex [class*="col-"] {
+  margin-bottom: 30px;
+}
+*/
+
+.row-flex .col-md-6 {
+    margin-bottom: 30px;
+}
+
+.row-flex .card [class*="col-"] {
+    margin-bottom: 0;
+}

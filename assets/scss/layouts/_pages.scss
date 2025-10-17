@@ -1,0 +1,38 @@
+/*
+p.meta {
+    margin-top: 1rem;
+    font-size: $font-size-base;
+    font-family: $font-family-monospace;
+    color: $gray-dark;
+  }
+
+  @include media-breakpoint-down(sm) {
+    p.meta {
+      font-size: $font-size-base * 0.9375;
+    }
+  }
+
+  p.meta a {
+    color: $gray-dark;
+  }
+
+  p.meta a:hover,
+  p.meta a:focus {
+    color: $primary;
+  }
+*/
+
+.single:not(.home) .content {
+  h1, h2:not(.card-title), h3, h4, h5, h6 {
+    margin-top: clamp(48px, 6.4vw, 64px);
+    margin-bottom: clamp(21px, 2.4vw, 24px);
+  }
+}
+
+.page-content {
+  padding: 0;
+}
+
+.pagination {
+  margin-top: 5rem!important;
+}

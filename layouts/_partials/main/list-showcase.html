@@ -1,0 +1,53 @@
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-8 col-xxl-6">
+        <h1 class="text-center d-none">{{ .Title }}</h1>
+        <p class="fs-1 lh-sm text-center">{{ .Summary }}</p>
+        <hr class="mb-0">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section pt-4 pb-0">
+  <div class="container">
+    <div class="row row-showcase justify-content-center">
+      <div class="col-main-section">
+        <div class="row row-flex">
+          <!-- Source: https://discourse.gohugo.io/t/how-to-conditionally-apply-html-code-after-every-3-posts/3118/2 -->
+          {{ range $i, $e := .Paginator.Pages }}
+            {{ if or (mod $i 5 | eq 0) (mod $i 5 | eq 1) }}
+              <div class="col-md-6">
+            {{ else }}
+              <div class="col-md-6 col-lg-4">
+            {{ end }}
+                {{ .Render "item" }}
+              </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ if gt .Paginator.TotalPages 1 }}
+      <div class="row">
+        <div class="col">
+          {{ partial "pagination.html" (dict "page" . "format" "default") }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>
+
+<section class="section-md">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-8 col-xxl-6">
+        <h2 class="text-center">Submit your site</h2>
+        <p class="text-center">Got a project built with Thulite? Share it with the community!</p>
+        <div class="text-center">
+          <a class="btn btn-thulite mt-4" target="_blank" href="https://github.com/orgs/thuliteio/discussions/new?category=showcase" role="button">Submit site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

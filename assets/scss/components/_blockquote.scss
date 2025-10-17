@@ -1,0 +1,37 @@
+blockquote {
+  font-size: 22px;
+  font-style: normal;
+  line-height: 1.5;
+  margin-top: clamp(48px, 6.4vw, 64px);
+  margin-bottom: clamp(48px, 6.4vw, 64px);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@supports (mask-image: url("")) or (-webkit-mask-image: url("")) {
+	blockquote:before {
+		background: $aurora-down-right;
+		content: "";
+		display: block;
+		height: 40px;
+		margin: 0 0 16px 0;
+			-webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' height='35' viewBox='0 0 40 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32.0222 0H39.6676L33.0194 17.4448H22.2715L32.0222 0ZM22.2715 35V17.4448H40V35H22.2715ZM9.75069 0H17.3961L10.7479 17.4448H0L9.75069 0ZM0 35V17.4448H17.7285V35H0Z' fill='%23111111'/%3E%3C/svg%3E%0A");
+		mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' height='35' viewBox='0 0 40 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32.0222 0H39.6676L33.0194 17.4448H22.2715L32.0222 0ZM22.2715 35V17.4448H40V35H22.2715ZM9.75069 0H17.3961L10.7479 17.4448H0L9.75069 0ZM0 35V17.4448H17.7285V35H0Z' fill='%23111111'/%3E%3C/svg%3E%0A");
+			-webkit-mask-position: center;
+		mask-position: center;
+			-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		width: 40px;
+	}
+}
+
+blockquote p {
+	background-image:
+		linear-gradient( $contrast-4, transparent 1px ),
+		linear-gradient( transparent 100%, $contrast-4 calc( 1em + 1px ) );
+	background-size:
+		1px 1.5em,
+		1px 1.5em;
+	line-height: 1.5;
+	padding: 1px 0;
+}

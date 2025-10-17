@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+  {{ partial "head/head.html" . }}
+  {{ partial "head/body-class.html" . }}
+  <body class="{{ delimit (.Scratch.Get "class") " " }}">
+    {{ partial "header/header.html" . }}
+    <div class="wrap" role="document">
+      <div class="content">
+        {{ block "main" . }}{{ end }}
+      </div>
+    </div>
+    {{ block "sidebar-footer" . }}{{ end }}
+    {{ partial "footer/footer.html" . }}
+    {{ if templates.Exists "_partials/footer/script-footer.html" -}}
+      {{ partial "footer/script-footer.html" . }}
+    {{ else -}}
+      {{ partial "footer/script-footer-core.html" . }}
+    {{ end -}}
+  </body>
+</html>

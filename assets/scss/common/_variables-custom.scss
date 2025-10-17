@@ -1,92 +1,33 @@
-// Put your custom SCSS variables here
+// Put your custom (S)CSS variables here
 
-$callout-variants: light, info, warning, danger;
+// Dark mode color palette
+$base: #111 !default;
+$base-2: #222 !default;
+$contrast: #fff !default;
+$contrast-2: #7f8080 !default;
+$contrast-3: #636464 !default;
+$contrast-4: #333 !default;
 
-$primary: hsl(224, 100%, 85%);
+// Light mode color palette
+$light-base: #fff !default;
+$light-base-2: #f1f1f1 !default;
+$light-contrast: #111 !default;
+$light-contrast-2: #666 !default;
+$light-contrast-3: #767676 !default;
+$light-contrast-4: #ddd !default;
 
-$enable-negative-margins: true;
+// Dark mode gradients
+$aurora-horizontal: linear-gradient(90deg, #6CE54B 10.61%, #6BE795 30.26%, #367CCF 50.61%, #A746F6 69.74%, #8117BD 90.78%) !default;
+$aurora-horizontal-fade: linear-gradient(90deg, rgba(108, 229, 75, 0) 10.61%, #6BE795 30.26%, #367CCF 50.61%, #A746F6 69.74%, rgba(129, 23, 189, 0) 90.78%) !default;
+$aurora-vertical: linear-gradient(180deg, #6CE54B 10.61%, #6BE795 30.26%, #367CCF 50.61%, #A746F6 69.74%, #8117BD 90.78%) !default;
+$aurora-vertical-fade: linear-gradient(180deg, rgba(108, 229, 75, 0) 10.61%, #6BE795 30.26%, #367CCF 50.61%, #A746F6 69.74%, rgba(129, 23, 189, 0) 90.78%) !default;
+$aurora-down-right: linear-gradient(135deg, #6CE54B 10.61%, #6BE795 30.26%, #367CCF 50.61%, #A746F6 69.74%, #8117BD 90.78%) !default;
+$base-alt-fade-mid-down-right: linear-gradient(135deg, $base 0%, rgba(34, 34, 34, 0.994) 5.89%, rgba(34, 34, 34, 0.976) 10.69%, rgba(34, 34, 34, 0.947) 14.56%, rgba(34, 34, 34, 0.91) 17.67%, rgba(34, 34, 34, 0.864) 20.19%, rgba(34, 34, 34, 0.812) 22.28%, rgba(34, 34, 34, 0.754) 24.12%, rgba(34, 34, 34, 0.692) 25.88%, rgba(34, 34, 34, 0.627) 27.72%, rgba(34, 34, 34, 0.561) 29.81%, rgba(34, 34, 34, 0.494) 32.33%, rgba(34, 34, 34, 0.429) 35.44%, rgba(34, 34, 34, 0.365) 39.31%, rgba(34, 34, 34, 0.305) 44.11%, rgba(34, 34, 34, 0.25) 50%, rgba(34, 34, 34, 0.305) 55.89%, rgba(34, 34, 34, 0.365) 60.69%, rgba(34, 34, 34, 0.429) 64.56%, rgba(34, 34, 34, 0.494) 67.67%, rgba(34, 34, 34, 0.561) 70.19%, rgba(34, 34, 34, 0.627) 72.28%, rgba(34, 34, 34, 0.692) 74.12%, rgba(34, 34, 34, 0.754) 75.88%, rgba(34, 34, 34, 0.812) 77.72%, rgba(34, 34, 34, 0.864) 79.81%, rgba(34, 34, 34, 0.91) 82.33%, rgba(34, 34, 34, 0.947) 85.44%, rgba(34, 34, 34, 0.976) 89.31%, rgba(34, 34, 34, 0.994) 94.11%, $base 100%) !default;
 
-$link-hover-decoration: none;
-
-// scss-docs-start container-max-widths
-$container-max-widths: (
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1140px,
-    xxl: 1410px // 1320px
-);
-// scss-docs-end container-max-widths
-
-@include _assert-ascending($container-max-widths, "$container-max-widths");
-
-$font-family-sans-serif:
-    "InterVariable",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Helvetica,
-    Arial,
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol";
-
-$font-family-monospace: "MD IO 0.5", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
-/*
-$font-family-monospace:
-    ui-monospace,
-    SFMono-Regular,
-    SF Mono,
-    Menlo,
-    Consolas,
-    Liberation Mono,
-    monospace;
-*/
-
-$font-size-base: 1rem; // Assumes the browser default, typically `16px`
-$font-size-md: $font-size-base * 1.125;
-$font-size-xl: $font-size-base * 1.375;
-
-$font-weight-light: 300;
-$font-weight-bolder: 600; // bolder (default)
-
-$font-weight-base: $font-weight-light;
-
-$line-height-base: 1.75; // 1.5 (default)
-
-$h1-font-size: $font-size-base * 5; // $font-size-base * 2.5 (default);
-
-// scss-docs-start headings-variables
-$headings-font-family:
-    "Mona Sans",
-    "Mona Sans Header Fallback",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Helvetica,
-    Arial,
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol";
-
-$headings-font-weight: 500; // 500 (default)
-$headings-line-height: 1.2; // 1.2 (default);
-// scss-docs-end headings-variables
-
-$lead-font-size: $font-size-base * 1.125; // $font-size-base * 1.25 (default)
-
-$table-border-color: var(--sl-color-gray-6); // var(--#{$prefix}border-color);
-
-$spacer: 1rem;
-
-$navbar-padding-y: $spacer * 1;
-
-// Dark color mode variables
-$body-color-dark: hsl(224, 6%, 77%);
-$body-bg-dark: hsl(224, 10%, 10%);
-$headings-color-dark: hsl(0, 0%, 100%);
-$link-color-dark: hsl(224, 100%, 85%);
-$link-hover-color-dark: $link-color-dark;
+// Light mode gradients
+$light-aurora-horizontal: linear-gradient(90deg, #6CE54B 10.61%, #6BE795 30.26%, #367CCF 50.61%, #A746F6 69.74%, #8117BD 90.78%) !default;
+$light-aurora-horizontal-fade: linear-gradient(90deg, rgba(108, 229, 75, 0) 10.61%, #6BE795 30.26%, #367CCF 50.61%, #A746F6 69.74%, rgba(129, 23, 189, 0) 90.78%) !default;
+$light-aurora-vertical: linear-gradient(180deg, #6CE54B 10.61%, #6BE795 30.26%, #367CCF 50.61%, #A746F6 69.74%, #8117BD 90.78%) !default;
+$light-aurora-vertical-fade: linear-gradient(180deg, rgba(108, 229, 75, 0) 10.61%, #6BE795 30.26%, #367CCF 50.61%, #A746F6 69.74%, rgba(129, 23, 189, 0) 90.78%) !default;
+$light-aurora-down-right: linear-gradient(135deg, #6CE54B 10.61%, #6BE795 30.26%, #367CCF 50.61%, #A746F6 69.74%, #8117BD 90.78%) !default;
+$light-base-alt-fade-mid-down-right: linear-gradient(135deg, $light-base 0%, rgba(241, 241, 241, 0.994) 5.89%, rgba(241, 241, 241, 0.976) 10.69%, rgba(241, 241, 241, 0.947) 14.56%, rgba(241, 241, 241, 0.91) 17.67%, rgba(241, 241, 241, 0.864) 20.19%, rgba(241, 241, 241, 0.812) 22.28%, rgba(241, 241, 241, 0.754) 24.12%, rgba(241, 241, 241, 0.692) 25.88%, rgba(241, 241, 241, 0.627) 27.72%, rgba(241, 241, 241, 0.561) 29.81%, rgba(241, 241, 241, 0.494) 32.33%, rgba(241, 241, 241, 0.429) 35.44%, rgba(241, 241, 241, 0.365) 39.31%, rgba(241, 241, 241, 0.305) 44.11%, rgba(241, 241, 241, 0.25) 50%, rgba(241, 241, 241, 0.305) 55.89%, rgba(241, 241, 241, 0.365) 60.69%, rgba(241, 241, 241, 0.429) 64.56%, rgba(241, 241, 241, 0.494) 67.67%, rgba(241, 241, 241, 0.561) 70.19%, rgba(241, 241, 241, 0.627) 72.28%, rgba(241, 241, 241, 0.692) 74.12%, rgba(241, 241, 241, 0.754) 75.88%, rgba(241, 241, 241, 0.812) 77.72%, rgba(241, 241, 241, 0.864) 79.81%, rgba(241, 241, 241, 0.91) 82.33%, rgba(241, 241, 241, 0.947) 85.44%, rgba(241, 241, 241, 0.976) 89.31%, rgba(241, 241, 241, 0.994) 94.11%, $light-base 100%) !default;

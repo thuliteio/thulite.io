@@ -1,17 +1,11 @@
----
-title: "Terms of Service"
-description: "Thulite' Terms of Service"
-summary: "Thulite' Terms of Service"
-date: 2023-03-17T12:17:55+01:00
-lastmod: 2024-07-26T12:17:55+01:00
-draft: false
-type: legal
-seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
----
++++
+title = 'Terms of Service'
+summary = ''
+description = ''
+date = '2025-09-05T13:51:33+02:00'
+lastmod = '2025-09-05T13:51:33+02:00'
+draft = false
++++
 
 These terms of service ("Terms") apply to your access and use of the Thulite website (the "Service"). Please read them carefully.
 
