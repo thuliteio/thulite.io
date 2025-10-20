@@ -179,3 +179,22 @@ dd {
   width: 3rem;
   height: 3rem;
 }
+
+.icon-link {
+    display: inline-flex;
+    gap: 0.375rem;
+    align-items: center;
+    text-decoration-color: inherit;
+    text-underline-offset: 0.25em;
+    backface-visibility: hidden;
+}
+
+@include media-breakpoint-down(md) {
+  .dropdown svg {
+    float: right;
+  }
+}
+
+.nav-taxonomies .nav-link {
+  padding: 0.5rem 0.75rem;
+}

@@ -38,8 +38,8 @@
 .btn-thulite {
   @extend %btn-shared;
 
-  background: $base-alt-fade-mid-down-right;
   background-color: $base-2;
+  background: $base-alt-fade-mid-down-right;
   border-color: $base-2;
   color: $contrast;
 }
