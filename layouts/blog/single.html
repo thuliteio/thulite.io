@@ -16,52 +16,13 @@
             {{ end -}}
           {{ end -}}
         </div>
-        <!--
-        {{- with site.RegularPages.Related . | first 3 }}
-          <h2 class="fs-4">Related posts</h2>
-          <ul class="mt-4">
-            {{ range . }}
-              <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-            {{ end }}
-          </ul>
-        {{- end }}
-        -->
-        <!--
-        <div class="pt-122">
-          {{ partial "main/newsletter-form" . }}
-        </div>
-      -->
       </div>
     </div>
   </div>
 </div>
 
-<div class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-6">
-
-          {{ $pages := .CurrentSection.Pages }}
-          {{- with $pages.Prev . }}
-            <div class="d-flex flex-column flex-md-row align-items-md-center">
-              <div class="template-navigation-link"><span aria-hidden="true">←</span></div>
-              <div><a class="nav-link nav-prev" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
-            </div>
-          {{- end }}
-            </div>
-          <div class="col-6">
-          {{- with $pages.Next . }}
-            <div class="d-flex flex-column align-items-end flex-md-row align-items-md-center justify-content-md-end">
-              <div class="template-navigation-link order-md-1"><span aria-hidden="true">→</span></div>
-              <div class="order-md-0"><a class="nav-link nav-next" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
-            </div>
-          {{- end }}
-
-        </div>
-
-    </div>
-  </div>
-</div>
+{{ $pages := .CurrentSection.Pages }}
+{{ partial "main/section-navigation" (dict "pages" $pages "context" .) }}
 
 <div class="section pt-0 pt-md-3">
   <div class="container">
@@ -72,5 +33,4 @@
     </div>
   </div>
 </div>
-
 {{ end }}

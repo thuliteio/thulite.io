@@ -1,75 +1,47 @@
 {{ define "main" }}
-
 <div class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-10 col-lg-8 col-xl-6">
-          <h1 class="text-center my-3">{{ .LinkTitle }}</h1>
-          <p class="text-center text-body-secondary fs-4">{{ .Summary }}</p>
-          <hr>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-6">
+        <h1 class="text-center my-3">{{ .LinkTitle }}</h1>
+        <p class="text-center text-body-secondary fs-4">{{ .Summary }}</p>
+        <hr>
+      </div>
+      {{ $featured := partial "main/get-featured" . }}
+      {{ if $featured -}}
+        <div class="col-12">
+          {{ partial "picture"  (dict
+            "page" .
+            "src" $featured
+            "process" "fill 1350x900"
+            "lqip" "18x webp q20"
+            "decoding" "async"
+            "fetchpriority" "auto"
+            "loading" "eager"
+            "alt" .Title
+            "class" "mt-4 mb-5"
+          )}}
         </div>
-
-        {{ $featured := partial "main/get-featured" . }}
-        {{ if $featured -}}
-          <div class="col-12">
-            {{ partial "picture"  (dict
-              "page" .
-              "src" $featured
-              "process" "fill 1350x900"
-              "lqip" "18x webp q20"
-              "decoding" "async"
-              "fetchpriority" "auto"
-              "loading" "eager"
-              "alt" .Title
-              "class" "mt-4 mb-5"
-            )}}
-          </div>
-        {{ end -}}
-
-        <div class="col-md-10 col-lg-8 col-xl-6">
-
-          <div class="page-content">
-            {{ .Content }}
-          </div>
-          <div class="text-center mt-5">
-            {{- with .Params.repo }}
-              <a class="btn btn-thulite mt-4" href="{{ . }}" role="button">Get started</a>
-            {{- end }}
-            {{- with .Params.demo }}
-              <a class="btn btn-outline-thulite mt-4" href="{{ . }}" role="button">View demo</a>
-            {{- end }}
-          </div>
+      {{ else -}}
+        <div class="w-100"></div>
+      {{ end -}}
+      <div class="col-md-10 col-lg-8 col-xl-6">
+        <div class="page-content">
+          {{ .Content }}
         </div>
-
+        <div class="text-center mt-5">
+          {{- with .Params.repo }}
+            <a class="btn btn-thulite mt-4" href="{{ . }}" role="button">Get started</a>
+          {{- end }}
+          {{- with .Params.demo }}
+            <a class="btn btn-outline-thulite mt-4" href="{{ . }}" role="button">View demo</a>
+          {{- end }}
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-6">
-
-          {{ $pages := .CurrentSection.Pages.ByTitle.Reverse }}
-          {{- with $pages.Prev . }}
-            <div class="d-flex flex-column flex-md-row align-items-md-center">
-              <div class="template-navigation-link"><span aria-hidden="true">←</span></div>
-              <div><a class="nav-link nav-prev" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
-            </div>
-          {{- end }}
-            </div>
-          <div class="col-6">
-          {{- with $pages.Next . }}
-            <div class="d-flex flex-column align-items-end flex-md-row align-items-md-center justify-content-md-end">
-              <div class="template-navigation-link order-md-1"><span aria-hidden="true">→</span></div>
-              <div class="order-md-0"><a class="nav-link nav-next" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
-            </div>
-          {{- end }}
-
-        </div>
-
-    </div>
-  </div>
-</div>
-
+{{ $pages := .CurrentSection.Pages.ByTitle.Reverse }}
+{{ partial "main/section-navigation" (dict "pages" $pages "context" .) }}
 {{ end }}
