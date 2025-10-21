@@ -69,7 +69,7 @@ Hyas 2.4 introduces a cleaner `scripts` section in your projects' `package.json`
 
 ## New development tools
 
-Hyas now uses [Prettier](https://prettier.io/) as a code formatter and [Vite](https://vitejs.dev/) to preview your project's build. You can configure Prettier in the `.prettierrc.yaml` and `.prettierignore` files in the root of your project. With Vite, when you use the `--host` flag, you can preview the build on your local network — for example on your mobile phone — here's how:
+Hyas now uses [Prettier](https://prettier.io/) as a code formatter and [Vite](https://vite.dev/) to preview your project's build. You can configure Prettier in the `.prettierrc.yaml` and `.prettierignore` files in the root of your project. With Vite, when you use the `--host` flag, you can preview the build on your local network — for example on your mobile phone — here's how:
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}

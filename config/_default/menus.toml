@@ -1,6 +1,6 @@
 [[main]]
   name = "Documentation"
-  url = 'https://thulite.io/docs/'
+  url = 'https://docs.thulite.io/'
   weight = 10
 
 [[main]]
