@@ -1,9 +1,13 @@
 {
-  "name": "mars",
-  "version": "0.0.0",
-  "description": "Thulite Bootstrap starter with recommended integrations",
+  "name": "thulite-website",
+  "version": "1.6.0",
+  "description": "Thulite website",
   "author": "Thulite",
-  "license": "MIT",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thuliteio/thulite.io.git"
+  },
   "scripts": {
     "create": "hugo new",
     "dev": "hugo server --disableFastRender --noHTTPCache",
@@ -19,6 +23,8 @@
     "thulite": "^2.6.3"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.7",
     "prettier": "^3.6.2",
     "vite": "^7.1.9"
   },
