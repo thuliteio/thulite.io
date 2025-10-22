@@ -1,6 +1,6 @@
 # Hugo
 title = "Thulite"
-description = "Congrats on setting up a new Thulite project!"
+description = "Thulite is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
 images = ["cover.png"]
 footer = "© 2025 Thulite"
 
@@ -9,6 +9,10 @@ defaultEmail = "support@thulite.io"
 
 [social]
   twitter = "thuliteio"
+
+# Add-ons
+[add_ons]
+  plausibleDomain = "thulite.io" # "example.com" (default)
 
 # Debug
 [render_hooks.image]
