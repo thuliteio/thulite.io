@@ -1,5 +1,5 @@
 ---
-title : "Build production-ready websites without the hassle"
+title: "Build production-ready websites without the hassle"
 description: "Congrats on setting up a new Thulite project!"
 summary: "Thulite is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
 date: 2025-08-29T06:03:20+02:00

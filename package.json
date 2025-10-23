@@ -11,7 +11,7 @@
   "scripts": {
     "create": "hugo new",
     "dev": "hugo server --disableFastRender --noHTTPCache",
-    "format": "prettier **/** -w -c",
+    "format": "prettier . -w -c",
     "build": "hugo --minify --gc",
     "preview": "vite preview --outDir public"
   },

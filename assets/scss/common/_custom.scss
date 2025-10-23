@@ -1,31 +1,31 @@
 // Put your custom SCSS code here
 .monospace {
-  font-family: $font-family-monospace;
+    font-family: $font-family-monospace;
 }
 
 // Email obfuscation
 span.email b {
-  display: none;
+    display: none;
 }
 
 .border-top-aurora-horizontal {
-  position: relative;
+    position: relative;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: $aurora-horizontal;
-  }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: $aurora-horizontal;
+    }
 }
 
 .card {
-  transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
 }
 
 .card:has(.stretched-link:hover) {
-  border-color: $contrast-2;
+    border-color: $contrast-2;
 }

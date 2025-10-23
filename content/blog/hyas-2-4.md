@@ -21,6 +21,7 @@ authors = ["Henk Verlinde"] # E.g. ["Henk Verlinde"]
 Hyas 2.4 is now available! This release includes a new Hugo requirement, an improved `scripts` setup, new development tools, and more.
 
 <!-- omit in toc -->
+
 ## Highlights
 
 - [New Hugo requirement](#new-hugo-requirement)
@@ -28,6 +29,7 @@ Hyas 2.4 is now available! This release includes a new Hugo requirement, an impr
 - [New development tools](#new-development-tools)
 
 <!-- omit in toc -->
+
 ## Get started
 
 To upgrade an existing project, see the updated [Upgrade to Hyas v2](https://docs.thulite.io/guides/upgrade-to/v2/) guide.
@@ -96,6 +98,7 @@ yarn run build --baseURL=/ && yarn run preview --host
 {{< /tabs >}}
 
 <!-- omit in toc -->
+
 ## Bug Fixes
 
 Hyas 2.4 also includes several bug fixes. Check out the [release notes](https://github.com/thuliteio/thulite/releases) to learn more.

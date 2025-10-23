@@ -66,10 +66,10 @@ You can add emphasis by making text bold or italic.
 ### Bold
 
 ```md
-I just love __bold text__.
+I just love **bold text**.
 ```
 
-I just love __bold text__.
+I just love **bold text**.
 
 ### Italic
 
@@ -82,10 +82,10 @@ Italicized text is the _cat's meow_.
 ### Bold and Italic
 
 ```md
-This text is ___really important___.
+This text is **_really important_**.
 ```
 
-This text is ___really important___.
+This text is **_really important_**.
 
 ## Blockquotes
 
@@ -143,16 +143,14 @@ At the command prompt, type `nano`.
 
 ```html
 <html>
-  <head>
-  </head>
+  <head> </head>
 </html>
 ```
 
 ````html
 ```html
 <html>
-  <head>
-  </head>
+  <head> </head>
 </html>
 ```
 ````
@@ -200,7 +198,7 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 ## HTML
 
 ```md
-This __word__ is bold. This <em>word</em> is italic.
+This **word** is bold. This <em>word</em> is italic.
 ```
 
-This __word__ is bold. This <em>word</em> is italic.
+This **word** is bold. This <em>word</em> is italic.

@@ -20,6 +20,7 @@ authors = ["Henk Verlinde"] # E.g. ["Henk Verlinde"]
 We are excited to announce a name change: Hyas is now **Thulite**. The new name better suits our identity and clarifies what we stand for.
 
 <!-- omit in toc -->
+
 ## On this page
 
 - [Why the rename?](#why-the-rename)

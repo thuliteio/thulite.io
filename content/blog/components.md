@@ -83,14 +83,11 @@ Browse examples for quick usage of buttons, cards, and other UI components in yo
   <a class="page-numbers" href="#">2</a>
 </div>
 
-
 ## Cards
 
 ```html
 <div class="card">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
+  <div class="card-body">This is some text within a card body.</div>
 </div>
 ```
 
@@ -104,9 +101,7 @@ Browse examples for quick usage of buttons, cards, and other UI components in yo
 
 ```html
 <div class="card border-top-aurora-horizontal">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
+  <div class="card-body">This is some text within a card body.</div>
 </div>
 ```
 
@@ -120,9 +115,7 @@ Browse examples for quick usage of buttons, cards, and other UI components in yo
 
 ```html
 <div class="card bg-dark">
-  <div class="card-body">
-    Some quick example text to build on the card title and make up the bulk of the card's content.
-  </div>
+  <div class="card-body">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
 </div>
 ```
 
@@ -136,9 +129,7 @@ Browse examples for quick usage of buttons, cards, and other UI components in yo
 
 ```html
 <div class="card bg-dark border-top-aurora-horizontal">
-  <div class="card-body">
-    Some quick example text to build on the card title and make up the bulk of the card's content.
-  </div>
+  <div class="card-body">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
 </div>
 ```
 

@@ -9,7 +9,6 @@ var allTabs = document.querySelectorAll('[data-toggle-tab]');
 var allPanes = document.querySelectorAll('[data-pane]');
 
 function toggleTabs(event) {
-
     if (event.target) {
         event.preventDefault();
         var clickedTab = event.currentTarget;
@@ -33,7 +32,6 @@ function toggleTabs(event) {
         selectedTabs[i].classList.add('active');
         selectedPanes[i].classList.add('show', 'active');
     }
-
 }
 
 for (i = 0; i < allTabs.length; i++) {

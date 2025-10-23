@@ -7,28 +7,28 @@
 // ----------------------------------------------------------------------------
 
 %btn-shared {
-  padding: 0.725em 1.5em;
-  border: 1px solid;
-  border-radius: 50rem;
-  font-family: inherit;
-  font-size: $font-size-base;
-  font-style: normal;
-  font-weight: 300;
-  line-height: inherit;
-  text-decoration: none;
+    padding: 0.725em 1.5em;
+    border: 1px solid;
+    border-radius: 50rem;
+    font-family: inherit;
+    font-size: $font-size-base;
+    font-style: normal;
+    font-weight: 300;
+    line-height: inherit;
+    text-decoration: none;
 
-  &:hover,
-  &:focus,
-  &:active {
-    border: 1px solid $contrast-2;
-    outline: none;
-    box-shadow: none !important;
-  }
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1px solid $contrast-2;
+        outline: none;
+        box-shadow: none !important;
+    }
 
-  &:focus-visible {
-    outline: 2px solid $contrast-2;
-    outline-offset: 2px;
-  }
+    &:focus-visible {
+        outline: 2px solid $contrast-2;
+        outline-offset: 2px;
+    }
 }
 
 // -----------------------------------------------------------------------------
@@ -36,46 +36,48 @@
 // ----------------------------------------------------------------------------
 
 .btn-thulite {
-  @extend %btn-shared;
+    @extend %btn-shared;
 
-  background-color: $base-2;
-  background: $base-alt-fade-mid-down-right;
-  border-color: $base-2;
-  color: $contrast;
+    background-color: $base-2;
+    background: $base-alt-fade-mid-down-right;
+    border-color: $base-2;
+    color: $contrast;
 }
 
 .btn-outline-thulite {
-  @extend %btn-shared;
+    @extend %btn-shared;
 
-  background: transparent none;
-  border-color: $contrast-4;
-  color: currentColor;
+    background: transparent none;
+    border-color: $contrast-4;
+    color: currentColor;
 }
 
 .btn-category {
-  padding: 0.575em 1em;
-  border: none;
-  border-radius: 4px;
-  background-color: $base-2;
-  color: $contrast;
-  font-size: $font-size-sm;
-  line-height: 1.55;
-  text-decoration: none;
-  transition: background-color 0.1s linear, color 0.1s linear;
+    padding: 0.575em 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: $base-2;
+    color: $contrast;
+    font-size: $font-size-sm;
+    line-height: 1.55;
+    text-decoration: none;
+    transition:
+        background-color 0.1s linear,
+        color 0.1s linear;
 
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: $contrast;
-    color: $base;
-    outline: none;
-    box-shadow: none !important;
-  }
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $contrast;
+        color: $base;
+        outline: none;
+        box-shadow: none !important;
+    }
 
-  &:focus-visible {
-    outline: 2px solid $contrast;
-    outline-offset: 2px;
-  }
+    &:focus-visible {
+        outline: 2px solid $contrast;
+        outline-offset: 2px;
+    }
 }
 
 // -----------------------------------------------------------------------------
@@ -83,35 +85,35 @@
 // ----------------------------------------------------------------------------
 
 form[name="newsletter"] {
-  input[name="email"] {
-    padding: 0.5rem 1rem;
-  }
-
-  button[type="submit"] {
-    padding: 0.5rem 1.5rem;
-  }
-
-  @include media-breakpoint-up(sm) {
     input[name="email"] {
-      padding: 0.6rem 1rem;
+        padding: 0.5rem 1rem;
     }
 
     button[type="submit"] {
-      padding: 0.6em 1.5em;
+        padding: 0.5rem 1.5rem;
     }
-  }
+
+    @include media-breakpoint-up(sm) {
+        input[name="email"] {
+            padding: 0.6rem 1rem;
+        }
+
+        button[type="submit"] {
+            padding: 0.6em 1.5em;
+        }
+    }
 }
 
 #newsletter-heading {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
 
-  &::after {
-    flex: 1;
-    height: 1px;
-    margin-left: 1rem;
-    background: $contrast-4;
-    content: "";
-  }
+    &::after {
+        flex: 1;
+        height: 1px;
+        margin-left: 1rem;
+        background: $contrast-4;
+        content: "";
+    }
 }
 
 // -----------------------------------------------------------------------------
@@ -119,45 +121,6 @@ form[name="newsletter"] {
 // ----------------------------------------------------------------------------
 
 %circular-nav-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.25em;
-  height: 2.25em;
-  margin: 0;
-  border: 1px solid $base-2;
-  border-radius: 50%;
-  background: $base-alt-fade-mid-down-right;
-  background-color: $base;
-  flex-shrink: 0;
-  text-decoration: none;
-
-  &:hover,
-  &:focus,
-  &:active {
-    border-color: transparent;
-    background: $contrast;
-    color: $base;
-    outline: none;
-    box-shadow: none !important;
-  }
-
-  &:focus-visible {
-    outline: 2px solid $contrast;
-    outline-offset: 2px;
-  }
-}
-
-.post-navigation-link {
-  text-decoration: none;
-
-  span {
-    @extend %circular-nav-button;
-  }
-}
-
-.template-navigation-link {
-  span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,40 +133,79 @@ form[name="newsletter"] {
     background-color: $base;
     flex-shrink: 0;
     text-decoration: none;
-  }
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: transparent;
+        background: $contrast;
+        color: $base;
+        outline: none;
+        box-shadow: none !important;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $contrast;
+        outline-offset: 2px;
+    }
+}
+
+.post-navigation-link {
+    text-decoration: none;
+
+    span {
+        @extend %circular-nav-button;
+    }
+}
+
+.template-navigation-link {
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.25em;
+        height: 2.25em;
+        margin: 0;
+        border: 1px solid $base-2;
+        border-radius: 50%;
+        background: $base-alt-fade-mid-down-right;
+        background-color: $base;
+        flex-shrink: 0;
+        text-decoration: none;
+    }
 }
 
 .nav-prev,
 .nav-next {
-  margin-top: 1.25rem;
+    margin-top: 1.25rem;
 }
 
 @include media-breakpoint-up(md) {
-  .nav-prev,
-  .nav-next {
-    margin-top: 0;
-  }
+    .nav-prev,
+    .nav-next {
+        margin-top: 0;
+    }
 
-  .nav-prev {
-    margin-left: 1.5rem;
-  }
+    .nav-prev {
+        margin-left: 1.5rem;
+    }
 
-  .nav-next {
-    margin-right: 1.5rem;
-  }
+    .nav-next {
+        margin-right: 1.5rem;
+    }
 }
 
 .page-link,
 .page-numbers {
-  @extend %circular-nav-button;
-  margin: 0 0.375rem;
+    @extend %circular-nav-button;
+    margin: 0 0.375rem;
 }
 
 .page-item.active .page-link,
 .page-numbers.current {
-  background: $contrast;
-  border-color: transparent;
-  color: $base;
+    background: $contrast;
+    border-color: transparent;
+    color: $base;
 }
 
 // -----------------------------------------------------------------------------
@@ -211,86 +213,86 @@ form[name="newsletter"] {
 // ----------------------------------------------------------------------------
 
 .pagination {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
 
-  .page-item {
-    .page-link {
-      margin: 0 0.25rem;
-    }
-
-    // Hide first and last pagination items
-    &:first-child,
-    &:last-child {
-      display: none;
-    }
-
-    // Position prev/next buttons
-    &:nth-child(2) {
-      margin-right: auto;
-
-      .page-link {
-        margin: 0;
-        text-indent: -9999px;
-        position: relative;
-
-        &::after {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          content: "←";
-          text-indent: 0;
-          transform: translate(-50%, -50%);
+    .page-item {
+        .page-link {
+            margin: 0 0.25rem;
         }
-      }
-    }
 
-    &:nth-last-child(2) {
-      margin-left: auto;
-
-      .page-link {
-        margin: 0;
-        text-indent: -9999px;
-        position: relative;
-
-        &::after {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          content: "→";
-          text-indent: 0;
-          transform: translate(-50%, -50%);
+        // Hide first and last pagination items
+        &:first-child,
+        &:last-child {
+            display: none;
         }
-      }
-    }
 
-    // Center pagination numbers
-    &:nth-child(n+3):nth-last-child(n+3) {
-      position: static;
-      transform: none;
-    }
+        // Position prev/next buttons
+        &:nth-child(2) {
+            margin-right: auto;
 
-    &:nth-child(5) {
-      transform: translateX(calc(-50% + 0.9375rem));
-    }
+            .page-link {
+                margin: 0;
+                text-indent: -9999px;
+                position: relative;
 
-    &:nth-last-child(3) {
-      transform: translateX(calc(-50% + 1.875rem));
+                &::after {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    content: "←";
+                    text-indent: 0;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        &:nth-last-child(2) {
+            margin-left: auto;
+
+            .page-link {
+                margin: 0;
+                text-indent: -9999px;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    content: "→";
+                    text-indent: 0;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        // Center pagination numbers
+        &:nth-child(n + 3):nth-last-child(n + 3) {
+            position: static;
+            transform: none;
+        }
+
+        &:nth-child(5) {
+            transform: translateX(calc(-50% + 0.9375rem));
+        }
+
+        &:nth-last-child(3) {
+            transform: translateX(calc(-50% + 1.875rem));
+        }
     }
-  }
 }
 
 @include media-breakpoint-down(lg) {
-  .pagination {
-    justify-content: center;
+    .pagination {
+        justify-content: center;
 
-    .page-item {
-      &:nth-child(2),
-      &:nth-last-child(2) {
-        display: none;
-      }
+        .page-item {
+            &:nth-child(2),
+            &:nth-last-child(2) {
+                display: none;
+            }
+        }
     }
-  }
 }

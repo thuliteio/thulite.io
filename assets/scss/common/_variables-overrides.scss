@@ -1,8 +1,8 @@
 // scss-docs-start theme-color-variables
-$primary:       $contrast;
-$secondary:     $contrast-2;
-$light:         $light-base-2;
-$dark:          $base-2;
+$primary: $contrast;
+$secondary: $contrast-2;
+$light: $light-base-2;
+$dark: $base-2;
 // scss-docs-end theme-color-variables
 // Options
 //
@@ -27,8 +27,21 @@ $variable-prefix: th-;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-monospace: 'Geist Mono Variable', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-sans-serif:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    "Liberation Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+$font-family-monospace: "Geist Mono Variable", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 // stylelint-enable value-keyword-case
 $font-family-base: var(--#{$variable-prefix}font-monospace);
 $font-family-code: var(--#{$variable-prefix}font-monospace);
@@ -44,12 +57,12 @@ $headings-font-family: $font-family-monospace;
 $headings-font-weight: 300;
 $headings-line-height: 1.25;
 
-$h1-font-size:                clamp(2.25rem, 5vw, 3rem);
-$h2-font-size:                clamp(1.875rem, 4vw, 2.5rem);
-$h3-font-size:                clamp(1.5rem, 3.5vw, 2rem);
-$h4-font-size:                clamp(1.313rem, 3vw, 1.5rem);
-$h5-font-size:                $font-size-base * 1.125;
-$h6-font-size:                $font-size-base;
+$h1-font-size: clamp(2.25rem, 5vw, 3rem);
+$h2-font-size: clamp(1.875rem, 4vw, 2.5rem);
+$h3-font-size: clamp(1.5rem, 3.5vw, 2rem);
+$h4-font-size: clamp(1.313rem, 3vw, 1.5rem);
+$h5-font-size: $font-size-base * 1.125;
+$h6-font-size: $font-size-base;
 
 // Spacing
 //
@@ -82,40 +95,40 @@ $alert-color-level: 0;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-transitions:          false;
-$enable-dark-mode:            false;
-$enable-negative-margins:     true;
+$enable-transitions: false;
+$enable-dark-mode: false;
+$enable-negative-margins: true;
 
 // Body
 //
 // Settings for the `<body>` element.
 
-$body-text-align:           null;
-$body-color:                $contrast;
-$body-bg:                   $base;
+$body-text-align: null;
+$body-color: $contrast;
+$body-bg: $base;
 
-$body-secondary-color:      lighten($contrast-2, 20%);
-$body-secondary-bg:         $base-2;
+$body-secondary-color: lighten($contrast-2, 20%);
+$body-secondary-bg: $base-2;
 
-$body-tertiary-color:       $contrast-3;
-$body-tertiary-bg:          $base-2;
+$body-tertiary-color: $contrast-3;
+$body-tertiary-bg: $base-2;
 
-$body-emphasis-color:       $contrast;
+$body-emphasis-color: $contrast;
 
 // Components
 //
 // Define common padding and border radius sizes and more.
 
 // scss-docs-start border-variables
-$border-width:                1px;
+$border-width: 1px;
 $border-widths: (
-  1: 1px,
-  2: 2px,
-  3: 3px,
-  4: 4px,
-  5: 5px
+    1: 1px,
+    2: 2px,
+    3: 3px,
+    4: 4px,
+    5: 5px
 );
-$border-style:                solid;
-$border-color:                $contrast-4;
-$border-color-translucent:    rgba($base, .175);
+$border-style: solid;
+$border-color: $contrast-4;
+$border-color-translucent: rgba($base, 0.175);
 // scss-docs-end border-variables
