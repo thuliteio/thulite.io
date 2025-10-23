@@ -115,7 +115,9 @@ Browse examples for quick usage of buttons, cards, and other UI components in yo
 
 ```html
 <div class="card bg-dark">
-  <div class="card-body">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+  <div class="card-body">
+    Some quick example text to build on the card title and make up the bulk of the card's content.
+  </div>
 </div>
 ```
 
@@ -129,7 +131,9 @@ Browse examples for quick usage of buttons, cards, and other UI components in yo
 
 ```html
 <div class="card bg-dark border-top-aurora-horizontal">
-  <div class="card-body">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+  <div class="card-body">
+    Some quick example text to build on the card title and make up the bulk of the card's content.
+  </div>
 </div>
 ```
 
@@ -145,7 +149,9 @@ Browse examples for quick usage of buttons, cards, and other UI components in yo
 <div class="card text-bg-dark">
   <div class="card-body">
     <h2 class="card-title">Dark card title</h2>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <p class="card-text">
+      Some quick example text to build on the card title and make up the bulk of the card’s content.
+    </p>
   </div>
 </div>
 ```
@@ -162,8 +168,12 @@ Browse examples for quick usage of buttons, cards, and other UI components in yo
 ```html
 <div class="card">
   <div class="card-body">
-    <h2 class="card-title"><a href="#" class="card-link stretched-link text-decoration-none text-reset">Dark card title</a></h2>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <h2 class="card-title">
+      <a href="#" class="card-link stretched-link text-decoration-none text-reset">Dark card title</a>
+    </h2>
+    <p class="card-text">
+      Some quick example text to build on the card title and make up the bulk of the card’s content.
+    </p>
   </div>
 </div>
 ```

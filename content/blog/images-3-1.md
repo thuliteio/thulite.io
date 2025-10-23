@@ -77,7 +77,19 @@ You can add images to your `html` pages by using the the `img`, `picture`, or `f
 The above code will generate the following HTML, and allow the browser to determine the best image to display:
 
 ```html
-<img srcset="..." data-srcset="..." data-sizes="auto" src="..." width="1600" height="900" decoding="async" fetchpriority="auto" loading="lazy" alt="My super image in multiple formats!" class="blur-up lazyautosizes ls-is-cached lazyloaded" sizes="628px" />
+<img
+  srcset="..."
+  data-srcset="..."
+  data-sizes="auto"
+  src="..."
+  width="1600"
+  height="900"
+  decoding="async"
+  fetchpriority="auto"
+  loading="lazy"
+  alt="My super image in multiple formats!"
+  class="blur-up lazyautosizes ls-is-cached lazyloaded"
+  sizes="628px" />
 ```
 
 ## Image render hook
@@ -91,7 +103,15 @@ You can add images to your `.md` pages by using the Markdown syntax for images.
 The Markdown above get rendered into the following HTML:
 
 ```html
-<img src="/images/stars_hu5459c0360c2b0cb7a147d2df0eb350ca_80218_1920x1280_resize_q85_h2_lanczos.webp" width="410" height="274" decoding="async" fetchpriority="auto" loading="lazy" alt="A starry night sky" id="h-rh-i-1" />
+<img
+  src="/images/stars_hu5459c0360c2b0cb7a147d2df0eb350ca_80218_1920x1280_resize_q85_h2_lanczos.webp"
+  width="410"
+  height="274"
+  decoding="async"
+  fetchpriority="auto"
+  loading="lazy"
+  alt="A starry night sky"
+  id="h-rh-i-1" />
 ```
 
 ## Documentation website

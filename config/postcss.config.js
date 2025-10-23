@@ -13,8 +13,8 @@ module.exports = {
                         const els = JSON.parse(content).htmlElements;
                         return els.tags.concat(els.classes, els.ids);
                     },
-                    extensions: ['json']
-                }
+                    extensions: ['json'],
+                },
             ],
             dynamicAttributes: [
                 'aria-expanded',
@@ -29,9 +29,19 @@ module.exports = {
                 'data-toggle-tab', // tabs.js
                 'id',
                 'size',
-                'type'
+                'type',
             ],
-            safelist: ['active', 'disabled', 'hidden', 'show', 'img-fluid', 'blur-up', 'lazyloaded', 'offcanvas-backdrop', ...whitelister(['./assets/scss/**/*.scss'])]
-        })
-    ]
+            safelist: [
+                'active',
+                'disabled',
+                'hidden',
+                'show',
+                'img-fluid',
+                'blur-up',
+                'lazyloaded',
+                'offcanvas-backdrop',
+                ...whitelister(['./assets/scss/**/*.scss']),
+            ],
+        }),
+    ],
 };

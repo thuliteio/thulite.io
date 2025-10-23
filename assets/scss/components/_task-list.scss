@@ -24,7 +24,21 @@ ul li:has(input[type="checkbox"]) {
             --check-w: 0.375em;
             --check-stroke: 0.133em;
             --check-stroke-half: calc(var(--check-stroke) / 2);
-            background-image: linear-gradient(45deg, transparent calc(50% - var(--check-stroke-half)), currentColor calc(50% - var(--check-stroke-half)), currentColor calc(50% + var(--check-stroke-half)), transparent calc(50% + var(--check-stroke-half))), linear-gradient(-45deg, transparent calc(50% - var(--check-stroke-half)), currentColor calc(50% - var(--check-stroke-half)), currentColor calc(50% + var(--check-stroke-half)), transparent calc(50% + var(--check-stroke-half)));
+            background-image:
+                linear-gradient(
+                    45deg,
+                    transparent calc(50% - var(--check-stroke-half)),
+                    currentColor calc(50% - var(--check-stroke-half)),
+                    currentColor calc(50% + var(--check-stroke-half)),
+                    transparent calc(50% + var(--check-stroke-half))
+                ),
+                linear-gradient(
+                    -45deg,
+                    transparent calc(50% - var(--check-stroke-half)),
+                    currentColor calc(50% - var(--check-stroke-half)),
+                    currentColor calc(50% + var(--check-stroke-half)),
+                    transparent calc(50% + var(--check-stroke-half))
+                );
             background-repeat: no-repeat;
             background-position:
                 calc(50% - (var(--check-w) / 2)) calc(50% + (var(--check-w) / 4)),

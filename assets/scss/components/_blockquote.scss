@@ -26,7 +26,8 @@ blockquote {
 }
 
 blockquote p {
-    background-image: linear-gradient($contrast-4, transparent 1px), linear-gradient(transparent 100%, $contrast-4 calc(1em + 1px));
+    background-image:
+        linear-gradient($contrast-4, transparent 1px), linear-gradient(transparent 100%, $contrast-4 calc(1em + 1px));
     background-size:
         1px 1.5em,
         1px 1.5em;

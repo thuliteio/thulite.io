@@ -41,7 +41,8 @@ $font-family-sans-serif:
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     "Noto Color Emoji";
-$font-family-monospace: "Geist Mono Variable", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-monospace:
+    "Geist Mono Variable", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 // stylelint-enable value-keyword-case
 $font-family-base: var(--#{$variable-prefix}font-monospace);
 $font-family-code: var(--#{$variable-prefix}font-monospace);
@@ -126,7 +127,7 @@ $border-widths: (
     2: 2px,
     3: 3px,
     4: 4px,
-    5: 5px
+    5: 5px,
 );
 $border-style: solid;
 $border-color: $contrast-4;
