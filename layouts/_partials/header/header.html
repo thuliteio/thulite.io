@@ -15,18 +15,13 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1">
             {{ partial "header/menu.html" (dict "menuID" "main" "page" .) }}
-
             <div class="d-flex gap-3 gap-md-0 ms-md-auto mt-3 mt-md-0">
               {{- range site.Menus.social.Reverse}}
                 <div class="nav-item">
-                  <!--
-                  <a class="nav-link" href="{{ .URL }}" aria-label="{{ .Name }}">{{ .Pre }}</a>
-                  -->
                   <a target="_blank" class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
                 </div>
               {{- end }}
             </div>
-
           </ul>
         </div>
       </div>

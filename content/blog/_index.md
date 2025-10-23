@@ -7,7 +7,7 @@ date = 2025-10-02T11:49:10+02:00
 lastmod = 2025-10-02T12:14:39+02:00
 draft = false
 
-[seo]
+[params.seo]
   title = "" # custom title (optional)
   description = "" # custom description (recommended)
   canonical = "" # custom canonical URL (optional)

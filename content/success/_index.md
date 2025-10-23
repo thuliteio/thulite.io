@@ -10,7 +10,7 @@ draft = false
 list = "never"
 render = "never"
 
-[seo]
+[params.seo]
 title = "" # custom title (optional)
 description = "" # custom description (recommended)
 canonical = "" # custom canonical URL (optional)

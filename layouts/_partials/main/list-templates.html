@@ -13,8 +13,7 @@
     <div class="row g-4">
       {{ range .Paginator.Pages.ByTitle }}
         <div class="col-lg-6 col-xl-4">
-
-          <div class="card rounded-0 border-0">
+          <div class="card border-0">
             {{ $featured := partial "main/get-featured" . }}
             {{ if $featured -}}
               {{ partial "picture"  (dict
@@ -26,15 +25,13 @@
                 "fetchpriority" "auto"
                 "loading" "lazy"
                 "alt" .Title
-                "class" "card-img-top rounded-022"
+                "class" "card-img-top"
               )}}
             {{ end -}}
             <div class="card-body px-0">
               <h2 class="card-title fs-5"><a class="nav-link stretched-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-              <!-- <p class="card-text text-body-secondary">{{ .Summary }}</p> -->
             </div>
           </div>
-
         </div>
       {{ end }}
     </div>

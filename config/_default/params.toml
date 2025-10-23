@@ -38,7 +38,7 @@ defaultEmail = "support@thulite.io"
   iconSetDir = "tabler-icons" # "tabler-icons" (default)
 
 # SEO (@thulite/seo)
-[seo]
+[params.seo]
   [seo.title]
     separator = " | "
     suffix = ""

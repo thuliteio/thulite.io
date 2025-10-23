@@ -10,7 +10,7 @@ categories = ["Product"] # E.g. ["Product", "Legal"]
 tags = ["Framework", "Hugo", "npm"] # E.g. ["Markdown", "Cheat sheet"]
 authors = ["Henk Verlinde"] # E.g. ["Henk Verlinde"]
 
-[seo]
+[params.seo]
   title = "" # custom title (optional)
   description = "" # custom description (recommended)
   canonical = "" # custom canonical URL (optional)

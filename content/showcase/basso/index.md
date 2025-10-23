@@ -8,7 +8,7 @@ draft = false
 website = "https://www.bassobikes.pl/" # URL
 weight = 50
 
-[seo]
+[params.seo]
 title = "" # custom title (optional)
 description = "" # custom description (recommended)
 canonical = "" # custom canonical URL (optional)

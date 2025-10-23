@@ -8,7 +8,7 @@ draft = false
 website = "https://gamesupport.gg/" # URL
 weight = 50
 
-[seo]
+[params.seo]
 title = "" # custom title (optional)
 description = "" # custom description (recommended)
 canonical = "" # custom canonical URL (optional)
