@@ -39,7 +39,7 @@ Check out our detailed [Why Hyas](https://docs.thulite.io/concepts/why-thulite/)
 
 ## Get started
 
-Hyas 2.0 is available now on npm. Visit [new.thulite.io](https://new.thulite.io/) to try out Hyas 2.0 in your browser, or run the following command in your terminal to get started with a new project:
+Hyas 2.0 is available now on npm. Visit [new.thulite.io](/templates/) to try out Hyas 2.0 in your browser, or run the following command in your terminal to get started with a new project:
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}

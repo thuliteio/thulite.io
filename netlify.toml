@@ -36,12 +36,6 @@
   force = true
 
 [[redirects]]
-  from = "https://new.thulite.io/"
-  to = "/templates/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "https://gethyas.com/*"
   to = "https://thulite.io/:splat"
   status = 301
