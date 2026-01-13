@@ -11,7 +11,7 @@ languageCode = "en-US"
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
-copyRight = "Copyright (c) 2020-2025 Thulite"
+copyRight = "Copyright (c) 2020-2026 Thulite"
 
 [build.buildStats]
   enable = true

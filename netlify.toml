@@ -47,6 +47,18 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/js/pa-Teg1Ma4wBlecbMA1gJdTW.js"
+  to = "https://plausible.io/js/pa-Teg1Ma4wBlecbMA1gJdTW.js"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/event"
+  to = "https://plausible.io/api/event"
+  status = 200
+  force = true
+
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
   for = "/*"
@@ -54,7 +66,7 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://plausible.io/api/event; font-src 'self'; img-src 'self' https://avatars.githubusercontent.com data:; script-src 'self' https://plausible.io/js/script.js 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk=' 'sha256-pGfut8CxcXWzGV34Mlo+zUGXuWG1c4buljedWxWWlks='; style-src 'self'"
+    Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://plausible.io/api/event; font-src 'self'; img-src 'self' https://avatars.githubusercontent.com data:; script-src 'self' https://plausible.io/js/pa-Teg1Ma4wBlecbMA1gJdTW.js 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk=' 'sha256-pGfut8CxcXWzGV34Mlo+zUGXuWG1c4buljedWxWWlks='; style-src 'self'"
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin"
     Permissions-Policy = "geolocation=(self), microphone=(), camera=()"

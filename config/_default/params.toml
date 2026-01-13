@@ -2,7 +2,7 @@
 title = "Thulite"
 description = "Thulite is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
 images = ["cover.png"]
-footer = "© 2025 Thulite"
+footer = "© 2026 Thulite"
 
 # defaultEmail
 defaultEmail = "support@thulite.io"
