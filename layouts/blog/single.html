@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-6">
+        <h1 class="text-center my-3">{{ .Title }}</h1>
+        <p class="text-center text-body-secondary lead">{{ .Params.date | time.Format ":date_long" }}</p>
+        <hr>
+        <div class="page-content">
+          {{ .Content }}
+        </div>
+        <div class="mt-5">
+          {{ if .Params.categories -}}
+            {{ range $index, $category := .Params.categories -}}
+              <a class="btn btn-category" href="{{ "/categories/" | absURL }}{{ . | urlize }}/">{{ . }}</a>
+            {{ end -}}
+          {{ end -}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ $pages := .CurrentSection.Pages }}
+{{ partial "main/section-navigation" (dict "pages" $pages "context" .) }}
+
+<div class="section pt-0 pt-md-3">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        {{ partial "main/newsletter-form" . }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

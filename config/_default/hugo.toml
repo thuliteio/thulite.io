@@ -1,88 +1,61 @@
 title = "Thulite"
 baseurl = "http://localhost/"
-canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
 # disableKinds = ["taxonomy", "term"]
+disableKinds = ["taxonomy"]
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
 languageCode = "en-US"
-pagerSize = 10
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
-# Multilingual
-defaultContentLanguage = "en"
-disableLanguages = ["de", "nl"]
-defaultContentLanguageInSubdir = false
-
-copyRight = "Copyright (c) 2010-2024 Ventizo"
+copyRight = "Copyright (c) 2020-2026 Thulite"
 
 [build.buildStats]
   enable = true
 
 [outputs]
-  home = ["HTML", "RSS", "searchIndex"]
-
-[outputFormats.searchIndex]
-  mediaType = "application/json"
-  baseName = "search-index"
-  isPlainText = true
-  notAlternative = true
-
-[caches]
-  [caches.getjson]
-    dir = ":cacheDir/:project"
-    maxAge = -1 # "30m"
+  home = ["HTML"]
 
 [sitemap]
   changefreq = "monthly"
   filename = "sitemap.xml"
   priority = 0.5
 
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = "30m"
+
 [taxonomies]
-  author = "authors"
   category = "categories"
-  tag = "tags"
   type = "types"
-  technology = "technologies"
-  pricing = "pricing"
   sort = "sorts"
 
 [permalinks]
-  blog = "/blog/:title/"
-  themes = "/themes/:title/"
-  types = "/themes/:title/"
-  technologies = "/technologies/:title/"
-  pricing = "/pricing/:title/"
-  sorts = "/integrations/:title/"
+  blog = "/:title/"
 
 [minify.tdewolff.html]
   keepWhitespace = false
 
+[pagination]
+  pagerSize = 9
+
 [related]
-  threshold = 80
   includeNewer = true
+  threshold = 80
   toLower = false
     [[related.indices]]
-    name = "types"
-    weight = 100
+      name = "categories"
+      weight = 100
     [[related.indices]]
-    name = "technologies"
-    weight = 80
+      name = "tags"
+      weight = 80
     [[related.indices]]
-    name = "pricing"
-    weight = 10
-    # [[related.indices]]
-    # name = "categories"
-    # weight = 100
-    # [[related.indices]]
-    # name = "tags"
-    # weight = 80
-    # [[related.indices]]
-    # name = "date"
-    # weight = 10
+      name = "date"
+      weight = 10
 
 [imaging]
   anchor = "Center"

@@ -1,23 +1,17 @@
----
-title: "Terms of Service"
-description: "Thulite' Terms of Service"
-summary: "Thulite' Terms of Service"
-date: 2023-03-17T12:17:55+01:00
-lastmod: 2024-07-26T12:17:55+01:00
-draft: false
-type: legal
-seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
----
++++
+title = 'Terms of Service'
+summary = ''
+description = ''
+date = '2025-09-05T13:51:33+02:00'
+lastmod = '2025-09-05T13:51:33+02:00'
+draft = false
++++
 
 These terms of service ("Terms") apply to your access and use of the Thulite website (the "Service"). Please read them carefully.
 
 ## Accepting the Terms
 
-If you access or use the Service, it means you agree to be bound by all of the terms below. So, before you use the Service, please read all of the terms. If you don't agree to all of the terms below, please do not use the Service. Also, if a term does not make sense to you, please let us know by e-mailing __{{< email >}}__.
+If you access or use the Service, it means you agree to be bound by all of the terms below. So, before you use the Service, please read all of the terms. If you don't agree to all of the terms below, please do not use the Service. Also, if a term does not make sense to you, please let us know by e-mailing **{{< email >}}**.
 
 ## Changes to the Terms
 
@@ -118,4 +112,4 @@ Please let us know what you think of the Service, these Terms and, in general, T
 
 ## Questions & Contact Information
 
-Questions or comments about the Service may be directed to us at the email address __{{< email >}}__.
+Questions or comments about the Service may be directed to us at the email address **{{< email >}}**.

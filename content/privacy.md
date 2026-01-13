@@ -1,17 +1,11 @@
----
-title: "Privacy Policy"
-description: "Thulite' Privacy Policy"
-summary: "Thulite' Privacy Policy"
-date: 2023-03-17T09:43:47+01:00
-lastmod: 2024-07-26T09:43:47+01:00
-draft: false
-type: legal
-seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
----
++++
+title = 'Privacy Policy'
+summary = ''
+description = ''
+date = '2025-08-29T06:03:52+02:00'
+lastmod = '2025-09-05T01:51:13+02:00'
+draft = false
++++
 
 In addition to this Privacy Policy, Thulite also has [Terms of Service](/terms/).
 
@@ -46,7 +40,7 @@ Data is kept for the time necessary to provide the products or services requeste
 
 ## Rights of Data Subjects
 
-Data subject (customer) can always request Thulite to allow access and correction, supplement or update of data. Subject to a reasonable request of a data subject, Thulite will remove data pertaining to a data subject unless applicable laws impose a duty to retain data for certain time or identification, location and deletion of data imposes a disproportionate financial burden upon Thulite. Any requests for access, correction or deletion of data should be directed to Thulite by sending an email to __{{< email "privacy@thulite.io" >}}__.
+Data subject (customer) can always request Thulite to allow access and correction, supplement or update of data. Subject to a reasonable request of a data subject, Thulite will remove data pertaining to a data subject unless applicable laws impose a duty to retain data for certain time or identification, location and deletion of data imposes a disproportionate financial burden upon Thulite. Any requests for access, correction or deletion of data should be directed to Thulite by sending an email to **{{< email "privacy@thulite.io" >}}**.
 
 You may be aware that a European Union law, called the General Data Protection Regulation or "GDPR" gives certain rights to individuals in relation to their personal data. In order to enable you to exercise these rights with ease in relation to how Thulite uses your personal data, we provide you with access to the following settings via your Account Settings page:
 
@@ -79,4 +73,4 @@ Thulite may periodically update this policy. We encourage you to periodically re
 
 ## Questions
 
-Thank you for reading our Privacy Policy. If you have any questions about this Policy, please contact our Data Protection Officer by emailing __{{< email "privacy@thulite.io" >}}__.
+Thank you for reading our Privacy Policy. If you have any questions about this Policy, please contact our Data Protection Officer by emailing **{{< email "privacy@thulite.io" >}}**.

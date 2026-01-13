@@ -1,0 +1,143 @@
+{{ define "main" }}
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-8 col-xxl-6">
+        <h1 class="text-center">{{ .Title }}</h1>
+        <p class="text-center">{{ .Summary }}</p>
+        <div class="text-center">
+          <a class="btn btn-thulite mt-4" href="https://docs.thulite.io/getting-started/" role="button">Get started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section py-0">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <h2 class="text-center mb-5">Why choose Thulite?</h2>
+    <div class="row justify-content-center px-xl-5 g-4">
+      <div class="col-12 col-lg-6 p-4">
+        <div class="d-flex align-items-start">
+          <div class="feature-icon text-body-emphasis bg-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 rounded-circle me-3">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-speedtest"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5.636 19.364a9 9 0 1 1 12.728 0" /><path d="M16 9l-4 4" /></svg>
+          </div>
+          <div>
+            <h3 class="fs-4 mt-2">Exceptional performance</h3>
+            <p class="text-muted">Experience lightning-fast page loads with perfect 100 scores on PageSpeed Insights. Higher conversion rates and better SEO guaranteed.</p>
+            <a target="_blank" href="https://pagespeed.web.dev/analysis/https-thuliteio-netlify-app/fryc6rvxsm?form_factor=mobile" class="icon-link mt-2">
+              View report
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 p-4">
+        <div class="d-flex align-items-start">
+          <div class="feature-icon text-body-emphasis bg-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 rounded-circle me-3">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-shield"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" /></svg>
+          </div>
+          <div>
+            <h3 class="fs-4 mt-2">Enterprise security</h3>
+            <p class="text-muted">Built with security-first approach, meeting latest web standards. Achieve A+ scores on HTTP Observatory with confidence.</p>
+            <a target="_blank" href="https://developer.mozilla.org/en-US/observatory/analyze?host=thuliteio.netlify.app" class="icon-link mt-2">
+              View report
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 p-4">
+        <div class="d-flex align-items-start">
+          <div class="feature-icon text-body-emphasis bg-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 rounded-circle me-3">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-stack"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6l-8 4l8 4l8 -4l-8 -4" /><path d="M4 14l8 4l8 -4" /></svg>
+          </div>
+          <div>
+            <h3 class="fs-4 mt-2">Scalable architecture</h3>
+            <p class="text-muted">Build maintainable websites with solid foundations that grow with your needs and team.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 p-4">
+        <div class="d-flex align-items-start">
+          <div class="feature-icon text-body-emphasis bg-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 rounded-circle me-3">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+          </div>
+          <div>
+            <h3 class="fs-4 mt-2">Developer friendly</h3>
+            <p class="text-muted">Easy to use with comprehensive tooling and documentation. No expertise required to get started.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <h2 class="fs-3 text-center mb-5">Get started in 3 simple steps</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-3">
+        <div class="text-center p-4">
+          <div class="step-number mb-3">1</div>
+          <h3 class="h5 mb-3">Pick a template</h3>
+          <p class="text-muted mb-0">Choose from our collection of starter templates and themes to kickstart your project.</p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card-body text-center p-4">
+          <div class="step-number mb-3">2</div>
+          <h3 class="h5 mb-3">Build your site</h3>
+          <p class="text-muted mb-0">Customize and make it your own with our flexible components and powerful features.</p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card-body text-center p-4">
+          <div class="step-number mb-3">3</div>
+          <h3 class="h5 mb-3">Deploy anywhere</h3>
+          <p class="text-muted mb-0">Deploy your site to any hosting platform — Netlify, Vercel, GitHub Pages, or your own server.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <h2 class="fs-4 text-center">Thulite is free and open-source, thanks to our amazing sponsors</h2>
+      </div>
+      <div class="row row-sponsors">
+        {{- range site.Menus.sponsors }}
+          <div class="col-6 col-lg-3">
+            <a class="stretched-link text-reset text-decoration-none" target="_blank" href="{{ .URL }}">
+              {{ .Name }}
+            </a>
+          </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        {{ partial "main/newsletter-form" . }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

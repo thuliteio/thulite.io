@@ -1,0 +1,30 @@
+<header role="banner" aria-label="Site header">
+  <nav class="navbar navbar-dark navbar-expand-md fixed-top px-0">
+    <div class="container-fluid">
+      <a class="navbar-brand monospace fs-4" href="{{ "/" | absURL }}">{{ .Site.Params.Title }}</a>
+      <button class="th-navbar-toggler ms-auto d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg>
+      </button>
+      <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a class="navbar-brand monospace fs-4" id="offcanvasNavbarLabel" href="{{ "/" | absURL }}">{{ .Site.Params.Title }}</a>
+          <button type="button" class="th-btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1">
+            {{ partial "header/menu.html" (dict "menuID" "main" "page" .) }}
+            <div class="d-flex gap-3 gap-md-0 ms-md-auto mt-3 mt-md-0">
+              {{- range site.Menus.social.Reverse}}
+                <div class="nav-item">
+                  <a target="_blank" class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                </div>
+              {{- end }}
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

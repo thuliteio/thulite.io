@@ -1,0 +1,58 @@
+// Task list styling
+ul li:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    input[type="checkbox"] {
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        border: 1px solid $contrast-4;
+        border-radius: 3px;
+        background: $base;
+        margin-right: 0.75rem;
+        margin-top: 0.25rem;
+        cursor: pointer;
+        position: relative;
+        flex-shrink: 0;
+
+        &:checked {
+            background: $contrast;
+            --check-w: 0.375em;
+            --check-stroke: 0.133em;
+            --check-stroke-half: calc(var(--check-stroke) / 2);
+            background-image:
+                linear-gradient(
+                    45deg,
+                    transparent calc(50% - var(--check-stroke-half)),
+                    currentColor calc(50% - var(--check-stroke-half)),
+                    currentColor calc(50% + var(--check-stroke-half)),
+                    transparent calc(50% + var(--check-stroke-half))
+                ),
+                linear-gradient(
+                    -45deg,
+                    transparent calc(50% - var(--check-stroke-half)),
+                    currentColor calc(50% - var(--check-stroke-half)),
+                    currentColor calc(50% + var(--check-stroke-half)),
+                    transparent calc(50% + var(--check-stroke-half))
+                );
+            background-repeat: no-repeat;
+            background-position:
+                calc(50% - (var(--check-w) / 2)) calc(50% + (var(--check-w) / 4)),
+                calc(50% + (var(--check-w) / 4)) 50%;
+            background-size: calc(var(--check-w) / 2), var(--check-w);
+            border-color: transparent;
+            color: $base;
+        }
+    }
+}
+
+// Remove list styling for task list containers
+ul:has(li input[type="checkbox"]) {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}

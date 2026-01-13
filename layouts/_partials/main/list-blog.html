@@ -1,0 +1,34 @@
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <h1 class="text-center">{{ .LinkTitle }}</h1>
+        <p class="text-center d-none">{{ .Summary }}</p>
+        <div class="mt-4">
+          {{ partial "main/list-categories" . }}
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="row justify-content-center g-4">
+      {{ range .Paginator.Pages }}
+        <div class="col-lg-6">
+          <div class="card p-2">
+            <div class="card-body">
+              <h2 class="card-title fs-5"><a class="nav-link stretched-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+              <p class="card-text text-body-secondary">{{ .Params.date | time.Format ":date_long" }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 m-0"></div>
+      {{ end }}
+    </div>
+    {{ if gt .Paginator.TotalPages 1 }}
+      <div class="row">
+        <div class="col">
+          {{ partial "pagination.html" (dict "page" . "format" "default") }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>

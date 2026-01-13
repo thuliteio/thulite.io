@@ -22,4 +22,4 @@
     {{- end -}}
   {{ end }}
 </urlset>
-{{/* Based on: https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_default/sitemap.xml */}}
+{{/* Based on: https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/sitemap.xml */}}

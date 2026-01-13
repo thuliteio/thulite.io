@@ -1,26 +1,12 @@
 [build]
   publish = "public"
   functions = "functions"
+  command = "npm run build"
 
 [build.environment]
-  NODE_VERSION = "20.17.0"
-  NPM_VERSION = "10.8.2"
-  HUGO_VERSION = "0.134.2"
-
-[context.production]
-  command = "npm run build"
-
-[context.deploy-preview]
-  command = "npm run build"
-
-[context.branch-deploy]
-  command = "npm run build"
-
-[context.next]
-  command = "npm run build"
-
-[context.next.environment]
-  HUGO_ENV = "next"
+  NODE_VERSION = "24.12.0"
+  NPM_VERSION = "11.6.2"
+  HUGO_VERSION = "0.154.2"
 
 [dev]
   framework = "#custom"
@@ -31,6 +17,24 @@
   autoLaunch = false
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+[[redirects]]
+  from = "/themes/"
+  to = "/templates/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/themes/doks/"
+  to = "/templates/doks/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/themes/bolt"
+  to = "/templates/bolt/"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "https://gethyas.com/*"
   to = "https://thulite.io/:splat"
@@ -44,9 +48,15 @@
   force = true
 
 [[redirects]]
-  from = "/vermeer/"
-  to = "https://store.thulite.io/vermeer/"
-  status = 301
+  from = "/js/pa-Teg1Ma4wBlecbMA1gJdTW.js"
+  to = "https://plausible.io/js/pa-Teg1Ma4wBlecbMA1gJdTW.js"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/event"
+  to = "https://plausible.io/api/event"
+  status = 200
   force = true
 
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
@@ -56,10 +66,10 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://plausible.io/api/event https://ingesteer.services-prod.nsvcs.net; font-src 'self'; img-src 'self' https://avatars.githubusercontent.com data:; script-src 'self' https://plausible.io/js/script.js https://netlify-rum.netlify.app https://ingesteer.services-prod.nsvcs.net 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk='; style-src 'self'"
+    Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://plausible.io/api/event; font-src 'self'; img-src 'self' https://avatars.githubusercontent.com data:; script-src 'self' https://plausible.io/js/pa-Teg1Ma4wBlecbMA1gJdTW.js 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk=' 'sha256-pGfut8CxcXWzGV34Mlo+zUGXuWG1c4buljedWxWWlks='; style-src 'self'"
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin"
-    Feature-Policy = "geolocation 'self'"
+    Permissions-Policy = "geolocation=(self), microphone=(), camera=()"
     Cache-Control= '''
     public,
     max-age=31536000'''

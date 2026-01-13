@@ -1,126 +1,18 @@
 # Hugo
 title = "Thulite"
 description = "Thulite is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
-images = ["cover-thulite.png"]
-
-# mainSections
-mainSections = ["docs", "legal"]
+images = ["cover.png"]
+footer = "© 2026 Thulite"
 
 # defaultEmail
 defaultEmail = "support@thulite.io"
 
 [social]
   twitter = "thuliteio"
-  facebook_admin = ""
-
-[themes]
-  [themes.messages]
-    inactive = "Not available, contact support"
-    other = "Unkown error, contact support"
 
 # Add-ons
 [add_ons]
-  carbonAds = false # false (default) or true
-  docSearch = false # false (default) or true
   plausibleDomain = "thulite.io" # "example.com" (default)
-  keila = false # false (default) or true
-
-# Starter (@ventizo/starter-core)
-[starter]
-  # Color mode
-  colorMode = "dark" # auto (default), light or dark
-  colorModeToggler = true # true (default) or false (this setting is only relevant when colorMode = auto)
-
-  # Navbar
-  navbarSticky = false # true (default) or false
-  containerBreakpoint = "lg" # "", "sm", "md", "lg" (default), "xl", "xxl", or "fluid"
-  offCanvas = "top" # "top", "end" (default), "bottom", or "start"
-
-  ## Button
-  navBarButton = true # false (default) or true
-  navBarButtonUrl = "https://docs.thulite.io/getting-started/"
-  navBarButtonText = "Get started"
-
-  # FlexSearch
-  flexSearch = false # true (default) or false
-  searchExclKinds = [] # list of page kinds to exclude from search indexing (e.g. ["home", "taxonomy", "term"] )
-  searchExclTypes = [] # list of content types to exclude from search indexing (e.g. ["blog", "docs", "legal", "contributors", "categories"])
-  showSearch = [] # [] (all pages, default) or homepage (optionally) and list of sections (e.g. ["homepage", "blog", "guides"])
-  indexSummary = false # true or false (default); whether to index only the `.Summary` instead of the full `.Content`; limits the respective JSON field size and thus increases loading time
-
-  ## Search results
-  showDate = false # false (default) or true
-  showSummary = true # true (default) or false
-  searchLimit = 99 # 0 (no limit, default) or natural number
-
-  # Global alert
-  alert = false # false (default) or true
-  alertDismissable = false # true (default) or false
-  # alertText = '<a class="alert-link stretched-link" href="/anna/">Anna will ship soon!</a>'
-  # alertText = '<a class="alert-link stretched-link" href="/blog/hyas-is-now-thulite/">Hyas is now <strong>Thulite</strong>!</a>'
-  # alertText = '<a class="alert-link stretched-link" href="/vermeer/">Introducing <strong>Vermeer</strong>!</a>'
-  alertText = '<strong>Cyber Sale</strong>! <a class="alert-link stretched-link text-decoration-none" href="https://store.thulite.io/vermeer/?utm_source=thulite&utm_medium=banner&utm_campaign=cyber_sale">Get Vermeer at 40% off with code <strong>THULITE40</strong></a>'
-
-  # Global notice
-  notice = true # false (default) or true
-  noticeText = 'Anna will ship soon' # E.g. 'Thulite Store is open!'
-  noticeLink = '/anna/' # E.g. '/blog/hyas-2.1/'
-
-  # Bootstrap
-  bootstrapJavascript = true # false (default) or true
-
-  # Nav
-  sectionNav = ["docs"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
-  toTopButton = false # false (default) or true
-  breadcrumbTrail = false # false (default) or true
-  headlineHash = false # true (default) or false
-  scrollSpy = true # true (default) or false
-
-  # Footer
-  footer = '© 2024 Thulite — <a href="https://github.com/thuliteio/thulite/blob/main/LICENSE" target="_blank">MIT License</a>'
-  footerLanding = '© 2024 Thulite — <a href="https://store.thulite.io/licenses/" target="_blank">Licenses</a>'
-
-  # Multilingual
-  multilingualMode = false # false (default) or true
-  showMissingLanguages = true # whether or not to show untranslated languages in the language menu; true (default) or false
-
-  # Versioning
-  docsVersioning = false # false (default) or true
-  docsVersion = "1.0"
-
-  # UX
-  headerBar = false # true (default) or false
-  backgroundDots = true # true (default) or false
-
-  # Homepage
-  sectionFooter = false # false (default) or true
-
-  # Blog
-  relatedPosts = false # false (default) or true
-  imageList = true # true (default) or false
-  imageSingle = true # true (default) or false
-
-  # Repository
-  editPage = false # false (default) or true
-  lastMod = false # false (default) or true
-  repoHost = "GitHub" # GitHub (default), Gitea, GitLab, Bitbucket, or BitbucketServer
-  docsRepo = "https://github.com/h-enk/doks"
-  docsRepoBranch = "main" # main (default), master, or <branch name>
-  docsRepoSubPath = "" # "" (none, default) or <sub path>
-
-  # SCSS colors
-  # backGround = "yellowgreen"
-  ## Dark theme
-  # textDark = "#dee2e6" # "#dee2e6" (default), "#dee2e6" (orignal), or custom color
-  # accentDark = "#5d2f86" # "#5d2f86" (default), "#5d2f86" (original), or custom color
-  ## Light theme
-  # textLight = "#1d2d35" # "#1d2d35" (default), "#1d2d35" (orignal), or custom color
-  # accentLight = "#8ed6fb" # "#8ed6fb" (default), "#8ed6fb" (orignal), or custom color
-
-  # [doks.menu]
-  #   [doks.menu.section]
-  #     auto = true # true (default) or false
-  #     collapsibleSidebar = true # true (default) or false
 
 # Debug
 [render_hooks.image]
@@ -146,10 +38,10 @@ defaultEmail = "support@thulite.io"
   iconSetDir = "tabler-icons" # "tabler-icons" (default)
 
 # SEO (@thulite/seo)
-[seo]
+[params.seo]
   [seo.title]
-    separator = "—" # "|" (default)
-    suffix = "" # title hugo.toml (default)
+    separator = " | "
+    suffix = ""
   [seo.favicons]
     icon = "favicon.png" # favicon.png (default)
     svgIcon = "favicon.svg" # favicon.svg (default)
@@ -157,9 +49,9 @@ defaultEmail = "support@thulite.io"
     type = "Organization" # Organization (default) or Person
     logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)
     name = "Thulite" # Name of Organization or Person
-    sameAs = ["https://github.com/thuliteio/thulite", "https://x.com/thuliteio", "https://fosstodon.org/@thulite"] # E.g. ["https://github.com/thuliteio/thulite", "https://fosstodon.org/@thulite"]
-    images = ["cover-thulite.png"] # ["cover.png"] (default)
+    sameAs = [] # E.g. ["https://github.com/thuliteio/thulite", "https://fosstodon.org/@thulite"]
+    images = ["cover.png"] # ["cover.png"] (default)
     article = [] # Article sections
     newsArticle = [] # NewsArticle sections
     blogPosting = ["blog"] # BlogPosting sections
-    product = ["themes"] # Product sections
+    product = [] # Product sections

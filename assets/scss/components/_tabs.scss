@@ -1,0 +1,29 @@
+.nav-tabs {
+    border-bottom: 0.0625rem solid $contrast-4;
+    margin: 1rem 0;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: -0.0625rem !important;
+    background: none;
+    border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: inherit;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+    isolation: isolate;
+    border-color: transparent;
+    color: $body-secondary-color;
+    text-decoration: none;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 0.0625rem solid $contrast;
+    color: $contrast;
+}
