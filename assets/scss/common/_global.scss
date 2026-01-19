@@ -192,6 +192,16 @@ dd {
     backface-visibility: hidden;
 }
 
+.inverse-link {
+    color: var(--th-secondary-color);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $contrast;
+    }
+}
+
 @include media-breakpoint-down(md) {
     .dropdown svg {
         float: right;
