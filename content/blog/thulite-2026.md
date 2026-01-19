@@ -34,7 +34,7 @@ The [Thulite CLI](/blog/thulite-cli-2-0/) becomes the primary tool, making it ea
 
 ## Templates
 
-[Templates](http://localhost:1313/templates/)—both starters and themes—are now the foundation for getting started quickly.
+[Templates](/templates/)—both starters and themes—are now the foundation for getting started quickly.
 
 ## Focus
 
