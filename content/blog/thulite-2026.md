@@ -4,7 +4,7 @@ url = "/blog/thulite-2026/"
 description = 'Thulite 2026 introduces a simpler, modern platform for creators and teams, with a streamlined UX, CLI, and open-source Doks for product sites.'
 summary = 'Thulite 2026 introduces a simpler, modern platform for creators and teams, with a streamlined UX, CLI, and open-source Doks for product sites.'
 date = 2026-01-15T14:33:48+01:00
-lastmod = 2026-01-19T15:24:12+01:00
+lastmod = 2026-01-22T08:00:39+01:00
 draft = false
 weight = 50
 categories = ["Roadmap"] # E.g. ["Product", "Legal"]
@@ -38,7 +38,7 @@ The [Thulite CLI](/blog/thulite-cli-2-0/) becomes the primary tool, making it ea
 
 ## Focus
 
-We've discontinued both paid themes (like Vermeer and Norrsken) and community themes (such as Simply Cyan), as well as the options to submit new themes or integrations. [Doks](https://getdoks.org/) remains the main theme for product sites, ensuring a consistent and robust experience.
+We've discontinued both paid themes (like Vermeer and Norrsken) and community themes (such as Simply Cyan), as well as the options to submit new themes or integrations. [Doks](/templates/doks/) remains the main theme for product sites, ensuring a consistent and robust experience.
 
 ## Doks
 
