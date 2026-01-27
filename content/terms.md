@@ -1,7 +1,7 @@
 +++
 title = 'Terms of Service'
-summary = ''
-description = ''
+summary = 'Thulite Terms of Service covering acceptance, accounts, content rights, third party services, changes, disclaimers, governing law, termination and jurisdiction.'
+description = 'Thulite Terms of Service covering acceptance, accounts, content rights, third party services, changes, disclaimers, governing law, termination and jurisdiction.'
 date = '2025-09-05T13:51:33+02:00'
 lastmod = '2025-09-05T13:51:33+02:00'
 draft = false
@@ -9,31 +9,31 @@ draft = false
 
 These terms of service ("Terms") apply to your access and use of the Thulite website (the "Service"). Please read them carefully.
 
-## Accepting the Terms
+## Accepting the terms
 
 If you access or use the Service, it means you agree to be bound by all of the terms below. So, before you use the Service, please read all of the terms. If you don't agree to all of the terms below, please do not use the Service. Also, if a term does not make sense to you, please let us know by e-mailing **{{< email >}}**.
 
-## Changes to the Terms
+## Changes to the terms
 
 We reserve the right to modify these Terms at any time. Whenever we make changes to these Terms, the changes are effective 2 days after we post such revised Terms (indicated by revising the date at the top of these Terms) or upon your acceptance if we provide a mechanism for your immediate acceptance of the revised Terms (such as a click-through confirmation or acceptance button). It is your responsibility to check Thulite for changes to these Terms.
 
 If you continue to use the Service after the revised Terms go into effect, then you have accepted the changes to these Terms.
 
-## Privacy Policy
+## Privacy policy
 
 For information about how we collect and use information about users of the Service, please view our [Privacy Policy](/privacy/).
 
-## Third-Party Services
+## Third-party services
 
 From time to time, we may provide you with links to third party websites or services that we do not own or control. Your use of the Service may also include the use of applications that are developed or owned by a third party. Your use of such third party applications, websites, and services is governed by that party's own terms of service or privacy policies. We encourage you to read the terms and conditions and privacy policy of any third party application, website or service that you visit or use.
 
-## Creating Accounts
+## Creating accounts
 
 When you create an account or use another service to log in to the Service, you agree to maintain the security of your password and accept all risks of unauthorized access to any data or other information you provide to the Service.
 
 If you discover or suspect any Service security breaches, please let us know as soon as possible.
 
-## Your Content & Conduct
+## Your content & conduct
 
 Our Service allows you and other users to post, link and otherwise make available content. You are responsible for the content that you make available to the Service, including its legality, reliability, and appropriateness.
 
@@ -60,13 +60,13 @@ Also, you agree that you will not do any of the following in connection with the
 - Create an account or post any content if you are not over 13 years of age; and
 - Circumvent or attempt to circumvent any filtering, security measures, rate limits or other features designed to protect the Service, users of the Service, or third parties.
 
-## Thulite Materials
+## Thulite materials
 
 We put a lot of effort into creating the Service including, the logo and all designs, text, graphics, pictures, information and other content (excluding your content). This property is owned by us or our licensors and it is protected by Dutch and international copyright laws. We grant you the right to use it.
 
 However, unless we expressly state otherwise, your rights do not include: (i) publicly performing or publicly displaying the Service; (ii) modifying or otherwise making any derivative uses of the Service or any portion thereof; (iii) using any data mining, robots or similar data gathering or extraction methods; (iv) downloading (other than page caching) of any portion of the Service or any information contained therein; (v) reverse engineering or accessing the Service in order to build a competitive product or service; or (vi) using the Service other than for its intended purposes. If you do any of this, we may terminate your use of the Service.
 
-## Hyperlinks and Third Party Content
+## Hyperlinks and third party content
 
 You may create a hyperlink to the Service. But, you may not use, frame or utilize framing techniques to enclose any of our trademarks, logos or other proprietary information without our express written consent.
 
@@ -74,7 +74,7 @@ Thulite makes no claim or representation regarding, and accepts no responsibilit
 
 If there is any content on the Service from you and others, we don't review, verify or authenticate it, and it may include inaccuracies or false information. We make no representations, warranties, or guarantees relating to the quality, suitability, truth, accuracy or completeness of any content contained in the Service. You acknowledge sole responsibility for and assume all risk arising from your use of or reliance on any content.
 
-## Unavoidable Legal Stuff
+## Unavoidable legal stuff
 
 THE SERVICE AND ANY OTHER SERVICE AND CONTENT INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE SERVICE ARE PROVIDED TO YOU ON AN AS IS OR AS AVAILABLE BASIS WITHOUT ANY REPRESENTATIONS OR WARRANTIES OF ANY KIND. WE DISCLAIM ANY AND ALL WARRANTIES AND REPRESENTATIONS (EXPRESS OR IMPLIED, ORAL OR WRITTEN) WITH RESPECT TO THE SERVICE AND CONTENT INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE SERVICE WHETHER ALLEGED TO ARISE BY OPERATION OF LAW, BY REASON OF CUSTOM OR USAGE IN THE TRADE, BY COURSE OF DEALING OR OTHERWISE.
 
@@ -82,11 +82,11 @@ IN NO EVENT WILL THULITE BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY SPECIAL, IN
 
 You agree to defend, indemnify and hold us harmless from and against any and all costs, damages, liabilities, and expenses (including attorneys' fees, costs, penalties, interest and disbursements) we incur in relation to, arising from, or for the purpose of avoiding, any claim or demand from a third party relating to your use of the Service or the use of the Service by any person using your account, including any claim that your use of the Service violates any applicable law or regulation, or the rights of any third party, and/or your violation of these Terms.
 
-## Copyright Complaints
+## Copyright complaints
 
 We take intellectual property rights seriously. In accordance with the Digital Millennium Copyright Act ("DMCA") and other applicable law, we have adopted a policy of terminating, in appropriate circumstances and, at our sole discretion, access to the service for users who are deemed to be repeat infringers.
 
-## Governing Law
+## Governing law
 
 The validity of these Terms and the rights, obligations, and relations of the parties under these Terms will be construed and determined under and in accordance with the laws of the Central Netherlands District Court, without regard to conflicts of law principles.
 
@@ -102,7 +102,7 @@ If you breach any of these Terms, we have the right to suspend or disable your a
 
 We may assign or delegate these Terms of Service and/or the Privacy Policy, in whole or in part, to any person or entity at any time with or without your consent, including the license grant in the "Your Content & Conduct" section. You may not assign or delegate any rights or obligations under the Terms of Service or Privacy Policy without our prior written consent, and any unauthorized assignment and delegation by you is void.
 
-## Entire Agreement
+## Entire agreement
 
 These Terms constitute the entire agreement between you and Thulite regarding the use of the Service, superseding any prior agreements between you and Thulite relating to your use of the Service.
 
@@ -110,6 +110,6 @@ These Terms constitute the entire agreement between you and Thulite regarding th
 
 Please let us know what you think of the Service, these Terms and, in general, Thulite. When you provide us with any feedback, comments or suggestions about the Service, these Terms and, in general, Thulite, you irrevocably assign to us all of your right, title and interest in and to your feedback, comments and suggestions.
 
-## Questions & Contact Information
+## Questions & contact information
 
 Questions or comments about the Service may be directed to us at the email address **{{< email >}}**.

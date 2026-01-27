@@ -1,7 +1,7 @@
 +++
 title = 'Privacy Policy'
-summary = ''
-description = ''
+summary = 'Explains how Thulite collects, uses, stores, and protects personal data; cookies; retention; GDPR rights; privacy-friendly analytics; security; and contact info.'
+description = 'Explains how Thulite collects, uses, stores, and protects personal data; cookies; retention; GDPR rights; privacy-friendly analytics; security; and contact info.'
 date = '2025-08-29T06:03:52+02:00'
 lastmod = '2025-09-05T01:51:13+02:00'
 draft = false
@@ -11,14 +11,14 @@ In addition to this Privacy Policy, Thulite also has [Terms of Service](/terms/)
 
 The Thulite Privacy Policy describes the privacy practices of the Thulite website and services. The laws of the Central Netherlands District Court and the laws of the European Union apply. If you are a resident of the EU/EEA, the European Commission-approved Standard Contractual Clauses (also referred to as Model Contracts) apply to Trans-Atlantic data transfers.
 
-## General Information
+## General information
 
 We collect very limited personally identifiable information described below (the “data”) from [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) and of those who communicate with us directly via e-mail, aggregate information on what pages consumers access or visit, and information volunteered by the consumer (such as survey information and/or site registrations). The information we collect is used to provide our services, and to improve the quality of our services, and is not shared with or sold to other organizations for commercial purposes, except to provide products or services you've requested when we have your permission, or under the following circumstances:
 
 - It is necessary to share information in order to investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of the [Terms of Service](/terms/), or as otherwise required by law.
 - We transfer information about you if Thulite is acquired by or merged with another company. In this event, Thulite will notify you before information about you is transferred and becomes subject to a different privacy policy.
 
-## Information Gathering and Usage
+## Information gathering and usage
 
 Thulite uses collected information for the following general purposes: products and services provision, billing, identification and authentication through GitHub, GitLab, services improvement, contact, and research. Thulite uses personally identifiable information on billing address and/or payment information only for the sole purpose of payment processing for Thulite services.
 
@@ -30,15 +30,15 @@ A cookie is a small amount of data, which often includes an anonymous unique ide
 
 You can control how websites use cookies by configuring the privacy settings within your browser. Note that if you disable cookies entirely, Thulite websites and applications may not function properly.
 
-## Data Storage
+## Data storage
 
 Thulite uses third-party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run Thulite. Thulite' third-party vendors and hosting partners adhere to the European Commission-approved Standard Contractual Clauses (also referred to as Model Contracts).
 
-## Data Retention and Deletion
+## Data retention and deletion
 
 Data is kept for the time necessary to provide the products or services requested by the customer. We keep some of your personal data for as long as you are a user of the Thulite Service. When you delete your account, we will delete your personal data and it will expire from backups; unless we are legally allowed or required to maintain certain personal data, including situations under the applicable laws to reveal personal data upon reasonable request of public authorities.
 
-## Rights of Data Subjects
+## Rights of data subjects
 
 Data subject (customer) can always request Thulite to allow access and correction, supplement or update of data. Subject to a reasonable request of a data subject, Thulite will remove data pertaining to a data subject unless applicable laws impose a duty to retain data for certain time or identification, location and deletion of data imposes a disproportionate financial burden upon Thulite. Any requests for access, correction or deletion of data should be directed to Thulite by sending an email to **{{< email "privacy@thulite.io" >}}**.
 
@@ -49,7 +49,7 @@ You may be aware that a European Union law, called the General Data Protection R
 
 As a user you may also request a copy of your data and that your data be updated, deleted, restricted or moved to another organization.
 
-## Information Sharing
+## Information sharing
 
 We want to process as little personal information as possible when you use our website. That's why we've chosen [Plausible Analytics](https://plausible.io/) for our website analytics, which doesn't use cookies and complies with the GDPR, ePrivacy (including PECR), COPPA and CCPA. Using this privacy-friendly website analytics software, your IP address is only briefly processed, and we (running this website) have no way of identifying you. As per the CCPA, your personal information is de-identified.
 
