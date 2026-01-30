@@ -42,7 +42,7 @@ copyRight = "Copyright (c) 2020-2026 Thulite"
   keepWhitespace = false
 
 [pagination]
-  pagerSize = 9
+  pagerSize = 10
 
 [related]
   includeNewer = true
