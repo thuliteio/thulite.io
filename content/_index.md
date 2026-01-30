@@ -29,17 +29,17 @@ npm create thulite@latest
 │  thulite-project
 │
 ◇  Select a template:
-│  Tailwind CSS starter
+│  Doks theme
 │
 ◇  Select a variant:
 │  With recommended integrations (SEO and Images)
 │
+◇  Install with npm and start now?
+│  Yes
+│
 ◇  Scaffolding project in /home/h-enk/thulite-project...
 │
-└  Done. Now run:
-
-  cd thulite-project
-  npm install
-  npm run dev
-
+◇  Installing dependencies with npm...
+│
+◇  Starting dev server...
 ```
