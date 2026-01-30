@@ -1,5 +1,5 @@
 +++
-title = 'Acend'
+title = 'acend'
 summary = ''
 description = ''
 date = 2026-01-30T12:22:44+01:00
