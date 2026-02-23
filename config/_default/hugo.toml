@@ -25,7 +25,7 @@ copyRight = "Copyright (c) 2020-2026 Thulite"
   priority = 0.5
 
 [caches]
-  [caches.getjson]
+  [caches.getresource]
     dir = ":cacheDir/:project"
     maxAge = "30m"
 
