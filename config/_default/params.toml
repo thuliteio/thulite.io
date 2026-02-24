@@ -42,6 +42,8 @@ defaultEmail = "support@thulite.io"
   [seo.title]
     separator = " | "
     suffix = ""
+  [seo.description]
+    summaryFallback = "" # "" (default)
   [seo.favicons]
     icon = "favicon.png" # favicon.png (default)
     svgIcon = "favicon.svg" # favicon.svg (default)
