@@ -1,5 +1,11 @@
 # thulite-website
 
+## 1.7.1
+
+### Patch Changes
+
+- [#312](https://github.com/thuliteio/thulite.io/pull/312) [`81ce11a`](https://github.com/thuliteio/thulite.io/commit/81ce11ac7cdfabcec8b3845366fd15969337f251) Thanks [@h-enk](https://github.com/h-enk)! - Update for create-thulite 2.1.1
+
 ## 1.7.0
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
   "name": "thulite-website",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Thulite website",
   "author": "Thulite",
   "license": "UNLICENSED",
@@ -23,8 +23,8 @@
     "thulite": "^2.6.5"
   },
   "overrides": {
-      "minimatch": "^10.2.2",
-      "glob": "^13.0.6"
+    "minimatch": "^10.2.2",
+    "glob": "^13.0.6"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.2",
