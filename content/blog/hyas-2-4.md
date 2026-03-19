@@ -1,8 +1,8 @@
 +++
 title = "Hyas 2.4"
 url = "/blog/hyas-2-4/"
-description = "Hyas 2.4 is out — a new Hugo requirement, an improved `scripts` setup, new development tools, and more."
-summary = "Hyas 2.4 is out — a new Hugo requirement, an improved `scripts` setup, new development tools, and more."
+description = "Hyas 2.4 raises the Hugo requirement, improves the scripts setup, and adds developer tooling to streamline local work and releases."
+summary = "Hyas 2.4 raises the Hugo requirement, improves the scripts setup, and adds developer tooling to streamline local work and releases."
 date = 2024-05-07T11:34:54+02:00
 lastmod = 2024-05-07T11:34:54+02:00
 draft = false
@@ -24,9 +24,12 @@ Hyas 2.4 is now available! This release includes a new Hugo requirement, an impr
 
 ## Highlights
 
+- [Highlights](#highlights)
+- [Get started](#get-started)
 - [New Hugo requirement](#new-hugo-requirement)
 - [Improved `scripts` setup](#improved-scripts-setup)
 - [New development tools](#new-development-tools)
+- [Bug Fixes](#bug-fixes)
 
 <!-- omit in toc -->
 

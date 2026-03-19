@@ -1,7 +1,7 @@
 +++
 title = 'Inline SVG'
 summary = '@thulite/inline-svg'
-description = 'Inline SVG integration for Thulite'
+description = '@thulite/inline-svg lets Thulite embed and reuse SVG assets inline for cleaner markup, styling control, and fast icon rendering.'
 date = 2025-10-17T11:04:12+02:00
 lastmod = 2025-10-17T11:04:12+02:00
 draft = false

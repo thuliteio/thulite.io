@@ -1,7 +1,7 @@
 +++
 title = 'Core'
 summary = '@thulite/core'
-description = 'Core integration for Thulite'
+description = '@thulite/core delivers the shared primitives and runtime pieces that other Thulite integrations rely on for a consistent foundation.'
 date = 2025-10-17T09:27:27+02:00
 lastmod = 2025-10-17T09:27:27+02:00
 draft = false

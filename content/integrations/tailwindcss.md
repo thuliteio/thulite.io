@@ -1,7 +1,7 @@
 +++
 title = 'Tailwind CSS'
 summary = '@thulite/tailwindcss'
-description = 'Tailwind CSS integration for Thulite'
+description = '@thulite/tailwindcss adds utility-first styling to Thulite so you can build responsive interfaces quickly with a customizable system.'
 date = 2025-10-17T11:10:41+02:00
 lastmod = 2025-10-17T11:10:41+02:00
 draft = false

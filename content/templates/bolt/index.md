@@ -1,7 +1,7 @@
 +++
 title = 'Bolt'
 summary = 'Bolt theme'
-description = ''
+description = 'Bolt is a minimal Thulite blog theme focused on readability, fast performance, and a clean writing experience for content-first sites.'
 date = 2025-10-14T11:42:17+02:00
 lastmod = 2025-10-14T11:42:17+02:00
 draft = false

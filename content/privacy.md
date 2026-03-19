@@ -1,7 +1,7 @@
 +++
 title = 'Privacy Policy'
-summary = 'Explains how Thulite collects, uses, stores, and protects personal data; cookies; retention; GDPR rights; privacy-friendly analytics; security; and contact info.'
-description = 'Explains how Thulite collects, uses, stores, and protects personal data; cookies; retention; GDPR rights; privacy-friendly analytics; security; and contact info.'
+summary = 'Explains how Thulite collects, uses, stores, and protects personal data; cookies; retention; security; GDPR rights; and contact info.'
+description = 'Explains how Thulite collects, uses, stores, and protects personal data; cookies; retention; security; GDPR rights; and contact info.'
 date = '2025-08-29T06:03:52+02:00'
 lastmod = '2025-09-05T01:51:13+02:00'
 draft = false

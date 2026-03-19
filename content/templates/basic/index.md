@@ -1,7 +1,7 @@
 +++
 title = 'Basic'
 summary = 'Basic starter'
-description = ''
+description = 'The Basic starter gives you a lean Thulite foundation with minimal setup, making it a solid base for custom sites and quick experiments.'
 date = 2025-10-10T07:33:44+02:00
 lastmod = 2025-10-10T07:33:44+02:00
 draft = false

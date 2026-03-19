@@ -1,7 +1,7 @@
 +++
 title = 'Doks core'
 summary = '@thulite/doks-core'
-description = 'Core integration for the Doks theme'
+description = '@thulite/doks-core provides the shared building blocks that power the Doks theme for documentation-focused Thulite sites.'
 date = 2025-10-17T10:15:29+02:00
 lastmod = 2025-10-17T10:15:29+02:00
 draft = false

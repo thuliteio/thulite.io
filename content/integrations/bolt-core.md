@@ -1,7 +1,7 @@
 +++
 title = 'Bolt core'
 summary = '@thulite/bolt-core'
-description = 'Core integration for the Bolt theme'
+description = '@thulite/bolt-core supplies the shared foundation for the Bolt theme, giving Thulite blogs the core features they rely on.'
 date = 2025-10-17T10:04:41+02:00
 lastmod = 2025-10-17T10:04:41+02:00
 draft = false

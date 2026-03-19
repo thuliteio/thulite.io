@@ -1,8 +1,8 @@
 +++
 title = "SEO 2.2"
 url = "/blog/seo-2-2/"
-description = "SEO 2.2 is here — improved favicons generation, several bug fixes, and a new documentation website."
-summary = "SEO 2.2 is here — improved favicons generation, several bug fixes, and a new documentation website."
+description = "SEO 2.2 improves favicon generation, fixes several issues, and refreshes the documentation experience for stronger search visibility."
+summary = "SEO 2.2 improves favicon generation, fixes several issues, and refreshes the documentation experience for stronger search visibility."
 date = 2024-03-18T11:09:01+01:00
 lastmod = 2024-03-18T11:09:01+01:00
 draft = false

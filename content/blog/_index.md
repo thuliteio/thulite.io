@@ -1,8 +1,8 @@
 +++
 title = 'Blog'
 linktitle = 'Blog'
-summary = 'Product updates and release notes from Thulite'
-description = 'Product updates and release notes from Thulite'
+summary = 'Read product updates, release notes, and practical guides covering Thulite features, integrations, and changes across the ecosystem.'
+description = 'Read product updates, release notes, and practical guides covering Thulite features, integrations, and changes across the ecosystem.'
 date = 2025-10-02T11:49:10+02:00
 lastmod = 2025-10-02T12:14:39+02:00
 draft = false

@@ -1,8 +1,8 @@
 +++
 title = "Hyas 2.0"
 url = "/blog/hyas-2/"
-description = "Hyas 2.0 is a code restructuring release, making Hyas more robust and flexible."
-summary = "Hyas 2.0 is a code restructuring release, making Hyas more robust and flexible."
+description = "Hyas 2.0 restructures the framework to make projects more robust, flexible, and easier to maintain as the ecosystem grows."
+summary = "Hyas 2.0 restructures the framework to make projects more robust, flexible, and easier to maintain as the ecosystem grows."
 date = 2023-09-01T11:51:15+02:00
 lastmod = 2023-09-01T11:51:15+02:00
 draft = false

@@ -1,7 +1,7 @@
 +++
 title = 'Tailwind CSS'
 summary = 'Tailwind CSS starter'
-description = ''
+description = 'The Tailwind CSS starter pairs Thulite with utility-first styling so you can launch responsive sites quickly and customize every layer.'
 date = 2025-10-14T11:36:34+02:00
 lastmod = 2025-10-14T11:36:34+02:00
 draft = false

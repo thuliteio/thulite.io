@@ -1,7 +1,7 @@
 +++
 title = 'SEO'
 summary = '@thulite/seo'
-description = 'SEO integration for Thulite'
+description = '@thulite/seo adds metadata, schemas, robots controls, and favicon generation so Thulite sites ship with stronger search fundamentals.'
 date = 2025-10-17T11:07:11+02:00
 lastmod = 2025-10-17T11:07:11+02:00
 draft = false

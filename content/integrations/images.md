@@ -1,7 +1,7 @@
 +++
 title = 'Images'
 summary = '@thulite/images'
-description = 'Images integration for Thulite'
+description = '@thulite/images handles responsive image generation, optimization, and delivery so Thulite sites can load rich visuals efficiently.'
 date = 2025-10-17T10:19:40+02:00
 lastmod = 2025-10-17T10:19:40+02:00
 draft = false
