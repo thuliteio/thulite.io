@@ -3,7 +3,7 @@ title = "Build production-ready websites without the hassle"
 description = "Thulite is a Hugo and npm web framework for shipping fast, secure, SEO-friendly sites with modern tooling, integrations, and starters."
 summary = "Thulite is a web framework designed for speed, security, and SEO — all powered by Hugo and npm."
 date = 2025-08-29T06:03:20+02:00
-lastmod = 2026-03-19T09:02:45+01:00
+lastmod = 2026-04-03T12:19:20+02:00
 draft = false
 
 [params.notice]
