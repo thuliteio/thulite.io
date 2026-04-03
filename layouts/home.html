@@ -15,7 +15,6 @@
         <p class="text-center">{{ .Summary }}</p>
         <div class="text-center">
           <a class="btn btn-thulite mt-4" href="https://docs.thulite.io/getting-started/" role="button">Get started</a>
-          <a class="btn btn-outline-thulite mt-4" href="/showcase/" role="button">Showcase</a>
         </div>
       </div>
     </div>
@@ -92,6 +91,31 @@
   </div>
 </div>
 
+<div class="section showcase">
+  <div class="container">
+    <h2 class="fs-3 text-center mb-5">Built with Thulite</h2>
+    <div class="row row-showcase justify-content-center">
+      <div class="col-main-section">
+        <div class="row row-flex">
+          {{ $showcasePages := where site.RegularPages "Section" "showcase" }}
+          {{ range first 2 ($showcasePages.ByDate.Reverse) }}
+            <div class="col-md-6">
+              {{ .Render "item" }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="text-center p-4">
+          <a class="btn btn-outline-thulite" href="/showcase/" role="button">View Showcase</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="section">
   <div class="container">
     <h2 class="fs-3 text-center mb-5">Get started in 3 simple steps</h2>
@@ -144,6 +168,22 @@
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
           </a>
         </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section faq">
+  <div class="container">
+    <h2 class="fs-3 text-center mb-4">FAQ</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-lg-7">
+        <details><summary>What is Thulite?</summary><span class="fs-6 text-body-secondary">Thulite is a web framework for building fast, content-focused websites with a strong focus on performance, SEO, and developer experience.</span></details>
+        <details><summary>Who is Thulite for?</summary><span class="fs-6 text-body-secondary">Thulite is designed for developers and teams building documentation sites, marketing sites, or content-driven platforms.</span></details>
+        <details><summary>What makes Thulite different?</summary><span class="fs-6 text-body-secondary">Thulite combines performance, SEO, and content workflows into one integrated system—so you don't need to piece together multiple tools.</span></details>
+        <details><summary>Do I need to configure everything myself?</summary><span class="fs-6 text-body-secondary">No. Thulite comes with sensible defaults, so you can get started quickly without extensive setup.</span></details>
+        <details><summary>How does Thulite handle content?</summary><span class="fs-6 text-body-secondary">Content is managed in Markdown, making it easy to write, version, and publish.</span></details>
+        <details><summary>Is Thulite suitable for production sites?</summary><span class="fs-6 text-body-secondary">Yes. Thulite is built for real-world use, with a focus on performance, scalability, and maintainability.</span></details>
       </div>
     </div>
   </div>

@@ -29,3 +29,54 @@ span.email b {
 .card:has(.stretched-link:hover) {
     border-color: $contrast-2;
 }
+
+.faq {
+    details {
+            padding: 0.5rem 0;
+
+        > summary {
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        > summary::-webkit-details-marker {
+            display: none;
+        }
+
+        > summary::before {
+            content: "";
+            width: 1.5rem;
+            height: 1.5rem;
+            flex: 0 0 1.5rem;
+            border-radius: 0.25rem;
+            background-color: var(--th-secondary-color);
+
+            /* Tabler plus icon (closed state) */
+            -webkit-mask: center / 1.15rem 1.15rem no-repeat
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 5l0 14M5 12l14 0' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+            mask: center / 1.15rem 1.15rem no-repeat
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 5l0 14M5 12l14 0' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        &[open] > summary::before {
+            /* Tabler minus icon (open state) */
+            -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12l14 0' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12l14 0' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+            background-color: var(--th-secondary-color);
+        }
+
+        > span {
+            display: block;
+            margin-left: 2.35rem;
+            margin-top: 0.35rem;
+        }
+
+        summary {
+            padding: 0.25rem 0;
+        }
+    }
+}

@@ -4,6 +4,36 @@
   weight = 10
 
 [[main]]
+  name = "Thulite"
+  url = 'https://docs.thulite.io/'
+  parent = "Documentation"
+  weight = 11
+
+[[main]]
+  name = "SEO"
+  url = 'https://seo.thulite.io/'
+  parent = "Documentation"
+  weight = 13
+
+[[main]]
+  name = "Images"
+  url = 'https://images.thulite.io/'
+  parent = "Documentation"
+  weight = 15
+
+[[main]]
+  name = "SVG"
+  url = 'https://svg.thulite.io/'
+  parent = "Documentation"
+  weight = 17
+
+[[main]]
+  name = "Doks"
+  url = 'https://getdoks.org/'
+  parent = "Documentation"
+  weight = 19
+
+[[main]]
   name = "Blog"
   pageRef = '/blog'
   weight = 20
