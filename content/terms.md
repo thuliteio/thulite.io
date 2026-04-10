@@ -3,7 +3,7 @@ title = 'Terms of Service'
 summary = 'Thulite Terms of Service covering acceptance, accounts, content rights, third party services, changes, disclaimers, governing law, termination and jurisdiction.'
 description = 'Thulite Terms of Service covering acceptance, accounts, content rights, third party services, changes, disclaimers, governing law, termination and jurisdiction.'
 date = '2025-09-05T13:51:33+02:00'
-lastmod = '2025-09-05T13:51:33+02:00'
+lastmod = 2026-04-10T15:07:55+02:00
 draft = false
 +++
 

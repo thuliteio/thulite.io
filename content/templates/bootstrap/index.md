@@ -3,7 +3,7 @@ title = 'Bootstrap'
 summary = 'Bootstrap starter'
 description = 'The Bootstrap starter combines Thulite with Bootstrap components and layout utilities for fast delivery of responsive marketing sites.'
 date = 2025-10-10T11:20:57+02:00
-lastmod = 2025-10-10T11:20:57+02:00
+lastmod = 2026-04-10T15:07:55+02:00
 draft = false
 
 [params]

@@ -3,7 +3,7 @@ title = "Success"
 description = ""
 summary = ""
 date = 2024-10-03T08:22:34+02:00
-lastmod = 2024-10-03T08:22:34+02:00
+lastmod = 2026-04-10T15:07:55+02:00
 draft = false
 
 [build]

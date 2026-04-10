@@ -3,7 +3,7 @@ title = 'Basic'
 summary = 'Basic starter'
 description = 'The Basic starter gives you a lean Thulite foundation with minimal setup, making it a solid base for custom sites and quick experiments.'
 date = 2025-10-10T07:33:44+02:00
-lastmod = 2025-10-10T07:33:44+02:00
+lastmod = 2026-04-10T15:07:55+02:00
 draft = false
 
 [params]

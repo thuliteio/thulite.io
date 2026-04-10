@@ -3,7 +3,7 @@ title = 'Bootstrap'
 summary = '@thulite/bootstrap'
 description = '@thulite/bootstrap brings Bootstrap into Thulite with a ready-made UI foundation for responsive layouts, components, and styling.'
 date = 2025-10-17T10:11:49+02:00
-lastmod = 2025-10-17T10:11:49+02:00
+lastmod = 2026-04-10T15:07:55+02:00
 draft = false
 
 [params]

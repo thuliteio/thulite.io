@@ -3,7 +3,7 @@ title = 'Templates'
 summary = 'Browse Thulite templates for starters and themes, with opinionated setups that help you launch blogs, docs, and marketing sites faster.'
 description = 'Browse Thulite templates for starters and themes, with opinionated setups that help you launch blogs, docs, and marketing sites faster.'
 date = 2025-10-10T07:31:47+02:00
-lastmod = 2025-10-10T07:31:47+02:00
+lastmod = 2026-04-10T15:07:55+02:00
 draft = false
 
 [params.seo]

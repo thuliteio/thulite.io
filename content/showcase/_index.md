@@ -3,7 +3,7 @@ title = 'Showcase'
 summary = 'Discover what you can build with Thulite'
 description = 'See real websites built with Thulite, from documentation hubs to product sites, and use them as reference points for your own build.'
 date = '2025-09-19T20:25:07+02:00'
-lastmod = '2025-09-19T20:25:07+02:00'
+lastmod = 2026-04-10T15:07:55+02:00
 draft = false
 
 [build]

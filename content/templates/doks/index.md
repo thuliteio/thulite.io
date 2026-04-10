@@ -3,7 +3,7 @@ title = 'Doks'
 summary = 'Doks theme'
 description = 'Doks is a documentation-first Thulite theme built for clarity, speed, and searchability across product docs and knowledge bases.'
 date = 2025-10-10T12:04:07+02:00
-lastmod = 2025-10-10T12:04:07+02:00
+lastmod = 2026-04-10T15:07:55+02:00
 draft = false
 
 [params]

@@ -3,7 +3,7 @@ title = 'SEO'
 summary = '@thulite/seo'
 description = '@thulite/seo adds metadata, schemas, robots controls, and favicon generation so Thulite sites ship with stronger search fundamentals.'
 date = 2025-10-17T11:07:11+02:00
-lastmod = 2025-10-17T11:07:11+02:00
+lastmod = 2026-04-10T15:07:55+02:00
 draft = false
 
 [params]

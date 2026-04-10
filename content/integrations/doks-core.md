@@ -3,7 +3,7 @@ title = 'Doks core'
 summary = '@thulite/doks-core'
 description = '@thulite/doks-core provides the shared building blocks that power the Doks theme for documentation-focused Thulite sites.'
 date = 2025-10-17T10:15:29+02:00
-lastmod = 2025-10-17T10:15:29+02:00
+lastmod = 2026-04-10T15:07:55+02:00
 draft = false
 
 [params]
