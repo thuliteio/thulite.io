@@ -8,8 +8,8 @@ draft = false
 
 [params.notice]
 show = true
-href = "/blog/thulite-cli-2-0/"
-title = "Thulite CLI 2.0"
+href = "/blog/hugo-shortcodes-0-1/"
+title = "Hugo Shortcodes 0.1"
 
 [params.seo]
 title = "" # custom title (optional)
