@@ -35,7 +35,7 @@ Hyas 2.4 is now available! This release includes a new Hugo requirement, an impr
 
 ## Get started
 
-To upgrade an existing project, see the updated [Upgrade to Hyas v2](https://docs.thulite.io/guides/upgrade-to/v2/) guide.
+To upgrade an existing project, see the updated [Upgrade to Hyas v2](https://docs.thulite.io/start-here/updating/v2/) guide.
 
 ## New Hugo requirement
 

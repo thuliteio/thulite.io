@@ -67,7 +67,7 @@ Add a `png` favicon file (and optionally an `svg` favicon file) to your `assets`
 <link rel="manifest" href="/manifest.webmanifest" />
 ```
 
-Hyas SEO also generates a `manifest.webmanifest` file. Read more about [favicons](https://seo.thulite.io/docs/built-ins/favicons/) in our documentation.
+Hyas SEO also generates a `manifest.webmanifest` file. Read more about [favicons](https://seo.thulite.io/docs/signals/favicons/) in our documentation.
 
 ## Documentation website
 
