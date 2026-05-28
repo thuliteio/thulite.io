@@ -28,7 +28,7 @@ SEO 2.2 is here — improved favicons generation, several bug fixes, and a new d
 
 ## Get started
 
-To take advantage of the latest features, make sure you're running the latest version of SEO and have updated the [parameters](https://seo.thulite.io/docs/start-here/customizing-seo/#update-parameters). You can upgrade to SEO 2.2 by running the following command for your package manager of choice:
+To take advantage of the latest features, make sure you're running the latest version of SEO and have updated the [parameters](https://seo.thulite.io/docs/start-here/configuration/#update-parameters). You can upgrade to SEO 2.2 by running the following command for your package manager of choice:
 
 {{< tabs "update-seo" >}}
 {{< tab "npm" >}}

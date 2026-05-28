@@ -36,7 +36,7 @@ Images now has a new code base, making it more robust, flexible, and easy to use
 
 ## Get started
 
-To take advantage of the latest features, make sure you're running the latest version of Images and have set the new [parameters](https://images.thulite.io/docs/basics/customizing-images/#update-parameters). You can upgrade to Images 3.1 by running the following command for your package manager of choice:
+To take advantage of the latest features, make sure you're running the latest version of Images and have set the new [parameters](https://images.thulite.io/docs/start-here/configuration/#update-parameters). You can upgrade to Images 3.1 by running the following command for your package manager of choice:
 
 {{< tabs "update-images" >}}
 {{< tab "npm" >}}

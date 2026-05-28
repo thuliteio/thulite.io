@@ -35,7 +35,7 @@ Hyas' code base is now fully modularized. Main functionalities — for example I
 - **Development tools**: Find and fix problems in scripts, styles, and markdown.
 - **Deploy anywhere**: Deployment guides to different deployment services.
 
-Check out our detailed [Why Hyas](https://docs.thulite.io/concepts/why-thulite/) breakdown to learn more about what makes Hyas special.
+Check out our detailed [Why Hyas](https://docs.thulite.io/start-here/concepts/why-thulite/) breakdown to learn more about what makes Hyas special.
 
 ## Get started
 
@@ -65,7 +65,7 @@ yarn create thulite
 {{< /tab >}}
 {{< /tabs >}}
 
-Upgrading an existing project to Hyas 2.0? Check out the [v2.0 Upgrade Guide](https://docs.thulite.io/guides/upgrade-to/v2/).
+Upgrading an existing project to Hyas 2.0? Check out the [v2.0 Upgrade Guide](https://docs.thulite.io/start-here/updating/v2/).
 
 ## New website
 
