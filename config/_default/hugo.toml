@@ -17,7 +17,39 @@ copyRight = "Copyright (c) 2020-2026 Thulite"
   enable = true
 
 [outputs]
-  home = ["HTML"]
+  home = ["html", "rss", "sitemap-index", "sitemap", "llms"]
+  page = ["html", "markdown"]
+  section = ["html", "rss", "sitemap"]
+  taxonomy = ["html", "rss", "sitemap"]
+  term = ["html", "rss", "sitemap"]
+
+[outputFormats.markdown]
+  baseName = "index"
+  isHTML = false
+  isPlainText = true
+  mediaType = "text/markdown"
+
+[outputFormats.llms]
+  baseName = "llms"
+  isHTML = false
+  isPlainText = true
+  mediaType = "text/plain"
+
+[outputFormats.sitemap-index]
+  mediaType = "application/xml"
+  baseName = "sitemap-index"
+  isHTML = false
+  isPlainText = true
+  noUgly = true
+  rel  = "sitemap"
+
+[outputFormats.sitemap]
+  mediaType = "application/xml"
+  baseName = "sitemap"
+  isHTML = false
+  isPlainText = true
+  noUgly = true
+  rel  = "sitemap"
 
 [sitemap]
   changefreq = "monthly"
