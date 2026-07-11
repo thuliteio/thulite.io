@@ -66,6 +66,18 @@
   force = true
 
 [[redirects]]
+  from = "/privacy/"
+  to = "https://ventizo.com/privacy/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terms/"
+  to = "https://ventizo.com/terms/"
+  status = 301
+  force = true
+
+[[redirects]]
 	from = "/*"
 	to = "/404/"
 	status = 404

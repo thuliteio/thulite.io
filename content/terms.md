@@ -4,7 +4,7 @@ summary = 'Thulite Terms of Service covering acceptance, accounts, content right
 description = 'Thulite Terms of Service covering acceptance, accounts, content rights, third party services, changes, disclaimers, governing law, termination and jurisdiction.'
 date = '2025-09-05T13:51:33+02:00'
 lastmod = 2026-04-10T15:07:55+02:00
-draft = false
+draft = true
 +++
 
 These terms of service ("Terms") apply to your access and use of the Thulite website (the "Service"). Please read them carefully.

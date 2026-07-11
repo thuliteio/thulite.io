@@ -11,7 +11,7 @@ languageCode = "en-US"
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
-copyRight = "Copyright (c) 2020-2026 Thulite"
+copyRight = "Copyright (c) 2020-2026 Ventizo"
 
 [build.buildStats]
   enable = true

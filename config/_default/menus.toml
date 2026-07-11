@@ -73,12 +73,12 @@
 
 [[legal]]
   name = "Privacy Policy"
-  pageRef = '/privacy'
+  url = 'https://ventizo.com/privacy/'
   weight = 10
 
 [[legal]]
   name = "Terms of Service"
-  pageRef = '/terms'
+  url = 'https://ventizo.com/terms/'
   weight = 20
 
 [[sponsors]]

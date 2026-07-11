@@ -4,7 +4,7 @@ summary = 'Explains how Thulite collects, uses, stores, and protects personal da
 description = 'Explains how Thulite collects, uses, stores, and protects personal data; cookies; retention; security; GDPR rights; and contact info.'
 date = '2025-08-29T06:03:52+02:00'
 lastmod = 2026-04-10T15:07:55+02:00
-draft = false
+draft = true
 +++
 
 In addition to this Privacy Policy, Thulite also has [Terms of Service](/terms/).
