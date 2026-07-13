@@ -20,6 +20,7 @@
     "@thulite/bootstrap": "^1.2.3",
     "@thulite/images": "^3.3.4",
     "@thulite/seo": "^2.4.3",
+    "medium-zoom": "^1.1.0",
     "thulite": "^2.6.5"
   },
   "overrides": {

@@ -7,7 +7,7 @@ disableKinds = ["taxonomy"]
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
-languageCode = "en-US"
+locale = "en-US"
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
