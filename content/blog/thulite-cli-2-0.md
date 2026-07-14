@@ -65,7 +65,7 @@ bun create thulite
 
 Quickly scaffold a new project, install dependencies, and start the dev server:
 
-```bash
+```cmd
 npm create thulite@latest
 
 > npx

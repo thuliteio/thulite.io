@@ -11,7 +11,24 @@
   command = """\
   git config core.quotepath false && \
   npm install && \
-  hugo build --gc --minify --baseURL "${URL}"
+  hugo build --gc --minify --baseURL "${URL}" && \
+  npx pagefind --site public
+  """
+
+[context.deploy-preview]
+  command = """\
+  git config core.quotepath false && \
+  npm install && \
+  hugo build --gc --minify --baseURL "$DEPLOY_PRIME_URL" && \
+  npx pagefind --site public
+  """
+
+[context.branch-deploy]
+  command = """\
+  git config core.quotepath false && \
+  npm install && \
+  hugo build --gc --minify --baseURL "$DEPLOY_PRIME_URL" && \
+  npx pagefind --site public
   """
 
 [dev]
@@ -24,38 +41,8 @@
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
-  from = "/themes/"
-  to = "/templates/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/themes/doks/"
-  to = "/templates/doks/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/themes/bolt"
-  to = "/templates/bolt/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://gethyas.com/*"
-  to = "https://thulite.io/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.gethyas.com/*"
-  to = "https://thulite.io/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/js/pa-Teg1Ma4wBlecbMA1gJdTW.js"
-  to = "https://plausible.io/js/pa-Teg1Ma4wBlecbMA1gJdTW.js"
+  from = "/js/pa-giEb4LeQ_HBOeSFnbQ2FG.js"
+  to = "https://plausible.io/js/pa-giEb4LeQ_HBOeSFnbQ2FG.js"
   status = 200
   force = true
 
@@ -63,18 +50,6 @@
   from = "/api/event"
   to = "https://plausible.io/api/event"
   status = 200
-  force = true
-
-[[redirects]]
-  from = "/privacy/"
-  to = "https://ventizo.com/privacy/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/terms/"
-  to = "https://ventizo.com/terms/"
-  status = 301
   force = true
 
 [[redirects]]
@@ -89,7 +64,7 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://analytics.ahrefs.com/api/event https://plausible.io/api/event; font-src 'self'; img-src 'self' https://avatars.githubusercontent.com data:; script-src 'self' https://analytics.ahrefs.com/analytics.js https://plausible.io/js/pa-Teg1Ma4wBlecbMA1gJdTW.js 'sha256-d2naYp9C7LmEhG5Ym6TxSt+GauEaZC4Z+I9rATlQz1E=' 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk=' 'sha256-pGfut8CxcXWzGV34Mlo+zUGXuWG1c4buljedWxWWlks='; style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-PjBkwE8xcYZAp+HsnzzOVNqa/Ra+/v1Fnx6f0PW6ic4='"
+    # Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://plausible.io/api/event; font-src 'self'; img-src 'self' data:; script-src 'self' https://plausible.io/js/pa-giEb4LeQ_HBOeSFnbQ2FG.js 'sha256-d2naYp9C7LmEhG5Ym6TxSt+GauEaZC4Z+I9rATlQz1E='; style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-PjBkwE8xcYZAp+HsnzzOVNqa/Ra+/v1Fnx6f0PW6ic4='; frame-src 'self'"
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin"
     Permissions-Policy = "geolocation=(self), microphone=(), camera=()"

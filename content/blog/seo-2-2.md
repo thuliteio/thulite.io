@@ -52,6 +52,13 @@ yarn upgrade @thulite/seo --latest
 ```
 
 {{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun update @thulite/seo --latest
+```
+
+{{< /tab >}}
 {{< /tabs >}}
 
 ## Favicons
@@ -73,9 +80,17 @@ Hyas SEO also generates a `manifest.webmanifest` file. Read more about [favicons
 
 To better explain the possibilities of the Hyas SEO integration, we launched a new documentation website: [seo.thulite.io](https://seo.thulite.io/).
 
-{{< img loading="lazy" fetchpriority="auto" src="images/seo.gethyas.com.png" alt="Screenshot homepage seo.gethyas.com" class="border-img my-4">}}
-
 The new website contains handy how-to-guides and reference guides.
+
+{{< picture
+  lqip="16x webp q20"
+  loading="lazy"
+  fetchpriority="auto"
+  formats="webp, jpeg"
+  class="article-wide-image img-zoom border rounded-3"
+  src="images/seo.gethyas.com.png"
+  alt="Screenshot homepage seo.gethyas.com"
+>}}
 
 ## Bug Fixes
 

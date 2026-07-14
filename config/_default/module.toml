@@ -23,6 +23,14 @@
   target = "layouts"
 
 [[mounts]]
+  source = "node_modules/@ventizo/atlas-core/layouts"
+  target = "layouts"
+
+# [[mounts]]
+#   source = "../atlas-core/layouts"
+#   target = "layouts"
+
+[[mounts]]
   source = "node_modules/@thulite/bootstrap/layouts"
   target = "layouts"
 
@@ -38,6 +46,10 @@
   source = "node_modules/@thulite/images/layouts"
   target = "layouts"
 
+[[mounts]]
+  source = "node_modules/@thulite/inline-svg/layouts"
+  target = "layouts"
+
 ## i18n
 [[mounts]]
   source = "i18n"
@@ -47,6 +59,14 @@
 [[mounts]]
   source = "archetypes"
   target = "archetypes"
+
+[[mounts]]
+  source = "node_modules/@ventizo/atlas-core/archetypes"
+  target = "archetypes"
+
+# [[mounts]]
+#   source = "../atlas-core/archetypes"
+#   target = "archetypes"
 
 ## assets
 [[mounts]]
@@ -62,6 +82,22 @@
   target = "assets"
 
 [[mounts]]
+  source = "node_modules/@ventizo/atlas-core/assets"
+  target = "assets"
+
+# [[mounts]]
+#   source = "../atlas-core/assets"
+#   target = "assets"
+
+[[mounts]]
+  source = "node_modules/@tabler/icons/icons/outline"
+  target = "assets/svgs/tabler-icons"
+
+[[mounts]]
+  source = "node_modules/simple-icons/icons"
+  target = "assets/svgs/simple-icons"
+
+[[mounts]]
   source = "hugo_stats.json"
   target = "assets/watching/hugo_stats.json"
 
@@ -73,6 +109,10 @@
 [[mounts]]
   source = "node_modules/@fontsource-variable/geist-mono"
   target = "static/fonts/geist-mono"
+
+[[mounts]]
+  source = "node_modules/@fontsource-variable/geist"
+  target = "static/fonts/geist"
 
 [[mounts]]
   source = "static"

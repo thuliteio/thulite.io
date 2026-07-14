@@ -2,7 +2,7 @@
   "name": "thulite-website",
   "version": "1.7.1",
   "description": "Thulite website",
-  "author": "Thulite",
+  "author": "Ventizo",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
@@ -12,16 +12,11 @@
     "create": "hugo new",
     "dev": "hugo server --disableFastRender --noHTTPCache",
     "format": "prettier . -w -c",
-    "build": "hugo --minify --gc",
+    "build": "hugo --minify --gc && npx pagefind --site public",
     "preview": "vite preview --outDir public"
   },
   "dependencies": {
-    "@fontsource-variable/geist-mono": "^5.2.8",
-    "@thulite/bootstrap": "^1.2.3",
-    "@thulite/images": "^3.3.4",
-    "@thulite/seo": "^2.4.3",
-    "medium-zoom": "^1.1.0",
-    "thulite": "^2.6.5"
+    "@ventizo/atlas-core": "^0.1.2"
   },
   "overrides": {
     "minimatch": "^10.2.2",
@@ -29,11 +24,12 @@
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.7.0",
-    "@changesets/cli": "^2.31.0",
+    "@changesets/cli": "^2.30.0",
+    "pagefind": "^1.5.2",
     "prettier": "^3.9.5",
     "vite": "^8.1.4"
   },
   "engines": {
-    "node": ">=20.11.0"
+    "node": ">=24.16.0"
   }
 }

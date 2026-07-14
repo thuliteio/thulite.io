@@ -60,6 +60,13 @@ yarn upgrade @thulite/images --latest
 ```
 
 {{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun update @thulite/images --latest
+```
+
+{{< /tab >}}
 {{< /tabs >}}
 
 ## Shortcodes and partials
@@ -76,7 +83,7 @@ You can add images to your `html` pages by using the the `img`, `picture`, or `f
 
 The above code will generate the following HTML, and allow the browser to determine the best image to display:
 
-```html
+```go-html-template
 <img
   srcset="..."
   data-srcset="..."
@@ -118,9 +125,17 @@ The Markdown above get rendered into the following HTML:
 
 To better explain the possibilities of Images, we launched a new documentation website: [images.thulite.io](https://images.thulite.io/).
 
-{{< img loading="lazy" fetchpriority="auto" src="images/images.gethyas.com.jpg" alt="Screenshot homepage images.gethyas.com" class="border-img my-4">}}
-
 The new website contains handy how-to-guides and reference guides.
+
+{{< picture
+  lqip="16x webp q20"
+  loading="lazy"
+  fetchpriority="auto"
+  formats="webp, jpeg"
+  class="article-wide-image img-zoom border rounded-3"
+  src="images/images.gethyas.com.jpg"
+  alt="Screenshot homepage images.gethyas.com"
+>}}
 
 ## Acknowledgements
 

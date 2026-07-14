@@ -7,12 +7,13 @@ footer = "© 2026 Ventizo"
 # defaultEmail
 defaultEmail = "support@thulite.io"
 
-[social]
-  twitter = "thuliteio"
-
 # Add-ons
 [add_ons]
-  plausibleDomain = "thulite.io" # "example.com" (default)
+  colorMode = "auto" # auto (default), light or dark
+  colorModeToggler = true # true (default) or false (this setting is only relevant when colorMode = auto)
+  pagefind = true # true (default) or false
+  plausibleDomain = "thulite.io" # "" (default)
+  ahrefs = "zDpNjHre6sFUHsOgMF7OIQ" # "" (default)
 
 # Debug
 [render_hooks.image]
@@ -54,10 +55,10 @@ defaultEmail = "support@thulite.io"
   [seo.schemas]
     type = "Organization" # Organization (default) or Person
     logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)
-    name = "Thulite" # Name of Organization or Person
+    name = "Ventizo" # Name of Organization or Person
     sameAs = ["https://github.com/thuliteio/thulite", "https://x.com/thuliteio", "https://fosstodon.org/@thulite"] # E.g. ["https://github.com/thuliteio/thulite", "https://fosstodon.org/@thulite"]
     images = ["cover.png"] # ["cover.png"] (default)
     article = [] # Article sections
-    newsArticle = [] # NewsArticle sections
-    blogPosting = ["blog"] # BlogPosting sections
+    newsArticle = ["blog"] # NewsArticle sections
+    blogPosting = [] # BlogPosting sections
     product = [] # Product sections
