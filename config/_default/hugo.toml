@@ -11,7 +11,9 @@ locale = "en-US"
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
-copyRight = "Copyright (c) 2020-2026 Ventizo"
+copyRight = "Copyright (c) 2026 Ventizo"
+
+mainSections = ['docs', 'thulite', 'seo', 'images', 'svg']
 
 [build.buildStats]
   enable = true

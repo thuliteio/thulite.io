@@ -7,6 +7,12 @@ date = 2025-10-02T11:49:10+02:00
 lastmod = 2026-04-10T15:07:55+02:00
 draft = false
 
+# Reuse layouts/news/{list,single}.html for this section and its child pages.
+type = "news"
+
+[cascade]
+  type = "news"
+
 [params.seo]
   title = "" # custom title (optional)
   description = "" # custom description (recommended)

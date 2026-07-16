@@ -18,7 +18,7 @@ canonical = "" # custom canonical URL (optional)
 robots = "" # custom robot tags (optional)
 +++
 
-```bash
+```cmd
 npm create thulite@latest
 
 > npx

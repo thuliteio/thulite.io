@@ -1,124 +1,140 @@
 // Put your custom SCSS code here
-.monospace {
-    font-family: $font-family-monospace;
+figcaption {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-style: italic
 }
 
-// Email obfuscation
-span.email b {
-    display: none;
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item.active {
+    background-color: var(--dropdown-item-hover-bg);
+    color: inherit;
 }
 
-.border-top-aurora-horizontal {
-    position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 1px;
-        background: $aurora-horizontal;
+@include media-breakpoint-up(lg) {
+    body {
+        font-size: 1rem;
     }
 }
 
-.card {
-    transition: border-color 0.3s ease;
+hr {
+    width: 128px;
+    background-image: $aurora-horizontal-fade;
+    border: none;
+    height: 1px;
+    margin: 4rem auto;
+    color: inherit;
+    opacity: 1;
 }
 
-.card:has(.stretched-link:hover) {
-    border-color: $contrast-2;
+.home .chroma {
+    background-color: inherit;
+    border: 1px solid $light-base-2;
 }
 
-.page-content img.article-wide-image {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0;
+.feature-icon {
+    background-color: $light-base-2;
 }
 
-.page-content img.img-zoom {
-    cursor: zoom-in;
-}
+.icon-link {
+    display: inline-flex;
+    gap: 0.375rem;
+    align-items: center;
+    text-decoration-color: inherit;
+    text-underline-offset: 0.25em;
+    backface-visibility: hidden;
+    color: inherit;
 
-body.article-image-zoom-open .medium-zoom-overlay--opened {
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-}
-
-.page-content picture:has(> img.article-wide-image),
-.page-content figure:has(> img.article-wide-image) {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.page-content figure:has(> img.article-wide-image) figcaption {
-    margin-top: 0.75rem;
-    text-align: left;
-}
-
-@include media-breakpoint-up(xl) {
-    .page-content picture:has(> img.article-wide-image),
-    .page-content figure:has(> img.article-wide-image) {
-        width: calc(100% + 30rem);
-        max-width: none;
-        margin-left: -15rem;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--th-secondary-color);
     }
 }
 
-.faq {
-    details {
-            padding: 0.5rem 0;
+.icon-link.inverse-link {
+    color: var(--th-secondary-color);
 
-        > summary {
-            list-style: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
+    &:hover,
+    &:focus,
+    &:active {
+        color: inherit;
+    }
+}
+
+.row-sponsors {
+    text-align: center;
+    padding: 3rem 3rem 0;
+
+    .col-6 {
+        position: relative;
+        padding: 0.5rem 0;
+        border: 1px solid $light-contrast-4;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.15em;
+        }
+    }
+
+    .col-6:first-child {
+        border-right: 0;
+        border-bottom: 0;
+    }
+
+    .col-6:nth-child(2) {
+        border-bottom: 0;
+    }
+
+    .col-6:nth-child(3) {
+        border-right: 0;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .row-sponsors {
+        padding: 3rem 9rem 0;
+
+        .col-6 {
+            padding: 0.75rem 0;
         }
 
-        > summary::-webkit-details-marker {
-            display: none;
+        .col-6:first-child,
+        .col-6:nth-child(2) {
+            border: 1px solid $light-contrast-4;
         }
 
-        > summary::before {
-            content: "";
-            width: 1.5rem;
-            height: 1.5rem;
-            flex: 0 0 1.5rem;
-            border-radius: 0.25rem;
-            background-color: var(--th-secondary-color);
-
-            /* Tabler plus icon (closed state) */
-            -webkit-mask: center / 1.15rem 1.15rem no-repeat
-                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 5l0 14M5 12l14 0' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
-            mask: center / 1.15rem 1.15rem no-repeat
-                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 5l0 14M5 12l14 0' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
-            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+        .col-6:nth-child(2),
+        .col-6:nth-child(3) {
+            border-left: 0;
         }
+    }
+}
 
-        &[open] > summary::before {
-            /* Tabler minus icon (open state) */
-            -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12l14 0' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
-            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12l14 0' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
-            background-color: var(--th-secondary-color);
-        }
+.border {
+    border: 1px solid $light-base-2 !important;
+}
 
-        > span {
-            display: block;
-            margin-left: 2.35rem;
-            margin-top: 0.35rem;
-        }
+@include color-mode(dark) {
+    .home .chroma {
+        background-color: inherit;
+        border: 1px solid $base-2;
+    }
 
-        summary {
-            padding: 0.25rem 0;
+    .feature-icon {
+        background-color: $base-2;
+    }
+
+    .row-sponsors {
+        .col-6 {
+            border-color: $contrast-4;
         }
+    }
+
+    .border {
+        border: 1px solid $base-2 !important;
     }
 }

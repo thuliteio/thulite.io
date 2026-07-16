@@ -63,6 +63,13 @@ yarn create thulite
 ```
 
 {{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun create thulite@latest
+```
+
+{{< /tab >}}
 {{< /tabs >}}
 
 Upgrading an existing project to Hyas 2.0? Check out the [v2.0 Upgrade Guide](https://docs.thulite.io/start-here/updating/v2/).
@@ -71,9 +78,17 @@ Upgrading an existing project to Hyas 2.0? Check out the [v2.0 Upgrade Guide](ht
 
 To celebrate Hyas v2.0, we kicked off a brand-new redesign of our website: [thulite.io](https://thulite.io/)
 
-{{< img loading="lazy" fetchpriority="auto" src="images/gethyas.com.jpg" alt="Screenshot homepage gethyas.com" class="border-img my-4">}}
-
 The new website tells our story better, with a fresh can of paint and a focus on content, performance, and community.
+
+{{< picture
+  lqip="16x webp q20"
+  loading="lazy"
+  fetchpriority="auto"
+  formats="webp, jpeg"
+  class="article-wide-image img-zoom border rounded-3"
+  src="images/gethyas.com.jpg"
+  alt="Screenshot homepage gethyas.com"
+>}}
 
 ## Acknowledgements
 

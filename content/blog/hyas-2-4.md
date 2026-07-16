@@ -98,6 +98,13 @@ yarn run build --baseURL=/ && yarn run preview --host
 ```
 
 {{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun run build --baseURL=/ && bun run preview --host
+```
+
+{{< /tab >}}
 {{< /tabs >}}
 
 <!-- omit in toc -->
