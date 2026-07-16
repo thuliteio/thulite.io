@@ -1,5 +1,11 @@
 # thulite-website
 
+## 1.8.0
+
+### Minor Changes
+
+- [#313](https://github.com/thuliteio/thulite.io/pull/313) [`bd5f2b6`](https://github.com/thuliteio/thulite.io/commit/bd5f2b6b315264858f85ab86519d57cd02afe7f5) Thanks [@h-enk](https://github.com/h-enk)! - Migrate to Atlas
+
 ## 1.7.1
 
 ### Patch Changes
