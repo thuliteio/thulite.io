@@ -7,6 +7,9 @@ date = 2024-10-03T08:22:52+02:00
 lastmod = 2026-04-10T15:07:55+02:00
 draft = false
 
+[params]
+sitemap = false
+
 [params.seo]
 title = "" # custom title (optional)
 description = "" # custom description (recommended)

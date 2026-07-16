@@ -10,7 +10,7 @@ defaultEmail = "support@thulite.io"
 # Add-ons
 [add_ons]
   colorMode = "auto" # auto (default), light or dark
-  colorModeToggler = true # true (default) or false — only applies when colorMode = "auto"
+  colorModeToggler = false # true (default) or false — only applies when colorMode = "auto"
   pagefind = true # true (default) or false
   plausibleDomain = "thulite.io" # "" (default)
   ahrefs = "zDpNjHre6sFUHsOgMF7OIQ" # "" (default)
