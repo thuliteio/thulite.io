@@ -16,7 +16,7 @@
     "preview": "vite preview --outDir public"
   },
   "dependencies": {
-    "@ventizo/atlas-core": "^0.1.3"
+    "@ventizo/atlas-core": "^0.1.4"
   },
   "overrides": {
     "minimatch": "^10.2.2",
