@@ -1,5 +1,11 @@
 # thulite-website
 
+## 1.8.1
+
+### Patch Changes
+
+- [#314](https://github.com/thuliteio/thulite.io/pull/314) [`4a0d3d2`](https://github.com/thuliteio/thulite.io/commit/4a0d3d2d27034600918cca7b543782d5474aa50a) Thanks [@h-enk](https://github.com/h-enk)! - fix: update dependencies and add search parameter in 404 page
+
 ## 1.8.0
 
 ### Minor Changes
