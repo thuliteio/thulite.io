@@ -47,14 +47,20 @@
   force = true
 
 [[redirects]]
+  from = "/themes/doks/"
+  to = "/templates/doks/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/themes/*"
   to = "/templates/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/themes/doks/"
-  to = "/templates/doks/"
+  from = "/tags/"
+  to = "/blog/"
   status = 301
   force = true
 
@@ -65,7 +71,7 @@
   force = true
 
 [[redirects]]
-  from = "/tags/"
+  from = "/technologies/"
   to = "/blog/"
   status = 301
   force = true
@@ -77,8 +83,32 @@
   force = true
 
 [[redirects]]
-  from = "/technologies/"
+  from = "/anna/"
+  to = "/blog/thulite-2026/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/authors/henk-verlinde/"
   to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/norrsken/"
+  to = "/templates/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pricing/free/"
+  to = "/blog/thulite-2026/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vermeer/"
+  to = "/templates/"
   status = 301
   force = true
 
