@@ -1,7 +1,7 @@
 +++
 title = 'Fablab Arnhem'
-summary = ''
-description = ''
+summary = 'Digital fabrication makerspace'
+description = 'FabLab Arnhem makes digital fabrication accessible through makerspace access, workshops, and shared knowledge from a maker community.'
 date = '2025-09-25T19:35:59+02:00'
 lastmod = 2026-04-10T15:07:55+02:00
 draft = false

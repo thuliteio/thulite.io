@@ -1,7 +1,7 @@
 +++
 title = 'acend'
-summary = ''
-description = ''
+summary = 'Practice-oriented cloud native trainings'
+description = 'acend offers practice-oriented cloud native trainings with hands-on labs, expert trainers, and guidance from engineer to engineer.'
 date = 2026-01-30T12:22:44+01:00
 lastmod = 2026-04-10T15:07:55+02:00
 draft = false
