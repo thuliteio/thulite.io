@@ -1,5 +1,11 @@
 # thulite-website
 
+## 1.8.2
+
+### Patch Changes
+
+- [#315](https://github.com/thuliteio/thulite.io/pull/315) [`3c1bf0a`](https://github.com/thuliteio/thulite.io/commit/3c1bf0abd4b8579fc77c9e82b299d5f113193fc1) Thanks [@h-enk](https://github.com/h-enk)! - Update showcase entries
+
 ## 1.8.1
 
 ### Patch Changes
