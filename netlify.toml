@@ -41,12 +41,6 @@
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
-  from = "/themes/*"
-  to = "/templates/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/themes/doks/"
   to = "/templates/doks/"
   status = 301
@@ -55,6 +49,18 @@
 [[redirects]]
   from = "/themes/bolt"
   to = "/templates/bolt/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/themes/*"
+  to = "/templates/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tags/*"
+  to = "/blog/"
   status = 301
   force = true
 
