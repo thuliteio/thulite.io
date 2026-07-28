@@ -1,7 +1,7 @@
 +++
 title = 'OpenCCA'
-summary = ''
-description = ''
+summary = 'Open framework for Arm CCA research'
+description = 'OpenCCA is an open framework for early exploration and evaluation of Arm Confidential Compute Architecture research on non-CCA hardware.'
 date = '2025-09-25T19:12:37+02:00'
 lastmod = 2026-04-10T15:07:55+02:00
 draft = false

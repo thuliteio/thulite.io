@@ -1,7 +1,7 @@
 +++
 title = 'Our Pine Corner'
-summary = ''
-description = ''
+summary = 'Seasonal homegrown living and gardening'
+description = 'Our Pine Corner shares seasonal homegrown gardening, plant giveaways, and a kitchen garden with practical growing notes.'
 date = 2023-03-19T08:24:58+01:00
 lastmod = 2026-04-10T15:07:55+02:00
 draft = false

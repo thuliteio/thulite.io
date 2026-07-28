@@ -1,7 +1,7 @@
 +++
 title = 'socosci'
-summary = ''
-description = ''
+summary = 'Social-cognitive science research lab'
+description = 'socosci studies how people perceive, learn about, and understand one another across social contexts to support more connected lives and societies.'
 date = 2026-01-27T08:15:16+01:00
 lastmod = 2026-04-10T15:07:55+02:00
 draft = false

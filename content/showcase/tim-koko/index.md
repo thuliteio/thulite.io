@@ -1,7 +1,7 @@
 +++
 title = 'tim&koko'
-summary = ''
-description = ''
+summary = 'Cloud-native consulting and engineering'
+description = 'tim&koko helps businesses unlock potential with cloud-native consulting, engineering, and open-source technologies.'
 date = 2026-01-30T12:47:26+01:00
 lastmod = 2026-04-10T15:07:55+02:00
 draft = false

@@ -1,7 +1,7 @@
 +++
 title = 'Fred'
-summary = ''
-description = ''
+summary = 'Composable Python SDK for agents'
+description = 'Fred is a composable Python SDK for building agents that ingest knowledge, use tools, and deploy anywhere from prototypes to Kubernetes.'
 date = 2025-11-24T16:54:27+01:00
 lastmod = 2026-04-10T15:07:55+02:00
 draft = false
