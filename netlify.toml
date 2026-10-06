@@ -1,14 +1,18 @@
 [build.environment]
-  DART_SASS_VERSION = "1.97.3"
-  GO_VERSION = "1.26.0"
-  HUGO_VERSION = "0.164.0"
-  NODE_VERSION = "24.18.0"
-  NPM_VERSION = "11.16.0"
-  TZ = "Europe/Amsterdam"
+DART_SASS_VERSION = "1.104.1"
+GO_VERSION = "1.27.0"
+HUGO_VERSION = "0.166.0"
+NODE_VERSION = "24.21.0"
+NPM_VERSION = "11.19.0"
+TZ = "Europe/Amsterdam"
 
 [build]
-  publish = "public"
-  command = """\
+publish = "public"
+command = """\
+  curl -sfLO "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" && \
+  tar -C "${HOME}/.local" -xf "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" && \
+  rm "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" && \
+  export PATH="${HOME}/.local/dart-sass:${PATH}" && \
   git config core.quotepath false && \
   npm install && \
   hugo build --gc --minify --baseURL "${URL}" && \
@@ -16,7 +20,11 @@
   """
 
 [context.deploy-preview]
-  command = """\
+command = """\
+  curl -sfLO "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" && \
+  tar -C "${HOME}/.local" -xf "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" && \
+  rm "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" && \
+  export PATH="${HOME}/.local/dart-sass:${PATH}" && \
   git config core.quotepath false && \
   npm install && \
   hugo build --gc --minify --baseURL "$DEPLOY_PRIME_URL" && \
@@ -24,7 +32,11 @@
   """
 
 [context.branch-deploy]
-  command = """\
+command = """\
+  curl -sfLO "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" && \
+  tar -C "${HOME}/.local" -xf "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" && \
+  rm "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" && \
+  export PATH="${HOME}/.local/dart-sass:${PATH}" && \
   git config core.quotepath false && \
   npm install && \
   hugo build --gc --minify --baseURL "$DEPLOY_PRIME_URL" && \
@@ -32,12 +44,12 @@
   """
 
 [dev]
-  framework = "#custom"
-  command = "npm run dev"
-  targetPort = 1313
-  port = 8888
-  publish = "public"
-  autoLaunch = false
+framework = "#custom"
+command = "npm run dev"
+targetPort = 1313
+port = 8888
+publish = "public"
+autoLaunch = false
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
@@ -155,16 +167,16 @@
 
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
-  for = "/*"
-  [headers.values]
-    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
-    X-Content-Type-Options = "nosniff"
-    X-XSS-Protection = "1; mode=block"
-    # Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://plausible.io/api/event; font-src 'self'; img-src 'self' data:; script-src 'self' https://plausible.io/js/pa-giEb4LeQ_HBOeSFnbQ2FG.js 'sha256-d2naYp9C7LmEhG5Ym6TxSt+GauEaZC4Z+I9rATlQz1E='; style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-PjBkwE8xcYZAp+HsnzzOVNqa/Ra+/v1Fnx6f0PW6ic4='; frame-src 'self'"
-    X-Frame-Options = "SAMEORIGIN"
-    Referrer-Policy = "strict-origin"
-    Permissions-Policy = "geolocation=(self), microphone=(), camera=()"
-    Cache-Control= '''
-    public,
-    max-age=31536000'''
-    Access-Control-Allow-Origin = "*"
+for = "/*"
+[headers.values]
+Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+X-Content-Type-Options = "nosniff"
+X-XSS-Protection = "1; mode=block"
+# Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self' 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk='; style-src 'self'"
+X-Frame-Options = "SAMEORIGIN"
+Referrer-Policy = "strict-origin"
+Feature-Policy = "geolocation 'self'"
+Cache-Control = '''
+        public,
+        max-age=31536000'''
+Access-Control-Allow-Origin = "*"

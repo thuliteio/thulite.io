@@ -4,7 +4,9 @@
     "yzhang.markdown-all-in-one",
     "tamasfe.even-better-toml",
     "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
     "DavidAnson.vscode-markdownlint",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "thuliteio.hugo-shortcodes"
   ]
 }
