@@ -1,5 +1,11 @@
 # thulite-website
 
+## 1.8.3
+
+### Patch Changes
+
+- [#320](https://github.com/thuliteio/thulite.io/pull/320) [`df461c8`](https://github.com/thuliteio/thulite.io/commit/df461c8ca5ac12ec9098a196e8344f3db89b9690) Thanks [@h-enk](https://github.com/h-enk)! - chore: update dependencies and add portless configuration
+
 ## 1.8.2
 
 ### Patch Changes
