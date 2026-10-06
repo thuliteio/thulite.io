@@ -11,23 +11,25 @@
   "scripts": {
     "create": "hugo new",
     "dev": "hugo server --disableFastRender --noHTTPCache",
+    "portless": "portless run thulite-portless",
     "format": "prettier . -w -c",
     "build": "hugo --minify --gc && npx pagefind --site public",
     "preview": "vite preview --outDir public"
   },
   "dependencies": {
-    "@ventizo/atlas-core": "^0.1.4"
+    "@ventizo/atlas-core": "^0.1.6"
   },
   "overrides": {
-    "minimatch": "^10.2.2",
+    "minimatch": "^10.2.6",
     "glob": "^13.0.6"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.7.0",
-    "@changesets/cli": "^2.30.1",
+    "@changesets/changelog-github": "^1.0.1",
+    "@changesets/cli": "^3.0.3",
     "pagefind": "^1.5.2",
-    "prettier": "^3.9.5",
-    "vite": "^8.1.4"
+    "portless": "^0.15.6",
+    "prettier": "^3.9.9",
+    "vite": "^8.3.3"
   },
   "engines": {
     "node": ">=24.16.0"

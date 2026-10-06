@@ -93,8 +93,5 @@ mainSections = ['docs', 'thulite', 'seo', 'images', 'svg']
       weight = 10
 
 [imaging]
-  anchor = "Center"
-  bgColor = "#ffffff"
-  hint = "photo"
-  quality = 85
-  resampleFilter = "Lanczos"
+anchor = "Center"
+resampleFilter = "Lanczos"
