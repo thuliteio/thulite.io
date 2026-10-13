@@ -1,5 +1,11 @@
 # thulite-website
 
+## 1.8.4
+
+### Patch Changes
+
+- [#321](https://github.com/thuliteio/thulite.io/pull/321) [`1966886`](https://github.com/thuliteio/thulite.io/commit/1966886e6736b7638c5072d13156197386250406) Thanks [@h-enk](https://github.com/h-enk)! - feat: update homepage notice and add Thulite 3 blog post
+
 ## 1.8.3
 
 ### Patch Changes
