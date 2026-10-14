@@ -1,5 +1,11 @@
 # thulite-website
 
+## 1.8.5
+
+### Patch Changes
+
+- [`26bad45`](https://github.com/thuliteio/thulite.io/commit/26bad4592ebb8dc2013f21ce499e98d9314dec11) Thanks [@h-enk](https://github.com/h-enk)! - feat: add sponsorship page and update home link
+
 ## 1.8.4
 
 ### Patch Changes
