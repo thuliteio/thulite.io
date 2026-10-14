@@ -138,3 +138,25 @@ hr {
     border: 1px solid $base-2 !important;
   }
 }
+
+// Sponsor
+.text-sponsor {
+  font-size: 0.9375rem;
+}
+
+.list-sponsor {
+  font-size: 0.9375rem;
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .icon-tabler-check {
+    flex: 0 0 1.25rem;
+    margin-top: 0.125rem;
+  }
+}
