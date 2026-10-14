@@ -1,0 +1,89 @@
+{{ define "main" }}
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-6">
+        <h1 class="text-center my-3">{{ .LinkTitle }}</h1>
+        <p class="text-center text-body-secondary">{{ .Summary }}</p>
+        <hr>
+        <div class="page-content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section py-0">
+  <div class="container">
+    <h2 class="h3 text-center mt-0 mb-5">Sponsor Thulite</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-6 col-xl-4">
+        <div class="card border rounded-3 h-100">
+          <div class="card-body d-flex flex-column p-4 p-lg-5">
+            <h2 class="h4 mt-0 mb-2">Community</h2>
+            <p class="text-sponsor text-body-secondary mb-4">For individuals and teams building with Thulite.</p>
+            <p class="mt-0 mb-4">
+              <span class="display-5 fw-semibold">$0</span>
+            </p>
+            <ul class="list-sponsor text-body-secondary mb-4">
+              <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-check" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg>Free forever</li>
+              <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-check" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg>Build anything, including commercial projects</li>
+              <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-check" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg>No sponsorship required</li>
+            </ul>
+            <a class="btn btn-outline-thulite mt-auto" href="https://docs.thulite.io/start-here/getting-started/">Get started</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <div class="card border rounded-3 h-100">
+          <div class="card-body d-flex flex-column p-4 p-lg-5">
+            <h2 class="h4 mt-0 mb-2">Supporter</h2>
+            <p class="text-sponsor text-body-secondary mb-4">For individuals and teams that want to give back.</p>
+            <p class="mt-0 mb-4">
+              <span class="display-5 fw-semibold">$5+</span>
+              <span class="text-body-secondary">monthly or one-time</span>
+            </p>
+            <ul class="list-sponsor text-body-secondary mb-4">
+              <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-check" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg>Support maintenance, documentation, and long-term development</li>
+              <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-check" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg>Voluntary sponsorship</li>
+            </ul>
+            <a class="btn btn-outline-thulite mt-auto" href="https://github.com/sponsors/thuliteio" target="_blank" rel="noopener noreferrer">Sponsor on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <div class="card border rounded-3 h-100">
+          <div class="card-body d-flex flex-column p-4 p-lg-5">
+            <h2 class="h4 mt-0 mb-2">Business Sponsor</h2>
+            <p class="text-sponsor text-body-secondary mb-4">For freelancers, agencies, and companies that want to give back.</p>
+            <p class="mt-0 mb-4">
+              <span class="display-5 fw-semibold">$19+</span>
+              <span class="text-body-secondary">/ month</span>
+            </p>
+            <ul class="list-sponsor text-body-secondary mb-4">
+              <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-check" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg>Support maintenance, documentation, and long-term development</li>
+              <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-check" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg>Voluntary sponsorship</li>
+            </ul>
+            <a class="btn btn-thulite mt-auto" href="https://github.com/sponsors/thuliteio" target="_blank" rel="noopener noreferrer">Sponsor on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section faq">
+  <div class="container">
+    <h2 class="fs-3 text-center mb-4">FAQ</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-lg-7">
+        <details><summary>Why should I sponsor Thulite?</summary><span class="fs-6 text-body-secondary">Sponsorship helps keep Thulite maintained and its documentation up to date, so it can continue serving the community.</span></details>
+        <details><summary>Is sponsorship required for commercial use?</summary><span class="fs-6 text-body-secondary">No. Thulite is free to use, including for commercial projects. Sponsorship is voluntary.</span></details>
+        <details><summary>What does my contribution support?</summary><span class="fs-6 text-body-secondary">Your sponsorship helps fund maintenance, documentation, and continued development.</span></details>
+        <details><summary>How can I become a sponsor?</summary><span class="fs-6 text-body-secondary">Choose a sponsorship option above to visit Thulite's GitHub Sponsors page and set up your contribution.</span></details>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

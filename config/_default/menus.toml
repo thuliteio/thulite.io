@@ -1,7 +1,7 @@
 [[main]]
-  name = "Documentation"
-  url = 'https://docs.thulite.io/'
-  weight = 10
+name = "Documentation"
+url = 'https://docs.thulite.io/'
+weight = 10
 
 # [[main]]
 #   name = "Thulite"
@@ -34,94 +34,100 @@
 #   weight = 19
 
 [[main]]
-  name = "Blog"
-  pageRef = '/blog'
-  weight = 20
+name = "Blog"
+pageRef = '/blog'
+weight = 20
 
 [[main]]
-  name = "Resources"
-  pageRef = '/resources'
-  weight = 40
+name = "Resources"
+pageRef = '/resources'
+weight = 40
 
 [[main]]
-  name = "Showcase"
-  pageRef = '/showcase'
-  parent = "Resources"
-  weight = 43
+name = "Showcase"
+pageRef = '/showcase'
+parent = "Resources"
+weight = 41
 
 [[main]]
-  name = "Templates"
-  pageRef = '/templates'
-  parent = "Resources"
-  weight = 45
+name = "Templates"
+pageRef = '/templates'
+parent = "Resources"
+weight = 43
 
 [[main]]
-  name = "Integrations"
-  pageRef = '/integrations'
-  parent = "Resources"
-  weight = 47
+name = "Integrations"
+pageRef = '/integrations'
+parent = "Resources"
+weight = 45
 
 [[main]]
-  name = "Community"
-  url = 'https://github.com/orgs/thuliteio/discussions'
-  weight = 50
+name = "Community"
+url = 'https://github.com/orgs/thuliteio/discussions'
+parent = "Resources"
+weight = 47
+
+[[main]]
+name = "Sponsor"
+pageRef = '/sponsor'
+weight = 50
 
 [[social]]
-  name = "GitHub"
-  url = "https://github.com/thuliteio/thulite"
-  weight = 10
+name = "GitHub"
+url = "https://github.com/thuliteio/thulite"
+weight = 10
 
 [[legal]]
-  name = "Privacy Policy"
-  url = 'https://ventizo.com/privacy/'
-  weight = 10
+name = "Privacy Policy"
+url = 'https://ventizo.com/privacy/'
+weight = 10
 
 [[legal]]
-  name = "Terms of Service"
-  url = 'https://ventizo.com/terms/'
-  weight = 20
+name = "Terms of Service"
+url = 'https://ventizo.com/terms/'
+weight = 20
 
 [[sponsors]]
-  name = "Netlify"
-  url = "https://www.netlify.com/?utm_campaign=Thulite-2025&utm_source=thulite-referral"
-  weight = 10
+name = "Netlify"
+url = "https://www.netlify.com/?utm_campaign=Thulite-2025&utm_source=thulite-referral"
+weight = 10
 
 [[sponsors]]
-  name = "Algolia"
-  url = "https://www.algolia.com/?utm_campaign=Thulite-2025&utm_source=thulite-referral"
-  weight = 20
+name = "Algolia"
+url = "https://www.algolia.com/?utm_campaign=Thulite-2025&utm_source=thulite-referral"
+weight = 20
 
 [[sponsors]]
-  name = "Infisical"
-  url = "https://infisical.com/?utm_campaign=Thulite-2025&utm_source=thulite-referral"
-  weight = 30
+name = "Infisical"
+url = "https://infisical.com/?utm_campaign=Thulite-2025&utm_source=thulite-referral"
+weight = 30
 
 [[sponsors]]
-  name = "Instatus"
-  url = "https://instatus.com/?utm_campaign=Thulite-2025&utm_source=thulite-referral"
-  weight = 40
+name = "Instatus"
+url = "https://instatus.com/?utm_campaign=Thulite-2025&utm_source=thulite-referral"
+weight = 40
 
 [[documentation]]
-  name = "Thulite"
-  url = "https://docs.thulite.io/"
-  weight = 10
+name = "Thulite"
+url = "https://docs.thulite.io/"
+weight = 10
 
 [[documentation]]
-  name = "SEO"
-  url = "https://seo.thulite.io/"
-  weight = 20
+name = "SEO"
+url = "https://seo.thulite.io/"
+weight = 20
 
 [[documentation]]
-  name = "Images"
-  url = "https://images.thulite.io/"
-  weight = 30
+name = "Images"
+url = "https://images.thulite.io/"
+weight = 30
 
 [[documentation]]
-  name = "SVG"
-  url = "https://svg.thulite.io/"
-  weight = 40
+name = "SVG"
+url = "https://svg.thulite.io/"
+weight = 40
 
 [[documentation]]
-  name = "Doks"
-  url = "https://getdoks.org/"
-  weight = 50
+name = "Doks"
+url = "https://getdoks.org/"
+weight = 50
