@@ -1,5 +1,11 @@
 # thulite-website
 
+## 1.8.6
+
+### Patch Changes
+
+- [#323](https://github.com/thuliteio/thulite.io/pull/323) [`ccce38b`](https://github.com/thuliteio/thulite.io/commit/ccce38b87058f472d9d70ef1c086cfdd3cf1b3a2) Thanks [@h-enk](https://github.com/h-enk)! - feat: add showcase layout and update item link styling
+
 ## 1.8.5
 
 ### Patch Changes
