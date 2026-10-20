@@ -1,5 +1,11 @@
 # thulite-website
 
+## 1.8.7
+
+### Patch Changes
+
+- [#324](https://github.com/thuliteio/thulite.io/pull/324) [`7483a66`](https://github.com/thuliteio/thulite.io/commit/7483a667237a4d14dd2ed69037fd476e99157406) Thanks [@h-enk](https://github.com/h-enk)! - feat: add Netlify plugin for IndexNow integration with sitemap support
+
 ## 1.8.6
 
 ### Patch Changes
