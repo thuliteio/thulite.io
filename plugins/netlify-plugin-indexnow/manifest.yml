@@ -1,0 +1,9 @@
+name: netlify-plugin-indexnow
+inputs:
+  - name: key
+    description: IndexNow key (8-128 hex characters)
+  - name: host
+    description: Site host, e.g. thulite.io
+  - name: sitemapIndex
+    description: Path of the sitemap index inside the publish directory
+    default: sitemap-index.xml

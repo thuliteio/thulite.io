@@ -43,6 +43,12 @@ command = """\
   npx pagefind --site public
   """
 
+[[plugins]]
+package = "./plugins/netlify-plugin-indexnow"
+[plugins.inputs]
+key = "21f6b6a6c6a375b1047d067060c3e7fe"
+host = "thulite.io"
+
 [dev]
 framework = "#custom"
 command = "npm run dev"
@@ -53,117 +59,117 @@ autoLaunch = false
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
-  from = "/themes/bolt"
-  to = "/templates/bolt/"
-  status = 301
-  force = true
+from = "/themes/bolt"
+to = "/templates/bolt/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/themes/doks/"
-  to = "/templates/doks/"
-  status = 301
-  force = true
+from = "/themes/doks/"
+to = "/templates/doks/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/themes/*"
-  to = "/templates/"
-  status = 301
-  force = true
+from = "/themes/*"
+to = "/templates/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/tags/"
-  to = "/blog/"
-  status = 301
-  force = true
+from = "/tags/"
+to = "/blog/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/tags/*"
-  to = "/blog/"
-  status = 301
-  force = true
+from = "/tags/*"
+to = "/blog/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/technologies/"
-  to = "/blog/"
-  status = 301
-  force = true
+from = "/technologies/"
+to = "/blog/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/technologies/*"
-  to = "/blog/"
-  status = 301
-  force = true
+from = "/technologies/*"
+to = "/blog/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/anna/"
-  to = "/blog/thulite-2026/"
-  status = 301
-  force = true
+from = "/anna/"
+to = "/blog/thulite-2026/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/authors/henk-verlinde/"
-  to = "/blog/"
-  status = 301
-  force = true
+from = "/authors/henk-verlinde/"
+to = "/blog/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/norrsken/"
-  to = "/templates/"
-  status = 301
-  force = true
+from = "/norrsken/"
+to = "/templates/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/pricing/free/"
-  to = "/blog/thulite-2026/"
-  status = 301
-  force = true
+from = "/pricing/free/"
+to = "/blog/thulite-2026/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/vermeer/"
-  to = "/templates/"
-  status = 301
-  force = true
+from = "/vermeer/"
+to = "/templates/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "https://gethyas.com/*"
-  to = "https://thulite.io/:splat"
-  status = 301
-  force = true
+from = "https://gethyas.com/*"
+to = "https://thulite.io/:splat"
+status = 301
+force = true
 
 [[redirects]]
-  from = "https://www.gethyas.com/*"
-  to = "https://thulite.io/"
-  status = 301
-  force = true
+from = "https://www.gethyas.com/*"
+to = "https://thulite.io/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/js/pa-Teg1Ma4wBlecbMA1gJdTW.js"
-  to = "https://plausible.io/js/pa-Teg1Ma4wBlecbMA1gJdTW.js"
-  status = 200
-  force = true
+from = "/js/pa-Teg1Ma4wBlecbMA1gJdTW.js"
+to = "https://plausible.io/js/pa-Teg1Ma4wBlecbMA1gJdTW.js"
+status = 200
+force = true
 
 [[redirects]]
-  from = "/api/event"
-  to = "https://plausible.io/api/event"
-  status = 200
-  force = true
+from = "/api/event"
+to = "https://plausible.io/api/event"
+status = 200
+force = true
 
 [[redirects]]
-  from = "/privacy/"
-  to = "https://ventizo.com/privacy/"
-  status = 301
-  force = true
+from = "/privacy/"
+to = "https://ventizo.com/privacy/"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/terms/"
-  to = "https://ventizo.com/terms/"
-  status = 301
-  force = true
+from = "/terms/"
+to = "https://ventizo.com/terms/"
+status = 301
+force = true
 
 [[redirects]]
-	from = "/*"
-	to = "/404/"
-	status = 404
+from = "/*"
+to = "/404/"
+status = 404
 
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
